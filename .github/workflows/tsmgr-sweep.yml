@@ -16,19 +16,41 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Show repo tree (debug)
-        run: ls -R
+      - name: Debug env
+        run: |
+          set -xe
+          python -V
+          which python
+          pwd
+          ls -R
+          echo "Runner candidates:"
+          git ls-files | grep -E '(^|/)tsmgr_v02\.py$' || true
 
-      - name: Sweep (root path)
-        if: ${{ hashFiles('tsmgr_v02.py') != '' }}
-        run: python tsmgr_v02.py sweep --out ./out_sweeps
+      - name: Locate runner
+        id: locate
+        run: |
+          set -e
+          RP=$(git ls-files | grep -E '(^|/)tsmgr_v02\.py$' | head -n1 || true)
+          if [ -z "$RP" ]; then
+            echo "Runner tsmgr_v02.py nicht gefunden." >&2
+            exit 2
+          fi
+          echo "runner_path=$RP" >> $GITHUB_OUTPUT
 
-      - name: Sweep (runner path)
-        if: ${{ hashFiles('runner/tsmgr_v02.py') != '' }}
-        run: python runner/tsmgr_v02.py sweep --out ./out_sweeps
+      - name: Sweep
+        run: |
+          set -xe
+          python "${{ steps.locate.outputs.runner_path }}" sweep --out ./out_sweeps
 
-      - name: Analyzer
-        run: python runner/tools/analyze_tsmgr_v02.py --root ./out_sweeps --out ./reports
+      - name: Analyzer (optional)
+        if: ${{ hashFiles('runner/tools/analyze_tsmgr_v02.py') != '' }}
+        run: |
+          set -xe
+          python runner/tools/analyze_tsmgr_v02.py --root ./out_sweeps --out ./reports
+
+      - name: Prepare artifacts dir
+        run: |
+          mkdir -p out_sweeps reports
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
