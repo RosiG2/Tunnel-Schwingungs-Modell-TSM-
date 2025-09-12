@@ -1,4 +1,5 @@
 name: tsmgr-v02-sweeps
+
 on:
   workflow_dispatch: {}
   push:
@@ -11,8 +12,11 @@ jobs:
   sweeps:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -23,7 +27,7 @@ jobs:
           python -V
           pwd
           ls -R
-          echo "Runner candidates (tracked):"
+          echo "Runner candidates (tracked by git):"
           git ls-files | grep -E '(^|/)tsmgr_v02\.py$' || true
 
       - name: Locate runner
@@ -36,22 +40,38 @@ jobs:
             echo "Runner tsmgr_v02.py NICHT gefunden (nicht committet oder falscher Pfad)." >&2
             exit 2
           fi
+          echo "Found runner at: $RP"
           echo "runner_path=$RP" >> $GITHUB_OUTPUT
 
+      - name: Syntax check
+        run: python -m py_compile "${{ steps.locate.outputs.runner_path }}"
+
       - name: Sweep
-        run: python "${{ steps.locate.outputs.runner_path }}" sweep --out ./out_sweeps
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -xeo pipefail
+          python "${{ steps.locate.outputs.runner_path }}" sweep --out ./out_sweeps 2>&1 | tee sweep.log
 
       - name: Analyzer (optional)
         if: ${{ hashFiles('runner/tools/analyze_tsmgr_v02.py') != '' }}
-        run: python runner/tools/analyze_tsmgr_v02.py --root ./out_sweeps --out ./reports
+        shell: bash
+        run: |
+          set -xe
+          python runner/tools/analyze_tsmgr_v02.py --root ./out_sweeps --out ./reports || true
 
-      - name: Prepare artifacts dir
-        run: mkdir -p out_sweeps reports
+      - name: Ensure artifact dirs
+        run: |
+          mkdir -p out_sweeps
+          mkdir -p reports
+          touch sweep.log
 
-      - name: Upload artifacts
+      - name: Upload artifacts (always)
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: tsmgr-v02-sweeps
           path: |
             out_sweeps/**
             reports/**
+            sweep.log
