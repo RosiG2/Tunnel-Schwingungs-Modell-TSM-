@@ -1,0 +1,38 @@
+{
+  "version": "tsm-gr-v0.2",
+  "alpha": 2.0,
+  "lambda_": 0.5,
+  "delta": 0.1,
+  "gamma0": 0.0,
+  "gamma1": 0.5,
+  "B_hi": 0.8,
+  "S_lo": 0.3,
+  "eps_phi": 0.087266,
+  "hK": 0.02,
+  "N_dwell": 3,
+  "dtau": 0.05,
+  "steps": 300,
+  "seed": 0,
+  "omega_phi": 0.0,
+  "mode": "potential",
+  "kappa": 1.0,
+  "x_star": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "a_tau": 0.0,
+  "xi_sigma": 1.0,
+  "xi_center": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "xi_k": [
+    0.5,
+    0.0,
+    0.0
+  ],
+  "xi_omega": 0.2,
+  "fd_h": 0.001
+}
