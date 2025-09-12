@@ -42,70 +42,30 @@ jobs:
           set -xe
           python runner/tools/analyze_tsmgr_v02.py --root ./out_sweeps --out ./reports || true
 
-      - name: Quick summary (inline)
-        shell: bash
-        run: |
-          python - << 'PY'
-          import csv, json, glob, os, statistics as st
-          os.makedirs("reports", exist_ok=True)
-          rows=[]
-          for p in glob.glob("out_sweeps/*/sweep_summary.csv"):
-            with open(p, newline="") as f:
-              for r in csv.DictReader(f):
-                rows.append({k:(float(v) if v not in ("",None) else None) for k,v in r.items()})
-          def vals(key): return [r[key] for r in rows if key in r and r[key] is not None]
-          def stat(key):
-            v=vals(key)
-            return {"n":len(v),"mean":(st.mean(v) if v else None),"min":(min(v) if v else None),"max":(max(v) if v else None)}
-          summary={
-            "counts":{"cases":len(rows)},
-            "metrics":{
-              "tt_null": stat("tt_null"),
-              "pct_F+": stat("pct_F+"),
-              "pct_F":  stat("pct_F"),
-              "transitions": stat("transitions"),
-              "eps_increase_steps": stat("eps_increase_steps"),
-            }
-          }
-          open("reports/quick_summary.json","w",encoding="utf-8").write(json.dumps(summary,indent=2))
-          # Markdown
-          def fmt(x): 
-            return "-" if x is None else (f"{x:.4g}" if isinstance(x,float) else str(x))
-          md=["# TSM–GR v0.2 – Quick Summary\n"]
-          md.append("| metric | n | mean | min | max |\n|---|---:|---:|---:|---:|\n")
-          for k in ["tt_null","pct_F+","pct_F","transitions","eps_increase_steps"]:
-            s=summary["metrics"][k]; md.append(f"| {k} | {s['n']} | {fmt(s['mean'])} | {fmt(s['min'])} | {fmt(s['max'])} |\n")
-          open("reports/SUMMARY.md","w",encoding="utf-8").write("".join(md))
-          PY
-
-      - name: Publish to repo (run-numbered + latest)
+      - name: Prepare publish dir
         shell: bash
         run: |
           set -xe
-          RUN="documents/tsmgr-v02/sweeps/${{ github.run_number }}"
-          LATEST="documents/tsmgr-v02/latest"
-          rm -rf "$LATEST"
-          mkdir -p "$RUN" "$LATEST"
-          cp -r out_sweeps "$RUN/." || true
-          cp -r reports    "$RUN/." || true
-          cp -r out_sweeps "$LATEST/." || true
-          cp -r reports    "$LATEST/." || true
-          cp sweep.log "$RUN/"  || true
-          cp sweep.log "$LATEST/" || true
-          cat > "$RUN/README.md" << 'EOF'
+          DEST="documents/tsmgr-v02/sweeps/${{ github.run_number }}"
+          mkdir -p "$DEST"
+          mkdir -p reports || true
+          cp -r out_sweeps "$DEST/." || true
+          cp -r reports "$DEST/." || true
+          cp sweep.log "$DEST/" || true
+          cat > "$DEST/README.md" << 'EOF'
           # TSM–GR v0.2 – veröffentlichte Sweep-Outputs
-          Dieses Verzeichnis enthält die Ergebnisse eines GitHub-Actions-Laufs.
+          Dieser Ordner enthält die direkt im Repo veröffentlichten Ergebnisse eines GitHub-Actions-Laufs.
           - `out_sweeps/` – CSV/Logs je Sweep
-          - `reports/`    – REPORT.md / report.json / SUMMARY.md
-          - `sweep.log`   – vollständiger Konsolen-Log des Sweep-Schritts
+          - `reports/`    – REPORT.md / report.json (falls Analyzer aktiv)
+          - `sweep.log`   – kompletter Konsolen-Log des Sweep-Schritts
           EOF
 
-      - name: Commit outputs
+      - name: Commit outputs into repo
         shell: bash
         run: |
           set -xe
           git config user.email "actions@github.com"
           git config user.name "github-actions[bot]"
           git add -A
-          git commit -m "Publish tsmgr v0.2 outputs (run ${{ github.run_number }})" || echo "No changes to commit"
+          git commit -m "Publish tsmgr v0.2 outputs for run ${{ github.run_number }}" || echo "No changes to commit"
           git push
