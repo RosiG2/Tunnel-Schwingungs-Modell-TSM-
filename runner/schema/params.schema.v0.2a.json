@@ -1,0 +1,60 @@
+{
+"$schema": "https://json-schema.org/draft/2020-12/schema",
+"$id": "https://tsm.local/schema/params.schema.v0.2a.json",
+"title": "TSM–GR v0.2a Parameter Schema",
+"description": "Schema passend zum Runner tsmgr_v02.py v0.2 (ohne nicht genutzte Felder).",
+"type": "object",
+"additionalProperties": false,
+"patternProperties": {
+"^lambda$": { "type": "number", "minimum": 0, "description": "Alias für 'lambda_'" }
+},
+"properties": {
+"version": {"type": "string", "default": "tsm-gr-v0.2"},
+"alpha": {"type": "number", "minimum": 0, "default": 1.0},
+"lambda_": {"type": "number", "minimum": 0, "default": 1.0},
+"delta": {"type": "number", "minimum": 0, "default": 0.1},
+"gamma0": {"type": "number", "default": 0.0},
+"gamma1": {"type": "number", "exclusiveMinimum": 0, "default": 1.0},
+
+
+"B_hi": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.8},
+"S_lo": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.3},
+"eps_phi": {"type": "number", "minimum": 0, "maximum": 0.523599, "default": 0.087266},
+"hK": {"type": "number", "minimum": 0, "maximum": 0.1, "default": 0.02},
+"N_dwell": {"type": "integer", "minimum": 1, "default": 3},
+
+
+"dtau": {"type": "number", "exclusiveMinimum": 0, "default": 0.1},
+"steps": {"type": "integer", "minimum": 1, "default": 300},
+"seed": {"type": "integer", "default": 0},
+
+
+"omega_phi": {"type": "number", "default": 0.0},
+"mode": {"type": "string", "enum": ["potential", "residual"], "default": "potential"},
+
+
+"kappa": {"type": "number", "minimum": 0, "default": 1.0},
+"x_star": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3, "default": [0.0,0.0,0.0]},
+
+
+"a_tau": {"type": "number", "default": 0.0},
+"xi_sigma": {"type": "number", "exclusiveMinimum": 0, "default": 1.0},
+"xi_center": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3, "default": [0.0,0.0,0.0]},
+"xi_k": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3, "default": [0.5,0.0,0.0]},
+"xi_omega": {"type": "number", "default": 0.2}
+},
+"examples": [
+{
+"version": "tsm-gr-v0.2",
+"alpha": 1.0,
+"lambda_": 1.0,
+"gamma0": 0.0,
+"gamma1": 1.0,
+"B_hi": 0.8,
+"S_lo": 0.3,
+"dtau": 0.1,
+"steps": 300,
+"mode": "potential"
+}
+]
+}
