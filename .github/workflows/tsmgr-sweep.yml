@@ -1,11 +1,11 @@
 name: tsmgr-v02-sweeps
 on:
+  workflow_dispatch: {}
   push:
     branches: [ main ]
     paths:
       - 'runner/**'
       - 'tsmgr_v02.py'
-  workflow_dispatch: {}
 
 jobs:
   sweeps:
@@ -17,40 +17,29 @@ jobs:
           python-version: '3.11'
 
       - name: Debug env
+        shell: bash
         run: |
           set -xe
           python -V
-          which python
-          pwd
           ls -R
           echo "Runner candidates:"
           git ls-files | grep -E '(^|/)tsmgr_v02\.py$' || true
 
       - name: Locate runner
         id: locate
+        shell: bash
         run: |
-          set -e
           RP=$(git ls-files | grep -E '(^|/)tsmgr_v02\.py$' | head -n1 || true)
-          if [ -z "$RP" ]; then
-            echo "Runner tsmgr_v02.py nicht gefunden." >&2
-            exit 2
-          fi
+          echo "Found: $RP"
           echo "runner_path=$RP" >> $GITHUB_OUTPUT
 
       - name: Sweep
-        run: |
-          set -xe
-          python "${{ steps.locate.outputs.runner_path }}" sweep --out ./out_sweeps
+        if: ${{ steps.locate.outputs.runner_path != '' }}
+        run: python "${{ steps.locate.outputs.runner_path }}" sweep --out ./out_sweeps
 
       - name: Analyzer (optional)
         if: ${{ hashFiles('runner/tools/analyze_tsmgr_v02.py') != '' }}
-        run: |
-          set -xe
-          python runner/tools/analyze_tsmgr_v02.py --root ./out_sweeps --out ./reports
-
-      - name: Prepare artifacts dir
-        run: |
-          mkdir -p out_sweeps reports
+        run: python runner/tools/analyze_tsmgr_v02.py --root ./out_sweeps --out ./reports
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -59,3 +48,4 @@ jobs:
           path: |
             out_sweeps/**
             reports/**
+
