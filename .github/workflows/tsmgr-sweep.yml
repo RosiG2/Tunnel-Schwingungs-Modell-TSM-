@@ -16,13 +16,19 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Sweep (eingebautes Grid)
-        run: |
-          python tsmgr_v02.py sweep --out ./out_sweeps
+      - name: Show repo tree (debug)
+        run: ls -R
+
+      - name: Sweep (root path)
+        if: ${{ hashFiles('tsmgr_v02.py') != '' }}
+        run: python tsmgr_v02.py sweep --out ./out_sweeps
+
+      - name: Sweep (runner path)
+        if: ${{ hashFiles('runner/tsmgr_v02.py') != '' }}
+        run: python runner/tsmgr_v02.py sweep --out ./out_sweeps
 
       - name: Analyzer
-        run: |
-          python runner/tools/analyze_tsmgr_v02.py --root ./out_sweeps --out ./reports
+        run: python runner/tools/analyze_tsmgr_v02.py --root ./out_sweeps --out ./reports
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
