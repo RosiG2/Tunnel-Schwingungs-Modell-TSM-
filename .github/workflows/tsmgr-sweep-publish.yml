@@ -1,0 +1,72 @@
+name: tsmgr-v02-sweeps-publish
+
+on:
+  workflow_dispatch: {}   # Manuell starten
+
+jobs:
+  run-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write      # erlaubt Commit mit GITHUB_TOKEN
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Locate runner
+        id: locate
+        shell: bash
+        run: |
+          set -e
+          RP=$(git ls-files | grep -E '(^|/)tsmgr_v02\.py$' | head -n1 || true)
+          if [ -z "$RP" ]; then
+            echo "Runner tsmgr_v02.py nicht gefunden." >&2
+            exit 2
+          fi
+          echo "runner_path=$RP" >> $GITHUB_OUTPUT
+
+      - name: Sweep
+        shell: bash
+        run: |
+          set -xeo pipefail
+          python "${{ steps.locate.outputs.runner_path }}" sweep --out ./out_sweeps 2>&1 | tee sweep.log
+
+      - name: Analyzer (optional)
+        if: ${{ hashFiles('runner/tools/analyze_tsmgr_v02.py') != '' }}
+        shell: bash
+        run: |
+          set -xe
+          python runner/tools/analyze_tsmgr_v02.py --root ./out_sweeps --out ./reports || true
+
+      - name: Prepare publish dir
+        shell: bash
+        run: |
+          set -xe
+          DEST="documents/tsmgr-v02/sweeps/${{ github.run_number }}"
+          mkdir -p "$DEST"
+          mkdir -p reports || true
+          cp -r out_sweeps "$DEST/." || true
+          cp -r reports "$DEST/." || true
+          cp sweep.log "$DEST/" || true
+          # kleine README
+          cat > "$DEST/README.md" << 'EOF'
+          # TSM–GR v0.2 – veröffentlichte Sweep-Outputs
+          Dieser Ordner enthält die direkt im Repo veröffentlichten Ergebnisse eines GitHub-Actions-Laufs.
+          - `out_sweeps/` – CSV/Logs je Sweep
+          - `reports/`    – REPORT.md / report.json (falls Analyzer aktiv)
+          - `sweep.log`   – kompletter Konsolen-Log des Sweep-Schritts
+          EOF
+
+      - name: Commit outputs into repo
+        shell: bash
+        run: |
+          set -xe
+          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Publish tsmgr v0.2 outputs for run ${{ github.run_number }}" || echo "No changes to commit"
+          git push
