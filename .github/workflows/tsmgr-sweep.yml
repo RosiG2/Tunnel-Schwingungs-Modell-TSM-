@@ -21,25 +21,32 @@ jobs:
         run: |
           set -xe
           python -V
+          pwd
           ls -R
-          echo "Runner candidates:"
+          echo "Runner candidates (tracked):"
           git ls-files | grep -E '(^|/)tsmgr_v02\.py$' || true
 
       - name: Locate runner
         id: locate
         shell: bash
         run: |
+          set -e
           RP=$(git ls-files | grep -E '(^|/)tsmgr_v02\.py$' | head -n1 || true)
-          echo "Found: $RP"
+          if [ -z "$RP" ]; then
+            echo "Runner tsmgr_v02.py NICHT gefunden (nicht committet oder falscher Pfad)." >&2
+            exit 2
+          fi
           echo "runner_path=$RP" >> $GITHUB_OUTPUT
 
       - name: Sweep
-        if: ${{ steps.locate.outputs.runner_path != '' }}
         run: python "${{ steps.locate.outputs.runner_path }}" sweep --out ./out_sweeps
 
       - name: Analyzer (optional)
         if: ${{ hashFiles('runner/tools/analyze_tsmgr_v02.py') != '' }}
         run: python runner/tools/analyze_tsmgr_v02.py --root ./out_sweeps --out ./reports
+
+      - name: Prepare artifacts dir
+        run: mkdir -p out_sweeps reports
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -48,4 +55,3 @@ jobs:
           path: |
             out_sweeps/**
             reports/**
-
