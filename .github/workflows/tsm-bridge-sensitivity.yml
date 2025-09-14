@@ -3,32 +3,87 @@ name: TSM Bridge Sensitivity
 
 on:
 push:
-branches: [ main ]
+branches: ["main"]
 pull_request:
-branches: [ main ]
+branches: ["main"]
 
 
 jobs:
 sensitivity:
 runs-on: ubuntu-latest
 steps:
-- uses: actions/checkout@v4
-- uses: actions/setup-python@v5
+- name: Checkout
+uses: actions/checkout@v4
+
+
+- name: Setup Python
+uses: actions/setup-python@v5
 with:
-python-version: '3.11'
-- name: Compute (mini)
+python-version: "3.11"
+
+
+- name: Compute (inline)
 run: |
-python bridge/tsm_bridge_compute.py --in bridge/tsm_gr_test_minidataset.csv --out /tmp/comp.csv \
---eps-deg 1.0 --cap-quantile 0.99 --B-lo 0.2 --B-hi 0.8
+cat > /tmp/compute.py <<'PY'
+#!/usr/bin/env python3
+import argparse, csv, math
+from bisect import bisect_right
+ap = argparse.ArgumentParser()
+ap.add_argument("--in", dest="inp", required=True)
+ap.add_argument("--out", dest="out", required=True)
+ap.add_argument("--eps-deg", type=float, default=1.0)
+ap.add_argument("--cap-quantile", type=float, default=0.99)
+ap.add_argument("--B-lo", type=float, default=0.2)
+ap.add_argument("--B-hi", type=float, default=0.8)
+a = ap.parse_args()
+rows = list(csv.DictReader(open(a.inp, newline="")))
+eps = a.eps_deg*math.pi/180.0
+fres = []
+for r in rows:
+C=float(r.get("C",0) or 0); d=float(r.get("dphi",0) or 0); t=float(r.get("tau",0) or 0)
+f=C/max(d,eps)*t; r["_F_res"]=f; fres.append(f)
+xs = sorted(fres); cap = xs[int(max(0,min(1,a.cap_quantile))*(len(xs)-1))]
+fcap = [min(f,cap) for f in fres]; fs = sorted(fcap); n=len(fs)
+out=[]
+for r,fc in zip(rows,fcap):
+B = bisect_right(fs, fc)/n; S=1-B
+z = "fragmentiert" if B<=a.B_lo else ("regulativ" if B<=a.B_hi else "kohärent")
+out.append({"C":f"{float(r.get('C',0)):.6f}","dphi":f"{float(r.get('dphi',0)):.6f}","tau":f"{float(r.get('tau',0)):.6f}",
+"F_res":f"{r['_F_res']:.6f}","F_cap":f"{fc:.6f}","B":f"{B:.5f}","S":f"{S:.5f}","zone":z})
+w=csv.DictWriter(open(a.out,"w",newline=""), fieldnames=["C","dphi","tau","F_res","F_cap","B","S","zone"])
+w.writeheader(); w.writerows(out)
+PY
+python /tmp/compute.py --in bridge/tsm_gr_test_minidataset.csv --out /tmp/comp.csv --eps-deg 1.0 --cap-quantile 0.99 --B-lo 0.2 --B-hi 0.8
+
+
+- name: Sanitize repo scripts (NBSP/Tabs)
+run: |
+python - <<'PY'
+import sys
+targets = [
+'bridge/tsm_bridge_sensitivity_v0.1.py',
+'bridge/tsm_metric_matter_compare_v0.1.py'
+]
+for p in targets:
+try:
+b=open(p,'rb').read()
+b=b.replace(b'\xc2\xa0', b' ').replace(b'\t', b' ')
+open(p,'wb').write(b)
+print('Sanitized', p)
+except Exception as e:
+print('Skip', p, e, file=sys.stderr)
+PY
+
+
 - name: Sensitivity
-run: |
-python bridge/tsm_bridge_sensitivity_v0.1.py --in /tmp/comp.csv --out-json /tmp/sens.json --out-csv /tmp/sens.csv \
---eps-deg 1.0 --d-eps 0.5 --cap-quantile 0.99 --d-cap 0.01 --B-lo 0.2 --B-hi 0.8 --d-B 0.05
-echo "--- Sensitivity JSON ---"
-cat /tmp/sens.json
+run: python bridge/tsm_bridge_sensitivity_v0.1.py --in /tmp/comp.csv --out-json /tmp/sens.json --out-csv /tmp/sens.csv --eps-deg 1.0 --d-eps 0.5 --cap-quantile 0.99 --d-cap 0.01 --B-lo 0.2 --B-hi 0.8 --d-B 0.05
+
+
 - name: Compare export
+run: python bridge/tsm_metric_matter_compare_v0.1.py --in /tmp/comp.csv --out-prefix /tmp/cmp --rho0 1.0 --w 0.0 --metric-a1 1.0 --K-mode B
+
+
+- name: Show outputs
 run: |
-python bridge/tsm_metric_matter_compare_v0.1.py --in /tmp/comp.csv --out-prefix /tmp/cmp \
---rho0 1.0 --w 0.0 --metric-a1 1.0 --K-mode B
-echo "--- Compare head ---"
-head -n 6 /tmp/cmp_compare.csv
+echo "--- Sensitivity JSON ---" && cat /tmp/sens.json
+echo "--- Compare head ---" && head -n 6 /tmp/cmp_compare.csv
