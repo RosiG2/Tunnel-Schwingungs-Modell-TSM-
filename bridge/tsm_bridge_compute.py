@@ -1,22 +1,13 @@
 #!/usr/bin/env python3
-"""
-tsm_bridge_compute.py — berechnet F_res, F_cap, B, S, zone aus C,dphi,tau.
-
-
-Nutzung:
-python tsm_bridge_compute.py --in INPUT.csv --out OUTPUT.csv \
---eps-deg 1.0 --cap-quantile 0.99 --B-lo 0.2 --B-hi 0.8
-"""
-import argparse, csv, math, statistics
-from typing import List, Dict
+from typing import List
 
 
 def ecdf(values: List[float]):
+# Empirische Verteilungsfunktion (nicht-absteigend)
 xs = sorted(values)
 n = len(xs)
 def F(x: float) -> float:
-# Anteil <= x
-# +1e-9 numerische robustheit
+# Anteil <= x (binäre Suche)
 lo, hi = 0, n
 while lo < hi:
 mid = (lo + hi) // 2
@@ -47,32 +38,46 @@ for row in r:
 rows.append(row)
 
 
+if not rows:
+# Leere Eingabe: trotzdem Header schreiben
+with open(args.out, "w", newline="") as f:
+w = csv.DictWriter(f, fieldnames=["C","dphi","tau","F_res","F_cap","B","S","zone"])
+w.writeheader()
+return
+
+
 # Basismengen
 eps_rad = args.eps_deg * math.pi / 180.0
-F_res = []
+fres_list = []
 for row in rows:
 C = float(row.get("C") or row.get("C_cl") or row.get("C0") or 0.0)
 dphi = float(row.get("dphi") or row.get("Delta_phi") or 0.0)
 tau = float(row.get("tau") or row.get("tau_eff") or row.get("tau0") or 0.0)
 fres = C / max(dphi, eps_rad) * tau
 row["_F_res"] = fres
-F_res.append(fres)
+fres_list.append(fres)
 
 
-# Cap
+# Cap-Quantil bestimmen (robust, indexbasiert)
 q = max(0.5, min(1.0, args.cap_quantile))
-# robustes Quantil
-Fc_sorted = sorted(F_res)
-idx = int(q * (len(Fc_sorted)-1))
-cap = Fc_sorted[idx]
+xs = sorted(fres_list)
+idx = int(q * (len(xs) - 1))
+cap = xs[idx]
 
 
+# F_cap und ECDF
+fcap_list = []
 for row in rows:
-row["_F_cap"] = min(row["_F_res"], cap)
+fcap = min(row["_F_res"], cap)
+row["_F_cap"] = fcap
+fcap_list.append(fcap)
 
 
-# B/S via ECDF
-F = ecdf([row["_F_cap"] for row in rows])
+F = ecdf(fcap_list)
+
+
+# Ableiten von B,S,zone und Ausgabe schreiben
+out_rows = []
 for row in rows:
 B = F(row["_F_cap"])
 S = 1.0 - B
@@ -82,22 +87,22 @@ elif B <= args.B_hi:
 zone = "regulativ"
 else:
 zone = "kohärent"
-row["F_res"] = f"{row['_F_res']:.6f}"
-row["F_cap"] = f"{row['_F_cap']:.6f}"
-row["B"] = f"{B:.5f}"
-row["S"] = f"{S:.5f}"
-row["zone"] = zone
+out_rows.append({
+**{k: row.get(k, "") for k in row.keys() if k in ("C","dphi","tau")},
+"F_res": f"{row['_F_res']:.6f}",
+"F_cap": f"{row['_F_cap']:.6f}",
+"B": f"{B:.5f}",
+"S": f"{S:.5f}",
+"zone": zone,
+})
 
 
-# Schreiben
-fieldnames = list(rows[0].keys())
-# Entferne interne Spalten
-fieldnames = [fn for fn in fieldnames if not fn.startswith("_")]
+fieldnames = ["C","dphi","tau","F_res","F_cap","B","S","zone"]
 with open(args.out, "w", newline="") as f:
 w = csv.DictWriter(f, fieldnames=fieldnames)
 w.writeheader()
-for row in rows:
-w.writerow({k: row.get(k, "") for k in fieldnames})
+for row in out_rows:
+w.writerow(row)
 
 
 if __name__ == "__main__":
