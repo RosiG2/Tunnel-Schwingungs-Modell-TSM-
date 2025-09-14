@@ -1,7 +1,14 @@
-name: sanity
+name: rgn-export
 on: workflow_dispatch
+permissions:
+  contents: write
 jobs:
-  t:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - run: echo ok
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with: {python-version: '3.11'}
+    - run: python -m pip install --upgrade pip pandas numpy
+    - run: python rgn_export_v0.2.1.py --zones TSM-136D_zonen_recommended.csv --rest TSM-136D_R_estimates.csv --baseline TSM-136D_zonen_baseline.csv --outdir .
+    - run: git config user.name "rgn-bot" && git config user.email "rgn-bot@example.com" && git add RGN_state_v0.2.csv RGN_manifest_v0.2.json RGN_report_v0.2.md && (git diff --cached --quiet || git commit -m "RGN export v0.2 (auto)") && git push
