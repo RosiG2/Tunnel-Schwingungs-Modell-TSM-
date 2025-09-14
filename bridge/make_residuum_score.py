@@ -14,31 +14,37 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 
 BR = Path(__file__).resolve().parents[1] / "bridge"
-df = pd.read_csv(BR/"tsm_pg_bindings_phase1.csv")
+src = BR / "tsm_pg_bindings_phase1.csv"
+
+df = pd.read_csv(src)
 
 # Basis: Normalisierte |Δ|-Stärke (0..1)
 df["abs_delta"] = df["delta"].abs()
-maxd = df["abs_delta"].max() if (df["abs_delta"].max()>0) else 1.0
+maxd = float(df["abs_delta"].max()) if (pd.notna(df["abs_delta"]).any() and df["abs_delta"].max() > 0) else 1.0
 base = df["abs_delta"] / maxd
 
-# Flags
-bLB = df["bind_b_lb"].fillna(False)
-rLB = df["bind_r_lb"].fillna(False)
-bUB = df["bind_b_ub"].fillna(False)
-rUB = df["bind_r_ub"].fillna(False)
-L_b = df["lift_bind_b"].fillna("").astype(str).str.len() > 0
-L_r = df["lift_bind_r"].fillna("").astype(str).str.len() > 0
+# Flags (NaNs → False / leere Strings)
+bLB = df.get("bind_b_lb", False).fillna(False)
+rLB = df.get("bind_r_lb", False).fillna(False)
+bUB = df.get("bind_b_ub", False).fillna(False)
+rUB = df.get("bind_r_ub", False).fillna(False)
+L_b = df.get("lift_bind_b", "").fillna("").astype(str).str.len() > 0
+L_r = df.get("lift_bind_r", "").fillna("").astype(str).str.len() > 0
 
 # Heuristik-Gewichte (konservativ, 0..1 clamp)
-score = base
+score = base.copy()
 score += rLB.astype(float)*0.35 + bLB.astype(float)*0.20
 score += rUB.astype(float)*0.25 + bUB.astype(float)*0.15
 score += L_r.astype(float)*0.30 + L_b.astype(float)*0.15
 score = score.clip(0.0, 1.0)
 
-out = df[["zone","b_x","r_x","delta","rel_change","rank_abs","rank_rel"]].copy()
+# Output-Frame inkl. abs_delta für Sortierung
+out = df[["zone","b_x","r_x","delta","rel_change","rank_abs","rank_rel","abs_delta"]].copy()
 out["score"] = score
-out.sort_values(["score","abs_delta","rank_rel"], ascending=[False, False, True], inplace=True)
+
+# Sortierung: score desc, abs_delta desc, rank_rel asc (NaNs ans Ende)
+out["rank_rel"] = pd.to_numeric(out["rank_rel"], errors="coerce")
+out.sort_values(["score","abs_delta","rank_rel"], ascending=[False, False, True], inplace=True, na_position="last")
 
 # CSV + MD
 out.to_csv(BR/"phase1_residuum_scores.csv", index=False)
@@ -51,7 +57,7 @@ for _, row in out.head(20).iterrows():
 # PNG Ranking (Top 15)
 top = out.head(15)
 plt.figure(figsize=(8.2,5))
-plt.barh(list(top["zone"][::-1]), list(top["score"][::-1]))
+plt.barh(list(top["zone"][::-1].astype(str)), list(top["score"][::-1]))
 plt.xlabel("Residuum-Score (0..1)")
 plt.ylabel("Zone")
 plt.title("Phase 1 – Top 15 Residuum-Score")
