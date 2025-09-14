@@ -1,119 +1,103 @@
 name: TSM Bridge CI
+- name: Validate (inline)
+run: |
+cat > /tmp/validate.py <<'PY'
+#!/usr/bin/env python3
+import argparse, csv, json
 
-on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
 
-jobs:
-  validate-bridge:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+ap = argparse.ArgumentParser()
+ap.add_argument("--in", dest="inp", required=True)
+ap.add_argument("--out", dest="out", required=True)
+ap.add_argument("--B-lo", type=float, default=0.2)
+ap.add_argument("--B-hi", type=float, default=0.8)
+ap.add_argument("--compare", dest="compare", default=None)
+a = ap.parse_args()
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
 
-      - name: Compute (inline)
-        run: |
-          cat > /tmp/compute.py <<'PY'
-          #!/usr/bin/env python3
-          import argparse, csv, math
-          from bisect import bisect_right
+rows = list(csv.DictReader(open(a.inp, newline="")))
+fns = rows[0].keys() if rows else []
+required = ["C","dphi","tau","F_res","F_cap","B","S","zone"]
+missing = [c for c in required if c not in fns]
 
-          ap = argparse.ArgumentParser()
-          ap.add_argument("--in", dest="inp", required=True)
-          ap.add_argument("--out", dest="out", required=True)
-          ap.add_argument("--eps-deg", type=float, default=1.0)
-          ap.add_argument("--cap-quantile", type=float, default=0.99)
-          ap.add_argument("--B-lo", type=float, default=0.2)
-          ap.add_argument("--B-hi", type=float, default=0.8)
-          a = ap.parse_args()
 
-          rows = list(csv.DictReader(open(a.inp, newline="")))
-          eps = a.eps_deg * math.pi / 180.0
+ok_cols = (len(missing) == 0)
+ok_vals = True
+val_errs = []
+eps = 1e-6
+for i, r in enumerate(rows):
+try:
+B = float(r["B"]) ; S = float(r["S"]) ; z = (r["zone"] or "").strip()
+except Exception as e:
+ok_vals = False
+val_errs.append({"i": i, "error": f"parse: {e}"})
+continue
+if not (0.0 - eps <= B <= 1.0 + eps):
+ok_vals = False
+val_errs.append({"i": i, "error": f"B out of range: {B}"})
+if not (0.0 - eps <= S <= 1.0 + eps):
+ok_vals = False
+val_errs.append({"i": i, "error": f"S out of range: {S}"})
+if abs((1.0 - B) - S) > 1e-6:
+ok_vals = False
+val_errs.append({"i": i, "error": f"S != 1-B (B={B}, S={S})"})
+zone = "fragmentiert" if B <= a.B_lo else ("regulativ" if B <= a.B_hi else "kohärent")
+if z != zone:
+ok_vals = False
+val_errs.append({"i": i, "error": f"zone mismatch: got '{z}', want '{zone}' for B={B}"})
 
-          fres = []
-          for r in rows:
-              C = float(r.get("C", 0) or 0)
-              d = float(r.get("dphi", 0) or 0)
-              t = float(r.get("tau", 0) or 0)
-              f = C / max(d, eps) * t
-              r["_F_res"] = f
-              fres.append(f)
 
-          xs = sorted(fres)
-          cap = xs[int(max(0, min(1, a.cap_quantile)) * (len(xs) - 1))]
+diffs = []
+if a.compare:
+try:
+ref = list(csv.DictReader(open(a.compare, newline="")))
+n = min(len(rows), len(ref))
+for k in range(n):
+r = rows[k]; rr = ref[k]
+for fld in ("F_res","F_cap","B","S"):
+try:
+a1 = float(r.get(fld, "")); a2 = float(rr.get(fld, ""))
+if abs(a1 - a2) > 1e-5:
+diffs.append({"i": k, "field": fld, "got": a1, "want": a2})
+except:
+diffs.append({"i": k, "field": fld, "got": r.get(fld, ""), "want": rr.get(fld, "")})
+if (r.get("zone", "").strip() != rr.get("zone", "").strip()):
+diffs.append({"i": k, "field": "zone", "got": r.get("zone", ""), "want": rr.get("zone", "")})
+except FileNotFoundError:
+pass
 
-          fcap = [min(f, cap) for f in fres]
-          fs = sorted(fcap)
-          n = len(fs)
 
-          out = []
-          for r, fc in zip(rows, fcap):
-              B = bisect_right(fs, fc) / n
-              S = 1 - B
-              z = "fragmentiert" if B <= a.B_lo else ("regulativ" if B <= a.B_hi else "kohärent")
-              out.append({
-                  "C": f"{float(r.get('C', 0)):.6f}",
-                  "dphi": f"{float(r.get('dphi', 0)):.6f}",
-                  "tau": f"{float(r.get('tau', 0)):.6f}",
-                  "F_res": f"{r['_F_res']:.6f}",
-                  "F_cap": f"{fc:.6f}",
-                  "B": f"{B:.5f}",
-                  "S": f"{S:.5f}",
-                  "zone": z
-              })
+report = {
+"file": a.inp,
+"ok_columns": ok_cols,
+"missing_columns": missing,
+"ok_values": ok_vals,
+"value_errors": val_errs,
+"diffs_vs_reference": diffs,
+"passed": ok_cols and ok_vals and len(diffs) == 0
+}
 
-          w = csv.DictWriter(open(a.out, "w", newline=""), fieldnames=["C","dphi","tau","F_res","F_cap","B","S","zone"])
-          w.writeheader()
-          w.writerows(out)
-          PY
-          python /tmp/compute.py --in bridge/tsm_gr_test_minidataset.csv --out /tmp/comp.csv --eps-deg 1.0 --cap-quantile 0.99 --B-lo 0.2 --B-hi 0.8
-          echo "--- comp head ---" && head -n 6 /tmp/comp.csv || true
 
-      - name: Export (inline; matter & K)
-        run: |
-          cat > /tmp/exporter.py <<'PY'
-          #!/usr/bin/env python3
-          import argparse, csv
+json.dump(report, open(a.out, "w"), indent=2, ensure_ascii=False)
 
-          ap = argparse.ArgumentParser()
-          ap.add_argument("--in", dest="inp", required=True)
-          ap.add_argument("--out-prefix", required=True)
-          ap.add_argument("--rho0", type=float, default=1.0)
-          ap.add_argument("--w", type=float, default=0.0)
-          a = ap.parse_args()
 
-          rows = list(csv.DictReader(open(a.inp, newline="")))
+# Mit Exit-Code 1 fehlschlagen, wenn nicht bestanden
+import sys
+if not report["passed"]:
+print(json.dumps(report, indent=2, ensure_ascii=False))
+sys.exit(1)
+PY
+python /tmp/validate.py --in /tmp/comp.csv --out /tmp/report.json --B-lo 0.2 --B-hi 0.8 --compare bridge/expected_computed_minidataset.csv
+echo "--- Validation Report ---" && cat /tmp/report.json
 
-          k_rows = []
-          t_rows = []
-          for i, r in enumerate(rows):
-              B = float(r.get("B", 0) or 0)
-              S = float(r.get("S", 0) or 0)
-              K = B
-              rho = a.rho0 * K
-              p = a.w * rho
-              k_rows.append({"i": i, "B": f"{B:.6f}", "S": f"{S:.6f}", "K": f"{K:.6f}"})
-              t_rows.append({"i": i, "T00": f"{rho:.6f}", "T11": f"{p:.6f}", "T22": f"{p:.6f}", "T33": f"{p:.6f}"})
 
-          w1 = csv.DictWriter(open(a.out_prefix + "_K_field.csv", "w", newline=""), fieldnames=["i","B","S","K"])
-          w1.writeheader(); w1.writerows(k_rows)
-
-          w2 = csv.DictWriter(open(a.out_prefix + "_T_eff.csv", "w", newline=""), fieldnames=["i","T00","T11","T22","T33"])
-          w2.writeheader(); w2.writerows(t_rows)
-          PY
-          python /tmp/exporter.py --in /tmp/comp.csv --out-prefix /tmp/exp --rho0 1.0 --w 0.0
-          echo "--- K_field head ---" && head -n 6 /tmp/exp_K_field.csv || true
-          echo "--- T_eff head ---" && head -n 6 /tmp/exp_T_eff.csv || true
-
-      - name: Validation
-        run: python bridge/tsm_bridge_validation_v0.1.py --in /tmp/comp.csv --B-lo 0.2 --B-hi 0.8 --out /tmp/report.json --compare bridge/expected_computed_minidataset.csv
-
-      - name: Print report
-        run: cat /tmp/report.json
+- name: Upload artifacts (always)
+if: always()
+uses: actions/upload-artifact@v4
+with:
+name: tsm-ci-artifacts
+path: |
+/tmp/comp.csv
+/tmp/exp_K_field.csv
+/tmp/exp_T_eff.csv
+/tmp/report.json
