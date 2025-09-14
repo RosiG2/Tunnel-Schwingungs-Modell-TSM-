@@ -1,0 +1,204 @@
+{
+  "names": [
+    "fragmentiert",
+    "kohärent",
+    "nan",
+    "regulativ"
+  ],
+  "b": [
+    0.333333333333,
+    0.333333333333,
+    0.0,
+    0.333333333333
+  ],
+  "r": [
+    0.105469244118,
+    0.182065478077,
+    0.530399799728,
+    0.182065478077
+  ],
+  "base_facets": {
+    "A": [
+      [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "b": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "eq": {
+      "a": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "c": 1.0
+    }
+  },
+  "constraints": {
+    "type": "H+eq",
+    "positivity": [
+      {
+        "i": 0,
+        "a": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.0
+      },
+      {
+        "i": 1,
+        "a": [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.0
+      },
+      {
+        "i": 2,
+        "a": [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "c": 0.0
+      },
+      {
+        "i": 3,
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "c": 0.0
+      }
+    ],
+    "simplex_eq": {
+      "a": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "c": 1.0
+    },
+    "upper_bounds": [
+      {
+        "i": 0,
+        "a": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.38333333333333336
+      },
+      {
+        "i": 1,
+        "a": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.38333333333333336
+      },
+      {
+        "i": 2,
+        "a": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "c": 0.5803997997276229
+      },
+      {
+        "i": 3,
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "c": 0.38333333333333336
+      }
+    ],
+    "soft": {
+      "monotone_segment": [
+        {
+          "zone": "fragmentiert",
+          "b": 0.33333333333333337,
+          "r": 0.10546924411835058
+        },
+        {
+          "zone": "kohärent",
+          "b": 0.33333333333333337,
+          "r": 0.1820654780770133
+        },
+        {
+          "zone": "nan",
+          "b": 0.0,
+          "r": 0.5303997997276229
+        },
+        {
+          "zone": "regulativ",
+          "b": 0.33333333333333337,
+          "r": 0.1820654780770133
+        }
+      ],
+      "notes": "Soft: encourages staying near the straight segment from b to r."
+    },
+    "placeholders": {
+      "RGN_state_v0.2.csv": {
+        "status": "pending",
+        "url": "https://raw.githubusercontent.com/RosiG2/Tunnel-Schwingungs-Modell-TSM-/main/RGN_state_v0.2.csv",
+        "lift_plan": "Translate categorical/state rules into linear inequalities Cx <= d (e.g., group caps, required minima)."
+      },
+      "RGN_qc_metrics_v0.1.json": {
+        "status": "pending",
+        "url": "https://raw.githubusercontent.com/RosiG2/Tunnel-Schwingungs-Modell-TSM-/main/RGN_qc_metrics_v0.1.json",
+        "lift_plan": "Enforce QC thresholds as bounds/tolerances (e.g., sum windows, min share per class, stability limits)."
+      }
+    }
+  },
+  "meta": {
+    "version": "lifted-0.1",
+    "margin": 0.05,
+    "notes": [
+      "Phase‑0 lifted facets based on b/r only. RGN_* integration pending (URLs provided).",
+      "Upper bounds clamp each zone at max(b_i, r_i)+margin (<=1)."
+    ]
+  }
+}
