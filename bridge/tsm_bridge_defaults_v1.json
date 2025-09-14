@@ -1,0 +1,29 @@
+{
+"module": "TSM-136D-Bridge",
+"version": "v1.0",
+"created_utc": "2025-09-14T00:00:00Z",
+"params": {
+"eps_deg": 1.0,
+"cap_quantile": 0.99,
+"B_lo": 0.20,
+"B_hi": 0.80,
+"zone_labels": [
+"fragmentiert",
+"regulativ",
+"kohärent"
+]
+},
+"mapping": {
+"F_res": "C / max(dphi, eps_rad) * tau",
+"eps_unit": "degrees",
+"cap_rule": "F_cap = min(F_res, quantile(F_res, cap_quantile))",
+"B_rule": "B = ECDF(F_cap)",
+"S_rule": "S = 1 - B",
+"zone_rule": "if B<=B_lo -> fragmentiert; elif B<=B_hi -> regulativ; else -> kohärent"
+},
+"notes": {
+"ecdf": "Empirische CDF über die Stichprobe; bei Streaming: tagesweise oder über Gleitfenster.",
+"motivation": "B und S als rangbasierte Bindungs-/Spann-Masse vermeiden absolute Skalenannahmen.",
+"repro": "Diese Defaults reproduzieren auf dem 100x100-Datensatz die 20/60/20-Verteilung."
+}
+}

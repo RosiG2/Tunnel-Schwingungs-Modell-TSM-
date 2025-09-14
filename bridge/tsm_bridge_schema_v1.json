@@ -1,0 +1,81 @@
+{
+"$schema": "https://json-schema.org/draft/2020-12/schema",
+"$id": "https://rosi-bridge.example/tsm-136d.bridge.schema.v1.json",
+"title": "TSM-136D Bridge Schema v1",
+"type": "object",
+"required": [
+"module",
+"version",
+"created_utc",
+"params",
+"mapping"
+],
+"properties": {
+"module": {
+"type": "string"
+},
+"version": {
+"type": "string"
+},
+"created_utc": {
+"type": "string",
+"format": "date-time"
+},
+"params": {
+"type": "object",
+"required": [
+"eps_deg",
+"cap_quantile",
+"B_lo",
+"B_hi",
+"zone_labels"
+],
+"properties": {
+"eps_deg": {
+"type": "number",
+"minimum": 0.0,
+"maximum": 180.0
+},
+"cap_quantile": {
+"type": "number",
+"minimum": 0.5,
+"maximum": 1.0
+},
+"B_lo": {
+"type": "number",
+"minimum": 0.0,
+"maximum": 1.0
+},
+"B_hi": {
+"type": "number",
+"minimum": 0.0,
+"maximum": 1.0
+},
+"zone_labels": {
+"type": "array",
+"items": {
+"type": "string"
+},
+"minItems": 3,
+"maxItems": 3
+}
+}
+},
+"mapping": {
+"type": "object",
+"required": [
+"F_res",
+"eps_unit",
+"cap_rule",
+"B_rule",
+"S_rule",
+"zone_rule"
+],
+"properties": {
+"F_res": {
+"type": "string"
+},
+"eps_unit": {
+"type": "string",
+"enum": [
+}

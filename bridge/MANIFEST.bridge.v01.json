@@ -1,0 +1,43 @@
+{
+"name": "TSM↔GR Bridge Pack",
+"version": "v0.1",
+"created_utc": "2025-09-14T00:00:00Z",
+"files": [
+{
+"path": "bridge/README.bridge.md",
+"sha256": "e09d2a3f49781d5d7b0ca181329d2c3037d082c9ad5424f0f56f284c1a0f9f1f",
+"bytes": 924
+},
+{
+"path": "bridge/tsm_bridge_defaults_v1.json",
+"sha256": "0d6dcd015207301da33d153786704e44f4515b259f3c12db7d5bd7db0c4b9898",
+"bytes": 874
+},
+{
+"path": "bridge/tsm_bridge_schema_v1.json",
+"sha256": "1f0d6f2c7946960baa09356a86cc1e4b1bd4597038509fbbd4e2d575c01b3117",
+"bytes": 2356
+},
+{
+"path": "bridge/tsm_gr_minimalformalismus_v0.1.md",
+"sha256": "f423ad0048f4eca9d16690f9c64ce48500fdf5c2b2fd80d8d814e1fbbe75be27",
+"bytes": 1653
+},
+{
+"path": "bridge/tsm_bridge_examples.csv",
+"sha256": "b4f248f5be6d03921c7fb672cc9dc68b2df0f38a8e7a01a3f5b9861828a9bee6",
+"bytes": 748
+},
+{
+"path": "bridge/tsm_bridge_compute.py",
+"sha256": "9fbc821a07aaf1f9d730dda889d67f61b3a5ccffd08dcc1c0d5dbe47fb6c9a2c",
+"bytes": 2990
+}
+],
+"recommended_repo_path": "bridge/",
+"usage_notes": [
+"Lege die Dateien 1:1 unter `bridge/` im GitHub‑Repo ab.",
+"Wenn Du eine Corpus‑Datei ersetzen willst: ersetze `TSM-136D_recommended v3.json` durch `tsm_bridge_defaults_v1.json`.",
+"Danach kann ich die Roh‑URLs direkt abrufen und validieren."
+]
+}
