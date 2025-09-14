@@ -1,0 +1,29 @@
+name: rgn-qc
+on: 
+  workflow_dispatch:
+  push:
+    paths:
+      - RGN_state_v0.2.csv
+      - RGN_manifest_v0.2.json
+      - .github/workflows/rgn_qc.yml
+      - rgn_qc_v0.1.py
+
+permissions: { contents: write }
+
+jobs:
+  qc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: python -m pip install --upgrade pip pandas numpy matplotlib
+      - name: Run QC
+        run: python rgn_qc_v0.1.py
+      - name: Commit QC outputs
+        run: |
+          git config user.name "rgn-bot"
+          git config user.email "rgn-bot@example.com"
+          git add RGN_qc_metrics_v0.1.json RGN_qc_report_v0.1.md RGN_qc_plots_v0.1/* || true
+          git diff --cached --quiet || git commit -m "RGN QC v0.1 (auto)"
+          git push
