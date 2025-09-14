@@ -1,7 +1,6 @@
 name: rgn-export
 on: workflow_dispatch
 permissions: { contents: write }
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,209 +13,119 @@ jobs:
     - name: Install deps
       run: python -m pip install --upgrade pip pandas numpy
 
-    - name: Write exporter (inline)
+    - name: Show heads (zur Kontrolle)
+      run: |
+        echo "---- zones ----"; head -n 2 TSM-136D_zonen_recommended.csv || true
+        echo "---- rest  ----"; head -n 2 TSM-136D_R_estimates.csv || true
+        echo "---- base  ----"; head -n 2 TSM-136D_zonen_baseline.csv || true
+
+    - name: Write robust exporter (inline)
       run: |
         cat > rgn_export_ci.py << 'PY'
-        #!/usr/bin/env python3
         import argparse, json, hashlib, os, sys, re
         from datetime import datetime, timezone
-        import pandas as pd
-        import numpy as np
-
-        def md5(path, chunk=8192):
-            m = hashlib.md5()
-            with open(path, 'rb') as f:
-                for blk in iter(lambda: f.read(chunk), b''):
-                    m.update(blk)
+        import pandas as pd, numpy as np
+        def md5(p,chunk=8192):
+            import hashlib; m=hashlib.md5()
+            with open(p,'rb') as f:
+                for b in iter(lambda:f.read(chunk),b''): m.update(b)
             return m.hexdigest()
-
         def read_csv_smart(path):
-            tried = []
             for enc in ("utf-8","utf-8-sig"):
                 for sep in (None,",",";","\t"):
                     try:
-                        df = pd.read_csv(path, encoding=enc, sep=sep)
-                        tried.append((enc, sep, df.shape))
-                        if df.shape[1] == 1:
-                            name0 = str(df.columns[0])
-                            sample = ",".join([name0] + [str(df.iloc[i,0]) for i in range(min(len(df), 3))])
-                            if any(d in sample for d in (";","\t",",")):
-                                continue
-                        return df, (enc, sep, "ok")
-                    except Exception as e:
-                        tried.append((enc, sep, f"err:{e}"))
-            with open(path, "r", encoding="utf-8", errors="ignore") as f:
-                first = f.readline()
-            sep = ";" if first.count(";") >= max(first.count(","), first.count("\t")) else ("," if first.count(",") >= first.count("\t") else "\t")
-            df = pd.read_csv(path, sep=sep, encoding="utf-8", engine="python")
-            return df, ("fallback", sep, "ok")
-
+                        df=pd.read_csv(path,encoding=enc,sep=sep)
+                        if df.shape[1]==1 and any(x in str(df.columns[0]) for x in (";","\t",",")): continue
+                        return df
+                    except: pass
+            return pd.read_csv(path,engine="python",sep=None)
         def norm(s): return re.sub(r'[^0-9a-z]+','',s.lower())
-
-        def find_col(df, keys, prefer_substr=None):
-            nmap = {norm(c): c for c in df.columns}
+        def find(df, keys):
+            nm={norm(c):c for c in df.columns}
             for k in keys:
-                if k in nmap: return nmap[k], k
-            for nc, orig in nmap.items():
-                if any(k in nc for k in keys):
-                    if prefer_substr and prefer_substr in nc: return orig, nc
-            for nc, orig in nmap.items():
-                if any(k in nc for k in keys): return orig, nc
-            return None, None
-
-        def detect_fields(zr, re_df):
-            K_keys = ["rcombonorm","rcombo","rnorm","r","rqeffraw","rcombined","rplv","r_plv","r_qeff_raw","r_combo_norm"]
-            phi_keys_deg = ["dphideg","delta_phideg","phideg","phasedeg"]
-            phi_keys_rad = ["dphi","delta_phi","d_phirad","phirad","phase","phi","d_phi"]
-            tau_keys = ["tau","taurgn","taucl","resonancetau","t_rgn"]
-
-            K_col, _   = find_col(re_df, K_keys)
-            phi_col, t = find_col(re_df, phi_keys_rad + phi_keys_deg)
-            tau_col, _ = find_col(re_df, tau_keys, prefer_substr="tau")
-
-            zone_col, _ = find_col(zr, ["zone","zonelabel"])
-            B_col, _    = find_col(zr, ["b","bind","bindung"])
-            S_col, _    = find_col(zr, ["s","split","spaltung"])
-
-            missing = []
-            if not K_col:   missing.append("K (e.g. R_combo_norm)")
-            if not phi_col: missing.append("varphi (e.g. dphi)")
-            if not tau_col: missing.append("tau (e.g. tau)")
-            if not zone_col: missing.append("zone")
-            if not B_col:    missing.append("B")
-            if not S_col:    missing.append("S")
-            return (K_col, phi_col, tau_col, zone_col, B_col, S_col, t, missing)
-
-        def main():
-            ap = argparse.ArgumentParser()
-            ap.add_argument("--zones", required=True)
-            ap.add_argument("--rest", required=True)
-            ap.add_argument("--baseline", required=False)
-            ap.add_argument("--outdir", default=".")
-            ap.add_argument("--mapping-json")
-            args = ap.parse_args()
-
-            zr, zr_info = read_csv_smart(args.zones)
-            re_df, re_info = read_csv_smart(args.rest)
-            zb = None
-            if args.baseline and os.path.exists(args.baseline):
-                try:
-                    zb, _ = read_csv_smart(args.baseline)
-                except Exception as e:
-                    print(f"[warn] baseline read failed: {e}", file=sys.stderr)
-
-            print("[info] zones:", zr_info, "shape=", zr.shape, "cols=", list(zr.columns))
-            print("[info] rest :", re_info, "shape=", re_df.shape, "cols=", list(re_df.columns))
-            if zb is not None: print("[info] base : shape=", zb.shape, "cols=", list(zb.columns))
-
-            jmap = {}
-            if args.mapping_json and os.path.exists(args.mapping_json):
-                try:
-                    with open(args.mapping_json,"r",encoding="utf-8") as f: jmap = json.load(f)
-                except Exception as e:
-                    print(f"[warn] mapping-json read failed: {e}", file=sys.stderr)
-
-            K_col, phi_col, tau_col, zone_col, B_col, S_col, phi_tag, missing = detect_fields(zr, re_df)
-            K_col    = jmap.get("k_col", K_col)
-            phi_col  = jmap.get("phi_col", phi_col)
-            tau_col  = jmap.get("tau_col", tau_col)
-            zone_col = jmap.get("zone_col", zone_col)
-            B_col    = jmap.get("b_col", B_col)
-            S_col    = jmap.get("s_col", S_col)
-
-            missing2 = []
-            if not K_col or K_col not in re_df.columns:      missing2.append(f"K (got '{K_col}')")
-            if not phi_col or phi_col not in re_df.columns:  missing2.append(f"varphi (got '{phi_col}')")
-            if not tau_col or tau_col not in re_df.columns:  missing2.append(f"tau (got '{tau_col}')")
-            if not zone_col or zone_col not in zr.columns:   missing2.append(f"zone (got '{zone_col}')")
-            if not B_col or B_col not in zr.columns:         missing2.append(f"B (got '{B_col}')")
-            if not S_col or S_col not in zr.columns:         missing2.append(f"S (got '{S_col}')")
-            if missing2:
-                print("::error:: Column detection failed.", file=sys.stderr)
-                print("  Missing/invalid:", *missing2, sep="\n  ", file=sys.stderr)
-                sys.exit(1)
-
-            n = min(len(zr), len(re_df))
-            zr = zr.iloc[:n].reset_index(drop=True)
-            re_df = re_df.iloc[:n].reset_index(drop=True)
-            df = pd.concat([zr, re_df], axis=1)
-
-            # map canonical
-            df['K'] = pd.to_numeric(df[K_col], errors='coerce')
-            if "deg" in (norm(phi_col)):
-                df['varphi'] = np.radians(pd.to_numeric(df[phi_col], errors='coerce'))
+                if k in nm: return nm[k]
+            for n,c in nm.items():
+                if any(k in n for k in keys): return c
+            return None
+        def detect(zr,re):
+            K =  find(re,["rcombonorm","r_combo_norm","rcombo","r","rplv","rqeffraw"])
+            PHI= find(re,["dphi","d_phi","delta_phi","phi","phase","phirad","phideg","phasedeg"])
+            TAU= find(re,["tau","taucl","taurgn"])
+            ZO = find(zr,["zone","zonelabel"])
+            B  = find(zr,["b","bind","bindung"])
+            S  = find(zr,["s","split","spaltung"])
+            return K,PHI,TAU,ZO,B,S
+        def run(zones,rest,base,outdir,over=None):
+            zr=read_csv_smart(zones); re=read_csv_smart(rest)
+            zb=None
+            if base and os.path.exists(base):
+                try: zb=read_csv_smart(base)
+                except: zb=None
+            if over:  # manual override
+                K,PHI,TAU,ZO,B,S = over
             else:
-                df['varphi'] = pd.to_numeric(df[phi_col], errors='coerce')
-            df['varphi_deg'] = np.degrees(df['varphi'])
-            df['tau_rgn'] = pd.to_numeric(df[tau_col], errors='coerce')
-            if B_col != "B": df.rename(columns={B_col:"B"}, inplace=True)
-            if S_col != "S": df.rename(columns={S_col:"S"}, inplace=True)
-            if zone_col != "zone": df.rename(columns={zone_col:"zone"}, inplace=True)
-            df['id'] = np.arange(len(df))
-
-            def avail(cols): return [c for c in cols if c in df.columns]
-            core = ['id','K','varphi','varphi_deg','tau_rgn','B','S','zone']
-            r_cols = avail(['R_Qeff_raw','R_PLV','R_combo_norm'])
-            optional = avail(['F_res','F_cap','C','C_cl','dphi_cl','tau_cl'])
-            out_cols = core + r_cols + optional
-
-            os.makedirs(args.outdir, exist_ok=True)
-            state_path = os.path.join(args.outdir, "RGN_state_v0.2.csv")
-            df[out_cols].to_csv(state_path, index=False)
-
-            inputs = [
-                {"filename": os.path.basename(args.zones), "md5": md5(args.zones), "rows": int(len(zr)), "cols": int(zr.shape[1])},
-                {"filename": os.path.basename(args.rest),  "md5": md5(args.rest),  "rows": int(len(re_df)), "cols": int(re_df.shape[1])},
+                K,PHI,TAU,ZO,B,S = detect(zr,re)
+            miss=[]
+            for name,val,src in [("K",K,"rest"),("varphi",PHI,"rest"),("tau",TAU,"rest"),
+                                 ("zone",ZO,"zones"),("B",B,"zones"),("S",S,"zones")]:
+                if val is None or val not in (re.columns if src=="rest" else zr.columns):
+                    miss.append(f"{name} (in {src})")
+            if miss:
+                print("::error::Column detection failed ->", ", ".join(miss)); return 2
+            n=min(len(zr),len(re)); zr=zr.iloc[:n].reset_index(drop=True); re=re.iloc[:n].reset_index(drop=True)
+            df=pd.concat([zr,re],axis=1)
+            df["K"]=pd.to_numeric(df[K],errors="coerce")
+            PHInorm=norm(PHI)
+            if "deg" in PHInorm: df["varphi"]=np.radians(pd.to_numeric(df[PHI],errors="coerce"))
+            else:                 df["varphi"]=pd.to_numeric(df[PHI],errors="coerce")
+            df["varphi_deg"]=np.degrees(df["varphi"])
+            df["tau_rgn"]=pd.to_numeric(df[TAU],errors="coerce")
+            if ZO!="zone": df.rename(columns={ZO:"zone"},inplace=True)
+            if B!="B":     df.rename(columns={B:"B"},inplace=True)
+            if S!="S":     df.rename(columns={S:"S"},inplace=True)
+            cols=['id','K','varphi','varphi_deg','tau_rgn','B','S','zone']; df["id"]=np.arange(len(df))
+            for c in ["R_Qeff_raw","R_PLV","R_combo_norm","F_res","F_cap","C","C_cl","dphi_cl","tau_cl"]:
+                if c in df.columns: cols.append(c)
+            os.makedirs(outdir,exist_ok=True)
+            df[cols].to_csv(os.path.join(outdir,"RGN_state_v0.2.csv"),index=False)
+            # manifest
+            man={"rgn_version":"0.2.3-ci",
+                 "generated_utc":datetime.now(timezone.utc).isoformat(),
+                 "inputs":[{"filename":os.path.basename(zones),"md5":md5(zones),"rows":int(len(zr)),"cols":int(zr.shape[1])},
+                           {"filename":os.path.basename(rest),"md5":md5(rest),"rows":int(len(re)),"cols":int(re.shape[1])}],
+                 "mapping":{"K":K,"varphi":PHI,"tau_rgn":TAU,"zone":"zone","B":"B","S":"S"}}
+            with open(os.path.join(outdir,"RGN_manifest_v0.2.json"),"w",encoding="utf-8") as f:
+                json.dump(man, f, indent=2)
+            # report
+            rep=["# RGN Report v0.2\n",
+                 f"Detected columns: K='{K}', varphi='{PHI}', tau='{TAU}', zone='zone', B='B', S='S'\n",
+                 "\n## Zone shares\n" + (df['zone'].value_counts(normalize=True).to_string() if 'zone' in df.columns else "") + "\n"]
+            with open(os.path.join(outdir,"RGN_report_v0.2.md"),"w",encoding="utf-8") as f: f.write("".join(rep))
+            return 0
+        if __name__=="__main__":
+            ap=argparse.ArgumentParser()
+            ap.add_argument("--zones",required=True); ap.add_argument("--rest",required=True)
+            ap.add_argument("--baseline"); ap.add_argument("--outdir",default=".")
+            args=ap.parse_args()
+            # auto try a few common mappings BEFORE falling back to auto-detect
+            trials=[
+              ("auto",None),
+              ("setA",("R_combo_norm","dphi","tau","zone","B","S")),
+              ("setB",("R_combo_norm","d_phi","tau","zone","B","S")),
+              ("setC",("R_combo_norm","phi","tau","zone","B","S")),
+              ("setD",("R_PLV","dphi","tau","zone","B","S")),
+              ("setE",("R_Qeff_raw","dphi","tau","zone","B","S")),
+              ("setF",("R_combo_norm","dphi","tau_cl","zone","Bindung","Spaltung")),
+              ("setG",("R_combo_norm","dphi_deg","tau","Zone","Bindung","Spaltung")),
             ]
-            agree = None; n_comp = None
-            if (args.baseline and os.path.exists(args.baseline) and
-                'zone' in (zb.columns if zb is not None else []) and 'zone' in zr.columns):
-                m = min(10000, len(zb), len(zr))
-                agree = float((zb['zone'].values[:m] == zr['zone'].values[:m]).mean())
-                n_comp = int(m)
-
-            corr_cols = [c for c in ['K','varphi','F_res','B','S'] if c in df.columns]
-            corr = df[corr_cols].corr().round(6).to_dict() if len(corr_cols) >= 2 else {}
-
-            manifest = {
-                "rgn_version": "0.2.3-ci",
-                "generated_utc": datetime.now(timezone.utc).isoformat(),
-                "inputs": inputs + ([{"filename": os.path.basename(args.baseline), "md5": md5(args.baseline), "rows": int(len(zb)), "cols": int(zb.shape[1])}] if zb is not None else []),
-                "output": {"filename": "RGN_state_v0.2.csv", "md5": md5(state_path), "rows": int(df.shape[0]), "cols": int(len(out_cols))},
-                "mapping": {"K": K_col, "varphi": phi_col, "tau_rgn": tau_col, "zone":"zone","B":"B","S":"S"},
-                "zone_shares": df['zone'].value_counts(normalize=True).to_dict() if 'zone' in df.columns else {},
-                "baseline_vs_recommended_match": {"n_compared": n_comp, "agreement": agree},
-                "correlations": corr
-            }
-            with open(os.path.join(args.outdir, "RGN_manifest_v0.2.json"), "w", encoding="utf-8") as f:
-                json.dump(manifest, f, indent=2)
-
-            rep = []
-            rep.append("# RGN Report v0.2 — Mapping TSM→ART (Data Readiness)\n")
-            rep.append(f"**Date (UTC):** {manifest['generated_utc']}\n")
-            rep.append(f"**Detected columns:** K='{K_col}', varphi='{phi_col}', tau='{tau_col}', zone='zone', B='B', S='S'\n")
-            if 'zone' in df.columns:
-                rep.append("\n## Zone shares\n" + df['zone'].value_counts(normalize=True).to_string() + "\n")
-            if 'zone' in df.columns and all(c in df.columns for c in ['K','varphi']):
-                perz = df.groupby('zone')[['K','varphi']].agg(['mean','std']).reset_index()
-                rep.append("\n## Per-zone (mean ± std): K, varphi\n" + perz.to_string(index=False) + "\n")
-            if corr:
-                rep.append("\n## Correlations (K,varphi,F_res,B,S)\n" + pd.DataFrame(corr).fillna(0).to_string() + "\n")
-            with open(os.path.join(args.outdir, "RGN_report_v0.2.md"), "w", encoding="utf-8") as f:
-                f.write("".join(rep))
-
-        if __name__ == "__main__":
-            main()
+            for name,over in trials:
+                code=run(args.zones,args.rest,args.baseline,args.outdir,over)
+                print(f"[trial {name}] exit={code}")
+                if code==0: sys.exit(0)
+            sys.exit(1)
         PY
-        python -m pip install --upgrade pip pandas numpy
 
-    - name: Preview CSV heads (for logs)
-      run: |
-        echo "---- zones ----"; head -n 5 TSM-136D_zonen_recommended.csv || true
-        echo "---- rest  ----"; head -n 5 TSM-136D_R_estimates.csv || true
-        echo "---- base  ----"; head -n 5 TSM-136D_zonen_baseline.csv || true
-
-    - name: Run exporter (CI script)
+    - name: Run exporter (auto-try mappings)
       run: python rgn_export_ci.py --zones TSM-136D_zonen_recommended.csv --rest TSM-136D_R_estimates.csv --baseline TSM-136D_zonen_baseline.csv --outdir .
 
     - name: Commit outputs
