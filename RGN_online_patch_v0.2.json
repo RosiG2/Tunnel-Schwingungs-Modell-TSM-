@@ -1,0 +1,28 @@
+{
+"manifest": {
+"art_bridge": {
+"rgn_state_csv": "RGN_state_v0.2.csv",
+"rgn_manifest_json": "RGN_manifest_v0.2.json",
+"rgn_report_md": "RGN_report_v0.2.md",
+"mapping": {"K":"R_combo_norm","varphi":"dphi","tau":"tau","zone":"zone","F_res":"F_res","B":"B","S":"S"}
+}
+},
+"pipelines": {
+"rgn_export": {
+"description": "Join recommended zones with R estimates to produce RGN_state",
+"inputs": ["TSM-136D_zonen_recommended.csv","TSM-136D_R_estimates.csv"],
+"outputs": ["RGN_state_v0.2.csv","RGN_manifest_v0.2.json","RGN_report_v0.2.md"],
+"steps": [
+"Join by row index (ensure equal length)",
+"Map columns to K,varphi,tau and persist",
+"Compute shares, agreement with baseline, correlations",
+"Emit manifest and report"
+]
+}
+},
+"aliases": {
+"RGN_STATE": "RGN_state_v0.2.csv",
+"RGN_MANIFEST": "RGN_manifest_v0.2.json",
+"RGN_REPORT": "RGN_report_v0.2.md"
+}
+}

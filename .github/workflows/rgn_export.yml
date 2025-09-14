@@ -1,0 +1,36 @@
+name: RGN Export v0.2
+
+
+on:
+workflow_dispatch:
+push:
+paths:
+- "TSM-136D_zonen_recommended.csv"
+- "TSM-136D_R_estimates.csv"
+- ".github/workflows/rgn_export.yml"
+- "rgn_export_v0.2.py"
+
+
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- name: Set up Python
+uses: actions/setup-python@v5
+with:
+python-version: "3.11"
+- name: Run exporter
+run: |
+python rgn_export_v0.2.py \
+--zones TSM-136D_zonen_recommended.csv \
+--rest TSM-136D_R_estimates.csv \
+--baseline TSM-136D_zonen_baseline.csv \
+--outdir .
+- name: Commit outputs
+run: |
+git config user.name "rgn-bot"
+git config user.email "rgn-bot@example.com"
+git add RGN_state_v0.2.csv RGN_manifest_v0.2.json RGN_report_v0.2.md
+git commit -m "RGN export v0.2 (auto)"
+git push

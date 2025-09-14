@@ -1,0 +1,14 @@
+{
+"rgn_version": "0.2",
+"generated_utc": "REPLACED_BY_ACTION",
+"inputs": [
+{"filename": "TSM-136D_zonen_recommended.csv", "md5": "d70858811b94f66caacf2904ffc7d7cf", "rows": 10004, "cols": 11},
+{"filename": "TSM-136D_R_estimates.csv", "md5": "ee8e08a7d82396a967539398c840d834", "rows": 10004, "cols": 3},
+{"filename": "TSM-136D_zonen_baseline.csv", "md5": "41f51c477e8c89678ff604df58298b8c", "rows": 10000, "cols": 13}
+],
+"output": {"filename": "RGN_state_v0.2.csv", "md5": "9b699686a1a88d94137093da7c563a1d", "rows": 10004, "cols": 17},
+"mapping": {"K": "R_combo_norm", "varphi": "dphi (radians)", "varphi_deg": "degrees(varphi)", "tau_rgn": "tau", "zone": "zone", "F_res": "F_res", "B": "B", "S": "S"},
+"zone_shares": {"regulativ": 0.5997600959616154, "kohärent": 0.19992003198720512, "fragmentiert": 0.19992003198720512},
+"baseline_vs_recommended_match": {"n_compared": 10000, "agreement": 0.9999},
+"correlations": {"K": {"K": 1.0, "varphi": -0.706057, "F_res": 0.873019, "B": 0.628162, "S": -0.628213}, "varphi": {"K": -0.706057, "varphi": 1.0, "F_res": -0.591263, "B": -0.780104, "S": 0.780095}, "F_res": {"K": 0.873019, "varphi": -0.591263, "F_res": 1.0, "B": 0.65326, "S": -0.653378}, "B": {"K": 0.628162, "varphi": -0.780104, "F_res": 0.65326, "B": 1.0, "S": -0.999999}, "S": {"K": -0.628213, "varphi": 0.780095, "F_res": -0.653378, "B": -0.999999, "S": 1.0}}
+}
