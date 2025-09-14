@@ -1,7 +1,7 @@
+# .github/workflows/rgn_export.yml
 name: rgn-export
 on: workflow_dispatch
-permissions:
-  contents: write
+permissions: {contents: write}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,6 +9,34 @@ jobs:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
       with: {python-version: '3.11'}
-    - run: python -m pip install --upgrade pip pandas numpy
-    - run: python rgn_export_v0.2.1.py --zones TSM-136D_zonen_recommended.csv --rest TSM-136D_R_estimates.csv --baseline TSM-136D_zonen_baseline.csv --outdir .
-    - run: git config user.name "rgn-bot" && git config user.email "rgn-bot@example.com" && git add RGN_state_v0.2.csv RGN_manifest_v0.2.json RGN_report_v0.2.md && (git diff --cached --quiet || git commit -m "RGN export v0.2 (auto)") && git push
+    - name: Show tree
+      run: |
+        pwd
+        ls -la
+        find . -maxdepth 2 -type f | sort
+    - name: Install deps
+      run: python -m pip install --upgrade pip pandas numpy
+    - name: Sanity check inputs
+      run: |
+        python - <<'PY'
+        import os,glob
+        for p in ["TSM-136D_zonen_recommended.csv","TSM-136D_R_estimates.csv","TSM-136D_zonen_baseline.csv"]:
+            print(p, "=>", os.path.exists(p))
+        for pat in ["**/*zonen*csv","**/*R_estimates*csv","**/*baseline*csv"]:
+            print(pat, "=>", glob.glob(pat, recursive=True)[:5])
+        PY
+    - name: Run exporter
+      run: |
+        python rgn_export_v0.2.1.py \
+          --zones TSM-136D_zonen_recommended.csv \
+          --rest  TSM-136D_R_estimates.csv \
+          --baseline TSM-136D_zonen_baseline.csv \
+          --outdir .
+    - name: Commit outputs
+      run: |
+        git config user.name "rgn-bot"
+        git config user.email "rgn-bot@example.com"
+        git add RGN_state_v0.2.csv RGN_manifest_v0.2.json RGN_report_v0.2.md
+        git diff --cached --quiet || git commit -m "RGN export v0.2 (auto)"
+        git push
+
