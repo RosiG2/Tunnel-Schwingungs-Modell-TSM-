@@ -18,6 +18,18 @@ jobs:
         with:
           python-version: "3.11"
 
+      # ✨ Sanitizer: NBSP -> Space, Tabs -> 4 Spaces
+      - name: Sanitize whitespace (compute)
+        run: |
+          python - <<'PY'
+          p = 'bridge/tsm_bridge_compute.py'
+          s = open(p, 'rb').read()
+          s = s.replace(b'\xc2\xa0', b' ')   # NBSP -> normal space
+          s = s.replace(b'\t', b'    ')      # Tabs -> 4 spaces
+          open(p, 'wb').write(s)
+          print("Sanitized:", p)
+          PY
+
       - name: Compute (mini)
         run: python bridge/tsm_bridge_compute.py --in bridge/tsm_gr_test_minidataset.csv --out /tmp/comp.csv --eps-deg 1.0 --cap-quantile 0.99 --B-lo 0.2 --B-hi 0.8
 
