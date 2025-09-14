@@ -1,4 +1,4 @@
-name: TSM Bridge CI (smoke)
+name: TSM Bridge CI
 
 on:
   push:
@@ -7,14 +7,113 @@ on:
     branches: ["main"]
 
 jobs:
-  smoke:
+  validate-bridge:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Python version
+
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Say hello
-        run: echo "YAML ok ✅"
+
+      - name: Compute (inline)
+        run: |
+          cat > /tmp/compute.py <<'PY'
+          #!/usr/bin/env python3
+          import argparse, csv, math
+          from bisect import bisect_right
+
+          ap = argparse.ArgumentParser()
+          ap.add_argument("--in", dest="inp", required=True)
+          ap.add_argument("--out", dest="out", required=True)
+          ap.add_argument("--eps-deg", type=float, default=1.0)
+          ap.add_argument("--cap-quantile", type=float, default=0.99)
+          ap.add_argument("--B-lo", type=float, default=0.2)
+          ap.add_argument("--B-hi", type=float, default=0.8)
+          a = ap.parse_args()
+
+          rows = list(csv.DictReader(open(a.inp, newline="")))
+          eps = a.eps_deg * math.pi / 180.0
+
+          fres = []
+          for r in rows:
+              C = float(r.get("C", 0) or 0)
+              d = float(r.get("dphi", 0) or 0)
+              t = float(r.get("tau", 0) or 0)
+              f = C / max(d, eps) * t
+              r["_F_res"] = f
+              fres.append(f)
+
+          xs = sorted(fres)
+          cap = xs[int(max(0, min(1, a.cap_quantile)) * (len(xs) - 1))]
+
+          fcap = [min(f, cap) for f in fres]
+          fs = sorted(fcap)
+          n = len(fs)
+
+          out = []
+          for r, fc in zip(rows, fcap):
+              B = bisect_right(fs, fc) / n
+              S = 1 - B
+              z = "fragmentiert" if B <= a.B_lo else ("regulativ" if B <= a.B_hi else "kohärent")
+              out.append({
+                  "C": f"{float(r.get('C', 0)):.6f}",
+                  "dphi": f"{float(r.get('dphi', 0)):.6f}",
+                  "tau": f"{float(r.get('tau', 0)):.6f}",
+                  "F_res": f"{r['_F_res']:.6f}",
+                  "F_cap": f"{fc:.6f}",
+                  "B": f"{B:.5f}",
+                  "S": f"{S:.5f}",
+                  "zone": z
+              })
+
+          w = csv.DictWriter(open(a.out, "w", newline=""), fieldnames=["C","dphi","tau","F_res","F_cap","B","S","zone"])
+          w.writeheader()
+          w.writerows(out)
+          PY
+          python /tmp/compute.py --in bridge/tsm_gr_test_minidataset.csv --out /tmp/comp.csv --eps-deg 1.0 --cap-quantile 0.99 --B-lo 0.2 --B-hi 0.8
+          echo "--- comp head ---" && head -n 6 /tmp/comp.csv || true
+
+      - name: Export (inline; matter & K)
+        run: |
+          cat > /tmp/exporter.py <<'PY'
+          #!/usr/bin/env python3
+          import argparse, csv
+
+          ap = argparse.ArgumentParser()
+          ap.add_argument("--in", dest="inp", required=True)
+          ap.add_argument("--out-prefix", required=True)
+          ap.add_argument("--rho0", type=float, default=1.0)
+          ap.add_argument("--w", type=float, default=0.0)
+          a = ap.parse_args()
+
+          rows = list(csv.DictReader(open(a.inp, newline="")))
+
+          k_rows = []
+          t_rows = []
+          for i, r in enumerate(rows):
+              B = float(r.get("B", 0) or 0)
+              S = float(r.get("S", 0) or 0)
+              K = B
+              rho = a.rho0 * K
+              p = a.w * rho
+              k_rows.append({"i": i, "B": f"{B:.6f}", "S": f"{S:.6f}", "K": f"{K:.6f}"})
+              t_rows.append({"i": i, "T00": f"{rho:.6f}", "T11": f"{p:.6f}", "T22": f"{p:.6f}", "T33": f"{p:.6f}"})
+
+          w1 = csv.DictWriter(open(a.out_prefix + "_K_field.csv", "w", newline=""), fieldnames=["i","B","S","K"])
+          w1.writeheader(); w1.writerows(k_rows)
+
+          w2 = csv.DictWriter(open(a.out_prefix + "_T_eff.csv", "w", newline=""), fieldnames=["i","T00","T11","T22","T33"])
+          w2.writeheader(); w2.writerows(t_rows)
+          PY
+          python /tmp/exporter.py --in /tmp/comp.csv --out-prefix /tmp/exp --rho0 1.0 --w 0.0
+          echo "--- K_field head ---" && head -n 6 /tmp/exp_K_field.csv || true
+          echo "--- T_eff head ---" && head -n 6 /tmp/exp_T_eff.csv || true
+
+      - name: Validation
+        run: python bridge/tsm_bridge_validation_v0.1.py --in /tmp/comp.csv --B-lo 0.2 --B-hi 0.8 --out /tmp/report.json --compare bridge/expected_computed_minidataset.csv
+
+      - name: Print report
+        run: cat /tmp/report.json
