@@ -1,22 +1,12 @@
 #!/usr/bin/env python3
-from typing import List
-
-
-def ecdf(values: List[float]):
-# Empirische Verteilungsfunktion (nicht-absteigend)
-xs = sorted(values)
-n = len(xs)
-def F(x: float) -> float:
-# Anteil <= x (binäre Suche)
-lo, hi = 0, n
-while lo < hi:
-mid = (lo + hi) // 2
-if xs[mid] <= x:
-lo = mid + 1
-else:
-hi = mid
-return lo / n
-return F
+"""
+TSM Bridge Compute v0.2 — robust, ohne verschachtelte Funktionen
+Berechnet F_res, F_cap, B, S, zone aus C,dphi,tau.
+"""
+import argparse
+import csv
+import math
+from bisect import bisect_right
 
 
 def main():
@@ -30,56 +20,47 @@ ap.add_argument("--B-hi", type=float, default=0.8)
 args = ap.parse_args()
 
 
-# Einlesen
-rows = []
+# Eingabe lesen
 with open(args.inp, newline="") as f:
 r = csv.DictReader(f)
-for row in r:
-rows.append(row)
+rows = [row for row in r]
 
 
 if not rows:
-# Leere Eingabe: trotzdem Header schreiben
 with open(args.out, "w", newline="") as f:
 w = csv.DictWriter(f, fieldnames=["C","dphi","tau","F_res","F_cap","B","S","zone"])
 w.writeheader()
 return
 
 
-# Basismengen
+# Grundgrößen
 eps_rad = args.eps_deg * math.pi / 180.0
 fres_list = []
 for row in rows:
-C = float(row.get("C") or row.get("C_cl") or row.get("C0") or 0.0)
-dphi = float(row.get("dphi") or row.get("Delta_phi") or 0.0)
-tau = float(row.get("tau") or row.get("tau_eff") or row.get("tau0") or 0.0)
+C = float(row.get("C", 0.0) or 0.0)
+dphi = float(row.get("dphi", 0.0) or 0.0)
+tau = float(row.get("tau", 0.0) or 0.0)
 fres = C / max(dphi, eps_rad) * tau
 row["_F_res"] = fres
 fres_list.append(fres)
 
 
-# Cap-Quantil bestimmen (robust, indexbasiert)
-q = max(0.5, min(1.0, args.cap_quantile))
+# Cap-Quantil
 xs = sorted(fres_list)
+q = max(0.5, min(1.0, args.cap_quantile))
 idx = int(q * (len(xs) - 1))
 cap = xs[idx]
 
 
-# F_cap und ECDF
-fcap_list = []
-for row in rows:
-fcap = min(row["_F_res"], cap)
-row["_F_cap"] = fcap
-fcap_list.append(fcap)
+# F_cap und B/S via Rang (ECDF)
+fcap_list = [min(fr, cap) for fr in fres_list]
+fcap_sorted = sorted(fcap_list)
 
 
-F = ecdf(fcap_list)
-
-
-# Ableiten von B,S,zone und Ausgabe schreiben
 out_rows = []
-for row in rows:
-B = F(row["_F_cap"])
+n = len(fcap_sorted)
+for row, fcap in zip(rows, fcap_list):
+B = bisect_right(fcap_sorted, fcap) / n
 S = 1.0 - B
 if B <= args.B_lo:
 zone = "fragmentiert"
@@ -88,21 +69,21 @@ zone = "regulativ"
 else:
 zone = "kohärent"
 out_rows.append({
-**{k: row.get(k, "") for k in row.keys() if k in ("C","dphi","tau")},
+"C": f"{float(row.get('C',0.0)):.6f}",
+"dphi": f"{float(row.get('dphi',0.0)):.6f}",
+"tau": f"{float(row.get('tau',0.0)):.6f}",
 "F_res": f"{row['_F_res']:.6f}",
-"F_cap": f"{row['_F_cap']:.6f}",
+"F_cap": f"{fcap:.6f}",
 "B": f"{B:.5f}",
 "S": f"{S:.5f}",
-"zone": zone,
+"zone": zone
 })
 
 
-fieldnames = ["C","dphi","tau","F_res","F_cap","B","S","zone"]
 with open(args.out, "w", newline="") as f:
-w = csv.DictWriter(f, fieldnames=fieldnames)
+w = csv.DictWriter(f, fieldnames=["C","dphi","tau","F_res","F_cap","B","S","zone"])
 w.writeheader()
-for row in out_rows:
-w.writerow(row)
+w.writerows(out_rows)
 
 
 if __name__ == "__main__":
