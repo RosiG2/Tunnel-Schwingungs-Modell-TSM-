@@ -1,0 +1,34 @@
+name: TSM Bridge Sensitivity
+
+
+on:
+push:
+branches: [ main ]
+pull_request:
+branches: [ main ]
+
+
+jobs:
+sensitivity:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- uses: actions/setup-python@v5
+with:
+python-version: '3.11'
+- name: Compute (mini)
+run: |
+python bridge/tsm_bridge_compute.py --in bridge/tsm_gr_test_minidataset.csv --out /tmp/comp.csv \
+--eps-deg 1.0 --cap-quantile 0.99 --B-lo 0.2 --B-hi 0.8
+- name: Sensitivity
+run: |
+python bridge/tsm_bridge_sensitivity_v0.1.py --in /tmp/comp.csv --out-json /tmp/sens.json --out-csv /tmp/sens.csv \
+--eps-deg 1.0 --d-eps 0.5 --cap-quantile 0.99 --d-cap 0.01 --B-lo 0.2 --B-hi 0.8 --d-B 0.05
+echo "--- Sensitivity JSON ---"
+cat /tmp/sens.json
+- name: Compare export
+run: |
+python bridge/tsm_metric_matter_compare_v0.1.py --in /tmp/comp.csv --out-prefix /tmp/cmp \
+--rho0 1.0 --w 0.0 --metric-a1 1.0 --K-mode B
+echo "--- Compare head ---"
+head -n 6 /tmp/cmp_compare.csv
