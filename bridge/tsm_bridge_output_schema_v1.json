@@ -1,0 +1,18 @@
+{
+"$id": "https://rosi-bridge.example/schema/tsm_bridge_output_schema_v1.json",
+"$schema": "https://json-schema.org/draft/2020-12/schema",
+"title": "Schema for computed.csv (TSM Bridge)",
+"type": "object",
+"required": ["C", "dphi", "tau", "F_res", "F_cap", "B", "S", "zone"],
+"properties": {
+"C": {"type": "number"},
+"dphi": {"type": "number"},
+"tau": {"type": "number"},
+"F_res": {"type": "number"},
+"F_cap": {"type": "number"},
+"B": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+"S": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+"zone": {"type": "string", "enum": ["fragmentiert","regulativ","kohärent"]}
+},
+"additionalProperties": true
+}
