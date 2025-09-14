@@ -1,107 +1,90 @@
 name: TSM Bridge Sensitivity
+xs=sorted(fres); cap=xs[int(max(0,min(1,cap_q))*(len(xs)-1))]
+fcap=[min(f,cap) for f in fres]; fs=sorted(fcap); n=len(fs)
+zones=[]
+for fc in fcap:
+B=bisect_right(fs, fc)/n
+z = "fragmentiert" if B<=Blo else ("regulativ" if B<=Bhi else "kohärent")
+zones.append(z)
+return zones
+def dist(zs):
+c=Counter(zs); n=len(zs) or 1
+return {k:{"count":c.get(k,0),"pct":c.get(k,0)/n} for k in ("fragmentiert","regulativ","kohärent")}
+eps_vals=[a.eps_deg-a.d_eps, a.eps_deg, a.eps_deg+a.d_eps]
+cap_vals=[max(0.5,a.cap_quantile-a.d_cap), a.cap_quantile, min(0.9999,a.cap_quantile+a.d_cap)]
+Blo_vals=[max(0.0,a.B_lo-a.d_B), a.B_lo, min(1.0,a.B_lo+a.d_B)]
+Bhi_vals=[max(0.0,a.B_hi-a.d_B), a.B_hi, min(1.0,a.B_hi+a.d_B)]
+rows_detail=[]; per_row_hits=[0]*len(rows); cases=0
+for e in eps_vals:
+for cq in cap_vals:
+for blo in Blo_vals:
+for bhi in Bhi_vals:
+if blo>bhi: continue
+zs=recompute(e,cq,blo,bhi); cases+=1
+match=[int(z1==z2) for z1,z2 in zip(zs,baseline)]
+for i,m in enumerate(match): per_row_hits[i]+=m
+d=dist(zs); mrate=sum(match)/(len(match) or 1)
+rows_detail.append({
+"eps_deg":e,"cap_quantile":cq,"B_lo":blo,"B_hi":bhi,
+"match_pct":round(mrate,6),
+"fragmentiert_pct":round(d["fragmentiert"]["pct"],6),
+"regulativ_pct":round(d["regulativ"]["pct"],6),
+"kohärent_pct":round(d["kohärent"]["pct"],6),
+"fragmentiert_count":d["fragmentiert"]["count"],
+"regulativ_count":d["regulativ"]["count"],
+"kohärent_count":d["kohärent"]["count"]
+})
+avg_row_stability=sum(per_row_hits)/(len(rows)*cases or 1)
+report={"input":a.inp,"tested_combinations":len(rows_detail),"average_row_stability":avg_row_stability}
+json.dump(report, open(a.out_json,"w"), indent=2, ensure_ascii=False)
+# CSV schreiben
+flds=["eps_deg","cap_quantile","B_lo","B_hi","match_pct","fragmentiert_pct","regulativ_pct","kohärent_pct","fragmentiert_count","regulativ_count","kohärent_count"]
+w=csv.DictWriter(open(a.out_csv,"w",newline=""), fieldnames=flds); w.writeheader(); w.writerows(rows_detail)
+PY
+python /tmp/sensitivity.py --in /tmp/comp.csv --out-json /tmp/sens.json --out-csv /tmp/sens.csv --eps-deg 1.0 --d-eps 0.5 --cap-quantile 0.99 --d-cap 0.01 --B-lo 0.2 --B-hi 0.8 --d-B 0.05
+echo "--- sens head ---" && head -n 20 /tmp/sens.csv || true
 
-on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
 
-jobs:
-  sensitivity:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+- name: Compare export (inline)
+run: |
+cat > /tmp/compare.py <<'PY'
+#!/usr/bin/env python3
+import argparse, csv
+ap = argparse.ArgumentParser()
+ap.add_argument("--in", dest="inp", required=True)
+ap.add_argument("--out-prefix", required=True)
+ap.add_argument("--rho0", type=float, default=1.0)
+ap.add_argument("--w", type=float, default=0.0)
+ap.add_argument("--metric-a1", type=float, default=1.0)
+a = ap.parse_args()
+rows = list(csv.DictReader(open(a.inp, newline="")))
+cmp_rows=[]; bins=[i/20 for i in range(21)]; hist={z:[0]*20 for z in ("fragmentiert","regulativ","kohärent")}
+for i,r in enumerate(rows):
+B=float(r.get("B",0) or 0); S=float(r.get("S",0) or 0); z=(r.get("zone") or "regulativ").strip()
+K=B; dg=a.metric_a1*K; rho=a.rho0*K; p=a.w*rho
+cmp_rows.append({"i":i,"B":f"{B:.6f}","S":f"{S:.6f}","K":f"{K:.6f}","delta_g_scalar":f"{dg:.6f}","T00":f"{rho:.6f}","T11":f"{p:.6f}","T22":f"{p:.6f}","T33":f"{p:.6f}"})
+k=min(0.999999,max(0.0,K)); idx=int(k*20); hist.setdefault(z,[0]*20)[idx]+=1
+w=csv.DictWriter(open(a.out_prefix+"_compare.csv","w",newline=""), fieldnames=["i","B","S","K","delta_g_scalar","T00","T11","T22","T33"])
+w.writeheader(); w.writerows(cmp_rows)
+hz=[]
+for z in ("fragmentiert","regulativ","kohärent"):
+for b in range(20):
+hz.append({"zone":z,"bin":b,"bin_lo":f"{bins[b]:.2f}","bin_hi":f"{bins[b+1]:.2f}","count":hist[z][b]})
+w2=csv.DictWriter(open(a.out_prefix+"_K_hist_by_zone.csv","w",newline=""), fieldnames=["zone","bin","bin_lo","bin_hi","count"])
+w2.writeheader(); w2.writerows(hz)
+PY
+python /tmp/compare.py --in /tmp/comp.csv --out-prefix /tmp/cmp --rho0 1.0 --w 0.0 --metric-a1 1.0
+echo "--- compare head ---" && head -n 6 /tmp/cmp_compare.csv || true
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
 
-      - name: Compute (inline)
-        run: |
-          cat > /tmp/compute.py <<'PY'
-          #!/usr/bin/env python3
-          import argparse, csv, math
-          from bisect import bisect_right
-
-          ap = argparse.ArgumentParser()
-          ap.add_argument("--in", dest="inp", required=True)
-          ap.add_argument("--out", dest="out", required=True)
-          ap.add_argument("--eps-deg", type=float, default=1.0)
-          ap.add_argument("--cap-quantile", type=float, default=0.99)
-          ap.add_argument("--B-lo", type=float, default=0.2)
-          ap.add_argument("--B-hi", type=float, default=0.8)
-          a = ap.parse_args()
-
-          rows = list(csv.DictReader(open(a.inp, newline="")))
-          eps = a.eps_deg * math.pi / 180.0
-
-          fres = []
-          for r in rows:
-              C = float(r.get("C", 0) or 0)
-              d = float(r.get("dphi", 0) or 0)
-              t = float(r.get("tau", 0) or 0)
-              f = C / max(d, eps) * t
-              r["_F_res"] = f
-              fres.append(f)
-
-          xs = sorted(fres)
-          cap = xs[int(max(0, min(1, a.cap_quantile)) * (len(xs) - 1))]
-
-          fcap = [min(f, cap) for f in fres]
-          fs = sorted(fcap)
-          n = len(fs)
-
-          out = []
-          for r, fc in zip(rows, fcap):
-              B = bisect_right(fs, fc) / n
-              S = 1 - B
-              z = "fragmentiert" if B <= a.B_lo else ("regulativ" if B <= a.B_hi else "kohärent")
-              out.append({
-                  "C": f"{float(r.get('C', 0)):.6f}",
-                  "dphi": f"{float(r.get('dphi', 0)):.6f}",
-                  "tau": f"{float(r.get('tau', 0)):.6f}",
-                  "F_res": f"{r['_F_res']:.6f}",
-                  "F_cap": f"{fc:.6f}",
-                  "B": f"{B:.5f}",
-                  "S": f"{S:.5f}",
-                  "zone": z
-              })
-
-          w = csv.DictWriter(open(a.out, "w", newline=""), fieldnames=["C","dphi","tau","F_res","F_cap","B","S","zone"])
-          w.writeheader()
-          w.writerows(out)
-          PY
-          python /tmp/compute.py --in bridge/tsm_gr_test_minidataset.csv --out /tmp/comp.csv --eps-deg 1.0 --cap-quantile 0.99 --B-lo 0.2 --B-hi 0.8
-
-      - name: Sanitize repo scripts (NBSP/Tabs)
-        run: |
-          python - <<'PY'
-          import sys
-          targets = [
-              'bridge/tsm_bridge_sensitivity_v0.1.py',
-              'bridge/tsm_metric_matter_compare_v0.1.py'
-          ]
-          for p in targets:
-              try:
-                  b = open(p, 'rb').read()
-                  b = b.replace(b'\xc2\xa0', b' ').replace(b'\t', b'    ')
-                  open(p, 'wb').write(b)
-                  print('Sanitized', p)
-              except Exception as e:
-                  print('Skip', p, e, file=sys.stderr)
-          PY
-
-      - name: Sensitivity
-        run: python bridge/tsm_bridge_sensitivity_v0.1.py --in /tmp/comp.csv --out-json /tmp/sens.json --out-csv /tmp/sens.csv --eps-deg 1.0 --d-eps 0.5 --cap-quantile 0.99 --d-cap 0.01 --B-lo 0.2 --B-hi 0.8 --d-B 0.05
-
-      - name: Compare export
-        run: python bridge/tsm_metric_matter_compare_v0.1.py --in /tmp/comp.csv --out-prefix /tmp/cmp --rho0 1.0 --w 0.0 --metric-a1 1.0 --K-mode B
-
-      - name: Show outputs
-        run: |
-          echo "--- Sensitivity JSON ---"
-          cat /tmp/sens.json
-          echo "--- Compare head ---"
-          head -n 6 /tmp/cmp_compare.csv
+- name: Upload artifacts (always)
+if: always()
+uses: actions/upload-artifact@v4
+with:
+name: tsm-sensitivity-artifacts
+path: |
+/tmp/comp.csv
+/tmp/sens.csv
+/tmp/sens.json
+/tmp/cmp_compare.csv
+/tmp/cmp_K_hist_by_zone.csv
