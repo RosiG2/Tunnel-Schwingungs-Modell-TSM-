@@ -15,33 +15,13 @@ jobs:
         find . -maxdepth 2 -type f | sort
     - name: Install deps
       run: python -m pip install --upgrade pip pandas numpy
-    - name: Locate CSVs
+    - name: Preview CSV heads
       run: |
-        python - <<'PY'
-        import glob, os, sys
-        def pick(pats):
-            for pat in pats:
-                m = sorted(glob.glob(pat, recursive=True))
-                if m: return m[0]
-            return ''
-        zones = pick(['**/TSM-136D_zonen_recommended.csv','**/*zonen*recommended*csv'])
-        rest  = pick(['**/TSM-136D_R_estimates.csv','**/*R_estimates*csv'])
-        base  = pick(['**/TSM-136D_zonen_baseline.csv','**/*zonen*baseline*csv'])
-        print('ZONES =', zones); print('REST =', rest); print('BASELINE =', base)
-        if not zones or not rest:
-            print('::error::Missing required CSVs (zones/rest).')
-            sys.exit(1)
-        with open(os.environ['GITHUB_ENV'],'a') as f:
-            f.write(f"ZONES={zones}\nREST={rest}\nBASELINE={base}\n")
-        PY
-    - name: Preview heads
-      run: |
-        echo "ZONES=$ZONES"; echo "REST=$REST"; echo "BASELINE=$BASELINE"
-        head -n 3 "$ZONES" || true
-        head -n 3 "$REST" || true
-        head -n 3 "$BASELINE" || true
+        echo "---- zones ----"; head -n 5 TSM-136D_zonen_recommended.csv || true
+        echo "---- rest  ----"; head -n 5 TSM-136D_R_estimates.csv || true
+        echo "---- base  ----"; head -n 5 TSM-136D_zonen_baseline.csv || true
     - name: Run exporter
-      run: python rgn_export_v0.2.1.py --zones "$ZONES" --rest "$REST" --baseline "$BASELINE" --outdir .
+      run: python rgn_export_v0.2.2.py --zones TSM-136D_zonen_recommended.csv --rest TSM-136D_R_estimates.csv --baseline TSM-136D_zonen_baseline.csv --outdir .
     - name: Commit outputs
       run: |
         git config user.name "rgn-bot"
