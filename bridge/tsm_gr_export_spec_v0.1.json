@@ -1,0 +1,34 @@
+{
+"module": "TSM-136D-Export",
+"version": "v0.1",
+"k_definition": {
+"mode": "B",
+"formula": "K = B",
+"blend": {
+"enabled": false,
+"lambda": 0.0,
+"formula": "K = (1-lambda)*B + lambda*(1-B)"
+}
+},
+"targets": {
+"matter": {
+"desc": "Einfacher Fluid-Stub als T_eff",
+"rho0": 1.0,
+"w": 0.0,
+"T00": "rho = rho0 * K",
+"Tii": "p = w * rho; T11=T22=T33=p"
+},
+"metric": {
+"desc": "Symbolischer Delta-Metrik-Stub",
+"a1": 1.0,
+"a2": 0.0,
+"a3": 0.0,
+"delta_g": "delta_g = a1*K"
+}
+},
+"io": {
+"input_required_columns": ["B", "S"],
+"optional_columns": ["varphi"],
+"outputs": ["*_K_field.csv", "*_T_eff.csv", "*_metric_stub.csv"]
+}
+}
