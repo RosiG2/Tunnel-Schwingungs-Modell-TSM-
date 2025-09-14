@@ -1,0 +1,42 @@
+[
+  {
+    "zone": NaN,
+    "b": 0.0,
+    "r": 0.5303997997276229,
+    "delta": 0.5303997997276229,
+    "rel_change": null,
+    "facet_touched": true,
+    "crossed_from_zero": true,
+    "crossed_to_zero": false
+  },
+  {
+    "zone": "fragmentiert",
+    "b": 0.3333333333333333,
+    "r": 0.1054692441183505,
+    "delta": -0.2278640892149828,
+    "rel_change": -0.6835922676449483,
+    "facet_touched": false,
+    "crossed_from_zero": false,
+    "crossed_to_zero": false
+  },
+  {
+    "zone": "kohärent",
+    "b": 0.3333333333333333,
+    "r": 0.1820654780770133,
+    "delta": -0.15126785525632,
+    "rel_change": -0.4538035657689602,
+    "facet_touched": false,
+    "crossed_from_zero": false,
+    "crossed_to_zero": false
+  },
+  {
+    "zone": "regulativ",
+    "b": 0.3333333333333333,
+    "r": 0.1820654780770133,
+    "delta": -0.15126785525632,
+    "rel_change": -0.4538035657689602,
+    "facet_touched": false,
+    "crossed_from_zero": false,
+    "crossed_to_zero": false
+  }
+]
