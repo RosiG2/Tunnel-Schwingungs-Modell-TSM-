@@ -1,11 +1,12 @@
+rm -f bridge/make_exec_summary_phase2_star.py
 cat > bridge/make_exec_summary_phase2_star.py <<'PY'
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Erzeugt eine kompakte Executive-Summary für Phase 2★:
+Executive-Summary für Phase 2★:
 - liest:  bridge/phase2_star_counts.md
           bridge/tsm_pg_rstar_vs_r.csv
-          bridge/wegbericht_b_to_r_star.md  (optional)
+          bridge/wegbericht_b_to_r_star.md (optional)
 - schreibt: bridge/README_exec_summary_phase2_star.md
 """
 from pathlib import Path
@@ -21,8 +22,8 @@ out_md     = BR / "README_exec_summary_phase2_star.md"
 b_lb = r_lb = b_ub = r_ub = lift_b = lift_r = None
 if counts_md.exists():
     txt = counts_md.read_text(encoding="utf-8")
-    m1 = re.search(r"b@LB=(\\d+),\\s*r★@LB=(\\d+),\\s*b@UB=(\\d+),\\s*r★@UB=(\\d+)", txt)
-    m2 = re.search(r"LIFT\\(b\\)=(\\d+),\\s*LIFT\\(r★\\)=(\\d+)", txt)
+    m1 = re.search(r"b@LB=(\d+),\s*r★@LB=(\d+),\s*b@UB=(\d+),\s*r★@UB=(\d+)", txt)
+    m2 = re.search(r"LIFT\(b\)=(\d+),\s*LIFT\(r★\)=(\d+)", txt)
     if m1: b_lb, r_lb, b_ub, r_ub = map(int, m1.groups())
     if m2: lift_b, lift_r = map(int, m2.groups())
 
@@ -32,63 +33,51 @@ if delta_csv.exists():
     with delta_csv.open("r", encoding="utf-8") as f:
         rdr = csv.DictReader(f)
         rows = list(rdr)
-        # numerisch casten
         for row in rows:
-            for k in ["r_projected","r_changes","delta_rstar_minus_r"]:
+            for k in ("r_projected","r_changes","delta_rstar_minus_r"):
                 try:
-                    row[k] = float(row.get(k, "nan") or "nan")
+                    row[k] = float(row.get(k) or "nan")
                 except Exception:
                     row[k] = float("nan")
-        # top5+ / top5-
         ups   = [r for r in rows if r["delta_rstar_minus_r"] >= 0]
         downs = [r for r in rows if r["delta_rstar_minus_r"] <  0]
         ups.sort(key=lambda r: r["delta_rstar_minus_r"], reverse=True)
         downs.sort(key=lambda r: r["delta_rstar_minus_r"])
-        top_up   = ups[:5]
-        top_down = downs[:5]
+        top_up, top_down = ups[:5], downs[:5]
 
 def fmt_delta(row):
-    z = row.get("zone","?")
-    d = row["delta_rstar_minus_r"]
-    ro = row["r_changes"]
-    rp = row["r_projected"]
-    return f"- {z}: r={ro:.6f} → r★={rp:.6f} | Δ={d:.6f}"
+    return f"- {row.get('zone','?')}: r={row['r_changes']:.6f} → r★={row['r_projected']:.6f} | Δ={row['delta_rstar_minus_r']:.6f}"
 
 # --- Wegbericht-Hinweis (optional)
-weg_hint = ""
-if weg_md.exists():
-    weg_hint = "- Wegbericht b→r★: `bridge/wegbericht_b_to_r_star.md`"
+weg_hint = "- Wegbericht b→r★: `bridge/wegbericht_b_to_r_star.md`" if weg_md.exists() else ""
 
 # --- Output schreiben
-lines = []
-lines.append("# Executive-Summary — Phase 2★ (b → r★)")
-lines.append("")
+lines = ["# Executive-Summary — Phase 2★ (b → r★)", ""]
+
 if None not in (b_lb, r_lb, b_ub, r_ub, lift_b, lift_r):
-    lines.append("## Facetten- & LIFT-Counts")
-    lines.append(f"- b@LB={b_lb}, r★@LB={r_lb}, b@UB={b_ub}, r★@UB={r_ub}")
-    lines.append(f"- LIFT(b)={lift_b}, LIFT(r★)={lift_r}")
-    lines.append("")
+    lines += [
+        "## Facetten- & LIFT-Counts",
+        f"- b@LB={b_lb}, r★@LB={r_lb}, b@UB={b_ub}, r★@UB={r_ub}",
+        f"- LIFT(b)={lift_b}, LIFT(r★)={lift_r}",
+        ""
+    ]
 else:
-    lines.append("_Hinweis: Counts nicht gefunden (phase2_star_counts.md fehlt?)._")
-    lines.append("")
+    lines += ["_Hinweis: Counts nicht gefunden (phase2_star_counts.md fehlt?)._", ""]
 
 lines.append("## r★ vs r — Top-Anhebungen")
 lines += [fmt_delta(r) for r in top_up] or ["- (keine Daten)"]
 lines.append("")
 lines.append("## r★ vs r — Top-Absenkungen")
 lines += [fmt_delta(r) for r in top_down] or ["- (keine Daten)"]
-lines.append("")
-lines.append("## Artefakte")
-lines.append("- Bindings r★: `bridge/tsm_pg_bindings_phase2_star.csv`")
-lines.append("- r★ vs r (voll): `bridge/tsm_pg_rstar_vs_r.csv`")
-lines.append("- Residuum r★: `bridge/phase2_star_residuum_scores.(csv|md)`")
+lines += [
+    "",
+    "## Artefakte",
+    "- Bindings r★: `bridge/tsm_pg_bindings_phase2_star.csv`",
+    "- r★ vs r (voll): `bridge/tsm_pg_rstar_vs_r.csv`",
+    "- Residuum r★: `bridge/phase2_star_residuum_scores.(csv|md)`"
+]
 if weg_hint: lines.append(weg_hint)
 
-out_md.write_text("\\n".join(lines), encoding="utf-8")
+out_md.write_text("\n".join(lines), encoding="utf-8")
 print("[ok] wrote:", out_md)
 PY
-
-python bridge/make_exec_summary_phase2_star.py
-git add bridge/README_exec_summary_phase2_star.md
-git commit -m "Phase 2★: Executive Summary (auto)"
-git push
