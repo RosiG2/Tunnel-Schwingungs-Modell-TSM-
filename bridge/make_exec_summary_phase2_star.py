@@ -1,6 +1,5 @@
-python - <<'PY'
-from pathlib import Path
-content = r'''#!/usr/bin/env python3
+# --- START FILE: bridge/make_exec_summary_phase2_star.py ---
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Executive-Summary für Phase 2★:
@@ -22,8 +21,8 @@ out_md     = BR / "README_exec_summary_phase2_star.md"
 b_lb = r_lb = b_ub = r_ub = lift_b = lift_r = None
 if counts_md.exists():
     txt = counts_md.read_text(encoding="utf-8")
-    m1 = re.search(r"b@LB=(\\d+),\\s*r★@LB=(\\d+),\\s*b@UB=(\\d+),\\s*r★@UB=(\\d+)", txt)
-    m2 = re.search(r"LIFT\\(b\\)=(\\d+),\\s*LIFT\\(r★\\)=(\\d+)", txt)
+    m1 = re.search(r"b@LB=(\d+),\s*r★@LB=(\d+),\s*b@UB=(\d+),\s*r★@UB=(\d+)", txt)
+    m2 = re.search(r"LIFT\(b\)=(\d+),\s*LIFT\(r★\)=(\d+)", txt)
     if m1: b_lb, r_lb, b_ub, r_ub = map(int, m1.groups())
     if m2: lift_b, lift_r = map(int, m2.groups())
 
@@ -33,6 +32,7 @@ if delta_csv.exists():
     with delta_csv.open("r", encoding="utf-8") as f:
         rdr = csv.DictReader(f)
         rows = list(rdr)
+        # numerisch casten
         for row in rows:
             for k in ("r_projected","r_changes","delta_rstar_minus_r"):
                 try:
@@ -78,9 +78,6 @@ lines += [
 ]
 if weg_hint: lines.append(weg_hint)
 
-out_md.write_text("\\n".join(lines), encoding="utf-8")
+out_md.write_text("\n".join(lines), encoding="utf-8")
 print("[ok] wrote:", out_md)
-'''
-Path('bridge/make_exec_summary_phase2_star.py').write_text(content, encoding='utf-8')
-print("[ok] wrote clean file bridge/make_exec_summary_phase2_star.py")
-PY
+# --- END FILE ---
