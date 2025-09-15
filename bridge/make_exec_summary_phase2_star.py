@@ -5,7 +5,7 @@ cat > bridge/make_exec_summary_phase2_star.py <<'PY'
 Erzeugt eine kompakte Executive-Summary für Phase 2★:
 - liest:  bridge/phase2_star_counts.md
           bridge/tsm_pg_rstar_vs_r.csv
-          bridge/wegbericht_b_to_r_star.md  (optional, wenn vorhanden)
+          bridge/wegbericht_b_to_r_star.md  (optional)
 - schreibt: bridge/README_exec_summary_phase2_star.md
 """
 from pathlib import Path
@@ -32,11 +32,14 @@ if delta_csv.exists():
     with delta_csv.open("r", encoding="utf-8") as f:
         rdr = csv.DictReader(f)
         rows = list(rdr)
-        # sicherstellen, dass Felder da sind
+        # numerisch casten
         for row in rows:
             for k in ["r_projected","r_changes","delta_rstar_minus_r"]:
-                row[k] = float(row.get(k, "nan") or "nan")
-        # sortiert war schon absteigend; wir bilden explizit top5±
+                try:
+                    row[k] = float(row.get(k, "nan") or "nan")
+                except Exception:
+                    row[k] = float("nan")
+        # top5+ / top5-
         ups   = [r for r in rows if r["delta_rstar_minus_r"] >= 0]
         downs = [r for r in rows if r["delta_rstar_minus_r"] <  0]
         ups.sort(key=lambda r: r["delta_rstar_minus_r"], reverse=True)
@@ -54,7 +57,6 @@ def fmt_delta(row):
 # --- Wegbericht-Hinweis (optional)
 weg_hint = ""
 if weg_md.exists():
-    # Nur als Verlinkungshinweis im Text nennen
     weg_hint = "- Wegbericht b→r★: `bridge/wegbericht_b_to_r_star.md`"
 
 # --- Output schreiben
@@ -71,12 +73,10 @@ else:
     lines.append("")
 
 lines.append("## r★ vs r — Top-Anhebungen")
-lines += [fmt_delta(r) for r in top_up]
-if not top_up: lines.append("- (keine Daten)")
+lines += [fmt_delta(r) for r in top_up] or ["- (keine Daten)"]
 lines.append("")
 lines.append("## r★ vs r — Top-Absenkungen")
-lines += [fmt_delta(r) for r in top_down]
-if not top_down: lines.append("- (keine Daten)")
+lines += [fmt_delta(r) for r in top_down] or ["- (keine Daten)"]
 lines.append("")
 lines.append("## Artefakte")
 lines.append("- Bindings r★: `bridge/tsm_pg_bindings_phase2_star.csv`")
@@ -87,4 +87,8 @@ if weg_hint: lines.append(weg_hint)
 out_md.write_text("\\n".join(lines), encoding="utf-8")
 print("[ok] wrote:", out_md)
 PY
-chmod +x bridge/make_exec_summary_phase2_star.py
+
+python bridge/make_exec_summary_phase2_star.py
+git add bridge/README_exec_summary_phase2_star.md
+git commit -m "Phase 2★: Executive Summary (auto)"
+git push
