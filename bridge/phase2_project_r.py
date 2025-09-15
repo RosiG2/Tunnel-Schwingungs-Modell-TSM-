@@ -11,7 +11,7 @@ Schreibt:
   - bridge/tsm_pg_r_projected.csv  (zone, r_original, r_projected)
   - bridge/tsm_pg_r_projected.md   (Kurzbericht)
 """
-import json, math, collections
+import json
 from pathlib import Path
 
 BR = Path(__file__).resolve().parents[1] / "bridge"
@@ -39,15 +39,16 @@ def load_problem():
     for L in d.get("constraints", {}).get("lifts", []):
         a, c = L.get("a"), L.get("c")
         scope, typ = L.get("scope"), L.get("type")
-        if a is None or c is None: continue
+        if a is None or c is None: 
+            continue
         # zone lb: a = [-1 at i], c = -m  ->  -x_i <= -m  ->  x_i >= m
         if typ == "lb" and scope == "zone" and L.get("zone") in names:
             i = names.index(L["zone"])
             m = -float(c)
-            if m > lb[i]: lb[i] = m
+            if m > lb[i]: 
+                lb[i] = m
         # group lb: a = [-1 on group], c = -m -> sum_group(x) >= m
         if typ == "lb" and scope == "group":
-            # beteiligte Zonen rekonstruieren
             zs = L.get("zones") or []
             if not zs:
                 # Fallback: aus a rekonstruieren
@@ -77,17 +78,15 @@ def project_simplex_with_bounds(x, lb, ub):
         if abs(total - 1.0) <= 1e-12:
             break
         if total > 1.0:
-            # Überschuss verteilen nach unten
             room = [x[i]-lb[i] for i in range(n)]
             S = sum(room)
-            if S <= TOL:  # nichts mehr abziehbar (sollte nicht passieren, wenn Bounds konsistent)
+            if S <= TOL:
                 break
             factor = (total - 1.0)/S
             for i in range(n):
                 dec = factor*room[i]
                 x[i] = clamp(x[i]-dec, lb[i], ub[i])
         else:
-            # Defizit nach oben verteilen
             room = [ub[i]-x[i] for i in range(n)]
             S = sum(room)
             if S <= TOL:
@@ -96,65 +95,32 @@ def project_simplex_with_bounds(x, lb, ub):
             for i in range(n):
                 inc = factor*room[i]
                 x[i] = clamp(x[i]+inc, lb[i], ub[i])
-    # Final clamp
     return [clamp(x[i], lb[i], ub[i]) for i in range(n)]
 
 def enforce_group_lb(x, idx, m, lb, ub):
     """
     Erzwinge sum(x[idx]) >= m, durch Massetransfer von außerhalb idx.
-    Greedy: nimm von Zonen mit Reserve (x_j > lb_j) außerhalb, verteile gleichmäßig in die Gruppe (bis UB).
+    Greedy + anschließende Simplex-Projektion auf Bounds.
     """
     s = sum(x[i] for i in idx)
     if s + 1e-12 >= m:
         return x
+    # einfache Strategie: minimal erhöhen, dann neu projizieren
     need = m - s
-    out_idx = [j for j in range(len(x)) if j not in idx]
-    # verfügbare Abgabemenge
-    give = sum(max(0.0, x[j]-lb[j]) for j in out_idx)
-    if give <= TOL:
-        return x  # keine Möglichkeit
-    take = min(need, give)
-
-    # Gleichmäßig in die Gruppe einfüllen (bis UB)
-    # Runde 1: Kopfzahl
-    while take > 1e-15:
-        receivers = [i for i in idx if x[i] < ub[i]-1e-15]
-        if not receivers:
-            break
-        per = take/len(receivers)
-        # aber nicht über UB
-        actual = 0.0
-        for i in receivers:
-            room = ub[i]-x[i]
-            add = min(per, room)
-            x[i] += add
-            actual += add
-        take -= actual
-        if actual <= 1e-15:
-            break
-
-    # Entnahme von außerhalb proportional zur verfügbaren Reserve
-    if need > 1e-15:
-        # Entnahmemenge entspricht dem, was tatsächlich in die Gruppe ging
-        need_eff = m - sum(x[i] for i in idx)
-        need_eff = max(0.0, need_eff)
-        remove = need - need_eff
-        # Falls remove < 0: wir haben mehr entnommen als gebraucht; gib’s zurück
-        # Für Einfachheit hier: erneute Simplex-Projektion korrigiert das
-    # Re-Projektion auf Bounds+Simplex
+    per = need / max(1, len(idx))
+    for i in idx:
+        x[i] = clamp(x[i] + per, lb[i], ub[i])
     x = project_simplex_with_bounds(x, lb, ub)
     return x
 
 def main():
     names, r, lb, ub, groups_lb = load_problem()
-    # Schritt 1: per-Zone Bounds erzwingen (inkl. min_share_per_zone & UB)
+    # Schritt 1: per-Zone Bounds erzwingen
     x = project_simplex_with_bounds(r, lb, ub)
-
-    # Schritt 2: Gruppen-LBs erzwingen (iterativ, falls mehrere)
+    # Schritt 2: Gruppen-LBs erzwingen
     for g, (idx, m) in groups_lb.items():
         x = enforce_group_lb(x, idx, m, lb, ub)
-
-    # Abschluss: saubere Simplex-Projektion (numerische Restfehler)
+    # Abschluss: saubere Projektion
     x = project_simplex_with_bounds(x, lb, ub)
 
     # Export
@@ -168,11 +134,11 @@ def main():
     md = [ "# Phase 2 – r → r* (Projektion)", "" ]
     md.append(f"- Zonen: **{len(names)}** | erzwinge per-Zone LB/UB + Gruppen-LBs; Simplex Σx=1.")
     if groups_lb:
-        md.append(f"- Gruppen-LBs: " + ", ".join([f\"{g}≥{m:.2f}\" for g,(_,m) in groups_lb.items()]))
+        md.append("- Gruppen-LBs: " + ", ".join([f"{g}≥{m:.2f}" for g, (_, m) in groups_lb.items()]))
     md.append("")
     md.append("## Top-Diffs |r*−r|")
     diffs = sorted([(abs(rp-ro), z, ro, rp) for z, ro, rp in zip(names, r, x)], reverse=True)[:12]
-    for d,z,ro,rp in diffs:
+    for d, z, ro, rp in diffs:
         md.append(f"- {z}: Δ|r*−r|={d:.6f} | r={ro:.6f} → r*={rp:.6f}")
     (BR/"tsm_pg_r_projected.md").write_text("\n".join(md), encoding="utf-8")
 
