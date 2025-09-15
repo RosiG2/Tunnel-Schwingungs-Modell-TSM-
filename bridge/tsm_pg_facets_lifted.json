@@ -122,7 +122,7 @@
           0.0,
           0.0
         ],
-        "c": 0.38333333333333336
+        "c": 0.35333333333300004
       },
       {
         "i": 1,
@@ -132,7 +132,7 @@
           0.0,
           0.0
         ],
-        "c": 0.38333333333333336
+        "c": 0.35333333333300004
       },
       {
         "i": 2,
@@ -142,7 +142,7 @@
           1.0,
           0.0
         ],
-        "c": 0.5803997997276229
+        "c": 0.550399799728
       },
       {
         "i": 3,
@@ -152,7 +152,7 @@
           0.0,
           1.0
         ],
-        "c": 0.38333333333333336
+        "c": 0.35333333333300004
       }
     ],
     "soft": {
@@ -191,14 +191,17 @@
         "url": "https://raw.githubusercontent.com/RosiG2/Tunnel-Schwingungs-Modell-TSM-/main/RGN_qc_metrics_v0.1.json",
         "lift_plan": "Enforce QC thresholds as bounds/tolerances (e.g., sum windows, min share per class, stability limits)."
       }
-    }
+    },
+    "lifts": []
   },
   "meta": {
     "version": "lifted-0.1",
-    "margin": 0.05,
+    "margin": 0.02,
     "notes": [
       "Phase‑0 lifted facets based on b/r only. RGN_* integration pending (URLs provided).",
-      "Upper bounds clamp each zone at max(b_i, r_i)+margin (<=1)."
+      "Upper bounds clamp each zone at max(b_i, r_i)+margin (<=1).",
+      "RGN-based lifts applied.",
+      "Phase 2: margin→0.02"
     ]
   }
 }
