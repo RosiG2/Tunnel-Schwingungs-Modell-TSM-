@@ -1,4 +1,6 @@
 {
+  "version": "1.25",
+  "timestamp": 1758129285,
   "names": [
     "fragmentiert",
     "kohärent",
@@ -12,54 +14,23 @@
     0.333333333333
   ],
   "r": [
-    0.105469244118,
-    0.182065478077,
-    0.530399799728,
-    0.182065478077
+    0.1054692441183505,
+    0.1820654780770133,
+    0.0,
+    0.1820654780770133
   ],
-  "base_facets": {
-    "A": [
-      [
-        -1.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      [
-        0.0,
-        -1.0,
-        0.0,
-        0.0
-      ],
-      [
-        0.0,
-        0.0,
-        -1.0,
-        0.0
-      ],
-      [
-        0.0,
-        0.0,
-        0.0,
-        -1.0
-      ]
-    ],
-    "b": [
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ],
-    "eq": {
-      "a": [
-        1.0,
-        1.0,
-        1.0,
-        1.0
-      ],
-      "c": 1.0
-    }
-  },
+  "r_star": [
+    0.1054692441,
+    0.1820654781,
+    0.0,
+    0.1820654781
+  ],
+  "r3": [
+    0.3,
+    0.3,
+    0.1,
+    0.3
+  ],
   "constraints": {
     "type": "H+eq",
     "positivity": [
@@ -522,6 +493,100 @@
       "Phase 3 applied: core_UB=0.60, tau=0.10",
       "Phase 5 applied: core_UB=0.60, tau=0.11, core=['kohärent', 'regulativ']",
       "Phase 5 applied: core_UB=0.60, tau=0.11, core=['kohärent', 'regulativ']"
+    ]
+  },
+  "symbolic_bridge": {
+    "version": "0.1",
+    "timestamp": 1758120727,
+    "zones": [
+      {
+        "id": "fragmentiert",
+        "aliases": [],
+        "pg_facet": "PG_F1",
+        "orientation": 1
+      },
+      {
+        "id": "kohärent",
+        "aliases": [],
+        "pg_facet": "PG_K1",
+        "orientation": 1
+      },
+      {
+        "id": "hyperresonant",
+        "aliases": [],
+        "pg_facet": "PG_H1",
+        "orientation": 1
+      },
+      {
+        "id": "regulativ",
+        "aliases": [],
+        "pg_facet": "PG_R1",
+        "orientation": -1
+      }
+    ],
+    "groups": [
+      {
+        "name": "core",
+        "members": [
+          "kohärent",
+          "regulativ"
+        ],
+        "lb": 0.45,
+        "ub": 0.6
+      }
+    ],
+    "caps": {
+      "per_zone_corridor_tau": 0.1,
+      "min_share_per_zone": 0.02,
+      "upper_bounds": [
+        {
+          "i": 0,
+          "a": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "c": 0.35333333333300004
+        },
+        {
+          "i": 1,
+          "a": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "c": 0.35333333333300004
+        },
+        {
+          "i": 2,
+          "a": [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "c": 0.550399799728
+        },
+        {
+          "i": 3,
+          "a": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "c": 0.35333333333300004
+        }
+      ]
+    },
+    "maps": {
+      "tsm_to_pg": []
+    },
+    "notes": [
+      "Startschema für die gemeinsame symbolische Sprache TSM ↔ Positive Geometry.",
+      "Fülle 'pg_facet' & 'orientation' je Zone, sobald die PG-Zuordnung steht."
     ]
   }
 }
