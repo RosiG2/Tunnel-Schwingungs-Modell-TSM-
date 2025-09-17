@@ -1,18 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Phase 5 – Facetten-Experimente (What-ifs):
-Testet Szenarien (tau, core_ub, core_members), projiziert r³ und misst:
-- median|r³−r★| (falls r★ vorhanden, sonst median|r³−b|)
-- median|r³−b|
-- r³@UB und r³@LB (Anzahl und %)
-- LIFT(b), LIFT(r³)
-- core_share = Summe r³ über Core-Mitglieder
-- l2_to_baseline = ||r³(szen) − r³(baseline)||₂
-Schreibt:
-- bridge/phase5_experiments_results.csv
-- bridge/phase5_experiments_summary.md
-- bridge/phase5_experiments_score.png
+Phase 5 – Facetten-Experimente (What-ifs)
 """
 from pathlib import Path
 import json, copy
@@ -27,14 +16,13 @@ RSTAR = BR / "tsm_pg_r_projected.csv"            # optional
 
 # -------- Szenarien definieren (gern anpassen) --------
 SCENARIOS = [
-    # id,         tau, core_ub,            core_members
-    ("baseline",  0.10, 0.60,               ["kohärent","regulativ"]),
-    ("tau-0.09",  0.09, 0.60,               ["kohärent","regulativ"]),
-    ("tau-0.11",  0.11, 0.60,               ["kohärent","regulativ"]),
-    ("core+F",    0.10, 0.60,               ["kohärent","regulativ","fragmentiert"]),
-    ("core-onlyK",0.10, 0.60,               ["kohärent"]),
-    ("coreUB-0.58",0.10, 0.58,              ["kohärent","regulativ"]),
-    ("coreUB-0.62",0.10, 0.62,              ["kohärent","regulativ"]),
+    ("baseline",   0.10, 0.60, ["kohärent","regulativ"]),
+    ("tau-0.09",   0.09, 0.60, ["kohärent","regulativ"]),
+    ("tau-0.11",   0.11, 0.60, ["kohärent","regulativ"]),
+    ("core+F",     0.10, 0.60, ["kohärent","regulativ","fragmentiert"]),
+    ("core-onlyK", 0.10, 0.60, ["kohärent"]),
+    ("coreUB-0.58",0.10, 0.58, ["kohärent","regulativ"]),
+    ("coreUB-0.62",0.10, 0.62, ["kohärent","regulativ"]),
 ]
 
 def clamp(x, lo, hi): return max(lo, min(hi, x))
@@ -133,11 +121,12 @@ def enforce_group(x, idx, bnd, lb, ub, is_lb=True):
 def project_r3(d):
     names = list(map(str, d["names"]))
     r = [float(v) for v in d["r"]]
-    names2, lb, ub, glb, gub = bounds_from_json(d)
+    # FIX: konsistente Variablennamen
+    names2, lb, ub, g_lb, g_ub = bounds_from_json(d)
     assert names2==names
     x = project_simplex(r, lb, ub)
-    for _,(idx,m) in glb.items(): x = enforce_group(x, idx, m, lb, ub, True)
-    for _,(idx,M) in gub.items(): x = enforce_group(x, idx, M, lb, ub, False)
+    for _,(idx,m) in g_lb.items(): x = enforce_group(x, idx, m, lb, ub, True)
+    for _,(idx,M) in g_ub.items(): x = enforce_group(x, idx, M, lb, ub, False)
     x = project_simplex(x, lb, ub)
     return names, np.array(r,float), np.array(x,float), np.array(lb,float), np.array(ub,float), g_lb, g_ub
 
