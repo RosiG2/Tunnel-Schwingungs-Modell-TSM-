@@ -151,22 +151,18 @@ def main():
         lines.append(f"- {z}: Δ|r³−r|={d:.6f} | r={ro:.6f} → r³={rp:.6f}")
     (BR/"tsm_pg_r_projected_p3.md").write_text("\n".join(lines), encoding="utf-8")
 
-    # 4) Wegbericht & Summary & Keypoints & Bundle refreshen (nutzt bereits vorhandene Mini-Skripte)
-    # Wegbericht
+    # 4) Wegbericht & Summary & Keypoints & Bundle refreshen
     import subprocess, sys
     def run_py(rel):
         cmd=[sys.executable, str(BR/rel)]
         subprocess.check_call(cmd, cwd=str(BR.parents[1]))
 
     run_py("make_wegbericht_phase3_star_min.py")
-    # Summary
     run_py("make_phase3_summary.py")
-    # Keypoints
     run_py("make_phase3_keypoints.py")
 
     # Online-Bundle v1.22
-    OUT = BR/"tsm-online-bundle_v1.22.json"
-    import pandas as pd, time
+    import time  # <-- NUR time importieren, pandas kommt von oben (pd)
     d = json.loads(J.read_text(encoding="utf-8"))  # frisch aktualisiert
     names = list(map(str, d["names"]))
     b_vec = list(map(float, d["b"]))
@@ -186,7 +182,7 @@ def main():
         "constraints": d.get("constraints",{}),
         "meta": d.get("meta",{})
     }
-    OUT.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding="utf-8")
+    (BR/"tsm-online-bundle_v1.22.json").write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"[ok] applied best caps τ={tau:.2f}, core_UB={cub:.2f}")
     print("[ok] refreshed: r³, Wegbericht, Summary, Keypoints, Bundle v1.22")
