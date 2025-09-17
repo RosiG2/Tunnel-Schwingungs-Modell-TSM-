@@ -67,3 +67,9 @@ lines.append("")
 
 (BR/"KEYPOINTS_phase3.md").write_text("\n".join(lines), encoding="utf-8")
 print("[ok] wrote:", BR/"KEYPOINTS_phase3.md")
+PY
+
+python bridge/make_phase3_keypoints.py
+git add bridge/KEYPOINTS_phase3.md
+git commit -m "Phase 3★: Keypoints (auto)"
+git push
