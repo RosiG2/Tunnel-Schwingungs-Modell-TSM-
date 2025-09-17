@@ -2,7 +2,7 @@
   "names": [
     "fragmentiert",
     "kohärent",
-    "nan",
+    "hyperresonant",
     "regulativ"
   ],
   "b": [
@@ -285,7 +285,7 @@
       {
         "type": "lb",
         "scope": "zone",
-        "zone": "nan",
+        "zone": "hyperresonant",
         "a": [
           0.0,
           0.0,
@@ -296,13 +296,13 @@
         "meta": {
           "phase": "3",
           "key": "p3_zone_lb_2",
-          "note": "nan: x >= 0.0000 (b-τ)"
+          "note": "hyperresonant: x >= 0.0000 (b-τ)"
         }
       },
       {
         "type": "ub",
         "scope": "zone",
-        "zone": "nan",
+        "zone": "hyperresonant",
         "a": [
           0.0,
           0.0,
@@ -313,7 +313,7 @@
         "meta": {
           "phase": "3",
           "key": "p3_zone_ub_2",
-          "note": "nan: x <= 0.1000 (b+τ)"
+          "note": "hyperresonant: x <= 0.1000 (b+τ)"
         }
       },
       {
@@ -361,6 +361,7 @@
       "RGN-based lifts applied.",
       "Phase 2: margin→0.02",
       "Phase 3: core_ub=0.6, delta_tau=0.1",
+      "Phase 3 applied: core_UB=0.60, tau=0.10",
       "Phase 3 applied: core_UB=0.60, tau=0.10"
     ]
   }

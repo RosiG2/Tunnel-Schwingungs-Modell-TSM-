@@ -1,0 +1,94 @@
+{
+  "version": "0.1",
+  "timestamp": 1758120727,
+  "zones": [
+    {
+      "id": "fragmentiert",
+      "aliases": [],
+      "pg_facet": null,
+      "orientation": null
+    },
+    {
+      "id": "kohärent",
+      "aliases": [],
+      "pg_facet": null,
+      "orientation": null
+    },
+    {
+      "id": "hyperresonant",
+      "aliases": [],
+      "pg_facet": null,
+      "orientation": null
+    },
+    {
+      "id": "regulativ",
+      "aliases": [],
+      "pg_facet": null,
+      "orientation": null
+    }
+  ],
+  "groups": [
+    {
+      "name": "core",
+      "members": [
+        "kohärent",
+        "regulativ"
+      ],
+      "lb": 0.45,
+      "ub": 0.6
+    }
+  ],
+  "caps": {
+    "per_zone_corridor_tau": 0.1,
+    "min_share_per_zone": 0.02,
+    "upper_bounds": [
+      {
+        "i": 0,
+        "a": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.35333333333300004
+      },
+      {
+        "i": 1,
+        "a": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.35333333333300004
+      },
+      {
+        "i": 2,
+        "a": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "c": 0.550399799728
+      },
+      {
+        "i": 3,
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "c": 0.35333333333300004
+      }
+    ]
+  },
+  "maps": {
+    "tsm_to_pg": []
+  },
+  "notes": [
+    "Startschema für die gemeinsame symbolische Sprache TSM ↔ Positive Geometry.",
+    "Fülle 'pg_facet' & 'orientation' je Zone, sobald die PG-Zuordnung steht."
+  ]
+}
