@@ -11,8 +11,8 @@
     {
       "id": "kohärent",
       "aliases": [],
-      "pg_facet": null,
-      "orientation": null
+      "pg_facet": "PG_K1",
+      "orientation": 1
     },
     {
       "id": "hyperresonant",
@@ -23,8 +23,8 @@
     {
       "id": "regulativ",
       "aliases": [],
-      "pg_facet": null,
-      "orientation": null
+      "pg_facet": "PG_R1",
+      "orientation": -1
     }
   ],
   "groups": [
