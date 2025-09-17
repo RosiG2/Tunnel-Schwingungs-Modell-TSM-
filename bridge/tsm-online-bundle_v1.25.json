@@ -1,6 +1,6 @@
 {
   "version": "1.25",
-  "timestamp": 1758129263,
+  "timestamp": 1758129285,
   "names": [
     "fragmentiert",
     "kohärent",
@@ -491,6 +491,7 @@
       "Phase 3: core_ub=0.6, delta_tau=0.1",
       "Phase 3 applied: core_UB=0.60, tau=0.10",
       "Phase 3 applied: core_UB=0.60, tau=0.10",
+      "Phase 5 applied: core_UB=0.60, tau=0.11, core=['kohärent', 'regulativ']",
       "Phase 5 applied: core_UB=0.60, tau=0.11, core=['kohärent', 'regulativ']"
     ]
   },
