@@ -192,7 +192,165 @@
         "lift_plan": "Enforce QC thresholds as bounds/tolerances (e.g., sum windows, min share per class, stability limits)."
       }
     },
-    "lifts": []
+    "lifts": [
+      {
+        "type": "ub",
+        "scope": "group",
+        "group": "core",
+        "zones": [
+          "kohärent",
+          "regulativ"
+        ],
+        "a": [
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "c": 0.6,
+        "meta": {
+          "phase": "3",
+          "key": "p3_group_core_ub",
+          "note": "core ≤ 0.60"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "fragmentiert",
+        "a": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": -0.23333333333300002,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_lb_0",
+          "note": "fragmentiert: x >= 0.2333 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "fragmentiert",
+        "a": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.43333333333300006,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_ub_0",
+          "note": "fragmentiert: x <= 0.4333 (b+τ)"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "kohärent",
+        "a": [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "c": -0.23333333333300002,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_lb_1",
+          "note": "kohärent: x >= 0.2333 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "kohärent",
+        "a": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.43333333333300006,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_ub_1",
+          "note": "kohärent: x <= 0.4333 (b+τ)"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "nan",
+        "a": [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "c": -0.0,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_lb_2",
+          "note": "nan: x >= 0.0000 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "nan",
+        "a": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "c": 0.1,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_ub_2",
+          "note": "nan: x <= 0.1000 (b+τ)"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "regulativ",
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "c": -0.23333333333300002,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_lb_3",
+          "note": "regulativ: x >= 0.2333 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "regulativ",
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "c": 0.43333333333300006,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_ub_3",
+          "note": "regulativ: x <= 0.4333 (b+τ)"
+        }
+      }
+    ]
   },
   "meta": {
     "version": "lifted-0.1",
@@ -201,7 +359,8 @@
       "Phase‑0 lifted facets based on b/r only. RGN_* integration pending (URLs provided).",
       "Upper bounds clamp each zone at max(b_i, r_i)+margin (<=1).",
       "RGN-based lifts applied.",
-      "Phase 2: margin→0.02"
+      "Phase 2: margin→0.02",
+      "Phase 3: core_ub=0.6, delta_tau=0.1"
     ]
   }
 }
