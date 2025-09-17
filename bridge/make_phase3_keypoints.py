@@ -51,11 +51,11 @@ counts_txt = counts_p.read_text(encoding="utf-8") if counts_p.exists() else ""
 vs_rS = load_csv(vs_rS_p)
 vs_b  = load_csv(vs_b_p)
 
-# Counts parsen (r³ ist wirklich die Hoch-3-Zahl)
+# Counts parsen
 m1 = re.search(r"b@LB=(\d+),\s*r³@LB=(\d+),\s*b@UB=(\d+),\s*r³@UB=(\d+)", counts_txt)
 m2 = re.search(r"LIFT\(b\)=(\d+),\s*LIFT\(r³\)=(\d+)", counts_txt)
 b_lb = r_lb = b_ub = r_ub = lift_b = lift_r3 = None
- if m1:
+if m1:
     b_lb, r_lb, b_ub, r_ub = map(int, m1.groups())
 if m2:
     lift_b, lift_r3 = map(int, m2.groups())
