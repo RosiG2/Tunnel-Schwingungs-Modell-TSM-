@@ -1,5 +1,5 @@
-# Phase 3 – r → r³ (Projektion, BEST aus Sweep)
-- gewählt: τ=0.10, core_UB=0.60
+# Phase 5 — Apply Scenario
+- gewählt: scenario=tau-0.11 | τ=0.11, core_UB=0.60, core=['kohärent', 'regulativ']
 
 ## Top-Diffs |r³−r|
 - hyperresonant: Δ|r³−r|=0.430400 | r=0.530400 → r³=0.100000
