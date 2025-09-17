@@ -1,0 +1,443 @@
+{
+  "version": "1.21",
+  "timestamp": 1758117445,
+  "names": [
+    "fragmentiert",
+    "kohärent",
+    "nan",
+    "regulativ"
+  ],
+  "b": [
+    0.333333333333,
+    0.333333333333,
+    0.0,
+    0.333333333333
+  ],
+  "r": [
+    0.1054692441183505,
+    0.1820654780770133,
+    0.5303997997276229,
+    0.1820654780770133
+  ],
+  "r_star": [
+    0.1054692441,
+    0.1820654781,
+    0.5303997997,
+    0.1820654781
+  ],
+  "r3": [
+    0.3156410256,
+    0.3021794872,
+    0.08,
+    0.3021794872
+  ],
+  "constraints": {
+    "type": "H+eq",
+    "positivity": [
+      {
+        "i": 0,
+        "a": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.0
+      },
+      {
+        "i": 1,
+        "a": [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.0
+      },
+      {
+        "i": 2,
+        "a": [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "c": 0.0
+      },
+      {
+        "i": 3,
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "c": 0.0
+      }
+    ],
+    "simplex_eq": {
+      "a": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "c": 1.0
+    },
+    "upper_bounds": [
+      {
+        "i": 0,
+        "a": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.35333333333300004
+      },
+      {
+        "i": 1,
+        "a": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.35333333333300004
+      },
+      {
+        "i": 2,
+        "a": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "c": 0.550399799728
+      },
+      {
+        "i": 3,
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "c": 0.35333333333300004
+      }
+    ],
+    "soft": {
+      "monotone_segment": [
+        {
+          "zone": "fragmentiert",
+          "b": 0.33333333333333337,
+          "r": 0.10546924411835058
+        },
+        {
+          "zone": "kohärent",
+          "b": 0.33333333333333337,
+          "r": 0.1820654780770133
+        },
+        {
+          "zone": "nan",
+          "b": 0.0,
+          "r": 0.5303997997276229
+        },
+        {
+          "zone": "regulativ",
+          "b": 0.33333333333333337,
+          "r": 0.1820654780770133
+        }
+      ],
+      "notes": "Soft: encourages staying near the straight segment from b to r."
+    },
+    "placeholders": {
+      "RGN_state_v0.2.csv": {
+        "status": "pending",
+        "url": "https://raw.githubusercontent.com/RosiG2/Tunnel-Schwingungs-Modell-TSM-/main/RGN_state_v0.2.csv",
+        "lift_plan": "Translate categorical/state rules into linear inequalities Cx <= d (e.g., group caps, required minima)."
+      },
+      "RGN_qc_metrics_v0.1.json": {
+        "status": "pending",
+        "url": "https://raw.githubusercontent.com/RosiG2/Tunnel-Schwingungs-Modell-TSM-/main/RGN_qc_metrics_v0.1.json",
+        "lift_plan": "Enforce QC thresholds as bounds/tolerances (e.g., sum windows, min share per class, stability limits)."
+      }
+    },
+    "lifts": [
+      {
+        "type": "ub",
+        "scope": "group",
+        "group": "core",
+        "zones": [
+          "kohärent",
+          "regulativ"
+        ],
+        "a": [
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "c": 0.58,
+        "meta": {
+          "phase": "3",
+          "key": "p3_group_core_ub",
+          "note": "core ≤ 0.58"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "fragmentiert",
+        "a": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": -0.253333333333,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_lb_0",
+          "note": "fragmentiert: x >= 0.2533 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "fragmentiert",
+        "a": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.41333333333300004,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_ub_0",
+          "note": "fragmentiert: x <= 0.4133 (b+τ)"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "kohärent",
+        "a": [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "c": -0.253333333333,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_lb_1",
+          "note": "kohärent: x >= 0.2533 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "kohärent",
+        "a": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.41333333333300004,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_ub_1",
+          "note": "kohärent: x <= 0.4133 (b+τ)"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "nan",
+        "a": [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "c": -0.0,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_lb_2",
+          "note": "nan: x >= 0.0000 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "nan",
+        "a": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "c": 0.08,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_ub_2",
+          "note": "nan: x <= 0.0800 (b+τ)"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "regulativ",
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "c": -0.253333333333,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_lb_3",
+          "note": "regulativ: x >= 0.2533 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "regulativ",
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "c": 0.41333333333300004,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_ub_3",
+          "note": "regulativ: x <= 0.4133 (b+τ)"
+        }
+      }
+    ]
+  },
+  "meta": {
+    "source": "TSM <-> Positive Geometry (Phase 3★)",
+    "notes": [
+      "Phase‑0 lifted facets based on b/r only. RGN_* integration pending (URLs provided).",
+      "Upper bounds clamp each zone at max(b_i, r_i)+margin (<=1).",
+      "RGN-based lifts applied.",
+      "Phase 2: margin→0.02",
+      "Phase 3: core_ub=0.6, delta_tau=0.1"
+    ],
+    "margin": 0.02
+  },
+  "tops": {
+    "r3_vs_rstar_up": [
+      {
+        "zone": "fragmentiert",
+        "r_star": 0.1054692441,
+        "r3": 0.3156410256,
+        "delta_r3_minus_rstar": 0.2101717815
+      },
+      {
+        "zone": "kohärent",
+        "r_star": 0.1820654781,
+        "r3": 0.3021794872,
+        "delta_r3_minus_rstar": 0.1201140090999999
+      },
+      {
+        "zone": "regulativ",
+        "r_star": 0.1820654781,
+        "r3": 0.3021794872,
+        "delta_r3_minus_rstar": 0.1201140090999999
+      },
+      {
+        "zone": "nan",
+        "r_star": 0.5303997997,
+        "r3": 0.08,
+        "delta_r3_minus_rstar": -0.4503997996999999
+      }
+    ],
+    "r3_vs_rstar_down": [
+      {
+        "zone": "nan",
+        "r_star": 0.5303997997,
+        "r3": 0.08,
+        "delta_r3_minus_rstar": -0.4503997996999999
+      },
+      {
+        "zone": "kohärent",
+        "r_star": 0.1820654781,
+        "r3": 0.3021794872,
+        "delta_r3_minus_rstar": 0.1201140090999999
+      },
+      {
+        "zone": "regulativ",
+        "r_star": 0.1820654781,
+        "r3": 0.3021794872,
+        "delta_r3_minus_rstar": 0.1201140090999999
+      },
+      {
+        "zone": "fragmentiert",
+        "r_star": 0.1054692441,
+        "r3": 0.3156410256,
+        "delta_r3_minus_rstar": 0.2101717815
+      }
+    ],
+    "r3_vs_b_up": [
+      {
+        "zone": "nan",
+        "b": 0.0,
+        "r3": 0.08,
+        "delta_r3_minus_b": 0.08
+      },
+      {
+        "zone": "fragmentiert",
+        "b": 0.3333333333333333,
+        "r3": 0.3156410256,
+        "delta_r3_minus_b": -0.0176923077333333
+      },
+      {
+        "zone": "kohärent",
+        "b": 0.3333333333333333,
+        "r3": 0.3021794872,
+        "delta_r3_minus_b": -0.0311538461333333
+      },
+      {
+        "zone": "regulativ",
+        "b": 0.3333333333333333,
+        "r3": 0.3021794872,
+        "delta_r3_minus_b": -0.0311538461333333
+      }
+    ],
+    "r3_vs_b_down": [
+      {
+        "zone": "regulativ",
+        "b": 0.3333333333333333,
+        "r3": 0.3021794872,
+        "delta_r3_minus_b": -0.0311538461333333
+      },
+      {
+        "zone": "kohärent",
+        "b": 0.3333333333333333,
+        "r3": 0.3021794872,
+        "delta_r3_minus_b": -0.0311538461333333
+      },
+      {
+        "zone": "fragmentiert",
+        "b": 0.3333333333333333,
+        "r3": 0.3156410256,
+        "delta_r3_minus_b": -0.0176923077333333
+      },
+      {
+        "zone": "nan",
+        "b": 0.0,
+        "r3": 0.08,
+        "delta_r3_minus_b": 0.08
+      }
+    ]
+  }
+}
