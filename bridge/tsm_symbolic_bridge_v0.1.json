@@ -5,8 +5,8 @@
     {
       "id": "fragmentiert",
       "aliases": [],
-      "pg_facet": null,
-      "orientation": null
+      "pg_facet": "PG_F1",
+      "orientation": 1
     },
     {
       "id": "kohärent",
@@ -17,8 +17,8 @@
     {
       "id": "hyperresonant",
       "aliases": [],
-      "pg_facet": null,
-      "orientation": null
+      "pg_facet": "PG_H1",
+      "orientation": 1
     },
     {
       "id": "regulativ",
