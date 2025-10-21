@@ -1,0 +1,812 @@
+{
+  "schema": "tsm.online.bundle",
+  "version": "v1.21",
+  "generated_utc": "2025-09-11T00:00:00Z",
+  "manifest": {
+    "sources": [
+      {
+        "key": "kp_now",
+        "name": "NOAA Planetary K-index (observed, 3h)",
+        "url": "https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json",
+        "unit": "Kp",
+        "resolution": "3h",
+        "provenance": "NOAA SWPC /products",
+        "license": "US Gov data (public domain)"
+      },
+      {
+        "key": "dst_rt",
+        "name": "Kyoto Dst (real-time; SWPC mirror)",
+        "url": "https://services.swpc.noaa.gov/products/geomag-dst.json",
+        "unit": "nT",
+        "resolution": "1h",
+        "provenance": "SWPC mirror of Kyoto WDC Dst realtime",
+        "license": "US Gov data (public domain)"
+      },
+      {
+        "key": "sw_plasma_5m",
+        "name": "DSCOVR/ACE Solar Wind Plasma (5 min)",
+        "url": "https://services.swpc.noaa.gov/products/solar-wind/plasma-5-minute.json",
+        "resolution": "5m",
+        "provenance": "NOAA SWPC /products/solar-wind",
+        "fields": [
+          "time_tag",
+          "density",
+          "speed",
+          "temperature"
+        ]
+      },
+      {
+        "key": "sw_mag_5m",
+        "name": "DSCOVR/ACE Interplanetary Magnetic Field (5 min)",
+        "url": "https://services.swpc.noaa.gov/products/solar-wind/mag-5-minute.json",
+        "resolution": "5m",
+        "provenance": "NOAA SWPC /products/solar-wind",
+        "fields": [
+          "time_tag",
+          "bx",
+          "by",
+          "bz",
+          "bt"
+        ]
+      },
+      {
+        "key": "goes_xray_6h",
+        "name": "GOES/XRS X-ray Flux (6h)",
+        "url": "https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json",
+        "resolution": "1m",
+        "provenance": "NOAA SWPC /json/goes",
+        "band": "0.1-0.8nm"
+      },
+      {
+        "key": "gwosc_o4_events",
+        "name": "GWOSC – O4 catalog events (public)",
+        "url": "https://www.gw-openscience.org/eventapi/json/",
+        "provenance": "GWOSC Event API",
+        "note": "Public catalog of confirmed events"
+      },
+      {
+        "key": "gracedb_public_superevents",
+        "name": "GraceDB – Public Superevents",
+        "url": "https://gracedb.ligo.org/api/superevents/",
+        "provenance": "LIGO/GraceDB public API",
+        "note": "JSON list of public superevents"
+      },
+      {
+        "key": "ae_realtime_daily",
+        "name": "AE index (realtime daily)",
+        "url": "https://www.swpc.noaa.gov/sites/default/files/ftpdir/lists/ae/ae_5m.txt",
+        "provenance": "NOAA SWPC",
+        "resolution": "5m"
+      },
+      {
+        "key": "f107_daily",
+        "name": "F10.7 cm Solar Radio Flux (daily)",
+        "url": "https://services.swpc.noaa.gov/json/f107_cm_flux.json",
+        "provenance": "NOAA SWPC",
+        "resolution": "1d"
+      },
+      {
+        "key": "pm25_sensors_comm",
+        "name": "PM2.5 – Sensor.Community (JSON API)",
+        "url": "https://data.sensor.community/airrohr/v1/filter/",
+        "provenance": "Sensor.Community",
+        "note": "City/box queries via query params"
+      },
+      {
+        "key": "openmeteo_air_quality",
+        "name": "Open-Meteo – Air Quality (CAMS)",
+        "url": "https://air-quality-api.open-meteo.com/v1/air-quality",
+        "provenance": "Open-Meteo/CAMS",
+        "note": "Forecast & reanalysis"
+      },
+      {
+        "key": "openmeteo_weather",
+        "name": "Open-Meteo – Weather",
+        "url": "https://api.open-meteo.com/v1/forecast",
+        "provenance": "Open-Meteo"
+      },
+      {
+        "key": "meteoalarm_edr",
+        "name": "Meteoalarm – EDR",
+        "url": "https://api.meteoalarm.org/EDR/cap/en/",
+        "provenance": "Meteoalarm",
+        "note": "CAP alerts"
+      },
+      {
+        "key": "sunrise_sunset_json",
+        "name": "Sunrise/Sunset (JSON)",
+        "url": "https://api.sunrise-sunset.org/json",
+        "provenance": "sunrise-sunset.org"
+      },
+      {
+        "key": "dst_realtime_hourly",
+        "name": "Dst realtime (hourly)",
+        "url": "https://services.swpc.noaa.gov/products/geomag-dst.json",
+        "unit": "nT",
+        "resolution": "1h",
+        "provenance": "Kyoto WDC via SWPC mirror",
+        "license": "US Gov data (public domain)",
+        "note": "Legacy v14 key; see aliases for v17 key"
+      },
+      {
+        "key": "ligo_o4_plan",
+        "name": "LIGO/Virgo/KAGRA: O4 Observing Run Plan",
+        "type": "html",
+        "url": "https://www.ligo.org/science/ObservingPlans.php",
+        "provenance": "LIGO/Virgo/KAGRA"
+      },
+      {
+        "key": "nif_ignition_2025",
+        "name": "LLNL: Achieving Fusion Ignition (record log)",
+        "type": "html",
+        "url": "https://www.llnl.gov/news/topics/national-ignition-facility",
+        "provenance": "LLNL"
+      },
+      {
+        "key": "euclid_a2390_sl_wl",
+        "name": "Euclid ERO A2390: Combined SL+WL",
+        "type": "html",
+        "url": "https://www.cosmos.esa.int/web/euclid/early-release-objects",
+        "provenance": "ESA/Euclid"
+      },
+      {
+        "key": "euclid_a2390_wl",
+        "name": "Euclid ERO A2390: WL analysis",
+        "type": "html",
+        "url": "https://arxiv.org/abs/2408.XXXXX",
+        "provenance": "arXiv (example placeholder if present in v14)"
+      },
+      {
+        "key": "frb20250316a_ads",
+        "name": "FRB 20250316A (ADS/press mix)",
+        "type": "html",
+        "url": "https://ui.adsabs.harvard.edu/",
+        "provenance": "ADS aggregator"
+      },
+      {
+        "key": "bgs_geomag_alerts",
+        "name": "BGS Geomagnetic Storm Forecasts and Alerts",
+        "type": "html",
+        "url": "https://www.geomag.bgs.ac.uk/forecasts/alerts.html",
+        "provenance": "BGS"
+      },
+      {
+        "key": "w7x_eurofusion_2025",
+        "name": "EUROfusion: W7-X triple product long-pulse record (22 May 2025)",
+        "type": "html",
+        "url": "https://www.euro-fusion.org/news/2025/w7x-record/",
+        "provenance": "EUROfusion"
+      },
+      {
+        "key": "w7x_ipp_news_2025",
+        "name": "IPP: New performance records Wendelstein 7-X (3 Jun 2025)",
+        "type": "html",
+        "url": "https://www.ipp.mpg.de/xxxx",
+        "provenance": "IPP"
+      },
+      {
+        "key": "east_1066s_cas",
+        "name": "CAS Hefei: EAST H-mode 1066 s (Jan 20, 2025)",
+        "type": "html",
+        "url": "https://english.ipp.cas.cn/xxxx",
+        "provenance": "CAS Hefei"
+      },
+      {
+        "key": "east_1066s_journal",
+        "name": "EAST 1066 s H-mode journal reference",
+        "type": "html",
+        "url": "https://iopscience.iop.org/xxxx",
+        "provenance": "Journal ref"
+      },
+      {
+        "key": "longi_34_85_press",
+        "name": "LONGi: 34.85% Si-Perovskite tandem (NREL certified)",
+        "type": "html",
+        "url": "https://www.longi.com/en/news/34-85-tandem/",
+        "provenance": "LONGi"
+      },
+      {
+        "key": "pv_mag_longi_34_85",
+        "name": "PV-Magazine coverage LONGi 34.85%",
+        "type": "html",
+        "url": "https://www.pv-magazine.com/xxxx",
+        "provenance": "PV-Magazine"
+      },
+      {
+        "key": "ai_act_gpai_2025",
+        "name": "EU AI Act – GPAI summary (Aug 2025)",
+        "type": "html",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/eu-artificial-intelligence-act",
+        "provenance": "EU Commission"
+      },
+      {
+        "key": "mit_frb_2025_08_21",
+        "name": "MIT: exceptionally bright FRB (press)",
+        "type": "html",
+        "url": "https://news.mit.edu/2025/xxxx",
+        "provenance": "MIT News"
+      },
+      {
+        "key": "scinews_frb_brightest",
+        "name": "ScienceNews: brightest FRB",
+        "type": "html",
+        "url": "https://www.sciencenews.org/article/xxxx",
+        "provenance": "ScienceNews"
+      },
+      {
+        "key": "ucsc_frb_rbf",
+        "name": "UCSC FRB resources",
+        "type": "html",
+        "url": "https://frb.soe.ucsc.edu/",
+        "provenance": "UCSC"
+      },
+      {
+        "key": "lvk_gwtc_4_0",
+        "name": "LVK GWTC-4.0 (catalog page)",
+        "type": "html",
+        "url": "https://gwosc.org/eventapi/html/",
+        "provenance": "GWOSC"
+      }
+    ],
+    "optional_sources": [
+      {
+        "key": "lenstool_a2390",
+        "name": "A2390 LENSTOOL package (images catalog/model)",
+        "url": null,
+        "note": "Optional: falls ein öffentliches TAR/ZIP verfügbar ist. Wenn nicht vorhanden, bleibt die zugehörige Pipeline ohne Output."
+      }
+    ]
+  },
+  "pipelines": [
+    {
+      "id": "storm_now_v1",
+      "inputs": [
+        "kp_now",
+        "dst_realtime_hourly",
+        "goes_xray_6h"
+      ],
+      "outputs": [
+        "storm_level_G",
+        "flags"
+      ],
+      "logic": {
+        "kp_to_G_scale": [
+          {
+            "if": "Kp>=9",
+            "G": 5
+          },
+          {
+            "if": "Kp>=8",
+            "G": 4
+          },
+          {
+            "if": "Kp>=7",
+            "G": 3
+          },
+          {
+            "if": "Kp>=6",
+            "G": 2
+          },
+          {
+            "if": "Kp>=5",
+            "G": 1
+          },
+          {
+            "else": 0
+          }
+        ],
+        "dst_flag": {
+          "strong": "Dst<=-100",
+          "moderate": "Dst<=-50"
+        },
+        "xray_flag": {
+          "M_class": "flux_0.1_0.8nm>=1e-5",
+          "X_class": "flux_0.1_0.8nm>=1e-4"
+        }
+      },
+      "notes": "NOAA G-Skala via Kp; Dst als Bestätigung; GOES X-ray zur Flare-Lage."
+    },
+    {
+      "id": "gw_o4_status_v1",
+      "inputs": [
+        "gwosc_o4_events",
+        "gracedb_public_superevents"
+      ],
+      "outputs": [
+        "o4_public_events",
+        "o4_superevents"
+      ],
+      "notes": "Öffentliche O4 Ereignisse + Superevents zusammengeführt."
+    },
+    {
+      "id": "cluster_lensing_v1",
+      "inputs": [
+        "euclid_a2390_sl_wl",
+        "euclid_a2390_wl"
+      ],
+      "outputs": [
+        "a2390_summary"
+      ],
+      "notes": "Euclid A2390 SL/WL – high-level Zusammenfassung"
+    },
+    {
+      "id": "frb_watch_v1",
+      "inputs": [
+        "frb20250316a_ads",
+        "mit_frb_2025_08_21",
+        "scinews_frb_brightest",
+        "ucsc_frb_rbf"
+      ],
+      "outputs": [
+        "frb_watch_digest"
+      ],
+      "notes": "FRB-Nachweise & Presseschau (Legacy)"
+    },
+    {
+      "id": "pv_tandem_records_v1",
+      "inputs": [
+        "longi_34_85_press",
+        "pv_mag_longi_34_85"
+      ],
+      "outputs": [
+        "pv_tandem_digest"
+      ],
+      "notes": "PV Tandem-Rekorde (Legacy)"
+    },
+    {
+      "name": "space-weather-basics",
+      "steps": [
+        "kp_now",
+        "dst_rt",
+        "sw_plasma_5m",
+        "sw_mag_5m",
+        "goes_xray_6h"
+      ]
+    },
+    {
+      "name": "space-weather+gw-basics",
+      "steps": [
+        "kp_now",
+        "dst_rt",
+        "sw_plasma_5m",
+        "sw_mag_5m",
+        "goes_xray_6h",
+        "gwosc_o4_events",
+        "gracedb_public_superevents"
+      ]
+    },
+    {
+      "name": "env+meteo-basics",
+      "steps": [
+        "pm25_sensors_comm",
+        "openmeteo_air_quality",
+        "openmeteo_weather",
+        "meteoalarm_edr",
+        "sunrise_sunset_json"
+      ]
+    },
+    {
+      "name": "all-basics",
+      "steps": [
+        "kp_now",
+        "dst_rt",
+        "sw_plasma_5m",
+        "sw_mag_5m",
+        "goes_xray_6h",
+        "gwosc_o4_events",
+        "gracedb_public_superevents",
+        "pm25_sensors_comm",
+        "openmeteo_air_quality",
+        "openmeteo_weather",
+        "meteoalarm_edr",
+        "sunrise_sunset_json"
+      ]
+    }
+  ],
+  "seeds": {
+    "current": [],
+    "legacy": {
+      "urf_events": [
+        {
+          "title": "UFR-2025-05-01-01",
+          "desc": "Example placeholder from v14"
+        },
+        {
+          "title": "UFR-2025-05-03-02",
+          "desc": "Example placeholder from v14"
+        }
+      ],
+      "cluster_lensing": [
+        {
+          "a2390": "seed:wl+sl"
+        }
+      ],
+      "jwst_clumps": [
+        {
+          "id": "jwst-ero-clump-01"
+        }
+      ],
+      "pv_tandem_records": [
+        {
+          "longi": "34.85%"
+        }
+      ]
+    }
+  },
+  "templates": [
+    {
+      "id": "space-weather-card",
+      "fields": [
+        "Kp",
+        "Dst",
+        "Bz",
+        "XRS"
+      ],
+      "note": "v17 template"
+    },
+    {
+      "id": "env-aq-card",
+      "fields": [
+        "PM2.5",
+        "AQI"
+      ],
+      "note": "v17 template"
+    },
+    {
+      "id": "gw-digest",
+      "fields": [
+        "GWOSC events",
+        "Superevents"
+      ],
+      "note": "v17 template"
+    }
+  ],
+  "checklists": [
+    {
+      "id": "sw-nowcast",
+      "steps": [
+        "fetch kp",
+        "fetch dst",
+        "check bz",
+        "flag flares"
+      ]
+    },
+    {
+      "id": "env-now",
+      "steps": [
+        "pm25 city",
+        "cams nowcast",
+        "meteoalert region"
+      ]
+    },
+    {
+      "id": "gw-now",
+      "steps": [
+        "gracedb list",
+        "gwosc list"
+      ]
+    },
+    {
+      "id": "physikanschluss_lab_resonators_v1",
+      "title": "Labor-Protokoll: Gekoppelte Resonatoren (TSM-Physikanschluss)",
+      "purpose": "Artefakte und τ-Fenster im Labor nachweisen",
+      "steps": [
+        "Aufbau: zwei schwach gekoppelte Resonatoren (C≈0.03–0.05)",
+        "Sweep Δφ von 0.05 bis 0.50 in 0.01-Schritten; τ_eff konstant halten",
+        "Messgrößen: F_res, Δφ, τ, B/S; sampling ≥ 10 Hz",
+        "Artefakt-Check: Resonanznase, Phasenplateaus, B/S-Schere",
+        "Gate-Scan: τ_windows laut tau_gates; Trefferlog in CSV"
+      ],
+      "outputs": [
+        "csv:resonator_scan.csv",
+        "png:fres_vs_dphi.png",
+        "md:lab_notes.md"
+      ]
+    },
+    {
+      "id": "physikanschluss_cosmo_gravonly_v1",
+      "title": "Kosmologie-Checkliste (grav-only)",
+      "purpose": "Brückenprüfungen ohne neue Konstanten",
+      "items": [
+        "Vergleich: τ-Fenster vs. Stabilitätsinseln in N-Körper-Proxy",
+        "FRB/GRB-Timestamps – τ-Clustering ohne zusätzliche Parameter",
+        "GW-O4 Ereignisse – Suchmuster auf Δφ-Stufen (qualitativ)"
+      ],
+      "evidence": "nur qualitativ/indiziell; keine Konstantenableitung"
+    },
+    {
+      "id": "anti-atlas-check",
+      "title": "Anti-Seiten-Atlas (A1–A4) – Gate & Outcome",
+      "purpose": "Ensure gate_ok and outcome audit for Anti-operations.",
+      "steps": [
+        "Declare anti_typ hypothesis and movement vector (e.g., A4→A3→A1)",
+        "Verify gates: |Δφ| ≤ 0.10 rad & PLV_τ ≥ 0.60",
+        "Log Q_eff, PLV, R_combo; compute anti_score",
+        "Apply intervention; record outcome_pre/outcome_post (same metrics)",
+        "Attach artifacts (svg, csv) and reviewer signature"
+      ],
+      "outputs": [
+        "csv:anti_protocol.csv",
+        "svg:anti_quadrants.svg"
+      ]
+    }
+  ],
+  "protocols": [
+    {
+      "id": "tsm-basics-protocol",
+      "uses": [
+        "space-weather-basics",
+        "env+meteo-basics"
+      ]
+    },
+    {
+      "id": "tsm-gw-protocol",
+      "uses": [
+        "space-weather+gw-basics"
+      ]
+    },
+    {
+      "id": "tsm-all-protocol",
+      "uses": [
+        "all-basics"
+      ]
+    },
+    {
+      "id": "proto_resonator_scan_v1",
+      "uses": [
+        "physikanschluss_lab_resonators_v1"
+      ],
+      "inputs": [
+        "custom:resonator_stream"
+      ],
+      "logic": "Sweep dphi; compute F_res = C * cos(dphi) * f(tau); flag plateaus",
+      "notes": "Pseudocode – Implementierung domänenspezifisch"
+    },
+    {
+      "id": "tsm-146-anti-atlas-protocol",
+      "uses": [
+        "tsm-basics-protocol"
+      ],
+      "outputs": [
+        "csv:anti_protocol.csv",
+        "svg:anti_quadrants.svg"
+      ],
+      "notes": "Anti-Seiten-Atlas (A1–A4) – runs with Δφ/PLV_τ gates and produces protocol CSV + diagram."
+    }
+  ],
+  "aliases": [
+    {
+      "from": "Kyoto Dst (real-time; SWPC mirror)",
+      "to": "Dst realtime (hourly)"
+    },
+    {
+      "from": "DSCOVR/ACE Solar Wind Plasma",
+      "to": "DSCOVR/ACE Solar Wind Plasma (5 min)"
+    },
+    {
+      "from": "Dst realtime (hourly)",
+      "to": "Kyoto Dst (real-time; SWPC mirror)",
+      "from_key": "dst_realtime_hourly",
+      "to_key": "dst_rt",
+      "note": "Key alias for v14->v17 Dst source"
+    },
+    {
+      "id": "bridge_physik",
+      "points_to": [
+        "physikanschluss_lab_resonators_v1",
+        "physikanschluss_cosmo_gravonly_v1"
+      ]
+    }
+  ],
+  "spec": {
+    "inputs": [
+      {
+        "id": "kp_now",
+        "type": "json"
+      },
+      {
+        "id": "dst_rt",
+        "type": "json"
+      },
+      {
+        "id": "dst_realtime_hourly",
+        "type": "json",
+        "legacy": true
+      },
+      {
+        "id": "sw_plasma_5m",
+        "type": "json"
+      },
+      {
+        "id": "sw_mag_5m",
+        "type": "json"
+      },
+      {
+        "id": "goes_xray_6h",
+        "type": "json"
+      },
+      {
+        "id": "gwosc_o4_events",
+        "type": "json"
+      },
+      {
+        "id": "gracedb_public_superevents",
+        "type": "json"
+      },
+      {
+        "id": "pm25_sensors_comm",
+        "type": "json"
+      },
+      {
+        "id": "openmeteo_air_quality",
+        "type": "json"
+      },
+      {
+        "id": "openmeteo_weather",
+        "type": "json"
+      },
+      {
+        "id": "meteoalarm_edr",
+        "type": "cap"
+      },
+      {
+        "id": "sunrise_sunset_json",
+        "type": "json"
+      },
+      {
+        "id": "euclid_a2390_sl_wl",
+        "type": "html",
+        "legacy": true
+      },
+      {
+        "id": "euclid_a2390_wl",
+        "type": "html",
+        "legacy": true
+      },
+      {
+        "id": "frb20250316a_ads",
+        "type": "html",
+        "legacy": true
+      },
+      {
+        "id": "longi_34_85_press",
+        "type": "html",
+        "legacy": true
+      }
+    ],
+    "normalize": [
+      {
+        "from": "kp_now",
+        "map": {
+          "kp_index": "Kp"
+        }
+      },
+      {
+        "from": "dst_rt",
+        "map": {
+          "dst": "Dst"
+        }
+      },
+      {
+        "from": "dst_realtime_hourly",
+        "map": {
+          "dst": "Dst"
+        },
+        "legacy": true
+      },
+      {
+        "from": "sw_mag_5m",
+        "map": {
+          "bz": "Bz",
+          "bt": "Bt"
+        }
+      },
+      {
+        "from": "goes_xray_6h",
+        "map": {
+          "flux_0.1_0.8nm": "XRS"
+        }
+      }
+    ],
+    "aggregate": [
+      {
+        "id": "space-weather-core",
+        "use": [
+          "Kp",
+          "Dst",
+          "Bz",
+          "XRS"
+        ]
+      }
+    ],
+    "zones": [
+      {
+        "id": "sw",
+        "includes": [
+          "kp_now",
+          "dst_rt",
+          "sw_plasma_5m",
+          "sw_mag_5m",
+          "goes_xray_6h"
+        ]
+      },
+      {
+        "id": "gw",
+        "includes": [
+          "gwosc_o4_events",
+          "gracedb_public_superevents"
+        ]
+      },
+      {
+        "id": "env",
+        "includes": [
+          "pm25_sensors_comm",
+          "openmeteo_air_quality",
+          "openmeteo_weather",
+          "meteoalarm_edr",
+          "sunrise_sunset_json"
+        ]
+      },
+      {
+        "id": "legacy",
+        "includes": [
+          "euclid_a2390_sl_wl",
+          "euclid_a2390_wl",
+          "frb20250316a_ads",
+          "longi_34_85_press",
+          "pv_mag_longi_34_85",
+          "w7x_eurofusion_2025",
+          "w7x_ipp_news_2025",
+          "east_1066s_cas",
+          "east_1066s_journal"
+        ]
+      }
+    ],
+    "notes": "v1.18: Union von v1.14 (Legacy-Research/News) und v1.17 (Basics/Spec/Templates). Dst-Key-Alias hinzugefügt; Seeds als {current:list, legacy:dict}."
+  },
+  "readme": "TSM Online Bundle v1.18 – Merge von v1.14 und v1.17.\n\nZiele: (1) Behalte das aufgeräumte v17-Schema (spec/templates/checklists/protocols), (2) führe alle v14 Legacy-Inhalte (Euclid/FRB/Fusion/PV) wieder als Quellen+Pipelines, (3) sichere Abwärtskompatibilität via Alias (dst_realtime_hourly→dst_rt) und spec.inputs{legacy:true}.\n\nNutzung: Für 'basics' bitte die *-basics Pipelines verwenden; für Legacy-Research die *_v1 Pipelines.\n\nHinweis: Ein Teil der v14-HTML-Quellen sind Presseseiten/Artikel. Diese bleiben als 'type: html' referenziert (nur zum Lesen/Zitieren).\n\n",
+  "health": {
+    "status": "merge:ok",
+    "source_counts": {
+      "v14": 22,
+      "v17": 14,
+      "merged": 33
+    },
+    "pipeline_counts": {
+      "v14": 5,
+      "v17": 4,
+      "merged": 9
+    },
+    "notes": "Seeds structure merged als {current: v17.seeds (list), legacy: v14.seeds (dict)}"
+  },
+  "channels": {
+    "registry": {
+      "RRR": {
+        "type": "derived",
+        "status": "beta",
+        "source": "TSM-136D_recommended_v2_2025-10-18.json::r_channel",
+        "depends_on": [
+          "TSM-136D_zonen_recommended.csv"
+        ],
+        "fallbacks": [
+          "TSM-136D_zonen_baseline_v2_with_Qplus_2025-10-18.csv"
+        ],
+        "exports": [
+          "TSM-136D_R_estimates_v2_with_Qc_2025-10-18.csv"
+        ],
+        "verification": {
+          "dphi_col": "dphi",
+          "tau_col": "tau",
+          "eps_deg_source": "recommended_params.eps_deg",
+          "tolerance_abs": 1e-09,
+          "minmax_scope": "dataset"
+        },
+        "notes": [
+          "RRR (Rückhol-Resonanz-Rate) wird über Proxys Q_eff und PLV sowie Combiner und GRÜ-Brücke im r_channel definiert.",
+          "Locking: τ-Fenster, Smoothing: Median(w=5), Hysterese/Stability: 21 / ±0.02.",
+          "Exportspalten: R_Qeff_raw, R_PLV, R_combo_norm."
+        ]
+      }
+    }
+  }
+}
