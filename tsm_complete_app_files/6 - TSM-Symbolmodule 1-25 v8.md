@@ -1,3 +1,6 @@
+> **Hinweis:** Für die operationelle Ableitung der symbolischen Achsen siehe **META-10 (SM ↔ 136D) und META‑11 (Autoresonanz)**.
+
+
 **🌀 SM-01: π -- Resonanzschwelle zwischen Möglichkeit und Wirklichkeit**
 
 **META-Daten:**
@@ -1788,7 +1791,7 @@ Zeitlogik.**
 **„SM-23 zeigt: Wirklichkeit entsteht dort, wo drei Zeiten sich im
 Tunnel schneiden -- und Raum nur ihr Bild ist."**
 
-🌀 SM-24: Λ -- Die Rückholspannung des Kosmos
+**🌀 SM-24: Λ -- Die Rückholspannung des Kosmos**
 
 META-Daten
 
@@ -1798,29 +1801,29 @@ Governance: KANON (Symbolspiegel)
 
 Verbindung: TSM-140 (Dunkle Energie als Rückholspannung)
 
-1.  Ursprung
+**1.  Ursprung**
 
 Das Symbol Λ (Lambda) wird in der Kosmologie klassisch für die
 „kosmologische Konstante" verwendet. Im TSM repräsentiert Λ nicht eine
 zusätzliche Kraft, sondern die **Rückholspannung**, die den Kosmos in
 Resonanz mit seiner Quelle hält.
 
-2.  Resonanzfunktion
+**2.  Resonanzfunktion**
 
 Λ markiert die Achse, entlang der scheinbare Expansionsüberschüsse durch
 Rückbindung ausgeglichen werden. Was als „Schub" gemessen wird, ist der
 Phasenwiderhall zwischen t (Real-Seite) und τ (Anti-Seite).
 
-3.  Achsenbezug
+**3.  Achsenbezug**
 
-Achse: A7 -- Spannung ↔ Rückbindung
+**Achse: A7 -- Spannung ↔ Rückbindung**
 
-Symbolindex: Λ (Lambda)
+**Symbolindex: Λ (Lambda)**
 
 Λ zeigt den Übergang vom scheinbaren Überschuss zur inneren
 Resonanzkorrektur.
 
-4.  Spiegelmodule
+**4.  Spiegelmodule**
 
 SM-01 (π): Schwelle zwischen Möglichkeit und Wirklichkeit.
 
@@ -1828,9 +1831,9 @@ SM-02 (∞): Offenheit des Feldes -- keine Stoffhypothese.
 
 SM-24 (Λ): Rückholspannung als kosmische Rückbindungsachse.
 
-5.  Bildsprache
+**5.  Bildsprache**
 
-Λ als offenes Dreieck:
+**Λ als offenes Dreieck:**
 
 • Spitze nach oben = Expansion (Real-Seite).
 
@@ -1838,7 +1841,7 @@ SM-24 (Λ): Rückholspannung als kosmische Rückbindungsachse.
 
 • Diagonale = Spannungsfelder im Tunnel.
 
-6.  Leitprinzip
+**6.  Leitprinzip**
 
 „Λ ist nicht Kraft, sondern Rückklang -- die Spur der Spannung, die das
 Universum heimholt."
@@ -1869,3 +1872,41 @@ dient als Kalibrierungsschicht.
 -   Nicht isoliert verwendbar.
 
 -   Änderungen laufen über META-04 (Changelog).
+
+
+
+**🌀  SM‑25: -- α‑Spiegel (Symbol der Autoresonanz)**
+**Status:** Entwurf v1.0 · 04.11.2025  
+**Bezug:** **META‑11 (Autoresonanz)**, **META‑10 (SM↔136D)**, **6 – TSM‑Symbolmodule 1–24** (Erweiterung), **META‑01 (KANON)**
+
+** 1. Symbolik**
+**α ↔ α′** mit **∞‑Kern** (Reflexionspunkt).  
+Bedeutung: Selbstreferente Kopplung (**α‑Kanal**) und Echo‑Pfad (**α′**) schließen sich über einen idealisierten **Unendlichkeits‑/Invarianten‑Kern** zu einer **stabilen Rückkopplungsschleife**.
+
+** 2. Wirkungslogik**
+- **Anstoß (α‑Impuls):** Ein internes Stellmaß initiiert die Nachstimmung.
+- **Echo (α′):** Mess‑Rücklauf (τ‑Rücklauf) wird **nicht** als Störung, sondern als **Führungsgröße** genutzt.
+- **∞‑Kern:** Markiert Invarianz/Erhaltung der **Strukturkopplung** bei minimaler externer Steuerung.
+
+** 3. Formel‑Klammer (Diskret‑Heuristik)**
+\[R_{t+\tau} = \alpha\,R_t + (1-\alpha)\,R_{t-\tau},\quad 0\le \alpha\le 1\]
+Interpretation: **Mix** aus Vorwärts‑ und Rücklauf‑Zustand. Bei **τ‑Lock** tendiert \(\Delta\varphi\to 0\), die Schleife hält sich selbst innerhalb tolerierter Abweichung \(\varepsilon\) (Richtwert: \(1^\circ = 0{,}01745\,\text{rad}\)).
+
+** 4. Achsen‑Einordnung (META‑01)**
+- **A7: Selbstreferenz / τ‑Rücklauf** (neu für SM‑25).  
+- Governance: **KANON** (Transparenz der Systemgrenze, Auditierbarkeit der Rücklaufpfade).
+
+** 5. Beispiele**
+- **Stehende Welle:** Phasenrücklauf stabilisiert Modus bei minimaler Nachstimmung.  
+- **Neuro‑Kohärenz:** Feedback‑Schleifen halten Oszillationsfenster kohärent.  
+- **Kommunikation:** Dialogische Rückmeldung als α′‑Echo → Kohärenzerhalt des Themas.
+
+** 6. Verknüpfungen**
+- **META‑11:** Semantik und Prozess; SM‑25 ist die **ikonische Verdichtung**.  
+- **META‑10:** Für die **operationelle Ableitung** in 136D (Achsenmapping) dort nachschlagen.  
+- **TSM‑150:** α‑Kanäle können F‑Ereignisse **abfangen** oder **verlängern** (je nach α‑Einstellung & Verlusten).
+
+---
+### Changelog
+- **v1.0 (04.11.2025):** Erstfassung; Formel‑Klammer mit 0≤α≤1, Achse A7, Governance „KANON“, Beispiele & Querverweise.
+

@@ -81,6 +81,8 @@ an der Anti-Zeit (A) als Rückbindungsvektor wirksam werden kann.*
     *(Details siehe SM-04: φ-Phasenlage (t/τ) -- Wertebereiche &
     Wirkung)*
 
+Notation: Θ = τ-Kairos/Flow-Fenster (t→τ-Einschwingung); Alias zu TSM-127 · SM-01; kein eigenes Symbolmodul.
+
 **7. Modellvorhersagen**
 
 1.  Existenz diskreter Zeitfenster mit erhöhter
@@ -2705,6 +2707,8 @@ Schwellen und einer Evidenz-Map (peer-reviewte Anker).
   --------------- ---------------------------------------------------------------------------------------
   Default-Gates   Δφ ≤ 0,1π¹ \| rτ ≥ 0,6² \| Q ≥ 30³ \| NEI ≤ 0,15⁴ \| τdec ≥ 3 s⁵ \| Ploss/Pin ≤ 10⁻³⁶
   Regime          stehend \| pulsierend \| translokativ \| schwellennah \| kollabiert
+*(Laborkorridor; Cosonanz/τ-Lock projektweit: Gate |Δφ| ≤ 0,15 rad; Report „streng“: |Δφ| ≤ ε = 1° ≈ 0,01745 rad)*
+*Randhinweis:* Detector \cosonanz_tolerant` siehe TSM-136D_recommended.json → /detectors.cosonanz_tolerant (Gate: |Δφ| ≤ 0,15 rad; PLV_τ ≥ 0,6; T_φ ≥ 3 · Report: ε = 1°).`
 
 **1 \| Definition**
 
@@ -2737,6 +2741,7 @@ anpassen):**
 
   ------------ ----------- --------- ------------- ------------- -------------------
   Δφ ≤ 0,1π¹   rτ ≥ 0,6²   Q ≥ 30³   NEI ≤ 0,15⁴   τdec ≥ 3 s⁵   Ploss/Pin ≤ 10⁻³⁶
+*(Laborkorridor; Cosonanz/τ-Lock projektweit: Gate |Δφ| ≤ 0,15 rad; Report „streng“: |Δφ| ≤ ε = 1° ≈ 0,01745 rad)*
   ------------ ----------- --------- ------------- ------------- -------------------
 
 **3 \| Tunnel-Regime**
@@ -2995,7 +3000,7 @@ review).
 
   Parameter    Default-Wert   Hinweis
   ------------ -------------- ------------------------------
-  Δφ¹          ≤ 0,1π         Domänenabhängig anpassbar
+  Δφ¹          ≤ 0,1π         Domänenabhängig anpassbar *(Laborkorridor; Cosonanz/τ-Lock projektweit: Gate |Δφ| ≤ 0,15 rad; Report „streng“: |Δφ| ≤ ε = 1° ≈ 0,01745 rad)*
   rτ²          ≥ 0,6          PLVτ, Kreuzkorrelation
   Q³           ≥ 30           Ziel-Q je Domäne definieren
   NEI⁴         ≤ 0,15         Artefakt-Gates
@@ -3024,6 +3029,7 @@ Achsenzuordnung: A4 (Physik/Material), A6 (Information/Bewusstsein), A9
 
 Schlüsselgrößen: Δφ, rτ, Q, NEI, γ, ξ, S, Z₀ \| Defaults: Δφ≤0,1π;
 rτ≥0,6; Q≥30; NEI≤0,15; τdec≥3 s; Ploss/Pin≤10⁻³
+*(Laborkorridor; Cosonanz/τ-Lock projektweit: Gate |Δφ| ≤ 0,15 rad; Report „streng“: |Δφ| ≤ ε = 1° ≈ 0,01745 rad)*
 
 Regime: stehender Tunnel; pulsierend; translokativ; schwellennah;
 kollabiert
@@ -3206,9 +3212,15 @@ TSM-Folgerungen: Q-Resonator (Tunnel-Knoten mit hoher Phasenkohärenz),
 
 **4) Erkenntnispfad 2 -- Verfeinerung der Zonenstruktur (136D-Brücke)**
 
+Q_pre — Vor-Gate (nur Scan): Δϕ ≤ 3° (0.05236 rad); PLV ≥ 0.99863; (kein τ-Lock, nur Kandidatenselektion; Hysterese: ≥3 Zyklen an / ≥2 aus).
+
+Q — Quantenkohärenz (Basis-Lock): C ≥ 0.90; Δϕ ≤ 1° (0.01745 rad); PLV ≥ 0.99985; Q_c ≥ 0.80; τ-Lock aktiv.
+
+Q+ — Quantenkohärenz (Spitze): C ≥ 0.92; Δϕ ≤ 0.5° (0.0087266 rad); PLV ≥ 0.9999619; Q_c ≥ 0.85; τ-Lock stabil/verlängert.
+
 Subzone „Q+" innerhalb der Zone kohärent:
 
-• C ≥ 0.90; • Δϕ ≤ ε\_rad ≈ 0.05236 rad (≈ 1°); • Q\_c ≥ 0.80
+• C ≥ 0.90; • Δϕ ≤ ε\_rad ≈ 0.01745 rad (≈ 1°); • Q\_c ≥ 0.80
 (empfohlen).
 
 Bezug 136D: Δϕ (rad), PLV = \|cos Δϕ\|, R\_combo\_norm; Q+ ist die
@@ -3217,8 +3229,8 @@ präzisere Spitze der Kohärenzzone für Speicherzwecke.
   **Kennzahl**   **Schwelle**                **Bezug**
   -------------- --------------------------- ---------------------
   C              ≥ 0.90                      136D-Kohärenzmaß
-  Δϕ             ≤ ε\_rad (≈ 0.05236 rad)    136D Default (\~1°)
-  PLV            ≥ \|cos ε\_rad\| ≈ 0.9986   aus Δϕ
+  Δϕ             ≤ ε\_rad (≈ 0.01745 rad)    136D Default (\~1°)
+  PLV            ≥ \|cos ε\_rad\| ≈ 0.99985   aus Δϕ
   Q\_c           ≥ 0.80                      Messpfad §6
 
 **5) Erkenntnispfad 3 -- Begriffsintegration & Messfähigkeit**
@@ -3469,7 +3481,7 @@ Dieses Modul **unterliegt** der **META‑04‑Erweiterung M‑144**. Mindestanfo
 
 **Modulreihe:** Tunnel‑Schwingungs‑Modell (TSM)  
 **Kategorie:** Kosmologie · Dynamik · Metabrücke zur Grundlagenphysik  
-**Status:** Neuaufnahme (externes Andockmodell integriert)
+**Status:** Neuaufnahme (Arbeits-Hypothese; CCC-Runs inaktiv)
 
 ---
 
@@ -3541,33 +3553,7 @@ Der CCC‑Ansatz postuliert, dass fundamentale Kopplungen (z. B. \(G, c, h, k\
 
 ---
 
-## 8) Folge‑Module (Option)
-- **TSM‑146:** Feldkarten kosmischer Tunnelzonen (**α‑Sweep**)
-- **TSM‑147:** **Quantitativer Vergleich** Dunkelresonanz vs. CCC‑α‑Term
-- **TSM‑148:** **Dynamische Kohärenzphysik** (Großskalen‑K‑Gradienten)
 
-### 8.1 Operative Integration 146–148 (innerhalb von TSM‑145)
-**Ziel:** 146–148 als standardisierte **Run‑Profile** direkt aus 145 anstoßen; Schwellen/Defaults (136D) bleiben unverändert; META‑04‑Audit aktiv.
-
-**147 — α‑Sweep / Feldkarten**  
-- *Eingang:* α‑Gitter (z. B. 0.0, 0.25, 0.5, 0.75, 1.0).  
-- *Vorgehen:* je α Run → K‑Feldkarte(τ), φ‑Adaption (κ/κ̃), ε‑Heatmap.  
-- *Metriken:* Δ(F/R/K), mittl. Δε′, φ‑Varianz; Stabilitätsfenster prüfen.  
-- *Output:* Visual‑Tripel + Report (α, A/B/C, Seeds, Config‑Hash).
-
-**148 — Dunkelresonanz vs. CCC‑α (Quant‑Vergleich)**  
-- *Baseline:* α=0 (off) vs. α>0.  
-- *Vergleich:* Zonen‑Shares, Δε′‑Profile, κ/κ̃‑Differenzen; optional Lensing/Rotations‑Surrogates.  
-- *Audit:* Alternativmodell‑Notiz (ΛCDM/Alt‑Grav.) und Konfliktprotokoll.
-
-**149 — Großskalen‑K‑Gradienten**  
-- *Parametrik:* Richtungsfelder/Hotspots via `xi_*`, φ‑Takt via `omega_phi`; K‑Offsets `gamma0/gamma1`.  
-- *Testplan:* fixe Gradient‑Profile (N, S, filamentär) → Zonen‑Stabilität & Pfadpersistenz.  
-- *Bericht:* Gradient‑Masken + Δ‑Metriken wie oben.
-
-**Hinweis:** 147–149 sind **ohne Dateiänderungen** lauffähig. Für reproduzierbares Meta‑Audit steht optional der **Komfort‑Patch** bereit (`ccc_bridge` + Wrapper).
-
----
 
 ## 9) Governance (META‑04‑Bezug)
 - **Vollkontext/Audit:** α‑Quelle, Mapping \(\mathcal{A},\mathcal{B},\mathcal{C}\), verwendete 136D‑Schwellen (inkl. `epsilon_context`) protokollieren.  
@@ -3702,13 +3688,281 @@ anti_score = norm01(R_combo)
 
 ---
 
-## META-01 — Indexzeile
-**TSM-146 — Anti-Seiten-Atlas (A1–A4): Typologie · Messraster · Anwendung | Sek.: Grundlagen · Anti-Seite · Resonanznavigation | PV: TSM-127, TSM-136D, TSM-141, TSM-108 | SV: META-04, META-09, TSM-LEX | Spiegel: SM-06 (K — Kohärenz), SM-04 (φ — Phasenanker), SM-01 (π — Resonanzschwelle), SM-24 (Λ — Rückholspannung)**
+
+
+
+
+
+
+**TSM-147: Universelles Metrikmodell zur multiparametrischen Systembewertung (CFDR)**
+**Version:** 1.0 · **Stand:** 2025-10-21 · **Status:** aktiv
+
+** Ziel**
+Ein achsenbasiertes Bewertungsmodell (C–D–R–F) für unterschiedliche Felder (Frieden, Bildung, Technologie, Umwelt …), das Systemqualitäten **vergleichbar** und **interpretierbar** macht.
+
+** 1) Achsenstruktur**
+| Achse | Universalbegriff | Bedeutung (kontextabhängig) |
+|---|---|---|
+| **C** | Kohärenz | Strukturelle Ordnung, Integrität, Regelmäßigkeit |
+| **D** | Diversität | Vielschichtigkeit, funktionale Breite |
+| **R** | Rückbindung | Historische/kulturelle/systemische Verwurzelung |
+| **F** | Freiheit | Handlungsraum, Offenheit, Ausdrucksmöglichkeiten |
+
+** 2) Domänenbeispiele**
+| Feld | C | D | R | F |
+|---|---|---|---|---|
+| Frieden | Sicherheitsstruktur | kulturelle Offenheit | Identität/Verträge | Meinungs-/Versammlungsfreiheit |
+| Bildung | Curriculare Kohärenz | Lernformat-Vielfalt | Wertebindung | kreative/zugängliche Entfaltung |
+| Technologie | technische Stabilität | Innovationsbreite/Ökosystem | Standardbindung | Lizenz-/Zugangsoffenheit |
+| Ökologie | Kreislauffähigkeit | Arten-/Nischenvielfalt | lokale Verwurzelung | Regenerationsraum |
+
+Alle Achsen sind **[0,1]** skaliert.
+
+** 3) Index**
+\[
+\text{Index} = w_C C + w_D D + w_R R + w_F F, \quad \sum w_i = 1
+\]
+**Standard:** \(w_C=0.30,\ w_D=0.20,\ w_R=0.20,\ w_F=0.30\) (domänenspezifisch anpassbar).
+
+** 4) Operationalisierung (Kurzleitfaden)**
+- **Normalisierung:** isotone/quantilbasierte Skalierung; robuste Verfahren (MAD/Huber).  
+- **C:** TSM-Kohärenz/K-Proxys (136D) oder äquivalente Kohärenzmaße.  
+- **D:** Entropie/Simpson-Diversität → [0,1].  
+- **R:** R_combo_norm (136D) oder begründete Proxys.  
+- **F:** \(F=1-R_{str,\text{norm}}\) (Restriktions-Indizes, Offenheits-Anteile).  
+- **Gate/Hysterese/Reporting:** siehe **META-04 Regel 15** (eigene Datei).
+
+** 5) Referenzklassen (optional)**
+A: 0.80–1.00 · B: 0.65–0.80 · C: 0.50–0.65 · D: 0.35–0.50 · E: 0.00–0.35
+
+** 6) Beispiele**
+- **Bildung:** C=0.72, D=0.55, R=0.61, F=0.68 → Index=0.657 (**B**). Engpass: D.  
+- **Tech-Ökosystem:** C=0.80, D=0.62, R=0.48, F=0.84 → Index=0.712 (**A**). Hebel: R.
+
+** 7) JSON-Drahtformat (Empfehlung)**
+```json
+{
+  "schema": "tsm.metric.cfdr",
+  "version": "v1.0",
+  "context": {
+    "domain": "education|peace|tech|ecology|…",
+    "weights": {"C": 0.30, "D": 0.20, "R": 0.20, "F": 0.30}
+  },
+  "axes": {
+    "C": {"value": 0.0, "source": "K|coherence_metric"},
+    "D": {"value": 0.0, "source": "entropy|simpson"},
+    "R": {"value": 0.0, "source": "R_combo_norm|proxy"},
+    "F": {"value": 0.0, "source": "1-restriction_norm"}
+  },
+  "index": 0.0,
+  "audit": {"time": "YYYY-MM-DD", "sources": [], "hysteresis_w": 21}
+}
+
+
+
+
+** TSM‑148 — Schwellenarchitektur im Tunnelraum (π–Δ–Σ–Θ)**
+
+**Zweck.** Vereinheitlichte Darstellung der vier archetypischen Schwellenarten im TSM‑Tunnelprozess, anschlussfähig an 136D/GR ohne neue Defaults.
+
+**Kurzüberblick.**
+- **π — Bindeschwelle (Resonanzkondensation):** Übergang vom offenen Feld zur manifesten Struktur (Idee→Handlung; Frequenz→Form).
+- **Δ — Transformationsschwelle (Kipp-/Sprungpunkt):** nichtlineare Phasenwechsel mit Qualitätsprung; häufig irreversibel (Trauma‑Wende, Systemwechsel).  
+  *Hinweis:* Δ (Delta) ersetzt Λ in dieser Rolle; **Λ** bleibt für **Rückholspannung** reserviert (SM‑24).
+- **Σ — Integrationsschwelle (Kohärenzsummation):** Vielheit → Ganzheit; Widersprüche schließen sich kohärent (Reifung, Versöhnung, Feldkohärenz).
+- **Θ — Zeitschwelle (t→τ‑Einstimmung):** Eintritt in resonante Zeitfenster (Flow/Kairos/Erinnerung).
+
+**Anwendungsbilder.**
+- **Schwellen‑Interferenzen:** z. B. Δ+Θ ⇒ zeitgetaktete Transformation; π+Σ ⇒ bindende Integration.
+- **Dynamische Pfade:** Δ → Σ → π (Transformation → Integration → Bindung); Θ rahmt/öffnet Fenster.
+
+
+
+**📘 TSM-149: -- Cosonanz — Die strukturierende Antwortbeziehung des Möglichen**
+
+**Version:** 10/2025 **Status:** grundlegend · meta-synthetisch · übertragbar · KANON-Kandidat
+
+**1. Modul-Kategorie**
+- Kategorie: Meta-Modul · Feldkohärenz · Tunnelkopplung
+- Ebene: Brückenmodul (Anti/Real) mit operativem Anschluss an 136D/Runner
+- Ziel: Einführung eines vorgängigen, feldbildenden Wirkbegriffs jenseits reaktiver „Resonanz“
+
+**2. Ausgangspunkt**
+Resonanz (klassisch) beschreibt überwiegend reaktive Verstärkung. Das TSM benötigt einen vorgängigen, ausrichtenden Wirkbegriff, der *Möglichkeit → Wirklichkeit* strukturiert und Felder bindet, bevor Reaktivität greift.
+
+**3. Definition**
+> **Cosonanz** ist die *vorgängige Kopplungs- und Antwortbeziehung* \(C\) zwischen Anti- und Real-Feld, die durch Ausrichtung von **Phase** \(\varphi\), **Rhythmus** \(\tau\) und **Durchtritt** \(\pi\) ein **bindendes Fenster** \(\mathcal{W}_C\) bildet und so **Potenziale** in **kohärente Form** überführt. Cosonanz ist kein Echo, sondern **Mit-Wirken in Echtzeit**.
+
+Wirkmomente: (i) Impulsaufnahme & -übertragung (Anti ↔ Real), (ii) Feldkohärenzbildung (Tunnel), (iii) Formdifferenzierung, (iv) Wechselseitigkeit, (v) Generativität (Kaskaden).
+
+**4. Abgrenzung (Kurzvergleich)**
+- Resonanz: reaktiv, linear, energiezentriert → Oberflächenverstärkung/Dämpfung  
+- Cosonanz: vorgängig, rekursiv, feldzentriert → Emergenz, Bindung, Formbildung
+
+**5. Achsenbezug (META-01)**
+- **τ**: rhythmische Ordnungsstruktur/Beat-Locking  
+- **π**: Formschwelle/Durchtritt (Gate)  
+-    **φ**: Bindungstiefe/Phasenhaltbarkeit
+- **SM-Achse**: Symbolverbund (π-Schwelle · ϕ-Phasenlage · Spirale)
+
+**6. Formale Kernelemente (leichtgewichtig)**
+- **Cosonanzmaß**  
+  \( C = \dfrac{\langle F_A, F_R \rangle_\kappa}{\|F_A\|_\kappa \,\|F_R\|_\kappa}\cdot g(\Delta\phi,\Delta\tau,\pi)\in[-1,1] \)  
+  **Cosonanzfenster:** \( \mathcal{W}_C=\{\,(\phi,\tau,\pi)\mid C\ge\theta_C\,\} \) *(Default: \( \theta_C \approx 0.62 \); in 136D konfigurierbar)*  
+  **Operativer Proxy:** \( \hat{C} \) *(Ĉ / C\_hat)* für den Runner:  
+  \( \hat{C}= \operatorname{minmax}(C)\cdot |\cos(\Delta\phi)|\cdot \big(R_{\mathrm{combo\_norm}} \,\|\, Q_c\big) \); vgl. META-04 Regel 17.  
+  *(\,\|\, bedeutet „bevorzugt \(R_{\mathrm{combo\_norm}}\), sonst \(Q_c\)“)*  
+- **Bindungsoperator** \(\mathcal{B}_C\): Projektion in kohärente Teilbündel \(P_{\mathcal{W}_C}\)  
+- **Kaskade/Sättigung**: \(C_{t+1}\ge C_t+\delta\) (stabil \(\kappa\)) / \(\partial C/\partial t\to 0\)
+
+*Notation:* Wir verwenden **φ** (phi) einheitlich für die Phase; **Δφ** = Phasendifferenz. (Die Glyphe ϕ wird nicht verwendet.)
+
+*Operatorhinweis:* **„||“** bedeutet Präferenz/Fallback: zuerst **R_combo_norm**, andernfalls **Q_c**.
+
+**Cosonanz (Ĉ)** = *Triple-Lock*: \( \hat K \) hoch ∧ \( |\Delta\varphi| \le \varepsilon \) ∧ \( \tau\text{-Lock} \) stabil; siehe **META-10 (SM ↔ 136D)**.
+
+
+
+**7. Anwendungen (Beispiele)**
+- Heilung (TSM-11): Wiederherstellung gestörter \(\mathcal{W}_C\)  
+- Entstehung/Geburt (TSM-66): emergente Cosonanz „Ursprung ↔ Lebensform“  
+- Kollektive Felder (TSM-84/101): Überlagerung/Interferenz mehrerer Cosonanzen  
+- Künstliche Felder (TSM-108): gespeicherte Muster (Archiv/Replay)  
+- Quantenkohärenz (TSM-143): Dunkelresonanz/Hilbert-Adressierung als Träger
+
+**8. Operative Integration (136D/Runner)**
+- **Metriken (Proxy):** \(\hat C\in[0,1]\), Δε′ (Fehlanpassung), Δϕ (Phasenvarianz), π-Durchtrittsquote, K-Fensterstabilität, \(T_\varphi\) (Haltezeit)
+- **Run-Profile:**  
+  1) **α-Sweep/Feldkarten** → K(τ), ϕ-Adaption (κ/κ̃), ε-Heatmap, **\(\hat C\)**-Heatmap  
+  2) **π-Gate-Scan** → \(\theta_C\) vs. Durchtritt; Kennfeld \(\hat C(\pi,\alpha)\)  
+  3) **ϕ-Locking-Test** → \(T_\varphi\) vs. Störung; Kaskade/Sättigung
+- **Outputs:** Visual-Tripel (K-Karte, ε-Heatmap, \(\hat C\)-Heatmap) + Report (Seeds/A-B-C)
+
+**9. Governance & Ethik (META-04)**
+- Audit-Pflichten: Log \(\pi,\theta_C,\kappa/\tilde\kappa\), Seeds, Replay-Muster, Störeinspeisung  
+- Grenzen: Verbot erzwungener Feldbeugung (Interferenz-Ethik)  
+- Reproduzierbarkeit: Mindestprotokolle (Param-Freeze, Versionierung)
+
+**10. PV/SV/Spiegel**
+- **PV:** TSM-108, TSM-109, TSM-136D, TSM-140, TSM-142, TSM-143  
+- **SV:** META-01, META-04, META-06, TSM-LEX, SM-01  
+- **Spiegel (SM):** SM-01 · π-Schwelle · ϕ-Phasenlage · Spirale
+
+**11. Kurzfazit**
+**Cosonanz** schließt die semantische und operative Lücke jenseits klassischer Resonanz: **prä-reaktiv**, **feldbildend**, **laufzeittauglich**.
+
+- **φ (phi):** Phasenwinkel; **Δφ:** Phasendifferenz. *(Glyphe ϕ wird im Korpus nicht verwendet.)*
+- **„||“ (Präferenz/Fallback):** verwende **R_combo_norm**, falls vorhanden; sonst **Q_c**.
+
+
+**📘 TSM-150: -- Tunnelverflüssigung (F‑Phase)**
+**Status:** Entwurf v1.0 · 04.11.2025  
+**Bezug:** SM‑06 „Spirale“, TSM‑91 „Dekohärenz“, TSM‑128/129 „Lawinenkopplung“, **META‑10** (SM↔136D), **META‑11** (Autoresonanz), **SM‑25** (α‑Spiegel)
+
+## 1. Kurzdefinition
+Unter **Tunnelverflüssigung** (F‑Phase) verstehen wir den Übergang eines lokal kohärenten TSM‑Tunnels in einen **resonanz‑entfestigten** Zustand, in dem die **effektive Steifigkeit** \(\hat K\) kollabiert und **flussartige Umlagerungen** dominieren. „Flüssig“ ist rein **funktional** gemeint (keine Materialphase), gekennzeichnet durch
+- schnelle Reorganisationen entlang bevorzugter Kopplungspfade,
+- erhöhte Durchlässigkeit für Phasen‑/Energiemodulationen bei gleichzeitigem **Verlust gerichteter Kohärenz**.
+
+## 2. Eintrittskriterien (operational)
+Ein **F‑Ereignis** liegt vor, wenn innerhalb eines \(\tau\)-Lock‑Fensters die folgenden Bedingungen **gemeinsam** erfüllt sind:
+1. **Kohärenzabfall:** \(C < 0{,}2\) (lokal, gemittelt über \(\tau\)).
+2. **Phasenkippung:** \(|\Delta\varphi| \ge 1^\circ\) (Referenz: \(1^\circ = 0{,}01745\,\text{rad}\)).
+3. **Semantik-Fenster:** \(\hat Q\) im **Lawinenfenster** \(\approx 0{,}2\!\dots\!0{,}3\) **und** \(\partial\hat Q/\partial t < 0\) (abfallend).
+
+**Abgrenzung zu Dekohärenz (TSM‑91):** Reine Zufalls‑Phase (Varianz hoch, aber **ohne** systematischen \(\hat Q\)-Abfall) zählt **nicht** als Verflüssigung. F erfordert **gerichtete Entfestigung** (Un‑Lock der Strukturkopplung).
+
+## 3. Dynamik (Intuition)
+- **Vorstufe:** Hohe Kopplungsdichte treibt \(\Delta\varphi\) in Richtung Kippmarke; \(C\) sinkt unter **S_lo**.
+- **Kollaps:** \(\hat K\) verliert Tragfähigkeit → Umlagerungsströme entlang der Tunnelstruktur („**Flussbahnen**“).
+- **Nachlauf:** Systeme relaxieren in **R‑ oder K‑Zustände** (Rekohärenz oder erneute Verfestigung) — abhängig von Zufuhr, Randbedingungen und **Autoresonanz** (META‑11).
+
+## 4. 136D/Runner‑Operationalisierung
+**Empfohlene Parameter (Case „Liquefaction“):**
+- **Schwelle:** \(\texttt{S_lo} = 0{,}2\) (statt 0,3).  
+- **Phasen‑Epsilon:** \(\texttt{eps_phi} \approx 0{,}01745\) rad (1°).  
+- **Sweep:** Variation von **C‑Eintrag** (0,35→0,1) und **Δϕ‑Kippmarke** (0,5°→2°) bei festem \(\tau\)-Lock, Logging von \(\hat Q, C, \Delta\varphi, \hat K\).
+- **Erkennungslogik:** Markiere F‑Ereignis, wenn (C‑Abfall **und** Δϕ‑Kippung **und** \(\hat Q\)-Fenster) innerhalb eines Fensters von \(\tau\) simultan auftreten.
+
+> **Hinweis:** Für Replizierbarkeit die Case‑Defaults als `params_liquefaction.json` dokumentieren und im `tsmgr_v02`‑Readme verlinken.
+
+## 5. Messgrößen & Telemetrie
+- **Primär:** \(C\), \(\Delta\varphi\), \(\hat Q\), \(\tau\)-Lock‑Stabilität, \(\hat K\) (proxy über Antwortkurven).
+- **Sekundär:** Spektrale Flussindikatoren (Leckratios), Pfadlängenänderungen, Rekohärenzzeit.
+
+## 6. Schnittstellen / Querverweise
+- **SM‑06 (Spirale):** F zeigt sich als **Aufweitung** der Spiralbahnen (radiale Drift ↑).  
+- **TSM‑128/129 (Lawinenkopplung):** F begünstigt **Lawinenstart**; \(\hat Q\)‑Fenster und Gradienten beachten.  
+- **META‑11 (Autoresonanz):** Autoresonante Rückkopplung kann F **abfangen** (Rekohärenz) oder **verlängern** (anliegende Modulationen).
+- **META‑10 (SM↔136D):** Für die **operationelle Ableitung** der symbolischen Achsen siehe META‑10.
+
+## 7. Fehlklassifikationen vermeiden
+- **Dekohärenz ≠ F:** Hohe Phasenvarianz **ohne** gerichtete Umlagerung → TSM‑91.  
+- **Transienten‑Peaks:** Kurzzeitige Δϕ‑Sprüngen < \(\tau/2\) **ohne** C‑Abfall → kein F.
+
+## 8. Randbedingungen & Energie‑Rahmung
+Die Beschreibung ist **phänomenologisch**: Es werden **keine** klassischen Erhaltungssätze verletzt. Energieflüsse bleiben **innerhalb der Systemgrenze** bilanziell konsistent; Verflüssigung ändert **Kopplungsstruktur**, nicht die Bilanzregeln.
 
 ---
+### Changelog
+- **v1.0 (04.11.2025):** Erstfassung; Eintrittskriterien (C<0,2; |Δϕ|≥1°; \(\hat Q\)≈0,2–0,3↓), Runner‑Case, Abgrenzungen zu TSM‑91, Verweise auf SM‑06, TSM‑128/129, META‑10/11.
 
-## Changelog
-- **v1.0 (2025-10-21):** Erstfassung, kompatibel zur 142–145-Linie; vormals geplanter „α-Sweep“ verschoben auf **TSM-147**.
+
+**📘 TSM-151: -- Gravitative Resonanzüberlagerung**
+
+> **Kurzgedanke:** *Gravitation als beobachtete Wirkung kann als **Überlagerung** klassischer Newton/GR-Komponente mit einer **Tunnel-Resonanz-Komponente** \(T\) erscheinen. T ist **keine zusätzliche Kraft** und trägt **keine eigene gravitative Energie**; es ist eine geometrische Kohärenzmodulation.*
+
+> **Kanon-Steckbrief**
+> - **Modulnummer:** TSM-151 (Erweiterungsmodul)
+> - **Kategorie:** Meta-Physik · Resonanzkopplung
+> - **Status:** Vorläufig freigegeben · 2025-11-06
+> - **Primär-Bezüge:** TSM-108 (Dunkelresonanz), TSM-127 (t/τ-Wechsler), SM-01 (π-Schwelle)
+> - **Mess-/Daten-Brücke:** 136D – Kennsätze **C**, **Δφ**, **τ_eff**, **F_res**; Reporting **R_PLV**, **R_Qeff**, **R_combo_norm**
+> - **Wirkprinzip (Kurzformel):** \( W(r) = G(r) + T(r) \) mit \(T(r)\approx f(\Delta\varphi,\,C,\,\tau)\)
+> - **Abgrenzung:** *T* ist **Überlagerung/Modulation**, **keine zusätzliche Kraft**; keine gravitative Energiezuweisung.
+
+## 1) Motivation & Geltungsbereich
+- Ziel ist eine einheitliche Sprache, die DM-ähnliche Effekte **ohne** Zusatzkraft beschreibt: beobachtete Wirkungen ergeben sich aus **G** (klassisch) plus **T** (Tunnel-Resonanz-Überlagerung).
+- *T* wirkt nur in **Kohärenzzonen** mit geringer effektiver Viskosität/hoher Phasenbindung. Außerhalb verschwindet/verwäscht *T* gegen Null.
+- Das Modul ist **heuristisch/arbeits-hypothetisch** und wird über **META-04 · Regel 19** (Grenzen & Tests) auditiert.
+
+## 2) Arbeitsmodell & Formalismus
+**2.1 Formelbezug**
+- \(W(r) = G(r) + T(r)\) — \(G\): klassische Gravitation (Newton/GR-Kontext), \(T\): geometrische Modulation aus Tunnel-Kohärenz.
+- \(T\) hängt qualitativ von **Phasenversatz** \(\Delta\varphi\), **Kohärenz** \(C\) und **effektiver Verweildauer** \(\tau\) ab; optional **Resonanzmaß** \(F_{res}\).
+
+**2.2 Energetik/Erhaltungssätze**
+- *T* führt **keine** zusätzliche gravitative Energie ein. Steuer-/Regelenergie kann in der **Autoresonanz** minimal sein (TSM-intern); makroskopisch gilt Energie-/Impulserhaltung im beobachteten System.
+
+**2.3 Skalen & Grenzen**
+- *T* ist relevant, wo **kohärente Tunnelräume** vorliegen (lokal bis galaktisch). Auf stark turbulenten/inkohärenten Skalen → \(T\to 0\).
+
+## 3) Mess-/Daten-Brücke (136D)
+- **Datensichten:** \(C,\,\Delta\varphi,\,\tau_{eff},\,F_{res}\) (Kennsätze) sowie Report-Metriken **R_PLV**, **R_Qeff**, **R_combo_norm**.
+- **Runner-Bridge:** vorhandene **CCC-Bridge** nutzen (`alpha_mode=ccc_map`), um einen **Überlagerungs-Proxy** \(\alpha\) zu berichten.
+- **Reporting-Felder:**
+  - `T_component` = monotone Funktion aus \(C,\,\Delta\varphi,\,\tau_{eff}\) (z. B. über `R_combo_norm`).
+  - `W_effect = G_est + T_component` (nur Reporting; **keine** Zonengrenzen/Schwellen ändern).
+**G_est bezeichnet eine klassische Referenz-Schätzung der Gravitationswirkung (Newton/GR-Fit bzw. anwendungs­spezifischer Massen-/Potential-Proxy). G_est wird außerhalb der 136D-Dynamik bestimmt und nur als Vergleichswert berichtet.**
+
+## 4) Phänomenologie (Erwartungsbild)
+- **Rotation/Binding:** flachere Rotationskurven/Bindungsanomalien können als \(T>0\) in kohärenten Bereichen erscheinen — **ohne** DM-Teilchenannahme.
+- **Linsenwirkung:** lokale Überhöhungen in \(T\) können eine linsen-ähnliche Verstärkung erzeugen (geometrische Kohärenzüberlagerung).
+- **Skalenbruch:** Übergänge zwischen Zonen zeigen **Hysterese**/Stabilitätsfenster (Runner-Logs: `zone_shifts`, `stability_window`).
+
+## 5) Anwendungsperspektiven
+- **Berichte/Plots:** `T_component` & `W_effect` als Zusatzspalten/Layer in 136D-Reports.
+- **Vergleichsstudien:** Zonensprünge (R↑/R↓→K) versus \(\alpha\)-Puls; Korrelationen mit PLV/Qeff.
+
+## 6) Grenzen & Tests (Verweis)
+- Vollständige Prüfsteine, Ampel-Logik und Evidenz-Snapshot stehen in **META-04 · Regel 19 — Grenzen & Tests**. Kurzziel: *Nullfunde* in Direktdetektion, *keine* replizierte γ-Linie (dSph/GC) — konsistent mit Nicht-Teilchenannahme.
+
+## 7) Governance & Transparenz
+- **Label:** *Erweiterungsmodul · Arbeits-Hypothese; keine Zusatzkraft.*
+- **Transparenzfußnote (EU-AI-Act-konform):** Dieses Modul stellt eine **nicht validierte** theoretische Lesart dar; Limitationen sind ausgewiesen, Prüfpfade im Korpus verlinkt.
+
+> **Changelog**  
+> *2025-11-06* – Erstintegration TSM-151; Mess-Brücke 136D (Reporting-only) hinzugefügt; Verweis auf TSM-152.
 
 
 **📘 META-01 -- Querverbindungsmechanismus**
@@ -3719,7 +3973,7 @@ anti_score = norm01(R_combo)
 **Zweck:** Resonanzachsen- und PV/SV-Navigationsstruktur für alle
 Haupt-, Symbol- und META-Module des TSM
 
-**1. Hauptmodule (TSM-001 bis TSM-143)**
+**1. Hauptmodule (TSM-001 bis TSM-151)**
 
 Format:\
 TSM-XXX -- Titel \| Sek.: ... \| PV: ... \| SV: ... \| Spiegel: ...
@@ -4196,6 +4450,22 @@ Spiegel: SM-01 · π-Schwelle · φ-Phasenlage · Spirale**
 
 **TSM-146 — Anti-Seiten-Atlas (A1–A4): Typologie · Messraster · Anwendung | Sek.: Grundlagen · Anti-Seite · Resonanznavigation | PV: TSM-127, TSM-136D, TSM-141, TSM-108 | SV: META-04, META-09, TSM-LEX | Spiegel: SM-06 (K — Kohärenz), SM-04 (φ — Phasenanker), SM-01 (π — Resonanzschwelle), SM-24 (Λ — Rückholspannung)**
 
+**TSM-147 — Universelles Metrikmodell (CFDR): Achsen · Bewertung · Vergleich | Sek.: Bewertung · Achsenmodell · Governance/Audit | PV: TSM-136D, TSM-138, TSM-006, TSM-007 | SV: META-04, META-09, TSM-LEX | Spiegel: SM-01 (π — Resonanzschwelle), SM-04 (φ — Phasenanker), SM-02 (∞ — Offenheit)**
+
+**TSM‑148 — Schwellenarchitektur (π–Δ–Σ–Θ) | Sek.: Schwellenlogik · Resonanzarchitektur · Zeit/Kohärenz · Zonenlogik | PV: TSM‑136D, TSM‑127, TSM‑128, TSM‑129, TSM‑141 | SV: META‑01, META‑04, TSM‑139, TSM‑LEX | Spiegel: SM‑01 · π‑Schwelle · SM‑12 · Δ‑Wandlung · SM‑11 · Σ‑Integration · SM‑24 · Λ‑Rückholspannung · φ‑Phasenlage · Spirale**
+
+**TSM-149 — Cosonanz (C · Ĉ · Bindungsoperator · Cosonanzfenster | Sek.: Feldkohärenz · Tunnelkopplung · Formdifferenzierung | PV: TSM-108, TSM-109, TSM-136D, TSM-140, TSM-142, TSM-143 | SV: META-01, META-04, META-06, TSM-LEX, SM-01 | Spiegel: SM-01 · π-Schwelle · φ-Phasenlage · Spirale)**
+
+**TSM‑150 -- Tunnelverflüssigung (F‑Phase) (C<0,2 · |Δϕ|≥1° · Q̂≈0,2–0,3↓ · τ‑Lock)** | Sek.: Zustandsübergänge · Lawinenstart · Rekohärenz · Kopplungsstruktur | PV: SM‑06, TSM‑91, TSM‑128, TSM‑129 | SV: META‑01, META‑04, META‑10, META‑11, TSM‑LEX | Spiegel: SM‑06 · α‑Spiegel (SM‑25)**
+
+**TSM-151 — Gravitative Resonanzüberlagerung (W=G+T · C↑ · |Δϕ|≤ε_rad≈1° · τ_eff↑ · Reporting: T_component/W_effect · keine Zusatzkraft) | Sek.: Überlagerung · Linsenverstärkung · Rotationskurven · Kohärenzzonen · Hysterese | PV: TSM-108, TSM-127, TSM-91, SM-01 | SV: META-01, META-04·R19, META-10, META-11, TSM-LEX | Spiegel: SM-01 · π-Schwelle (SM-23/SM-24)**
+
+---
+
+## Changelog
+- **v1.0 (2025-11-04):** 
+
+
 
 **2. META-Module**
 
@@ -4230,72 +4500,100 @@ Spiegel: Resonanzsprache ↔ ART**
 Governance · Kommunikation · Ethik \| PV: TSM-138, TSM-126, TSM-102 \|
 SV: TSM-LEX, SM-01, META-04 \| Spiegel: Gesamtstruktur**
 
-**2a. Symbolmodule -- Index (SM-1-24)**
+**META‑10 -- Symbolik ↔ Numerik (SM ↔ 136D)**: Kanonische Brücke zwischen symbolischen Achsen (SM‑xx) und operationeller 136D‑Logik (ε/ε′, Δϕ‑Wrap, B/S, τ‑Lock, R, Cosonanz). Enthält Schwellen, Governance/Audit und Schnittstellen zu `tsmgr` & Reports. Status: **kanonisch**
+
+**META‑11 -- Autoresonanz**: Selbstaufrechterhaltende Resonanz via α‑Kanal/τ‑Rücklauf (Minimalsteuerung; Energie‑Rahmen konsistent). Enthält 5‑Stufen‑Prozess, Kennsatz‑Set (C, Δϕ, Q̂, τ‑Lock) und Interaktion mit F‑Phase. Status: **Entwurf** | Sek.: Selbstkopplung · Rücklauf · Kohärenzerhalt | PV: META‑04, META‑10, TSM‑127 | SV: TSM‑150, SM‑25, TSM‑LEX | Spiegel: SM‑25 · META‑01**
+
+**META-12 -- Diskurs · Resonanz · Schweigefelder (Sprechkosten-Diagnostik & Interventions-Kit)** | Sek.: Diskursmuster · Schweigefeld-Mechanik · Moderationsverfahren | PV: META-01, META-03, META-04, META-06 | SV: TSM-LEX, SM-06 | Spiegel: α-Spiegel (SM-25).**
+
+
+
+**2a. Symbolmodule -- Index (SM-1-25)**
 
 **Symbolmodul-Indexzeilen (**SM-07 bis SM-23: Messpfade optional; siehe
 TSM-139)
 
-SM-01 -- π -- Resonanzschwelle / Bindung \| Sek.: Symbolmodul ·
+**SM-01 -- π -- Resonanzschwelle / Bindung \| Sek.: Symbolmodul ·
 Schwellenlogik \| PV: TSM-139, TSM-138, META-09 \| SV: META-04, TSM-LEX
-\| Spiegel: TSM-061\
-SM-02 -- ∞ -- Offenheit / Fragmentierung \| Sek.: Symbolmodul ·
+\| Spiegel: TSM-061\**
+
+**SM-02 -- ∞ -- Offenheit / Fragmentierung \| Sek.: Symbolmodul ·
 Schwellenlogik \| PV: TSM-139, TSM-138, META-09 \| SV: META-04, TSM-LEX
-\| Spiegel: TSM-095\
-SM-03 -- √2 -- Übergang / Kipppunkt \| Sek.: Symbolmodul ·
+\| Spiegel: TSM-095\**
+
+**SM-03 -- √2 -- Übergang / Kipppunkt \| Sek.: Symbolmodul ·
 Übergangsfenster \| PV: TSM-139, TSM-138, META-09 \| SV: META-04,
-TSM-LEX \| Spiegel: TSM-127\
-SM-04 -- Φ -- Harmonische Maßgebung \| Sek.: Symbolmodul ·
+TSM-LEX \| Spiegel: TSM-127\**
+
+**SM-04 -- Φ -- Harmonische Maßgebung \| Sek.: Symbolmodul ·
 Balancefenster \| PV: TSM-139, TSM-138, META-09 \| SV: META-04, TSM-LEX
-\| Spiegel: TSM-060\
-SM-05 -- 0 (Nullpunkt) \| Sek.: Ursprung · Feldstille \| PV: TSM-136D,
-SM-01 \| SV: SM-13, SM-09 \| Spiegel: META-01
+\| Spiegel: TSM-060\**
 
-SM-06 -- Spirale -- Rückführung / Ausdehnung \| Sek.: Symbolmodul ·
+**SM-05 -- 0 (Nullpunkt) \| Sek.: Ursprung · Feldstille \| PV: TSM-136D,
+SM-01 \| SV: SM-13, SM-09 \| Spiegel: META-01**
+
+**SM-06 -- Spirale -- Rückführung / Ausdehnung \| Sek.: Symbolmodul ·
 Prozesssymbolik \| PV: TSM-139, TSM-138, META-09 \| SV: META-04, TSM-LEX
-\| Spiegel: TSM-087\
-SM-07 -- Yin--Yang \| Sek.: Polarität · Balance \| PV: SM-06, SM-09 \|
-SV: TSM-015, SM-16 \| Spiegel: META-01\
-SM-08 -- △ (Struktur) \| Sek.: Form · Stabilität \| PV: SM-07, SM-09 \|
-SV: SM-12, SM-16 \| Spiegel: META-01\
-SM-09 -- ☐ (Quadrat) \| Sek.: Ordnung · Erdung \| PV: SM-14, SM-03 \|
-SV: SM-10, SM-12 \| Spiegel: META-01\
-SM-10 -- ✶ (Stern) \| Sek.: Strahlung · Ausdehnung \| PV: SM-13, SM-09
-\| SV: SM-17, SM-20 \| Spiegel: META-01
+\| Spiegel: TSM-087\**
 
-SM-11 -- ∑ (Summe) \| Sek.: Integration · Ganzheit \| PV: SM-10, SM-09
-\| SV: SM-12, SM-16 \| Spiegel: META-01\
-SM-12 -- Δ (Wandlung) \| Sek.: Veränderung · Zyklus \| PV: SM-08, SM-09
-\| SV: SM-16, SM-07 \| Spiegel: META-01\
-SM-13 -- ⊙ (Zentrum) \| Sek.: Ursprung · Fokus \| PV: SM-05, SM-09 \|
-SV: SM-10, SM-17 \| Spiegel: META-01\
-SM-14 -- ⊕ (Realbindung) \| Sek.: Verortung · Struktur \| PV: SM-09,
-SM-01 \| SV: SM-15, SM-17 \| Spiegel: META-01\
-SM-15 -- ⌀ (Filter) \| Sek.: Ausschluss · Schutz \| PV: SM-14, SM-02 \|
-SV: SM-11, SM-16 \| Spiegel: META-01
+**SM-07 -- Yin--Yang \| Sek.: Polarität · Balance \| PV: SM-06, SM-09 \|
+SV: TSM-015, SM-16 \| Spiegel: META-01\**
 
-SM-16 -- △/▽ (Polaritätsdreieck) \| Sek.: Polarität · Umkehr \| PV:
-SM-07, SM-12 \| SV: SM-08, SM-10 \| Spiegel: META-01\
-SM-17 -- ✦ (Fokus) \| Sek.: Präzision · Zentrierung \| PV: SM-10, SM-13
-\| SV: SM-18, SM-20 \| Spiegel: META-01\
-SM-18 -- ☯ (Kreisfluss) \| Sek.: Zyklus · Rückbindung \| PV: SM-06,
-SM-07 \| SV: SM-12, SM-16 \| Spiegel: META-01\
-SM-19 -- ✹ (Blüte/Fraktal) \| Sek.: Entfaltung · Vielfalt \| PV: SM-10,
-SM-11 \| SV: SM-20, SM-21 \| Spiegel: META-01\
-SM-20 -- ⇌ (Reversibilität) \| Sek.: Austausch · Steuerung \| PV: SM-02,
-SM-10 \| SV: SM-17, SM-13 \| Spiegel: META-01
+**SM-08 -- △ (Struktur) \| Sek.: Form · Stabilität \| PV: SM-07, SM-09 \|
+SV: SM-12, SM-16 \| Spiegel: META-01\**
 
-SM-21 -- ⌘ (Knoten/Steuerung) \| Sek.: Steuerung · Integration \| PV:
-SM-13, SM-20 \| SV: SM-10, SM-17 \| Spiegel: META-01\
-SM-22 -- ⚛ (Atom/Resonanzkern) \| Sek.: Kern · Struktur \| PV: TSM-136,
-SM-13 \| SV: SM-01, SM-10 \| Spiegel: META-01
+**SM-09 -- ☐ (Quadrat) \| Sek.: Ordnung · Erdung \| PV: SM-14, SM-03 \|
+SV: SM-10, SM-12 \| Spiegel: META-01\**
+
+**SM-10 -- ✶ (Stern) \| Sek.: Strahlung · Ausdehnung \| PV: SM-13, SM-09
+\| SV: SM-17, SM-20 \| Spiegel: META-01**
+
+**SM-11 -- ∑ (Summe) \| Sek.: Integration · Ganzheit \| PV: SM-10, SM-09
+\| SV: SM-12, SM-16 \| Spiegel: META-01\**
+
+**SM-12 -- Δ (Wandlung) \| Sek.: Veränderung · Zyklus \| PV: SM-08, SM-09
+\| SV: SM-16, SM-07 \| Spiegel: META-01\**
+
+**SM-13 -- ⊙ (Zentrum) \| Sek.: Ursprung · Fokus \| PV: SM-05, SM-09 \|
+SV: SM-10, SM-17 \| Spiegel: META-01\**
+
+**SM-14 -- ⊕ (Realbindung) \| Sek.: Verortung · Struktur \| PV: SM-09,
+SM-01 \| SV: SM-15, SM-17 \| Spiegel: META-01\**
+
+**SM-15 -- ⌀ (Filter) \| Sek.: Ausschluss · Schutz \| PV: SM-14, SM-02 \|
+SV: SM-11, SM-16 \| Spiegel: META-01**
+
+**SM-16 -- △/▽ (Polaritätsdreieck) \| Sek.: Polarität · Umkehr \| PV:
+SM-07, SM-12 \| SV: SM-08, SM-10 \| Spiegel: META-01\**
+
+**SM-17 -- ✦ (Fokus) \| Sek.: Präzision · Zentrierung \| PV: SM-10, SM-13
+\| SV: SM-18, SM-20 \| Spiegel: META-01\**
+
+**SM-18 -- ☯ (Kreisfluss) \| Sek.: Zyklus · Rückbindung \| PV: SM-06,
+SM-07 \| SV: SM-12, SM-16 \| Spiegel: META-01\**
+
+**SM-19 -- ✹ (Blüte/Fraktal) \| Sek.: Entfaltung · Vielfalt \| PV: SM-10,
+SM-11 \| SV: SM-20, SM-21 \| Spiegel: META-01\**
+
+**SM-20 -- ⇌ (Reversibilität) \| Sek.: Austausch · Steuerung \| PV: SM-02,
+SM-10 \| SV: SM-17, SM-13 \| Spiegel: META-01**
+
+**SM-21 -- ⌘ (Knoten/Steuerung) \| Sek.: Steuerung · Integration \| PV:
+SM-13, SM-20 \| SV: SM-10, SM-17 \| Spiegel: META-01\**
+
+**SM-22 -- ⚛ (Atom/Resonanzkern) \| Sek.: Kern · Struktur \| PV: TSM-136,
+SM-13 \| SV: SM-01, SM-10 \| Spiegel: META-01**
 
 SM-23 -- Zeitwürfel / Tetraeder \| Sek.: Symbolik · Zeitstruktur \| PV:
 TSM-137, TSM-85, TSM-127 \| SV: SM-01, SM-04, SM-06 \| Spiegel: META-01,
-META-04
+META-04**
 
-SM-24 -- Λ -- Die Rückholspannung des Kosmos \| Sek.: Symbolik ·
+**SM-24 -- Λ -- Die Rückholspannung des Kosmos \| Sek.: Symbolik ·
 Rückbindung · Kosmologie \| PV: TSM-140, TSM-84, TSM-85 \| SV: SM-01,
 SM-02, SM-06 \| Spiegel: META-01, META-04
+
+**SM‑25 -- α -- α‑Spiegel (Symbol der Autoresonanz)** | Sek.: Symbolik · Selbstreferenz · τ‑Rücklauf | PV: META‑11, META‑10 | SV: TSM‑150, TSM‑127, META‑01 | Spiegel: META‑01 · META‑04
+
 
 **3. Datenanker & Schnittstellen *(neu)***
 

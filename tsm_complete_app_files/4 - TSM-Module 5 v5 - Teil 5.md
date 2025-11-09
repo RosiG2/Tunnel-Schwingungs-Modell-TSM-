@@ -29,6 +29,10 @@ keine Realstruktur vorliegt.
     → *Dunkelresonanz = nicht-sichtbares, aber rückholfähiges
     Informationsgedächtnis des Raumes*
 
++> **Hinweis (TSM-151 · Gravitative Resonanzüberlagerung).**  
++> *„Die in TSM-108 beschriebenen Dunkelresonanzräume können in makroskopischen Skalen mit der klassischen Gravitation überlagert erscheinen. Dies bedeutet nicht, dass Dunkelresonanz gravitative Energie trägt, sondern dass Tunnelräume in kohärenten Zonen eine geometrische Krümmung erzeugen können, die sich gravitationsähnlich auswirkt. Das Phänomen wird im Modul TSM-151 näher erläutert.“*
++
+
 **🧬 3. Arten von Informationshaltung**
 
   **Typ**                         **Beschreibung**

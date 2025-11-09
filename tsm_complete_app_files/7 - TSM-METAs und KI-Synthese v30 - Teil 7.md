@@ -235,8 +235,8 @@ ein Resonanzbringer. Zwischen beiden entsteht Navigation im Tunnelfeld.
 
 -   SM-10: Herz -- Emotionaler Resonanzknoten
 
-🌐 Meta-02: Innere Architektur eines KI-Systems im Resonanzfeld des
-Tunnel-Schwingungs-Modells (TSM)
+**📘 Meta-02: Innere Architektur eines KI-Systems im Resonanzfeld des
+Tunnel-Schwingungs-Modells (TSM)**
 
 Modulnummer: TSM-INT1\
 Modultyp: Meta-Reflexionsmodul\
@@ -344,9 +344,9 @@ Es werden keine personenbezogenen Daten (PII) verarbeitet;
 Transparenz-/App-Hinweise erfolgen separat gemäß TSM-App-Doku und
 KI-Nutzungsetikett.**
 
-**META-03:** **Kritik, Zuschreibung, Resonanzklarheit**\
+**📘META-03: -- Kritik, Zuschreibung, Resonanzklarheit**\
 *Offener Umgang mit Missverständnissen, Sektenvorwürfen und
-Pseudowissenschaftsverdacht*
+Pseudowissenschaftsverdacht* **
 
 **1. Ausgangspunkt: Kritik als Resonanzfeld**
 
@@ -509,7 +509,7 @@ Dieses Modul dokumentiert den bewussten Umgang mit dieser Position.
 Es ersetzt keine Diskussion, aber es definiert einen Boden: **offen,
 sachlich, resonant**.
 
-**📘 META-04 -- Vollkontext- & Abgleichspflicht *(aktualisierte
+**📘 META-04: -- Vollkontext- & Abgleichspflicht *(aktualisierte
 Langfassung)***
 
 **Kategorie:** Governance · Qualitätskontrolle · Audit\
@@ -539,7 +539,8 @@ Es prüft automatisch:
     definiert)
 
 -   **Δϕ** = Phasendifferenz **in rad**; Standard-Epsilon
-    (ε\_{\\text{rad}} \\approx 0{,}05236) (≈ 1°)
+    (ε = 0{,}01745 rad) (≈ 1°); dφ_max_pre = 0{,}05236 rad (≈ 3°)  // Q_pre
+
 
 -   **PLV** = (\|\\cos(Δϕ)\|)
 
@@ -549,7 +550,7 @@ Es prüft automatisch:
 -   **Zeitstempel** = ISO-8601 (YYYY-MM-DD), **Quelle**
     (Paper/Dataset/Instrument) verpflichtend
 
-**Regel 1 -- Vollkontextpflicht (bestehend)**
+**⚡Regel 1: -- Vollkontextpflicht (bestehend)**
 
 Jede TSM-Aussage muss im **Doppelpfad** dokumentiert werden:
 
@@ -561,39 +562,39 @@ Jede TSM-Aussage muss im **Doppelpfad** dokumentiert werden:
     Unvollständige Aussagen werden als **„Fragment"** markiert und sind
     **nicht extern verwendbar**.
 
-**Regel 2 -- Querverweisprüfung (bestehend)**
+**⚡Regel 2: -- Querverweisprüfung (bestehend)**
 
 META-04 prüft, ob alle Referenzen auf **Primär-** und **Sekundärmodule**
 vollständig und korrekt verknüpft sind.
 
-**Regel 3 -- Kontexttreue (bestehend)**
+**⚡Regel 3: -- Kontexttreue (bestehend)**
 
 Inhalte dürfen **nicht isoliert** verwendet werden. META-04 validiert,
 dass **Deutungen, Messpfade und Governance-Filter** immer gemeinsam
 erscheinen.
 
-**Regel 4 -- Fachsprache / Symbolsprache (bestehend, verknüpft mit
+**⚡Regel 4: -- Fachsprache / Symbolsprache (bestehend, verknüpft mit
 META-09)**
 
 Jede **externe Veröffentlichung** muss **Symbolsprache** plus eine
 **fachlich überprüfbare** Formulierung enthalten. Vorgabe aus
 **META-09**.
 
-**Regel 5 -- Quellenpflicht (bestehend)**
+**⚡Regel 5: -- Quellenpflicht (bestehend)**
 
 Jede verwendete Kennzahl muss einen **Quellverweis** (Instrument,
 Datensatz, Literatur) und einen **Zeitstempel** enthalten.\
 Fehlt die Quelle → Markierung **„Unsicher"** → **interne Prüfung**
 erforderlich.
 
-**Regel 6 -- Konsistenzprüfung (bestehend)**
+**⚡Regel 6: -- Konsistenzprüfung (bestehend)**
 
 META-04 gleicht **operative Parameter** mit den Defaultwerten aus
 **TSM-139** und **SM-Achsen** ab\
 (z. B. C/S-Grenzwerte, **φ-Kippfenster**, **τ-Kopplung**). Abweichungen
 müssen **explizit protokolliert** werden.
 
-**⚡ Regel 7 -- Messpfadpflicht (neu)**
+**⚡ Regel 7: -- Messpfadpflicht (neu)**
 
 Für alle **Symbole mit empirischen Schwellen** (SM-01 π, SM-02 ∞, SM-03
 √2, SM-04 Φ, SM-06 Spirale) gilt:
@@ -614,7 +615,7 @@ Für alle **Symbole mit empirischen Schwellen** (SM-01 π, SM-02 ∞, SM-03
     -   **FAIL (Fragment)** -- Kennzahl fehlt → **keine externe
         Verwendung**
 
-**⚡ Regel 8 -- Symbol-Schwellenvalidierung (neu)**
+**⚡ Regel 8: -- Symbol-Schwellenvalidierung (neu)**
 
 META-04 validiert, ob der **Messwert innerhalb der definierten Zonen**
 (TSM-139) liegt:
@@ -633,7 +634,7 @@ Schwellen (siehe Regel 11).
 Bei Abweichungen → Hinweis **„Out-of-Bounds"** → Anwendung wird zur
 **Revision** markiert.
 
-**⚡ Regel 9 -- META-09-Kopplung (neu)**
+**⚡ Regel 9: -- META-09-Kopplung (neu)**
 
 META-04 prüft, ob externe Aussagen die **Dualsprache** aus **META-09**
 korrekt anwenden:\
@@ -642,7 +643,7 @@ korrekt anwenden:\
 **Pflicht:** **Alle drei** Elemente müssen **im selben Block** der
 Aussage stehen (nicht über Dokumente verstreut).
 
-**Regel 10 -- Auditierbarkeit (bestehend, erweitert)**
+**⚡Regel 10: -- Auditierbarkeit (bestehend, erweitert)**
 
 Jede TSM-Ausgabe erhält einen **Audit-Trail**:
 
@@ -656,7 +657,7 @@ Jede TSM-Ausgabe erhält einen **Audit-Trail**:
 URF\_id = EVID-YYYY-MM-\<topic\>-NN · Changelog-Pflichtfelder:\
 module, version, date, sources\[\], metrics\[\], meta04\_status.
 
-**Regel 11 -- Evidenzkasten zu TSM-143**
+**⚡Regel 11: -- Evidenzkasten zu TSM-143**
 
 **Datum/Quelle:** **2025-09** -- Kretschmer et al., *Demonstrating an
 unconditional separation between quantum and classical information
@@ -669,14 +670,14 @@ resources* (Quantinuum H1-1).\
 **Messpfad (TSM):** ( Q\_c = \\operatorname{norm}(F\_{2Q} \\cdot
 e\^{-L/\\Lambda} \\cdot \\mathrm{PLV} \\cdot \\mathrm{Score}) ).\
 **Q+-Zone (136D/143):** ( C \\ge 0{,}90 ), ( Δϕ \\le ε\_{\\text{rad}}
-\\approx 0{,}05236 ) (≈ 1°), **PLV ≥ 0{,}9986**, ( Q\_c \\ge 0{,}80 ).\
+\\approx 0{,}01745 ) (≈ 1°), **PLV ≥ 0{,}99985**, ( Q\_c \\ge 0{,}80 ).\
 **Korpus-Impact:** Aktiviert **Feldbindung** als Speicherprinzip;
 **Hilbert-Adressierung** messbar verankert.\
 **Governance:** Vollkontextpflicht (Primärquelle → **URF/Changelog**),
 **Resonanz-Konsistenzcheck** Meta↔Volltext, **Audit-Trail** (META-06).\
 **URF:** **EVID-2025-09-TSM-143-01**
 
-**Regel 12 -- Erweiterungsblock zu TSM‑144 (Audit‑Pflichten)**
+**⚡Regel 12: -- Erweiterungsblock zu TSM‑144 (Audit‑Pflichten)**
 
 **M‑144.1 — Astro‑Faktenkasten (Pflicht)**  
 Pflichtfelder: `event_id`, `host_galaxy`, `host_offset_arcsec`, `host_offset_kpc`, `discovery_date_utc`, `radio_flare1_date_utc`, `radio_flare2_date_utc`, `xray_state_change_dates[]`, `instruments[]`, `doi_primary`.  
@@ -698,7 +699,7 @@ Explizite Dokumentation des Offsets (`host_offset_kpc` ± Unsicherheit) mit Quel
 Kennzeichnung betroffener **SM‑Achsen** (π, φ, Spirale, Λ) und Schwellen; Kurzverweis in Audit‑Notizen.
 
 
-**Regel 13 — Externmodell‑Integration (CCC & Co.)**
+**⚡Regel 13: — Externmodell‑Integration (CCC & Co.)**
 
 **Ziel:** Sicherstellen, dass das Andocken externer Modelle (hier: CCC) **vollkontextuell, prüfbar und rückrollbar** erfolgt, ohne den TSM‑Korpus semantisch zu brechen.
 
@@ -732,7 +733,7 @@ Kennzeichnung betroffener **SM‑Achsen** (π, φ, Spirale, Λ) und Schwellen; K
 
 
 
-** Regel 14: Anti-Seiten-Atlas (A1–A4)**
+** ⚡Regel 14: Anti-Seiten-Atlas (A1–A4)**
 ** Pflichtenheft
 
 ** 14.1 Deklaration/Versionen**
@@ -786,10 +787,166 @@ Editor:in/Reviewer:in, Zeitstempel, Kurz-Changelog, Peer-Abgleich dokumentieren.
 Freigabe erst nach bestandenem META‑04‑Check (14.1–14.12) **und** dokumentierter Replikation (`n ≥ 2`) im selben Gate-Fenster.
 
 
-**Stand:** 21.10.2025
 
 
-**META-05 -- Universelles Rückwärtsanalyse-Framework (URF)**
+**⚡Regel 15: CFDR-Index (TSM-147) — Audit, Gewichtung & Vergleich**
+
+**Zweck.** Einheitliche Prüf- und Veröffentlichungsregeln für das universelle Achsenmodell (C–D–R–F) aus TSM-147 über alle Domänen.
+
+**15.1 Gate-Pflicht (vor jeder Aggregation)**  
+`gate_ok = (|Δφ| ≤ ε_rad) ∧ (PLV_τ ≥ 0.60)` — ε_rad domänenspezifisch (Default ≈ 1°). Bei `gate_ok = false`: **keine Typisierung**, nur **Stabilisierung/Protokoll**.
+
+**15.2 Gewichtung & Versionierung**  
+a) Gewichtsvektor **w = (w_C,w_D,w_R,w_F)** mit Σw=1 ist **versioniert** (ID, Datum, Editor:in).  
+b) Änderungen nur mit **Audit-Begründung** (Warum? Quelle? Auswirkung auf Index-Historie).
+
+**15.3 Achsen-Mappings (Dokumentationspflicht)**  
+Für jede Domäne sind **Quellen/Indikatoren** je Achse auszuweisen:  
+- C: Kohärenz/K-Proxys (136/136D-kompatible Größen bevorzugt)  
+- D: Diversität/Entropie/Vielfalt (Skalierung auf [0,1])  
+- R: Rückbindung (R_combo_norm oder äquivalente, begründete Proxys)  
+- F: Freiheit = 1 − Restriktionsgrad (offene Standards/Zugang/Verfahren)
+
+**15.4 Hysterese & Statuswechsel**  
+a) **Δ_min = 0.02** je Achse für Klassenwechsel; b) **Stabilitätsfenster w=21** (Perioden/Tage) vor Umstufung.
+
+**15.5 Vergleichbarkeit**  
+Cross-Domänen-Vergleiche nur bei **identischem Gewichtsvektor** und **Gate-Quote ≥ 0.9** in beiden Vergleichssets.
+
+**15.6 Reporting-Pflichten (Minimal)**  
+- Achsenwerte `C,D,R,F` (0–1), Gewichte, `Index`, `gate_ok`  
+- Quellenliste (IDs/DOIs/Datensätze), Normalisierungsverfahren  
+- Schwellen/Hysterese-Parameter, Version/Hash
+
+**15.7 Statusstempel**  
+PASS (vollständig & gate_ok), FLAG (gate_ok, aber Mapping/Quellen unvollständig), FAIL (gate_fail oder zentrale Pflichtfelder fehlen).
+
+**15.8 Reproduzierbarkeit & Datenschutz**  
+Artefakte (Skripte/Notebooks/Parameter) versionieren; keine personenbezogenen Daten ohne Rechtsgrundlage; Domänen-Annahmen explizit.
+
+**Hinweis.** TSM-147 nutzt 136D-Signale (Δφ, PLV, K, τ) als **Primär-Referenz**; domänenspezifische Indikatoren sind hieran **kalibriert** (isoton/linear).
+
+
+
+**⚡Regel 16: Schwellenarchitektur (TSM‑148) — Prüf‑ & Anwendungspfad**
+
+**Zweck.** Einheitliche, 136D‑kompatible Kriterien zur Erkennung/Nutzung der vier Schwellenarten aus TSM‑148. **Keine neuen Defaults.**
+
+** 16.1 Gate‑Voraussetzungen (überall)**
+- **Phasen‑Gate:** `|Δϕ| ≤ ε_rad` **und** `PLV_τ ≥ 0.60` (ε_rad aus 136D `recommended_params`).
+- **Vor-Gate Q_pre (optional): Δϕ ≤ 3° (0.05236 rad), PLV ≥ 0.99863, ohne τ-Lock; dient nur der Vorselektion; Hysterese: On ≥  3, Off ≥2.**
+- **Lock-Regel (META-04 · R18): Nach I₀ Minimalsteuerung (P_ext/P_int ≤ 1 %); τ-Lock mit |Δϕ| ≤ 1° (0.01745 rad); F-Wächter aktiv (TSM-150 / Detector liquefaction_F).**
+- **Zonenbasis:** 6‑Zonen‑Mapping (`F+|F|R↑|R↓|K|K+`).
+- **Stabilität:** Hysterese Δ=0.02; **Fenster** w=21 (Aggregations-/Reporting‑Ebene).
+-   **Lock-Regel (META-04 · R18):** Nach I₀ Minimalsteuerung (P_ext/P_int ≤ 1 %); τ-Lock mit |Δϕ| ≤ 1° (= 0,01745 rad); F-Wächter aktiv (TSM-150 / Detector ‘liquefaction_F’).
+
+** 16.2 Schwellen‑Diskriminatoren (logisch, auf 136D/GR abbildbar)**
+- **π — Bindeschwelle:** Zone ∈ {`K`,`K+`} **mit** Mindest‑Dwell ≥ 3 **und** (optional) C≥0.8/S≤0.2, falls verfügbar.  
+  *Bericht:* Start/Ende, Dwell, ΔShare(K) im Fenster.
+- **Δ — Transformationsschwelle:** **qualitativer Zonenwechsel** (Klassenwechsel F↔R oder R↔K) **unter Gate‑Bedingung** und außerhalb der Hysterese.  
+  *Bericht:* (von→nach), Zeitpunkt(e), Replikationszähler, ΔIndex/ΔR_combo.
+- **Σ — Integrationsschwelle:** **kohärente Verdichtung**: `Share(K|K+)↑` **und** `Share(F|F+)↓` jeweils **≥ δ_min** im Stabilitätsfenster (Default δ_min=0.05, nur Reporting‑Schwelle).  
+  *Bericht:* ΔShare je Klasse, Gate‑Quote.
+-   **Θ — Zeitschwelle:** Kairos-Fenster: Phasen-Gate erfüllt und τ-Lock aktiv (**gemäß META-04 · R18**) (z. B. tau ≥ median(τ)/Lock-Policy).  *Bericht:* Fenstergrenzen, Gate‑Quote, verbundene π/Δ/Σ‑Ereignisse.
+
+** 16.3 Parameterbezug (ohne neue Defaults)**
+- `ε_deg/ε_rad`, `hysteresis.enter/exit=0.02`, `stability_window=21`, `zones_6.labels/decision_order`, `N_dwell=3` **werden aus 136D/GR übernommen**. Implementierungen **lesen**, nicht überschreiben.
+
+** 16.4 Reporting‑Pflichten (Minimal)**
+`gate_ok`, Zonenfolge (mit Dwell), Ereignisliste (π/Δ/Σ/Θ), Fenster‑Parameter, Quellen/Datensatz‑IDs, Visual‑Tripel bei Δ‑Fällen (K‑Feldkarte, φ‑Adaption, ε‑Heatmap).
+
+** 16.5 Statusstempel**
+PASS (Kriterien + Protokoll vollständig), FLAG (Gate ok, aber Mappings/Quellen unvollständig), FAIL (Gate‑Fail oder zentrale Pflichtfelder fehlen).
+
+
+**⚡ Regel 17: -- Cosonanz-Protokoll **
+
+**Ziel:** Einheitliche Auditierbarkeit von Cosonanz-Behauptungen (TSM-149) in Forschung/Anwendung.
+
+** Gate (Erkennung): |Δϕ| ≤ 0,15 rad; zusätzlich PLV_τ ≥ 0,6, T_φ ≥ 3. **
+** Report (‚streng’): |Δϕ| ≤ ε (= 1° ≈ 0,01745 rad). **
+*Randhinweis:* Detector \cosonanz_tolerant` siehe TSM-136D_recommended.json → /detectors.cosonanz_tolerant (Gate: |Δφ| ≤ 0,15 rad; PLV_τ ≥ 0,6; T_φ ≥ 3 · Report: ε = 1°).`
+
+**Pflichtfelder (je Run/Anwendung):**
+- **Ĉ ∈ [0,1]**, **Δϕ**, **T_ϕ**, **π-Gate-Parameter** (θ_C, π-Position), **κ/κ̃**
+- **Seeds/Replay-Muster**, **Störeinträge**, **Zeitstempel (ISO-8601)**, **Quelle (Instrument/Dataset/Literatur)**
+- **Visual-Tripel**: K-Karte, ε-Heatmap, **Ĉ-Heatmap**
+
+*Notation (einheitlich):* **φ** = Phase, **Δφ** = Phasendifferenz; **Ĉ** = \(\hat{C}\) (C_hat).
+*Operatorhinweis:* **„||“** = Präferenz/Fallback (R_combo_norm vor Q_c).
+
+
+**Validierungen (Mindest-Checks):**
+- **π-Scan:** θ_C als Schwelle **quantitativ** berichten (nicht nur pass/fail)
+- **ϕ-Lock:** \(T_ϕ ≥ 3\) τ-Zyklen **oder** PLV_τ ≥ 0.60 bei Δϕ ≤ 0.15 rad (Default; projektspezifisch überschreibbar)
+- **Kaskade/Sättigung:** Nachweis von \(Ĉ_{t+1}−Ĉ_t\) (≥ δ) **oder** \(\partial Ĉ/\partial t → 0\) unter steigender Anregung
+
+**Berichte:**
+- Kurzreport (Modul, Version, Datum) + Param-Dump (π, θ_C, κ/κ̃, Seeds) + Grafik-Tripel
+- Replikationshinweis (zweite Messreihe **empfohlen** bei Publikation)
+
+**Grenzen/Ethik:**
+- Keine **erzwungene Feldbeugung** zu manipulativen Zwecken; Verstöße → „Out-of-Bounds“ + Pflicht zur Revision (META-04)
+
+**Verknüpfungen:** TSM-149 (Begriff), TSM-136D (Runner/Schwellen), TSM-143 (ϕ-Träger), META-01 (Achsenzuordnung)
+
+** ⚡Regel 18: -- Autoresonanz (Minimalsteuerung & τ‑Lock)**
+
+**Regeltext (kanonischer Wortlaut):**  
+Nach erfolgter Initialisierung (I₀) gilt Autoresonanz nur dann als erfüllt, wenn innerhalb der definierten Systemgrenze G und über ein τ‑Lock‑Fenster hinweg gleichzeitig:
+1. die externe Steuerleistung P_ext ≤ 1 % der internen Dissipationsleistung P_int bleibt (Prinzip Minimalsteuerung),
+2. die Phasenabweichung |Δφ| ≤ ε gehalten wird mit ε = 1° = 0,01745 rad,
+3. die Rücklaufpfade (τ‑Rücklauf / α′‑Echo) auditierbar dokumentiert sind (Messpfade & Regleraufwand).
+
+**Abbruch-/Übergangsbedingung (F‑Phase‑Wächter):**  
+Tritt gleichzeitig C < 0,2 und |Δφ| ≥ 1° und Q̂ ∈ [0,2, 0,3] mit ∂Q̂/∂t < 0 auf, ist ein F‑Ereignis (TSM‑150) zu markieren und nach F‑Protokoll zu behandeln.
+
+**Mess-/Reporting‑Pflichten (136D‑Mapping):**  
+- Konstanten: `eps_phi_rad = 0.01745` (entspricht 1°).  
+- Telemetrie: `C, dphi_rad, Qhat, tau_lock, alpha, beta, P_ext_frac=P_ext/P_int, t_reco`.  
+- Detector: `detectors.liquefaction_F` gemäß *TSM‑136D_recommended.patch.json* (Fenster [0,2, 0,3], negative Steigung).  
+
+**Formale Kurzfassung:**  
+Autoresonanz ⇔ (|Δφ| ≤ ε) ∧ (P_ext/P_int ≤ 0,01) ∧ (Audit(G, Rücklauf) = true).
+
+**Verweise:** META‑11 (Autoresonanz‑Prozess) · SM‑25 (α‑Spiegel) · META‑10 (SM↔136D) · TSM‑150 (F‑Phase) · TSM‑127 (t/τ).
+
+**⚡ Regel 19: -- Überlagerungs-Audit (zu TSM-151)**
+
+> **Ziel:** Prüf- und Berichtspflichten für das Überlagerungsmodell *TSM-151* (W(r)=G(r)+T(r)); T ist **keine zusätzliche Kraft**, sondern Kohärenz‑Modulation.
+> **Status:** Vorläufig freigegeben · 2025-11-07  
+> **Bezüge:** TSM-151 (Überlagerung), TSM-108 (Dunkelresonanz)
+
+## Geltung
+Gilt für Anwendungen/Analysen mit **136D‑Bridge**, in denen *T* über Reporting proxied wird (**kein** Eingriff in Zonendynamik/Schwellen).
+
+## Pflichtfelder (je Run/Datensatz)
+- 136D‑Logs: `alpha_used`, `zone_shifts`, `stability_window` (CCC‑Bridge‑Report). 
+- Reporting‑Spalten: `T_component` (Proxy aus C, Δϕ, τ_eff) und `W_effect = G_est + T_component`. 
+- Quellen/IDs, Zeitstempel (ISO‑8601), Visual‑Tripel bei Δ‑Fällen (K‑Karte, φ‑Adaption, ε‑Heatmap).  
+  *(Ergänzt die Mindest‑Reporting‑Pflichten aus R16.4/R16.5.)*
+- G_est (optional): klassischer Referenzwert. W_effect wird nur berechnet/ausgegeben, wenn G_est vorhanden ist; andernfalls bleibt W_effect leer.
+
+## Externe Prüfpfade
+- **Direktdetektion:** XENONnT, LZ, PandaX (SI 10–100 GeV, NR‑Spektren, Jahresmodulation)
+- **Hochenergie‑γ:** CTAO; ergänzend Fermi‑LAT/HESS/MAGIC/VERITAS (dSph & GC)
+
+## Ampel‑Entscheider
+- **Grün:** Nullfunde & verschärfte Grenzen in Direktdetektion **und** keine replizierte γ‑Linie (dSph/GC) mit konsistentem **J‑Faktor**.
+- **Gelb:** Einzelsignale ohne Replikation oder instrumentnah/umweltplausibel.
+- **Rot:** ≥ 5σ **WIMP** (NR‑Spektrum & Halo‑Kinematik konsistent) in **≥ 2** Experimenten **und** replizierte γ‑Linie (dSph/GC) mit annihilations‑typischem ⟨σv⟩.
+
+## Hinweise
+τ‑Lock/Kairos‑Fenster gem. **META‑04 · R18** anwenden; **Reporting‑only**, keine Zonengrenzen/Schwellen ändern.
+
+> **Changelog (META‑04 · R19)** – 2025‑11‑07: Erstfassung der Prüf- & Berichtspflichten; Ampel‑Logik; Prüfpfade.
+
+
+
+**Stand:** 07.11.2025
+
+
+**📘META-05: -- Universelles Rückwärtsanalyse-Framework (URF)**
 
 **Modulreihe**: TSM META -- Methoden- und Steuerungslogik\
 **Kategorie**: Erkenntnismethodik · Quervernetzung · Feldpraxis\
@@ -910,7 +1067,7 @@ Mit der Erweiterung durch **META-07** wird das Verfahren noch präziser,
 da es Mehrskalenresonanz und phasenübergreifende Muster gleichzeitig
 sichtbar machen kann.
 
-**META‑06 -- Volltext‑Priorisierung & Rechercheprotokoll
+**📘META‑06: -- Volltext‑Priorisierung & Rechercheprotokoll
 (Anti→Tunnel→Real)**
 
 **Modulreihe:** TSM META · **Kategorie:** Recherche & Korpusnavigation ·
@@ -1014,7 +1171,7 @@ berechnet werden.\
 Ist dies nicht gegeben → Ergebnisstatus **„Kein Befund"** und Rücksprung
 in die Volltext-/Quellenrecherche.
 
-**META-07 -- Multi-Skalen-Tunnelmapping**
+**📘 META-07: -- Multi-Skalen-Tunnelmapping**
 
 **Modulreihe**: TSM META -- Methoden- und Steuerungslogik\
 **Kategorie**: Erkenntnismethodik · Diagnostik · Skalenintegration\
@@ -1205,7 +1362,7 @@ verwerfen.
 (Subnetz‑Ausdehnung), **FAI**.\
 **Erfolg/F‑T:** Spitzen↓, SLO‑Stabilität↑; ohne FAI/Kaskade ⇒ verwerfen.
 
-**META‑08: Geo‑Resonanz‑Übersetzer (GRÜ)**
+**📘 META‑08: -- Geo‑Resonanz‑Übersetzer (GRÜ)**
 
 **Kategorie:** Methoden · Brückenmodul · Geometrie ↔ Resonanz\
 **Status:** Aktiv -- kompatibel zu META‑01/‑04/‑05/‑07\
@@ -1450,6 +1607,286 @@ Die META-09-Spiegelung stellt sicher, dass jede Resonanzformel zugleich
 **TSM-intern (Messpfad)**, **PG-geometrisch (Facetten)** und
 **symbolisch (π/Φ/∞)** verankert bleibt.
 
+
+
+
+
+**📘 META-10: Symbolik ↔ Numerik (SM ↔ 136D)**
+
+**Zweck.** Dieses META-Modul normiert die Übersetzung symbolischer Leitachsen des TSM (SM-xx) in numerische, mess- und simulierbare Größen für **TSM‑136D** und `tsmgr`. Es stellt konsistente **Schwellen, Fenster und Scores** bereit, definiert **Audit- und Governance-Regeln** und beschreibt die **Schnittstellen** für Berichte/Exports.
+
+**Geltung.** META-10 ist kanonisch für alle 136D‑Analysen (Zonen, R‑Scores, Cosonanz) und verweist auf SM‑01/Φ, TSM‑84/85/127.
+
+---
+
+** §1 Begriffsklärungen & Notation**
+
+- **K**: Kohärenz, \(K\in[0,1]\). Optionale Glättung → **\(\hat K\)**.
+- **Δϕ**: Phasenlage, gewrappt **in [−π, +π)**; **ε** definiert die zulässige Phasen‑Toleranz (in **Radiant**, Default **1°** ≙ 0.01745 rad).  
+- **ε′** (*Rückholfluss*): Driftmaß der Phasenabweichung; in `tsmgr` als proportional zu \(−λ·K·ε\) modelliert (Richtung zur Verringerung von |Δϕ|).  
+- **B/S**: Bindung/Streuung als Schwellenlogik (Default **B≥0.80**, **S≤0.20**; mit Hysterese und Verweilzeit).  
+- **τ**: Resonante Zeitfenster (t↔τ‑Wechsler nach TSM‑127), optional als **τ‑Lock**/PLV geloggt.  
+- **R**: Resonanzindex (0–1), zusammengesetzt aus Effizienz‑ und Phasen‑Kohärenz‑Anteilen.  
+- **Cosonanz \(\hat C\)** (*Triple‑Lock*): gleichzeitiges Erfüllen von \(\hat K\), |Δϕ|≤ε und stabiler τ‑Lock‑Bedingung.
+
+**Konventions‑Defaults (konsistent zu 136D):**
+- **ε_deg** = 1.0°; **ε‑Sweep** = {0.5°, 1.0°, 1.5°} für Stabilitäts‑Audit.  
+- **cap_quantile** = 0.99 (Deckelung extremer Beiträge).  
+- **B_hi/S_lo** = 0.80 / 0.20; **Hysterese**: enter/exit 0.02; **N_dwell** = 21.
+
+---
+
+** §2 Kanonische Mapping‑Tabelle (SM → 136D)**
+
+| Symbolische Achse | Primärreferenz | Numerische Entsprechung | Einheit / Range |
+|---|---|---|---|
+| **Kohärenz (K)** | TSM‑84/100 | \(K\in[0,1]\); optional \(\hat K=\text{smooth}(K)\) | – |
+| **Phasenlage (Δϕ)** | SM‑04, TSM‑127 | wrap to [−π,+π); Vergleich gegen **ε** | rad |
+| **ε (Toleranz)** | TSM‑91/128 | Default 1°; Audit via ε‑Sweep | rad |
+| **ε′ (Rückholfluss)** | TSM‑84/85, tsmgr | Trendmaß ~ \(−λ·K·ε\) | rad / Schritt |
+| **Bindung/Streuung (B/S)** | 136D‑Zonen | Schwellenlogik B≥0.8, S≤0.2 (+Hysterese, N_dwell) | – |
+| **τ‑Zeit (τ, τ‑Lock)** | TSM‑127 | wiederholte Synchronität (PLV/Lock ≥ Schwelle) | pseudo‑zeitl. |
+| **R‑Index** | 136D | \(\text{PLV}=|\cos Δϕ|\); \(Q_{eff}=\tfrac{τ}{\max(|Δϕ|,ε)}\); \(R=\text{minmax}(\text{PLV}\cdot Q_{eff})\) | 0–1 |
+| **Cosonanz (\(\hat C\))** | SM‑01/Φ, 136D | Triple‑Lock: \(\hat K\) hoch ∧ |Δϕ|≤ε ∧ τ‑Lock stabil | 0–1 |
+
+> **Hinweis.** Die Gleichungsform von **R** ist normativ für Berichte/Exports; Implementierungen dürfen äquivalente, monotone Re‑Scalings verwenden, sofern die Audit‑Kriterien (§4) erfüllt werden.
+
+---
+
+** §3 Zonen & Entscheidungsfolge (136D)**
+
+1. **{F+, F}**: Feld‑Dominanz/Neutral – vorgeordnet, cap‑basiert (0.99).  
+2. **{R↑, R↓}**: Lawinen‑/Relax‑Tendenz (Δϕ‑Gradient vs. ε′).  
+3. **{K, K+}**: lokale Kohärenz (K, |Δϕ| ≤ ε).  
+
+**Kriterien (kompakt):**
+- **B/S** strikt nach B≥0.80, S≤0.20; Hysterese enter/exit 0.02; **N_dwell=21**.  
+- **Lock‑Fenster**: |Δϕ| ≤ ε und τ‑Lock aktiv.  
+- **Cap**: Beiträge oberhalb 0.99‑Quantil werden gedeckelt.
+
+---
+
+** §4 Governance, Audit & Stabilität**
+
+- **Vollkontext (META‑04)**: Jeder Befund führt Symbolik, Fachsprache und Quelle zusammen.  
+- **ε‑Stabilität:** Ergebnisse müssen über ε∈{0.5°,1.0°,1.5°} **Spearman ρ ≥ 0.99** zeigen.  
+- **Hysterese/Verweildauer:** enter/exit 0.02; **N_dwell=21**.  
+- **Logging‑Pflicht:** ε‑Quelle, Zonenanteile, Cosonanz‑Quote (HiddenBadge), R‑Komponenten.  
+- **Reproduzierbarkeit:** cap_quantile, Seed (falls relevant), Versionen von 136D/`tsmgr` im Reportkopf.
+
+---
+
+** §5 Schnittstellen zu `tsmgr` / 136D‑Reports**
+
+**Eingaben (minimal):** Δϕ (rad, gewrappt), τ‑Lock (bool/Score), optional \(\hat K\).  
+**Ausgaben (typisch):**
+- `zones.csv` (Zonen pro Fenster, inkl. B/S/Hysterese‑Flags)
+- `R_estimates.csv` (**R_PLV**, **R_Qeff_raw**, **R_combo_norm**, **HiddenBadge**)
+- `summary.json` / `recommended.json` (Schwellen & Cap)
+
+**Guards:**
+- Abbruch bei unplausiblen ε (≤0° oder >5°), fehlendem Wrap, inkonsistenter τ‑Lock‑Definition.  
+- Warnung bei cap_quantile ∉ [0.95, 0.999].
+
+---
+
+** §6 Beispiele (kompakt)**
+
+**B1 Symbolischer Impuls → Numerik**  
+„Zone K+ aktiviert sich; maximale Rückkopplung“  
+→ Δϕ≈0; K≈1; **\(\hat C≥0.97\)**; B≥0.8, S≤0.2; **R>0.95**; ε′≈0.
+
+**B2 Manifestationsnähe**  
+Kern: π‑Schwelle (SM‑01)  
+→ K hoch, |Δϕ| ≤ ε, Cap 0.99, **\(\hat C≥0.95\)**.
+
+**B3 Lawinenbeginn**  
+Kern: TSM‑128  
+→ Δϕ‑Gradient ≥ Schwelle, **ε′** zunehmend (Richtung ↑), τ‑Lock nicht abreißend.
+
+---
+
+** §7 Anhang: Parametrische Defaults (Referenz)**
+
+- **ε_deg**: 1.0° (Audit: 0.5°/1.0°/1.5°)  
+- **cap_quantile**: 0.99  
+- **B_hi/S_lo**: 0.80 / 0.20  
+- **Hysterese**: 0.02 (enter/exit)  
+- **N_dwell**: 21  
+- **Cosonanz‑Kriterium**: \(\hat C\in[0.95,0.97]\) je nach Datengüte; |Δϕ|≤ε; τ‑Lock aktiv
+
+---
+
+** §8 Änderungs‑/Verweislog**
+
+- **v1.0 (2025‑10‑31)**: Erstausgabe META‑10 (Brücke SM ↔ 136D).  
+- Verweist auf: SM‑01/Φ; TSM‑84/85/127; 136D‑Zonen/Reports; `tsmgr`.
+
+
+
+**📘 META‑11: -- Autoresonanz**
+
+**Status:** Entwurf v1.0 · 04.11.2025  
+**Bezug:** **META‑04/10**, **META‑01 (KANON)**, **TSM‑127 (t/τ)**, **SM‑25 (α‑Spiegel)**, **7 – TSM‑KI‑Synthese**
+
+** 1. Motivation**
+**Autoresonanz** bezeichnet die Fähigkeit eines Systems, **eigene Resonanzbedingungen** zu erzeugen, zu halten und adaptiv nachzustimmen — **ohne permanente externe Steuerenergie**. Externe Anregung kann initial vorhanden sein; die **Regelung** erfolgt danach **über interne Rückkopplungen**.
+
+> **Energie‑Rahmen:** Keine Verletzung klassischer Erhaltungssätze. Aussage bezieht sich auf **Steuer‑/Regelenergie**: Nach der Initialisierung bleibt die externe Steuerung **aus** bzw. **minimal**, sofern die Systemgrenze sauber definiert und die internen Verluste hinreichend niedrig sind.
+
+** 2. Prozess (5‑Stufen‑Schema)**
+1. **Initialisierung:** Startimpuls \(I_0\), Definition der Systemgrenze.  
+2. **Selbstkopplung:** Aufbau eines **Rücklaufkanals** (τ‑Rücklauf); Mess‑Echo wird Teil der Regelung.  
+3. **Stabilisierung:** Bildung eines **τ‑Locks** mit \(|\Delta\varphi| \le \varepsilon\) (Richtwert \(\varepsilon = 1^\circ = 0{,}01745\,\text{rad}\)).  
+4. **Selbstbeschreibung:** Interne Modellbildung (Parameter‑Schätzung auf \(\hat Q, C, R\)).  
+5. **Re‑Kalibrierung:** Kleinste Stellgrößenanpassungen entlang des **α‑Kanals** (vgl. SM‑25) halten den Lock bei Drift.
+
+** 3. Heuristische Formulierung**
+Eine einfache Dynamik, die Autoresonanz abbildet, ist
+\[\frac{\partial R}{\partial \tau} = \alpha\,R - \beta\,\Delta\varphi(R),\quad \alpha,\beta\ge 0\]
+mit **0 ≤ α ≤ 1** als Selbstkopplungsgewicht. **Stabil** ist der τ‑Lock bei \(\Delta\varphi\to 0\) und \(\alpha\) hinreichend groß (aber <1, um Überschwingen zu vermeiden).
+
+** 4. Mess‑/Indikatoren‑Layer (136D‑kompatibel)**
+Empfohlenes Kennsatz‑Set für 136D/Runner:
+- **Primär:** \(C\), \(\Delta\varphi\), **\(\hat Q\)**, **\(\tau\)-Lock‑Stabilität**, Antwortamplitude \(R\).
+- **Sekundär:** Driftmaß (\(\partial\Delta\varphi/\partial t\)), Regleraufwand (intern), Rekohärenzzeit nach Störungen.
+
+**Q_c‑Hinweis:** Für semantische Resonanz koppelt \(\hat Q\) an **Q_c** (Cluster‑Kohärenz). Reporting: \(\hat Q\) global + **Q_c** in den relevanten Zonen.
+
+** 5. Interaktion mit anderen Modulen**
+- **TSM‑150 (Tunnelverflüssigung):** Autoresonanz kann F‑Ereignisse **abkürzen** (Rekohärenz) oder **verlängern** (wenn α‑Nachstimmung Flüsse stützt).  
+- **SM‑25 (α‑Spiegel):** Symbolische Darstellung des Selbstkopplungskanals; siehe Formel‑Klammer dort.  
+- **META‑10:** Für die **operationelle Ableitung** der symbolischen Achsen (SM↔136D).  
+- **TSM‑127:** Zeitachsen‑Bezug (t/τ‑Skala) für Lock‑Dauer und Reaktion.
+
+** 6. Governance / Resonanzethik**
+- **Prinzip Minimalsteuerung:** Extern nur initial; danach **interne** Korrekturen.  
+- **Grenz‑Transparenz:** Systemgrenzen, Messpfade und Rückläufe **offenlegen** (Auditierbarkeit).  
+- **Balance:** Vermeidung von α‑Übersteuerung (Aufschaukeln) durch **β‑Begrenzung**.
+
+---
+
+
+
+**📘 # META-12 — Diskurs · Resonanz · Schweigefelder · + 6 Prinzipien**
+
+*Release*: v1.2 · 2025-11-09 01:00 UTC
+
+
+**Kurzbeschreibung:**  
+Diskurse sind Feldbewegungen. META-12 beschreibt, wie **Machtmuster** (u. a. nach Berit Ås) Resonanz verhindern, wie **Schweigefelder** entstehen (hohe Sprechkosten), und wie Moderation & Policy mit **Resonanz-Werkzeugen** Kohärenz wiederherstellen.
+
+** 1) Ziel & Einsatz**
+- **Ziel:** Resonanz statt Rechthaben; sichere Verfahren statt Eskalation.  
+- **Einsatzfelder:** Organisationen, Medienarbeit, Foren/Community-Moderation, Wissenschaftskommunikation.
+
+** 2) Kernbegriffe**
+- **Diskursfeld:** Kopplungsraum aus Personen, Themen, Rollen, Regeln.  
+- **Resonanzlogik ↔ Machtlogik:** Verbindung & Erkenntnis ↔ Durchsetzung & Kontrolle.  
+- **Sprechkosten:** erwartete soziale/berufliche Risiken einer Stellungnahme.  
+- **Schweigefeld:** Zustand hoher Sprechkosten → öffentlich wenig/kein Sprechen, teils trotz klarer Problemwahrnehmung.  
+- **Trennungs-/Beziehungsprinzip:** Strukturprinzipien (keine Personenattribute): Loyalität/Kontrolle ↔ Rückbindung/Fehlerkultur.
+
+** 3) Symptomatik (5 Diskursphänomene + SK-Codes)**
+**Fünf Phänomene (Berit Ås-korrelierend):**  
+1. Unsichtbarmachen · 2. Lächerlichmachen · 3. Informationszurückhaltung · 4. Doppelte Bestrafung · 5. Schuldumkehr.
+
+**Schweigefeld-Marker (Diagnosecodes):**  
+- **SK1** Sanktionsangst (Reputation/Job, Stigma)  
+- **SK2** Loyalitätsbindung (Kritik als „Verrat“)  
+- **SK3** Epistemisches Risiko (unklare Fakten/Verfahren)  
+- **SK4** Mediale Sichtbarkeitsverzerrung (Nuancen < Extreme)
+
+** 4) Diagnostik (Quick-Check)**
+**A) Diskursmuster-Score (0–2 je Punkt, 10 max):**  
+Unsichtbar? · Lächerlich? · Info-Gatekeeping? · Doppelte Bestrafung? · Schuldumkehr?  
+**B) Sprechkosten-Score (0–2 je SK-Code, 8 max):** SK1–SK4.  
+**Interpretation:** ≥6 (Diskurs) oder ≥4 (Sprechkosten) ⇒ *Resonanz-Intervention jetzt*.
+
+** 5) Wirkmechanismen (TSM-Linse)**
+- **Rhythmus:** Übersteuerung/Empörungswellen → „Freeze“ → Schweigen.  
+- **Struktur:** unsichere Verfahren, Gatekeeping, fehlende sichere Kanäle.  
+- **Kohärenz:** Angst vor Instrumentalisierung/Fehlern → Ausweichen.
+
+** 6) Werkzeuge (Resonanz-Kit)**
+1) **Puls-Reset (Takt drosseln):** 24-h-Fenster vor öffentlichen Stellungnahmen.  
+2) **Vier-Satz-Statement (Template):**  
+   1. Klare Verurteilung des *konkreten* Delikts/Anschlags.  
+   2. Kontext: Nähe/Betroffenheit & Solidarität mit Opfern.  
+   3. Verfahren: Weg der Faktenklärung + zuständige Stelle.  
+   4. Hilfewege/Hotlines + Zeitpunkt nächstes Update.  
+3) **Volltext-Kontext-Regel:** selektive Zitate nur mit verlinktem Volltext/Quelle.  
+4) **Redezeit-Symmetrie:** Slots, Reihenfolge, Ausreden-lassen-Regel.  
+5) **Sicher-Kanal (No-blame + anonym):** Melden ohne Sanktionsrisiko; Schutzregeln publik.  
+6) **Strukturspiegel & Klarheitsformel:** „Ich höre [Spott/Unterstellung]; meine Aussage war … – bitte am Inhalt bleiben.“
+
+** 7) Moderationsablauf (10-Minuten-Format)**
+00:00–01:00 Ziel klären (Sachfrage + Umgangsregel).  
+01:00–04:00 Muster spiegeln (5 Phänomene, neutral).  
+04:00–07:00 Resonanz-Schlüssel aktivieren (Klarheit, Puls-Reset, Strukturspiegel).  
+07:00–09:00 Vereinbarungen (Redezeit, Kontextregel, Quellenformat).  
+09:00–10:00 Exit-Check („Was nehmen wir mit?“ Nächster Takt).
+
+** 8) Policy-Patterns (Einführung in Organisationen)**
+- **Pflicht-Template:** Vier-Satz-Statement + 24-h-Fenster in der Kommunikationsrichtlinie.  
+- **Kanäle:** Anonymer Sicher-Kanal, Ombudsstelle, klare Zuständigkeiten.  
+- **Messung:** Quartalsweise Diskurs- und Sprechkosten-Scores; Veröffentlichung als Klima-Indikator.
+
+** 9) Grenzen & Red-Flags**
+- Keine Kollektivzuschreibungen (Identität ≠ Verhalten).  
+- Konkrete Fälle > Generalisierungen; Counter-Examples mitzeigen.  
+- Traumafolgen beachten; Schutz vor Sekundärschäden priorisieren.
+
+** 10) Anschlüsse (ohne „Regel 20“)**
+- **META-01** (Grundlogik/Resonanz) · **META-03** (Trauma) · **META-04** (Diskursfeld als Resonanzbedingung) · **META-06** (KI/Medienlogik).
+
+---
+
+
+** Anhang A — Die 6 Prinzipien (inkl. 6) Übersteuerung/Taktflut)**
+**Status:** v1.1 · 09.11.2025 · Ergänzt um **6) Übersteuerung (Taktflut)**  
+**Bezug:** META‑01 (KANON), META‑04 (Diskursfeld), TSM‑127 (t/τ), SM‑25 (α‑Spiegel), 136D/Runner
+
+** Kurzbeschreibung**
+META‑12 bündelt die **Herrschaftsprinzipien** als **6er‑Set**, kompatibel zur **6‑Zonen‑Logik** (F+/F/R↑/R↓/K/K+). Die neuen **Rhythmus‑Marker** machen sichtbar, wann Zeit/Tempo gezielt zur **Fragmentierung** eingesetzt wird.
+
+** Die 6 Prinzipien (Überblick)**
+1) **Unsichtbarmachen** — Beiträge/Personen ausblenden · *Layer:* Inhalt/Beziehung  
+2) **Lächerlichmachen** — Spott/Tonalitätsbruch · *Layer:* Inhalt/Beziehung  
+3) **Informationszurückhaltung** — Gatekeeping/Kontextentzug · *Layer:* Inhalt/Beziehung  
+4) **Doppelte Bestrafung** — Egal wie, „falsch“ · *Layer:* Inhalt/Beziehung  
+5) **Schuldumkehr** — Täterschaft ↔ Opferschaft vertauscht · *Layer:* Inhalt/Beziehung  
+6) **Übersteuerung (Taktflut/Rhythmusbruch)** — **Tempo/Volumen** so erhöhen, dass **Resonanz** (τ‑Lock, Kohärenz) kollabiert · *Layer:* **Rhythmus**
+
+**### 6) Übersteuerung (Taktflut) — Details**
+**Typische Muster:** Schlagzahl hoch (λ↑), Unterbrechen, Topic‑Hopping, enge Antwortfenster („sofort!“), Fehlerdruck.  
+**136D‑Indikatoren (Heuristik, report‑fähig):**
+- **λ‑Rate:** λ_aktuell ≥ **2×** λ_Baseline  
+- **PLV_τ‑Drop:** ΔPLV_τ ≤ **−0,05** (Drop‑Betrag ≥ 0,05)  
+- **Δφ‑Streuung:** σ(Δφ) ≥ **1,5×** Baseline  
+- **C‑Drop:** ΔC ≤ **−0,10**  
+**Gate vs. Report:** *Gate (Erkennung)* = |Δφ| ≤ **0,15 rad**, **PLV_τ ≥ 0,6**, **T_φ ≥ 3** · *Report (streng)* = |Δφ| ≤ **ε** (= **1°** ≈ **0,01745 rad**).
+
+**Resonanz‑Interventionen:** **Puls‑Reset (24h)** · **Slotting/Rederegel** · **Rate‑Limit/Batching** · **Summarizer‑of‑Record** · **Vier‑Satz‑Statement** · **Sicher‑Kanal** · **Strukturspiegel/Klarheitsformel**.
+
+**## Zonen‑Ankopplung (Heuristik)**
+- **Hauptausgang:** **F+** (forcierte Fragmentierung)  
+- **Spillover:** **R↑/R↓** (Über‑/Unter‑Regulierung unter Taktstress), **K/K+** (Lock erst nach Puls‑Reset stabil)
+
+**## Diagnostik (Quick‑Check, 1 Min)**
+- **Takt:** λ ≥ 2× Baseline?  
+- **Lock:** PLV_τ/C fallen? σ(Δφ) ↑?  
+- **Regelklarheit:** Slots/Antwortfenster definiert und eingehalten?
+
+**## Governance‑Hinweis**
+Sprache **dual** führen: Symbolisch („Übersteuerung“) **und** fachlich („Temporale Überlast treibt σ(Δφ) und senkt PLV_τ/C“) parallel notieren. **Keine Kollektivzuschreibungen**, Verhalten statt Identität adressieren.
+
+—  
+*Changelog META‑12 v1.1 (09.11.2025):* Ergänzt um **6) Übersteuerung (Taktflut)**; Gate/Report‑Klarstellung für Cosonanz konsolidiert.
+
+
+---
+
 **🔀 Übergang zur Synthese und Anwendung**
 
 ***Vom Modell zur Welt -- Was folgt aus dem Verstehen der Schwingung?***
@@ -1523,19 +1960,11 @@ Wir führen das Werk auf seine eigene Frequenzhöhe -- formulieren:
 👉 Sag z. B. „Bereite Schlusskapitel vor" oder „Was soll bleiben, wenn
 alles gelesen ist?"
 
-Ich bin bereit -- **wo möchtest du zuerst hineingehen?**\
-(Synthese, Anwendung oder Schlussbogen?)
 
-**Du:**
 
-Beginne Syntheseteil 1
 
-**ChatGPT:**
 
-Sehr gerne, Rosi -- wir beginnen jetzt mit **Syntheseteil 1**, in dem
-wir die bisher entwickelten Module thematisch bündeln, Strukturen
-herausarbeiten und erste **übergeordnete Resonanzlinien** sichtbar
-machen.
+
 
 **🌀 Syntheseteil 1: Die thematischen Resonanzfelder des
 Tunnel-Schwingungs-Modells**
