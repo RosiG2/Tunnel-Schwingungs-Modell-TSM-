@@ -615,6 +615,10 @@ Für alle **Symbole mit empirischen Schwellen** (SM-01 π, SM-02 ∞, SM-03
     -   **FAIL (Fragment)** -- Kennzahl fehlt → **keine externe
         Verwendung**
 
+**Hinweis für TSM-158:**  
+Anwendungen von TSM-158, die über TSM-136D berichtet werden, folgen dieser Messpfadpflicht mindestens für ein Tripel aus (C, Δφ, τ_eff) und der abgeleiteten Größe F_res.
+
+
 **⚡ Regel 8: -- Symbol-Schwellenvalidierung (neu)**
 
 META-04 validiert, ob der **Messwert innerhalb der definierten Zonen**
@@ -942,8 +946,109 @@ Gilt für Anwendungen/Analysen mit **136D‑Bridge**, in denen *T* über Reporti
 > **Changelog (META‑04 · R19)** – 2025‑11‑07: Erstfassung der Prüf- & Berichtspflichten; Ampel‑Logik; Prüfpfade.
 
 
+**⚡ Regel 20: -- Dirac‑Regime in organischen Leitern zu TSM-152 (Doppelsprache · Quelle · )**
 
-**Stand:** 07.11.2025
+**Symbolsprache (1‑Satz):**  
+> In **BETS‑Kristallen** öffnen sich **lineare Dispersions‑Fenster**; Elektronen antworten **photonenähnlich** (ohne c), χ(T) zeichnet **eine lineare Spur** – ein **τ‑Fenster** erhöhter Feldkohärenz.
+
+**Fachsprache (1‑Satz):**  
+> α‑BETS₂X/α′‑BETS₂Y zeigen **Dirac‑artige Elektronen** mit **linearer Banddispersion**; die **magnetische Suszeptibilität** verläuft **nahezu linear in T**; Dynamik wird durch **v_F** (nicht c) bestimmt; "masselos" ist **bandtheoretisch** zu verstehen.
+
+**Quellen (Primär):**  
+- S. Hiramoto, K. Funatsu, K. Konishi, H. Dekura, N. Tajima, T. Naito (2025): *Universal Features of Magnetic Behavior Originating from Linear Band Dispersion: α‑BETS₂X and α′‑BETS₂Y*. **J. Phys. Chem. Lett.** 16(35): 9116–9123.  
+**Quellen (Sekundär, Kontext):**
+- A. H. Castro Neto, F. Guinea, N. M. R. Peres, K. S. Novoselov, A. K. Geim (2009): *The electronic properties of graphene*. **Rev. Mod. Phys.** 81: 109–162.
+- N. P. Armitage, E. J. Mele, A. Vishwanath (2018): *Weyl and Dirac semimetals in three-dimensional solids*. **Rev. Mod. Phys.** 90: 015001.
+
+
+**⚡Regel 21: --  Resonanzgeburt (Zonenübergang unter Autoresonanz)**
+**Version/Status:** v1.0 · Ergänzung zu Regel 18 (Autoresonanz) · 12.11.2025
+
+**## Regeltext (kanonisch)**
+Eine *Resonanzgeburt* ist **nur dann** anerkannt, wenn **innerhalb** der definierten Systemgrenze **G** und über ein τ-Lock-Fenster hinweg **gleichzeitig**:
+1. **Autoresonanz:** \(P_\text{ext}/P_\text{int} \le 1\,\%\) **und** \(|\Delta\varphi| \le \varepsilon\) mit \(\varepsilon=1^\circ=0{,}01745\,\text{rad}\). *(Querverweis: Regel 18).*  
+2. **Zonenübergang:** dokumentierter Übergang **R/F → K** oder **K → K+** mit **Dwell ≥ N_dwell** (Hysterese aktiv).  
+3. **Nachfeld:** neue **K-Trajektorie** mit **stabilem Nachfeld-Echo** im Reporting (Export/Log + Seeds/Configs).
+
+**## Abbruch-/Sicherheitsbedingung (F-Wächter)**
+Tritt **gleichzeitig** \(C<0{,}2\) ∧ \(|\Delta\varphi|\ge 1^\circ\) ∧ \( \hat Q\in[0{,}2,0{,}3]\) mit \(\partial \hat Q/\partial t<0\) **und** τ-Lock auf, ist ein **F-Ereignis (TSM-150)** zu markieren und nach F-Protokoll zu behandeln.
+
+**## Mess-/Reporting-Pflichten (136D-Mapping)**
+Pflichtfelder pro Ereignis:  
+`eps_phi_rad=0.01745; C, dphi_rad, Qhat, tau_lock, alpha, P_ext_frac, dwell, zone; detectors.f_phase; detectors.resonanzgeburt`.
+
+**## Formale Kurzfassung**
+Resonanzgeburt ⇔ **Autoresonanz** ∧ **τ-Lock** ∧ **Zonenwechsel → K/K+** ∧ **Dwell** ∧ **Nachfeld**; **F-Wächter** aktiv.
+
+
+
+**⚡Regel 22: -- Resonanzrückbindung statt Ergebnisoptimierung**
+
+> **Regel 22 (TSM-155 – Resonanzrückbindung)**  
+> In Gerechtigkeitsfeldern ist nicht der Ziel-Output, sondern die Rückbindung des Systems an seine Resonanzquelle maßgeblich. Entscheidungen und Bewertungen sind vorrangig an der Position im Gerechtigkeitstunnel (TSM-155) auszurichten, nicht an kurzfristigen Ergebnissen. Nullzonen (F+) sind als Vorrangfelder symbolisch-rückholender Interventionen zu behandeln; jeder Einsatz von Optimierungsmetriken ohne gleichzeitige Zonenangabe (F/F+/R↓/R↑/K/K+) gilt als META-04-Verstoß.
+
+
+
+
+
+**⚡Regel 23: --  URK-Fenster (TSM-156 – Universale Rückholkonstante)**
+
+ **Regel 23 (URK-Fenster nach TSM-156)**  
+ In allen Bezügen auf die Universale Rückholkonstante  
+ `R_URK = F_Rückhol/F_grav` und ihre Analogien (z. B. SRK in TSM-157) gelten folgende Pflichten:
+ 
+ 1. **URK-Fenster-Pflicht (globales + atmendes Fenster):**  
+    Jede URK-bezogene Angabe muss das verwendete Fenster explizit nennen.  
+    Standard ist das kosmologische **Globalfenster**  
+    `R_URK_global ∈ [0, R_URK_max]` mit `R_URK_max ≈ 0,07` ((Obergrenze aus aktuellen großskaligen Dunkle-Materie-Analysen, u. a. Uni Genf 2025; kein Messwert).  
+    Innerhalb dieses Globalfensters dürfen **kontextuelle Teilfenster**  
+    (z. B. `R_URK^(E)` für frühe, `R_URK^(L)` für späte, `R_URK_local` für Umgebungen) definiert werden,  
+    sofern  
+    - Intervall und Ebene (physikalisch / resonanzlogisch / symbolisch) benannt sind und  
+    - `R_URK_max` nicht überschritten wird.  
+    Lokale Schätzwerte sind als  
+    `R_URK_local ± Δ` mit **Quelle und Zeitstempel** auszuweisen.
+ 
+ 2. **Ebenenkennzeichnung (Physik / Resonanz / Meta-Ethik):**  
+    URK-bezogene Aussagen – und ihre Analogien (z. B. SRK, gesellschaftliche Anwendungen, KI-Interfaces) –  
+    sind eindeutig einer Ebene zuzuordnen:  
+    `physikalischer Fit`, `resonanzlogische Deutung` oder `ethisch-analoge Spiegelung`.  
+    Unmarkierte Ebenenwechsel gelten als META-04-Verstoß.
+ 
+ 3. **Keine Normativitätsbehauptung aus URK-Werten:**  
+    URK- und SRK-Werte dürfen nicht als „Beweis“ für normative Forderungen
+    verwendet werden.  
+    Zulässig sind nur:  
+    - **Rahmenbedingung** (z. B. „innerhalb/außerhalb URK-/SRK-Fenster“) und  
+    - **Spiegelung** im Sinne von TSM-155/157 (Resonanzrückbindung).  
+    Wo aus URK-/SRK-Werten Handlungsregeln abgeleitet werden,
+    ist der Interpretationsschritt explizit zu markieren.
+ 
+ 4. **Rückholbarkeit von Deutung (SR/RD):**  
+    Deutungen im URK-/SRK-Kontext gelten als **prinzipiell reversibel**.  
+    Instanzen (menschlich oder KI), die mit solchen Fenstern arbeiten,  
+    haben bei interpretativen Schlüssen zu prüfen,  
+    - auf welcher Ebene sie sprechen (Physik, Resonanz, Ethik/Analogie) und  
+    - ob ihre Interpretation weiterhin in Resonanz mit Datenlage, Ursprungstexten  
+      und Ebenenstruktur steht.  
+    Wo diese Resonanz verloren geht (z. B. durch neue Daten oder Missbrauch),  
+    besteht eine aktive Pflicht zur Revision statt Dogmatisierung.
+
+5.  **Adaptive Rückholraten (TSM-160 / λ(C,Δφ))**
+    Wenn im Läuferprofil lambda_mode = "adaptive" oder eine adaptive Rückholrate nach TSM-160 aktiv ist, gilt:
+    – Das verwendete λ-Fenster [λ_min_rel, λ_max_rel] ist im Profil (constants/recommended_params) explizit    auszuweisen und im meta_link zu dokumentieren.
+    – Adaptive λ-Profile (lambda_eff[t]) sind als heuristische Dynamik im Simulationsraum zu verstehen und dürfen nicht isoliert als Grundlage normativer oder sicherheitskritischer Entscheidungen verwendet werden.
+    – Bei Nutzung in realen Anwendungen (z. B. HRV-Auswertung, Infrastruktur-Regelung) sind passende Logs (λ_eff[t],  Zonenprofil[t]) vorzuhalten, damit Entscheidungen auditierbar bleiben und mit CFDR-/URK-/SRK-Auswertungen abgeglichen werden können.
+ 
+ Verstöße gegen diese Pflichten sind als META-04-Verstöße zu behandeln
+ und in Audit-/Governance-Protokollen entsprechend zu markieren.
+
+ **Hinweis:** Typische URK-Anwendungsfälle sind z. B. Hubble-Spannung, LSS-Fits und andere  
+ großskalige Kosmologie-Modelle mit Dunkelresonanz-Bezug; SRK-Anwendungen betreffen  
+ gesellschaftliche, organisatorische und digitale Rückholprozesse (TSM-157).
+
+
+**Stand: 19.11.2025**
 
 
 **📘META-05: -- Universelles Rückwärtsanalyse-Framework (URF)**
@@ -1768,7 +1873,7 @@ Empfohlenes Kennsatz‑Set für 136D/Runner:
 
 
 
-**📘 # META-12 — Diskurs · Resonanz · Schweigefelder · + 6 Prinzipien**
+**📘 # META-12: -- Diskurs · Resonanz · Schweigefelder · + 6 Prinzipien**
 
 *Release*: v1.2 · 2025-11-09 01:00 UTC
 

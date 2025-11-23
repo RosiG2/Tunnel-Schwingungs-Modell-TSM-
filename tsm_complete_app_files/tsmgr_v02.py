@@ -170,6 +170,32 @@ def K_and_grad(x: List[float], phi: float, prm: Params) -> Tuple[float, List[flo
     s = K * (1.0 - K)
     grad = vscale(prm.xi_k, prm.kappa * s)
     return K, grad
+
+def lambda_adaptive(C: float, dphi: float, lambda_base: float,
+                    lambda_min_rel: float = 0.2,
+                    lambda_max_rel: float = 0.8) -> float:
+    """Adaptive Rueckholrate lambda_eff(C, dphi) nach TSM-84/TSM-136D/TSM-146.
+
+    C           : Koharenzmaß, hier typischerweise K in [0,1].
+    dphi        : Phasenwinkel (Radiant).
+    lambda_base : Basis-Rueckholrate (z.B. prm.lambda_).
+    lambda_min_rel, lambda_max_rel : Minimaler bzw. maximaler relativer Faktor.
+    """
+    if lambda_base <= 0.0:
+        return 0.0
+    # |Delta phi| verwenden und auf [0, pi] begrenzen
+    dphi_abs = min(abs(dphi), math.pi)
+    # PLV-Phasenterm: |cos(Delta phi)| in [0, 1]
+    plv = abs(math.cos(dphi_abs))
+    # relative Rueckholrate in [lambda_min_rel, lambda_max_rel]
+    lam_rel = lambda_min_rel + (lambda_max_rel - lambda_min_rel) * (1.0 - C) * plv
+    if lam_rel < lambda_min_rel:
+        lam_rel = lambda_min_rel
+    elif lam_rel > lambda_max_rel:
+        lam_rel = lambda_max_rel
+    return lambda_base * lam_rel
+
+
 # -----------------------------
 # Zonenlogik mit Hysterese & Dwell
 # -----------------------------
@@ -373,7 +399,7 @@ def simulate(prm: Params, out_dir: Path) -> List[State]:
         if include_alpha_cols:
             row += [prm.alpha, getattr(prm, "ccc_alpha", 0.0)]
         
-    row += [int(F_flag)]row += [PLV_tau, Q_eff, R_combo, int(gate_ok), anti_typ, anti_score]
+        row += [int(F_flag), PLV_tau, Q_eff, R_combo, int(gate_ok), anti_typ, anti_score]
         traj_writer.writerow(row)
         log_f.write(json.dumps({
             "step": step, "tau": tau, "zone": zone,
@@ -384,7 +410,12 @@ def simulate(prm: Params, out_dir: Path) -> List[State]:
                             zone))
         # Dynamik: explizites Euler (bewusst einfach, reproduzierbar)
         # 1) ε' = −λ K ε
-        deps = -prm.lambda_ * K * eps
+        lambda_min_rel = getattr(prm, "lambda_min_rel", 0.2)
+        lambda_max_rel = getattr(prm, "lambda_max_rel", 0.8)
+        lambda_eff = lambda_adaptive(K, phi, prm.lambda_,
+                                     lambda_min_rel=lambda_min_rel,
+                                     lambda_max_rel=lambda_max_rel)
+        deps = -lambda_eff * K * eps
         eps_next = eps + prm.dtau * deps
         # 2) φ' = ω (schlichtes Driftmodell)
         dphi = prm.omega_phi

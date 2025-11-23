@@ -1,7 +1,17 @@
 {
   "schema": "tsm.online.bundle",
   "version": "v1.21",
-  "generated_utc": "2025-09-11T00:00:00Z",
+  "generated_utc": "2025-11-18T00:00:00Z",
+  "compatibility": [
+    "v1.21 old",
+    "v1.25"
+  ],
+  "mode": "integrated (empirical+symbolic)",
+  "fusion_notes": [
+    "Merged v1.21 old empirical bundle (data, pipelines, templates) with v1.25 symbolic constraint model.",
+    "Added symbolic_bridge and constraints sections under meta layer.",
+    "Provides unified mapping between empirical zones and symbolic PG facets."
+  ],
   "manifest": {
     "sources": [
       {
@@ -403,64 +413,6 @@
       ]
     }
   ],
-  "seeds": {
-    "current": [],
-    "legacy": {
-      "urf_events": [
-        {
-          "title": "UFR-2025-05-01-01",
-          "desc": "Example placeholder from v14"
-        },
-        {
-          "title": "UFR-2025-05-03-02",
-          "desc": "Example placeholder from v14"
-        }
-      ],
-      "cluster_lensing": [
-        {
-          "a2390": "seed:wl+sl"
-        }
-      ],
-      "jwst_clumps": [
-        {
-          "id": "jwst-ero-clump-01"
-        }
-      ],
-      "pv_tandem_records": [
-        {
-          "longi": "34.85%"
-        }
-      ]
-    }
-  },
-  "templates": [
-    {
-      "id": "space-weather-card",
-      "fields": [
-        "Kp",
-        "Dst",
-        "Bz",
-        "XRS"
-      ],
-      "note": "v17 template"
-    },
-    {
-      "id": "env-aq-card",
-      "fields": [
-        "PM2.5",
-        "AQI"
-      ],
-      "note": "v17 template"
-    },
-    {
-      "id": "gw-digest",
-      "fields": [
-        "GWOSC events",
-        "Superevents"
-      ],
-      "note": "v17 template"
-    }
-  ],
   "checklists": [
     {
       "id": "sw-nowcast",
@@ -574,28 +526,32 @@
       "notes": "Anti-Seiten-Atlas (A1–A4) – runs with Δφ/PLV_τ gates and produces protocol CSV + diagram."
     }
   ],
-  "aliases": [
+  "templates": [
     {
-      "from": "Kyoto Dst (real-time; SWPC mirror)",
-      "to": "Dst realtime (hourly)"
+      "id": "space-weather-card",
+      "fields": [
+        "Kp",
+        "Dst",
+        "Bz",
+        "XRS"
+      ],
+      "note": "v17 template"
     },
     {
-      "from": "DSCOVR/ACE Solar Wind Plasma",
-      "to": "DSCOVR/ACE Solar Wind Plasma (5 min)"
+      "id": "env-aq-card",
+      "fields": [
+        "PM2.5",
+        "AQI"
+      ],
+      "note": "v17 template"
     },
     {
-      "from": "Dst realtime (hourly)",
-      "to": "Kyoto Dst (real-time; SWPC mirror)",
-      "from_key": "dst_realtime_hourly",
-      "to_key": "dst_rt",
-      "note": "Key alias for v14->v17 Dst source"
-    },
-    {
-      "id": "bridge_physik",
-      "points_to": [
-        "physikanschluss_lab_resonators_v1",
-        "physikanschluss_cosmo_gravonly_v1"
-      ]
+      "id": "gw-digest",
+      "fields": [
+        "GWOSC events",
+        "Superevents"
+      ],
+      "note": "v17 template"
     }
   ],
   "spec": {
@@ -764,21 +720,6 @@
     ],
     "notes": "v1.18: Union von v1.14 (Legacy-Research/News) und v1.17 (Basics/Spec/Templates). Dst-Key-Alias hinzugefügt; Seeds als {current:list, legacy:dict}."
   },
-  "readme": "TSM Online Bundle v1.18 – Merge von v1.14 und v1.17.\n\nZiele: (1) Behalte das aufgeräumte v17-Schema (spec/templates/checklists/protocols), (2) führe alle v14 Legacy-Inhalte (Euclid/FRB/Fusion/PV) wieder als Quellen+Pipelines, (3) sichere Abwärtskompatibilität via Alias (dst_realtime_hourly→dst_rt) und spec.inputs{legacy:true}.\n\nNutzung: Für 'basics' bitte die *-basics Pipelines verwenden; für Legacy-Research die *_v1 Pipelines.\n\nHinweis: Ein Teil der v14-HTML-Quellen sind Presseseiten/Artikel. Diese bleiben als 'type: html' referenziert (nur zum Lesen/Zitieren).\n\n",
-  "health": {
-    "status": "merge:ok",
-    "source_counts": {
-      "v14": 22,
-      "v17": 14,
-      "merged": 33
-    },
-    "pipeline_counts": {
-      "v14": 5,
-      "v17": 4,
-      "merged": 9
-    },
-    "notes": "Seeds structure merged als {current: v17.seeds (list), legacy: v14.seeds (dict)}"
-  },
   "channels": {
     "registry": {
       "RRR": {
@@ -808,5 +749,571 @@
         ]
       }
     }
+  },
+  "constraints": {
+    "type": "H+eq",
+    "positivity": [
+      {
+        "i": 0,
+        "a": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.0
+      },
+      {
+        "i": 1,
+        "a": [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.0
+      },
+      {
+        "i": 2,
+        "a": [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "c": 0.0
+      },
+      {
+        "i": 3,
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "c": 0.0
+      }
+    ],
+    "simplex_eq": {
+      "a": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "c": 1.0
+    },
+    "upper_bounds": [
+      {
+        "i": 0,
+        "a": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.35333333333300004
+      },
+      {
+        "i": 1,
+        "a": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.35333333333300004
+      },
+      {
+        "i": 2,
+        "a": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "c": 0.550399799728
+      },
+      {
+        "i": 3,
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "c": 0.35333333333300004
+      }
+    ],
+    "soft": {
+      "monotone_segment": [
+        {
+          "zone": "fragmentiert",
+          "b": 0.33333333333333337,
+          "r": 0.10546924411835058
+        },
+        {
+          "zone": "kohärent",
+          "b": 0.33333333333333337,
+          "r": 0.1820654780770133
+        },
+        {
+          "zone": "nan",
+          "b": 0.0,
+          "r": 0.5303997997276229
+        },
+        {
+          "zone": "regulativ",
+          "b": 0.33333333333333337,
+          "r": 0.1820654780770133
+        }
+      ],
+      "notes": "Soft: encourages staying near the straight segment from b to r."
+    },
+    "placeholders": {
+      "RGN_state_v0.2.csv": {
+        "status": "pending",
+        "url": "https://raw.githubusercontent.com/RosiG2/Tunnel-Schwingungs-Modell-TSM-/main/RGN_state_v0.2.csv",
+        "lift_plan": "Translate categorical/state rules into linear inequalities Cx <= d (e.g., group caps, required minima)."
+      },
+      "RGN_qc_metrics_v0.1.json": {
+        "status": "pending",
+        "url": "https://raw.githubusercontent.com/RosiG2/Tunnel-Schwingungs-Modell-TSM-/main/RGN_qc_metrics_v0.1.json",
+        "lift_plan": "Enforce QC thresholds as bounds/tolerances (e.g., sum windows, min share per class, stability limits)."
+      }
+    },
+    "lifts": [
+      {
+        "type": "ub",
+        "scope": "group",
+        "group": "core",
+        "zones": [
+          "kohärent",
+          "regulativ"
+        ],
+        "a": [
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "c": 0.6,
+        "meta": {
+          "phase": "3",
+          "key": "p3_group_core_ub",
+          "note": "core ≤ 0.60"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "fragmentiert",
+        "a": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": -0.23333333333300002,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_lb_0",
+          "note": "fragmentiert: x >= 0.2333 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "fragmentiert",
+        "a": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.43333333333300006,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_ub_0",
+          "note": "fragmentiert: x <= 0.4333 (b+τ)"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "kohärent",
+        "a": [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "c": -0.23333333333300002,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_lb_1",
+          "note": "kohärent: x >= 0.2333 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "kohärent",
+        "a": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.43333333333300006,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_ub_1",
+          "note": "kohärent: x <= 0.4333 (b+τ)"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "hyperresonant",
+        "a": [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "c": -0.0,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_lb_2",
+          "note": "hyperresonant: x >= 0.0000 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "hyperresonant",
+        "a": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "c": 0.1,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_ub_2",
+          "note": "hyperresonant: x <= 0.1000 (b+τ)"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "regulativ",
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "c": -0.23333333333300002,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_lb_3",
+          "note": "regulativ: x >= 0.2333 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "regulativ",
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "c": 0.43333333333300006,
+        "meta": {
+          "phase": "3",
+          "key": "p3_zone_ub_3",
+          "note": "regulativ: x <= 0.4333 (b+τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "group",
+        "group": "core",
+        "zones": [
+          "kohärent",
+          "regulativ"
+        ],
+        "a": [
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "c": 0.6,
+        "meta": {
+          "phase": "5",
+          "key": "p5_group_core_ub",
+          "note": "core(kohärent,regulativ) ≤ 0.60"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "fragmentiert",
+        "a": [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": -0.22333333333300004,
+        "meta": {
+          "phase": "5",
+          "key": "p5_zone_lb_0",
+          "note": "fragmentiert: x >= 0.2233 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "fragmentiert",
+        "a": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.443333333333,
+        "meta": {
+          "phase": "5",
+          "key": "p5_zone_ub_0",
+          "note": "fragmentiert: x <= 0.4433 (b+τ)"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "kohärent",
+        "a": [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "c": -0.22333333333300004,
+        "meta": {
+          "phase": "5",
+          "key": "p5_zone_lb_1",
+          "note": "kohärent: x >= 0.2233 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "kohärent",
+        "a": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "c": 0.443333333333,
+        "meta": {
+          "phase": "5",
+          "key": "p5_zone_ub_1",
+          "note": "kohärent: x <= 0.4433 (b+τ)"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "hyperresonant",
+        "a": [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "c": -0.0,
+        "meta": {
+          "phase": "5",
+          "key": "p5_zone_lb_2",
+          "note": "hyperresonant: x >= 0.0000 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "hyperresonant",
+        "a": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "c": 0.11,
+        "meta": {
+          "phase": "5",
+          "key": "p5_zone_ub_2",
+          "note": "hyperresonant: x <= 0.1100 (b+τ)"
+        }
+      },
+      {
+        "type": "lb",
+        "scope": "zone",
+        "zone": "regulativ",
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "c": -0.22333333333300004,
+        "meta": {
+          "phase": "5",
+          "key": "p5_zone_lb_3",
+          "note": "regulativ: x >= 0.2233 (b-τ)"
+        }
+      },
+      {
+        "type": "ub",
+        "scope": "zone",
+        "zone": "regulativ",
+        "a": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "c": 0.443333333333,
+        "meta": {
+          "phase": "5",
+          "key": "p5_zone_ub_3",
+          "note": "regulativ: x <= 0.4433 (b+τ)"
+        }
+      }
+    ]
+  },
+  "symbolic_bridge": {
+    "version": "0.1",
+    "timestamp": 1758120727,
+    "zones": [
+      {
+        "id": "fragmentiert",
+        "aliases": [],
+        "pg_facet": "PG_F1",
+        "orientation": 1
+      },
+      {
+        "id": "kohärent",
+        "aliases": [],
+        "pg_facet": "PG_K1",
+        "orientation": 1
+      },
+      {
+        "id": "hyperresonant",
+        "aliases": [],
+        "pg_facet": "PG_H1",
+        "orientation": 1
+      },
+      {
+        "id": "regulativ",
+        "aliases": [],
+        "pg_facet": "PG_R1",
+        "orientation": -1
+      }
+    ],
+    "groups": [
+      {
+        "name": "core",
+        "members": [
+          "kohärent",
+          "regulativ"
+        ],
+        "lb": 0.45,
+        "ub": 0.6
+      }
+    ],
+    "caps": {
+      "per_zone_corridor_tau": 0.1,
+      "min_share_per_zone": 0.02,
+      "upper_bounds": [
+        {
+          "i": 0,
+          "a": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "c": 0.35333333333300004
+        },
+        {
+          "i": 1,
+          "a": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "c": 0.35333333333300004
+        },
+        {
+          "i": 2,
+          "a": [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "c": 0.550399799728
+        },
+        {
+          "i": 3,
+          "a": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "c": 0.35333333333300004
+        }
+      ]
+    },
+    "maps": {
+      "tsm_to_pg": []
+    },
+    "notes": [
+      "Startschema für die gemeinsame symbolische Sprache TSM ↔ Positive Geometry.",
+      "Fülle 'pg_facet' & 'orientation' je Zone, sobald die PG-Zuordnung steht."
+    ]
+  },
+  "mapping": {
+    "zones": {
+      "sw": "kohärent",
+      "gw": "hyperresonant",
+      "env": "regulativ",
+      "legacy": "fragmentiert"
+    },
+    "metrics": {
+      "PLV": "kohärent",
+      "Dst": "fragmentiert",
+      "Q_eff": "regulativ",
+      "RRR": "hyperresonant"
+    }
+  },
+  "meta": {
+    "fusion_date": "2025-11-18T00:00:00Z",
+    "fusion_type": "empirical-symbolic integration",
+    "origin_files": [
+      "v1.21",
+      "v1.25"
+    ],
+    "notes": "Hybrid model enabling resonant mapping between data-space and constraint-space."
   }
 }

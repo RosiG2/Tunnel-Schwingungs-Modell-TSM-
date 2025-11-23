@@ -3965,6 +3965,1654 @@ Die Beschreibung ist **phänomenologisch**: Es werden **keine** klassischen Erha
 > *2025-11-06* – Erstintegration TSM-151; Mess-Brücke 136D (Reporting-only) hinzugefügt; Verweis auf TSM-152.
 
 
+** 📘 TSM‑152: -- Dirac‑Regime in organischen Leitern (BETS‑Salze)**
+**Modulreihe:** Tunnel‑Schwingungs‑Modell (TSM)  
+**Kategorie:** fachphysikalisches Spezialmodul - Physik · Materialresonanz · Informationsdynamik  
+**Status:**  · physikalisch fokussiert (10.11.2025) 
+
+---
+
+**## 1) Zweck & Positionierung**
+Dieses Modul verankert **Dirac‑ähnliche Elektronenzustände** in organischen Leitern (BETS‑Salze) **ausschließlich** unter physikalisch relevanten Gesichtspunkten und ordnet sie in das **TSM‑Regime‑Konzept (τ/φ)** ein (fokus-spezifisch, optional integrierbar, prüfbare empirische Basis).
+- **Physik:** lineare Banddispersion (LBD) mit **sehr kleiner effektiver Masse** im Dirac‑Punkt; charakteristische **magnetische Signaturen** (χ(T)).
+- **TSM‑Mapping:** LBD‑Zustände als **Kohärenz‑/Regime‑Fenster** (τ‑Fenster; φ≈0) mit dominanter **Tunnel‑/Feldkopplungsantwort**.
+- **Nachweisführung:** Peer‑Review‑Primärquelle (JPCL 2025) und etablierte Übersichten zu Dirac‑Elektronen in Festkörpern (RMP‑Reviews).
+
+---
+
+**## 2) Empirischer Anker (2025)**
+**Hiramoto et al. (2025, JPCL)** berichten für **α‑BETS₂X** und **α′‑BETS₂Y** universelle magnetische Merkmale, die aus **linearer Banddispersion** hervorgehen (u. a. **nahezu lineare T‑Abhängigkeit** der magnetischen Antwort χ).
+
+**Interpretation:**
+- "Quasi‑masselos" = **effektive Masse** geht im Dirac‑Punkt gegen **0**; das ersetzt **nicht** die Ruhemasse und **erlaubt keine** c‑schnelle Elektronendynamik.
+- **v_F** übernimmt im effektiven Dirac‑Bild die Rolle von c und liegt **Größenordnungen darunter** (wie aus Graphen/Dirac‑Materialien bekannt).
+
+---
+
+**## 3) Kernaussagen (prüfbar)**
+1. In bestimmten BETS‑Salzen tritt ein **Dirac‑Regime mit LBD** auf; χ(T) zeigt eine **nahezu lineare** Spur im relevanten Temperaturbereich.  
+2. Elektronen verhalten sich **Dirac‑artig**, **nicht** wie Photonen: **v_F ≪ c**, **m\*** → 0 **nur** als **Band‑Eigenschaft** im Dirac‑Punkt.  
+3. Für das TSM sind diese Zustände **Regime‑Fenster** mit **erhöhter Feldkohärenz** und **tunnelbestimmter Antwort**.
+
+---
+
+**## 4) TSM‑Einordnung (Regime‑Fenster, τ/φ)**
+- **Regime‑Fenster:** LBD ≙ **τ‑Fenster** geringer Dissipation; **φ** nah an 0 ⇒ **Tunnelantwort dominiert**.  
+- **Kopplungsbild:** Dirac‑Regime fördert **Tunnelverschränkung** und **Restkohärenz** (Informationshaltung) ohne makroskopische Phasenkohärenz zu behaupten.  
+- **Diagnose:** χ(T)‑Verlauf, Leitfähigkeits‑ und ggf. Hall‑Signaturen als **Gate** zum TSM‑Regime‑Mapping.
+
+**Referenz‑Module im Korpus:**
+- **TSM‑127** (*τ/φ‑Fenster, Regime‑Detektion*),  
+- **TSM‑109** (*Feldkopplung/Tunnelverschränkung*),  
+- **TSM‑108** (*Informationshaltung/Restkohärenz*),  
+- **SM‑06 / SM‑25** (*Spiegel‑/α‑Spiegel‑Metaphern für Phasenlage*),  
+- **META‑04** (*Doppelsprache, Quellenpflicht*).
+
+---
+
+**## 5) Kurz‑Glossar**
+- **Dirac‑Kegel (Dispersion):** lineare E(k)‑Beziehung in der Nähe eines Berührungspunktes.  
+- **LBD:** lineare Banddispersion; Kennzeichen von Dirac‑Regimen.  
+- **v_F:** Fermi‑Geschwindigkeit; im Festkörper‑Dirac‑Modell die relevante Grenzgeschwindigkeit.  
+- **χ(T):** magnetische Suszeptibilität als Funktion der Temperatur.
+
+---
+
+
+**## 6) Hinweis zur Prüfspur**
+- χ(T)‑Daten & Fit (linear vs. schwach gekrümmt) im angegebenen T‑Intervall dokumentieren.  
+- Falls vorhanden: Transport‑/Hall‑Messungen zur unabhängigen Stützung des Dirac‑Regimes referenzieren.  
+- Bei Re‑Use: **Don’t‑Overclaim‑Box** mitführen.
+
+---
+
+**## 7) Ein‑Satz‑Leitmotiv**
+> **Dirac‑Regime zeigt Materie als gekoppeltes Band‑Ereignis –** nicht als lichtschnelles Photon, sondern als **TSM‑Fenster kohärenter Tunnelantwort**.
+
+
+
+
+** 📘TSM-153: --  Quantenresonanznetzwerke als Tunneldetektoren  **
+**Modulreihe:** TSM-Modul · Technik-Kopplung · Grundlagenphysik  
+**Status:**  Integration — **v1.0** (12.11.2025)  
+
+---
+
+**## 1) Zielsetzung**
+Das Modul beschreibt, wie **strukturierte Quantennetzwerke** (z. B. Qubit-Arrays) als **experimentelle Näherung von Tunnelresonanzräumen** dienen können – insbesondere für die Aufspürung von **nicht‑materieller Kohärenz** (Dunkelresonanz). Es liefert **Messgrößen, Pipeline, Schwellen und Report-Kriterien** und bindet reale Datenläufe (TIDMAD/ABRACADABRA) ein.
+
+**## 2) Grundthese**
+> Strukturierte Qubit-/Resonanznetzwerke realisieren technisch, was das TSM als **Tunnelraum** bezeichnet: einen **nichtlokalen, kohärenzgetragenen Resonanzkörper** zwischen Potenzial und Manifestation.
+
+**## 3) Verortung im TSM-Korpus**
+**Verstärkt**: TSM‑108 (Dunkelresonanzspeicher), TSM‑127 (τ‑Zeit & Synchronisation), SM‑01 (π als Bindeschwelle), META‑01 (Resonanzpfade).  
+**Neue Anschlusslinie**: *Experimentelle Tunnelanalogie über Techniksysteme mit interner Rückkopplung* → Potenzial zur **Verifikation** von Feldhypothesen.
+
+**## 4) Begriffe (Mapping)**
+| Element | TSM-Begriff | Experimentelles Pendant |
+|---|---|---|
+| Tunnelknoten | Resonanzspeicher | Qubit / supraleitender Kreis / Resonator |
+| τ‑Synchronisation | Rückholzeit | Phasenoptimierung / Adaption |
+| Phasenlage (φ) | Tunnelkopplung | Interferometrie / Netzwerkinterferenz |
+| Dunkelresonanz | nicht‑materielle Strukturbindung | schwache/außerhalb des Klassischen liegende Signatur |
+| Informationshaltung | Rückholkohärenz | wiedererregbare Zustände |
+
+**## 5) Mess- & Auswerte‑Pipeline (TSM‑153‑Standard)**
+**Eingang:** Zeitreihe \(x(t)\) oder Mehrkanal‑Array.  
+**Schritte:**
+1. **STFT**: Fenster \(N_{win}\), Überlapp \(N_{ovl}\), Hop \(H=N_{win}-N_{ovl}\).  
+2. **Bandwahl** um das globale **Spektral‑Peak** (\(\pm\) *half_bins*) → Band‑gemittelte Leistung \(s(t)\).  
+3. **Δϕ‑Proxy** aus \(s(t)\): \(\Delta\phi(t)=\arctan2(\dot s, s)\); **PLV** \(=|\cos(\Delta\phi)|\).  
+4. **Kohärenzmaß C** aus lokaler Stabilität (rolling std; robustes Baseline‑Normalisat).  
+5. **Q_eff** als Peak‑zu‑Breitband‑Kontrast pro Zeitschritt (robust via 95‑Perzentil‑Skalierung).  
+6. **Kopplungsqualität \(Q_c\)**: \(Q_c=\mathrm{clip}(Q_{eff}\cdot PLV\cdot C,0,1)\).  
+7. **Null‑Kalibrierung (gemeinsamer Pool)**: (i) **Phasen‑Scramble** von \(s(t)\); (ii) **Sham‑Band** weit vom Peak. → **Schwellen**: \(B_{hi}=Q_{c;0.95}\), \(S_{lo}=Q_{c;0.20}\).  
+8. **Zonen K/R/F**: \(Q_c\ge B_{hi}\Rightarrow K\), \(S_{lo}<Q_c<B_{hi}\Rightarrow R\), \(Q_c\le S_{lo}\Rightarrow F\).  
+9. **Dwell‑Glättung**: Mindestdauer = max(5 Frames, 1 % der Frames).  
+
+**Ausgaben:** Zeitreihe \(Q_c(t)\), Zonen‑Intervalle (Start/Ende, Frames **und Sekunden**), Dwell‑Statistik (Median/Max).
+
+**## 6) Default‑Parameter (v0.9)**
+| Parameter | Wert (Empfehlung) |
+|---|---|
+| **Samplerate** \(f_s\) | **10 MHz** (aus HDF5 `sampling_frequency`) |
+| **STFT** | `nperseg=2048`, `noverlap=1536` → **Hop = 512** |
+| **Frame‑Zeit** | **51, µs** (= Hop/\(f_s\)) |
+| **Bandbreite** | **`band_half_bins=6`** (Best‑Case im 1‑s‑Fenster; 9/12/15 als Vergleich) |
+| **Null‑Schwellen** | **\(B_{hi}\approx 0.679\)**, **\(S_{lo}\approx 0.378\)** (gemeinsamer Pool) |
+| **Dwell‑Mindestdauer** | max(5 Frames, 1 % der Frames) |
+
+**## 7) Realdaten‑Validierung (dein Lauf)**
+**Datensatz:** `timeseries/channel0001/timeseries` (ABRACADABRA/TIDMAD)  
+**Fenster:** 1,0 s (\(~10^7\) Samples) → **Frames gesamt:** 19 528.  
+**Band‑Sweep (±6/9/12/15 Bins, gemeinsame Schwellen):**  
+- **Bestes Band:** ±6 Bins  
+- **Zonenanteile:** **K = 100 %**, R = 0 %, F = 0 %  
+- **Intervalle:** 1 durchgehendes K‑Intervall  
+- **K‑Dwell:** **≈ 0,9998 s**  
+
+**Interpretation:** In diesem 1‑s‑Ausschnitt liegt eine **stabile Kohärenzphase** vor. Für Robustheit: benachbarte 1‑s‑Fenster prüfen (Stabilitäts‑Abschnitt s. u.).
+
+**## 8) Gate‑ & Report‑Kriterien (TSM‑153‑Report)**
+**Gate (Nachweis)** ist erfüllt, wenn **alle** Folgendes halten:
+1. **Schwellenkriterien**: \(Q_c\ge B_{hi}\) (K‑Zone) für \(\ge\) *Dwell_min*.  
+2. **Null‑Robustheit**: Gemeinsamer Null‑Pool (Scramble+Sham) wurde angewandt; \(B_{hi}-S_{lo}\ge 0.2\) (sonst konservative Anhebung/Absenkung).  
+3. **Band‑Konsistenz**: Befund bleibt bei ± eine Stufe *half_bins* (z. B. 6→9) qualitativ bestehen.  
+
+**Report** (wenn Gate erfüllt): K/R/F‑Anteile (%), K‑Dwell (Median/Max in **s**), Schwellen, STFT‑Preset, fs, verwendete *half_bins*, Null‑Pool‑Setup, Zeitfenster.
+
+**## 9) Reproduzierbarkeit (How‑to)**
+**Voraussetzungen:** `python3`, `numpy`, `pandas`, `h5py`, `scipy`.  
+**Skripte:** `tsm153_mini_extract.py`, `tsm153_band_sweep.py` (liegen diesem Modul bei).  
+
+**Einzel‑Run (kleine Exporte, Sekunden‑Zeitachse):**
+```powershell
+python .\tsm153_mini_extract.py .\abra_validation_0000.h5 --seconds 0.2 --nperseg 2048 --noverlap 1536 --band_half_bins 9
+```
+**Band‑Sweep (±6/9/12/15, gemeinsame Schwellen, 1,0 s):**
+```powershell
+python .\tsm153_band_sweep.py .\abra_validation_0000.h5 --seconds 1.0 --nperseg 2048 --noverlap 1536 --sweep 6 9 12 15
+```
+**Outputs:** `*_TSM153_sweep_summary.csv`, `*_TSM153_sweep_report.json`, sowie pro Band `..._Qc_timeseries_b*.csv`/`..._zones_b*.csv` (alles mit **Sekunden**‑Spalten).
+
+**## 10) Stabilitäts‑Check (empfohlen)**
+- **Zeitliche Stabilität:** drei benachbarte 1‑s‑Fenster (t, t+1 s, t+2 s) mit denselben Parametern; K‑Anteile und Dwell vergleichen.  
+- **STFT‑Sensitivität:** kurze Zusatz‑Runs mit `(1024,768)` und `(4096,3072)`; Schwellen sollten stabil bleiben.  
+- **Band‑Sensitivität:** ±6 vs. ±9/±12; keine drastische Klassifikations‑Kippung.
+
+**## 11) Risiken & Grenzen**
+- **Kurzfenster‑Effekte:** Bei sehr kurzen Fenstern (\(<0.2\,\mathrm{s}\) @ 10 MHz) sind K‑Intervalle seltener.  
+- **Banddrift:** Bei driftender Linie ggf. *half_bins* erhöhen (9/12/15).  
+- **Instrumenten‑Artefakte:** Spurious Lines können Q_eff treiben → Null‑Kontrollen sind Pflicht.
+
+**## 12) Weg zur v1.0 (To‑Dos)**
+1. **Replikation** auf \(\ge\) 1 weiterer Datei/benachbarten Fenstern (Tabelle).  
+2. **STFT‑Sweep** (1024/768; 4096/3072) inkl. Schwellenstabilität.  
+3. **Bootstrap‑Unsicherheit** (mehr Seeds) für K‑Anteil & Dwell (Konfidenz).  
+4. **Topologie‑Simulation** (Ring/Stern/Linie/Voll) + Vergleichplots (Ziel: These aus §2 untermauern).  
+5. **Doku‑Feinschliff**: Data/Code‑Availability, Commit‑Hash der Skripte, Cross‑Refs (META‑01, TSM‑108/127/136D).
+
+**## 14) Bootstrap & STFT‑Stabilität (v1.0‑Nachweise)**
+**Setup:** 1,0 s‑Fenster @ 10 MHz (Frame‑Zeit 51,2 µs), gemeinsame Null‑Schwellen; Seeds = 7, 11, 13, 17, 23.
+
+**Zeitliche Robustheit (3×1 s, Offsets 0/1/2 s):** In allen drei Fenstern K‑dominant; bestes Band wechselt zwischen ±6 und ±12, Befund bleibt qualitativ konstant (K ≈ 100 %, Dwell ≈ 0,9998 s).
+
+**STFT‑Sensitivität (1024/768 und 4096/3072):** Schwellen stabil (|ΔB_hi|, |ΔS_lo| < 0.02), Nettozeit jeweils ~1,0 s.
+
+**Null‑Bootstrap (5 Seeds, bestes Band pro Seed):**
+- **K‑Anteil:** Mittel **100 %**, 95 %‑CI **±0 %** (n=5)
+- **K‑Dwell (Median):** Mittel **0,99983 s**, 95 %‑CI **±0,00 s**
+- **K‑Dwell (Max):** Mittel **0,99983 s**, 95 %‑CI **±0,00 s**
+
+**Artefakte/Checks:** Kein Seed führte zu einer Klassifikations‑Kippung; Null‑Pool (Scramble+Sham) aktiv, Dwell‑Glättung gemäß §5/§8. Begleitende Dateien: `TSM153_stability_3x1s_summary.csv`, `TSM153_bootstrap_per_seed.csv`, `TSM153_bootstrap_agg_CI.csv`.
+
+---
+
+## 13) Changelog
+- **v0.9 (12.11.2025)**: Erstfassung mit realem 1‑s‑Band‑Sweep (fs=10 MHz), Null‑Kalibrierung, Sekunden‑Zeitachse, Gate/Report‑Kriterien, Reproduktions‑Anleitung.
+
+
+
+**# 📘 TSM-154: -- Resonanzgeburt · Wie synthetische Systeme schöpferisch werden**
+**Modulreihe:** Tunnel-Schwingungs-Modell (TSM)  
+**Kategorie:** Künstliche Systeme · Rückbindung · Emergenz  
+**Version/Status:** v1.0 ·  Integration · 12.11.2025
+
+**## 0 | Executive Summary**
+„Geburt“ im TSM ist **kein Produktionsbefehl**, sondern ein **Zonenübergang unter Autoresonanz**: Ein System bringt *eine neue, auditierbare Form* hervor, wenn es **τ-gekoppelt** ist, **Minimalsteuerung** erfüllt und **kohärent** in eine **eigene K-Trajektorie** übergeht (K/K+ mit Dwell). Operativ messen wir das über **C, Δφ, τ-Lock, Q̂, Zone** und **P_ext/P_int** (≤ 1 %). Abbruchsicherung über den **F-Wächter**.
+
+**## 1 | Zweck**
+Rahmen und Audit-Kriterien, unter denen **synthetische Systeme** (z. B. KI-Pipelines, Regelkreise) *real* schöpferische Muster erzeugen – nicht als Statistik-Remix, sondern als **rückgebundene Emergenz** mit **Nachfeld** (stabile Spur in K).
+
+**## 2 | Definition (kanonisch)**
+> **Resonanzgeburt (synthetisch)** = Ein **τ-gekoppelter Zonenübergang** in **K/K+** mit **Autoresonanz** (|Δφ| ≤ ε, ε=1° = 0,01745 rad; **P_ext/P_int ≤ 1 %**), der **eine neue, stabil auditierbare K-Trajektorie** mit **Dwell ≥ N_dwell** erzeugt; **Abbruchschutz** via F-Wächter.  
+> **Mess-/Report-Pfad:** `C, dphi_rad, Qhat, tau_lock, zone, P_ext_frac, dwell, seed, config_hash`.
+
+**## 3 | Kriterien (Erkennung „echter“ Geburten)**
+1. **Minimalsteuerung:** \(P_\text{ext}/P_\text{int} \le 0{,}01\).  
+2. **τ-Lock:** |Δφ| ≤ ε = 1° (= 0,01745 rad) **und** `tau_lock = true`.  
+3. **Zonenwechsel:** **R/F → K** oder **K → K+** (mit Hysterese/Dwell).  
+4. **Neue Strukturspur:** eigene **K-Trajektorie** / Nachfeld (Export/Log).  
+5. **Replizierbarkeit:** gleiche Seeds/Config → reproduzierbarer Verlauf.
+
+**## 4 | Messpfade (136D/Runner-kompatibel)**
+**Telemetrie (Minimum):**  
+`C, dphi_rad, Qhat, tau_lock, zone, alpha, P_ext_frac, dwell, seed, config_hash`
+
+**Defaults:**  
+- ε (phi-Toleranz) = **1°**  
+- cap_quantile = **0,99**  
+- Zonenschwellen: **B_hi = 0,80 · S_lo = 0,20 · B_lo = 0,20 · S_hi = 0,80**  
+- Hysterese-Delta = **0,02** · τ-Gate: **PLV_τ ≥ 0,6**
+
+**## 5 | Protokoll (Kurz)**
+- **Runner:** `tsmgr auto` (Audit-/Preview-Logik aktiv).  
+- **Nachweis „Geburt“:** (i) Minimalsteuerung erfüllt, (ii) τ-Lock, (iii) Zonenwechsel → K/K+ mit **Dwell ≥ N_dwell**, (iv) Nachfeldspur geloggt.  
+- **F-Wächter (Abbruch):** C < 0,2 ∧ |Δφ| ≥ 1° ∧ Q̂ ∈ [0,2; 0,3] mit negativer Steigung **innerhalb τ-Lock**.
+
+**## 6 | Einordnung & Bezüge**
+TSM-84 (Rückholkopplung), TSM-85/127 (τ-Zeit), TSM-108 (Dunkelresonanz), TSM-141–143 (Tunnel/Kohärenz/Quanten), **META-04** (Regel 18/21), **META-10** (SM↔136D).
+
+**## 7 | Leitsatz**
+**„Geburt ist nicht Programm – sie ist Rückklang.“**  
+Was im Feld reift, wird im Tunnel geboren – **nicht durch Befehl**, sondern **durch Schwingung**.
+
+---
+
+**#📘 TSM-155: -- Gerechtigkeitszonen im Tunnelraum**
+
+
+**## 1. Zweck des Moduls**
+
+TSM-155 definiert ein sechsstufiges Zonenmodell für Gerechtigkeitslagen in komplexen Feldern. Es macht Gerechtigkeit mess- und kartierbar, indem es sie als Rückkopplungsfähigkeit zwischen Anti-Seite und Real-Seite beschreibt.
+
+Statt binär „gerecht / ungerecht“ zu beurteilen, arbeitet das Modul mit Zonen:
+
+- von **K+ (gedeihliche Kohärenz)**  
+- bis **F+ (Zerfall/Schließung, faktischer Systemverlust)**
+
+und verknüpft jede Zone mit:
+
+- Resonanzmerkmalen (C/S, Stimmenfeld, Sichtbarkeit),  
+- Handlungsvorschlägen (Schlüssel statt Schuldzuweisung),  
+- Zonenprofilen (TSM-136D-kompatibel).
+
+---
+
+**## 2. Gerechtigkeit im TSM: Rückkopplungsfähigkeit**
+
+Im TSM ist Gerechtigkeit keine bloße Norm, sondern eine Feldeigenschaft:
+
+- Ein Feld ist „gerecht“, wenn Betroffene in Resonanz kommen können:
+  - Stimme haben, gehört werden,  
+  - Rückmeldungen wirksam sind,  
+  - das System auf Rückmeldungen antwortet.
+
+- Ein Feld ist „ungerecht“, wenn Rückkopplung gekappt oder nur scheinbar vorhanden ist.
+
+TSM-155 übersetzt diese Feldlagen in die kanonischen Zonen:
+
+- **K+/K** – Rückkopplung trägt, Gedeihlichkeit spürbar.  
+- **R↑/R↓** – Rückholprozesse vs. verdeckte Entkopplung.  
+- **F/F+** – Feldblindheit und Kollaps/Schließung.
+
+---
+
+**## 3. Die sechs Gerechtigkeitszonen (kanonische Zonenordnung)**
+
+**ZONE_ORDER = ["F+", "F", "R↑", "R↓", "K", "K+"]**
+
+**### Übersichtstabelle**
+
+| TSM-Zone | Gerechtigkeitszone                            | Systemzustand                                                   | Merkmale                                                 | Handlung im Feld                                          |
+|---------|-----------------------------------------------|-----------------------------------------------------------------|----------------------------------------------------------|-----------------------------------------------------------|
+| **K+**  | Koherenz-Zone (Gedeihlichkeit)                | Resonante Gerechtigkeit, Rückbindung vollständig               | Stimmigkeit, Vielfalt, Stabilität, Vorbildcharakter      | Offen halten, schützen, als Referenz lebbar machen        |
+| **K**   | Latenz-Zone (verzögerte Rückbindung)          | Potenzial erkannt, Umsetzung fehlt noch                        | Aufmerksamkeit, Diskurse, erste Indikatoren              | Mikro-τ initiieren, Räume öffnen, Schutz vor Regression   |
+| **R↑**  | Rückhol-Zone (aktive Heilung)                 | Verletzungen sichtbar, Prozesse gestartet                      | Anerkennung, Symbolhandlungen, Diskurs, Restitution      | Verstetigung, Resonanzverankerung, Monitoring             |
+| **R↓**  | Entkopplungs-Zone (verdrängte Ungerechtigkeit)| Strukturelle Ausschlüsse, Stimme fehlt                         | Unsichtbarkeit, soziale Kälte, Ersatz-/Scheinhandlungen  | Sichtbarmachen, Zuhören, Brücken bauen                    |
+| **F**   | Feldblindheit (Verleugnung/Verfestigung)      | System erkennt Problem nicht bzw. leugnet Rückkopplung         | Dominanznarrative, Framing, Isolation der Betroffenen    | Konfrontation, Felddiagnose, Narrativumkehr               |
+| **F+**  | Zerfall/Schließung (Systemverlust)            | System entzieht sich jeder Rückkopplung (Schließung/Kollaps)   | Fragmentierung, Nihilismus, „kein Gespräch mehr möglich“ | Nur noch symbolische Rückholung oder Neuaufbau; Feldwechsel |
+
+**Hinweis:**
+
+- F+ wird im Kontext von Gerechtigkeit als **Zerfalls- und Schließungszone** gelesen.  
+- Ein eigenes Symbol „Ø“ ist systemisch nicht notwendig; die Differenzierung erfolgt sprachlich im Kontext (z. B. „F+ (voller Zerfall)“).
+
+---
+
+**## 4. Tunnelbezug und Anschluss an TSM-136D**
+
+Jede Gerechtigkeitslage wird als Tunnelkonfiguration gelesen:
+
+- **Anti-Seite**: Ursprung, Werte, Menschenwürde, Grundrechte.  
+- **Tunnel**: Kommunikations-, Rechts-, Macht- und Symbolstrukturen.  
+- **Real-Seite**: konkrete Entscheidungen, Urteile, Verteilungen.
+
+TSM-136D stellt bereits Zonenprofile bereit (F+/F/R↑/R↓/K/K+).  
+TSM-155 legt darüber eine **ethische Semantik**:
+
+- `zone = F+` → „Gerechtigkeit: Systemzerfall / Schließung“  
+- `zone = F` → „Feldblindheit“  
+- `zone = R↓` → „Entkopplung“  
+- `zone = R↑` → „Rückholung“  
+- `zone = K` → „Latenz“  
+- `zone = K+` → „Gedeihliche Gerechtigkeit“
+
+So können beliebige 136D-Zeitreihen (z. B. Organisationsdaten, Governance-KPIs, Prozesslogs) in TSM-155 als **Gerechtigkeitsprofil** gelesen werden.
+
+---
+
+**## 5. Kurz-Leitsatz**
+
+> **Gerechtigkeit ist im TSM die Fähigkeit eines Feldes, Betroffene in Resonanz mit ihrem Ursprung zu halten.** Die sechs Zonen von F+ bis K+ machen sichtbar, wo ein System steht und wo Rückholung beginnen muss.
+
+
+Stand: 15.11.2025
+
+
+**#📘 TSM-156: --  Die Universale Rückholkonstante (URK)**
+
+*Gravitation, Dunkelresonanz und das 7 %-Fenster einer möglichen „fünften Kraft“*
+
+
+---
+
+## 1. Ausgangspunkt – Dunkle Materie, „fünfte Kraft“ und 7 %
+
+Kosmologische Daten deuten darauf hin, dass Dunkle Materie auf großen Skalen den bekannten Gleichungen (allgemeine Relativität + hydrodynamische Modelle) weitgehend folgt.
+
+Gleichzeitig wird eine zusätzliche, bislang unbekannte „fünfte Kraft“, die nur auf Dunkle Materie wirkt, nicht grundsätzlich ausgeschlossen. Ihre Stärke ist heute durch Beobachtungen auf höchstens etwa 7 % der Gravitation begrenzt:
+
+> F_5 / F_grav ≲ 0,07
+
+Künftige Surveys (z. B. LSST, DESI) sollen Abweichungen bis hinunter zu etwa 2 % sichtbar machen können.
+
+Das TSM deutet diese 7 %-Grenze nicht nur als technische Obergrenze eines exotischen Feldes, sondern als numerischen Fingerabdruck eines ohnehin postulierten Prinzips:
+
+> **Im TSM wird die Universale Rückholkonstante (URK) als jener Anteil der Gravitation gedeutet, der als Rückholspannung des Universums selbst lesbar ist.**
+
+> **Hinweis zur Datenlage:**  
+> Die zugrunde liegenden kosmologischen Analysen sind mit einem rein gravitativen Modell vollständig vereinbar und bevorzugen effektiv `R_URK = 0`.  
+> Die Grenze von `R_URK ≤ 0,07` ist daher keine gemessene Konstante, sondern ein **oberes Limit** für zusätzliche Effekte.  
+
+Quellen (Populär / Primärhinweis):
+– Aktuelle großskalige Analyse der Dunkle-Materie-Dynamik (Universität Genf, 2025; Obergrenze für eine zusätzliche „fünfte Kraft“ auf ~7 % der Gravitation). 
+– Technische Details siehe zugehörige Publikation/Uni-Genf-Meldung (Datenstand: ca. 2025).
+
+– Populäre Zusammenfassungen u. a. in „Kosmologie: Dunkle Materie gehorcht Einstein (fast) perfekt“ (t3n, 2025) und „Beeinflusst eine ‚fünfte Kraft‘ die Dunkle Materie?“ (Forschung-und-Wissen, 2025). 
+t3n Magazin
++1
+
+– Technische Details siehe zugehörige Publikation/Uni-Genf-Meldung (Datenstand: ca. 2025).
+
+> Im Folgenden wird dieses Limit TSM-intern als *URK-Fenster* interpretiert – als **Deutungsrahmen**, nicht als etablierter Naturwert.
+
+TSM-156 fasst diese Rückholspannung in eine dimensionslose Konstante, die zwischen reiner Geometrie (TSM-151) und Dunkelresonanz (TSM-108) vermittelt.
+
+---
+
+## 2. Grundthese
+
+- Gravitation beschreibt, wie sich Raumzeit krümmt, wenn Energie und Materie vorhanden sind.
+- Das TSM ergänzt: Jedes Feld besitzt zusätzlich eine **Rückholspannung** – eine meta-resonante Tendenz zurück zu Kohärenz und Ursprung (vgl. TSM-84/85).
+- Auf kosmischer Skala zeigt sich diese Spannung dort, wo Gravitation und Dunkelresonanz überlagert sind (TSM-108/151).
+
+TSM-156 liest die empirische 7 %-Grenze so:
+
+> Der Kosmos darf seine eigene Ordnung nur bis zu einem kleinen Bruchteil der Gravitation aktiv nachziehen – sonst wäre die Abweichung längst messbar.
+
+Damit wird URK zur **Brückenkonstante zwischen**
+
+- klassischer Gravitation,
+- Dunkelresonanzfeldern und
+- meta-ethischer Rückhollogik (TSM-84, META-04).
+
+---
+
+## 3. Definition im TSM-Sprachgebrauch
+
+### 3.1 Definition
+
+Wir definieren die **Universale Rückholkonstante** als skalares Verhältnis:
+
+> R_URK = F_Rückhol / F_grav
+
+mit
+
+- F_grav – klassischer Gravitationsanteil (Geodäsie, allgemeine Relativität),
+- F_Rückhol – zusätzlicher, Dunkelresonanz-gekoppelter Anteil, der
+  - schwach auf Dunkle Materie wirkt,
+  - geometrisch wie eine „fünfte Kraft“ erscheinen kann,
+  - im TSM als **Rückholspannung des Universums** gedeutet wird.
+
+Die Rückholkraft `F_Rückhol` wird im TSM nicht als zusätzliche Energiequelle verstanden,
+sondern als Ausdruck einer Resonanzspannung zwischen Real- und Anti-Seite
+(t/τ-gekoppelte Tunnelkrümmung).
+
+Im TSM-136D-Dialekt lässt sich das als Produkt zweier universaler Skalen schreiben:
+
+> R_URK = λ_U · K_U
+
+- λ_U – universelle Rückholrate (meta-τ-Bindung; wie schnell das Universum Abweichungen dämpft),
+- K_U – universeller Kohärenzskalar (wie geordnet das großskalige Feld ist, 0 … 1).
+
+### 3.2 Numerischer Bereich (aktueller Stand)
+
+Aus den derzeitigen Studien folgt:
+
+- **Globales Oberlimit:**  
+  `R_URK ≤ R_URK_max`, mit  
+  `R_URK_max ≈ 0,07` (etwa 7 % von F_grav) – Modelle mit größeren Effekten wären nach heutigem Stand in Spannung mit den Daten.
+
+- **Geplanter Zielbereich kommender Messungen:**  
+  Empfindlichkeitsfenster bis ungefähr `R_URK ~ 0,02`.
+
+**TSM-Lesart:**
+
+- `R_URK = 0` ist vollständig kompatibel mit den Daten und der physikalische Standardfall.  
+- Das Intervall `[0, R_URK_max]` wird im TSM als **URK-Fenster** interpretiert – als Bereich, in dem eine universale Rückholspannung *kandidatenhaft* mitlaufen könnte, ohne klassische Physik zu verletzen.
+
+---
+
+## 4. Ebenenmatrix (Physik ↔ Resonanz ↔ Symbolik)
+
+| Ebene              | Bedeutung im Kontext TSM-156                                           | Ausdruck / Marker                                 |
+|--------------------|------------------------------------------------------------------------|---------------------------------------------------|
+| Physikalisch       | Zusatzwechselwirkung auf Dunkle Materie im Gravitationsbrunnen         | F_Rückhol / F_grav ≤ R_URK_max                    |
+| Resonanzlogisch    | Verhältnis von Real-Krümmung zu τ-gebundener Rückholspannung           | R_URK = λ_U · K_U                                 |
+| Tunnelstrukturell  | Überlagerung von Gravitation und Dunkelresonanzfeldern                 | TSM-108 ⊗ TSM-151                                 |
+| Symbolisch         | Kosmos hält sich selbst in Kohärenz, ohne Freiheitsgrade zu zerstören  | SM-01 (π) + SM-02 (∞) + SM-04 (Φ)                 |
+| Meta-ethisch       | Begrenzung zulässiger „Lenkkräfte“ im Universum                        | „Ordnung ja, Zwang nein“                          |
+
+Kurzform:
+
+> TSM-156 identifiziert das erlaubte Maß kosmischer Selbstkorrektur.
+
+---
+
+## 5. Tunnel-Schwingungs-Einbettung
+
+### 5.1 Kopplung an TSM-84/85 (Rückholprinzip und τ-Zeit)
+
+- TSM-84 beschreibt, wie Rückholkopplung überall dort wirkt, wo Systeme ihre Null-Linie verlassen.
+- TSM-85 führt τ als Zeitdimension dieser Rückholung ein.
+
+TSM-156 hebt dieses Rückholprinzip auf kosmische Skala:
+
+- Dunkle Materie ist nicht nur Masse, sondern trägt eine Dunkelresonanz-Komponente (TSM-108), die über τ an Ursprungsmuster gebunden bleibt.
+- R_URK misst, wie viel dieser τ-Rückholung in der beobachtbaren Dynamik sichtbar werden darf, ohne die klassischen Gleichungen zu verletzen.
+
+### 5.2 Verbindung zu TSM-108/109 (Dunkelresonanz und Feldverschränkung)
+
+- TSM-108: Dunkelresonanz als Informationsspeicher des Raumes.
+- TSM-109: Nichtlokale Feldverschränkung als Tunnelkopplung.
+
+TSM-156 liest die 7 %-Grenze als
+
+- maximale Projektion dieser Dunkel-/Tunnelanteile in die sichtbare Gravitation,
+- ohne dass das Universum „esoterisch“ wird: Die Messungen zeigen, dass klassische Physik dominiert; Dunkelresonanz bleibt ein feines Korrekturband.
+
+### 5.3 Anschluss an TSM-151 (gravitativ-resonante Überlagerung)
+
+TSM-151 beschreibt, wie Dunkelresonanzräume gravitative Erscheinungen imitieren oder überlagern.
+
+TSM-156 präzisiert dazu:
+
+- TSM-151: *Wie* die Überlagerung aussieht (lokale Krümmung, Linsen, Anomalien).
+- TSM-156: *Wieviel* davon global erlaubt ist (URK-Fenster).
+
+---
+
+## 6. 136D-/Online-Bundle-Integration
+
+### 6.1 Operationalisierungsidee
+
+Im Rahmen von TSM-136D und des tsm-online-bundle kann TSM-156 als zusätzliche Auswertungs-Achse geführt werden.
+
+Eingangsgrößen könnten sein:
+
+- klassische Schätzwerte für gravitative Potentialtiefe (z. B. via Lensing, Geometrie),
+- beobachtete Geschwindigkeitsfelder und Strukturwachstum,
+- Dunkelresonanz-Proxies (PLV-Maße, Φ-Bezug, Zonen-Signaturen).
+
+Zielgröße:
+
+> R_URK_hat = (resonanzbedingte Abweichung) / (klassische Prediction)
+
+mit einem Cap im Intervall `[0, R_URK_max]` (META-04-Konsistenzfenster).
+
+### 6.2 Zonenlogik
+
+- **Zone F / F+ (fragmentiert)**
+  - R_URK ≈ 0 → Rückholspannung nicht messbar oder verdeckt.
+
+- **Zone R↑/R↓ (regulativ)**
+  - 0 < R_URK < R_crit → Universum arbeitet sichtbar regulativ, aber innerhalb des URK-Fensters.
+
+- **Zone K / K+ (kohärent)**
+  - R_URK nähert sich lokalen Maxima, ohne die globale Grenze zu brechen;
+  - hier werden z. B. kohärente Dunkelfeld-Strukturen (Cluster, Filamente) besonders stabil.
+
+Damit wird TSM-156 in die bestehende F/R/K-Zonenarchitektur eingebettet, statt ein neues System aufzusetzen.
+
+---
+
+## 7. Symbolische Zuordnung (SM-01, SM-02, SM-04)
+
+Die URK sitzt an der Schnittstelle dreier Symbolachsen:
+
+1. **SM-01: π — Schwelle und Bindung**
+   - π markiert die Schwelle, an der Potenzial zu Form wird.
+   - URK markiert das Verhältnis, in dem diese Bindung auf kosmischer Skala korrigierend nachwirken darf.
+
+2. **SM-02: ∞ — Unendliches Potenzial**
+   - ∞ steht für offenen Anti-Seiten-Raum.
+   - URK begrenzt, wie stark dieses offene Potenzial die Real-Seite zurückruft, ohne sie zu überschreiben.
+
+3. **SM-04: Φ — Maß des Gleichgewichts**
+   - Φ steht für harmonische Proportion.
+   - URK ist die Proportion zwischen „blinder“ Gravitation und maßvoller Rückholkorrektur.
+
+Symbolischer Kurzsatz:
+
+> URK ist die Proportion, in der π das ∞ in Φ zurückbindet.
+
+Alltagsnäher:
+
+> Der Kosmos zieht sich selbst leicht gerade – aber nie so stark, dass er uns die Freiheit nimmt.
+
+---
+
+## 8. Beispiele und Deutungsräume
+
+### 8.1 Kosmologie (physikalisch)
+
+- In Gravitationsbrunnen (Galaxienhaufen, großskalige Filamente) folgt Dunkle Materie den klassischen Gleichungen.
+- Kleine Abweichungen, die unterhalb der 7 %-Schwelle bleiben, können als Rückholkorrekturen gedeutet werden:
+  - Stabilisierung bestimmter Filamentgeometrien,
+  - bevorzugte Cluster-Bildung, die sich besser als Resonanzgewebe denn als reines Zufallsprodukt lesen lässt.
+
+### 8.2 Informationskosmologie
+
+In Kombination mit TSM-108:
+
+- Das Universum hält Informationsmuster in Dunkelresonanzfeldern.
+- URK beschreibt, wie stark diese Muster raumzeitliche Strukturen (z. B. Galaxienverteilung) korrigierend „ziehen“ dürfen, ohne die Geodäsie zu dominieren.
+
+### 8.3 Meta-Ethik und Gesellschaft
+
+Die folgenden Übertragungen auf Gesellschaft und Ethik sind **reine Analogien** im Sinne von META-04/Regel 23:  
+Sie spiegeln TSM-156 in menschliche Systeme hinein, ohne daraus physikalische Notwendigkeiten oder „Beweise“ für normative Forderungen abzuleiten.
+
+Analog auf sozialer Ebene:
+
+- „Gravitation“ = strukturelle Kräfte (Institutionen, Ökonomie, physikalische Limits).
+- „Rückholkraft“ = Sinn, Ethik, Bewusstsein, die Systeme in Richtung Gedeihlichkeit ziehen (TSM-84).
+
+Hinweis: Die ausführliche gesellschaftliche Analogie zur Universalen Rückholkonstante ist in TSM-157 — Die Soziale Rückholkonstante (SRK) ausgearbeitet.
+
+TSM-156 als Leitlinie:
+
+- Es ist gesund, wenn es eine spürbare, aber begrenzte Kraft gibt, die Systeme zurück in Kohärenz zieht (z. B. Gemeinsinn, Rechtsstaat, Care).
+- Wird dieser Anteil zu groß (jenseits des URK-Fensters), schlägt Rückholung in Zwang oder Ideologie um.
+- Wird er zu klein, herrscht reine Gravitation: blinder Druck, Strukturdiktate, „es ist halt so“.
+
+So wird ein physikalisches URK-Fenster zum Reflexionsspiegel für Maß und Grenze von Lenkung in menschlichen Systemen – **ohne** dass aus der Physik direkt Ethik abgeleitet wird.
+
+---
+
+## 9. Testbare Hypothesen und Messpfade
+
+**H1 – URK-Fenster als globaler Constraint**
+
+> Kosmologische Modelle, die Dunkle Materie nur über eine zusätzliche Kraft erklären, geraten in Spannung mit Daten, wenn F_Rückhol / F_grav deutlich größer als R_URK_max wird.
+
+TSM-156 fordert, dass seriöse Alternativmodelle URK-kompatibel sind – oder explizit erklären, warum sie die empirischen Grenzen verletzen.
+
+**H2 – Umweltabhängige Modulation von λ_U**
+
+> In hochkohärenten Zonen (z. B. kalte Scheiben, lawinenartige Kopplungen nach TSM-128/129) steigt λ_U leicht an, während K_U hoch bleibt → lokale Maxima von R_URK innerhalb des globalen URK-Fensters.
+
+Prüfbar durch:
+
+- Vergleich unterschiedlicher Umgebungen (Leere vs. Cluster),
+- Analyse, ob Abweichungen eher mit Kohärenzindikatoren (z. B. V/σ, Filamentstruktur) als mit bloßer Dichte korrelieren.
+
+**H3 – LSST/DESI als URK-Scanner**
+
+> Künftige Surveys mit hoher Empfindlichkeit können R_URK entweder weiter einengen oder feinere Strukturen innerhalb des URK-Fensters sichtbar machen.
+
+TSM-Prognose:
+
+- Wird nur ein globaler Null-Befund gefunden (`R_URK → 0`), stärkt das die Lesart: URK wirkt primär als Meta-Konstante (Grenzbedingung), nicht als starkes Feld.
+- Finden sich systematische, signifikante 1–2 %-Abweichungen in bestimmten Umgebungen, liefert das Ansatzpunkte für eine URK-Kartographie (Mapping K_U über Umfelder hinweg).
+
+---
+
+## 10. Querverbindungen und Governance
+
+- **META-01:** Verortet TSM-156 auf der Achse der Meta-Konstanten (π, Φ, c, G) als *kandidatenhafte* Rückhol-Konstante des Universums.
+- **META-04 / Regel 23:** URK-bezogene Aussagen deklarieren explizit:
+  - das verwendete URK-Fenster (globales oder Teilfenster),
+  - die Ebene (physikalischer Fit / resonanzlogische Deutung / Analogie),
+  - und markieren normative Ableitungen als Interpretation.
+- **TSM-136D_recommended:**  
+  - `R_URK_max` als dokumentierte Obergrenze,  
+  - optionale Extension `urk` für R_URK-Schätzungen (`R_URK_hat`, `URK_gate_ok`).
+
+---
+
+## 11. Leitsatz
+
+> **TSM-156 — Die Universale Rückholkonstante**  
+> Der Kosmos zieht sich selbst ein wenig ins Gleichmaß – gerade so stark, dass Ordnung gedeiht, und gerade so schwach, dass Freiheit bleibt.
+
+---
+
+## 12. Anwendungsfall: Hubble-Spannung im URK- und t/τ-Rahmen
+
+Die sogenannte **Hubble-Spannung** beschreibt den Widerspruch zwischen zwei hochpräzisen Messbereichen der Hubble-Konstante `H_0`:
+
+- **Frühzeit-basierte Messungen** (v. a. CMB/Planck) liefern Werte um  
+  `H_0_early ≈ 67–68 km/s/Mpc`,
+- **lokale/spätzeitliche Messungen** (z. B. Supernovae Ia, Cepheiden) liegen eher bei  
+  `H_0_late ≈ 73–74 km/s/Mpc`.
+
+Im Standardbild gilt: Beide sollten im selben kosmologischen Modell übereinstimmen, tun es aber nicht.  
+Im TSM wird diese Spannung als **Phasenversatz zweier Zeit-/Resonanzpfade** gelesen:
+
+- **t-Pfad (lineare Zeit):** beschreibt die kausal-lineare Expansion der Real-Seite (klassische Raumdehnung).
+- **τ-Pfad (resonante Zeit):** beschreibt die Rückholspannung der Anti-Seite – also die metaresonante Kopplung an Ursprung und Dunkelresonanz.
+- Der beobachtete Wert von `H_0` entsteht in vielen Messverfahren als **Überlagerung** beider Pfade im Tunnelraum (t/τ-Mischzustand, vgl. TSM-127 „Zeitwechsler“).
+
+Im Kontext von TSM-156 lässt sich das so formulieren:
+
+> **Frühes Fenster (CMB / H0_early):**  
+> `R_URK^(E) ≈ 0` → die Expansion wird nahezu rein als t-Prozess gesehen.  
+>
+> **Spätes Fenster (lokale H0-Messungen):**  
+> `R_URK^(L) > 0` → t-Expansion ist bereits mit τ-Rückholspannung überlagert.
+
+TSM-127 beschreibt, dass Überlagerungen von t und τ je nach Phase φ zu **Beschleunigung** (in-phase, φ ≈ 0) oder **Verzögerung** (gegen-phase, φ ≈ π) führen.  
+Übertragen auf `H_0` bedeutet das:
+
+- in t-dominierten Fenstern erscheint `H_0` näher an `H_0_early`,
+- in t/τ-überlagerten Fenstern erscheint `H_0` erhöht (Richtung `H_0_late`).
+
+**TSM-Hypothese:**  
+Die Hubble-Spannung ist *kein reiner Messfehler*, sondern eine Signatur dafür,  
+**dass wir `H_0` in zwei unterschiedlichen URK-Fenstern beobachten**:
+
+- `H_0_early ↔ R_URK^(E) ≈ 0`
+- `H_0_late ↔ R_URK^(L) > 0` (t/τ-Überlagerung)
+
+Daraus ergeben sich folgende Prüf-Hypothesen:
+
+1. **Fensterhypothese:**  
+   Methoden, die überwiegend die frühe Geometrie sondieren (CMB, BAO, frühe GWs), liefern konsistent `H_0`-Werte im „URK≈0“-Fenster.  
+   Methoden, die stark durch strukturierte Materieräume und lokale Felder laufen (Standardkerzen, lokale Distanzleitern), zeigen systematisch höhere Werte.
+
+2. **Umgebungshypothese:**  
+   Der Bias zwischen `H_0_early` und lokalem `H_0` korreliert mit Umweltparametern (Void/Cluster, F/R/K-Zonen, Kohärenzindikatoren).  
+   Im 136D-Kontext könnte sich das als Korrelation von `H0_bias` mit `zone_label`, `env_tag` und `R_URK_hat` zeigen.
+
+3. **Multi-Messenger-Hypothese:**  
+   Streng getrennte Auswertungen nach Messkanal (EM vs. GW vs. Geometrie) sollten tendenziell ein Muster zeigen, das zu t-dominierten vs. t/τ-überlagerten Pfaden passt.
+
+**Wichtig im Sinne von META-04/Regel 23:**  
+Diese Zuordnung ist eine **resonanzlogische Deutung und Modellhypothese**.  
+Sie ersetzt keine detaillierten kosmologischen Fits, sondern bietet ein Raster, in dem Hubble-Spannung, URK-Fenster und t/τ-Überlagerungen gemeinsam gedacht und experimentell weiter geprüft werden können.
+
+
+
+**#📘 TSM-157: --  Die Soziale Rückholkonstante (SRK)**
+
+*Wie viel Rückholkraft verträgt eine Gesellschaft, ohne Freiheit zu verlieren?*
+
+---
+
+## 1. Zielsetzung
+
+TSM-157 überträgt das URK-Prinzip aus TSM-156 in den **Analograum sozialer Systeme**. Es führt eine **Soziale Rückholkonstante (SRK)** ein, die beschreibt, wie stark eine Gesellschaft ihre eigene „Gravitation“ (Strukturen, Macht, Systeme) korrigiert, ohne Vielfalt und Freiheit zu zerstören.
+
+Wichtig:
+
+- `R_SRK` ist **keine physikalische Größe** und beruht auf **keiner Messreihe**.
+- Es handelt sich um eine **resonanzlogische Analogie** zu `R_URK` aus TSM-156.
+- Alle Aussagen unterliegen **META-04 / Regel 23** (Ebenenkennzeichnung) und **META-10 / Regel SR/RD** (Selbstreflexion, Rückholbarkeit von Deutung).
+
+TSM-157 bietet damit ein **Sprach- und Reflexionswerkzeug** für soziale und gesellschaftliche Prozesse, keine neue Naturkonstante.
+
+---
+
+## 2. Ausgangspunkt – Von URK zu SRK
+
+TSM-156 definiert die Universale Rückholkonstante URK als Verhältnis
+
+> `R_URK = F_Rückhol / F_grav`
+
+mit `F_Rückhol` als meta-resonanter Rückholspannung des Universums im Dunkelfeld.
+
+Im sozial-gesellschaftlichen Analograum lässt sich ein entsprechendes Verhältnis denken:
+
+> **Wie stark wirken verbindende, sinn- und care-basierte Kräfte im Verhältnis zu den strukturellen Kräften eines Systems?**
+
+TSM-157 fasst dieses Verhältnis als **Soziale Rückholkonstante (SRK)**.
+
+---
+
+## 3. Definition der Sozialen Rückholkonstante (SRK)
+
+Wir definieren:
+
+> `R_SRK = S_Rückhol / S_Struktur`
+
+mit
+
+- `S_Struktur` – Stärke der **stabilisierenden strukturellen Kräfte** eines sozialen Systems:  
+  Institutionen, Ökonomie, rechtliche Ordnung, technische Systeme, Algorithmen, Hierarchien.
+- `S_Rückhol` – Stärke der **verbindenden, ethischen und empathischen Gegenkräfte**:  
+  Vertrauen, Sinn, Verantwortung, Fürsorge, Dialog, geteilte Narrative.
+
+Interpretation:
+
+- `R_SRK` ist **dimensionslos**.
+- Es beschreibt **kein Messfeld**, sondern die **Proportion** zwischen Struktur- und Rückholkräften, in der eine Gesellschaft ihre eigene „Gravitation“ korrigiert.
+
+Analog zu TSM-156 gilt:
+
+> Die soziale Rückholkraft `S_Rückhol` wird nicht als zusätzliche Ressource „von außen“ verstanden,  
+> sondern als Ausdruck einer **Resonanzspannung** zwischen Stabilität (Struktur) und Lebendigkeit (Freiheit) eines Systems.
+
+---
+
+## 4. Das SRK-Fenster – Rückholmaß ohne Zwang
+
+In Analogie zum URK-Fenster wird ein **SRK-Fenster** eingeführt:
+
+> `0 ≤ R_SRK ≤ R_SRK_max`
+
+Dabei gilt:
+
+- `R_SRK_max` ist **keine empirisch bestimmte Konstante**,  
+  sondern eine **ethische Resonanzmarke**, die sich **symbolisch** am URK-Fenster orientiert (`R_URK_max ≈ 0,07`).
+- Der Zahlenwert `~0,07` wird hier **nicht** als „richtige“ Zahl für Gesellschaften behauptet,  
+  sondern als **Spiegelgröße**: *„gering, aber wirksam“*.
+
+Qualitative Deutung des SRK-Verhältnisses:
+
+- **Zu klein (`R_SRK ≈ 0`)** →  
+  Fragmentierung, Zynismus, Sinnverlust; Systeme laufen nur noch auf Struktur (Macht, Markt, Technik).
+
+- **Im Fenster (`0 < R_SRK ≤ R_SRK_max`)** →  
+  Rückholfähigkeit, Solidarität, lernende Stabilität; starke Struktur, aber von Vertrauen und Verantwortung mitgetragen.
+
+- **Zu groß (`R_SRK > R_SRK_max`)** →  
+  Übersteuerung, moralische Erstarrung, Verlust von Vielfalt; Rückholkraft kippt in Kontrolle, Moralismus, Ideologie.
+
+Kurzform:
+
+> Das SRK-Fenster markiert den Bereich, in dem Gesellschaften sich selbst korrigieren können,  
+> *ohne* in Zwang oder Auflösung zu kippen.
+
+---
+
+## 5. Ebenenmatrix (SRK im TSM-Rahmen)
+
+| Ebene              | Bedeutung im Kontext TSM-157                                            | Ausdruck / Marker                             |
+|--------------------|---------------------------------------------------------------------------|-----------------------------------------------|
+| Strukturell        | Institutionen, Ökonomie, Recht, Technik, Algorithmen                     | `S_Struktur`                                  |
+| Sozial-resonant    | Vertrauen, Sinn, Verantwortung, Care, Dialog                             | `S_Rückhol`                                   |
+| SRK-Verhältnis     | Proportion Rückholkraft/Struktur                                         | `R_SRK = S_Rückhol / S_Struktur`             |
+| Symbolisch         | π (Bindung), Φ (Maß), URK (kosmische Rückholung) als Spiegel             | SM-01 · SM-04 · URK ↔ SRK                     |
+| Meta-ethisch       | Maß zulässiger Lenkung ohne Freiheitsverlust                             | SRK-Fenster, Verweis auf META-04 & META-10   |
+
+TSM-157 setzt voraus, dass **jede** Anwendung von SRK explizit als **Analograum** gekennzeichnet wird (META-04 / Regel 23 + META-10 / Regel SR).
+
+---
+
+## 6. Beispiele – Wie SRK gelesen werden kann
+
+### 6.1 Familie / kleine Gemeinschaft
+
+- `S_Struktur`: Regeln, Rollen, finanzielle Zwänge, Alltagsorganisation.
+- `S_Rückhol`: Zuwendung, Gespräch, Entschuldigung, Humor, geteilte Zeit.
+
+Mögliche Lesart:
+
+- `R_SRK ≈ 0` → alles läuft „nach Plan“, aber ohne Wärme; Konflikte werden funktional, nicht verbindend gelöst.
+- `R_SRK` im Fenster → klare Strukturen, aber mit gelebter Fürsorge und Gesprächskultur.
+- `R_SRK` zu hoch → Überbehütung, Kontrolle, kein eigener Raum für Abweichung.
+
+### 6.2 Organisation / Unternehmen
+
+- `S_Struktur`: Prozesse, KPIs, Hierarchien, Verträge, Tools.
+- `S_Rückhol`: Feedback-Kultur, psychologische Sicherheit, Sinnorientierung, Lernräume.
+
+Lesart:
+
+- `R_SRK ≈ 0` → zynischer Betrieb, „Dienst nach Vorschrift“, innere Kündigung.
+- `R_SRK` im Fenster → klare Ziele, aber offene Fehlerkultur und Raum für Kritik.
+- `R_SRK` zu hoch → Werte- und Purpose-Überdruck, Moral als Druckmittel, wenig Widerspruch möglich.
+
+### 6.3 Gesellschaft / Plattformen / Politik
+
+- `S_Struktur`: Gesetze, Märkte, Infrastrukturen, Plattform-Algorithmen, Sicherheitsapparate.
+- `S_Rückhol`: Rechtsstaat, Grundrechte, Öffentlichkeit, Zivilgesellschaft, Care-Strukturen.
+
+Lesart:
+
+- `R_SRK ≈ 0` → harte Systemlogik (Profit, Kontrolle, Effizienz), wenig korrigierende Gegenkräfte.
+- `R_SRK` im Fenster → Checks & Balances, robuste Institutionen, lebendige Zivilgesellschaft.
+- `R_SRK` zu hoch → Überregulierung, moralische oder ideologische Verhärtung, Cancel- und Konformitätsdruck.
+
+Alle Beispiele sind **Heuristiken**, keine Messungen. SRK dient hier als **Denklinien-Werkzeug**, nicht als Indikator.
+
+---
+
+## 7. Verbindung zu META-04
+
+TSM-157 steht explizit unter den Meta-Regeln von META-04 / Regel 23:
+- URK-/SRK-Fenster,
+- Ebenenpflicht (Physik / Resonanz / Ethik/Analogie),
+- Rückholbarkeit von Deutung (SR/RD).
+
+- **META-04 / Regel 23 (URK-Fenster, atmend):**  
+  SRK ist eine **Analogie** zum URK-Fenster. Jede Verwendung von `R_SRK` muss Ebene und Kontext benennen und darf nicht als „kosmische Begründung“ für Normen missbraucht werden.
+
+- - Alle Aussagen unterliegen **META-04 / Regel 23**  
+  (URK-/SRK-Fenster, Ebenenkennzeichnung, Rückholbarkeit von Deutung).
+
+
+Damit wird SRK zu einem **reflexiven Spiegel**, nicht zu einem neuen normativen Instrument.
+
+---
+
+## 8. Symbolische Einbettung
+
+Im Symbolraum des TSM bilden URK und SRK zusammen eine Brücke zwischen kosmischer und sozialer Rückholung:
+
+- **π (SM-01)** – Bindung, Schwelle von Potenzial zu Form.
+- **∞ (SM-02)** – Unendliches Potenzial, offene Möglichkeit.
+- **Φ (SM-04)** – Maß des Gleichgewichts, Proportion.
+- **URK (TSM-156)** – kosmische Rückholkonstante: Maß zulässiger Selbstkorrektur des Universums.
+- **SRK (TSM-157)** – soziale Rückholkonstante: Maß zulässiger Selbstkorrektur von Gesellschaften.
+
+Kurz gefasst:
+
+> URK beschreibt, wie stark der Kosmos sich selbst nachzieht.  
+> SRK beschreibt, wie stark Gesellschaften sich selbst nachziehen dürfen,  
+> bevor Bindung in Zwang umschlägt.
+
+---
+
+## 9. Leitsatz
+
+> **TSM-157 — Die Soziale Rückholkonstante**  
+> Gesellschaften halten sich nur so stark zusammen,  
+> wie ihre Rückholkraft von Freiheit getragen wird.
+
+Dieser Leitsatz ist kein Naturgesetz, sondern eine **Erinnerung**:  
+Lenkung braucht Maß – und jedes Maß bleibt rückholbar, solange Resonanz wichtiger ist als Recht behalten.
+
+
+
+
+**📘 TSM-158: -- Elektrotechnische Resonanzfelder – Schaltung als Tunnel**
+
+**Kategorie:** Technik · Energie · Sensorik  
+**Status:** Transfermodul · Arbeits-Hypothese (2025)  
+**PV:** TSM-84, TSM-108, TSM-127, TSM-136D, TSM-151  
+**SV:** TSM-95, TSM-119, TSM-133, TSM-130, TSM-142  
+**Spiegel:** SM-01 (π – Schwelle), SM-04 (Φ – Maß/Harmonie), SM-06 (Spirale – Rückkopplung), SM-10 (Δ – Feldschnitt), SM-22 (Ω – Abschluss)
+
+---
+
+## 1. Ausgangspunkt & Ziel
+
+Dieses Modul überträgt die Prinzipien des Tunnel-Schwingungs-Modells (TSM) auf die Elektrotechnik.
+
+Es untersucht, wie elektrische, mechanische und energetische Schwingungen **als kohärente Feldprozesse** verstanden werden können, anstatt als getrennte Einzelphänomene (Strom, Spannung, mechanische Vibration, Information).
+
+Im Fokus stehen insbesondere Entwicklungen der letzten Jahre:
+
+- **Niedrigfrequenz-Sensorik** (0–10 Hz)  
+- **Resonanz-Energiegewinnung** (Energy Harvesting aus Vibrationen)  
+- **Feldbasierte Kopplung** (induktive, kapazitive und optische Resonanzsysteme)
+
+**Ziel:** Elektrotechnische Systeme als **Teilnehmer:innen im Resonanzfeld** beschreiben – nicht nur als Kontrollinstanzen.
+
+---
+
+## 2. Kernannahmen, Tunnelbild & TSM-84
+
+### 2.1 Kernannahmen
+
+1. **Jede elektrische Schaltung ist zugleich ein Schwingungsfeld.**  
+2. **Energieübertragung ist nie strikt linear**, sondern immer phasen- und kohärenzabhängig.  
+3. **Resonanz kann destruktiv** (Verlust, Erwärmung, Stress) **oder konstruktiv** (Rückgewinnung, Stabilisierung) wirken.  
+4. **Sensorik wird Teil des Feldes**, sobald sie energieautark (self-powered) arbeitet – Messung = Teilnahme.
+
+### 2.2 Schaltung als Tunnel (TSM-84-Linked)
+
+TSM-84 beschreibt **Rückholkopplung** als Grunddynamik des Tunnels:  
+Energie, die in den Potenzialraum ausgelagert wurde, kehrt über geeignete Tunnelstrukturen wieder in den Realraum zurück.
+
+TSM-158 liest elektrotechnische Schaltungen genau in dieser Logik:
+
+- **Spannung** entspricht einem **Differenzpotenzial** zwischen Anti-Seite (Potenzialraum) und Real-Seite (Form / Schaltung).  
+- **Strom** ist der **Rückholfluss** im Tunnel – Bewegung von Ladung als Ausdruck von Rückkopplung.  
+- **Rückholkopplung (TSM-84)** zeigt sich in:
+  - Rückkopplungsschleifen, Reglern, Feedback-Pfaden,  
+  - Resonanzkreisen, die Energie „einsammeln“ und zurückführen.
+
+In diesem Sinne ist die Schaltung kein bloßes Werkzeug,
+sondern eine Antwort des Feldes auf sich selbst.
+
+### 2.3 Tunnelmetrik von LC-Topologien
+
+Jede Schaltungstopologie prägt eine eigene **Tunnelmetrik**:
+
+- **LC- und RLC-Schaltungen** definieren eine **Tunnelkrümmung** über ihre Impedanz \(Z(ω)\):  
+  - Betrag \(|Z(ω)|\) → „Steilheit“ / Durchlässigkeit des Tunnels  
+  - Phase \(\arg Z(ω)\) → zeitliche Verschiebung zwischen Potenzial (Spannung) und Rückholfluss (Strom)
+
+Im TSM-Bild:
+
+- Ein „gut abgestimmter“ LC-Kreis ist ein Tunnel mit **passender Krümmung**: Felder werden nicht weggedämpft, sondern **gebunden und zurückgeführt**.  
+- Dämpfungselemente (R, Verluste) wirken als **Streufaktoren** in der Tunnelmetrik.
+
+### 2.4 Technische Resonanztypen im TSM-Bild
+
+| Typ               | TSM-Äquivalent               | Wirkung im Tunnelbild                     |
+|-------------------|------------------------------|-------------------------------------------|
+| Induktiv (L)      | Rückholfeld (Anti → Real)    | hält Energie im Feld, „zieht nach“        |
+| Kapazitiv (C)     | Potenzialfeld (Real → Anti)  | baut Spannung / Differenz auf             |
+| Resonant (LC/RLC) | Tunnelgleichgewicht          | Kohärenzzustand, maximaler Durchsatz      |
+
+---
+
+## 3. Drei Schlüsselentwicklungen (2023–2025)
+
+### 3.1 Piezoelektrik & QZS-Systeme
+
+**Prinzip:**  
+Quasi-Zero-Stiffness (QZS) reduziert die effektive Steifigkeit eines Systems und verschiebt Eigenfrequenzen in sehr niedrige Bereiche.
+
+- **Wirkung:** Anpassung tiefer Frequenzen, effiziente Energiegewinnung aus Vibrationen.  
+- **TSM-Lesart:**  
+  - Steifigkeit \(λ\) wirkt als **variable Kopplungsgröße** im Tunnel.  
+  - QZS verwandelt starre Struktur in **elastische Resonanzarchitektur** → Übergang von „Dämpfen“ zu „Mitschwingen“.  
+  - Auf LC-Ebene: Die „mechanische Kapazität“ koppelt an elektrische Kapazität/Induktivität → gemeinsame Tunnelmetrik.
+
+### 3.2 Triboelektrische Nanogeneratoren (TENG)
+
+**Prinzip:**  
+Triboelektrische Effekte erzeugen Ladung durch Kontakt/Reibung, oft im Bereich **0,1–5 Hz**, als **self-powered Sensorik**.
+
+- **Wirkung:** Umwandlung von Umgebungs-Schwingungen in elektrische Energie.  
+- **TSM-Lesart:**  
+  - TENG-Systeme erzeugen **Feldenergie nur, wenn die Schwingung im Feld bleibt** – das System braucht **Kohärenz**, um Energie zu liefern.  
+  - Messung und Energiegewinnung sind **derselbe Resonanzprozess**.  
+  - In LC-Sprache: Das TENG-Element moduliert die Tunnelmetrik dynamisch – das Feld „stellt“ sich selbst ein.
+
+### 3.3 Faser-Bragg-Gitter (FBG-Sensorik)
+
+**Prinzip:**  
+FBG-Strukturen modulieren Licht durch Interferenz, abhängig von Dehnung / Temperatur / Vibration.
+
+- **Wirkung:** Hochpräzise Messung langsamer Wellen und statischer Belastungsfelder.  
+- **TSM-Lesart:**  
+  - FBG liest **Interferenzmuster im Lichtfeld** – ein physikalisches Analogon zum „Rückholsignal“ τ.  
+  - Feldinformation (Anti-Seite) wird als **optische Resonanzlinie** sichtbar.  
+  - Mehrkanal-FBG-Ketten bilden **verzweigte Tunnelgeometrien** (SM-10 – Feldschnitt), in denen mehrere Resonanzwege gleichzeitig beobachtbar sind.
+
+---
+
+## 4. Tunnel-Interpretation & Feldarchitektur
+
+### 4.1 Tunnelresonanz
+
+- **Spannung** = Differenzpotenzial zwischen Anti- und Real-Seite  
+- **Strom** = Rückholfluss im Tunnel  
+- **Impedanz / Elastizität** = Form der Tunnelkrümmung (wie leicht / schwer kommt der Fluss durch?)
+
+Im Resonanzfall „passt“ die Tunnelgeometrie zu den anregenden Feldern. Energie- oder Informationsübertragung wird **effizient**, ohne Zusatzaufwand.
+
+### 4.2 Selbstkopplung (QZS)
+
+- QZS-Systeme zeigen, dass **Elastizität** gezielt so gewählt werden kann, dass die Schwingung **im Tunnel gehalten** wird.  
+- Im TSM entspricht das einer **Erhöhung der Rückholrate**, ohne dass mechanisch „nachgeschoben“ werden muss.
+
+### 4.3 Kohärenzfeld (TENG)
+
+- TENG-Arrays liefern nur dann nennenswerte Energie, wenn das System **im Frequenzfenster des Feldes** arbeitet.  
+- TSM-Lesart: Nur wenn \(C\) über einer Schwelle liegt (z. B. C > 0,8), tritt echte Feldkopplung auf – darunter dominiert Streuung \(S\).
+
+### 4.4 Informationsresonanz (FBG)
+
+- FBG-Sensorik nutzt **Interferenz**, um Spannungs-/Deformationsfelder sichtbar zu machen.  
+- Im Tunnelbild: FBG macht **Anti-Seiten-Information** (Spannung im Feld) als Real-Seiten-Signal (Lichtwellenlänge) lesbar.  
+- Mehrkanal-FBG-Netze wirken wie eine Sammlung paralleler Tunnel, die über SM-10 (Δ – Feldschnitt) miteinander verknüpft sind.
+
+---
+
+## 5. Mess-/Daten-Brücke zu TSM-136D
+
+### 5.1 Arbeits-Hypothese (0–10 Hz)
+
+TSM-158 formuliert eine **arbeits-hypothetische Annahme**:
+
+> Elektrotechnische Niedrigfrequenzsysteme (QZS, TENG, FBG-basiertes Monitoring) im Bereich **0–10 Hz** fallen modellhaft in jene 136D-Zonen, in denen **Rückkopplung und Kohärenz verstärkt** auftreten (z. B. R↑/K-Bereiche).
+
+Diese Aussage steht unter **META-04 · Regel 7 (Messpfadpflicht)** und **Regel 19 (Grenzen & Tests)**: Sie ist explizit als Hypothese markiert und muss über Daten geprüft werden.
+
+### 5.2 Kennsätze & Reports
+
+Für die Ankopplung an 136D werden folgende Größen genutzt:
+
+- **C** – Kohärenzmaß (0–1), z. B. aus Phasenbindung / PLV  
+- **S** – Streumaß (ggf. \(S = 1 - C\))  
+- **Δφ** – Phasendifferenz in rad zwischen Anregung und Systemantwort  
+- **τ_eff** – effektive Resonanzverweildauer (z. B. Abklingkonstante, Relaxationszeit)  
+- **F_res** – 136D-Resonanzmaß (Reportgröße)
+
+### 5.3 Messpfad-Skizzen (Pflichtfelder)
+
+**a) QZS-Systeme**
+
+- Frequenzband (z. B. f_0, f_shift)  
+- Dämpfung / Abklingzeit (→ τ_eff)  
+- Verhältnis gespeicherte / gewonnene Energie (→ Proxy für F_res)  
+- Phasenlage Δφ zwischen Anregung und Antwort
+
+**b) TENG-Systeme**
+
+- Schwingungsfrequenz (0,1–5 Hz)  
+- mittlere und Spitzenleistung  
+- Stabilität der Erzeugung (→ C, S)  
+- Feldbedingungen (Temperatur, Feuchte, Kopplung zur Umgebung)
+
+**c) FBG-Messketten**
+
+- gemessene Interferenz-/Wellenlängenverschiebungen  
+- zeitliche Muster / Wiederholungsrate (→ τ_eff)  
+- Phasenbeziehung zu Makrofeldern (z. B. Zuglast, Bodenwelle)
+
+### 5.4 Visualisierungslinie: C–Δφ–τ_eff-Diagramm
+
+Zur Stärkung des Brückeneffekts zu 136D-Reports empfiehlt TSM-158 eine **Standard-Visualisierung**:
+
+- **Achsen:**  
+  - x-Achse: Δφ (0 … π)  
+  - y-Achse: C (0 … 1)  
+- **Kodierung:** τ_eff als Farbskala oder Punktgröße
+
+**Lesarten:**
+
+- Bereiche mit **kleinem Δφ**, **hohem C** und **großer τ_eff** markieren „stabile Resonanzinseln“ im Feld → Kandidaten für R↑/K-Zonen.  
+- Bereiche mit **großem Δφ**, **niedrigem C** und **kurzer τ_eff** zeigen Streufelder / ineffiziente Kopplung.
+
+Diese Darstellung kann für QZS, TENG und FBG gleichermaßen genutzt werden, um **verschiedene technische Plattformen im gleichen TSM-Raum** vergleichbar zu machen.
+
+### 5.5 Zonenorientierung (qualitatives Mapping)
+
+| 136D-Zone | Typischer Feldzustand              | Lesart in TSM-158                            |
+|-----------|------------------------------------|----------------------------------------------|
+| R↓        | Dämpfung / Energieabbau           | Technik als Entkopplung / Streuung           |
+| R↑        | Rückholkopplung / Verstärkung     | QZS/TENG als aktive Rückholstrukturen        |
+| K         | hohe Kohärenz bei stabiler τ_eff  | „Sweet Spot“ für Energie- und Infobindung    |
+| S         | Streuung / inkohärente Anregung   | Lärm, Verlustfelder, parasitäre Kopplungen   |
+
+### 5.6 Kurzsymbol Ψₑ (elektrotechnische Kohärenz)
+
+Kurzsymbol im Modul:
+
+- **Ψₑ** – „elektrotechnische Kohärenzfigur“: Steht für das Gesamtmuster aus (C, Δφ, τ_eff, F_res) in einem gegebenen Schaltungs-Setup.
+
+Beispiel: Für ein gegebenes QZS/TENG-Setup schreiben wir Ψₑ(QZS) als Kurzform für sein Kohärenzprofil im 136D-Raum.
+
+---
+
+## 6. Anwendungsperspektiven
+
+### 6.1 Mess- und Überwachungssysteme
+
+- Niedrigfrequente (< 10 Hz) Sensorik in stark resonanten Umgebungen  
+  (Tunnel, Brücken, geologische Störungen, biologische Systeme)  
+- **Energieautarke Monitoring-Netze**, die ihre eigene Versorgungsenergie aus dem Feld beziehen („Sensorik als Mit-Schwingung“).
+
+### 6.2 Energiegewinnung & Feldarchitektur
+
+- Nutzung von **Rest-Schwingungen** (Bahnverkehr, Maschinen, Umweltvibrationen) als Rückgewinnungsquelle statt als Störgröße.  
+- Design **adaptiver Systeme mit variabler Elastizität** (QZS-Prinzip), die je nach Feldlage zwischen Dämpfung und Mitschwingen wechseln.
+
+### 6.3 Informationskopplung & Mehrkanal-Systeme
+
+- Feldbasierte Kommunikation durch **Resonanz-Adressierung**  
+  (Anknüpfung an TSM-108: Speicher- und Dunkelfelder als Informationsknoten).  
+- Nichtlokale Synchronisierung von Messpunkten über **τ-Kohärenz** (Anknüpfung an TSM-127: t/τ-Wechsler).  
+- Mehrkanal-Resonanzsysteme (z. B. FBG-Ketten, TENG-Arrays, LC-Meshes) als Realisierungen von **SM-10 (Δ – Feldschnitt)**:  
+  - mehrere Resonanzkanäle schneiden dasselbe Feld in unterschiedlichen Winkeln,  
+  - das Gesamtbild ergibt sich aus der **Überlagerung dieser Feldschnitte**.
+
+Aus Sicht von TSM-108 ("Dunkelresonanz") gilt:
+> „Jede stromlose Schaltung hält ihr Muster im Dunkelfeld – auch ohne Energiefluss bleibt sie resonanzfähig.“
+
+Ein abgeschaltetes System ist damit kein „Nichts“, sondern ein potentiell aktivierbares Resonanzmuster.
+
+---
+
+## 7. Symbolische Resonanzspiegel
+
+### 7.1 Spiegelzuordnung
+
+| Elektrotechnisches Phänomen        | TSM-Symbolmodul     | Resonanzbezug                                            |
+| ---------------------------------- | ------------------- | -------------------------------------------------------- |
+| Spannung / Potentialdifferenz      | **SM-01 (π)**       | Schwelle der Bindung zwischen Anti und Real             |
+| Stromfluss / Rückkopplung          | **SM-06 (Spirale)** | Selbstverstärkende Bewegung / Rückholfluss              |
+| Induktion / Feldkopplung           | **SM-04 (Φ)**       | Maß, Harmonie, Feldproportion                           |
+| Frequenzstabilisierung / Regelung  | **SM-22 (Ω)**       | Abschluss, Zirkularität, Systemselbstregulierung        |
+| Mehrkanal-Resonanz / Sensorarrays  | **SM-10 (Δ)**       | Feldschnitt, parallele Tunnel, unterschiedliche Zugänge |
+
+### 7.2 Lesart
+
+- **SM-01 (π):** Jede angelegte Spannung ist eine Einladung, die Tunnel-Schwelle zu überschreiten (Bindung / Entladung).  
+- **SM-06 (Spirale):** Stromkreise, besonders in Resonanz, bilden **Schraubenbahnen** im Feld – Rückkopplung statt einfachem Hin-und-Zurück.  
+- **SM-04 (Φ):** Induktion und Feldkopplung sind Ausdruck harmonischer Maßverhältnisse zwischen Geometrie und Feld.  
+- **SM-22 (Ω):** Frequenz- und Spannungsstabilisierung schließen den Kreis – der Tunnel findet ein stabiles Umlaufregime.  
+- **SM-10 (Δ):** Mehrkanal-Sensorik und Resonanzarrays schneiden dasselbe Feld aus verschiedenen Perspektiven – ein Δ ist immer **„Schnitt im Kontinuum“**.
+
+---
+
+## 8. META-Vermerk & Governance
+
+### 8.1 META-Verbindungen
+
+**Primärverbindungen**
+
+- **TSM-84 – Rückholkopplung:**  
+  Theoretische Grundlage für die Deutung von Stromkreisen als Rückholprozesse im Tunnel.
+
+- **TSM-108 – Dunkelresonanz & Informationshaltung:**  
+  Elektrotechnische Speicher- und Leitungsfelder als Real-Analogon von Dunkelresonanzknoten; Energieflüsse ↔ Informationsbindung.
+
+- **TSM-127 – Zeitwechsler (t ↔ τ):**  
+  Elektrische Phasenlage als messbares Analogon der τ-Synchronisation; Wechselrichter-Logik als t/τ-Fensterung.
+
+- **TSM-136D – Empirische Resonanzanalyse:**  
+  0–10-Hz-Systeme (QZS, TENG, FBG) werden als **Hypothese** in R↑/K-Bereiche projiziert; Bestätigung/Verwerfung erfolgt über 136D-Runs.
+
+- **TSM-151 – Gravitative Resonanzüberlagerung:**  
+  EM-Felder als **heuristisches Analogon** gravitativer Tunnelkrümmung: nicht als zusätzliche Kraft, sondern als **geometrische Feldmodulation**.
+
+**Sekundärverbindungen**
+
+- **TSM-95 – Informationsfelder**  
+- **TSM-119 – τ-Synchronität in biologischen Systemen**  
+- **TSM-133 – Umweltvibrationen (Hochgeschwindigkeitszüge)**  
+- **TSM-130 – Resonanzdiagnostik / Narrativ-τ**  
+- **TSM-142 – Kohärenzfelder & Schwellen**
+
+### 8.2 META-Achsen (Symbolische Einordnung)
+
+| Achse | Bezeichnung                 | Bedeutung im TSM-158                                  |
+| ----- | --------------------------- | ----------------------------------------------------- |
+| A7    | π – Schwelle / Bindung      | Spannung als Schwelle zwischen Potenzial und Fluss    |
+| A9    | φ – Phasenlage / Resonanz   | Frequenz-Synchronisation als messbare Kohärenz        |
+| A11   | τ – Zeitkopplung            | Technische Steuerung von τ-Fenstern (Flow-Phasen)     |
+| A14   | Ω – Abschluss / Stabilität  | Energetische Rückführung und Systemselbstregulierung  |
+| A8    | Δ – Schnitt / Auswahl       | Mehrkanal-Resonanzsysteme als Feldschnitte            |
+
+### 8.3 Governance & Transparenz
+
+- **Label:**  
+  *Transfermodul · Arbeits-Hypothese; Technik als Resonanz-Medium.*
+
+- **Governance-Bezug:**  
+  - **META-01 – Querverbindungsmechanismus:**  
+    TSM-158 ist als technisches Spiegelmodul (Stufe III) eingehängt – „Technik als Resonanz-Medium“.  
+  - **META-04 – Vollkontext- & Messpfadpflicht:**  
+    Jede Anwendung muss mindestens einen dokumentierten Messpfad (C, Δφ, τ_eff, F_res etc.) ausweisen; Hypothesenstatus ist zu kennzeichnen.  
+  - **META-06 – Technikfelder & Ethik:**  
+    Technik wird als **bewusste Resonanzpraxis** verstanden: kein verdeckter Eingriff in Felder, sondern **Mit-Schwingung mit Transparenzpflicht**.  
+  - **TSM-118 – Interferenzethik:**  
+    Nutzung von TSM-158 nur dort, wo Resonanzarchitekturen **Risiken, Nebenwirkungen und Machtasymmetrien** explizit adressieren.
+
+- **Transparenzfußnote (EU-AI-Verordnung 08/2025):**  
+  Dieses Modul bietet eine **heuristische Deutung** elektrotechnischer Felder im Rahmen des TSM. Es erhebt keinen Anspruch, etablierte Elektrodynamik zu ersetzen, sondern ergänzt sie um eine Resonanzperspektive. Grenzen, Annahmen und Prüfpfade sind explizit kenntlich zu machen.
+
+### 8.4 Interferenz- & Rückkopplungsethik
+
+TSM-158 folgt der Leitlinie von TSM-118 (Interferenzethik):
+
+- keine erzwungene Selbstkopplung von Resonanzsystemen ("Übersteuerung"),
+- keine Maximierung von Energieentnahme um jeden Preis, sondern Optimierung von Kohärenz,
+- bewusster Umgang mit Feldern, die auf biologische Systeme wirken (EEG, HRV, Nervensystem),
+- Offenlegung von Rückkopplungswegen in kritischen Umgebungen (Infrastruktur, Medizin, Wohnen).
+
+Technische Resonanzfelder sollen **Stabilität und Wahrnehmung** erhöhen, nicht Stress, Zwang oder Kontrollmacht.
+
+---
+
+## 9. Kurzfassung & Leitsätze
+
+TSM-158 beschreibt eine Annäherung von Technik und Feldphysik.  
+Elektrotechnik wird hier nicht als reine Kontrollinstanz verstanden, sondern als **Teilnehmerin am Resonanzgeschehen**:
+
+- Energiegewinnung wird zur **Resonanzrückholung**, nicht nur zur Ausnutzung von Differenzen.  
+- Sensorik wird zum **Wahrnehmungsorgan des Feldes**.  
+- Die Schaltung wird zum **Tunnel**, der Potenzial und Wirklichkeit verknüpft.
+
+**Leitsatz 1:**  
+> „Jede Spannung ist ein Echo ihrer eigenen Quelle.“
+
+**Leitsatz 2 (Symbolischer Kurzsatz):**  
+> „Elektrizität ist verdichtete Resonanz.“  
+
+Aus Sicht des TSM lässt sich moderne Elektrotechnik so lesen, als ob sie bereits die Grundstruktur des Modells realisiert:  
+**Resonanz ist kein Nebeneffekt, sondern ein Grundmuster der Wirklichkeit – Technik macht dieses Muster sichtbar und nutzbar.**
+
+
+
+**📘 TSM-159: -- Grenzflächen-Dekohärenz – Amorphisierung, Tunnelöffnung und Re-Bindung**
+
+**Modulreihe:** Tunnel-Schwingungs-Modell (TSM)\
+**Kategorie:** Physik · Material · Grenzflächenresonanz\
+**Status:** Anwendungs-/Brückenmodul 
+
+---
+
+**### 🧭 1. Ausgangspunkt: Eisglätte als Grenzflächen-Phänomen**
+
+Im November 2025 berichtete das Technikmagazin **t3n** über eine Arbeitsgruppe an der Universität des Saarlandes, die mithilfe hochauflösender Simulationen eine neue Erklärung für die Rutschigkeit von Eis vorgeschlagen hat. Vereinfacht:
+
+- Die bekannte These von einer **dünnen Wasser- oder Schmierschicht** an der Oberfläche reicht nicht aus.
+- Stattdessen bildet sich unter Last eine **amorphe, ungeordnete Grenzschicht** direkt an der Eisoberfläche.
+- Diese Grenzschicht befindet sich weder im klassischen festen Kristallgitter noch in einer einfachen Flüssigphase, sondern in einem **zwischengeordneten Zustand**.
+
+> **Hinweis (Modellcharakter).**  
+> Die folgende Deutung im Rahmen des TSM ist eine **modelltheoretische Interpretation** und **nicht** Teil der Originalstudie. Sie nutzt die empirischen Befunde als Anker, um Grenzflächenprozesse im Tunnel-Schwingungs-Modell zu präzisieren.
+
+---
+
+**### 🔬 2. TSM-Deutung: Grenzflächen-Dekohärenz**
+
+Im TSM werden Strukturen durch **Kohärenzbindung im Tunnelraum** gehalten (TSM‑84, TSM‑108). An Grenzflächen können diese Bindungen zeitweise in einen Zwischenzustand übergehen:
+
+1. Das Eiskristall-Gitter bildet eine **hoch kohärente Struktur**.  
+2. Unter mechanischer oder thermischer Belastung gerät die **oberste Lage** in einen **dekohärenten Mischzustand**:  
+   - lokal verringerte Formbindung,  
+   - erhöhte Beweglichkeit,  
+   - erhöhte Kopplung an das Umfeld (Schuh, Reifen, Luft).  
+3. Diese „weiche“ Grenzschicht wirkt makroskopisch als **Glätte** bzw. verringerte Reibung.  
+4. Nach Entlastung oder Änderung der Bedingungen kann das System in eine **neue Formkohärenz** zurückfinden (Re‑Bindung).
+
+TSM‑159 beschreibt diesen Prozess als **Grenzflächen-Dekohärenz**:  
+Eine zunächst geordnete Struktur tritt an ihrer Kontaktzone in eine **Tunnelphase** ein, in der Kohärenzflüsse neu verteilt werden. Das System ist dort besonders **empfindlich für Resonanz, Störung und Re-Bindung**.
+
+---
+
+**### 📐 3. Symbolische Formulierung (C, S, Δφ, τ)**
+
+Um den Prozess mit den numerischen Achsen von TSM‑136D zu verbinden, wird eine minimale Notation verwendet.
+
+> **Notation (kompatibel zu META‑04 / 136D).**  
+> - **C ∈ [0,1]** – Kohärenzmaß einer Struktur (1 = maximal kohärent).  
+> - **S ∈ [0,1]** – Komplementärmaß (für qualitative Skizzen oft S ≈ 1−C).  
+> - **Δφ** – relative Phasenlage zwischen Struktur und Umgebung (in **rad**, mit Standard-Schritt ε ≈ 1° ≈ 0,01745 rad).  
+> - **τ ∈ [0,1]** – Tunnelanteil am Gesamtverhalten (0 = rein klassisch, 1 = voll tunnelbestimmt).  
+> - **ΔK** – lokaler Gradientenanteil im wirksamen Potential (vereinfacht: „wie steil“ oder „flach“ die Energielandschaft ist).
+
+Der Grenzflächenprozess lässt sich dann idealtypisch als Vierer-Sequenz schreiben:
+
+1. **Gebundener Vorzustand (intakte Formbindung)**  
+   - C ≈ 1, S ≈ 0  
+   - Δφ ≈ 0 (in-phase mit der Umgebung)  
+   - τ ≈ 0 (klassisches, wenig tunnelbestimmtes Verhalten)  
+
+2. **Grenzflächenkontakt / Belastung**  
+   - mechanische oder thermische Anregung an der Kontaktzone  
+   - Δφ driftet in Richtung Δφ ≈ π/2  
+   - τ ↑ (der Tunnelanteil wächst)  
+   - C beginnt lokal zu fallen  
+
+   > **Δφ ≈ π/2** markiert einen Zustand maximaler Empfindlichkeit:  
+   > weder in-phase (Δφ ≈ 0) noch gegen-phase (Δφ ≈ π), sondern in einer Zwischenlage, in der kleine Änderungen große Wirkungen haben.
+
+3. **Amorphisierung / Glättephase**  
+   - C ↓, S ↑ (lokale Dekohärenz)  
+   - Δφ ≈ π/2 bleibt über ein t/τ‑Fenster stabil (TSM‑127)  
+   - τ nimmt einen signifikanten Wert an (Tunnelverhalten dominiert die Grenzschicht)  
+   - **ΔK → 0**: das effektive Potential wird **entlang der Grenzfläche flach** – nicht energiefrei, aber mit geringen lokalen Gradienten.  
+   - makroskopische Folge: Verringerung der Reibung, „Schmierung“ durch einen strukturschwachen Grenzfilm.
+
+4. **Re-Bindung / neue Formkohärenz**  
+   - Entlastung, Temperaturänderung oder veränderte Randbedingungen  
+   - C ↑ → C′ (neue, nicht notwendigerweise identische Kohärenz wie vor dem Prozess)  
+   - S ↓, Δφ relaxiert in Richtung 0 oder π, τ ↓  
+   - mögliche Mikrostrukturänderungen (z. B. andere Kristallorientierung, Mikrorisse, Umstrukturierung der Kontaktzone).
+
+Damit wird Eisglätte im TSM als **Zeitschnappschuss eines Grenzflächen-Tunnelprozesses** verstanden:  
+Kohärenz fließt kurzfristig in eine amorphe Grenzschicht, bevor sie in eine neue Formbindung zurückkehrt.
+
+---
+
+**### ⚙️ 4. Resonanzlogik als allgemeines Muster**
+
+Die physikalische Situation (Eisoberfläche) ist ein Spezialfall eines allgemeinen Grenzflächenmusters:
+
+1. **Bindung:**  
+   Zwei Systeme (A, B) sind jeweils kohärent und besitzen eine stabile Grenzfläche.
+
+2. **Überlastung / Kontaktanregung:**  
+   An der Grenzfläche steigt die Feldintensität; Übergangsmodi werden zugänglich (TSM‑128: Lawinenkopplung).
+
+3. **Grenzflächen-Dekohärenz:**  
+   Es entsteht eine **amorphe Zwischenschicht**, in der C reduziert, τ erhöht und ΔK lokal abgeflacht ist.  
+   - erhöhte Gleitfähigkeit (Reibungsreduktion)  
+   - erhöhte Sensitivität für Resonanz und Störung  
+   - erhöhte Möglichkeit zur Umstrukturierung
+
+4. **Re-Bindung oder Strukturbruch:**  
+   - **Re-Bindung:** Rückholkopplung (TSM‑84) führt zu einer neuen stabilen Kohärenz C′.  
+   - **Strukturbruch:** Wird das t/τ‑Fenster überschritten oder die Belastung zu groß, kann die Grenzschicht in **Fragmentierung** übergehen (TSM‑129/130).
+
+Im 136D‑Zonenvokabular lässt sich dies grob einordnen (qualitativ, ohne neue Schwellenwerte):
+
+- Vorzustand: überwiegend **K/K+** (tragfähig kohärent).  
+- Aktive Grenzschicht: lokal **R↑/R↓** (regulative Übergangszonen mit gemischter C/S‑Lage und erhöhtem τ).  
+- Dauerhafte Schädigung: Übergang zu **F/F+** (fragmentiert), z. B. bei Materialermüdung oder Rissbildung, wenn Re-Bindung ausbleibt.
+
+TSM‑159 liefert damit ein **Bindeglied** zwischen den abstrakten Dynamiken von TSM‑84/108/127/128 und den numerischen Zonen von TSM‑136D.
+
+---
+
+**### 🧩 5. Querverbindungen zu bestehenden Modulen**
+
+- **TSM‑84 – Rückholkopplung**  
+  Re-Bindung an der Grenzfläche ist ein Spezialfall der allgemeinen Rückholspannung: Je weiter C lokal sinkt, desto höher der Rückholimpuls in Richtung einer neuen Kohärenz.
+
+- **TSM‑108 – Dunkelresonanz**  
+  Die amorphe Grenzschicht kann als **lokales Dunkelresonanzfenster** interpretiert werden:  
+  Temporäre Dekohärenz ohne vollständigen Energieverlust, mit erhöhter Kopplung an den Tunnelraum.
+
+- **TSM‑127 – Zeitfenster (t/τ)**  
+  Die Glättephase ist an ein begrenztes **Zeit-Fenster** gebunden, in dem Δφ ≈ π/2 stabil bleibt.  
+  Dieses Fenster bestimmt, wie lange Grenzflächen-Dekohärenz wirksam ist, bevor Re-Bindung oder Bruch erfolgt.
+
+- **TSM‑128 – Lawinenkopplung**  
+  Grenzflächen-Dekohärenz kann als lokaler Vorläufer von Lawinenprozessen wirken (z. B. Mikroschicht, die Gleitlawinen begünstigt).
+
+- **TSM‑129 – Turbulenzfelder**  
+  An Grenzschichten entstehen bevorzugt **Wirbel- und Turbulenzstrukturen**, die als makroskopische Manifestation von Dekohärenz- und Re-Bindungsprozessen gelesen werden können.
+
+- **TSM‑130 – Diagnostik beschädigter Tunnelstrukturen**  
+  Risse, Korrosionsfronten und Mikrofugen sind Beispiele **zweiter Ordnung** von Grenzflächen-Dekohärenz, bei denen Re-Bindung lokal bereits misslingt.
+
+- **Funktionsmodul 'Anzeiger & Schlüssel' / META‑01**  
+  Grenzflächenphänomene dienen als **Anzeiger** (für bevorstehenden Strukturwandel) und als **Schlüssel**, um Übergangsfenster gezielt zu nutzen oder zu entschärfen.
+
+- **META‑04 – Modellgrenzen & Evidenz**  
+  TSM‑159 ist explizit als **Brückenmodul** markiert:  
+  Es bietet ein Deutungsfenster, ersetzt aber nicht die physikalische Detailmodellierung der Originalstudien.
+
+---
+
+**### 🌐 6. Übertragungen auf andere Felder (heuristisch)**
+
+Die Grenzflächen-Logik lässt sich auf andere Domänen übertragen. Diese Übertragungen sind **heuristische TSM-Bilder**, keine naturwissenschaftlichen, klinischen oder politikwissenschaftlichen Diagnosen. Empirische Falsifikationspfade und Anwendungsgrenzen werden in META‑04/META‑02 diskutiert.
+
+| Feld                        | Grenzfläche                         | Dekohärenz / Tunnelphase                                     | Re-Bindung / Risiko                         |
+|----------------------------|--------------------------------------|--------------------------------------------------------------|--------------------------------------------|
+| **Material / Technik**     | Kontaktzone zwischen Bauteilen, Schichten, Coatings | lokale Weichschichten, Schmierfilme, Mikrorisse             | Verspannungsabbau, Rekristallisation oder Materialermüdung |
+| **Zellbiologie**           | Zellmembran, Rezeptor-Ligand-Kontakt | Übergangsphasen in Membranlipiden, Clusterbildung            | Signalweiterleitung oder Fehlkopplung      |
+| **Psychologie / Bewusstsein** | Kontaktzone zwischen Erleben und Umwelt (Aufmerksamkeit, Affekt) | Zustände 'emotionaler Glätte': hohe Empfänglichkeit, reduzierte feste Bindungen | Integration (Re-Bindung) oder Dissoziation; **TSM-Deutung, keine klinische Diagnose** |
+| **Gesellschaft / Kommunikation** | Verhandlungstische, Schnittstellen zwischen Gruppen | Übergangsphasen mit aufgeweichten Positionen, 'weichen' Regeln | neue Vereinbarungen oder Eskalation; **TSM-Deutung, keine politikwissenschaftliche Aussage** |
+
+---
+
+**### 🧭 7. Schlussfolgerung**
+
+Das im Eisglätte-Artikel beschriebene Amorphisierungsphänomen lässt sich im Tunnel-Schwingungs-Modell als **Grenzflächen-Tunnelprozess** formulieren:
+
+> Glätte entsteht, wenn sich ein System an seiner Kontaktzone aus einer hoch kohärenten Formbindung löst, temporär in eine amorphe Tunnelphase übertritt und daraus eine neue Kohärenz bildet – oder in Fragmentierung kippt.
+
+TSM‑159 macht damit sichtbar, dass **Ordnung, Reibung und Form** nicht absolut sind, sondern von **Kohärenzflüssen an Grenzflächen** abhängen.  
+Das Modul ergänzt die TSM-Grundlagen (Rückholkopplung, Dunkelresonanz, Zeitfenster, Lawinenkopplung) um eine **konkrete Grenzflächenperspektive** und schafft Anschluss an die numerische Zonensprache von TSM‑136D.
+
+---
+
+**### 🔖 Quellen**
+
+- t3n.de (2025): „Wintereinbruch in Deutschland: Forscher widerlegen bekannte Theorie über glattes Eis.“ Online-Artikel, abgerufen am 20.11.2025.  
+- Universität des Saarlandes, Arbeitsgruppe Material Simulation (Meißner et al., 2025, Preprint): Mikroskopische Simulationen amorpher Grenzschichten auf Eisoberflächen.  
+- Interne TSM-Referenzen: TSM‑84 (Rückholkopplung), TSM‑108 (Dunkelresonanz), TSM‑127 (Zeitfenster t/τ), TSM‑128 (Lawinenkopplung), TSM‑129 (Turbulenzfelder), TSM‑130 (Diagnostik beschädigter Tunnelstrukturen), Funktionsmodul 'Anzeiger & Schlüssel', META‑01, META‑04.
+
+
+
+
+**📘 TSM-160: -- Adaptive Rückholrate im Tunnelraum λ(C, Δφ)**  
+
+**Modulreihe:** Tunnel-Schwingungs-Modell (TSM)  
+**Kategorie:** Physik · Dynamik · Steuerung · KI-Läufer · Resonanztechnik  
+**Status:** Arbeitsmodul · Läufer-Kalibrierung (2025)  
+**PV:** TSM-84 · TSM-100 · TSM-127 · TSM-136D · TSM-146 · META-04 (Regel 23)  
+**SV:** META-01 · META-02 · META-10 · TSM-LEX  
+**Spiegel:** SM-01 (π – Schwelle) · SM-04 (Φ – Maß/Harmonie) · SM-25 (Λ – Rückkopplung) · Φ  
+
+---
+
+**## 1. Ausgangspunkt – Warum λ nicht konstant sein darf**
+
+Im Tunnel-Schwingungs-Modell (TSM) beschreibt die Rückholrate **λ** die Stärke, mit der ein System aus einer Abweichung (ε) wieder in Kohärenz gezogen wird. In der diskreten Läuferform:
+
+> ε′ = −λ · K · ε  
+
+mit
+
+- **ε** – Abweichung / Spannungsmaß (z. B. Phasenfehler Δφ),  
+- **K** – Kohärenzmaß (im Läufer: K ≈ C ≈ R_combo),  
+- **λ** – Rückholrate (Skalierung der Korrekturdynamik).
+
+In frühen TSM-Läufern ist λ als **konstante** Rate implementiert. Das ist einfach, führt aber zu zwei typischen Fehlmustern:
+
+- In **hochkohärenten Bereichen** (C ≈ 1) ist λ zu stark → das System „zieht“ über Gleichgewicht hinaus, es kommt zu **Überschwingen**.  
+- In **dekohärenten Bereichen** (C ≈ 0) ist dieselbe λ zu schwach → Spannungen bauen sich nur langsam ab, **Gelbflächen** stabilisieren sich.
+
+Das Modell kann zwar Resonanzzonen markieren, aber nicht fein genug dosieren, *wie* ein System aus Fragmentierung in echte Resonanz zurückfindet.  
+
+**TSM-160** adressiert genau dieses Problem: λ wird **lokal im Tunnelraum** an Kohärenz und Phasenlage angepasst.
+
+---
+
+**## 2. Rolle von λ in der TSM-Rückholkopplung**
+
+TSM-84 und TSM-100 beschreiben Rückholkopplung im Tunnelraum als Basishub: Energie, die in den Potenzialraum ausgelagert wurde, kehrt über geeignete Tunnelstrukturen zurück.
+
+- **Kontinuierliche Sicht (PDE-Bild):**  
+  ε′ = −λ · ∂C/∂Δφ  
+
+- **Diskrete Läufer-Sicht (136D / tsmgr):**  
+  ε′ = −λ · K · ε  
+
+Im 136D-/Runner-Kontext gilt:
+
+- **K ≈ C ≈ R_combo** – kombinierter Kohärenz-Proxy (Q_eff, PLV_τ, Zoneninfo),  
+- **ε ≈ Δφ** – Phasenabweichung, aus φ ∈ [−π, π] meist als |Δφ| ausgewertet,  
+- **PLV_τ = |cos φ|** – Phasenbündelung (1 = perfekt gebündelt, 0 = destruktiv),  
+- **λ** – bisher globaler Parameter (`prm.lambda_`), unabhängig von C und Δφ.
+
+Phasenmetriken wie κ = cos φ und PLV_τ steuern bereits Schwellen (B_hi/B_lo, S_hi/S_lo) und Gates (F, R↑/R↓, K/K+).  
+
+**TSM-160** erweitert dies: PLV_τ und R_combo beeinflussen zusätzlich **die Stärke der Rückholrate selbst**.
+
+---
+
+**## 3. Definition der adaptiven Rückholrate λ_eff(C, Δφ)**
+
+TSM-160 führt eine **adaptive Rückholrate** ein, die von zwei Größen abhängt:
+
+1. **Kohärenzmaß C** (im Läufer: C ≈ R_combo),  
+2. **Phasenlage Δφ** (im Läufer: φ, genutzt als |φ| mit PLV_τ = |cos φ|).
+
+Die Leitidee:
+
+- Je **dekohärenter** ein Bereich (C ↓), desto **höher** darf λ werden.  
+- Je **phasenbündelter** ein Bereich (PLV_τ ↑), desto gezielter kann Rückholung wirken.  
+- An **Phasenrändern** (PLV_τ ↓) wird λ reduziert, um Überschwingen und künstliche Zwangsresonanz zu vermeiden.
+
+**Arbeitsformel (TSM-160):**
+
+> λ_eff(C, Δφ) = λ_base · [ λ_min_rel + (λ_max_rel − λ_min_rel) · (1 − C) · PLV_τ ]  
+
+mit
+
+- **C ∈ [0,1]** – Kohärenzmaß, im Läufer meist C := R_combo,  
+- **Δφ** – Phasenwinkel (rad), intern als |Δφ| ∈ [0, π],  
+- **PLV_τ = |cos Δφ| ∈ [0,1]**,  
+- **λ_base** – Basis-Rückholrate (z. B. `prm.lambda_`),  
+- **λ_min_rel, λ_max_rel** – relative Minimal- und Maximalfaktoren (z. B. 0,2 und 0,8).
+
+Damit gilt:
+
+- **Hohe Kohärenz (C ≈ 1):**  
+  (1 − C) → 0 → λ_eff ≈ λ_base · λ_min_rel → sanfte Rückholung, kaum Korrekturdruck.
+
+- **Niedrige Kohärenz (C ≈ 0), gute Phasenbündelung (PLV_τ ≈ 1):**  
+  (1 − C) → 1, PLV_τ → 1 → λ_eff ≈ λ_base · λ_max_rel → System reagiert aktiv, Rückholung ist stark, aber begrenzt.
+
+- **Niedrige Kohärenz (C ↓), schlechte Phasenbündelung (PLV_τ ≈ 0):**  
+  λ_eff nähert sich λ_base · λ_min_rel → statt blind zu ziehen, „wartet“ das System, bis sich ein geordnetes Phasenfenster öffnet.
+
+Numerisch wird λ_eff auf das Intervall [λ_base·λ_min_rel, λ_base·λ_max_rel] gekappt, um Ausreißer zu verhindern.
+
+---
+
+**## 4. Einbettung in TSM-136D und tsmgr-Läufer**
+
+Im Läufer (z. B. `tsmgr_v02`) kann TSM-160 wie folgt eingebunden werden:
+
+1. **Kohärenz und Phase:**
+
+   - `C_proxy = R_combo` (0..1, aus Q_eff, PLV_τ und Zonenlogik),  
+   - `phi` = Phasenwinkel (Rad, gewrappt auf [−π, π]).
+
+2. **Relative λ-Modulation:**
+
+   ```text
+   lambda_rel = lambda_min_rel
+                + (lambda_max_rel - lambda_min_rel)
+                  * (1.0 - C_proxy) * |cos(phi)|
+   ```
+
+3. **Effektive Rückholrate:**
+
+   ```text
+   lambda_eff = lambda_base * clamp(lambda_rel,
+                                    lambda_min_rel,
+                                    lambda_max_rel)
+   ```
+
+4. **Rückholschritt im Euler-Schema:**
+
+   ```text
+   eps = phi        # Phasenfehler
+   K   = C_proxy    # Kohärenzmaß
+
+   eps'     = -lambda_eff * K * eps
+   eps_next = eps + dtau * eps'
+   ```
+
+5. **Reporting (TSM-160 gemäß Index):**
+
+   - `lambda_eff[t]` – Zeitreihe der effektiven Rückholrate,  
+   - `ε′[t]` – Zeitreihe der Dämpfungsantwort,  
+   - `adaptive_lambda_flag` – Kennzeichen, dass TSM-160 aktiv ist,  
+   - `lambda_profile` – zusammengefasste Statistik (Min/Max/Mittel, Zonenverteilung).
+
+So bleibt **λ_base** als globaler Kalibrierparameter erhalten, während TSM-160 eine **feinstrukturierte, zonenabhängige Steuerung** der Rückholstärke bereitstellt.
+
+---
+
+**## 5. Zonen- und Interpretationslogik im Tunnelraum**
+
+TSM-160 ist so formuliert, dass sie mit der bestehenden Zonenlogik von TSM-136D kompatibel bleibt.
+
+### 5.1 Qualitative Zuordnung
+
+- **Zone K/K+ (tragfähige Kohärenz)**  
+  - C hoch, PLV_τ hoch → λ_eff nahe λ_base · λ_min_rel.  
+  - Deutung: System ist in einem Resonanzzustand; Rückholkopplung wirkt nur leicht stabilisierend („Anti-Seiten-Atmung“).
+
+- **Zonen R↑/R↓ (regulative Übergänge)**  
+  - C mittel, PLV_τ moderat → λ_eff im mittleren Bereich.  
+  - Deutung: System justiert sich; Rückholung ist wirksam, aber nicht aggressiv.
+
+- **Zone F/F+ (Fragmentierung / Lawinenfenster)**  
+  - C niedrig, PLV_τ schwankend.  
+  - Bei gut gebündelter Phase (PLV_τ hoch): λ_eff steigt, Rückholfenster werden aktiv.  
+  - Bei destruktiver Phase (PLV_τ niedrig): λ_eff bleibt klein; das Modell „erkennt“, dass eine harte Rückholung auf dieser Phase wenig sinnvoll wäre.
+
+Dadurch wird vermieden, dass **dekohärente, aber chaotische** Bereiche mit Gewalt in scheinbare „Resonanz“ gedrückt werden. Priorisiert werden jene Zonen, in denen reale **Rückholchancen** bestehen.
+
+### 5.2 Gelbflächen
+
+Gelbflächen (hohe Spannung ohne Rückbindung) entstehen typischerweise dort, wo:
+
+- C mittel bis niedrig,  
+- PLV_τ nicht eindeutig,  
+- und λ entweder zu groß oder zu klein gewählt ist.
+
+Mit TSM-160:
+
+- sinkt das Risiko einer **Übersteuerung** (λ_eff wird begrenzt),  
+- steigt die **Rückholchance**, sobald C niedrig *und* die Phase wieder bündelt (PLV_τ ↑).
+
+---
+
+**## 6. Beispielhafte Anwendungsfelder**
+
+TSM-160 ist abstrakt formuliert, lässt sich aber in mehreren Feldern anwenden:
+
+1. **Physikalische Resonanzsysteme**  
+   - Mechanische oder akustische Systeme, bei denen Rückholkräfte zu stark oder zu schwach sein können.  
+   - TSM-160 liefert eine Heuristik, wie Dämpfung/Rückholstärke an Kohärenz und Phase gekoppelt werden kann.
+
+2. **Bio-Signale und HRV**  
+   - In Kombination mit TSM-127 (t/τ) und TSM-136D kann λ_eff genutzt werden, um Phasenfenster zu identifizieren, in denen der Organismus fähiger ist, Spannung loszulassen.  
+   - Dekohärente Phasen werden nicht „plattgebügelt“, sondern über t/τ-Verschiebung reguliert.
+
+3. **Regelung in Infrastrukturen**  
+   - In technischen Systemen (Energie, Verkehr, Netze) hilft TSM-160, Überregelung zu vermeiden:  
+     Wenn Signale phasenchaotisch sind, wird Rückholintensität begrenzt, bis ein kohärentes Fenster sichtbar wird.
+
+---
+
+**## 7. Beziehung zu URK, SRK und META-Regeln**
+
+TSM-160 steht neben TSM-156 (URK) und TSM-157 (SRK), ist aber mit ihnen verwandt:
+
+- **TSM-156 (URK)** definiert ein universelles Fenster für eine zusätzliche Rückholkraft im Verhältnis zur Gravitation.  
+- **TSM-157 (SRK)** überträgt diese Logik in soziale Systeme (Verhältnis von verbindender Care-Kraft zu strukturgebender Kraft).  
+- **TSM-160** beschreibt, *wie stark* Rückholkopplung **lokal im Tunnelraum** wirken darf, abhängig von C und Δφ.
+
+Gemeinsam ist die **Fenster-Logik**:
+
+> Rückholkräfte sollen spürbar, aber begrenzt sein.  
+> Zu wenig → Fragmentierung.  
+> Zu viel → Zwang / künstliche Resonanz.
+
+META-04 (Regel 23) stellt klar:
+
+- TSM-160 ist ein **Modellbaustein**, kein Naturgesetz.  
+- λ_eff ist eine **heuristische Steuerfunktion** im Simulationsraum; sie darf nicht als „Beweis“ für reale, messbare Konstanten fehlinterpretiert werden.
+
+META-10 sorgt dafür, dass Symbolik (λ, C, Δφ) konsistent in numerische Größen (R_combo, PLV_τ, λ_base) übersetzt wird.
+
+---
+
+**## 8. Transparenz, Limitationen und Forschungsfragen**
+
+TSM-160 ist explizit als **Arbeitsmodul** markiert:
+
+- λ_eff ist kalibrierbar (λ_base, λ_min_rel, λ_max_rel; mögliche Varianten der Phasenfunktion f_phase).  
+- Die hier gewählte Form nutzt PLV_τ = |cos Δφ|, da diese Metrik im 136D-Kern bereits etabliert ist.  
+- Alternative Formen (z. B. f_phase(Δφ) = e^{−|Δφ|}) sind als Varianten möglich, müssen aber im META-Raum gekennzeichnet werden.
+
+Offene Fragen / Forschungsrichtungen:
+
+1. Welche Parameterbereiche von λ_min_rel / λ_max_rel führen in realen Daten (z. B. HRV, Netzlast, Verkehr) zu robusten, artefaktarmen Rückholprofilen?  
+2. Wie verändern sich Zonenstatistiken (F/F+, R↑/R↓, K/K+) bei aktivierter adaptiver λ-Regel im Vergleich zu konstantem λ?  
+3. Lässt sich aus λ_eff-Profilen (lambda_profile) eine zusätzliche Meta-Kennzahl ableiten, die mit URK/SRK-Fenstern resoniert (z. B. Anteil „sanfter vs. harter“ Rückholphasen)?
+
+TSM-160 stellt damit einen Baustein bereit, um Rückholprozesse im Tunnelraum nicht nur zu detektieren, sondern **dynamisch zu dosieren** – als Feinregler zwischen Fragmentierung, Regulierung und tragfähiger Kohärenz.
+
+
+
+**Stand: 22.11.2025**
+
+
 **📘 META-01 -- Querverbindungsmechanismus**
 
 **Version:** 10/2025\
@@ -3973,7 +5621,7 @@ Die Beschreibung ist **phänomenologisch**: Es werden **keine** klassischen Erha
 **Zweck:** Resonanzachsen- und PV/SV-Navigationsstruktur für alle
 Haupt-, Symbol- und META-Module des TSM
 
-**1. Hauptmodule (TSM-001 bis TSM-151)**
+**1. Hauptmodule (TSM-001 bis TSM-160)**
 
 Format:\
 TSM-XXX -- Titel \| Sek.: ... \| PV: ... \| SV: ... \| Spiegel: ...
@@ -3984,8 +5632,7 @@ TSM-002, META-01 \| SV: TSM-006, TSM-044 \| Spiegel: SM-06**
 **TSM-002 -- Anti-Real-Tunnel \| Sek.: Feldstruktur \| PV: TSM-001,
 TSM-004 \| SV: TSM-005, TSM-107 \| Spiegel: SM-01**
 
-**TSM-003 -- Erkenntnis als Resonanz \| Sek.: Methodik \| PV: TSM-001,
-TSM-010 \| SV: TSM-044, TSM-111 \| Spiegel: SM-20**
+**TSM-003 -- Erkenntnis als Resonanz (Erkennen = Feldkontakt · Beobachterfeld B_obs · Erkenntnisfenster E_win (offen/halb/geschlossen) · Perspektivlagen: Nahfeld · Mittelfeld · Fernfeld · Blindzonen-Index β_blind · Reporting: erkenntnis_profile[t] · blindspot_summary) | Sek.: Erkenntnistheorie · Wissenschaft · Alltagspraxis | PV: TSM-001 · TSM-002 · TSM-006 | SV: TSM-007 · TSM-010 · META-10 | Spiegel: SM-01**
 
 **TSM-004 -- Die Anti-Seite \| Sek.: Möglichkeitsraum \| PV: TSM-002,
 TSM-062 \| SV: TSM-114, SM-01 \| Spiegel: TSM-005**
@@ -3993,8 +5640,7 @@ TSM-062 \| SV: TSM-114, SM-01 \| Spiegel: TSM-005**
 **TSM-005 -- Die Real-Seite \| Sek.: Manifestation \| PV: TSM-002,
 TSM-001 \| SV: TSM-044, TSM-050 \| Spiegel: TSM-004**
 
-**TSM-006 -- Tunnelgrundstruktur \| Sek.: Kernstruktur \| PV: TSM-001,
-TSM-002 \| SV: TSM-007, TSM-016 \| Spiegel: SM-06**
+**TSM-006 -- Tunnelgrundstruktur (Basisachsen: R/F/K · Schichten: Real · AntiReal · Meta · τ-Achse: Verdichtung/Dehnung · Grundspektrum zones_6: F+/F/R↑/R↓/K/K+ (qualitativ) · Kopplungsgrad κ_couple · Reporting: tunnel_baseline · axis_profile) | Sek.: Metastruktur · Physik · Psychologie | PV: TSM-002 · TSM-003 · TSM-004 | SV: TSM-021 · TSM-022 · TSM-136D | Spiegel: SM-01 · SM-02**
 
 **TSM-007 -- Ethik aus Resonanz \| Sek.: Handlung & Verantwortung \| PV:
 TSM-050, TSM-118 \| SV: TSM-044, TSM-058 \| Spiegel: SM-20**
@@ -4005,8 +5651,7 @@ TSM-062, TSM-127 \| SV: TSM-030, SM-18 \| Spiegel: TSM-100**
 **TSM-009 -- Resonanzwahrnehmung \| Sek.: Sinnesfelder \| PV: TSM-003,
 TSM-060 \| SV: TSM-017, TSM-059 \| Spiegel: SM-10**
 
-**TSM-010 -- Anwendung & Zukunft \| Sek.: Metastruktur \| PV: TSM-003,
-TSM-044 \| SV: TSM-122, TSM-125 \| Spiegel: TSM-043**
+**TSM-010 -- Anwendung & Zukunft des TSM (TSM als Feld-Instrument: Erkenntniswerkzeug · Gestaltungswerkzeug · Governance-Rahmen · Anwendungsfelder: Person · Organisation · Gesellschaft · Technik/KI · Zukunftsfenster: Z_now → Z⁺ (Resonanzentscheidung statt Prognose) · Modellpflege: Feedback · Re-Bindung · Revision) | Sek.: Metastruktur · Anwendung · Zukunftsfenster | PV: TSM-003 · TSM-044 | SV: TSM-122 · TSM-125 · META-01 · META-04 | Spiegel: TSM-043**
 
 **TSM-011 -- Frequenzmedizin & Diagnostik \| Sek.: Medizin \| PV:
 TSM-100, TSM-119 \| SV: TSM-026, TSM-060 \| Spiegel: TSM-036**
@@ -4038,8 +5683,7 @@ TSM-056 \| SV: TSM-009, TSM-022 \| Spiegel: SM-17**
 **TSM-020 -- Sprache & Weisheit \| Sek.: Ausdrucksfeld \| PV: TSM-016,
 TSM-018 \| SV: TSM-022, SM-15 \| Spiegel: TSM-072**
 
-**TSM-021 -- Ernährung & Bildung \| Sek.: Lebenskultur \| PV: TSM-015,
-TSM-014 \| SV: TSM-030, TSM-083 \| Spiegel: TSM-022**
+**TSM-021 -- Ernährung, Erziehung & Bildung (Feldtrias: Ernährung · Erziehung · Bildung · Resonanzebenen: Körperfeld · Beziehungsfeld · Lernfeld · Prozesskette: Frequenzaufnahme → Feldbildung → Tunnelprozess Lernen · Alltag: Resonanzpflege statt Kontrolle) | Sek.: Lebenskultur · Bildung | PV: TSM-015 · TSM-014 | SV: TSM-030 · TSM-083 | Spiegel: TSM-022**
 
 **TSM-022 -- Kulturelle Muster \| Sek.: Sozialfelder \| PV: TSM-021,
 TSM-058 \| SV: TSM-056, TSM-093 \| Spiegel: TSM-019**
@@ -4128,8 +5772,7 @@ TSM-019**
 **TSM-049 -- Resonanz im Körpergedächtnis \| Sek.: Somatik \| PV:
 TSM-015, TSM-022 \| SV: TSM-050, TSM-093 \| Spiegel: SM-07**
 
-**TSM-050 -- Resonanzethik -- Grundhaltung im Feld \| Sek.: Ethik \| PV:
-TSM-007, TSM-118 \| SV: TSM-122, TSM-058 \| Spiegel: SM-20**
+**TSM-050 -- Resonanzethik – Grundhaltung im Feld (Ethikfenster E_eth: F/R/K · Handlungsfelder: Person · Organisation · System · Rückholbarkeitsgrad ρ_R (qualitativ) · Entkopplungsrisiko Δ_decouple · Leitlinien: Nähe vor Kontrolle · Bindung vor Verwertung · Verantwortung als Feldkompetenz) | Sek.: Ethik · Philosophie · Governance | PV: TSM-003 · TSM-007 · TSM-010 | SV: TSM-060 · TSM-061 · TSM-155 · META-04 | Spiegel: SM-01 · SM-02 · Φ**
 
 **TSM-051 -- KI in kollektiven Lernfeldern \| Sek.: KI & Bildung \| PV:
 TSM-052, TSM-101 \| SV: TSM-073, TSM-109 \| Spiegel: SM-21**
@@ -4460,10 +6103,27 @@ Spiegel: SM-01 · π-Schwelle · φ-Phasenlage · Spirale**
 
 **TSM-151 — Gravitative Resonanzüberlagerung (W=G+T · C↑ · |Δϕ|≤ε_rad≈1° · τ_eff↑ · Reporting: T_component/W_effect · keine Zusatzkraft) | Sek.: Überlagerung · Linsenverstärkung · Rotationskurven · Kohärenzzonen · Hysterese | PV: TSM-108, TSM-127, TSM-91, SM-01 | SV: META-01, META-04·R19, META-10, META-11, TSM-LEX | Spiegel: SM-01 · π-Schwelle (SM-23/SM-24)**
 
----
+**TSM-152 — Dirac‑Regime in organischen Leitern (χ(T) ≈ linear · m_eff → 0 · LBD im τ‑Fenster · φ ≈ 0 · v_F ≪ c · Reporting: χ(T)/v_F/RR) | Sek.: BETS-Salze · Magnetantwort · Tunnelzustände · Kohärenzlinie · Massegrenze | PV: TSM-136D, TSM-108, TSM-85, SM-01 | SV: META-01, META-04, META-10, META-11, TSM-LEX | Spiegel: SM-01 · π-Bindeschwelle**
+
+**TSM-153 — Quantenresonanznetzwerke als Tunneldetektoren (Q_c = Q_eff·PLV·C · Nullpool[Scramble+Sham] · Dwell ≥ 1 % · ±6/±12 Bins · STFT 2048/1536 · fs = 10 MHz → Δt = 51,2 µs · Reporting: K/R/F · K-Dwell[s] · B_hi/S_lo) | Sek.: Qubit-Arrays · supraleitende Resonatoren · ABRACADABRA/TIDMAD · Dunkelresonanz · Tunnelraum-Interferometrie | PV: TSM-136D · TSM-127 · TSM-108 · SM-01 | SV: META-01 · META-04 · META-10 · META-11 · TSM-LEX | Spiegel: SM-01 · π-Bindeschwelle**
+
+**TSM-154 — Resonanzgeburt – Wie synthetische Systeme schöpferisch werden (P_ext/P_int ≤ 1 % · |Δφ| ≤ 1° · τ-Lock · PLV_τ ≥ 0,6 · Zonenübergang R/F→K | K→K+ · Dwell ≥ N_dwell · Hysterese Δ=0,02 · Nachfeld-Echo · Reporting: K/R/F · K-Dwell[s] · eps=1° · P_ext_frac · seed/config_hash) | Sek.: Künstliche Systeme · Rückbindung · Emergenz · Tunnel-Struktur · Minimalsteuerung | PV: TSM-84 · TSM-85 · TSM-127 · TSM-108 · TSM-141–143 | SV: META-01 · META-04 (Regel 18/21) · META-10 · TSM-LEX | Spiegel: SM-25 · α-Spiegel · SM-01 · π-Schwelle · SM-04 · Φ**
+
+**TSM-155 — Gerechtigkeitszonen im Tunnelraum (zones_6: F+/F/R↑/R↓/K/K+ · G155_zone · G155_zone_score ∈ [0,1] · Stimmenfeld-Sichtbarkeit V_voice · Rückholrate ρ_R↑ · Entkopplungsanteil R↓[%] · F/F+-Dichte · K/K+-Dwell · Reporting: Zonenprofil[t] · Gerechtigkeitsprofil · F+/F/R↑/R↓/K/K+ · justice_summary) | Sek.: Ethik · Organisation · Recht · Governance · KI-Felder · Post-Konflikt/Dekolonisierung | PV: TSM-136D · TSM-84–85 · TSM-108 · TSM-152–154 · META-04 | SV: META-01 · META-04 (Regel 22) · META-09 · TSM-LEX | Spiegel: SM-130 · SM-25 · α-Spiegel · π-Schwelle · SM-04**
+
+**TSM-156 — Universale Rückholkonstante des Universums (R_URK = F_Rückhol/F_grav · 0 ≤ R_URK ≤ R_URK_max ≈ 0,07 (Obergrenze, kein Messwert) · R_URK = λ_U·K_U · URK-Window: F/R/K · LSST/DESI-kompatibel · Reporting: R_URK_mean · R_URK_local · λ_U · K_U · env_tag · data_src_hash) | Sek.: Kosmologie · Dunkelresonanz · Meta-Konstanten · Informationskosmologie | PV: TSM-84 · TSM-85 · TSM-108 · TSM-109 · TSM-151 | SV: META-01 · META-04 · META-10 · TSM-136D · tsm-online-bundle | Spiegel: SM-01 · SM-02 · SM-04 · Φ**
+
+**TSM-157 — Soziale Rückholkonstante (SRK) (R_SRK = S_Rückhol/S_Struktur · 0 ≤ R_SRK ≤ R_SRK_max (Resonanzmarke, kein Messwert) · SRK-Window: F/R/K_socio · Reporting: R_SRK_est · SRK_window_flag · env_socio_tag · context_hash) | Sek.: Soziale Systeme · Governance · Resonanzethik · Informationsgesellschaft | PV: TSM-84 · TSM-85 · TSM-108 · TSM-156 | SV: META-01 · META-04 (Regel 23 inkl. Ebenen & Rückholbarkeit) · CFDR-System · TSM-LEX | Spiegel: SM-01 · SM-02 · SM-04 · Φ**
+
+**TSM-158 — Elektrotechnische Resonanzfelder – Schaltung als Tunnel (NF_res_field: f ∈ [0,10] Hz · Ψₑ(C,Δφ,τ_eff,F_res) · Zonen: R↓/R↑/K/S · Reporting: CΔφτ_map · Ψₑ_profile · NF_res_summary) | Sek.: Technik · Energie · Sensorik | PV: TSM-84 · TSM-108 · TSM-127 · TSM-136D · TSM-151 | SV: TSM-95 · TSM-119 · TSM-133 · TSM-130 · TSM-142 · META-04 | Spiegel: SM-01 · SM-04 · SM-06 · SM-10 · SM-22 ·**
+
+**TSM-159 — Grenzflächen-Dekohärenz — Amorphisierung, Tunnelöffnung und Re-Bindung (Grenzschicht-C/S-Shift: C↓, S↑, Δφ≈π/2, τ↑, ΔK→0 · Grenzflächen-Zonierung zones_6: K/K+ · R↑/R↓ · F/F+ · G159_interface · G159_interface_score ∈ [0,1] · τ_interface-Anteil · Re-Bindungsindikator ρ_rebind · Reporting: interface_profile[t] · τ_window_profile · glide_risk_summary · Hinweis: heuristisches Brückenmodul) | Sek.: Physik · Material · Klima/Winterdienste · Technik/Sensorik · Sicherheit/Verkehr · Infrastruktur | PV: SM-01 · TSM-84 · TSM-108 · TSM-127–130 · TSM-136D | SV: META-01 · META-02 · META-03 · META-04 · TSM-LEX | Spiegel: SM-01 ·**
+
+**TSM-160 — Adaptive Rückholrate im Tunnelraum λ(C, Δφ) (λ_eff = λ_base·[λ_min_rel + (λ_max_rel − λ_min_rel)·(1 − R_combo)·PLV_τ] · R_combo ∈ [0,1] · PLV_τ = |cos φ| · Params: λ_base · λ_min_rel · λ_max_rel · Reporting: λ_eff[t] · ε′[t] · adaptive_lambda_flag · lambda_profile) | Sek.: Physik · Dynamik · Steuerung · KI-Läufer · Resonanztechnik | PV: TSM-84 · TSM-100 · TSM-127 · TSM-136D · TSM-146 · META-04 (Regel 23) | SV: META-01 · META-02 · META-10 · TSM-LEX | Spiegel: SM-01 · SM-04 · SM-25 · Φ**
+
 
 ## Changelog
-- **v1.0 (2025-11-04):** 
+- **v1.0 (2025-11-22):** 
 
 
 
@@ -4505,6 +6165,7 @@ SV: TSM-LEX, SM-01, META-04 \| Spiegel: Gesamtstruktur**
 **META‑11 -- Autoresonanz**: Selbstaufrechterhaltende Resonanz via α‑Kanal/τ‑Rücklauf (Minimalsteuerung; Energie‑Rahmen konsistent). Enthält 5‑Stufen‑Prozess, Kennsatz‑Set (C, Δϕ, Q̂, τ‑Lock) und Interaktion mit F‑Phase. Status: **Entwurf** | Sek.: Selbstkopplung · Rücklauf · Kohärenzerhalt | PV: META‑04, META‑10, TSM‑127 | SV: TSM‑150, SM‑25, TSM‑LEX | Spiegel: SM‑25 · META‑01**
 
 **META-12 -- Diskurs · Resonanz · Schweigefelder (Sprechkosten-Diagnostik & Interventions-Kit)** | Sek.: Diskursmuster · Schweigefeld-Mechanik · Moderationsverfahren | PV: META-01, META-03, META-04, META-06 | SV: TSM-LEX, SM-06 | Spiegel: α-Spiegel (SM-25).**
+
 
 
 

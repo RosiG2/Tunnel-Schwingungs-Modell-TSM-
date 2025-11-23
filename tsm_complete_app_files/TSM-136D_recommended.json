@@ -42,7 +42,8 @@
       "date": "2025-11-07T00:00:00Z"
     },
     "2025-11-09T01:32:54Z: Added docs.cosonanz_gate_vs_report, detectors.cosonanz_tolerant, and exports.append_columns += 'C_hat'.",
-    "2025-11-09T01:44:37Z: Added compat_aliases.zone_aliases and docs.principles.P6; ensured exports.append_columns includes 'C_hat'."
+    "2025-11-09T01:44:37Z: Added compat_aliases.zone_aliases and docs.principles.P6; ensured exports.append_columns includes 'C_hat'.",
+    "2025-11-19T00:00:00Z: Added constants.R_URK_max and extensions.urk (TSM-156 URK window; optional, non-breaking)."
   ],
   "_meta": {
     "_changelog_hint": "Polish: meta normalization, zones canonicalization, small compat additions.",
@@ -52,7 +53,7 @@
       "v3 (repaired)",
       "v3.2 (S_142)"
     ],
-    "version": "v4.0.1a"
+    "version": "v4.0.2-URK"
   },
   "auto_detect": {
     "enabled": true,
@@ -286,7 +287,37 @@
       "T_component",
       "W_effect",
       "C_hat"
-    ]
+    ],
+    "best_of_chiT": {
+      "filter": {
+        "chi_T_best_selected": true,
+        "chi_T_best_quality_min": "medium"
+      },
+      "columns": [
+        "compound",
+        "process",
+        "chi_T_best_panel_tag",
+        "chi_T_best_window",
+        "chi_T_best_r",
+        "chi_T_best_quality",
+        "chi_T_qscore",
+        "chi_T_best_slope_phys_perK",
+        "chi_T_best_source_ref",
+        "chi_T_best_notes"
+      ],
+      "sort_by": [
+        "chi_T_qscore:desc",
+        "chi_T_best_r:desc"
+      ],
+      "output": {
+        "formats": [
+          "csv",
+          "md"
+        ],
+        "filename_pattern": "TSM-152_best-of_chiT_${DATE}.csv"
+      },
+      "notes": "Ein-Knopf-Exporter für Best-of χ(T): je Kurve genau ein Eintrag (Best-Window)."
+    }
   },
   "extensions": {
     "anti_atlas": {
@@ -400,6 +431,38 @@
         "phi_lock_ok",
         "cosonanz_window_id"
       ]
+    },
+    "urk": {
+      "module": "TSM-156",
+      "notes": "Optionaler URK-Schätzer: R_URK_hat als Verhältnis resonanzbedingter Abweichung zur klassischen Gravitation.",
+      "inputs": [
+        "G_est",
+        "G_obs",
+        "zone_label",
+        "env_tag"
+      ],
+      "outputs": [
+        "R_URK_hat",
+        "URK_gate_ok"
+      ],
+      "gate": {
+        "require_G_est": true,
+        "R_URK_max_ref": "constants.R_URK_max"
+      }
+    },
+    "lambda_adaptive": {
+      "module": "TSM-160",
+      "notes": "Adaptive Rueckholrate λ(C, Δφ) im Tunnelraum; moduliert lambda_ basierend auf Kohärenz R_combo und Phasenbündelung PLV_tau.",
+      "mode": "adaptive",
+      "params_ref": [
+        "lambda_min_rel",
+        "lambda_max_rel"
+      ],
+      "governance": [
+        "META-01",
+        "META-04",
+        "META-10"
+      ]
     }
   },
   "governance": {
@@ -423,8 +486,8 @@
     "exit": 0.02
   },
   "meta": {
-    "updated": "2025-10-21T21:39:37Z",
-    "version": "2025-10-18.v2"
+    "updated": "2025-11-21T00:00:00Z",
+    "version": "2025-11-19.URK-lambda"
   },
   "metrics": {
     "report": {
@@ -741,7 +804,9 @@
     "cap_quantile": 0.99,
     "eps_deg": 1.0,
     "epsilon_rad": 0.017453292519943295,
-    "eps_phi_rad": 0.017453292519943295
+    "eps_phi_rad": 0.017453292519943295,
+    "lambda_min_rel": 0.2,
+    "lambda_max_rel": 0.8
   },
   "source": "TSM-BASIS v2025-09-02 (Option B + C)",
   "zones": {
@@ -860,10 +925,55 @@
         "epsilon_rad": 0.01745
       },
       "enabled": true
+    },
+    "dirac_regime_lbd": {
+      "enabled": false,
+      "scoring": {
+        "weights": {
+          "chi_T_qscore": 0.0,
+          "PLV_tau": 0.5,
+          "Q_c": 0.5
+        }
+      }
+    },
+    "resonanzgeburt": {
+      "description": "Zonenübergang unter Autoresonanz (META-04 Reg.21)",
+      "requires": [
+        "C",
+        "dphi_rad",
+        "Qhat",
+        "tau_lock",
+        "zone",
+        "P_ext_frac",
+        "dwell"
+      ],
+      "criteria": {
+        "tau_lock": true,
+        "dphi_max_rad": 0.01745,
+        "P_ext_frac_max": 0.01,
+        "zone_transition": [
+          "R→K",
+          "F→K",
+          "K→K+"
+        ],
+        "min_dwell": 11
+      },
+      "report": [
+        "t_start",
+        "t_end",
+        "zone_from",
+        "zone_to",
+        "dwell",
+        "seed",
+        "config_hash"
+      ]
     }
   },
   "constants": {
-    "eps_phi_rad": 0.01745
+    "eps_phi_rad": 0.01745,
+    "R_URK_max": 0.07,
+    "lambda_min_rel": 0.2,
+    "lambda_max_rel": 0.8
   },
   "docs": {
     "cosonanz_gate_vs_report": {
@@ -898,6 +1008,71 @@
           ]
         }
       }
+    }
+  },
+  "presets": {
+    "report_only": {
+      "enabled": false,
+      "detector_overrides": {
+        "dirac_regime_lbd": {
+          "enabled": false
+        }
+      },
+      "notes": "Reporter-Profil: keine Gates/Flags; qscore stummgeschaltet."
+    }
+  },
+  "meta_link": {
+    "id": "TSM-136D_runner_v4.0.2-URK-lambda",
+    "label": "TSM Läufer 136D – Adaptive Rückholrate λ(C, Δφ)",
+    "description": "Integrierter Läufer nach tsmgr_v02.py mit Parameterprofil TSM-136D_recommended.json. Implementiert dynamische Rückholrate λ(C, Δφ) gem. TSM-160.",
+    "type": "Läufer",
+    "engine": {
+      "file": "/mnt/data/tsmgr_v02.py",
+      "version": "v0.2",
+      "license": "MIT",
+      "governance": [
+        "META-04",
+        "META-10"
+      ]
+    },
+    "profile": {
+      "file": "/mnt/data/TSM-136D_recommended.json",
+      "version": "2025-11-19.URK-lambda",
+      "extends": [
+        "TSM-136D_baseline",
+        "TSM-142",
+        "TSM-156"
+      ],
+      "parameters": {
+        "lambda_mode": "adaptive",
+        "eps_deg": 1.0,
+        "hysteresis": true,
+        "R_URK_max": "auto"
+      }
+    },
+    "links": {
+      "modules": [
+        "TSM-84",
+        "TSM-100",
+        "TSM-127",
+        "TSM-160"
+      ],
+      "symbolic": [
+        "SM-01",
+        "SM-04",
+        "SM-25"
+      ],
+      "meta": [
+        "META-01",
+        "META-04",
+        "META-10"
+      ]
+    },
+    "status": "active",
+    "integrity": {
+      "verified": true,
+      "changelog_ref": "2025-11-21T00:00:00Z",
+      "notes": "Kanonisch eingehängt; kompatibel mit 136D-Zonensystem und TSM-160."
     }
   }
 }
