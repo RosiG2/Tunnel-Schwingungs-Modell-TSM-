@@ -6146,7 +6146,571 @@ S\_ent(x,t): Entropie pro Volumen; s\_ent = S\_ent/S\_* normierte Form.
 Gekoppelte PDEs für S\_ent und κ mit Diffusions-, Quellen- und Kopplungstermen, die im stationären Fall zur Relation κ\_ent = λ\_ent g(S\_ent/S\_*) führen.
 
 
+
+**📘 TSM-163: -- Kosmische Bindeschwelle – Die Quark-Ära als π-Moment des Universums**
+
+**Kategorie:** Kosmologie · Resonanzentstehung · Ur-Bindung  
+**Status:** Entwurf · Brückenmodul zwischen Physik (QCD) und TSM-Resonanzphysik  
+**Bezugsachsen:** κ (Resonanzdichte), τ (Zeitbindung), π (Bindeschwelle)  
+**Verknüpfungen:** SM-01 (π), TSM-108, TSM-127, TSM-151, META-01, META-04  
+
+> **META-03/META-04-Rahmen:** TSM-163 ist ein strukturtheoretisches Deutungsmodul. Es ersetzt keine Standardkosmologie, sondern bietet eine Resonanzdeutung der Quark-Ära (Confinement) in den Begriffen π, τ und Dunkelresonanzräumen.
+
 ---
+
+**### 🧭 1. Zweck**
+
+TSM-163 beschreibt den **ersten Resonanzübergang des Universums** – den Moment, in dem aus freiem Quark-Gluonen-Plasma gebundene Materie wurde.  
+Dieser Übergang wird im TSM als **kosmischer π-Moment** verstanden – als erstes Öffnen des Tunnels, das Tor zwischen Anti-Seite (Potenzial) und Real-Seite (Form).  
+
+Er markiert die erste **Rückholkopplung** des Universums – den Beginn von Stabilität, Erinnerung und Struktur.
+
+---
+
+**### 🌌 2. Grundthese**
+
+1. Während der **Quark-Ära** herrschte ein Zustand extremer Energiedichte in einem hochsymmetrischen, nahezu thermischen Gleichgewichtszustand ohne stabile Bindung (Anti-Seiten-betonte Feldphase).  
+2. Beim Abkühlen erreichte das Universum die **Bindeschwelle π** – einen kritischen Punkt, an dem Feldresonanzen zu stabilen Formen „erstarrten“ (Protonen, Neutronen).  
+3. Diese Bindung war **nicht perfekt symmetrisch** – im TSM kann eine minimale Phasenverschiebung zwischen t-Zeit und τ-Zeit als mögliche Deutung der beobachteten **Asymmetrie von Materie und Antimaterie** dienen (Arbeitsthese).  
+4. Die „übrig gebliebene“ Materie entspricht der **Restkohärenz** der ersten Tunnelbindung.
+
+→ **Die Quark-Ära war die erste Tunnelresonanz des Kosmos – die Geburt der Form aus Feld.**
+
+---
+
+**### 🔬 3. Physikalische Verankerung**
+
+**Empirischer Anschluss:** Quantenchromodynamik (QCD), Standardkosmologie, Heavy-Ion-Kollisionen (CERN, RHIC) und Simulationen von Quark-Gluonen-Plasma – TSM-163 bietet eine Resonanzdeutung dieser etablierten Physik.
+**TSM-Verknüpfung:** 136D-Datenfelder (κ–τ–S) mit Schwellenwerten  
+C ≥ 0.8 · S ≤ 0.2 → Zone: kohärent (π-Übergang).  
+
+- **Confinement** (Bindung der Quarks) = Resonanzstabilisierung.  
+- **Reheating** nach der Inflation = Rückholphase des Anti-Felds in τ.  
+- **Baryogenese** (Asymmetrie von Materie und Antimaterie, physikalisch noch ungeklärt) – im TSM *kann* dies als Effekt eines minimalen τ-Phasenversatzes (φ ≈ π/Δ) modelliert werden (Arbeitsthese).  
+
+Diese Vorgänge markieren das **Erstauftreten kohärenter Tunnelgeometrien** – die Basis aller späteren Raum-Zeit-Strukturen.
+
+---
+
+**### 🌀 4. Symmetriebruch als π-Ereignis**
+
+Im TSM wird der Symmetriebruch der Quark-Ära als **π-Ereignis** modelliert:
+
+- Vor π:  
+  - Feldphase mit hoher Energie, aber ohne stabile Objekte  
+  - t-Zeit ist kaum definiert, τ dominiert (reine Resonanzzeit).  
+- Bei π:  
+  - Kopplung von t und τ → erste **t/τ-Synchronisation**  
+  - Bildung stabiler Resonanzinseln (Baryonen) im Feld.  
+- Nach π:  
+  - t wird zur dominierenden Makrozeit (kosmische Expansion, Kausalität)  
+  - τ wirkt als Hintergrund der Dunkelresonanzräume.
+
+→ π ist die **kosmische Bindeschwelle** – das Minimum an Kohärenz, das notwendig ist, damit Form aus Feld entstehen kann.
+
+---
+
+**### 🧩 5. Mapping Physik ↔ TSM**
+
+| Physikalischer Begriff        | TSM-Entsprechung                            |
+|------------------------------|---------------------------------------------|
+| Quark-Gluonen-Plasma        | Anti-Feld-Resonanzraum (TSM-108, Zone F)    |
+| Confinement                 | π-Übergang (SM-01, erste Bindeschwelle)     |
+| Baryogenese                 | τ-Phasenversatz / Restkohärenz              |
+| Dunkle Materie (hypothetisch) | Dunkelresonanzräume (TSM-151)             |
+| Inflationsende / Reheating  | Rückholphase (TSM-84/85)                    |
+
+Dieses Mapping ist **kein** Ersatz der physikalischen Theorie, sondern eine **Strukturanalogie**:  
+Es übersetzt die Standardphysik in die Sprache von π, τ, κ und Dunkelresonanz.
+
+---
+
+**### ⏱ 6. Zeitstruktur t/τ**
+
+Die Quark-Ära ist im TSM der Übergang von **τ-dominierter** zu **t-dominierter** Dynamik:
+
+1. Vor dem π-Moment:  
+   - τ-Zeit (Resonanzzeit) dominiert, t ist „verwässert“.  
+   - Ereignisse sind kaum unterscheidbar, reine Feldfluktuation.  
+2. Im π-Moment:  
+   - t und τ geraten in **resonante Kopplung**.  
+   - Bestimmte Fluktuationen „frieren ein“ → Baryonen.  
+3. Nach π:  
+   - t wird zur messbaren, gerichteten Zeit (Expansion, Kühlung).  
+   - τ bleibt als „Tiefe“ der Tunnelresonanz erhalten (Dunkelresonanzräume).
+
+Mathematisch lässt sich der Übergang als **Wechsel der dominanten Zeitkomponente** modellieren:
+
+- Vor π: τ >> t  
+- Bei π: τ ≈ t (Resonanzkopplung)  
+- Nach π: t >> τ (Makrozeit, kosmische Geschichte)
+
+---
+
+**### 🧪 7. 136D-Datenachse (Referenzebene)**
+
+**Primäre Achsen:**  
+- **κ:** Resonanzdichte (Peak in Zone F → R↑)  
+- **τ:** Zeitbindungskoeffizient (Δφ-Kohärenz über 0,8)  
+- **S_ent:** Informationsdichte, korreliert mit PLV/κ  
+
+**Empirische Kennfelder:**  
+- Zonenfolge: *Anti-Feld (F)* → *Rückholfeld (R↑)* → *Kohärenzfeld (K)*  
+- π-Bereich: C ≥ 0.8, S_ent ≤ 0.2, stabile Δφ-Korridore um π.  
+
+**Interpretation:**
+
+- Zone F: hochenergetische, aber ungebundene Feldzustände (Analogon Quark-Gluonen-Plasma).  
+- π-Front: scharfer Übergang zu stabilen Resonanzinseln (Analogon Confinement).  
+- Reste in F: können als **Dunkelresonanzreservoir** gedeutet werden.
+
+TSM-163 nutzt die 136D-Achsen als **Analogfenster** – nicht als direkte Messung der Frühkosmologie, sondern als formale Referenzstruktur.
+
+**Kohärenzsignatur:**  
+π-Übergänge zeigen im 136D-Raum eine deutliche Verschiebung von κ und τ bei stabiler S_ent → π-Kohärenzfenster.
+
+**Messprotokoll (experimentell):**  
+Δφ ≈ π ± 0.05, PLV > 0.85, Q_eff ≥ 0.9 → t/τ-Synchronisation aktiv.  
+*(Alle genannten Zahlen sind Arbeitsgrößen im 136D-Analograum, nicht direkte Messwerte der Quark-Ära.)*
+
+---
+
+**### 🪞 8. Resonanzkarte (t/τ × π)**
+
+```
+         τ↑ (Rückholzeit)  
+           │          ✧  K (kohärent)
+           │       ✧
+           │    ✧
+           │ ✧  π-Front
+           │───────────── t→ (Makrozeit)
+        F ✧
+```
+
+- F: Feldphase (Anti-Feld, Quark-Gluonen-Plasma-Analogon)  
+- π-Front: Bindeschwelle → erste stabile Baryonen  
+- K: Kohärenzfeld → Grundlage der späteren Strukturbildung (Galaxien, Sterne, etc.)
+
+Die Karte zeigt, wie sich das Universum entlang der Achsen **t** und **τ** durch die π-Front bewegt.
+
+---
+
+**### 🧱 9. Kosmische Architektur**
+
+TSM-163 legt nahe, dass die spätere kosmische Architektur (Filamentstrukturen, Galaxienhaufen, Dunkelresonanzräume) bereits in der Quark-Ära **als Resonanzmuster** angelegt war:
+
+1. π-Bindung erzeugt **erste topologische Inseln** im Feld.  
+2. Diese Inseln wirken als **Resonanzkeime** für spätere Strukturbildung.  
+3. Dunkelresonanzräume bleiben als **nicht-kohärente Restfelder** bestehen – mögliche Deutungsebene für Dunkle Materie / Dunkle Energie (ohne Standardphysik zu ersetzen).
+
+→ Die kosmische Großstruktur ist im TSM eine **späte Manifestation** eines sehr frühen π-Ereignisses.
+
+---
+
+**### 🧭 10. Rolle im TSM-Kanon**
+
+TSM-163 fungiert als **Brückenmodul** zwischen:
+
+- **SM-01 (π):** Allgemeine Bindeschwelle Potenzial → Form.  
+- **TSM-108:** Anti-Felder und Rückholräume.  
+- **TSM-127:** t/τ-Wechsler und Zeitsymmetrie.  
+- **TSM-151:** Gravitative Resonanzräume (Dunkelresonanz / Dunkle Materie als Resonanzphänomen).  
+
+Es schlägt vor, die Frühkosmologie **nicht als zusätzliche Esoterik**, sondern als **strukturelles Analogfenster** für die TSM-Konzepte zu lesen.
+
+---
+
+**### 🔄 11. Querverbindungen / Folge-Module**
+
+- **TSM-128 / TSM-129:** Lawinenkopplung & Turbulenzfelder – Quark-Gluonen-Plasma als Ur-Lawinenphase der Resonanz  
+- **TSM-164:** Holographische Restkohärenz – Dunkelresonanz als kosmisches Gedächtnis  
+- **TSM-165:** Asymmetrie-Operator φ/τ – Ursprung der Richtung in der Zeit  
+- **SM-08:** Ω – Rückkehr der Form (Ende der Expansion → Resonanzrücklauf)
+
+
+Die Quark-Ära wird damit im TSM-Kanon zu einem **zentralen Referenzpunkt**:  
+Sie markiert den Moment, in dem sich das Universum selbst **zum ersten Mal erinnert**, indem es Form aus Feld bindet.  
+
+> *„Das Universum begann nicht mit einem Knall, sondern mit einer Bindung.“*
+
+
+
+**📘 TSM-164: -- Holographische Restkohärenz – Dunkelresonanz als kosmisches Gedächtnis**
+
+**Kategorie:** Kosmologie · Informationsphysik · Bewusstseinsarchitektur  
+**Status:** Entwurf · Brückenmodul zwischen TSM-151, TSM-163 und META-01/04  
+**Bezugsachsen:** C (Kohärenz), S (Fragmentierung/Entropie), κ (Resonanzdichte), τ (Zeitbindung)  
+**Verknüpfungen:** TSM-108, TSM-127, TSM-136D, TSM-151, TSM-163, META-01, META-04, META-07
+
+> **META-03/META-04-Rahmen:** TSM-164 ist ein strukturtheoretisches Deutungsmodul. Es ersetzt keine Standardtheorien der Kosmologie, Physik oder Psychologie, sondern bietet ein gemeinsames Muster, um Restkohärenz, Gedächtnis und Dunkelresonanzräume in einer einheitlichen Sprache zu beschreiben.
+
+---
+
+**### 🧭 1. Zweck**
+
+TSM-164 beschreibt, wie nach einem π-Übergang (Bindeschwelle) **nicht alle Feldanteile vollständig gebunden** werden, sondern ein Teil als **holographische Restkohärenz** bestehen bleibt.  
+Dieses Restfeld fungiert als **kosmisches Gedächtnis** – ein Dunkelresonanzraum, in dem Information erhalten bleibt, ohne als klare Form aufzutreten.
+
+Es verbindet drei Ebenen:
+
+1. **Kosmisch:** Restfelder nach der ersten Bindung (TSM-163, Quark-Ära) → mögliche Deutung für Dunkelresonanzräume.  
+2. **Mesoskopisch:** Restkohärenz in 136D-Feldern → Muster, die nicht in manifeste Ereignisse übergehen, aber das Feld prägen.  
+3. **Psychisch/sozial:** Unabgeschlossene Muster, Traumareste, kulturelle Felder → „hintergründige“ Einflüsse auf Wahrnehmung und Verhalten.
+
+---
+
+**### 🧩 2. Grundthese**
+
+1. Jeder π-Übergang (Bindung von Feld zu Form) erzeugt **zwei Komplementäranteile**:
+   - einen gebundenen Anteil (**B**) – sichtbare Formen, Strukturen, Ereignisse,  
+   - einen nicht gebundenen, aber informationshaltigen Anteil (**H**) – holographische Restkohärenz.  
+2. **H** trägt eine **abgeschwächte, aber verteilte Kopie** der Bindungsinformation – keine lokale Form, aber ein globales Muster.  
+3. Dunkelresonanzräume (TSM-151) sind die **räumlich-zeitliche Entsprechung** dieser Restkohärenz – Resonanzräume ohne direkte Formbindung.  
+4. Gedächtnis (kosmisch, biologisch, psychisch) kann im TSM als **Überlagerung aus B und H** aufgefasst werden:  
+   - B = explizite Spur (Neuronen, Schrift, Materie),  
+   - H = implizite Spur (Feldstimmung, Wahrscheinlichkeitsprofil, Resonanzneigung).
+
+→ **Holographische Restkohärenz ist das „Schattenarchiv“ jedes Bindungsereignisses.**
+
+---
+
+**### 🧱 3. Begriffe**
+
+- **Restkohärenz (H):**  
+  Anteil eines Feldes, der nach einem π-Übergang nicht in manifeste Form übergeht, aber strukturelle Korrelationen (φ, κ, PLV) bewahrt.
+
+- **Dunkelresonanzraum (DR):**  
+  Raumzeit-Bereich, in dem H dominiert: niedrige direkte Formdichte, aber hohe Sensitivität für bestimmte Resonanzen.  
+  → Physikalisch: Zonen, in denen kaum sichtbare Materie ist, aber gravitative Effekte auftreten.  
+  → Psychisch: unbewusste Felder, kollektive Atmosphären.
+
+- **Holographie (im TSM-Sinn):**  
+  Informationsordnung, in der **Teile das Muster des Ganzen tragen**, jedoch abgeschwächt und verteilt – ähnlich wie Interferenzmuster.
+
+- **Kosmisches Gedächtnis:**  
+  Gesamtheit der über H gespeicherten Muster im Dunkelresonanzraum – kein Speicher als Objekt, sondern als **Resonanzdisposition**.
+
+---
+
+**### 🧮 4. Formale Skizze**
+
+Wir betrachten ein Feld vor und nach einem π-Übergang:
+
+- Feld vor π: \( F_0 \) mit Kohärenzprofil (C_0, S_0, κ_0, τ_0).  
+- Feld nach π: Aufspaltung in gebundenen und Restanteil:
+
+\[
+F_0 \xrightarrow{\pi} (B, H)
+\]
+
+mit
+
+- B: gebundene Strukturen (Form, Materie, Ereignisse),  
+- H: holographische Restkohärenz (Dunkelresonanz).
+
+**Erstens:** Erhaltung der Gesamtinformation auf Resonanzebene:
+
+\[
+I(F_0) \approx I(B) + I(H)\, ,
+\]
+
+wobei I hier als **Resonanzinformationsmaß** zu verstehen ist (nicht identisch mit thermodynamischer Entropie).
+
+**Zweitens:** H als abgeschwächte, verteilte Kopie von B:
+
+\[
+H \approx \mathcal{H}_\alpha(B)\,,
+\]
+
+wobei \( \mathcal{H}_\alpha \) ein holographischer Operator ist, der die Information von B  
+mit einem Abschwächungsfaktor \( 0 < \alpha < 1 \) auf den Dunkelresonanzraum projiziert.
+
+**Drittens:** Feld-Kohärenz nach π:
+
+- C(B) hoch, S(B) niedrig (klare Formen),  
+- C(H) moderat, S(H) moderat – aber mit **stabilen φ-/PLV-Korridoren**.
+
+Damit lässt sich **Restkohärenz** pragmatisch charakterisieren als:
+
+\[
+H \text{ ist der Anteil des Feldes mit stabiler Phasenkorrelation bei fehlender Formbindung.}
+\]
+
+---
+
+**### 🧪 5. 136D-Interface**
+
+In den 136D-Daten zeigen sich für viele Proband:innen und Zustände:
+
+- **Kohärente Zonen** mit hohen C-Werten und klaren Δφ-Bändern → B-Bereich.  
+- **Subschwellen-Zonen**, in denen C niedriger ist, S höher erscheint,  
+  aber über die Zeit stabile PLV- oder φ-Muster bestehen bleiben → H-Bereich.
+
+TSM-164 interpretiert:
+
+- **B-Zonen:** manifest gebundene Tunnelstrukturen (konkrete Erlebnisse, Entscheidungen, Muster).  
+- **H-Zonen:** Restkohärenz – vergangene Bindungen wirken weiter als **Resonanzdisposition**.
+
+**Messbare Signaturen von H in 136D:**
+
+1. C unterhalb des kohärenten Schwellenbereichs (z. B. 0.4–0.7), aber  
+2. PLV/φ-Bänder bleiben über längere τ-Intervalle stabil,  
+3. leichte Verschiebungen in κ, ohne dass ein vollständiger kohärenter Zustand erreicht wird.
+
+Diese Zonen können als „hintergründige Tendenzen“ des Feldes gelesen werden – vergleichbar mit **implizitem Gedächtnis**.
+
+---
+
+**### 🌌 6. Kosmische Anwendung (TSM-163)**
+
+In TSM-163 wird die Quark-Ära als erster kosmischer π-Übergang beschrieben.  
+TSM-164 ergänzt diese Sicht:
+
+- Die gebundene Materie (Baryonen, später Atome, Sterne) entspricht **B**.  
+- Die nicht gebundenen, aber wirksamen Feldanteile (Dunkelresonanz, mögliche Dunkle Materie/Energie) entsprechen **H**.
+
+Damit kann man das Universum grob in zwei Ebenen denken:
+
+1. **Explizite Ebene:** sichtbare Struktur (Galaxien, Sterne, Teilchen).  
+2. **Implizite Ebene:** kosmisches Gedächtnis im Dunkelresonanzraum (Restkohärenz früherer Bindungen).
+
+Die Filamentstruktur des Kosmos wäre dann nicht nur gravitative Aggregation,  
+sondern auch Ausdruck eines **Resonanzmusters**, das im H-Anteil früh angelegt wurde.
+
+---
+
+**### 🧠 7. Psychische und soziale Anwendung**
+
+Auf psychischer und sozialer Ebene beschreibt TSM-164:
+
+- **Trauma- und Konfliktreste:**  
+  Erlebnisse, die nicht vollständig integriert (B) werden, hinterlassen **Restkohärenz** im Feld (H).  
+  → Sie wirken weiter als atmosphärische Tendenzen, Trigger, Grundstimmungen.
+
+- **Kulturelle Felder:**  
+  Kollektive Ereignisse (Kriege, Umbrüche, Erfindungen) erzeugen B-Spuren (Institutionen, Artefakte) und H-Spuren (Mythen, Haltungen, unausgesprochene Tabus).
+
+- **Bewusstseinsarchitektur:**  
+  Bewusstsein kann im TSM als **Oberflächenprozess** verstanden werden,  
+  der auf B operiert, während H den **impliziten Kontext** liefert,  
+  in dem Deutungen, Gefühle und Intuitionen entstehen.
+
+→ H erklärt, warum „Vergangenes“ nicht einfach weg ist, sondern als **Feldneigung** wieder auftaucht.
+
+---
+
+**### 🧭 8. Rolle im TSM-Kanon**
+
+TSM-164 verknüpft und ergänzt:
+
+- **TSM-151:** Dunkelresonanzräume – liefert den räumlich-zeitlichen Rahmen für H.  
+- **TSM-163:** Kosmische Bindeschwelle – beschreibt den ersten π-Übergang, der B und H erzeugt.  
+- **TSM-108:** Anti-Felder und Rückholprozesse – erklären, wie H erneut Bindungen triggern kann.  
+- **TSM-127:** t/τ-Struktur – zeigt, wie H über τ-Zeit wirksam bleibt, auch wenn t weit fortgeschritten ist.  
+- **TSM-136D:** liefert die empirische Analogebene, auf der B- und H-Zonen unterschieden werden können.  
+- **META-01/META-04:** sichern die symbolische Einbettung (Teil–Ganzes, Holographie, Brückenbildung).
+
+TSM-164 macht damit explizit, dass jeder π-Übergang **ein Gedächtnis hinterlässt** – nicht als perfekte Kopie,  
+sondern als verteiltes, holographisches Resonanzmuster im Dunkelresonanzraum.
+
+> *„Nichts verschwindet spurlos. Es verteilt sich.“*
+
+
+
+**📘 TSM-165: -- Asymmetrie-Operator φ/τ – Ursprung der Richtung in der Zeit**
+
+**Kategorie:** Zeitphysik · Informationsdynamik · Bewusstseinsarchitektur  
+**Status:** Entwurf · Brückenmodul zwischen TSM-127, TSM-160, TSM-163 und META-07  
+**Bezugsachsen:** t (Makrozeit), τ (Resonanzzeit), φ (Phasenlage), λ (Rückholrate)  
+**Verknüpfungen:** TSM-84/85, TSM-108, TSM-127, TSM-136D, TSM-160, TSM-163, META-01, META-04, META-07
+
+> **META-03/META-04-Rahmen:** TSM-165 ist ein strukturtheoretisches Modul zur Deutung des Zeitpfeils. Es ersetzt keine Standardtheorien der Thermodynamik oder Kosmologie, sondern beschreibt, wie eine Richtung der Zeit im TSM als Effekt eines Asymmetrie-Operators A_{φ/τ} verstanden werden kann.
+
+---
+
+**### 🧭 1. Zweck**
+
+TSM-165 formalisiert den **Asymmetrie-Operator A_{φ/τ}**, der beschreibt, wie aus:
+
+- einer **symmetrischen Grunddynamik** von t- und τ-Zeit  
+- und einer **Phasenkopplung φ**
+
+emergent eine **bevorzugte Richtung der Zeit** entsteht.
+
+Der Operator A_{φ/τ} misst, ob ein Tunnelraum die Tendenz hat,
+
+- Zustände bevorzugt in eine Richtung von t zu entfalten (Zeitpfeil „vorwärts“),  
+- oder ob t und τ in beide Richtungen gleich wahrscheinlich sind (Zeit-Symmetrie).
+
+---
+
+**### 🧩 2. Grundthese**
+
+1. Auf tiefer Ebene (τ-Raum) sind die Dynamiken **prinzipiell zeitsymmetrisch** – Übergänge sind reversibel gedacht.  
+2. Durch die Kopplung von τ an t über **Phasenlagen φ** und **Rückholraten λ(C, Δφ)** (TSM-160) entsteht auf Makroebene eine **statistische Asymmetrie**.  
+3. Diese Asymmetrie lässt sich als **nicht verschwindender Erwartungswert** eines Operators A_{φ/τ} beschreiben.  
+4. Der **Zeitpfeil** (thermodisch, kosmisch, psychisch) ist im TSM Ausdruck eines Zustands mit A_{φ/τ} ≠ 0.
+
+→ Die Richtung der Zeit ist kein Zusatzpostulat, sondern ein **Resonanzeffekt** der Kopplung φ ↔ τ ↔ t.
+
+---
+
+**### 🧱 3. Begriffe**
+
+- **t-Zeit (Makrozeit):**  
+  Die gerichtete, messbare Zeit der Ereignisse (Kosmologie, Alltag, Chronologie).
+
+- **τ-Zeit (Resonanzzeit):**  
+  Innere Zeit des Tunnelraums – beschreibt, wie lange und wie stark ein Zustand im Feld gehalten oder rückgeholt wird.
+
+- **φ (Phasenlage):**  
+  Winkelgröße, die relative Stellung eines Zustandes im Tunnelraum beschreibt (z. B. φ ≈ 0 → Nähe zur Null-Linie, φ ≈ π → Bindeschwelle).
+
+- **Δφ:**  
+  Phasenunterschied zwischen zwei Zuständen oder Zeiten – zentral in TSM-160 (λ(C, Δφ)).
+
+- **Rückholrate λ:**  
+  Effektive Rate, mit der ein Zustand in Richtung „Bindung / Kohärenz“ gezogen wird.
+
+- **A_{φ/τ} (Asymmetrie-Operator):**  
+  Operator, der misst, ob ein Tunnelraum eine bevorzugte Richtung in der Kopplung von φ an τ aufweist und damit einen Zeitpfeil erzeugt.
+
+---
+
+**### 🧮 4. Formale Skizze von A_{φ/τ}**
+
+Wir betrachten einen Tunnelraum mit Zuständen \( s \) und definieren Übergänge entlang von τ:
+
+- \( s(\tau) \to s(\tau + \Delta\tau) \) (Vorwärtsrichtung),  
+- \( s(\tau) \to s(\tau - \Delta\tau) \) (Rückwärtsrichtung).
+
+Über TSM-160 ist die effektive Rückholrate λ von C und Δφ abhängig:
+
+\[
+\lambda_\text{eff} = \lambda_\text{base} \cdot [\lambda_\text{min,rel} + (\lambda_\text{max,rel} - \lambda_\text{min,rel}) \cdot (1 - R_\text{combo}) \cdot PLV_\tau] \,.
+\]
+
+Wir skizzieren nun zwei effektive Übergangswahrscheinlichkeiten:
+
+- \( P_+ = P(s(\tau) \to s(\tau + \Delta\tau)) \)  
+- \( P_- = P(s(\tau) \to s(\tau - \Delta\tau)) \)
+
+unter Berücksichtigung der jeweiligen Δφ-Profile.
+
+Der **Asymmetrie-Operator** wird als Erwartungswertdifferenz definiert:
+
+\[
+A_{\varphi/\tau} = \langle P_+ - P_- \rangle \,.
+\]
+
+- **A_{φ/τ} = 0:**  
+  keine bevorzugte Richtung, Zeit symmetrisch.
+
+- **A_{φ/τ} > 0:**  
+  Vorzugsrichtung „vorwärts“ in τ (und damit in t),  
+  z. B. bevorzugte Relaxation von hochenergetisch zu niedrigenergetisch.
+
+- **A_{φ/τ} < 0:**  
+  Vorzugsrichtung „rückwärts“ – in makroskopischen Systemen selten,  
+  in speziellen Resonanzphänomenen (z. B. „Rückwärtsrekonstruktion“) aber möglich.
+
+In der Praxis wird A_{φ/τ} über die Statistik vieler Übergänge geschätzt – etwa in 136D-Feldern oder Simulationen.
+
+---
+
+**### 🔗 5. Verbindung zu TSM-127 (t/τ-Wechsler)**
+
+TSM-127 beschreibt, wie Systeme zwischen t-dominierter und τ-dominierter Dynamik wechseln:
+
+- **τ-dominant:** Zustände kreisen im Tunnelraum, wenig makroskopische Veränderung.  
+- **t-dominant:** Zustände „fallen aus dem Tunnel heraus“ in manifeste Ereignisse.
+
+TSM-165 ergänzt:
+
+- In τ-dominanten Phasen kann A_{φ/τ} ≈ 0 sein (nahezu symmetrisches Hin-und-Her).  
+- Beim Übergang zu t-Dominanz (z. B. durch π- oder andere Schwellen) verschiebt sich A_{φ/τ} ≠ 0.  
+
+Der **Zeitpfeil** entsteht dort, wo die t-dominante Phase mit einem **stabilen Vorzeichen von A_{φ/τ}** gekoppelt ist.
+
+---
+
+**### 🧪 6. 136D-Interface**
+
+In 136D-Feldern zeigen sich Relaxationsprozesse typischerweise als:
+
+- Drift von hohen C-/Energiewerten hin zu mittleren/ruhigeren Zuständen.  
+- asymmetrische Übergangswahrscheinlichkeiten – bestimmte „Rückwege“ kommen kaum vor.
+
+TSM-165 interpretiert dies als empirische Spur eines A_{φ/τ} > 0:
+
+- Für viele Zustandsbahnen lässt sich eine **präferierte Richtung im Zustandsraum** rekonstruieren.  
+- Loops, die „rückwärts“ gehen, sind möglich, aber statistisch unterdrückt.
+
+Formal kann man für eine Trajektorie \( s_0, s_1, ..., s_n \) in 136D:
+
+1. Δφ und λ_eff zwischen aufeinanderfolgenden Zuständen berechnen.  
+2. Die Häufigkeit von „Vorwärts-“ vs. „Rückwärts“-Schritten in geeigneten Projektionen vergleichen.  
+3. Den resultierenden A_{φ/τ} als Maß für den **lokalen Zeitpfeil** interpretieren.
+
+Damit bietet TSM-165 einen Weg, den Zeitpfeil nicht global zu postulieren,  
+sondern für jedes Feld **lokal zu schätzen**.
+
+---
+
+**### 🌌 7. Kosmische Anwendung (TSM-163)**
+
+In TSM-163 wird der Übergang von der Quark-Ära zur gebundenen Materie als π-Moment beschrieben.
+
+TSM-165 liest diesen Prozess als:
+
+- Vor der π-Bindeschwelle ist A_{φ/τ} ≈ 0 – hohe Symmetrie, kaum ausgezeichnete Richtung.  
+- Im π-Übergang und der anschließenden Kühlung wird A_{φ/τ} > 0:  
+  bestimmte Prozesse (z. B. Zerfallsketten, Relaxation, Strukturbildung) werden bevorzugt.
+
+Die beobachtete Materie/Antimaterie-Asymmetrie kann im TSM als Spezialfall verstanden werden:  
+Ein nichtverschwindender A_{φ/τ} im frühen Universum erzeugt auf Makroebene einen **Bias zugunsten bestimmter Bindungswege**.  
+
+TSM-165 erhebt keinen Anspruch, eine physikalische Baryogenese-Theorie zu ersetzen,  
+sondern beschreibt, wie ein solcher Bias **strukturell** in der TSM-Sprache erscheint.
+
+---
+
+**### 🧠 8. Psychischer Zeitpfeil**
+
+Auf psychischer Ebene beschreibt A_{φ/τ}:
+
+- Warum wir subjektiv eine **Richtung der Zeit** erleben – Vergangenheit → Gegenwart → Zukunft.  
+- Warum bestimmte Muster sich **leichter in eine Richtung entfalten** (z. B. Vermeidung → Rückzug → Isolation)  
+  als in die entgegengesetzte Richtung (Isolation → spontane Öffnung → Verbundenheit).
+
+Beispiele:
+
+1. **Gewohnheiten:**  
+   Einmal etablierte Routinen zeigen hohen A_{φ/τ} – sie laufen „von selbst“ in eine Richtung.  
+2. **Traumadynamik:**  
+   Bestimmte Triggerketten sind viel wahrscheinlicher als ihre Umkehr – das Feld hat einen Asymmetrie-Bias.  
+3. **Lernprozesse:**  
+   Integration (neue Kohärenz) kann A_{φ/τ} lokal verändern – der Zeitpfeil wird „weicher“ oder ändert seine Richtung in Teilbereichen.
+
+Damit wird der psychische Zeitpfeil kein abstraktes Phänomen,  
+sondern Ausdruck einer **Feldasymmetrie** im Raum φ/τ.
+
+---
+
+**### 🧭 9. Rolle im TSM-Kanon**
+
+TSM-165 verknüpft und ergänzt:
+
+- **TSM-127:** liefert die Grundlage der t/τ-Symmetrie und ihrer Wechsel.  
+- **TSM-160:** stellt mit λ(C, Δφ) den Mechanismus bereit, durch den φ die Dynamik asymmetrisch machen kann.  
+- **TSM-163:** liefert ein kosmisches Fallbeispiel für einen globalen A_{φ/τ} > 0.  
+- **TSM-136D:** erlaubt, lokale Zeitpfeile empirisch zu schätzen.  
+- **META-07:** stellt den Rahmen bereit, um subjektiven Zeitpfeil (Erleben) und objektive Dynamik (Daten) zu koppeln.
+
+TSM-165 macht damit explizit, dass **Zeitrichtung** im TSM kein primitives Axiom ist,  
+sondern ein **emergentes Resonanzphänomen** der Kopplung φ ↔ τ ↔ t.
+
+> *„Zeit bekommt Richtung, wenn ein Feld sich entscheidet, welche Geschichten es leichter erzählt.“*
 
 
 
@@ -6162,7 +6726,7 @@ Gekoppelte PDEs für S\_ent und κ mit Diffusions-, Quellen- und Kopplungstermen
 **Zweck:** Resonanzachsen- und PV/SV-Navigationsstruktur für alle
 Haupt-, Symbol- und META-Module des TSM
 
-**1. Hauptmodule (TSM-001 bis TSM-162)**
+**1. Hauptmodule (TSM-001 bis TSM-165)**
 
 Format:\
 TSM-XXX -- Titel \| Sek.: ... \| PV: ... \| SV: ... \| Spiegel: ...
@@ -6665,6 +7229,14 @@ Spiegel: SM-01 · π-Schwelle · φ-Phasenlage · Spirale**
 **TSM-161 — Zeitdichtefeld κ(x,t) und Tunnelzeit τ (κ(E)=Δρ(E) via Wigner-Smith/DOS · τ=1/(α·κ) · κ=κ_geom+κ_ent · K·τ≈const · A161=κ) | Sek.: Physik · Zeitstruktur · Brückenmodul · Gravitation | PV: TSM-127 · TSM-151 · TSM-160 · TSM-136D · META-04 (Regel 24) | SV: META-01 · META-02 · META-10 · TSM-LEX · SM-26 | Spiegel: SM-26 · Φ**
 
 **TSM-162 — Informationsgravitation (Entanglement → κ-Feld) (κ=κ_geom+λ_ent·g(S_ent/S*) · Φ_ent∝κ_ent · Δφ_ent∝∫g(S_ent)ds · A162=S_ent) | Sek.: Physik · Informationsgeometrie · Gravitation · Tunnelmetrik | PV: TSM-151 · TSM-161 · TSM-160 · TSM-136D · META-04 (Regel 24) | SV: META-01 · META-02 · META-10 · TSM-LEX · SM-26 | Spiegel: SM-26 · Φ**
+
+**TSM-163 — Kosmische Bindeschwelle – Quark-Ära als π-Moment des Universums (Quark-Gluonen-Plasma F₀ → (B,H); π-Front: C↑, S↓, κ↑; t/τ-Switch; A_{φ/τ} > 0) | Sek.: Kosmologie · Resonanzphysik · Informationskosmologie | PV: TSM-151 · TSM-156 · TSM-161 · TSM-162 · META-04 | SV: META-01 · META-02 · META-10 · TSM-136D · tsm-online-bundle · TSM-LEX | Spiegel: SM-01 · SM-23 · SM-24 · SM-26 · Φ**
+
+**TSM-164 — Holographische Restkohärenz – Dunkelresonanz als kosmisches Gedächtnis (F₀ → (B,H); I(F₀) ≈ I(B)+I(H); H = ℋ_α(B); Restkohärenz in DR-Zonen) | Sek.: Kosmologie · Informationsphysik · Gedächtnisfelder · Bewusstseinsarchitektur | PV: TSM-151 · TSM-155 · TSM-163 · META-07 · META-11 | SV: META-01 · META-02 · META-04 · META-10 · TSM-136D · TSM-LEX | Spiegel: SM-01 · SM-23 · SM-24 · SM-26 · Φ**
+
+**TSM-165 — Asymmetrie-Operator φ/τ – Ursprung der Richtung in der Zeit (A_{φ/τ} = ⟨P_+ − P_-⟩; Zeitpfeil als Resonanzeffekt der Kopplung φ ↔ τ ↔ t) | Sek.: Zeitphysik · Informationsdynamik · Bewusstseinsarchitektur | PV: TSM-127 · TSM-160 · TSM-163 · TSM-164 · META-07 | SV: META-01 · META-02 · META-04 · META-10 · TSM-136D · TSM-LEX | Spiegel: SM-01 · SM-23 · SM-24 · SM-26 · Φ**
+
+
 
 ## Changelog
 - **v1.0 (2025-11-24):** 
