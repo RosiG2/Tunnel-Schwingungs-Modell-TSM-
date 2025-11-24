@@ -5609,8 +5609,549 @@ Offene Fragen / Forschungsrichtungen:
 TSM-160 stellt damit einen Baustein bereit, um Rückholprozesse im Tunnelraum nicht nur zu detektieren, sondern **dynamisch zu dosieren** – als Feinregler zwischen Fragmentierung, Regulierung und tragfähiger Kohärenz.
 
 
+**# 📘 TSM-161: -- Zeitdichtefeld (κ–τ–Korrespondenz)**
 
-**Stand: 22.11.2025**
+**Modulreihe:** Tunnel-Schwingungs-Modell (TSM)  
+**Kategorie:** Physik · Zeitstruktur · Brückenmodul  
+**Status:** Arbeitsfassung 1.0  
+**Bezug:** TSM-127 (Zeitwechsler), TSM-151 (Gravitations-Resonanz), Ma & Zhang „Time as Density of States“ (2025)
+
+---
+
+**## 🧭 1. Zweck des Moduls**
+
+TSM-161 verankert den TSM-internen Begriff der **Tunnelzeit τ** in einem physikalisch messbaren Konzept der **Zeitdichte κ(E)** aus der Streuphysik.
+
+Ziele:
+
+1. Definition eines **Zeitdichtefeldes κ(x, t)**, das sowohl
+   - in Streuexperimenten (Wigner-Smith-Verzögerung, Zustandsdichte Δρ) als auch
+   - im TSM-Tunnel (τ, Kohärenz K, Zonen F/R/K)
+   sinnvoll interpretierbar ist.
+2. Einführung einer **κ–τ-Abbildung**, über die TSM-Module, die mit „Zeit“ arbeiten (TSM-127, -151, -162), auf eine gemeinsame Skala referenzieren können.
+3. Vorbereitung von **TSM-162** (Informationsgravitation), in dem κ zusätzlich von Informations-/Entanglement-Struktur abhängt.
+
+---
+
+**## 🔹 2. Definitionskasten (Kurzfassung)**
+
+**Zeitdichte κ(E)**  
+In Anlehnung an Ma & Zhang:
+
+- κ(E) ≡ Δρ(E) – Änderung der lokalen Zustandsdichte pro Energieintervall relativ zu einer Referenz.  
+- Operational über den Wigner-Smith-Zeitoperator Q(E):  
+  κ(E) ∝ tr Q(E) (Details im Fachpaper, hier nicht wiederholt).
+
+**Zeitdichtefeld κ(x, t)**
+
+- κ(x, t) entsteht durch geeignete Mittelung von κ(E; x, t) über ein Energiefenster ΔE:
+  \[
+  κ(x,t) := ⟨κ(E; x,t)⟩_{E∈ΔE}.
+  \]
+
+**Tunnelzeit τ(x, t)**
+
+- τ ist die TSM-interne Eigenzeit eines Tunnelsystems.
+- Arbeitsrelation in TSM-161:
+  \[
+  τ(x,t) = \frac{1}{α\,κ(x,t)}
+  \]
+  mit α als Normierungsfaktor (Kalibrierparameter, kontextabhängig).
+
+**Kohärenzfeld K(x, t)**
+
+- K(x,t): lokales Kohärenzmaß des Tunnels (TSM-Standardgröße; Wertebereich z.B. 0…1).  
+- K₀: Referenzkohärenz (z.B. „Fernfeld“ ohne relevante Struktur).
+
+---
+
+**## ⚛️ 3. Grundannahmen**
+
+1. **Zeit entsteht aus Schwingungsdichte**  
+   Je höher die Zustandsdichte κ in einem Energiebereich, desto langsamer verläuft die zugehörige Tunnelzeit τ.
+
+2. **κ ist die Brücke zwischen physikalischer Zeit und τ-Zeit**  
+   - Physikalische Streu- und Laufzeitexperimente liefern κ(E,x) bzw. Wigner-Smith-Zeiten.  
+   - TSM interpretiert dieselben Größen als „Tunnel-Taktdichte“.
+
+3. **Inhomogene κ-Felder erzeugen Zeitdilatation**  
+   - Regionen mit erhöhter Zustandsdichte (starke Felder, resonante Strukturen) haben größere τ-Werte (Zeitdehnung).  
+   - Im GR-Grenzfall entspricht dies einer üblichen Gravitations-Zeitdilatation, ausgedrückt in κ-Sprache.
+
+---
+
+**## 🧮 4. Zeitdichtefeld κ(x, t) und τ-Abbildung**
+
+### 4.1 κ–τ-Relation
+
+TSM-161 definiert als Arbeitsansatz für jede Zone:
+
+\[
+τ(x,t) = \frac{1}{α\,κ(x,t)}.
+\]
+
+- α ist so zu wählen, dass für einen bekannten Referenzfall (z.B. ein gut charakterisiertes Resonatorsystem) τ mit der physikalisch gemessenen effektiven Verweilzeit übereinstimmt.
+- Die Relation ist bewusst einfach gehalten; nichtlineare Verallgemeinerungen können in späteren Versionen ergänzt werden.
+
+### 4.2 Feldgleichung für κ(x, t)
+
+Als phänomenologisches Arbeitsmodell nimmt TSM-161 an, dass κ(x, t) einer Diffusions- und Kohärenz-determinierten Dynamik folgt:
+
+\[
+\partial_t κ = -λ_K \, \nabla^2 κ + β \,(K - K_0) - γ \, \partial_τ K.\tag{161.1}
+\]
+
+Parameter:
+
+- λ\_K – Diffusionskoeffizient der Zeitdichte (räumliche Glättung von κ-Gradienten),
+- β – Kopplung der Zeitdichte an die lokale Kohärenz K,
+- γ – Gewichtung eines „resonanten“ Terms ∂\_τ K (Änderung der Kohärenz entlang der Tunnelzeit als zusätzlicher Beitrag).
+
+Intuitive Lesart:
+
+- Der Laplace-Term \(-λ_K ∇^2 κ\) sorgt dafür, dass starke Zeitdichte-Gefälle nur begrenzt stabil sind.  
+- Der Term β(K−K₀) beschreibt, dass hochkohärente Zonen Zustände **ansammeln** (κ steigt) und fragmentierte Zonen Zustände eher „zerstreuen“ (κ sinkt).  
+- Der Term −γ ∂\_τ K modelliert, dass schnelle Kohärenzänderungen entlang τ zusätzliche Verzögerungen oder Beschleunigungen im Zeitdichtefeld erzeugen.
+
+Die genaue Form von (161.1) ist ein **TSM-eigener Ansatz** und kann durch Daten und Simulationen (z.B. im Computational-Universe-Rahmen) geschärft werden.
+
+---
+
+**## 🌌 5. Verbindung zu Gravitations-Zeitdilatation (TSM-151)**
+
+TSM-151 beschreibt Gravitations-Resonanz mit einem effektiven Potential Φ\_geom(x) und einer daraus resultierenden Zeitdilatation (z.B. über g₀₀(x)).
+
+TSM-161 spiegelt diesen Effekt im κ-Rahmen:
+
+- Im schwachen Feld wird angenommen:
+  \[
+  κ(x) \approx κ_∞\,\big[1 - η\,Φ_\text{geom}(x)/c^2 + …\big],
+  \]
+  wobei κ\_∞ die Zeitdichte „fernab“ von Feldern ist und η eine dimensionslose Kopplung.
+
+- Setzt man dies in τ = 1/(α κ) ein, ergibt sich im Linear-Limit eine Zeitdilatation, die äquivalent zur GR-Zeitdilatation ist, aber ausdrücklich über κ formuliert ist.
+
+Damit wird der GR-Effekt zu einem Spezialfall des allgemeinen TSM-Prinzips:
+
+> **„Schwerkraft entspricht räumlichen Gradienten im Zeitdichtefeld κ.“**
+
+---
+
+**## 🔢 6. Integration in TSM-136D**
+
+### 6.1 Neue Achse A₁₆₁
+
+In TSM-136D wird eine neue Achse eingeführt:
+
+| Achse | Symbol | Bedeutung                               |
+|-------|--------|-----------------------------------------|
+| A₁₆₁ | κ      | Zeitdichte-Achse (DOS-/κ–τ-Korrespondenz) |
+
+Die Füllung dieser Achse kann auf verschiedenen Ebenen erfolgen:
+
+1. **Physikalische Experimente** (Streuphysik): direkte Messung von Wigner-Smith-Delays und DOS.
+2. **Resonatorsysteme** (z.B. Mikrowellen-Netzwerke, Cavities): effektive κ aus Resonanzbreiten und Laufzeiten.
+3. **Physiologische Daten** (HRV, EEG, etc.): Surrogatskalen, die die „Dichte der Zustände pro Zeitfenster“ abbilden (z.B. Anzahl signifikanter Spektralkomponenten pro Frequenzintervall).
+
+### 6.2 Invarianz-Relation (Arbeitsform)
+
+TSM-161 schlägt eine einfache Testrelation vor:
+
+\[
+K(x,t)\,τ(x,t) \approx \text{const.}\quad\Rightarrow\quad κ(x,t) \propto \frac{K(x,t)}{τ(x,t)^2}.
+\]
+
+- In stabilen Zonen sollte das Produkt K·τ etwa invariant sein; Abweichungen markieren Kipppunkte oder starke Felder.  
+- TSM-136D kann diese Relation in Datensätzen (z.B. Langzeit-HRV/EEG) empirisch testen.
+
+---
+
+**## 🧪 7. Experimentelle Perspektiven**
+
+### 7.1 Mikrowellen- oder optische Resonatoren
+
+- Aufbau eines resonanten Streusystems (z.B. Mikrowellen-Kavität, Netzwerk),  
+- Messung von:
+  - Wigner-Smith-Zeitverzögerung Q(E),
+  - zugehöriger DOS Δρ(E),
+- Ableitung von κ(E) = Δρ(E) und Vergleich mit theoretisch angenommenen τ(E) aus TSM.
+
+Testbare Hypothese:
+
+- Im log–log-Diagramm τ vs. κ sollte (im relevanten Bereich) eine Steigung nahe −1 beobachtet werden.
+
+### 7.2 „Pseudo-Gravitation“ in optischen Medien
+
+- Erzeugung von refraktiven Indexprofilen n(x), die einer Gravitationspotenzial-Landschaft entsprechen.  
+- Messung von Laufzeiten / Phasenverschiebungen verschiedener Moden.  
+- Rekonstruktion eines effektiven κ(x)-Profils und Vergleich mit TSM-151/161-Vorhersagen.
+
+---
+
+**## 📎 Anhang A zu TSM-161: Formale Kernbegriffe (Arbeitsfassung)**
+
+**A.1 Zeitdichte κ(E)**  
+Kernidee aus „Time as Density of States“:
+
+- κ(E) = Δρ(E) – Differenz der Zustandsdichte pro Energiefenster zwischen einem deformierten und einem Referenzsystem.  
+- Operational über den Wigner-Smith-Zeitoperator Q(E), der die Zeitverzögerung eines Streuprozesses beschreibt.
+
+**A.2 Zeitdichtefeld κ(x, t)**  
+Raumzeitlich verteilte Version von κ(E), z.B. aus lokal definierten Streusituationen oder effektiven Modellen, gemittelt über Energiefenster.
+
+**A.3 Tunnelzeit τ(x, t)**  
+TSM-Eigenzeit eines Tunnelsystems; in TSM-161 durch
+
+\[
+τ = 1/(α κ)
+\]
+
+an κ gekoppelt.
+
+**A.4 Kohärenzfeld K(x, t)**  
+TSM-Kohärenzmaß; skaliert typischerweise zwischen 0 (maximale Fragmentierung) und 1 (maximale Bindung/Resonanz zur Null-Linie).
+
+**A.5 Feldgleichung (161.1)**  
+Phänomenologische PDE für κ mit Diffusion, Kohärenz-Quelle und resonantem Term ∂\_τ K.  
+Sie ist nicht fundamental, sondern ein Arbeitsmodell, das an Daten und Simulationen angepasst werden kann.
+
+Hinweis (Empfindungsebene):
+Die phänomenologische Resonanzbeschreibung der Achsen κ (Zeitdichte) und τ (Tunnelzeit) findet sich im Symbolmodul SYM-26 „Resonanzdreieck der Zeitachsen κ–τ–Sₑₙₜ“.
+TSM-161 liefert den Formalkern, SYM-26 die Empfindungsachsen.
+
+---
+
+**# 📘 TSM-162: -- Informationsgravitation im Tunnel (Entanglement → Zeitdichtefeld κ)**
+
+**Modulreihe:** Tunnel-Schwingungs-Modell (TSM)  
+**Kategorie:** Physik · Informationsgeometrie · Gravitation  
+**Status:** Arbeitsfassung 1.0 (formales Kernmodell)  
+**Bezug:** TSM-151 (Gravitations-Resonanz), TSM-161 (Zeitdichtefeld κ), Ma & Zhang (Entanglement-Gravity / optische Metrik)
+
+---
+
+**## 🧭 1. Zweck des Moduls**
+
+TSM-162 präzisiert die TSM-These:
+
+> **Nicht nur Energie-Impuls, sondern auch Informationsstruktur (Entanglement) formt die effektive Tunnelmetrik und die lokale Zeitdichte κ(x).**
+
+Konkret:
+
+- Einführung eines **Informations-Quellterms** für das Zeitdichtefeld κ(x, t),
+- Kopplung an eine **Entanglement-Entropiedichte** S\_ent(x, t),
+- Brücke zur **optischen Metrik / Phasenverschiebung** in Experimenten (z.B. Kavität + Probestrahl),
+- Vorbereitung einer TSM-Lesart von „Entanglement-Gravity“.
+
+---
+
+**## 🔹 2. Definitionskasten (Kurzfassung)**
+
+**Entanglement-Entropiedichte**
+
+- \(S_\text{ent}(x,t)\): Entanglement-Entropie pro Volumen [bit/m³ o. ä.].  
+- \(s_\text{ent}(x,t) := S_\text{ent}(x,t)/S_*\): normierte Entropiedichte (dimensionslos), S\_* = Referenzdichte.
+
+**Zeitdichtefeld und Tunnelzeit**
+
+- \(κ(x,t)\): Zeitdichtefeld (TSM-161), mittlere Zustandsdichte Δρ(E; x, t) über ein Energiefenster ΔE.  
+- \(τ(x,t)\): Tunnelzeit; TSM-161-Arbeitsrelation:
+  \[
+  τ(x,t) = \frac{1}{α\,κ(x,t)}.
+  \]
+
+**Geometrischer vs. informationeller Anteil**
+
+- \(κ_\text{geom}(x,t)\): Beitrag klassischer Felder/Materie (TSM-151).  
+- \(κ_\text{ent}(x,t)\): Zusatzbeitrag durch Entanglementstruktur.
+
+**Potentiale**
+
+- \(Φ_\text{geom}(x,t)\): klassisches Gravitationspotential.  
+- \(Φ_\text{ent}(x,t)\): Informations-Potential.
+
+**Kopplungskonstante**
+
+- \(λ_\text{ent}\): Stärke der Informationsgravitation (Dimension so gewählt, dass κ\_ent dieselbe Dimension wie κ hat).
+
+---
+
+**## ⚛️ 3. Grundannahmen**
+
+1. **Zeitdichte als Träger der Tunnelzeit**  
+   - TSM-161: κ(x,t) ≈ Δρ(E; x,t), τ(x,t) = 1/(α κ(x,t)).  
+   - κ kodiert, wie viele relevante Zustände pro Energieintervall vorhanden sind.
+
+2. **Informationsbeiträge sind Zusatzquellen für κ**  
+   - Neben geometrischen Beiträgen (Masse, klassische Felder) existiert ein Informationsbeitrag κ\_ent(x,t), der von S\_ent abhängt.
+
+3. **Informationsgravitation ist schwach, aber prinzipiell messbar**  
+   - Im Linear-Limit sollte sie als kleiner Zusatz in τ(x), dτ/dt und in optischen Phasenverschiebungen (Probestrahl) sichtbar sein.
+
+---
+
+**## 🧮 4. Kernformeln für den Informationsbeitrag**
+
+### 4.1 Zerlegung des Zeitdichtefeldes
+
+\[
+κ(x,t) = κ_\text{geom}(x,t) + κ_\text{ent}(x,t).
+\]
+
+- κ\_geom(x,t): klassischer Beitrag (TSM-151).  
+- κ\_ent(x,t): reiner Informationsbeitrag.
+
+### 4.2 κ_ent als Funktion von S_ent
+
+**Arbeitsansatz:**
+
+\[
+κ_\text{ent}(x,t) = λ_\text{ent}\, g\big(s_\text{ent}(x,t)\big),
+\]
+\[
+s_\text{ent} = \frac{S_\text{ent}}{S_*}.
+\]
+
+- g: glatte, monoton steigende Funktion mit g(0)=0.
+- S\_*: Normierungsdichte (Skalenparameter).
+
+Spezialfälle:
+
+1. Linear (kleine Informationsfelder):  
+   \(g(s) = s \Rightarrow κ_\text{ent} = λ_\text{ent}\,s_\text{ent}.\)
+
+2. Saturierend:  
+   \(g(s) = \frac{s}{1 + s/s_0}\), s₀ > 0.
+
+### 4.3 Tunnelzeit mit Informationsbeitrag
+
+Mit τ = 1/(α κ):
+
+\[
+τ(x,t)
+= \frac{1}{α\,[κ_\text{geom}(x,t) + κ_\text{ent}(x,t)]}
+= \frac{1}{α\,[κ_\text{geom} + λ_\text{ent} g(s_\text{ent})]}.
+\]
+
+Im **schwachen Limit** (|λ\_ent g| ≪ κ\_geom):
+
+\[
+τ(x,t) \approx τ_0 \left[1 - \frac{λ_\text{ent}}{κ_\text{geom}}\, g(s_\text{ent}(x,t))\right],
+\]
+\[
+τ_0 := \frac{1}{α\,κ_\text{geom}}.
+\]
+
+👉 Höhere Entanglement-Dichte (g↑) verlängert für λ\_ent>0 die Tunnelzeit τ (Zeitdehnung).
+
+---
+
+**## 🌌 5. Verbindung zur Gravitations-Resonanz (TSM-151)**
+
+### 5.1 Informationspotential Φ_ent
+
+TSM-151 nutzt ein effektives Potential Φ\_geom(x). TSM-162 ergänzt:
+
+\[
+Φ_\text{eff}(x,t) = Φ_\text{geom}(x,t) + Φ_\text{ent}(x,t).
+\]
+
+Wir setzen als Arbeitsmodell:
+
+\[
+Φ_\text{ent}(x,t) = \mu_\kappa\, κ_\text{ent}(x,t) = \mu_\kappa λ_\text{ent} g(s_\text{ent}(x,t)),
+\]
+
+mit μ\_κ als Skalenfaktor ([Potential]/[κ]).
+
+### 5.2 Lineare Zeitdilatation
+
+Im Newton-Grenzfall:
+
+\[
+\frac{dτ}{dt} \approx 1 + \frac{Φ_\text{eff}(x,t)}{c^2} = 1 + \frac{Φ_\text{geom}}{c^2} + \frac{Φ_\text{ent}(x,t)}{c^2}.
+\]
+
+Vergleich mit der linearen Approximation:
+
+\[
+\frac{δτ}{τ_0} \approx - \frac{λ_\text{ent}}{κ_\text{geom}} g(s_\text{ent}) \stackrel{!}{\approx} \frac{Φ_\text{ent}}{c^2} = \frac{\mu_\kappa λ_\text{ent}}{c^2} g(s_\text{ent}).
+\]
+
+Konsistenz (Arbeitsbedingung):
+
+\[
+\mu_\kappa \approx -\,\frac{c^2}{κ_\text{geom}}.
+\]
+
+Damit ist der Informationsbeitrag zur Zeitdilatation vollständig über κ\_ent bestimmt.
+
+---
+
+**## 🔬 6. Optische Metrik und Phasenverschiebung**
+
+In einem optischen Setup hängt die effektive Brechungszahl n\_eff(x) von κ(x) ab:
+
+\[
+n_\text{eff}(x) \approx n_0 + \chi_\kappa\, \delta κ(x),
+\]
+
+mit:
+
+- n₀ – geometrischer Brechungsindex,  
+- χ\_κ – materialspezifische Suszeptibilität,  
+- δκ(x) – Abweichung vom Referenzwert.
+
+Setzt man δκ = κ\_ent:
+
+\[
+\delta n_\text{ent}(x)
+:= n_\text{eff}(x) - n_\text{eff,geom}(x)
+\approx \chi_\kappa λ_\text{ent} g(s_\text{ent}(x)).
+\]
+
+Die Zusatzphase eines Probestrahls entlang eines Pfades Γ wird zu:
+
+\[
+\Delta \varphi_\text{ent}
+= k_0 \int_\Gamma \delta n_\text{ent}(x)\, ds
+\approx k_0 \chi_\kappa λ_\text{ent} \int_\Gamma g(s_\text{ent}(x))\, ds,
+\]
+\[
+k_0 = \omega/c.
+\]
+
+👉 Entanglementprofile → κ\_ent(x) → δn(x) → Δφ\_ent:  
+TSM-162 liefert damit eine direkte TSM-Interpretation der entanglement-induzierten optischen Phase.
+
+---
+
+**## 🧪 7. Dynamik von S_ent und κ**
+
+### 7.1 Entanglement-Entropiedichte S_ent(x,t)
+
+Wir modellieren S\_ent(x,t) mit einer Kontinuitätsgleichung:
+
+\[
+\partial_t S_\text{ent} + \nabla\cdot \mathbf{J}_\text{ent} = R_\text{ent} - D_\text{ent},
+\]
+
+z.B. mit:
+
+- \(\mathbf{J}_\text{ent} = -D_S \, \nabla S_\text{ent}\) (Diffusion),  
+- R\_ent: Erzeugung (Verschränkung),  
+- D\_ent: Verlust (Dekoherenz).
+
+Dann:
+
+\[
+\partial_t S_\text{ent} = D_S \nabla^2 S_\text{ent} + R_\text{ent} - D_\text{ent}.
+\]
+
+### 7.2 Zeitdichtefeld κ(x,t) mit Informationsquelle
+
+TSM-161 gab (schematisch):
+
+\[
+\partial_t κ = -λ_K \nabla^2 κ + β (K - K_0) - γ \, \partial_τ K.
+\]
+
+TSM-162 ergänzt einen Informations-Quellterm:
+
+\[
+\partial_t κ
+= -λ_K \nabla^2 κ
++ β (K - K_0)
+- γ \, \partial_τ K
++ σ_\text{ent}\, h\big(S_\text{ent}(x,t)\big),
+\]
+
+mit:
+
+- σ\_ent – Kopplungsstärke,  
+- h – glatte Funktion (z.B. h = g ∘ (S\_ent/S\_*)).
+
+Stationäre Lösungen können so gewählt werden, dass sie die Relation
+
+\[
+κ_\text{ent}(x) = λ_\text{ent} g\big(S_\text{ent}(x)/S_*\big)
+\]
+
+reproduzieren.
+
+---
+
+**## 🧩 8. Einbau in TSM-136D**
+
+In TSM-136D werden zwei Achsen hervorgehoben:
+
+| Achse | Symbol | Bedeutung                                                        |
+|-------|--------|------------------------------------------------------------------|
+| A₁₆₁ | κ      | Zeitdichte-Achse (DOS-/κ–τ-Korrespondenz, aus TSM-161)           |
+| A₁₆₂ | S_\ent  | Entanglement-/Informationsdichte (oder makroskopischer Proxy)   |
+
+**Makroskopische Proxies für S\_ent:**
+
+- spektrale Entropie in EEG/HRV,
+- Multiscale Entropy,
+- Komplexitätsmaße (Lempel-Ziv, DFA, etc.).
+
+**Hypothese im Linear-Response-Regime:**
+
+\[
+\delta κ \approx Λ_\text{ent}\, \delta S_\text{ent},
+\]
+
+wobei Λ\_ent eine effektive Suszeptibilität ist (aus Experimenten oder Modellen bestimmbar).
+
+TSM-136D kann prüfen, ob Zonen mit höherer "Informationskomplexität" systematisch andere κ-Surrogates aufweisen.
+
+---
+
+**## 🔄 9. META-Bezug: META-04. (Regel 24) – Zeitdichte-Brücke**
+
+TSM-162 ist kompatibel mit META-04 Regel 24:
+
+1. **Dreifache Zeitreferenz:**  
+   - t: Laborzeit / Koordinatenzeit,  
+   - τ: Tunnelzeit,  
+   - κ: Zeitdichte (DOS-basiert).
+
+2. **Standardabbildung:**  
+   \(τ = 1/(α κ).\)
+
+3. **Kompatibilität:**  
+   TSM-151 (Gravitation), TSM-161 (κ-Feld) und TSM-162 (Informationsgravitation) müssen ihre Zeitdilatationseffekte in κ ausdrücken können.
+
+TSM-162 ergänzt: S\_ent(x) wird zum primären Informationsparameter, der über κ\_ent(x) die Tunnelzeit τ und damit die effektive Metrik beeinflusst.
+
+---
+
+**## 📎 Anhang A zu TSM-162: Formale Kernbegriffe (Arbeitsfassung)**
+
+**A.1 Entanglement-Entropiedichte**  
+S\_ent(x,t): Entropie pro Volumen; s\_ent = S\_ent/S\_* normierte Form.
+
+**A.2 Informationsbeitrag zur Zeitdichte**  
+κ\_ent(x,t) = λ\_ent g(s\_ent(x,t)), g(0)=0, g′>0.
+
+**A.3 Effektives Potential**  
+Φ\_ent(x,t) = μ\_κ κ\_ent(x,t), Φ\_eff = Φ\_geom + Φ\_ent; im Linear-Limit μ\_κ ≈ −c²/κ\_geom.
+
+**A.4 Optische Phase**  
+δn\_ent(x) ≈ χ\_κ λ\_ent g(s\_ent(x));  
+Δφ\_ent = k₀ ∫Γ δn\_ent(x) ds.
+
+**A.5 Dynamik**  
+Gekoppelte PDEs für S\_ent und κ mit Diffusions-, Quellen- und Kopplungstermen, die im stationären Fall zur Relation κ\_ent = λ\_ent g(S\_ent/S\_*) führen.
+
+
+---
+
+
+
+
+**Stand: 24.11.2025**
 
 
 **📘 META-01 -- Querverbindungsmechanismus**
@@ -5621,7 +6162,7 @@ TSM-160 stellt damit einen Baustein bereit, um Rückholprozesse im Tunnelraum ni
 **Zweck:** Resonanzachsen- und PV/SV-Navigationsstruktur für alle
 Haupt-, Symbol- und META-Module des TSM
 
-**1. Hauptmodule (TSM-001 bis TSM-160)**
+**1. Hauptmodule (TSM-001 bis TSM-162)**
 
 Format:\
 TSM-XXX -- Titel \| Sek.: ... \| PV: ... \| SV: ... \| Spiegel: ...
@@ -6121,9 +6662,12 @@ Spiegel: SM-01 · π-Schwelle · φ-Phasenlage · Spirale**
 
 **TSM-160 — Adaptive Rückholrate im Tunnelraum λ(C, Δφ) (λ_eff = λ_base·[λ_min_rel + (λ_max_rel − λ_min_rel)·(1 − R_combo)·PLV_τ] · R_combo ∈ [0,1] · PLV_τ = |cos φ| · Params: λ_base · λ_min_rel · λ_max_rel · Reporting: λ_eff[t] · ε′[t] · adaptive_lambda_flag · lambda_profile) | Sek.: Physik · Dynamik · Steuerung · KI-Läufer · Resonanztechnik | PV: TSM-84 · TSM-100 · TSM-127 · TSM-136D · TSM-146 · META-04 (Regel 23) | SV: META-01 · META-02 · META-10 · TSM-LEX | Spiegel: SM-01 · SM-04 · SM-25 · Φ**
 
+**TSM-161 — Zeitdichtefeld κ(x,t) und Tunnelzeit τ (κ(E)=Δρ(E) via Wigner-Smith/DOS · τ=1/(α·κ) · κ=κ_geom+κ_ent · K·τ≈const · A161=κ) | Sek.: Physik · Zeitstruktur · Brückenmodul · Gravitation | PV: TSM-127 · TSM-151 · TSM-160 · TSM-136D · META-04 (Regel 24) | SV: META-01 · META-02 · META-10 · TSM-LEX · SM-26 | Spiegel: SM-26 · Φ**
+
+**TSM-162 — Informationsgravitation (Entanglement → κ-Feld) (κ=κ_geom+λ_ent·g(S_ent/S*) · Φ_ent∝κ_ent · Δφ_ent∝∫g(S_ent)ds · A162=S_ent) | Sek.: Physik · Informationsgeometrie · Gravitation · Tunnelmetrik | PV: TSM-151 · TSM-161 · TSM-160 · TSM-136D · META-04 (Regel 24) | SV: META-01 · META-02 · META-10 · TSM-LEX · SM-26 | Spiegel: SM-26 · Φ**
 
 ## Changelog
-- **v1.0 (2025-11-22):** 
+- **v1.0 (2025-11-24):** 
 
 
 
@@ -6169,7 +6713,7 @@ SV: TSM-LEX, SM-01, META-04 \| Spiegel: Gesamtstruktur**
 
 
 
-**2a. Symbolmodule -- Index (SM-1-25)**
+**2a. Symbolmodule -- Index (SM-1-26)**
 
 **Symbolmodul-Indexzeilen (**SM-07 bis SM-23: Messpfade optional; siehe
 TSM-139)
@@ -6254,6 +6798,9 @@ Rückbindung · Kosmologie \| PV: TSM-140, TSM-84, TSM-85 \| SV: SM-01,
 SM-02, SM-06 \| Spiegel: META-01, META-04
 
 **SM‑25 -- α -- α‑Spiegel (Symbol der Autoresonanz)** | Sek.: Symbolik · Selbstreferenz · τ‑Rücklauf | PV: META‑11, META‑10 | SV: TSM‑150, TSM‑127, META‑01 | Spiegel: META‑01 · META‑04
+
+**SM-26 — κ–τ–S_ent-Dreieck (Resonanzdreieck des Zeitfeldes · Empfindungsachsen: κ=Gegenwärtigkeit, τ=Rhythmus, S_ent=Sinnschwere) | Sek.: Symbolmodul · Zeitfeld · Empfindungsachsen · Praxis | PV: TSM-161 · TSM-162 · TSM-127 · TSM-136D · META-04 (Regel 24) | SV: META-01 · TSM-LEX · SM-01 · TSM-App | Spiegel: TSM-161 · TSM-162 · Φ**
+
 
 
 **3. Datenanker & Schnittstellen *(neu)***

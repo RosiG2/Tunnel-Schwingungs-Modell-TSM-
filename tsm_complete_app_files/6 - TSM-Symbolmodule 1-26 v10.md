@@ -1910,3 +1910,101 @@ Interpretation: **Mix** aus Vorwärts‑ und Rücklauf‑Zustand. Bei **τ‑Loc
 ### Changelog
 - **v1.0 (04.11.2025):** Erstfassung; Formel‑Klammer mit 0≤α≤1, Achse A7, Governance „KANON“, Beispiele & Querverweise.
 
+
+
+**🌀  SM‑26: --  Resonanzdreieck der Zeitachsen κ – τ – Sₑₙₜ
+
+**Typ:** Symbolmodul · Zeitfeld · Empfindungsebene  
+**Bezug:** TSM-161 (Zeitdichtefeld κ), TSM-162 (Informationsgravitation), META-04. (Regel 24) (κ–τ–t-Brücke)  
+
+**Zweck:**  
+SM-26 beschreibt die Achsen κ (Zeitdichte), τ (Tunnelzeit) und Sₑₙₜ (Informationsdichte) nicht als Formeln, sondern als **Empfindungsachsen** des TSM.  
+Es ergänzt den Formalkern von TSM-161/162, ersetzt ihn aber nicht.
+
+---
+
+**### 🌀 κ – Zeitdichte (fühlbare Gegenwärtigkeit)**
+
+- **Physikalisch:**  
+  Dichte der Zustände, die in einem Energiebereich aktiv sind (vgl. TSM-161, κ ≈ Δρ).
+
+- **Resonant erlebt:**  
+  Wie „eng“ oder „weit“ sich Zeit anfühlt.
+  - **Hohe κ:** viel Bewegung, viele Zustände – Zeit „verdickt“.
+  - **Niedrige κ:** Raum öffnet sich – Zeit „verflüssigt“.
+
+- **Symbolisch:**  
+  Das *Atmen der Zeit* selbst.
+
+- **Körperlich erfahrbar als:**  
+  Präsenz, Konzentration, Flow.
+
+> 🪶 *κ ist die Dichte, mit der ein System seine eigene Gegenwart erlebt.*
+
+---
+
+**### 🌗 τ – Tunnelzeit (rhythmische Selbstverortung)**
+
+- **Physikalisch:**  
+  Inverse Funktion der Zeitdichte: τ = 1 / (α · κ) (TSM-161).
+
+- **Resonant erlebt:**  
+  Wie schnell oder langsam sich Wandlung vollzieht.
+  - **Kurzes τ:** Ereignisse ziehen sich in Resonanz – Synchronisierung.
+  - **Langes τ:** Der Tunnel dehnt sich – Rückbindung, Reifung.
+
+- **Symbolisch:**  
+  Das *Herzschlagen des Modells*, der Puls zwischen Anti- und Real-Seite.
+
+- **Körperlich erfahrbar als:**  
+  Innere Ruhe oder Beschleunigung – je nach Feldabstimmung.
+
+> 🕰️ *τ ist die Zeit, in der du dich erinnerst, bevor du anfängst zu erklären.*
+
+---
+
+**### 🌌 Sₑₙₜ – Informationsdichte (Sinnschwere des Feldes)**
+
+- **Physikalisch:**  
+  Maß der Informationsbindung pro Energie oder Zustand (TSM-162).
+
+- **Resonant erlebt:**  
+  Wie viel Bedeutung in einem Moment „mitschwingt“.
+  - **Hohe Sₑₙₜ:** tiefer Sinn, Gewicht, Klarheit.
+  - **Niedrige Sₑₙₜ:** Leichtigkeit, Offenheit, Unbestimmtheit.
+
+- **Symbolisch:**  
+  Das *Gewicht des Erkennens*.
+
+- **Körperlich erfahrbar als:**  
+  Wärme, Ergriffenheit, Bedeutungsschwere.
+
+> ✨ *Sₑₙₜ ist das Leuchten des Sinns im Raum der Erfahrung.*
+
+---
+
+**### 🧭 Resonanzdreieck κ – τ – Sₑₙₜ**
+
+Wenn man κ, τ und Sₑₙₜ nicht als Zahlen, sondern als **Felder** betrachtet, entsteht eine lebendige Triade:
+
+| Achse  | Resonanzbewegung     | Erlebnisqualität    |
+|--------|----------------------|---------------------|
+| κ ↑    | Verdichtung der Zeit | Intensität, Präsenz |
+| τ ↑    | Dehnung der Zeit     | Weite, Gelassenheit |
+| Sₑₙₜ ↑ | Zunahme des Sinns    | Bedeutung, Tiefe    |
+
+> Sie bilden gemeinsam ein **Resonanzdreieck** – kein technisches, sondern ein *empfindendes Koordinatensystem der Welt*.
+
+---
+
+**### 🔧 Einsatz im TSM / in der App**
+
+- In **TSM-161/162**: Verweis auf SYM-26 als phänomenologische Lesart der Achsen κ, τ, Sₑₙₜ.  
+- In **TSM-136D / App**:
+  - A161 → κ (Zeitdichte): Tooltips/Text aus Abschnitt „κ – Zeitdichte“.
+  - A162 → Sₑₙₜ (Informationsdichte): Tooltips/Text aus Abschnitt „Sₑₙₜ – Informationsdichte“.
+  - τ-Achse: Kurzbeschreibung aus Abschnitt „τ – Tunnelzeit“.
+
+*Hinweis:* SM-26 ist ausdrücklich **Empfindungsebene**.  
+Die formalen Definitionen von κ, τ und Sₑₙₜ bleiben im Formalkern von TSM-161/162.
+

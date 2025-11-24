@@ -1048,7 +1048,111 @@ Resonanzgeburt ⇔ **Autoresonanz** ∧ **τ-Lock** ∧ **Zonenwechsel → K/K+*
  gesellschaftliche, organisatorische und digitale Rückholprozesse (TSM-157).
 
 
-**Stand: 19.11.2025**
+
+**⚡Regel 24: --  Einheitliche Zeitdichte-Brücke (κ–τ–t)**
+
+**META-Reihe:** META-04 (Meta-Kanon · Zeit- und Skalenregeln)  
+**Status:** Arbeitsfassung 1.0  
+**Bezug:** TSM-127 (Zeitwechsler), TSM-151 (Gravitations-Resonanz), TSM-161 (Zeitdichtefeld κ), TSM-162 (Informationsgravitation)
+
+---
+
+**## 1. Zweck der Regel**
+
+META-04 Reg.24 definiert eine **einheitliche Brücke** zwischen
+
+- der physikalischen Koordinatenzeit **t**,  
+- der TSM-internen Tunnelzeit **τ**,  
+- und der Zeitdichte **κ** (Zustandsdichte pro Energieintervall).
+
+Ziel ist, dass alle TSM-Module, die mit „Zeit“ arbeiten, explizit angeben, **auf welcher Ebene** sie operieren und wie ihre Zeitgrößen in κ und τ übersetzt werden können.
+
+---
+
+**## 2. Kernregel (κ–τ–t)**
+
+**Reg.24.1 Dreifache Zeitreferenz**  
+Jedes TSM-Modul, das eine Zeitgröße verwendet, muss deklarieren, ob diese sich bezieht auf:
+
+1. **t** – externe/physikalische Zeit (Laboruhr, kosmische Zeit, Koordinatenzeit),  
+2. **τ** – Tunnelzeit (Eigenzeit des Tunnelsystems),  
+3. **κ** – Zeitdichte (Zustandsdichte im Sinne von TSM-161).
+
+**Reg.24.2 Standardabbildung κ → τ**  
+Die Tunnelzeit τ ist über κ definiert als
+
+τ(x,t) = 1 / (α · κ(x,t)),
+
+wobei α ein Normierungsfaktor ist, der für das jeweilige Modul/Setup angegeben werden muss (z. B. über einen Referenzfall, in dem τ mit einer physikalisch gemessenen Verweil- oder Resonanzzeit identifiziert wird).
+
+**Reg.24.3 Zeitdilatation über κ**  
+Zeitdilatationseffekte (z. B. gravitative oder informationsinduzierte) sind bevorzugt als Änderungen von κ zu formulieren. In schwachen Feldern wird angenommen:
+
+- geometrischer Beitrag:  
+  κ_geom(x) ≈ κ_∞ · [1 − η · Φ_geom(x)/c² + …],
+
+- informationsbasierter Beitrag:  
+  κ_ent(x) = λ_ent · g(S_ent(x)/S_*),
+
+sodass die Gesamtzeitdichte
+
+κ(x) = κ_geom(x) + κ_ent(x)
+
+und damit τ(x) vollständig aus κ bestimmt wird.
+
+**Reg.24.4 Konsistenz von t, τ und κ**  
+Wenn ein Modul eine Beziehung zwischen t und τ angibt (z. B. dτ/dt = f(Φ, …)), muss diese Beziehung so formuliert werden, dass sie mit einer geeigneten Wahl von κ(x,t) vereinbar ist.  
+Im Newton-Grenzfall gilt näherungsweise:
+
+dτ/dt ≈ 1 + Φ_eff(x)/c²,
+
+wobei Φ_eff = Φ_geom + Φ_ent über κ_geom und κ_ent definiert ist.
+
+---
+
+**## 3. Anwendungsbereiche**
+
+**(a) TSM-151: Gravitations-Resonanz**  
+Zeitdilatation und Frequenzverschiebung in Gravitationsfeldern sind über κ_geom(x) zu beschreiben; τ ergibt sich über die Standardrelation τ = 1/(α κ).
+
+**(b) TSM-161: Zeitdichtefeld κ**  
+TSM-161 ist das Referenzmodul für Definition und Dynamik von κ(x,t). Alle anderen Module, die κ verwenden, müssen ihre Annahmen mit TSM-161 kompatibel formulieren.
+
+**(c) TSM-162: Informationsgravitation**  
+Informations- und Entanglementeffekte gehen als Zusatz κ_ent(x,t) in das Gesamtfeld κ ein und werden über τ auf Zeitdilatation und optische Phasen verschaltet.
+
+**(d) TSM-136D: Datenintegration**  
+Wenn Datenachsen Zeitgrößen repräsentieren (z. B. HRV-Zeitskalen, Verweilzeiten, Latenzen), ist anzugeben, ob sie
+
+- direkt t (Labormessung),  
+- indirekt τ (Tunnelzeit),  
+- oder einen κ-Surrogat (Zustandsdichte pro Fenster)
+
+annähern. Wo möglich, sollen Surrogatachsen so skaliert werden, dass sie mit der κ-Definition aus TSM-161 verträglich sind.
+
+---
+
+**## 4. Konsistenz- und Dokumentationspflicht**
+
+**Reg.24.5 Dokumentationspflicht für Zeitmappings**  
+Module, die Zeittransformationen verwenden (t → τ, τ → κ etc.), müssen im Formalkern oder Anhang explizit
+
+- die verwendete α-Normierung,  
+- den Bezug zu κ (z. B. verwendete Fenster ΔE oder Surrogatdefinition),  
+- und eventuelle Näherungen (Linear-Limit, schwaches Feld, stationär vs. dynamisch)
+
+angeben.
+
+**Reg.24.6 Prüfbare Invarianzen**  
+Bevorzugt sollen Module einfache, empirisch prüfbare Invarianzen formulieren (z. B. K·τ ≈ const in stabilen Zonen), die helfen, die gewählte κ–τ-Skalierung an Daten zu überprüfen.
+
+---
+
+META-04 Reg.24 stellt damit sicher, dass der TSM-Zeitbegriff auf allen Ebenen (Physik, Daten, Tunnelmodelle) über das Zeitdichtefeld κ konsistent rückgekoppelt bleibt.
+
+
+
+**Stand: 24.11.2025**
 
 
 **📘META-05: -- Universelles Rückwärtsanalyse-Framework (URF)**

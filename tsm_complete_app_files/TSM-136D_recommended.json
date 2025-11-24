@@ -43,7 +43,24 @@
     },
     "2025-11-09T01:32:54Z: Added docs.cosonanz_gate_vs_report, detectors.cosonanz_tolerant, and exports.append_columns += 'C_hat'.",
     "2025-11-09T01:44:37Z: Added compat_aliases.zone_aliases and docs.principles.P6; ensured exports.append_columns includes 'C_hat'.",
-    "2025-11-19T00:00:00Z: Added constants.R_URK_max and extensions.urk (TSM-156 URK window; optional, non-breaking)."
+    "2025-11-19T00:00:00Z: Added constants.R_URK_max and extensions.urk (TSM-156 URK window; optional, non-breaking).",
+    {
+      "date": "2025-11-23",
+      "changes": [
+        "Annotated TSM-136D recommended config for κ/τ time-density integration (TSM-161).",
+        "Documented A161 (κ-Zeitdichte) and A162 (S_ent / Informationsdichte) in constants/docs.principles.",
+        "No numerical thresholds or detectors changed; structural extension only."
+      ],
+      "tag": "TSM-161+162-bridge"
+    },
+    {
+      "date": "2025-11-23",
+      "changes": [
+        "Added docs.resonance_axes with phänomenologische Beschreibungen der Achsen κ, τ und S_ent für App/Symbol-Ebene.",
+        "Keine Pipeline- oder Schwellenänderungen; rein dokumentarische Erweiterung."
+      ],
+      "tag": "TSM-161+162-resonance-axes"
+    }
   ],
   "_meta": {
     "_changelog_hint": "Polish: meta normalization, zones canonicalization, small compat additions.",
@@ -486,8 +503,8 @@
     "exit": 0.02
   },
   "meta": {
-    "updated": "2025-11-21T00:00:00Z",
-    "version": "2025-11-19.URK-lambda"
+    "updated": "2025-11-23T00:00:00Z",
+    "version": "2025-11-23.URK-lambda-kappa.resonance-axes"
   },
   "metrics": {
     "report": {
@@ -973,7 +990,11 @@
     "eps_phi_rad": 0.01745,
     "R_URK_max": 0.07,
     "lambda_min_rel": 0.2,
-    "lambda_max_rel": 0.8
+    "lambda_max_rel": 0.8,
+    "A161_symbol": "κ",
+    "A161_name": "Zeitdichte (kappa)",
+    "A162_symbol": "S_ent",
+    "A162_name": "Entanglement-/Informationsdichte"
   },
   "docs": {
     "cosonanz_gate_vs_report": {
@@ -1007,6 +1028,48 @@
             "K+"
           ]
         }
+      },
+      "T_kappa_tau": {
+        "name": "κ–τ–Zeitdichtebrücke",
+        "summary": "Dieses technische Prinzip dokumentiert, dass die Tunnelzeit τ über die Zeitdichte κ (TSM-161) und ggf. Informationsbeiträge (TSM-162, S_ent) skaliert wird.",
+        "references": [
+          "TSM-127",
+          "TSM-151",
+          "TSM-161",
+          "TSM-162"
+        ]
+      }
+    },
+    "resonance_axes": {
+      "kappa": {
+        "symbol": "κ",
+        "name": "Zeitdichte",
+        "short": "Zeitdichte / fühlbare Gegenwärtigkeit.",
+        "physikalisch": "Dichte der Zustände, die in einem Energiebereich aktiv sind (vgl. TSM-161, κ ≈ Δρ).",
+        "resonant": "Wie „eng“ oder „weit“ sich Zeit anfühlt: hohe κ → Zeit verdichtet sich; niedrige κ → Zeit verflüssigt sich.",
+        "symbolisch": "Das Atmen der Zeit selbst.",
+        "koerperlich": "Präsenz, Konzentration, Flow.",
+        "quote": "κ ist die Dichte, mit der ein System seine eigene Gegenwart erlebt."
+      },
+      "tau": {
+        "symbol": "τ",
+        "name": "Tunnelzeit",
+        "short": "Eigenrhythmus des Tunnelsystems (Zeitdehnung/-verdichtung).",
+        "physikalisch": "Inverse Funktion der Zeitdichte: τ = 1 / (α · κ) (TSM-161).",
+        "resonant": "Wie schnell oder langsam sich Wandlung vollzieht: kurzes τ → Synchronisierung; langes τ → Rückbindung, Reifung.",
+        "symbolisch": "Das Herzschlagen des Modells, der Puls zwischen Anti- und Real-Seite.",
+        "koerperlich": "Innere Ruhe oder Beschleunigung – je nach Feldabstimmung.",
+        "quote": "τ ist die Zeit, in der du dich erinnerst, bevor du anfängst zu erklären."
+      },
+      "S_ent": {
+        "symbol": "S_ent",
+        "name": "Informationsdichte",
+        "short": "Sinnschwere des Feldes (gebundener Sinn pro Zustand).",
+        "physikalisch": "Maß der Informationsbindung pro Energie oder Zustand (TSM-162).",
+        "resonant": "Wie viel Bedeutung in einem Moment mitschwingt: hohe S_ent → Gewicht, Klarheit; niedrige S_ent → Leichtigkeit, Offenheit.",
+        "symbolisch": "Das Gewicht des Erkennens.",
+        "koerperlich": "Wärme, Ergriffenheit, Bedeutungsschwere.",
+        "quote": "S_ent ist das Leuchten des Sinns im Raum der Erfahrung."
       }
     }
   },
