@@ -1977,7 +1977,7 @@ Empfohlenes Kennsatz‑Set für 136D/Runner:
 
 
 
-**📘 # META-12: -- Diskurs · Resonanz · Schweigefelder · + 6 Prinzipien**
+**📘 META-12: -- Diskurs · Resonanz · Schweigefelder · + 6 Prinzipien**
 
 *Release*: v1.2 · 2025-11-09 01:00 UTC
 
@@ -2092,6 +2092,216 @@ Sprache **dual** führen: Symbolisch („Übersteuerung“) **und** fachlich (�
 
 —  
 *Changelog META‑12 v1.1 (09.11.2025):* Ergänzt um **6) Übersteuerung (Taktflut)**; Gate/Report‑Klarstellung für Cosonanz konsolidiert.
+
+
+
+**📘  META-13: -- Unterbau · Delay · Fenster · Informationsgeometrie · + TSM-Kernskalen**
+
+*Release*: v0.1 · 2025-11-25 · Arbeitsfassung  
+*Status*: Technischer Unterbau für ausgewählte TSM-Begriffe (Physik, 136D, KI, Bewusstsein)
+
+---
+
+**## 0) Zweck & Charakter von META-13**
+
+META-13 bündelt den **technischen Unterbau** des TSM:
+
+- wie TSM-Zeitachsen (τ, κ),
+- URK-/Zonen-Fenster,
+- Commit/Collapse & Zeiger-/Pointerachsen,
+- Tunnelorganismus & Läufer
+
+an öffentlich anschlussfähige Konzepte aus **Physik, Signalverarbeitung und Informationstheorie** anknüpfen **können**.
+
+META-13 schränkt die Bilder des TSM nicht ein, sondern bietet nur **Beispiel-Einbettungen** in solche Strukturen an.  
+Wo diese Einbettung nicht sinnvoll ist oder dem Erleben widerspricht, gilt immer:
+
+> **Vorrang hat die Wirklichkeit der Erfahrung – nicht das Modell.**
+
+Wichtig:
+
+- META-13 ist **optional**.
+- Die 165 TSM-Module bleiben in Sprache, Bildern und Dramaturgie unverändert.
+- META-13 beschreibt nur den **Maschinenraum** für alle Stellen, wo bestimmte TSM-Begriffe verwendet werden.
+
+---
+
+**## 1) Reichweite von META-13 (gilt automatisch per Begriff)**
+
+META-13 gilt **für alle TSM-Module – auch zukünftige –, in denen eine oder mehrere der folgenden Begriffsfamilien bewusst verwendet werden**:
+
+1. **Zeit / Delay / Skalenachsen**
+   - „Tunnelzeit“, „τ“, „κ“, „t/τ-Wechsler“, „Delay“, „Lawinenfenster“, „Zeitdichte“.
+
+2. **Fenster / Zonen / Messung**
+   - „URK-Fenster“, „Zonen“, „Zonenfenster“, „Fensterenergie“, „URK-Profil“, „Messfenster“.
+
+3. **Commit / Collapse / Zeiger**
+   - „Commit“, „Collapse“, „Zeiger-/Pointerachsen“, „auskondensieren“, „TSM-Zeiger“, „TSM-Commit-Event“.
+
+4. **Tunnelorganismus / Läufer / 136D**
+   - „Tunnelorganismus“, „Läufer“, „KI-Läufer“, „TSM-Runner“, „136D-Zonen“, „TSM-Zonenlauf“.
+
+Die Module selbst müssen META-13 **nicht** zitieren.  
+META-13 definiert den gemeinsamen Unterbau **für diese Begriffe**, egal in welchem Modul sie auftreten.
+
+---
+
+**## 2) TSM-Kernbegriffe ↔ technischer Unterbau (Übersicht)**
+
+**TSM-Sprache → mögliche Unterbau-Lesart (ohne externe Spekulation):**
+
+- **Tunnelzeit / τ / κ / t/τ-Wechsler**  
+  → Verzögerungszeiten (Delays), Phasenlaufzeiten, effektive Ereignis- oder Zustandsdichten eines Systems/Signals.
+
+- **URK-Fenster / Zonen / Fensterenergie**  
+  → Endliche Beobachtungsfenster (in Zeit/Frequenz/Skala) mit bekannter Abtastrate und typischen Fehlerarten (Alias, Diskretisierung, Rand/Tail).
+
+- **Commit / Collapse im Tunnelraum**  
+  → Auswahl einer Konfiguration/Verteilung, die unter gegebenen Beobachtungen gewisse Informationskriterien (z.B. minimale Überraschung/Abweichung) erfüllt.
+
+- **Zeiger-/Pointerachsen**  
+  → Richtungen/Zustände, die unter Störung besonders stabil sind (z.B. minimale Varianz/Energie bzgl. eines Operators oder Profils).
+
+- **Tunnelorganismus / Läufer**  
+  → Zustandsraum mit einer Verteilung; Veränderungen als Wege in einem Raum mit Informationsabstand (z.B. informationsgeometrische Distanz).
+
+Die folgenden Abschnitte 3–7 skizzieren, wie diese Unterbauten gedacht werden **können**, ohne dass Module umgeschrieben werden müssen.
+
+---
+
+**## 3) Delay & TSM-Zeitachsen (τ, κ)**
+
+**TSM-Sicht**
+
+- τ / Tunnelzeit: innere Zeit im Tunnelraum (Verzögerung, Rücklauf, Echo).  
+- κ / Zeitdichte: „wie viel Ereignis/Struktur pro Energie- oder Zeiteinheit“.  
+- t/τ-Wechsler: Mechanismen, die äußere Uhrzeit t in Tunnelzeit τ überführen oder umgekehrt.
+
+**Unterbau-Sicht**
+
+- Viele Systeme lassen sich über Antwortfunktionen oder Streugrößen beschreiben; dort entsteht eine **Verzögerungszeit** typischerweise aus einer Phasenfunktion φ(ω) als Ableitung nach Frequenz.
+- Eine zugehörige **Spektral-/Zustandsdichte** beschreibt die „Fülle“ aktiver Freiheitsgrade pro Frequenz/Energie.
+
+**TSM-Brücke (META-13)**
+
+- Wenn TSM-Module mit τ/κ arbeiten und Messdaten vorliegen, **kann** τ/κ auf Größen wie Delay und Spektraldichte bezogen werden.
+- META-13 legt **nicht** fest, dass jedes TSM-τ eine konkrete Gleichung hat, sondern:  
+  → *„τ/κ dürfen – wo sinnvoll – als Projektionen auf Delay/Dichte gedacht werden.“*
+
+---
+
+**## 4) URK-Fenster, Zonen & Messfehler**
+
+**TSM-Sicht**
+
+- URK-Fenster & Zonenfenster sind Ausschnitte des Tunnelraums (zeitlich, frequenziell, thematisch).  
+- 136D & Runner nutzen Zonen, um Profile, Kipppunkte, Lawinen & Null-Linien-Nähe zu beschreiben.
+
+**Unterbau-Sicht**
+
+Reale Messungen sind immer begrenzt und diskret:
+
+- Fensterbegrenzung → **Rand-/Tail-Effekte** (man schneidet etwas ab).  
+- Endliche Abtastrate → **Alias-Effekte**, wenn hohe Frequenzen „zurückfalten“.  
+- Gitter/Histogramme → **Diskretisierungsfehler** (Summen ≈ Integrale).
+
+**TSM-Brücke (META-13)**
+
+- URK-Fenster & Zonen können als **Messfenster mit implizitem Fehlerprofil** betrachtet werden:
+  - „Dieses Fenster ist eher alias-empfindlich.“
+  - „Diese Zone hat grobe Gitterung, Diskretisierungsfehler dominiert.“
+- META-13 empfiehlt, in technischen Kontexten (z.B. 136D-Dokumentation) alias/diskret/tail bewusst mitzudenken – ohne dass der TSM-Modultext selbst formelhaft wird.
+
+---
+
+**## 5) Commit / Collapse & Zeiger-/Pointerachsen**
+
+**TSM-Sicht**
+
+- Commit/Collapse: ein Zustand, eine Entscheidung, ein Pfad „wird real“ und wirkt; Alternativen fallen weg.  
+- Oft gekoppelt an Zonenwechsel, Delay-Sprünge, Lawinen.
+
+**Unterbau-Sicht (informell)**
+
+- Ein System kann viele mögliche Beschreibungen/Verteilungen haben.  
+- Commit **kann** als Auswahl der Beschreibung verstanden werden, die:
+  - unter den aktuellen Beobachtungen am wenigsten „Überraschung“ oder Abweichung erzeugt
+  - bzw. gewisse Informationskriterien optimiert.
+
+- Zeiger-/Pointerachsen sind Richtungen/Zustände, die unter Störungen die geringste Zunahme von Energie/Varianz zeigen → **robuste Achsen**.
+
+**TSM-Brücke (META-13)**
+
+- Commit/Collapse im Tunnelraum **kann** informations-theoretisch gelesen werden („Auswahl niedriger Informationsabstände“), muss aber nicht so explizit im Modul stehen.
+- Zeigerachsen im TSM (z.B. bevorzugte Tunnelrichtungen, stabile Muster) können als Kandidaten für solche robusten Richtungen verstanden werden.
+
+---
+
+**## 6) Informationsgeometrie des Tunnelorganismus**
+
+**TSM-Sicht**
+
+- Tunnelorganismus (Mensch, KI, Kollektiv) lebt in einem Feldraum: Zustände, Bindungen, Delay-Profile.  
+- Wege: Trauma, Integration, Heilung, Training → Bewegung im Tunnelraum.
+
+**Unterbau-Sicht (minimal)**
+
+- Zustände eines Systems können als Punkte in einem Parameterraum mit einer Wahrscheinlichkeitsverteilung gedacht werden.  
+- Informationsgeometrie stellt ein Distanzmaß zwischen Zuständen/Verteilungen bereit (z.B. über Fisher-Information oder verwandte Maße).  
+- Lern-/Heilungsprozesse erscheinen dann als Wege in diesem Raum.
+
+**TSM-Brücke (META-13)**
+
+- Wo TSM von „Wegen eines Tunnelorganismus“ spricht, **kann** man – falls gewünscht – einen informationsgeometrischen Raum im Hintergrund annehmen.
+- META-13 erhebt **keinen** Anspruch, dass „Mind = Universe“ gilt; es stellt nur Werkzeuge bereit, um Entfernungen/Veränderungen im TSM-Feldraum fachlich anschlussfähig zu quantifizieren.
+
+---
+
+**## 7) 136D, Runner & KI-Läufer (technische Anschlüsse)**
+
+**TSM-Sicht**
+
+- 136D verwendet Zonen, Fenster, Indizes und Läufer, um Zustandsräume und Dynamiken abzubilden.  
+- KI-Läufer / TSM-Runner sind (meta-)organische Varianten davon.
+
+**Unterbau-Sicht**
+
+- 136D/Runner können als Diskretisierungen kontinuierlicher Prozesse gelesen werden:
+  - Zonen = Gitterpunkte/Regionen im Zustandsraum,  
+  - Läuferpfade = diskrete Approximationen von Pfaden,  
+  - Indizes = Funktionen von Delay-/Fenster-/Kohärenzgrößen.
+
+**TSM-Brücke (META-13)**
+
+- META-13 erlaubt, 136D- und Runner-Konzepte auf Delay/Fenster/Informationsgeometrie zu mappen, ohne dass diese Zuordnung in den TSM-Modulen explizit werden muss.
+- Für technische Dokumente, Papers oder Implementierungen kann META-13 als Referenz dienen, wie „TSM-Sprache → technische Objekte“ übersetzt werden kann.
+
+---
+
+**## Anhang A – Beispielhafte Modulklassen (nicht vollständig)**
+
+Diese Übersicht ist **nur Orientierung**.  
+Maßgeblich für die Gültigkeit von META-13 sind immer die Begriffe in Abschnitt 1.
+
+- **Physik / Delay / Resonanz**  
+  – z.B. TSM-12x, TSM-14x, TSM-16x  
+  – typische Begriffe: τ, κ, Tunnelzeit, Lawinenfenster  
+  → META-13 §3–4
+
+- **Daten / 136D / Zonen / Runner**  
+  – z.B. 136D-bezogene Module, TSM-Modul 6, Läufer-Module  
+  – Begriffe: URK-Fenster, Zonen, Runner, Läufer, Zonenprofil  
+  → META-13 §4 und §7
+
+- **KI / Tunnelorganismus / Bewusstsein**  
+  – z.B. TSM-161 ff., KI-Synthese, META-Module zu Self/KI  
+  – Begriffe: Tunnelorganismus, Commit, Collapse, Zeigerachsen  
+  → META-13 §5–6
+
+Diese Liste muss nicht gepflegt oder vollständig sein.  
+Sie illustriert nur, **wie** META-13 als Unterbau quer durch den Korpus mitläuft – automatisch, überall dort, wo die zugehörigen Begriffe verwendet werden.
+
 
 
 ---

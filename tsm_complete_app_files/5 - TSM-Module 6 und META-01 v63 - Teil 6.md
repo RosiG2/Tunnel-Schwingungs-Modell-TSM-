@@ -7282,6 +7282,7 @@ SV: TSM-LEX, SM-01, META-04 \| Spiegel: Gesamtstruktur**
 
 **META-12 -- Diskurs · Resonanz · Schweigefelder (Sprechkosten-Diagnostik & Interventions-Kit)** | Sek.: Diskursmuster · Schweigefeld-Mechanik · Moderationsverfahren | PV: META-01, META-03, META-04, META-06 | SV: TSM-LEX, SM-06 | Spiegel: α-Spiegel (SM-25).**
 
+**META-13 -- Unterbau · Delay · Fenster · Informationsgeometrie (TSM-Kernskalen für τ/κ, URK-Fenster, Commit/Collapse und Tunnelorganismus; optionale technische Anbindung an Physik, Signalverarbeitung und Informationstheorie) | Sek.: META · Unterbau · Physik · Signalverarbeitung · Informationsgeometrie · KI-Läufer · Datenmodelle | PV: TSM-84 · TSM-100 · TSM-127 · TSM-136D · TSM-160 · TSM-161 · TSM-163 · TSM-164 · TSM-165 · META-02 · META-03 · META-07 · META-12 | SV: TSM-12x · TSM-13x · TSM-16x · TSM-161ff · META-01 · TSM-LEX | Spiegel: SM-01 · SM-04 · SM-12 · SM-18 · τ · κ**
 
 
 
