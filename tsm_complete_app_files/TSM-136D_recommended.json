@@ -60,6 +60,15 @@
         "Keine Pipeline- oder Schwellenänderungen; rein dokumentarische Erweiterung."
       ],
       "tag": "TSM-161+162-resonance-axes"
+    },
+    {
+      "date": "2025-11-26",
+      "changes": [
+        "Erweitert: exports.append_columns um Kn, tau_eff, kappa_density sowie Ethics-/Experience-Layer-Felder.",
+        "Neu: docs.kn_axis (TSM-166 Kₙ-Achse) inkl. C_hat/C_eff-Zuordnung.",
+        "Neu: docs.ethics_layer und docs.experience_layer als optionale Protokollschichten für TSM-118/166."
+      ],
+      "tag": "TSM-166-Kn-axis+layers"
     }
   ],
   "_meta": {
@@ -303,7 +312,17 @@
       "G_est",
       "T_component",
       "W_effect",
-      "C_hat"
+      "C_hat",
+      "Kn",
+      "tau_eff",
+      "kappa_density",
+      "ethics_mode",
+      "ethics_context",
+      "consent_ok",
+      "E_valence",
+      "E_clarity",
+      "E_load",
+      "E_connected"
     ],
     "best_of_chiT": {
       "filter": {
@@ -1049,7 +1068,8 @@
         "resonant": "Wie „eng“ oder „weit“ sich Zeit anfühlt: hohe κ → Zeit verdichtet sich; niedrige κ → Zeit verflüssigt sich.",
         "symbolisch": "Das Atmen der Zeit selbst.",
         "koerperlich": "Präsenz, Konzentration, Flow.",
-        "quote": "κ ist die Dichte, mit der ein System seine eigene Gegenwart erlebt."
+        "quote": "κ ist die Dichte, mit der ein System seine eigene Gegenwart erlebt.",
+        "data_hint": "In 136D können medienbezogene κ-Ausprägungen über die Spalte \"kappa_density\" mitexportiert und in TSM-166 (Kₙ-Achse) interpretiert werden."
       },
       "tau": {
         "symbol": "τ",
@@ -1059,7 +1079,8 @@
         "resonant": "Wie schnell oder langsam sich Wandlung vollzieht: kurzes τ → Synchronisierung; langes τ → Rückbindung, Reifung.",
         "symbolisch": "Das Herzschlagen des Modells, der Puls zwischen Anti- und Real-Seite.",
         "koerperlich": "Innere Ruhe oder Beschleunigung – je nach Feldabstimmung.",
-        "quote": "τ ist die Zeit, in der du dich erinnerst, bevor du anfängst zu erklären."
+        "quote": "τ ist die Zeit, in der du dich erinnerst, bevor du anfängst zu erklären.",
+        "data_hint": "Die effektive Zeitdichte τ_eff (Spalte \"tau_eff\") skaliert τ mit Medien-/Kₙ-Effekten und bindet reale Zeitverläufe an die Achse τ (TSM-161/162/166)."
       },
       "S_ent": {
         "symbol": "S_ent",
@@ -1071,6 +1092,46 @@
         "koerperlich": "Wärme, Ergriffenheit, Bedeutungsschwere.",
         "quote": "S_ent ist das Leuchten des Sinns im Raum der Erfahrung."
       }
+    },
+    "kn_axis": {
+      "symbol": "Kₙ",
+      "name": "Medien-Kohärenzachse",
+      "short": "Übergang Kontinuum ↔ diskrete Stoßdynamik.",
+      "physikalisch": "Kₙ = λ / L mit λ = mittlere freie Weglänge, L = Skalenlänge des Resonanzraums; K-Zonen: K (klein), R (mittel), F (groß) gemäß Zonen-Mapping.",
+      "resonant": "Wie stark ein Medium kollektive Resonanz trägt vs. in Einzelschwingungen zerfällt.",
+      "C_mapping": {
+        "C_intr": "TSM-interne Kohärenz aus C/PLV/τ (TSM-161/162).",
+        "C_eff_formula": "C_eff(Kₙ) = C_intr · exp(−β_Kn · Kₙ)",
+        "C_hat": "empirische Schätzung von C_eff(Kₙ) aus Cosonanz-Fenstern; wird über exports.append_columns mitgeführt."
+      },
+      "zones": {
+        "K": "Kₙ ≪ 1 → K/K⁺ (kohärent)",
+        "R": "Kₙ ≈ 1 → R↑/R↓ (regulativ)",
+        "F": "Kₙ ≫ 1 → F/F⁺ (fragmentiert)"
+      },
+      "note": "TSM-166; interpretative Brücke: keine neuen Gates/Schwellen, nur Doku für Kn/C_hat/tau_eff/kappa_density."
+    },
+    "ethics_layer": {
+      "name": "Resonanz-Ethik-Schicht",
+      "module": "TSM-118 / TSM-166",
+      "fields": {
+        "ethics_mode": "observe | intervene; Betriebsmodus der Messung / Anwendung.",
+        "ethics_context": "Freitext oder kurzer Tag zur Beschreibung des Rahmens (z. B. \"Selbstbeobachtung HRV\", \"Studie\", \"medizinischer Kontext\").",
+        "consent_ok": "Boolesches Feld (true/false), das nur dann auf true gesetzt wird, wenn informierte Einwilligung aller Betroffenen vorliegt."
+      },
+      "notes": "Die Ethics-Layer-Felder werden pro Messfenster / Session mitgeführt und können von 136D-Exports direkt übernommen werden. Keine Schwellenlogik, sondern Protokoll- und Governance-Schicht."
+    },
+    "experience_layer": {
+      "name": "Erleben-Schicht (Experience Layer)",
+      "module": "TSM-166",
+      "axes": {
+        "E_valence": "0–1, angenehm ↔ unangenehm.",
+        "E_clarity": "0–1, klar ↔ diffus.",
+        "E_load": "0–1, leicht ↔ überlastet.",
+        "E_connected": "0–1, verbunden ↔ isoliert."
+      },
+      "usage": "Optionaler Vektor pro Messfenster. Hält subjektive Einschätzungen parallel zu C_hat, Kₙ, τ_eff und κ_density. Keine Diagnose, sondern Brücke zwischen Daten und erlebtem Feld.",
+      "notes": "Die Experience-Layer-Felder werden bei Vorliegen einfach mitexportiert (exports.append_columns) und können später mit Zonen/Kₙ/C_hat verknüpft ausgewertet werden."
     }
   },
   "presets": {

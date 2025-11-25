@@ -957,6 +957,40 @@ if __name__ == "__main__":
 # Usage examples:
 #   python tsmgr_v02.py --annotate --in trajectory.csv --out trajectory_annotated.csv
 #   python tsmgr_v02.py --annotate --in trajectory.csv --out trajectory_annotated.csv --no-f
+# --------------------------------------------------------------------
+# TSM-166 / 136D-Hinweis zur Spaltenbehandlung (Kn, tau_eff, kappa_density, C_hat,
+# Ethics- und Experience-Layer)
+# --------------------------------------------------------------------
+# Der eingebaute Annotator (_tsm_map_columns_for_flags / tsm_cli_qpre_annotate)
+# arbeitet minimal-invasiv:
+#   - er normalisiert nur die für Q_pre/F-Phase nötigen Spalten
+#     (time/t, C, dphi_*, Qhat, tau_lock)
+#   - alle anderen Spalten bleiben unverändert im DataFrame erhalten.
+#
+# Für die Kopplung an TSM-136D / TSM-166 gilt:
+#   • Folgende Spaltennamen werden (falls vorhanden) einfach durchgereicht
+#     und später vom 136D-Analyzer verwendet:
+#         - "Kn"            → Medien-Kohärenzachse (Kₙ = λ / L)
+#         - "tau_eff"       → effektive Zeitdichte (Achse τ)
+#         - "kappa_density" → Dichte der Tunnelkrümmung (Achse κ)
+#         - "C_hat"         → empirische Kohärenzschätzung (≈ C_eff(Kₙ))
+#         - "ethics_mode"   → observe | intervene (TSM-118 Rahmen)
+#         - "ethics_context"→ Kurzbeschreibung des Kontexts
+#         - "consent_ok"    → bool, explizite Einwilligung ja/nein
+#         - "E_valence"     → Erleben-Achse: angenehm ↔ unangenehm
+#         - "E_clarity"     → Erleben-Achse: klar ↔ diffus
+#         - "E_load"        → Erleben-Achse: leicht ↔ überlastet
+#         - "E_connected"   → Erleben-Achse: verbunden ↔ isoliert
+#
+#   • Der Runner/Annotator berechnet diese Größen NICHT selbst, sondern
+#     liest sie – falls vorhanden – aus trajectory.csv / zones.csv und
+#     lässt sie unverändert stehen.
+#
+# Damit bleibt tsmgr_v02:
+#   - vollständig rückwärtskompatibel
+#   - aber kompatibel zur 136D-/TSM-166-Auswertung, sobald diese Spalten
+#     im CSV auftauchen.
+# --------------------------------------------------------------------
 def _tsm_map_columns_for_flags(df):
     import numpy as np
     import pandas as pd

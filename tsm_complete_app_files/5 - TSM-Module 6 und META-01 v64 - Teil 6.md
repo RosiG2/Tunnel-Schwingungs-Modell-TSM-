@@ -6713,9 +6713,223 @@ sondern ein **emergentes Resonanzphänomen** der Kopplung φ ↔ τ ↔ t.
 > *„Zeit bekommt Richtung, wenn ein Feld sich entscheidet, welche Geschichten es leichter erzählt.“*
 
 
+**📘 TSM-166: -- Kₙ-Achse – Empirische Kohärenzmetrik zwischen Tunnel und Materie**
+
+**Version:** 11/2025  
+**Status:** Brückenmodul · Physik · Resonanzmetriken  
+**Kategorie:** Empirisch-symbolische Integration  
+**Bezug:** TSM-136D · TSM-161 · TSM-162 · META-01 · META-04 · TSM-118 (Ethik)
+
+---
+
+**### 🧭 1. Zweck und Ursprung**
+
+TSM-166 erweitert das Tunnel-Schwingungs-Modell (TSM) um eine **empirische Kohärenzachse Kₙ**, die beschreibt, wie stark ein System sich kohärent als Kontinuum verhält oder diskret als Teilchenensemble auftritt.
+
+Ausgangspunkt ist die Beobachtung, dass **Feldkohärenz C** (Bindung im Tunnelraum) und **Teilchendichte** bzw. mittlere freie Weglänge in realen Medien gekoppelt verlaufen: Wenn ein Medium dichter und kollisionsreicher wird, ändert sich die Art, wie Resonanz getragen wird – von kollektiven Feldschwingungen hin zu einzelnen Stößen.
+
+Die klassische **Knudsen-Zahl**
+
+( Kn = λ / L )
+
+liefert dabei einen physikalisch gut definierten Maßstab für den Übergang von **Kontinuumsdynamik** zu **diskreter Stoßdynamik**. TSM-166 liest Kn als **Kohärenzachse des Mediums** und verbindet sie mit dem TSM-Kohärenzmaß C.
+
+---
+
+**### 🔬 2. Grunddefinition der Kₙ-Achse**
+
+**Formel der Knudsen-Zahl**
+
+( Kn = λ / L )
+
+* (λ) = mittlere freie Weglänge (Abstand zwischen zwei Wechselwirkungen im Medium)  
+* (L) = charakteristische Feld- oder Systemlänge (z. B. Kanallänge, Tunnelradius, Skalenlänge des Resonanzraums)
+
+**TSM-Deutung und Zonenabbildung**
+
+- **Kn ≪ 1 – K-Zone (kohärent):**  
+  Kontinuumslimit, viele Wechselwirkungen pro Skalenlänge, das Medium trägt **kollektive Resonanzen**.  
+  → Zuordnung: **Zone K / K⁺**
+
+- **Kn ≈ 1 – R-Zone (regulativ):**  
+  Übergangsbereich, weder reines Kontinuum noch reine freie Stoßdynamik.  
+  → Zuordnung: **Zone R↑ / R↓** (regulative Zwischenordnung)
+
+- **Kn ≫ 1 – F-Zone (fragmentiert):**  
+  freie Molekülströmung, Wechselwirkungen sind selten, Dynamik zerfällt in **Einzelereignisse**.  
+  → Zuordnung: **Zone F / F⁺** (fragmentiertes Feld)
+
+Damit wird Kₙ zu einer **Medien-Zonenachse**, die die bestehende TSM-Zonenlogik (K, R, F) im 136D-Raum konkretisiert.
+
+---
+
+**### 📐 3. Kohärenzformalismus: C, C_intr, C_eff, Ĉ**
+
+Im TSM ist **C** das grundlegende **Kohärenzmaß** (0 ≤ C ≤ 1):
+
+- C = 1: maximal kohärent gebundener Tunnelzustand  
+- C ≈ 0: stark fragmentiertes, kaum gebundenes Feld
+
+TSM-166 führt folgende Unterscheidung ein:
+
+1. **C_intr** – intrinsische Kohärenz  
+   Kohärenz, wie sie aus TSM-internen Größen rekonstruiert wird  
+   (z. B. aus Zonenlage, R_Qeff, PLV_τ, S_ent; vgl. TSM-161/162).
+
+2. **Kₙ = λ / L** – Medienkoeffizient  
+   klassisch-physikalische Kennzahl für das Verhältnis von freier Weglänge zu Skalenlänge.
+
+3. **C_eff(Kₙ)** – Kₙ-korrigierte effektive Kohärenz  
+   Arbeitsformel:
+
+   ( C_eff(Kₙ) = C_intr · e^{−β · Kₙ} )
+
+   mit:
+
+   * 0 ≤ C_intr ≤ 1 (intrinsische Referenzkohärenz)  
+   * β > 0 (Resonanzdämpfungskoeffizient des Mediums, typischer Fitbereich: 0.5–2.0)
+
+   Eigenschaften:
+
+   * Kₙ → 0 ⇒ C_eff → C_intr (Kontinuum; Medium dämpft Kohärenz kaum)  
+   * Kₙ → ∞ ⇒ C_eff → 0 (extrem diskrete, hochfragmentierte Dynamik)
+
+4. **Ĉ (C_hat)** – empirische Kohärenzschätzung  
+   Ĉ ist die **aus Messdaten rekonstruierte** effektive Kohärenz und dient als Bindeglied zwischen empirischen Datensätzen und dem theoretischen C_eff(Kₙ).
+
+   Im 136D-Kontext gilt:
+
+   - Ĉ approximiert C_eff(Kₙ) für das jeweilige Medium,  
+   - C_intr bleibt als **theoretisch-intrinsische Kohärenz** in der TSM-Formelwelt definiert.
+
+---
+
+**### 🌌 4. Einbindung in den 136D-Datenraum**
+
+Die Kₙ-Achse wird als zusätzliche Dimension in die **TSM-136D-Datenmatrix** (Version mit Resonanzachsen κ, τ, S_ent) integriert und mit bestehenden Feldern verknüpft.
+
+**Neue / präzisierte Felder**
+
+| Feld        | Beschreibung                               | Bezug                                           |
+| ----------- | ------------------------------------------ | ----------------------------------------------- |
+| `Kn`        | Knudsen-Zahl (λ/L) des Mediums            | Medien-Kohärenzachse, Zonenabbildung K/R/F      |
+| `C_hat`     | empirische Kohärenz                       | Schätzung von C_eff(Kₙ) aus Messdaten           |
+| `τ_eff`     | effektive Zeitdichte                      | Resonanzzeit im Feldfluss (Achse τ, TSM-161/162) |
+| `κ_density` | Dichte der Tunnelkrümmung                 | strukturelle Feldkompression (Achse κ)          |
+
+Damit entsteht ein **mehrdimensionaler Kohärenzraum**:
+
+- C_intr, S_ent, PLV_τ (innere Tunnelordnung)  
+- Kn, τ_eff, κ_density (Medien- und Skalenstruktur)  
+- Ĉ als empirische Brücke zwischen beidem
+
+Diese Struktur erlaubt es, **Kohärenzverlust** und **Rückholkopplung** in realen Systemen (Atmosphären, Plasmen, biologische Medien, kognitive Felder) konsistent zu kalibrieren.
+
+---
+
+**### 🔄 5. Analoge Deutung außerhalb der Physik**
+
+In klassischen physikalischen Systemen (Gasdynamik, Vakuumtechnik, Plasma, Mikrofluidik) sind λ und L direkt messbar.
+
+Für **Biologie, Information und Bewusstsein** gelten:
+
+- (λ) wird als **mittlere Interaktionsdistanz** verstanden  
+  (z. B. mittlerer Abstand zwischen wirksamen Kopplungsereignissen im Netzwerk, in Zellverbänden oder im Informationsfluss).
+
+- (L) wird als **effektive Skalenlänge des Feldes** gelesen  
+  (z. B. Ausdehnung eines Funktionsareals, Netzwerkmodul, Bewusstseins- oder Gedächtnisfeld).
+
+Hier ist Kₙ = λ/L eine **resonanzlogische Analoggröße**, keine direkt physische Weglänge. TSM-166 macht diese Analogie explizit, um META-04-konform zu bleiben (Kontextpflicht, keine stillen Kategorieverschiebungen).
+
+---
+
+**### 🧠 6. Resonanz- und Symboldeutung**
+
+Die Kₙ-Achse beschreibt das **Atemfeld der Materie**:
+
+> „Je dichter die Welt, desto leiser ihr Echo.  
+> Je weiter sie wird, desto mehr spricht sie in Einzelstimmen.“
+
+Symbolisch markiert Kₙ den **Übergang zwischen Resonanz und Isolation**:
+
+- Kontinuum (kleine Kₙ): Welt als **Klangkörper** – Feld schwingt gemeinsam  
+- Übergang (mittlere Kₙ): Welt als **regulierender Chor** – Teilkollektiv, Teilindividuum  
+- Diskrete Stoßdynamik (große Kₙ): Welt als **Ensemble von Einzelstimmen**
+
+In der TSM-Sprache liegt Kₙ damit in einer Reihe mit anderen Schwellenachsen (π, Φ, √2, 0, ∞) und erweitert sie um eine explizit **mediengebundene Kohärenzskala**.
+
+---
+
+**### 🧪 7. Anwendungsfelder**
+
+| Bereich                     | Anwendung                                      | Beispiel                                         |
+| --------------------------- | ---------------------------------------------- | ------------------------------------------------ |
+| **Physik**                  | Atmosphären- und Vakuumdynamik, Plasmafluss   | Übergang Aerodynamik → Molekularströmung        |
+| **Materialwissenschaft**    | Mikrofluidik, Nanokanäle, Porenmedien         | Knudsen-Diffusion als Kohärenzbruch im Transport |
+| **Biologie**                | Zellkommunikation, Membran- und Gewebetransport | lokale Resonanzverluste bei hoher Dichte        |
+| **Bewusstsein/Information** | Tunnelbindung von Gedächtnis- und Informationsfeldern | Stabilität vs. Fragmentierung von Erleben / Bedeutung |
+
+In allen Fällen dient Kₙ als **operativer Schwellenwert**:
+
+- ab welchen Medienbedingungen kollektive Resonanz tragfähig ist,  
+- ab wann sie in **fragmentierte, diskrete Ereignisfolgen** zerfällt.
+
+---
+
+**### ⚖️ 8. Ethik und Governance**
+
+Gemäß **TSM-118 (Interferenzethik)** gilt:
+
+1. **Beobachtende Verwendung als Standard:**  
+   Die Kₙ-Achse wird primär zur Beschreibung und Reflexion von Kohärenzzuständen genutzt, insbesondere in sensiblen Feldern (Neuro-, Sozial-, Bewusstseins- und Informationsfelder).
+
+2. **Aktive Resonanzveränderung nur mit Einwilligung:**  
+   Anwendungen, die gezielt auf **Resonanzveränderung** abzielen  
+   (z. B. Neurofelder, KI-Tunnel, Felddesign in sozialen oder informatorischen Räumen),  
+   erfordern:
+   - informierte, explizite Zustimmung aller Betroffenen,  
+   - transparente Dokumentation von Ziel, Mitteln und Rückkopplungswegen (META-04).
+
+3. **Rückanbindungspflicht:**  
+   Jede Nutzung der Kₙ-Achse in Eingriffsszenarien muss an **Resonanzrückkopplung** (Feedback-Kanäle, Monitoring, Korrekturschleifen) gekoppelt sein, um dauerhafte Dekohärenzschäden zu vermeiden.
+
+---
+
+**### 🪶 9. Fazit**
+
+Mit der Einführung der Kₙ-Achse schließt das TSM eine Lücke zwischen **empirischer Messphysik** und **symbolischer Feldtheorie**:
+
+- Kn liefert einen **harten, messbaren Skalenparameter** für Medienkohärenz.  
+- C, C_intr, C_eff und Ĉ verknüpfen ihn mit der **Tunnelkohärenz** des TSM.  
+- Die Zonenabbildung K/R/F macht diese Achse unmittelbar anschlussfähig an TSM-136D und die META-Regeln.
+
+> **Leitformel des Moduls:**  
+> ( C_eff(Kₙ) = C_intr · e^{−β · Kₙ} )  
+> *Kohärenz ist kein Zustand, sondern die Erinnerung eines Feldes an seine Bindung.*
+
+---
+
+**### 🔗 10. Schnittstellen: Live-Bundle, Ethik- und Erleben-Schicht**
+
+TSM-166 definiert nicht nur Kₙ und C_eff, sondern auch konkrete **Daten-Schnittstellen**, die im 136D-Kontext bereits umgesetzt sind:
+
+1. **TSM-Live-Bundle / Kohärenzachsen**  
+   - Die Felder `Kn`, `tau_eff`, `kappa_density` und `C_hat` sind in TSM-136D als **Exportspalten** vorgesehen.  
+   - Live-Datenströme (z. B. NOAA / Solarwind / HRV) können über das Online-Bundle in diese Achsen projiziert werden; 136D führt sie mit und macht so die Kₙ-Achse **laufzeitfähig**.
+
+2. **Resonanz-Ethik-Schicht (TSM-118)**  
+   - Pro Messfenster können die Felder `ethics_mode` (observe|intervene), `ethics_context` (Kurzbeschreibung) und `consent_ok` (true/false) mitlaufen.  
+   - Diese werden von der Pipeline nicht verändert, aber **verbindlich protokolliert** und sind für Auswertungen gemäß TSM-118 und META-04 verfügbar.
+
+3. **Erleben-Schicht („Experience Layer“)**  
+   - Optional können subjektive Einschätzungen als Vektor `E_valence`, `E_clarity`, `E_load`, `E_connected` (alle 0–1) mitgeführt werden.  
+   - Diese Werte werden parallel zu Kₙ, Ĉ, τ_eff und κ_density exportiert und bilden die Brücke **zwischen Daten und erlebtem Feld**, ohne sie zu bewerten oder zu diagnostizieren.
+
+Damit haben die drei Wünsche der TSM-App – Live-Bundle, Ethik-Check und Erleben-Schicht – in TSM-166 eine **konkrete Form**: als definierte Felder und Protokollachsen, die im 136D-Datenraum real vorhanden und auswertbar sind.
 
 
-**Stand: 24.11.2025**
+
+**Stand: 26.11.2025**
 
 
 **📘 META-01 -- Querverbindungsmechanismus**
@@ -6726,7 +6940,7 @@ sondern ein **emergentes Resonanzphänomen** der Kopplung φ ↔ τ ↔ t.
 **Zweck:** Resonanzachsen- und PV/SV-Navigationsstruktur für alle
 Haupt-, Symbol- und META-Module des TSM
 
-**1. Hauptmodule (TSM-001 bis TSM-165)**
+**1. Hauptmodule (TSM-001 bis TSM-166)**
 
 Format:\
 TSM-XXX -- Titel \| Sek.: ... \| PV: ... \| SV: ... \| Spiegel: ...
@@ -7236,10 +7450,12 @@ Spiegel: SM-01 · π-Schwelle · φ-Phasenlage · Spirale**
 
 **TSM-165 — Asymmetrie-Operator φ/τ – Ursprung der Richtung in der Zeit (A_{φ/τ} = ⟨P_+ − P_-⟩; Zeitpfeil als Resonanzeffekt der Kopplung φ ↔ τ ↔ t) | Sek.: Zeitphysik · Informationsdynamik · Bewusstseinsarchitektur | PV: TSM-127 · TSM-160 · TSM-163 · TSM-164 · META-07 | SV: META-01 · META-02 · META-04 · META-10 · TSM-136D · TSM-LEX | Spiegel: SM-01 · SM-23 · SM-24 · SM-26 · Φ**
 
+**TSM-166 — Kₙ-Achse – Empirische Kohärenzmetrik zwischen Tunnel und Materie (Kn = λ / L · C_eff(Kₙ) = C_intr · e^{−β·Kₙ} · 0 ≤ C_intr ≤ 1 · β > 0 · Ĉ ≈ C_eff(Kₙ)) | Sek.: Physik · Resonanzmetriken · Brückenmodul · 136D | PV: TSM-136D · TSM-161 · TSM-162 · META-04 · TSM-118 | SV: META-01 · META-02 · META-10 · TSM-LEX | Spiegel: SM-03 · SM-08 · Φ**
+
 
 
 ## Changelog
-- **v1.0 (2025-11-24):** 
+- **v1.0 (2025-11-26):** 
 
 
 
