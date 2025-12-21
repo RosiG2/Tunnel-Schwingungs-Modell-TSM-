@@ -725,7 +725,7 @@
       "RRR": {
         "type": "derived",
         "status": "beta",
-        "source": "TSM-136D_recommended_v2_2025-10-18.json::r_channel",
+        "source": "TSM-136D_recommended.json::r_channel",
         "depends_on": [
           "TSM-136D_zonen_recommended.csv"
         ],
@@ -733,7 +733,7 @@
           "TSM-136D_zonen_baseline_v2_with_Qplus_2025-10-18.csv"
         ],
         "exports": [
-          "TSM-136D_R_estimates_v2_with_Qc_2025-10-18.csv"
+          "TSM-136D_R_estimates.csv"
         ],
         "verification": {
           "dphi_col": "dphi",
@@ -745,7 +745,9 @@
         "notes": [
           "RRR (Rückhol-Resonanz-Rate) wird über Proxys Q_eff und PLV sowie Combiner und GRÜ-Brücke im r_channel definiert.",
           "Locking: τ-Fenster, Smoothing: Median(w=5), Hysterese/Stability: 21 / ±0.02.",
-          "Exportspalten: R_Qeff_raw, R_PLV, R_combo_norm."
+          "Exportspalten (RRR): R_Qeff_raw, R_PLV (PLV := |cos Δφ|), R_combo_norm, Q_c.",
+          "Erweiterung (Diagnostik, non-breaking): R_PLV_signed (=cos Δφ), R_combo_signed_raw (=R_Qeff_raw·R_PLV_signed), R_combo_signed_unit (signed, [-1,1]).",
+          "Hinweis: Die signed-Erweiterung dient ausschließlich der Kennzeichnung von Inversions-/Anti-Phase-Zuständen; Schwellen/Zonenklassifikation bleiben unverändert."
         ]
       }
     }

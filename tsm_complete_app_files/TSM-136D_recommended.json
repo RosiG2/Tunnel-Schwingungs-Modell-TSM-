@@ -69,6 +69,15 @@
         "Neu: docs.ethics_layer und docs.experience_layer als optionale Protokollschichten für TSM-118/166."
       ],
       "tag": "TSM-166-Kn-axis+layers"
+    },
+    {
+      "date": "2025-12-18",
+      "version": "v4.1.0-phi-gate-signed",
+      "changes": [
+        "Added diagnostic signed φ-gate overlay (PLV_signed, G_phi, phase_type, inversion_flag).",
+        "Aligned r_channel export schema with Q_c + signed R fields; removed HiddenBadge from export columns (kept badge rule as derived/UI).",
+        "No changes to zones_6, thresholds, hysteresis, stability, or R_combo_norm definition."
+      ]
     }
   ],
   "_meta": {
@@ -322,7 +331,15 @@
       "E_valence",
       "E_clarity",
       "E_load",
-      "E_connected"
+      "E_connected",
+      "G_phi",
+      "phase_type",
+      "inversion_flag",
+      "F_phi",
+      "C_phi_signed",
+      "R_PLV_signed",
+      "R_combo_signed_raw",
+      "R_combo_signed_unit"
     ],
     "best_of_chiT": {
       "filter": {
@@ -499,6 +516,41 @@
         "META-04",
         "META-10"
       ]
+    },
+    "phi_gate_signed": {
+      "module": "TSM-136D",
+      "notes": "Signedes φ-Gate (additives Overlay): macht Anti-Phase sichtbar (cos(dphi)), ohne Legacy-Zonenlogik oder R_combo_norm zu ändern.",
+      "inputs": [
+        "dphi",
+        "F_cap",
+        "C_cl",
+        "tau"
+      ],
+      "outputs": [
+        "G_phi",
+        "phase_type",
+        "inversion_flag",
+        "F_phi",
+        "C_phi_signed",
+        "R_PLV_signed",
+        "R_combo_signed_raw",
+        "R_combo_signed_unit"
+      ],
+      "definition": {
+        "G_phi": "cos(dphi)",
+        "phase_type": "inphase if G_phi>=+0.5; antiphase if G_phi<=-0.5; else interference",
+        "inversion_flag": "G_phi<0",
+        "F_phi": "F_cap * G_phi",
+        "C_phi_signed": "C_cl * G_phi",
+        "R_PLV_signed": "cos(dphi)",
+        "R_combo_signed_raw": "(tau/max(|dphi|,epsilon_rad)) * R_PLV_signed",
+        "R_combo_signed_unit": "2*minmax(R_combo_signed_raw)-1"
+      },
+      "governance": [
+        "META-01",
+        "META-04"
+      ],
+      "noninvasive": true
     }
   },
   "governance": {
@@ -556,7 +608,7 @@
         "Logge verwendete eps_deg und Quelle (empfohlen vs. Kontext)",
         "Logge min/max/median für R_Qeff_raw, R_PLV, R_combo_norm",
         "Zonenanteile (zones_6) pro Export",
-        "Logge HiddenBadge-Anteil gesamt und je zone3_label (kohärent/regulativ/fragmentiert)"
+        "Logge signed-φ-Anteile: Anteil (R_PLV_signed<0) gesamt und je zone3_label (diagnostisch)."
       ]
     },
     "report_preview": {
@@ -734,24 +786,39 @@
       "export": {
         "columns": [
           {
-            "desc": "τ / max(|Δφ|, ε_rad)",
             "name": "R_Qeff_raw",
-            "type": "float"
+            "type": "float",
+            "desc": "τ / max(|Δφ|, ε_rad)"
           },
           {
-            "desc": "|cos(Δφ)|",
             "name": "R_PLV",
-            "type": "float"
+            "type": "float",
+            "desc": "|cos(Δφ)|"
           },
           {
-            "desc": "minmax(R_Qeff_raw*R_PLV)",
             "name": "R_combo_norm",
-            "type": "float"
+            "type": "float",
+            "desc": "minmax(R_Qeff_raw*R_PLV)"
           },
           {
-            "desc": "true iff derived.hidden_sector_badge.rule erfüllt",
-            "name": "HiddenBadge",
-            "type": "bool"
+            "name": "Q_c",
+            "type": "float",
+            "desc": "Quanten‑Kohärenzmaß (Labor→TSM‑Brücke, v1)"
+          },
+          {
+            "name": "R_PLV_signed",
+            "type": "float",
+            "desc": "cos(Δφ) (signed; diagnostisch)"
+          },
+          {
+            "name": "R_combo_signed_raw",
+            "type": "float",
+            "desc": "R_Qeff_raw * R_PLV_signed (signed; roh)"
+          },
+          {
+            "name": "R_combo_signed_unit",
+            "type": "float",
+            "desc": "signed, [-1,1]; normiert über dataset"
           }
         ],
         "file": "TSM-136D_R_estimates.csv",
@@ -801,7 +868,8 @@
       },
       "proxies": {
         "PLV": "abs(cos(dphi))",
-        "Q_eff": "tau / max(dphi, epsilon_rad)"
+        "Q_eff": "tau / max(dphi, epsilon_rad)",
+        "PLV_signed": "cos(dphi)"
       },
       "smoothing": {
         "apply_in_locked_windows_only": true,
