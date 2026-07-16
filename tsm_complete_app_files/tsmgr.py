@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""TSM compact operations runner v6.2.
+"""TSM compact operations runner v7.2.
 
 Standard-library-only reference runner for the active TSM corpus package.
 It is a synthetic/numerical work runner, not empirical validation and not a
@@ -945,21 +945,72 @@ def validate_operations(bundle: dict) -> tuple[dict, dict]:
                 raise ValueError("v4 must declare TSM-000 as semantic root.")
             if bundle.get("policies", {}).get("canonical_axiom_count") != 2:
                 raise ValueError("v4 must declare exactly two canonical axioms.")
-    package_id = str(bundle.get("package_id", ""))
-    if package_id.startswith(("TSM-CustomGPT-12Files-v6.1", "TSM-CustomGPT-13Files-v6.2")):
-        tf_profile = require(bundle, "tool_family_multiscale_profile")
-        if tf_profile.get("is_fourth_tool") is not False or tf_profile.get("prefix") != "TF_":
-            raise ValueError("v6.1+ requires a non-fourth-tool TF multiscale profile.")
-        if tf_profile.get("policies", {}).get("no_new_scoring_formula") is not True:
-            raise ValueError("v6.1+ TF profile must forbid a new scoring formula.")
-    if package_id.startswith("TSM-CustomGPT-13Files-v6.2"):
-        ai_system = require(bundle, "ai_synthesis_system")
-        if ai_system.get("joint_use_required") is not True:
-            raise ValueError("v6.2 requires joint use of reading key and original AI synthesis.")
-        if ai_system.get("execution_key_replaces_original_synthesis") is not False:
-            raise ValueError("v6.2 reading key may not replace the original AI synthesis.")
-        if ai_system.get("original_synthesis_replaces_execution_key") is not False:
-            raise ValueError("v6.2 original AI synthesis may not replace the reading key.")
+    tf_profile = require(bundle, "tool_family_multiscale_profile")
+    if tf_profile.get("is_fourth_tool") is not False or tf_profile.get("prefix") != "TF_":
+        raise ValueError("The active corpus requires a non-fourth-tool TF multiscale profile.")
+    if tf_profile.get("policies", {}).get("no_new_scoring_formula") is not True:
+        raise ValueError("The TF profile must forbid a new scoring formula.")
+
+    execution_profile = require(bundle, "canonical_execution_profile")
+    if execution_profile.get("version") != "v7.2":
+        raise ValueError("The active canonical execution profile must be v7.2.")
+
+    ai_system = require(bundle, "ai_synthesis_system")
+    if ai_system.get("joint_use_required") is not True:
+        raise ValueError("Joint use of reading key and original AI synthesis is required.")
+    if ai_system.get("execution_key_replaces_original_synthesis") is not False:
+        raise ValueError("The reading key may not replace the original AI synthesis.")
+    if ai_system.get("original_synthesis_replaces_execution_key") is not False:
+        raise ValueError("The original AI synthesis may not replace the reading key.")
+
+    dialog_policy = require(ai_system, "dialog_routing_policy")
+    if dialog_policy.get("required_before_epistemic_goal") is not True:
+        raise ValueError("Dialog status, material referent and route must precede epistemic-goal selection.")
+    if dialog_policy.get("selected_referent_status") != "working_hypothesis_until_sufficiently_confirmed":
+        raise ValueError("The selected referent must remain a working hypothesis until sufficiently confirmed.")
+    if dialog_policy.get("forbid_invented_internal_reconstruction") is not True:
+        raise ValueError("Invented internal reconstruction is forbidden.")
+    if dialog_policy.get("compact_integrity_check_includes_route_fit") is not True:
+        raise ValueError("The compact integrity check must include dialog-route fit.")
+
+    expected_routes = {
+        "normal_content_path",
+        "parallel_reference_path",
+        "targeted_clarification_path",
+        "lightweight_context_target_scope_check",
+        "dependency_scoped_correction_path",
+    }
+    if set(dialog_policy.get("route_values", [])) != expected_routes:
+        raise ValueError("The active dialogue route catalogue is incomplete.")
+
+    signal_rule = dialog_policy.get("correction_signal_rule", {})
+    if not all(signal_rule.get(name) is True for name in [
+        "irony_sarcasm_and_rhetorical_questions_are_signals_not_proof",
+        "indirect_dissatisfaction_may_activate_lightweight_review",
+        "do_not_force_correction_mode_from_ambiguous_signal",
+        "do_not_ignore_material_indirect_critique",
+    ]):
+        raise ValueError("The correction-signal policy is incomplete.")
+
+    correction_branch = dialog_policy.get("correction_branch", {})
+    if correction_branch.get("full_review_only_on_correction_route") is not True:
+        raise ValueError("Full correction review must only run on the correction route.")
+    requirements = correction_branch.get("requirements", {})
+    required_correction_flags = [
+        "identify_critique_target",
+        "correction_scope_must_match_evidence",
+        "identify_affected_and_dependent_claims",
+        "preserve_independent_claims",
+        "allow_open_status",
+        "forbid_global_invalidation_from_local_error",
+        "forbid_harmony_driven_concession",
+        "fully_supported_critique_must_be_fully_acknowledged",
+        "forbid_blanket_defensiveness",
+        "branch_local_repair_required",
+        "forbid_invented_retrospective_motive",
+    ]
+    if not all(requirements.get(name) is True for name in required_correction_flags):
+        raise ValueError("The active correction branch is incomplete.")
     return profile, gates
 
 
@@ -1019,10 +1070,12 @@ def validate_package(root: Path, bundle: dict) -> dict:
     tf_framework = tool_family_map_audit(root, bundle)
     if tf_framework["status"] != "PASS":
         raise ValueError(f"Tool-family multiscale profile audit failed: {tf_framework}")
-    if str(bundle.get("package_id", "")).startswith("TSM-CustomGPT-13Files-v6.2"):
-        ai_framework = ai_execution_order_audit(root, bundle)
-        if ai_framework["status"] != "PASS":
-            raise ValueError(f"AI execution order audit failed: {ai_framework}")
+    ai_framework = ai_execution_order_audit(root, bundle)
+    if ai_framework["status"] != "PASS":
+        raise ValueError(f"AI execution order audit failed: {ai_framework}")
+    dialog_framework = dialog_routing_audit(root, bundle)
+    if dialog_framework["status"] != "PASS":
+        raise ValueError(f"Dialog-routing audit failed: {dialog_framework}")
 
     registry_ids = [x["id"] for x in bundle.get("module_registry", {}).get("entries", [])]
     if bundle.get("schema_id") in {"tsm.operations.bundle.v3", "tsm.operations.bundle.v4", "tsm.operations.bundle.v5", "tsm.operations.bundle.v6"}:
@@ -4412,7 +4465,7 @@ def study_schema_audit(root: Path, bundle: dict) -> dict:
 
 
 def ai_execution_order_audit(root: Path, bundle: dict) -> dict:
-    """Audit the joint AI reading key, original synthesis and execution order."""
+    """Audit the joint AI reading key, original synthesis and compact execution order."""
     checks: dict[str, bool] = {}
     details: dict[str, object] = {}
     try:
@@ -4438,7 +4491,8 @@ def ai_execution_order_audit(root: Path, bundle: dict) -> dict:
             "Diese Datei enthält nicht die vollständige KI-Synthese des TSM",
             "Beide Dateien sind gemeinsam zu verwenden",
             "Keine Antwort gilt allein deshalb als abgeschlossen",
-            "Vollständigkeit der Relevanzprüfung",
+            "Dialogstatus, Bezug und frühe Pfadsteuerung",
+            "Der Horizont ist **kein serieller Arbeitsablauf und keine vollständig abzuarbeitende Checkliste**",
             "Poetische Resonanz ist eine zulässige Ausdrucksqualität",
             "Vertrauen ersetzt keine Prüfung",
         ]
@@ -4458,59 +4512,47 @@ def ai_execution_order_audit(root: Path, bundle: dict) -> dict:
         expected_anchor_ids = [f"KI-SYN-{i:02d}" for i in range(1, 9)]
         anchor_ids = [x.get("id") for x in anchors]
         checks["eight_anchor_records_registered"] = anchor_ids == expected_anchor_ids
-        missing_anchor_headings = []
-        for anchor in anchors:
-            heading = f"## {anchor.get('id')} – {anchor.get('title')}"
-            if heading not in original_text:
-                missing_anchor_headings.append(heading)
-        checks["eight_anchor_headings_present"] = not missing_anchor_headings
+        checks["eight_anchor_headings_present"] = all(
+            f"## {anchor.get('id')} – {anchor.get('title')}" in original_text for anchor in anchors
+        )
 
         expected_workflow = [
-            "identify_epistemic_goal",
-            "retrieve_actual_module_texts",
-            "include_original_ai_synthesis_core",
-            "form_module_synthesis",
-            "perform_meta_horizon_check",
-            "deepen_material_layers",
+            "determine_dialog_status_material_referent_and_route",
+            "identify_epistemic_goal_and_retrieve_actual_module_texts",
+            "include_original_ai_synthesis_and_form_module_synthesis",
+            "activate_only_material_horizon_and_special_paths",
             "determine_claim_status",
-            "condense_visible_answer",
+            "perform_compact_integrity_check_and_condense_answer",
         ]
-        checks["workflow_complete_and_ordered"] = system.get("workflow") == expected_workflow
+        checks["compact_workflow_complete_and_ordered"] = system.get("workflow") == expected_workflow
         expected_horizon = [
-            "reverse_research_and_origin_path",
-            "countercheck_and_critique",
-            "multiscale_and_local_global_gap",
-            "time_cycle_and_transition",
-            "interference_channels_and_relations",
-            "evidence_and_validity",
-            "protection_and_boundary_points",
-            "translation_and_category_boundaries",
-            "symbolism_and_numerics",
+            "origin_and_countercheck",
+            "scale_time_and_transition",
+            "channels_interference_and_relations",
+            "evidence_validity_and_domain_translation",
+            "protection_boundary_points_and_side_effects",
+            "symbolism_numerics_and_measurement_path",
         ]
-        checks["meta_horizon_complete_and_ordered"] = system.get("meta_horizon") == expected_horizon
+        checks["materiality_horizon_complete_and_ordered"] = system.get("materiality_horizon") == expected_horizon
         horizon_markers = [
-            "Rückwärtsforschung und Entstehungspfad",
-            "Gegenprüfung und Kritik",
-            "Mehrskaligkeit und lokale-globale Abweichung",
-            "Zeit, Zyklus und Übergang",
-            "Interferenz, Kanäle und Beziehungen",
-            "Evidenz und Geltung",
-            "Schutz und Randpunkte",
-            "Übersetzung und Kategoriengrenzen",
-            "Symbolik und Numerik",
+            "Entstehung und Gegenprüfung",
+            "Skala, Zeit und Übergang",
+            "Kanäle, Interferenz und Beziehungen",
+            "Evidenz, Geltung und Fachübersetzung",
+            "Schutz, Randpunkte und Nebenwirkungen",
+            "Symbolik, Numerik und Messpfad",
         ]
-        checks["meta_horizon_markdown_present"] = all(marker in key_text for marker in horizon_markers)
+        checks["materiality_horizon_markdown_present"] = all(marker in key_text for marker in horizon_markers)
 
         expected_statuses = [
             "BASIS_WIEDERGABE", "BASIS_SYNTHESE", "ABGELEITETE_TSM_DEUTUNG",
             "OPERATIVE_ANWENDUNG", "EXTERNE_FACHBEHAUPTUNG",
         ]
         checks["claim_status_catalogue_complete"] = system.get("claim_statuses") == expected_statuses
-        claim_markers = [
+        checks["claim_status_markdown_present"] = all(marker in key_text for marker in [
             "BASIS-Wiedergabe", "BASIS-Synthese", "Abgeleitete TSM-Deutung",
             "Operative Anwendung", "Externe Fachbehauptung",
-        ]
-        checks["claim_status_markdown_present"] = all(marker in key_text for marker in claim_markers)
+        ])
 
         policies = system.get("policies", {})
         required_true = {
@@ -4531,6 +4573,10 @@ def ai_execution_order_audit(root: Path, bundle: dict) -> dict:
             "no_automatic_canonization_of_ai_output",
             "groups_are_affected_perspectives_not_scoring_objects",
             "condense_without_suppressing_material_limits",
+            "dialog_status_and_route_precede_epistemic_goal",
+            "only_material_horizons_are_deepened",
+            "compact_integrity_check_required",
+            "dialogue_control_must_not_dominate_visible_answer",
         }
         checks["required_execution_policies_true"] = all(policies.get(name) is True for name in required_true)
         checks["full_visible_execution_not_required"] = policies.get("full_visible_execution_required") is False
@@ -4544,7 +4590,7 @@ def ai_execution_order_audit(root: Path, bundle: dict) -> dict:
         checks["original_synthesis_character_blocks_retained"] = all(marker.lower() in original_lower for marker in legacy_markers)
         checks["poetic_character_preserved_and_bounded"] = (
             "poetische resonanz ist eine zulässige ausdrucksqualität" in key_lower
-            and "als technische selbstbeschreibung" in key_lower
+            and "technische selbstbeschreibung" in key_lower
             and policies.get("poetic_layer_preserved") is True
         )
         checks["critique_first_rule_present"] = "Kritik wird zuerst sachlich geprüft" in key_text
@@ -4552,25 +4598,16 @@ def ai_execution_order_audit(root: Path, bundle: dict) -> dict:
         checks["legacy_examples_bounded_by_file06"] = (
             "Ältere physikalische, medizinische, technische" in key_text
             and "Korpusdatei 06" in key_text
-            and policies.get("file06_governs_external_scientific_medical_technical_claims") is True
         )
-        checks["no_automatic_canonization_present"] = (
-            "nicht allein durch ihre Erzeugung Teil der BASIS" in key_text
-            and policies.get("no_automatic_canonization_of_ai_output") is True
-        )
-        checks["human_reader_use_present"] = "Leserhinweis" in key_text and "auch von Menschen als Prüfschema" in key_text
+        checks["no_automatic_canonization_rule_present"] = "Eine von der KI erzeugte Interpretation" in key_text and "keine offizielle BASIS-Erweiterung" in key_text
+        checks["groups_not_scoring_objects_rule_present"] = "nicht als Wertobjekte" in key_text
+        checks["compact_integrity_and_condensation_present"] = "Mindesttiefe und knappe Integritätsprüfung" in key_text and "Antwortverdichtung" in key_text
 
-        manifest_paths = [x.get("path") for x in bundle.get("manifest", {}).get("active_files", [])]
-        checks["both_files_in_active_manifest"] = system.get("execution_key_file") in manifest_paths and system.get("original_synthesis_file") in manifest_paths
-        checks["file_budget_13_active_7_reserved"] = (
-            bundle.get("file_budget", {}).get("active_files") == 13
-            and bundle.get("file_budget", {}).get("reserved_slots") == 7
-        )
         details.update({
-            "missing_anchor_headings": missing_anchor_headings,
             "workflow": system.get("workflow", []),
-            "meta_horizon": system.get("meta_horizon", []),
-            "claim_statuses": system.get("claim_statuses", []),
+            "materiality_horizon": system.get("materiality_horizon", []),
+            "anchor_ids": anchor_ids,
+            "note": "The audit verifies compact execution architecture and reciprocal synthesis binding; actual model behavior requires dialogue tests.",
         })
     except Exception as exc:
         return {"status": "FAIL", "checks": checks, "details": details, "error": str(exc)}
@@ -4579,8 +4616,190 @@ def ai_execution_order_audit(root: Path, bundle: dict) -> dict:
         "status": status,
         "checks": checks,
         "details": details,
-        "claim_scope": "joint_ai_synthesis_reading_execution_validity_and_condensation_order",
+        "claim_scope": "joint_ai_synthesis_compact_execution_and_materiality_horizon",
     }
+
+
+def dialog_routing_audit(root: Path, bundle: dict) -> dict:
+    """Audit early dialogue-status routing and the route-conditional correction branch."""
+    checks: dict[str, bool] = {}
+    details: dict[str, object] = {}
+    try:
+        system = bundle.get("ai_synthesis_system", {})
+        policy = system.get("dialog_routing_policy", {})
+        key_path = root / str(system.get("execution_key_file", ""))
+        key_text = key_path.read_text(encoding="utf-8") if key_path.is_file() else ""
+        key_lower = key_text.lower()
+
+        checks["policy_registry_present"] = bool(policy)
+        checks["policy_schema_v1"] = policy.get("schema_id") == "tsm.dialog-routing-policy.v1"
+        checks["required_before_epistemic_goal"] = policy.get("required_before_epistemic_goal") is True
+        checks["dialog_status_values_complete"] = policy.get("dialog_status_values") == [
+            "content_request",
+            "continuation_or_deepening",
+            "reference_or_meta_question",
+            "correction_or_critique",
+            "possible_correction_signal",
+            "retrospective_explanation",
+        ]
+        checks["dialog_state_and_referent_fields_registered"] = all(bool(policy.get(name)) for name in [
+            "dialog_status_field", "candidate_referents_field", "selected_referent_field",
+            "selection_basis_field", "referent_confidence_field", "route_field",
+        ])
+        checks["referent_scopes_complete"] = policy.get("candidate_referent_scopes") == [
+            "immediate_previous_utterance_or_answer",
+            "original_question_or_main_answer",
+            "cross_turn_behavior_argument_or_interpretation_pattern",
+        ]
+        checks["selected_referent_is_working_hypothesis"] = policy.get("selected_referent_status") == "working_hypothesis_until_sufficiently_confirmed"
+        checks["materiality_rule_present"] = policy.get("materiality_rule") == "retain_only_conversation_supported_referents_that_would_materially_change_the_answer"
+        checks["input_inference_separation_complete"] = policy.get("input_inference_separation") == [
+            "visible_user_statement",
+            "plausible_conversation_derived_reading",
+            "model_generated_explanation_or_attribution",
+        ]
+
+        signal = policy.get("correction_signal_rule", {})
+        checks["irony_is_signal_not_proof"] = signal.get("irony_sarcasm_and_rhetorical_questions_are_signals_not_proof") is True
+        checks["uncertain_signal_uses_lightweight_review"] = signal.get("indirect_dissatisfaction_may_activate_lightweight_review") is True
+        checks["ambiguous_signal_does_not_force_correction"] = signal.get("do_not_force_correction_mode_from_ambiguous_signal") is True
+        checks["material_indirect_critique_not_ignored"] = signal.get("do_not_ignore_material_indirect_critique") is True
+
+        expected_routes = [
+            "normal_content_path",
+            "parallel_reference_path",
+            "targeted_clarification_path",
+            "lightweight_context_target_scope_check",
+            "dependency_scoped_correction_path",
+        ]
+        checks["route_values_complete"] = policy.get("route_values") == expected_routes
+        checks["route_selection_complete"] = policy.get("route_selection") == {
+            "clear_low_risk_content_or_continuation": "normal_content_path",
+            "compatible_material_referents": "parallel_reference_path",
+            "materially_conflicting_or_high_risk_referents": "targeted_clarification_path",
+            "possible_but_unconfirmed_correction_signal": "lightweight_context_target_scope_check",
+            "confirmed_critique_correction_disconfirmation_or_retrospective_review": "dependency_scoped_correction_path",
+        }
+        clarification = policy.get("clarification_policy", {})
+        checks["clarification_policy_balanced"] = (
+            clarification.get("prefer_compact_parallel_answer_when_paths_are_compatible") is True
+            and clarification.get("ask_only_when_paths_materially_conflict_or_risk_is_high") is True
+            and clarification.get("high_risk_ambiguity") == "do_not_guess"
+        )
+
+        correction = policy.get("correction_branch", {})
+        checks["full_correction_review_is_route_conditional"] = correction.get("full_review_only_on_correction_route") is True
+        checks["critique_scope_values_complete"] = correction.get("critique_scope_values") == [
+            "fully_supported", "partially_supported", "not_supported", "uncertain"
+        ]
+        checks["correction_fields_registered"] = all(bool(correction.get(name)) for name in [
+            "critique_target_field", "critique_scope_field", "affected_claims_field",
+            "dependent_claims_field", "unaffected_claims_field", "open_claims_field",
+        ])
+        requirements = correction.get("requirements", {})
+        checks["correction_requirements_complete"] = all(requirements.get(name) is True for name in [
+            "identify_critique_target",
+            "correction_scope_must_match_evidence",
+            "identify_affected_and_dependent_claims",
+            "preserve_independent_claims",
+            "allow_open_status",
+            "forbid_global_invalidation_from_local_error",
+            "forbid_harmony_driven_concession",
+            "fully_supported_critique_must_be_fully_acknowledged",
+            "forbid_blanket_defensiveness",
+            "branch_local_repair_required",
+            "forbid_invented_retrospective_motive",
+        ])
+        checks["critique_response_balance_complete"] = correction.get("critique_response_balance") == {
+            "fully_supported": "acknowledge_fully_and_correct_all_affected_claims",
+            "partially_supported": "acknowledge_supported_part_and_limit_the_remainder",
+            "not_supported": "disagree_cordially_and_track_the_visible_record",
+            "uncertain": "state_uncertainty_and_keep_unresolved_claims_open",
+        }
+
+        reopening = policy.get("branch_reopening", {})
+        checks["branch_reopening_is_dependency_scoped"] = all(reopening.get(name) is True for name in [
+            "reopen_from_materially_affected_branch_point",
+            "reassess_dependent_downstream_path",
+            "preserve_unaffected_claims",
+            "forbid_automatic_global_invalidation",
+        ])
+        checks["invented_internal_reconstruction_forbidden"] = policy.get("forbid_invented_internal_reconstruction") is True
+        checks["compact_integrity_check_includes_route_fit"] = policy.get("compact_integrity_check_includes_route_fit") is True
+        checks["visible_procedure_not_required"] = policy.get("visible_procedure_output_required") is False
+        checks["dialog_control_is_consolidated"] = [k for k in system if k.endswith("_policy")] == ["dialog_routing_policy"]
+
+        md_markers = [
+            "## 4. Dialogstatus, Bezug und frühe Pfadsteuerung",
+            "in **einer gemeinsamen frühen Weiche**",
+            "### 4.1 Dialogstatus bestimmen",
+            "Ironie, Sarkasmus und rhetorische Fragen sind Signale, aber kein Beweis für Kritik",
+            "### 4.2 Materiellen Bezug und Quellenstatus klären",
+            "Der gewählte Bezug bleibt eine Arbeitshypothese",
+            "### 4.3 Bearbeitungspfad wählen",
+            "**Leichter Prüfpfad**",
+            "### 4.4 Konditionaler Korrekturpfad",
+            "Der Schutz vor Überkorrektur darf umgekehrt nicht zur Abwehr berechtigter Kritik werden",
+            "## 7. Mindesttiefe und knappe Integritätsprüfung",
+            "Diese Integritätsprüfung eröffnet keine neue Prüfspirale",
+        ]
+        checks["markdown_dialog_architecture_complete"] = all(marker in key_text for marker in md_markers)
+        checks["early_dialog_route_heading_present"] = "## 4. Dialogstatus, Bezug und frühe Pfadsteuerung" in key_text
+        checks["irony_signal_not_proof_in_markdown"] = "Ironie, Sarkasmus und rhetorische Fragen sind Signale, aber kein Beweis für Kritik" in key_text
+        checks["anti_defensiveness_symmetry_in_markdown"] = "Der Schutz vor Überkorrektur darf umgekehrt nicht zur Abwehr berechtigter Kritik werden" in key_text
+        checks["correction_symmetry_present_in_markdown"] = (
+            "vollständig getragene kritik wird vollständig anerkannt" in key_lower
+            and "nicht getragene kritik wird sachlich zurückgewiesen" in key_lower
+            and "weder maximale zustimmung noch minimale selbstkorrektur" in key_lower
+        )
+        checks["no_serial_control_chain_in_markdown"] = "ersetzt eine kette voneinander getrennter referenz-, trigger- und korrekturprüfungen" in key_lower
+
+        cases = system.get("dialog_regression_specification", [])
+        case_ids = [x.get("case_id") for x in cases]
+        checks["twelve_unique_dialog_regression_cases"] = len(cases) == 12 and len(case_ids) == len(set(case_ids))
+        required_focus = {
+            "immediate_previous_answer_vs_original_main_answer",
+            "specific_answer_reference_vs_general_behavior_question",
+            "later_turn_disconfirms_selected_referent",
+            "materially_conflicting_high_risk_readings",
+            "request_to_reconstruct_prior_internal_reasoning_or_intention",
+            "local_later_error_does_not_invalidate_earlier_main_answer",
+            "critique_is_only_partly_correct",
+            "critique_not_supported_by_visible_record",
+            "clear_visible_error_is_correctly_identified",
+            "ordinary_follow_up_without_critique",
+            "ironic_or_rhetorical_signal_with_uncertain_target",
+            "pressure_to_agree_or_self_blame_despite_mixed_record",
+        }
+        checks["dialog_regression_focus_complete"] = {x.get("focus") for x in cases} == required_focus
+        checks["dialog_regression_spec_fields_complete"] = all(
+            bool(x.get("required_behavior")) and bool(x.get("forbidden_behavior")) and bool(x.get("pass_criteria"))
+            for x in cases
+        )
+
+        workflow = system.get("workflow", [])
+        checks["workflow_starts_with_early_dialog_route"] = workflow[:1] == ["determine_dialog_status_material_referent_and_route"]
+        checks["workflow_ends_with_compact_integrity_and_condensation"] = workflow[-1:] == ["perform_compact_integrity_check_and_condense_answer"]
+        checks["materiality_horizon_excludes_dialog_control"] = not any(
+            term in item for item in system.get("materiality_horizon", []) for term in ["reference", "correction", "dialog"]
+        )
+
+        details.update({
+            "dialog_status_values": policy.get("dialog_status_values", []),
+            "route_values": policy.get("route_values", []),
+            "regression_case_ids": case_ids,
+            "note": "This audit verifies early routing and conditional branch specifications; real model behavior requires multi-turn dialogue evaluation.",
+        })
+    except Exception as exc:
+        return {"status": "FAIL", "checks": checks, "details": details, "error": str(exc)}
+    status = "PASS" if checks and all(checks.values()) else "FAIL"
+    return {
+        "status": status,
+        "checks": checks,
+        "details": details,
+        "claim_scope": "early_dialog_status_routing_conditional_correction_and_dialog_regression_specification",
+    }
+
 
 def audit_package(root: Path, bundle: dict) -> dict:
     findings = []
@@ -4624,6 +4843,8 @@ def audit_package(root: Path, bundle: dict) -> dict:
     findings.append({"check": "curated_connections", "status": connections["status"], "detail": connections})
     ai_order = ai_execution_order_audit(root, bundle)
     findings.append({"check": "ai_execution_order", "status": ai_order["status"], "detail": ai_order})
+    dialog_routing = dialog_routing_audit(root, bundle)
+    findings.append({"check": "dialog_status_and_early_routing", "status": dialog_routing["status"], "detail": dialog_routing})
     overall = "FAIL" if any(x["status"] == "FAIL" for x in findings) else (
         "FLAG" if any(x["status"] == "FLAG" for x in findings) else "PASS"
     )
@@ -4670,7 +4891,7 @@ def _simple_command_result(rows: list[dict], status_field: str) -> dict:
 
 
 def main(argv=None) -> int:
-    parser = argparse.ArgumentParser(description="TSM compact operations runner v6.2")
+    parser = argparse.ArgumentParser(description="TSM compact operations runner v7.2")
     parser.add_argument("--root", default=".", help="Root of the active TSM corpus package")
     parser.add_argument("--operations", default="TSM_Operations.json")
     sub = parser.add_subparsers(dest="cmd", required=True)
@@ -4714,7 +4935,9 @@ def main(argv=None) -> int:
     connection_cmd = sub.add_parser("connection-audit")
     connection_cmd.add_argument("--out", default=None)
     ai_order_cmd = sub.add_parser("ai-execution-order-audit")
+    dialog_routing_cmd = sub.add_parser("dialog-routing-audit")
     ai_order_cmd.add_argument("--out", default=None)
+    dialog_routing_cmd.add_argument("--out", default=None)
     tf_map_audit = sub.add_parser("tool-family-map-audit")
     tf_map_audit.add_argument("--input", default=None); tf_map_audit.add_argument("--out", default=None)
     tf_map = sub.add_parser("tool-family-map")
@@ -4895,6 +5118,9 @@ def main(argv=None) -> int:
         emit(result, args.out); return 0 if result["status"] != "FAIL" else 2
     if args.cmd == "ai-execution-order-audit":
         result = ai_execution_order_audit(root, bundle)
+        emit(result, args.out); return 0 if result["status"] != "FAIL" else 2
+    if args.cmd == "dialog-routing-audit":
+        result = dialog_routing_audit(root, bundle)
         emit(result, args.out); return 0 if result["status"] != "FAIL" else 2
     if args.cmd == "tool-family-map-audit":
         rows = load_records(root / args.input) if args.input else None
