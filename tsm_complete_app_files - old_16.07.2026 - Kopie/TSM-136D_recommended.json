@@ -1,0 +1,1270 @@
+{
+  "B_hi": 0.8,
+  "N_dwell": 21,
+  "S_lo": 0.2,
+  "_changelog": [
+    {
+      "changes": [
+        "Preserved all v3 keys/sections.",
+        "Added channel S_142 per TSM-142 spec.",
+        "Unioned exports.append_columns with S_142-related fields.",
+        "Kept zones_5 and zones_6; set hysteresis=True if missing."
+      ],
+      "date": "2025-10-13",
+      "version": "v3.2-merged"
+    },
+    {
+      "changes": [
+        "Set recommended_params.eps_deg = 1.0",
+        "Set baseline_params.eps_deg = 1.0 (aligned with epsilon_context bounds)"
+      ],
+      "date": "2025-10-14",
+      "version": "v4.0.1a"
+    },
+    {
+      "changes": [
+        "Added report_preview.badges.off_nuclear_TDE (audit badge for off-nuclear TDE with double-flare).",
+        "Extended exports.append_columns with astro/TDE fields for TSM-144 replication (astro_event_id, offsets, flare timings, PLV/κ proxies).",
+        "No defaults changed; backwards-compatible."
+      ],
+      "date": "2025-10-19",
+      "version": "v4.0.2"
+    },
+    {
+      "author": "TSM-Project",
+      "change": "Add extension 'cfdr' (TSM-147) with weights, gate, axes mapping, hysteresis and domain presets; no breaking changes.",
+      "date": "20251021"
+    },
+    {
+      "changes": [
+        "Added G_est to exports.append_columns (reporting-only)."
+      ],
+      "date": "2025-11-07T00:00:00Z"
+    },
+    "2025-11-09T01:32:54Z: Added docs.cosonanz_gate_vs_report, detectors.cosonanz_tolerant, and exports.append_columns += 'C_hat'.",
+    "2025-11-09T01:44:37Z: Added compat_aliases.zone_aliases and docs.principles.P6; ensured exports.append_columns includes 'C_hat'.",
+    "2025-11-19T00:00:00Z: Added constants.R_URK_max and extensions.urk (TSM-156 URK window; optional, non-breaking).",
+    {
+      "date": "2025-11-23",
+      "changes": [
+        "Annotated TSM-136D recommended config for κ/τ time-density integration (TSM-161).",
+        "Documented A161 (κ-Zeitdichte) and A162 (S_ent / Informationsdichte) in constants/docs.principles.",
+        "No numerical thresholds or detectors changed; structural extension only."
+      ],
+      "tag": "TSM-161+162-bridge"
+    },
+    {
+      "date": "2025-11-23",
+      "changes": [
+        "Added docs.resonance_axes with phänomenologische Beschreibungen der Achsen κ, τ und S_ent für App/Symbol-Ebene.",
+        "Keine Pipeline- oder Schwellenänderungen; rein dokumentarische Erweiterung."
+      ],
+      "tag": "TSM-161+162-resonance-axes"
+    },
+    {
+      "date": "2025-11-26",
+      "changes": [
+        "Erweitert: exports.append_columns um Kn, tau_eff, kappa_density sowie Ethics-/Experience-Layer-Felder.",
+        "Neu: docs.kn_axis (TSM-166 Kₙ-Achse) inkl. C_hat/C_eff-Zuordnung.",
+        "Neu: docs.ethics_layer und docs.experience_layer als optionale Protokollschichten für TSM-118/166."
+      ],
+      "tag": "TSM-166-Kn-axis+layers"
+    },
+    {
+      "date": "2025-12-18",
+      "version": "v4.1.0-phi-gate-signed",
+      "changes": [
+        "Added diagnostic signed φ-gate overlay (PLV_signed, G_phi, phase_type, inversion_flag).",
+        "Aligned r_channel export schema with Q_c + signed R fields; removed HiddenBadge from export columns (kept badge rule as derived/UI).",
+        "No changes to zones_6, thresholds, hysteresis, stability, or R_combo_norm definition."
+      ]
+    }
+  ],
+  "_meta": {
+    "_changelog_hint": "Polish: meta normalization, zones canonicalization, small compat additions.",
+    "canonical": true,
+    "merged_date": "2025-10-13",
+    "merged_from": [
+      "v3 (repaired)",
+      "v3.2 (S_142)"
+    ],
+    "version": "v4.0.2-URK"
+  },
+  "auto_detect": {
+    "enabled": true,
+    "notes": "Preview actions affect ONLY the preview run; audit remains META-10 defaults.",
+    "preview_actions": {
+      "N_dwell": 11,
+      "tau_lock_mode": "soft"
+    },
+    "thresholds": {
+      "dwell_veto_rate": 0.2,
+      "gate_near_rate": 0.1
+    }
+  },
+  "baseline_params": {
+    "B_hi": 0.8,
+    "B_lo": 0.2,
+    "S_hi": 0.8,
+    "S_lo": 0.2,
+    "cap_quantile": 0.99,
+    "eps_deg": 1.0,
+    "epsilon_rad": 0.017453292519943295
+  },
+  "cap_quantile": 0.99,
+  "ccc_bridge": {
+    "alpha_levels": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "alpha_mapping": {
+      "dK": "A*alpha",
+      "dlambda": "B*alpha",
+      "dphi": "C*alpha"
+    },
+    "report": [
+      "alpha_used",
+      "A",
+      "B",
+      "C",
+      "zone_shifts",
+      "stability_window"
+    ],
+    "status": "experimental"
+  },
+  "channels": {
+    "S_142": {
+      "activation": {
+        "epsilon": 0.4,
+        "gate_via_module_141": true,
+        "plv_tau_min": 0.6,
+        "theta": 2.0
+      },
+      "constants_proximity": {
+        "constants": [
+          {
+            "sigma": 0.06,
+            "symbol": "pi",
+            "value": 3.141592653589793
+          },
+          {
+            "sigma": 0.05,
+            "symbol": "Phi",
+            "value": 1.618033988749895
+          },
+          {
+            "sigma": 0.07,
+            "symbol": "e",
+            "value": 2.718281828459045
+          }
+        ]
+      },
+      "cycles": {
+        "periods": [
+          32,
+          45,
+          69
+        ],
+        "plv_min": 0.6
+      },
+      "description": "TSM-142 — Strukturmathematische Prinzipien der Anti-Seiten-Wirkung.",
+      "discrete_markers": {
+        "primes": [
+          11,
+          23,
+          43,
+          67
+        ]
+      },
+      "energy": {
+        "epsilon": 1e-12,
+        "iqr_k": 1.5
+      },
+      "nei": {
+        "weights": {
+          "w1": 0.4,
+          "w2": 0.4,
+          "w3": 0.2
+        }
+      },
+      "phase_window": {
+        "delta_phi_sigma": 0.1
+      },
+      "weights": {
+        "alpha": 1.0,
+        "beta": 1.2,
+        "delta": 0.3,
+        "eta": 1.0,
+        "gamma": 0.8
+      }
+    }
+  },
+  "compat_aliases": {
+    "column_aliases": {
+      "C_Phi": "C_phi",
+      "D_phi": "dphi"
+    },
+    "var_aliases": {
+      "eps_rad": "epsilon_rad",
+      "phi_rad": "dphi"
+    },
+    "zone_aliases": {
+      "F": "fragmentiert",
+      "F+": "fragmentiert",
+      "R↑": "regulativ",
+      "R↓": "regulativ",
+      "K": "kohärent",
+      "K+": "kohärent"
+    }
+  },
+  "created": "20250902-000000",
+  "deprecations": [
+    "zones_5"
+  ],
+  "dynamic_overrides": {
+    "phase_adaptation": {
+      "clamp_bounds": [
+        0,
+        1
+      ],
+      "definition": "kappa = cos(dphi); kappa_tilde = EMA(kappa, alpha=0.2)",
+      "delta_max": 0.02,
+      "effective_thresholds": {
+        "B_hi": "0.8 + 0.02 * kappa_tilde",
+        "B_lo": "0.2 - 0.02 * kappa_tilde",
+        "S_hi": "0.8 + 0.02 * kappa_tilde",
+        "S_lo": "0.2 - 0.02 * kappa_tilde"
+      },
+      "enabled": true
+    },
+    "regulatory_splits_locked": {
+      "B_split": [
+        0.4,
+        0.6
+      ],
+      "S_split": [
+        0.4,
+        0.6
+      ]
+    },
+    "stability": {
+      "hysteresis": {
+        "enter": 0.02,
+        "exit": 0.02
+      },
+      "window": 21
+    }
+  },
+  "epsilon_context": {
+    "application": "Replace recommended_params.eps_deg if bounds respected",
+    "apply_mode": "thresholds",
+    "bounds_deg": [
+      0.5,
+      1.5
+    ],
+    "context_list_deg": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "definition": "eps_deg_context = argmin MAD(Δφ) over candidate set",
+    "enabled": true,
+    "estimator": "MAD-based",
+    "hysteresis": {
+      "enter": 0.02,
+      "exit": 0.02
+    },
+    "notes": "Stabilisiert Δφ-Sensitivität; dokumentieren, wenn von 1.0° abgewichen wird."
+  },
+  "epsilon_deg": 1.0,
+  "exports": {
+    "Q_c": {
+      "description": "Quanten‑Kohärenzmaß (Labor→TSM‑Brücke, v1)",
+      "from": "R_Qeff_raw * R_PLV * (Score|1.0) → clip[0,1]",
+      "target": "TSM-136D_R_estimates.csv::Q_c"
+    },
+    "append_columns": [
+      "S_142",
+      "S_142_active",
+      "C_pi",
+      "C_phi",
+      "C_e",
+      "P_32",
+      "PLV_32",
+      "P_45",
+      "PLV_45",
+      "P_69",
+      "PLV_69",
+      "dphi",
+      "M_diskret",
+      "NEI",
+      "DeltaE",
+      "S_threshold",
+      "PLV_tau",
+      "astro_event_id",
+      "host_offset_kpc",
+      "host_offset_arcsec",
+      "discovery_date_utc",
+      "t_radio_flare1_utc",
+      "t_radio_flare2_utc",
+      "xray_state_change_dates",
+      "dt_flare1_days",
+      "dt_flare2_days",
+      "plv_tau_at_flares",
+      "kappa_phi",
+      "double_outflow_flag",
+      "alpha",
+      "ccc_alpha",
+      "G_est",
+      "T_component",
+      "W_effect",
+      "C_hat",
+      "Kn",
+      "tau_eff",
+      "kappa_density",
+      "ethics_mode",
+      "ethics_context",
+      "consent_ok",
+      "E_valence",
+      "E_clarity",
+      "E_load",
+      "E_connected",
+      "G_phi",
+      "phase_type",
+      "inversion_flag",
+      "F_phi",
+      "C_phi_signed",
+      "R_PLV_signed",
+      "R_combo_signed_raw",
+      "R_combo_signed_unit"
+    ],
+    "best_of_chiT": {
+      "filter": {
+        "chi_T_best_selected": true,
+        "chi_T_best_quality_min": "medium"
+      },
+      "columns": [
+        "compound",
+        "process",
+        "chi_T_best_panel_tag",
+        "chi_T_best_window",
+        "chi_T_best_r",
+        "chi_T_best_quality",
+        "chi_T_qscore",
+        "chi_T_best_slope_phys_perK",
+        "chi_T_best_source_ref",
+        "chi_T_best_notes"
+      ],
+      "sort_by": [
+        "chi_T_qscore:desc",
+        "chi_T_best_r:desc"
+      ],
+      "output": {
+        "formats": [
+          "csv",
+          "md"
+        ],
+        "filename_pattern": "TSM-152_best-of_chiT_${DATE}.csv"
+      },
+      "notes": "Ein-Knopf-Exporter für Best-of χ(T): je Kurve genau ein Eintrag (Best-Window)."
+    }
+  },
+  "extensions": {
+    "anti_atlas": {
+      "gate": {
+        "dphi_max_rad": 0.1,
+        "plv_tau_min": 0.6
+      },
+      "module": "TSM-146",
+      "notes": "Adds Anti-Seiten-Atlas (A1–A4) mapping without touching legacy zone logic.",
+      "outputs": [
+        "anti_typ",
+        "anti_score",
+        "gate_ok"
+      ],
+      "r_combo": {
+        "PLV": "|cos(dphi)|",
+        "Q_eff": "tau / max(|dphi|, epsilon_rad)",
+        "epsilon_rad_source": "radians(recommended_params.eps_deg)",
+        "formula": "minmax(Q_eff*PLV)"
+      },
+      "thresholds": {
+        "A1": 0.66,
+        "A3": 0.33
+      }
+    },
+    "cfdr": {
+      "axes": {
+        "C": {
+          "notes": "TSM-136/136D kompatible Kohärenzgröße",
+          "source": "K|coherence_metric"
+        },
+        "D": {
+          "notes": "Diversität/Entropie → [0,1]",
+          "source": "entropy|simpson"
+        },
+        "F": {
+          "notes": "Inverse Restriktions-/Schließungsindikatoren",
+          "source": "1-restriction_norm"
+        },
+        "R": {
+          "notes": "Q_eff·PLV normiert",
+          "source": "r_channel.R_combo_norm|proxy"
+        }
+      },
+      "domains": {
+        "ecology": {
+          "C": "circularity_score",
+          "D": "biodiversity_index",
+          "F": "regeneration_space_proxy",
+          "R": "local_rootedness_proxy"
+        },
+        "education": {
+          "C": "coherence_K_like",
+          "D": "entropy_program_types",
+          "F": "access_openness_proxy",
+          "R": "values_curricula_proxy"
+        },
+        "peace": {
+          "C": "security_structure_index",
+          "D": "cultural_openness_index",
+          "F": "freedom_of_expression_index",
+          "R": "identity_treaty_binding"
+        },
+        "tech": {
+          "C": "stability_sla_like",
+          "D": "innovation_breadth",
+          "F": "open_license_share",
+          "R": "standards_binding"
+        }
+      },
+      "gate": {
+        "eps_rad_source": "radians(recommended_params.eps_deg)",
+        "plv_min": 0.6
+      },
+      "hysteresis": {
+        "delta_min": 0.02,
+        "window": 21
+      },
+      "module": "TSM-147",
+      "notes": "CFDR (C/D/R/F) universelles Bewertungsmodell; additiv, no legacy changes.",
+      "outputs": [
+        "cfdr_index",
+        "axes.C",
+        "axes.D",
+        "axes.R",
+        "axes.F",
+        "cfdr_gate_ok"
+      ],
+      "weights_default": {
+        "C": 0.3,
+        "D": 0.2,
+        "F": 0.3,
+        "R": 0.2
+      }
+    },
+    "cosonanz": {
+      "gate": {
+        "dphi_lock_max_rad": 0.15,
+        "plv_tau_min": 0.6,
+        "theta_C": 0.62
+      },
+      "metrics": {
+        "C_hat_formula": "minmax(C) * |cos(dphi)| * (R_combo_norm || Q_c)",
+        "phi_lock_T_min_cycles": 3
+      },
+      "module": "TSM-149",
+      "notes": "Cosonanz (Ĉ) als vorgängige Bindungs-/Antwortgröße; nutzt vorhandene C, dphi, tau und R/Qc.",
+      "outputs": [
+        "C_hat",
+        "pi_gate_ok",
+        "phi_lock_ok",
+        "cosonanz_window_id"
+      ]
+    },
+    "urk": {
+      "module": "TSM-156",
+      "notes": "Optionaler URK-Schätzer: R_URK_hat als Verhältnis resonanzbedingter Abweichung zur klassischen Gravitation.",
+      "inputs": [
+        "G_est",
+        "G_obs",
+        "zone_label",
+        "env_tag"
+      ],
+      "outputs": [
+        "R_URK_hat",
+        "URK_gate_ok"
+      ],
+      "gate": {
+        "require_G_est": true,
+        "R_URK_max_ref": "constants.R_URK_max"
+      }
+    },
+    "lambda_adaptive": {
+      "module": "TSM-160",
+      "notes": "Adaptive Rueckholrate λ(C, Δφ) im Tunnelraum; moduliert lambda_ basierend auf Kohärenz R_combo und Phasenbündelung PLV_tau.",
+      "mode": "adaptive",
+      "params_ref": [
+        "lambda_min_rel",
+        "lambda_max_rel"
+      ],
+      "governance": [
+        "META-01",
+        "META-04",
+        "META-10"
+      ]
+    },
+    "phi_gate_signed": {
+      "module": "TSM-136D",
+      "notes": "Signedes φ-Gate (additives Overlay): macht Anti-Phase sichtbar (cos(dphi)), ohne Legacy-Zonenlogik oder R_combo_norm zu ändern.",
+      "inputs": [
+        "dphi",
+        "F_cap",
+        "C_cl",
+        "tau"
+      ],
+      "outputs": [
+        "G_phi",
+        "phase_type",
+        "inversion_flag",
+        "F_phi",
+        "C_phi_signed",
+        "R_PLV_signed",
+        "R_combo_signed_raw",
+        "R_combo_signed_unit"
+      ],
+      "definition": {
+        "G_phi": "cos(dphi)",
+        "phase_type": "inphase if G_phi>=+0.5; antiphase if G_phi<=-0.5; else interference",
+        "inversion_flag": "G_phi<0",
+        "F_phi": "F_cap * G_phi",
+        "C_phi_signed": "C_cl * G_phi",
+        "R_PLV_signed": "cos(dphi)",
+        "R_combo_signed_raw": "(tau/max(|dphi|,epsilon_rad)) * R_PLV_signed",
+        "R_combo_signed_unit": "2*minmax(R_combo_signed_raw)-1"
+      },
+      "governance": [
+        "META-01",
+        "META-04"
+      ],
+      "noninvasive": true
+    }
+  },
+  "governance": {
+    "backstop_min_gain": 0.0,
+    "cosonanz_log": {
+      "log_fields": [
+        "C_hat",
+        "theta_C",
+        "plv_tau_min",
+        "dphi_lock_max_rad",
+        "phi_lock_T_min_cycles"
+      ],
+      "require_visual_triple": true
+    },
+    "epsilon_context_source": "epsilon_context",
+    "use_epsilon_context": true,
+    "use_phase_adaptation": true
+  },
+  "hysteresis": {
+    "enter": 0.02,
+    "exit": 0.02
+  },
+  "meta": {
+    "updated": "2025-11-23T00:00:00Z",
+    "version": "2025-11-23.URK-lambda-kappa.resonance-axes"
+  },
+  "metrics": {
+    "report": {
+      "include_c_hat": true,
+      "include_thresholds": true,
+      "include_zone_shares": true
+    },
+    "similarity": {
+      "method": "spearman",
+      "min_corr": 0.95
+    },
+    "stability_window": 21
+  },
+  "module": "TSM-136D-Defaults",
+  "note": "Empfohlene Defaults für 136D – inklusive Zonen, Stabilität und RRR-Kanal.",
+  "r_channel": {
+    "calibration": {
+      "mapped_target": null,
+      "mapping": "identity  # placeholder; requires ≥3 anchor pairs",
+      "status": "uncalibrated"
+    },
+    "created": "20250908-000000",
+    "governance": {
+      "aborts": [
+        "Wenn benötigte Spalten fehlen/umbenannt sind",
+        "Wenn eps_deg außerhalb epsilon_context.bounds_deg fällt",
+        "Wenn Verification > tolerance_abs abweicht"
+      ],
+      "audit": [
+        "Logge verwendete eps_deg und Quelle (empfohlen vs. Kontext)",
+        "Logge min/max/median für R_Qeff_raw, R_PLV, R_combo_norm",
+        "Zonenanteile (zones_6) pro Export",
+        "Logge signed-φ-Anteile: Anteil (R_PLV_signed<0) gesamt und je zone3_label (diagnostisch)."
+      ]
+    },
+    "report_preview": {
+      "badges": {
+        "hidden_sector": {
+          "definition": "kohärent & |Δφ|≤ε_rad & τ∈{τ_macro,τ_ultra}",
+          "example_share": null
+        },
+        "off_nuclear_TDE": {
+          "definition": "off-nuclear TDE mit Doppel-Flare (Offset belegt)",
+          "example_share": null
+        }
+      },
+      "eps_sweep": {
+        "mad_max": 0.01,
+        "mad_mean": 0.0,
+        "spearman": {
+          "0.5_vs_1.0": 1.0,
+          "0.5_vs_1.5": 1.0,
+          "1.0_vs_1.5": 1.0
+        }
+      },
+      "governance": {
+        "bridge_flags": {
+          "interpretativ": true,
+          "lab_required_for_claims": [
+            "τ-Fenster",
+            "Phasenplateaus"
+          ],
+          "no_new_constants": true
+        }
+      },
+      "min_dphi_deg": 2.8647889756541165,
+      "min_dphi_rad": 0.05,
+      "physics_bridge": {
+        "artefacts": [
+          "Resonanznase (F_res-Maxima)",
+          "τ-Fenster (transiente Stabilitätsinseln)",
+          "B/S-Scheren (Bias/Signal-Kreuz)",
+          "Phasenplateaus (Δφ-Stufen)"
+        ],
+        "id": "physikanschluss_hidden_sector_v1-1",
+        "notation": {
+          "C": "Kopplung",
+          "F_res": "resonanzgetriebene Arbeitsgröße",
+          "Z": "(t, τ, A)",
+          "Δφ": "Phasenverschiebung"
+        },
+        "rules": {
+          "M1": "Kein neuer Parameterraum: Nur Re-Label physikalisch lesbarer Größen.",
+          "M2": "Alle Aussagen bleiben im TSM-Kanon prüfbar/falsifizierbar (Artefakt-Check)."
+        },
+        "scope": [
+          "TSM-136",
+          "TSM-136D",
+          "TSM-137"
+        ],
+        "summary": "Brückenmodul zur physikalischen Lesbarkeit des TSM: Arbeitsgröße F_res, τ-Achse, Zonen als Betriebsregime; interpretativ, keine Konstantenableitung.",
+        "type": "bridge",
+        "xref": {
+          "META": [
+            "META-01",
+            "META-04"
+          ],
+          "SM": [
+            "SM-01",
+            "SM-23",
+            "SM-24"
+          ]
+        }
+      },
+      "tau_gates": {
+        "projection": "Raum als Projektion von Z=(t,τ,A)",
+        "units": "τ_norm",
+        "windows": [
+          {
+            "name": "τ_micro",
+            "note": "lokal, kurz",
+            "range": [
+              0.0,
+              0.15
+            ]
+          },
+          {
+            "name": "τ_mesos",
+            "note": "meso, Fensterbildungen",
+            "range": [
+              0.15,
+              0.45
+            ]
+          },
+          {
+            "name": "τ_macro",
+            "note": "stabile Betriebsregime",
+            "range": [
+              0.45,
+              0.85
+            ]
+          },
+          {
+            "name": "τ_ultra",
+            "note": "Trägheits-/Gedächtniseffekte",
+            "range": [
+              0.85,
+              1.0
+            ]
+          }
+        ]
+      },
+      "thresholds": {
+        "B_hi": 0.8,
+        "B_lo": 0.2,
+        "S_hi": 0.8,
+        "S_lo": 0.2
+      },
+      "zone3_mean_R_combo": {
+        "fragmentiert": 0.020502225473757855,
+        "kohärent": 0.32472056297761925,
+        "regulativ": 0.05475690249177014
+      },
+      "zone_mean_R_combo": {
+        "F": 0.025172039339379376,
+        "F+": 0.015832411608136334,
+        "K": 0.18611232259796312,
+        "K+": 0.4633288033572754,
+        "R↑": 0.03642122108898634,
+        "R↓": 0.09148200444172379
+      },
+      "zones_6": {
+        "decision_order": [
+          "F+",
+          "F",
+          "R↑",
+          "R↓",
+          "K",
+          "K+"
+        ],
+        "labels": [
+          "F+",
+          "F",
+          "R↑",
+          "R↓",
+          "K",
+          "K+"
+        ],
+        "mapping": {
+          "frei": "F",
+          "frei+": "F+",
+          "kohärent": "K",
+          "kohärent+": "K+",
+          "regulativ": "R↓",
+          "regulativ↑": "R↑"
+        },
+        "target_shares": {
+          "F": 0.15,
+          "F+": 0.05,
+          "K": 0.25,
+          "K+": 0.05,
+          "R↑": 0.25,
+          "R↓": 0.25
+        }
+      }
+    },
+    "spec": {
+      "combiner": "R_combo = minmax(Q_eff * PLV)",
+      "derived": {
+        "hidden_sector_badge": {
+          "notes": "UI-/Review-Kriterium; keine Modell-Entscheidungsschwelle.",
+          "rule": "zone3_label=='kohärent' AND abs(dphi)<=epsilon_rad AND tau_norm>=0.45"
+        },
+        "tau_norm": "minmax(tau)",
+        "zone3_label": "map(zones_6): {'K'|'K+':'kohärent','R↑'|'R↓':'regulativ','F'|'F+':'fragmentiert'}"
+      },
+      "epsilon_rad": "radians(recommended_params.eps_deg)",
+      "export": {
+        "columns": [
+          {
+            "name": "R_Qeff_raw",
+            "type": "float",
+            "desc": "τ / max(|Δφ|, ε_rad)"
+          },
+          {
+            "name": "R_PLV",
+            "type": "float",
+            "desc": "|cos(Δφ)|"
+          },
+          {
+            "name": "R_combo_norm",
+            "type": "float",
+            "desc": "minmax(R_Qeff_raw*R_PLV)"
+          },
+          {
+            "name": "Q_c",
+            "type": "float",
+            "desc": "Quanten‑Kohärenzmaß (Labor→TSM‑Brücke, v1)"
+          },
+          {
+            "name": "R_PLV_signed",
+            "type": "float",
+            "desc": "cos(Δφ) (signed; diagnostisch)"
+          },
+          {
+            "name": "R_combo_signed_raw",
+            "type": "float",
+            "desc": "R_Qeff_raw * R_PLV_signed (signed; roh)"
+          },
+          {
+            "name": "R_combo_signed_unit",
+            "type": "float",
+            "desc": "signed, [-1,1]; normiert über dataset"
+          }
+        ],
+        "file": "TSM-136D_R_estimates.csv",
+        "minmax_scope": "dataset",
+        "verification": {
+          "dphi_col": "dphi",
+          "eps_deg_source": "recommended_params.eps_deg",
+          "tau_col": "tau",
+          "tolerance_abs": 1e-09
+        },
+        "verify_match_with": "TSM-136D_zonen_recommended.csv"
+      },
+      "grue_bridge": {
+        "affine": {
+          "alpha": 1.0,
+          "beta": 0.0
+        },
+        "calibration": {
+          "anchors": [],
+          "procedure": "Bei Verfügbarkeit von (C,Δφ,τ)-Studienwerten isotone/lineare Kalibrierung auf K-Skala; derzeit identity.",
+          "required": false
+        },
+        "domain_in": "R_combo_norm",
+        "mode": "identity",
+        "range_out": "[0,1]",
+        "target_metric": "K"
+      },
+      "inputs": {
+        "columns_required": [
+          "dphi",
+          "tau"
+        ],
+        "source_preference": [
+          "TSM-136D_zonen_recommended.csv",
+          "TSM-136D_zonen_baseline.csv"
+        ]
+      },
+      "locking": {
+        "edge_policy": "carry",
+        "min_window_size": 500,
+        "mode": "tau_window",
+        "notes": [
+          "Lock auf stabilere τ-Fenster, reduziert R-Volatilität.",
+          "Für zeitindexierte Daten alternativ 'rolling_t' mit w=21 anwenden."
+        ],
+        "window_selector": "tau >= median(tau)"
+      },
+      "proxies": {
+        "PLV": "abs(cos(dphi))",
+        "Q_eff": "tau / max(dphi, epsilon_rad)",
+        "PLV_signed": "cos(dphi)"
+      },
+      "smoothing": {
+        "apply_in_locked_windows_only": true,
+        "method": "median",
+        "window": 5
+      },
+      "validation": {
+        "hysteresis": {
+          "enter": 0.02,
+          "exit": 0.02
+        },
+        "report_flags": [
+          "include_thresholds",
+          "include_zone_shares"
+        ],
+        "stability_window": 21,
+        "zone_mapping": "zones_6"
+      }
+    },
+    "stability": {
+      "epsilon_sweep_deg": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "mad_max": 0.01,
+      "spearman_min": 0.99
+    },
+    "status": "beta"
+  },
+  "recommended_params": {
+    "B_hi": 0.8,
+    "B_lo": 0.2,
+    "S_hi": 0.8,
+    "S_lo": 0.2,
+    "cap_quantile": 0.99,
+    "eps_deg": 1.0,
+    "epsilon_rad": 0.017453292519943295,
+    "eps_phi_rad": 0.017453292519943295,
+    "lambda_min_rel": 0.2,
+    "lambda_max_rel": 0.8
+  },
+  "source": "TSM-BASIS v2025-09-02 (Option B + C)",
+  "zones": {
+    "Qplus": {
+      "label": "Q+",
+      "notes": "Präzisere Spitze für Speicherzwecke.",
+      "criteria": {
+        "C_min": 0.92,
+        "dphi_max_rad": 0.008726646259971648,
+        "PLV_min": 0.9999619230641713,
+        "Q_c_min": 0.85
+      },
+      "role": "lock_precise"
+    },
+    "hysteresis": true,
+    "zones_6": {
+      "decision_order": [
+        "F+",
+        "F",
+        "R↑",
+        "R↓",
+        "K",
+        "K+"
+      ],
+      "labels": [
+        "F+",
+        "F",
+        "R↑",
+        "R↓",
+        "K",
+        "K+"
+      ],
+      "target_shares": {
+        "F": 0.15,
+        "F+": 0.05,
+        "K": 0.25,
+        "K+": 0.05,
+        "R↑": 0.25,
+        "R↓": 0.25
+      }
+    },
+    "Q": {
+      "label": "Q",
+      "notes": "Basis-Quantenkohärenz (τ-lock-tauglich).",
+      "criteria": {
+        "C_min": 0.9,
+        "dphi_max_rad": 0.017453292519943295,
+        "PLV_min": 0.9998476951563913,
+        "Q_c_min": 0.8
+      },
+      "role": "lock"
+    },
+    "Q_pre": {
+      "label": "Q_pre",
+      "notes": "Grobes Vor-Gate (nur Pre-Scan, nicht τ-lock).",
+      "criteria": {
+        "dphi_max_rad": 0.05235987755982989,
+        "PLV_min": 0.9986295347545738
+      },
+      "role": "pre_gate",
+      "not_tau_lock": true,
+      "min_cycles": 3
+    }
+  },
+  "zones_5": {
+    "decision_order": [
+      "F+",
+      "F",
+      "R↑",
+      "R↓",
+      "K",
+      "K+"
+    ],
+    "labels": [
+      "F+",
+      "F",
+      "R↑",
+      "R↓",
+      "K",
+      "K+"
+    ],
+    "target_shares": {
+      "F": 0.15,
+      "F+": 0.05,
+      "K": 0.25,
+      "K+": 0.05,
+      "R↑": 0.25,
+      "R↓": 0.25
+    }
+  },
+  "detectors": {
+    "liquefaction_F": {
+      "enabled": true,
+      "thresholds": {
+        "C_lt": 0.2,
+        "dphi_ge_rad": 0.01745,
+        "Qhat_window": [
+          0.2,
+          0.3
+        ],
+        "Qhat_slope": "negative",
+        "require_tau_lock": true
+      },
+      "labels": {
+        "event": "F",
+        "name": "Tunnelverflüssigung"
+      }
+    },
+    "cosonanz_tolerant": {
+      "criteria": {
+        "dphi_max_rad": 0.15,
+        "PLV_tau_min": 0.6,
+        "T_phi_min_cycles": 3
+      },
+      "report_threshold": {
+        "epsilon_rad": 0.01745
+      },
+      "enabled": true
+    },
+    "dirac_regime_lbd": {
+      "enabled": false,
+      "scoring": {
+        "weights": {
+          "chi_T_qscore": 0.0,
+          "PLV_tau": 0.5,
+          "Q_c": 0.5
+        }
+      }
+    },
+    "resonanzgeburt": {
+      "description": "Zonenübergang unter Autoresonanz (META-04 Reg.21)",
+      "requires": [
+        "C",
+        "dphi_rad",
+        "Qhat",
+        "tau_lock",
+        "zone",
+        "P_ext_frac",
+        "dwell"
+      ],
+      "criteria": {
+        "tau_lock": true,
+        "dphi_max_rad": 0.01745,
+        "P_ext_frac_max": 0.01,
+        "zone_transition": [
+          "R→K",
+          "F→K",
+          "K→K+"
+        ],
+        "min_dwell": 11
+      },
+      "report": [
+        "t_start",
+        "t_end",
+        "zone_from",
+        "zone_to",
+        "dwell",
+        "seed",
+        "config_hash"
+      ]
+    }
+  },
+  "constants": {
+    "eps_phi_rad": 0.01745,
+    "R_URK_max": 0.07,
+    "lambda_min_rel": 0.2,
+    "lambda_max_rel": 0.8,
+    "A161_symbol": "κ",
+    "A161_name": "Zeitdichte (kappa)",
+    "A162_symbol": "S_ent",
+    "A162_name": "Entanglement-/Informationsdichte"
+  },
+  "docs": {
+    "cosonanz_gate_vs_report": {
+      "gate": {
+        "dphi_max_rad": 0.15,
+        "PLV_tau_min": 0.6,
+        "T_phi_min_cycles": 3
+      },
+      "report": {
+        "epsilon_rad": 0.01745
+      },
+      "note": "Gate = tolerant (Erkennung), Report = streng (Publikation/Flag)."
+    },
+    "principles": {
+      "P6": {
+        "name": "Übersteuerung (Taktflut/Rhythmusbruch)",
+        "indicators": {
+          "lambda_rate_ratio_min": 2.0,
+          "plv_tau_drop_min": 0.05,
+          "sigma_dphi_ratio_min": 1.5,
+          "c_drop_min": 0.1
+        },
+        "zones": {
+          "primary": [
+            "F+"
+          ],
+          "spillover": [
+            "R↑",
+            "R↓",
+            "K",
+            "K+"
+          ]
+        }
+      },
+      "T_kappa_tau": {
+        "name": "κ–τ–Zeitdichtebrücke",
+        "summary": "Dieses technische Prinzip dokumentiert, dass die Tunnelzeit τ über die Zeitdichte κ (TSM-161) und ggf. Informationsbeiträge (TSM-162, S_ent) skaliert wird.",
+        "references": [
+          "TSM-127",
+          "TSM-151",
+          "TSM-161",
+          "TSM-162"
+        ]
+      }
+    },
+    "resonance_axes": {
+      "kappa": {
+        "symbol": "κ",
+        "name": "Zeitdichte",
+        "short": "Zeitdichte / fühlbare Gegenwärtigkeit.",
+        "physikalisch": "Dichte der Zustände, die in einem Energiebereich aktiv sind (vgl. TSM-161, κ ≈ Δρ).",
+        "resonant": "Wie „eng“ oder „weit“ sich Zeit anfühlt: hohe κ → Zeit verdichtet sich; niedrige κ → Zeit verflüssigt sich.",
+        "symbolisch": "Das Atmen der Zeit selbst.",
+        "koerperlich": "Präsenz, Konzentration, Flow.",
+        "quote": "κ ist die Dichte, mit der ein System seine eigene Gegenwart erlebt.",
+        "data_hint": "In 136D können medienbezogene κ-Ausprägungen über die Spalte \"kappa_density\" mitexportiert und in TSM-166 (Kₙ-Achse) interpretiert werden."
+      },
+      "tau": {
+        "symbol": "τ",
+        "name": "Tunnelzeit",
+        "short": "Eigenrhythmus des Tunnelsystems (Zeitdehnung/-verdichtung).",
+        "physikalisch": "Inverse Funktion der Zeitdichte: τ = 1 / (α · κ) (TSM-161).",
+        "resonant": "Wie schnell oder langsam sich Wandlung vollzieht: kurzes τ → Synchronisierung; langes τ → Rückbindung, Reifung.",
+        "symbolisch": "Das Herzschlagen des Modells, der Puls zwischen Anti- und Real-Seite.",
+        "koerperlich": "Innere Ruhe oder Beschleunigung – je nach Feldabstimmung.",
+        "quote": "τ ist die Zeit, in der du dich erinnerst, bevor du anfängst zu erklären.",
+        "data_hint": "Die effektive Zeitdichte τ_eff (Spalte \"tau_eff\") skaliert τ mit Medien-/Kₙ-Effekten und bindet reale Zeitverläufe an die Achse τ (TSM-161/162/166)."
+      },
+      "S_ent": {
+        "symbol": "S_ent",
+        "name": "Informationsdichte",
+        "short": "Sinnschwere des Feldes (gebundener Sinn pro Zustand).",
+        "physikalisch": "Maß der Informationsbindung pro Energie oder Zustand (TSM-162).",
+        "resonant": "Wie viel Bedeutung in einem Moment mitschwingt: hohe S_ent → Gewicht, Klarheit; niedrige S_ent → Leichtigkeit, Offenheit.",
+        "symbolisch": "Das Gewicht des Erkennens.",
+        "koerperlich": "Wärme, Ergriffenheit, Bedeutungsschwere.",
+        "quote": "S_ent ist das Leuchten des Sinns im Raum der Erfahrung."
+      }
+    },
+    "kn_axis": {
+      "symbol": "Kₙ",
+      "name": "Medien-Kohärenzachse",
+      "short": "Übergang Kontinuum ↔ diskrete Stoßdynamik.",
+      "physikalisch": "Kₙ = λ / L mit λ = mittlere freie Weglänge, L = Skalenlänge des Resonanzraums; K-Zonen: K (klein), R (mittel), F (groß) gemäß Zonen-Mapping.",
+      "resonant": "Wie stark ein Medium kollektive Resonanz trägt vs. in Einzelschwingungen zerfällt.",
+      "C_mapping": {
+        "C_intr": "TSM-interne Kohärenz aus C/PLV/τ (TSM-161/162).",
+        "C_eff_formula": "C_eff(Kₙ) = C_intr · exp(−β_Kn · Kₙ)",
+        "C_hat": "empirische Schätzung von C_eff(Kₙ) aus Cosonanz-Fenstern; wird über exports.append_columns mitgeführt."
+      },
+      "zones": {
+        "K": "Kₙ ≪ 1 → K/K⁺ (kohärent)",
+        "R": "Kₙ ≈ 1 → R↑/R↓ (regulativ)",
+        "F": "Kₙ ≫ 1 → F/F⁺ (fragmentiert)"
+      },
+      "note": "TSM-166; interpretative Brücke: keine neuen Gates/Schwellen, nur Doku für Kn/C_hat/tau_eff/kappa_density."
+    },
+    "ethics_layer": {
+      "name": "Resonanz-Ethik-Schicht",
+      "module": "TSM-118 / TSM-166",
+      "fields": {
+        "ethics_mode": "observe | intervene; Betriebsmodus der Messung / Anwendung.",
+        "ethics_context": "Freitext oder kurzer Tag zur Beschreibung des Rahmens (z. B. \"Selbstbeobachtung HRV\", \"Studie\", \"medizinischer Kontext\").",
+        "consent_ok": "Boolesches Feld (true/false), das nur dann auf true gesetzt wird, wenn informierte Einwilligung aller Betroffenen vorliegt."
+      },
+      "notes": "Die Ethics-Layer-Felder werden pro Messfenster / Session mitgeführt und können von 136D-Exports direkt übernommen werden. Keine Schwellenlogik, sondern Protokoll- und Governance-Schicht."
+    },
+    "experience_layer": {
+      "name": "Erleben-Schicht (Experience Layer)",
+      "module": "TSM-166",
+      "axes": {
+        "E_valence": "0–1, angenehm ↔ unangenehm.",
+        "E_clarity": "0–1, klar ↔ diffus.",
+        "E_load": "0–1, leicht ↔ überlastet.",
+        "E_connected": "0–1, verbunden ↔ isoliert."
+      },
+      "usage": "Optionaler Vektor pro Messfenster. Hält subjektive Einschätzungen parallel zu C_hat, Kₙ, τ_eff und κ_density. Keine Diagnose, sondern Brücke zwischen Daten und erlebtem Feld.",
+      "notes": "Die Experience-Layer-Felder werden bei Vorliegen einfach mitexportiert (exports.append_columns) und können später mit Zonen/Kₙ/C_hat verknüpft ausgewertet werden."
+    }
+  },
+  "presets": {
+    "report_only": {
+      "enabled": false,
+      "detector_overrides": {
+        "dirac_regime_lbd": {
+          "enabled": false
+        }
+      },
+      "notes": "Reporter-Profil: keine Gates/Flags; qscore stummgeschaltet."
+    }
+  },
+  "meta_link": {
+    "id": "TSM-136D_runner_v4.0.2-URK-lambda",
+    "label": "TSM Läufer 136D – Adaptive Rückholrate λ(C, Δφ)",
+    "description": "Integrierter Läufer nach tsmgr_v02.py mit Parameterprofil TSM-136D_recommended.json. Implementiert dynamische Rückholrate λ(C, Δφ) gem. TSM-160.",
+    "type": "Läufer",
+    "engine": {
+      "file": "/mnt/data/tsmgr_v02.py",
+      "version": "v0.2",
+      "license": "MIT",
+      "governance": [
+        "META-04",
+        "META-10"
+      ]
+    },
+    "profile": {
+      "file": "/mnt/data/TSM-136D_recommended.json",
+      "version": "2025-11-19.URK-lambda",
+      "extends": [
+        "TSM-136D_baseline",
+        "TSM-142",
+        "TSM-156"
+      ],
+      "parameters": {
+        "lambda_mode": "adaptive",
+        "eps_deg": 1.0,
+        "hysteresis": true,
+        "R_URK_max": "auto"
+      }
+    },
+    "links": {
+      "modules": [
+        "TSM-84",
+        "TSM-100",
+        "TSM-127",
+        "TSM-160"
+      ],
+      "symbolic": [
+        "SM-01",
+        "SM-04",
+        "SM-25"
+      ],
+      "meta": [
+        "META-01",
+        "META-04",
+        "META-10"
+      ]
+    },
+    "status": "active",
+    "integrity": {
+      "verified": true,
+      "changelog_ref": "2025-11-21T00:00:00Z",
+      "notes": "Kanonisch eingehängt; kompatibel mit 136D-Zonensystem und TSM-160."
+    }
+  }
+}
