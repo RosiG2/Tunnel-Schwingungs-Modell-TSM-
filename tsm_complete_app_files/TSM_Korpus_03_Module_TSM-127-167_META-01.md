@@ -754,9 +754,8 @@ gegenüber rollender Baseline; **Methodenanhang in TSM‑119**.\
 ### **Anhang B · Luftwirbel (Mikromaßstab) -- Messgrößen & Mini-KPI-Liste (neu)**
 
 (Ergänzt Anhang A; domänenkonsistent mit Q̂, M, rₑ-Analog, FAI.)\
-• **Regimekarte**: Rep,ρp/ρair,ARRe\_p, ρ\_p/ρ\_air, ARRep​,ρp​/ρa​ir,AR
-→ Aθ,ζ,fθ,Drifty,ΔvsettleAθ, ζ, fθ, Drift\_y,
-Δv\_settleAθ,ζ,fθ,Drifty​,Δvs​ettle; optional σ\_opt
+• **Regimekarte**: \(Re_p,\,\rho_p/\rho_{air},\,AR\)
+→ \(A_\theta,\,\zeta,\,f_\theta,\,Drift_y,\,\Delta v_{settle}\); optional \(\sigma_{opt}\)
 (Streu-Fluktuation).\
 • **KPIs (anschlussfähig an A)**: **Q̂** (Instabilitätsindex, Proxy),
 **M** (Dominanz), **rₑ\^Analog** (Trajekt/Cluster-Skala), **FAI**
@@ -1521,8 +1520,7 @@ Baseline, **Vorlauf ≥ 30 min**, **Q̂-False-Alarms ≤ 5 %**, **FAI-Treffer
 **Formate:** CSV, Parquet, JSON (identische Feldnamen).\
 **Zeit/Einheiten:** ts\_utc ISO-8601 (UTC); Einheiten in Tabellen.\
 **Versionierung:** df\_tsm\_version=\"1.0\"; Changelog in § 8.5.x.\
-**Ethik/Transparenz:** Keine PII; KI-Transparenz/AI-Act-Hinweise in
-App-Doku/Nutzungsetikett.
+**Ethik/Transparenz:** Im DF-TSM-Fachdatenmodell sind keine PII vorgesehen. Falls personenbezogene Daten verarbeitet werden, gelten dokumentierte Rechtsgrundlage, Zweckbindung, Datenminimierung und Schutzmaßnahmen. KI-Transparenzhinweise stehen in der Governance-Dokumentation.
 
 **Tab. 8-1 -- DF-TSM Monitoring/OMA (Minimalfelder)**
 
@@ -1628,7 +1626,9 @@ der Symbolreihe SM-01/02/03 (π, ∞, √2).
 
 **Resonanz-Masterformel**
 
-F=R⋅CΔφF = \\frac{R \\cdot C}{\\Delta \\varphi}
+\[
+F = \frac{R \cdot C}{\Delta\varphi}
+\]
 
 -   **R** = Resonanzfaktor (Kopplung/Verstärkung)
 
@@ -1642,24 +1642,30 @@ Phasenabweichung.
 
 **3. Vollformel (TSM-Tiefe eingeklappt)**
 
-F=\[KA⋅KRΔτ\]⋅\[EsynEtot\]⋅1ΔφF = \\Bigg\[ \\frac{K\_A \\cdot
-K\_R}{\\Delta \\tau} \\Bigg\] \\cdot \\Bigg\[ \\frac{E\_{syn}}{E\_{tot}}
-\\Bigg\] \\cdot \\frac{1}{\\Delta \\varphi}
+\[
+F = \left(\frac{K_A \cdot K_R}{\Delta\tau}\right)
+    \left(\frac{E_{\mathrm{syn}}}{E_{\mathrm{tot}}}\right)
+    \frac{1}{\Delta\varphi}
+\]
 
--   **K\_A, K\_R** = Kohärenz der Anti- und Real-Seite
+-   **K_A, K_R** = Kohärenz der Anti- und Real-Seite
 
 -   **Δτ** = Abweichung in der resonanten τ-Zeit
 
--   **E\_syn/E\_tot** = Feldkohärenz
+-   **E_syn/E_tot** = Feldkohärenz
 
 -   **Δφ** = Phasenversatz
 
 **Hinweis:** Für rein physikalische Lesarten reduziert sich diese Form
 auf:
 
-F=(R⋅C)/Δφ,R≘(KA⋅KR)/Δτ,C≘Esyn/Etot.F = (R \\cdot C)/\\Delta \\varphi,
-\\quad R ≙ (K\_A \\cdot K\_R)/\\Delta \\tau, \\quad C ≙
-E\_{syn}/E\_{tot}.
+\[
+F = \frac{R \cdot C}{\Delta\varphi},
+\qquad
+R \doteq \frac{K_A \cdot K_R}{\Delta\tau},
+\qquad
+C \doteq \frac{E_{\mathrm{syn}}}{E_{\mathrm{tot}}}.
+\]
 
 ### **Physik‑Anschluss (Hidden‑Sector)**
 
@@ -1670,13 +1676,13 @@ eingeführt (Regel **M1**); alle Aussagen bleiben
 
 **Minimal‑Vokabular.**
 
--   **Zustandsraum** Z=(t, τ, A)Z = (t,\\,\\tau,\\,A)Z=(t,τ,A): Zeit,
-    **zweite Zeit** τ\\tauτ, Amplitude/Anregung AAA.
+-   **Zustandsraum** \(Z=(t,\tau,A)\): Zeit, **zweite Zeit** τ und
+    Amplitude/Anregung \(A\).
 
--   **Arbeitsgröße** FresF\_{res}Fres​: resonanzgetriebene Wirkgröße
+-   **Arbeitsgröße** \(F_{\mathrm{res}}\): resonanzgetriebene Wirkgröße
     (kanonisch skaliert).
 
--   **Phasenlage** Δφ\\Delta\\varphiΔφ und **Kopplung** CCC als
+-   **Phasenlage** \(\Delta\varphi\) und **Kopplung** \(C\) als
     Steuergrößen.
 
 -   **B/S**: Bias/Signal‑Indikatoren als Entscheidungshilfe.
@@ -1694,7 +1700,7 @@ eingeführt (Regel **M1**); alle Aussagen bleiben
 SM‑01 (π), SM‑23 (Zeitwürfel/„Z"), optional SM‑24 (Λ). META‑01/META‑04
 als Governance‑Backlinks.
 
-**Merksatz:** *Raum* ist Projektion aus Z=(t,τ,A)Z=(t,\\tau,A)Z=(t,τ,A);
+**Merksatz:** *Raum* ist Projektion aus \(Z=(t,\tau,A)\);
 die Physik‑Lesart ist eine **Benennung**, nicht eine Erweiterung.
 
 **4. Definition der Terme**
@@ -1829,13 +1835,17 @@ Standardmodell-Konstanten).*
 
 Eine einzige schwingungslogische Formel macht das TSM physik-lesbar:
 
-F=(R⋅C)/ΔφF = (R \\cdot C) / \\Delta \\varphi
+\[
+F = \frac{R \cdot C}{\Delta\varphi}
+\]
 
 und in TSM-Tiefe:
 
-F=\[KA⋅KRΔτ\]⋅\[EsynEtot\]⋅1Δφ.F = \\Bigg\[ \\frac{K\_A \\cdot
-K\_R}{\\Delta \\tau} \\Bigg\] \\cdot \\Bigg\[ \\frac{E\_{syn}}{E\_{tot}}
-\\Bigg\] \\cdot \\frac{1}{\\Delta \\varphi}.
+\[
+F = \left(\frac{K_A \cdot K_R}{\Delta\tau}\right)
+    \left(\frac{E_{\mathrm{syn}}}{E_{\mathrm{tot}}}\right)
+    \frac{1}{\Delta\varphi}.
+\]
 
 Damit werden die vier fundamentalen Kräfte als **Parameterfälle
 derselben Resonanzordnung** sichtbar -- ohne die Eigenlogiken der Physik
@@ -1855,11 +1865,11 @@ tsm-136D-recommended.json (Parameter/Begründung)\
 **1) Kurzfassung**
 
 Dieses Datenbuch dokumentiert die numerische Ableitung der
-**Resonanzkraft-Felder** FresF\_{res} und die daraus abgeleitete
-**Zonenklassifikation** (\*kohärent\* / \*regulativ\* /
-\*fragmentiert\*) im Sinne des TSM. Datengrundlage ist eine
-100×100-Wertematrix über die Variablen **Kohärenz** CC, **Phasenlage**
-Δφ\\Delta\\varphi und **Resonanzzeit** τ\\tau. Die Analyse erzeugt
+**Resonanzkraft-Felder** \(F_{\mathrm{res}}\) und die daraus abgeleitete
+**Zonenklassifikation** (*kohärent* / *regulativ* /
+*fragmentiert*) im Sinne des TSM. Datengrundlage ist eine
+100×100-Wertematrix über die Variablen **Kohärenz** \(C\), **Phasenlage**
+\(\Delta\varphi\) und **Resonanzzeit** \(\tau\). Die Analyse erzeugt
 Heatmaps, 3D-Flächen und eine stabile Zoneneinteilung auf Basis
 empfohlener Standardparameter (siehe Abschnitt 3).
 
@@ -1867,15 +1877,18 @@ empfohlener Standardparameter (siehe Abschnitt 3).
 
 **Variablen**
 
--   **C** -- Kohärenz (normiert, C\>0C\>0)
+-   **C** -- Kohärenz (normiert, \(C>0\))
 
--   **Δφ\\Delta\\varphi** -- Phasenlage/Versatz (rad; Grad wurden ggf.
+-   **Δφ** -- Phasenlage/Versatz (rad; Grad wurden ggf.
     in rad konvertiert)
 
--   **τ\\tau** -- Resonanz-/Rückholzeit (τ\>0\\tau\>0)
+-   **τ** -- Resonanz-/Rückholzeit (\(\tau>0\))
 
--   **FresF\_{res}** -- Resonanzkraft (definiert als Fres=CΔφ⋅τF\_{res}
-    = \\frac{C}{\\Delta\\varphi}\\cdot\\tau)
+-   **F_res** -- Resonanzkraft, definiert als
+
+    \[
+    F_{\mathrm{res}} = \frac{C}{\Delta\varphi}\,\tau.
+    \]
 
 **Dateien**
 
@@ -1892,41 +1905,42 @@ empfohlener Standardparameter (siehe Abschnitt 3).
 
 **Vorverarbeitung (Kurz):**
 
-1.  Phasenwerte Δφ\\Delta\\varphi in rad, Minimalphase
-    ε=1∘\\varepsilon=1\^\\circ (rad) gegen Singularität.
+1.  Phasenwerte \(\Delta\varphi\) in rad; Minimalphase
+    \(\varepsilon=1^\circ\) (in rad umgerechnet) gegen Singularität.
 
-2.  Winsorizing der FresF\_{res}-Spitze am 99%-Perzentil → FcapF\_{cap}.
+2.  Winsorizing der \(F_{\mathrm{res}}\)-Spitze am 99%-Perzentil → \(F_{\mathrm{cap}}\).
 
-3.  Rangnormierung: **B** (Bindestärke) aus FcapF\_{cap}, **S**
-    (Spannmaß) aus Δφ/(C τ)\\Delta\\varphi/(C\\,\\tau).
+3.  Rangnormierung: **B** (Bindestärke) aus \(F_{\mathrm{cap}}\), **S**
+    (Spannmaß) aus \(\Delta\varphi/(C\,\tau)\).
 
 **3) Empfohlene Standardparameter**
 
 **Numerische Defaults (empfohlen):**
 
--   **Minimalphase:** ε=1.0∘\\varepsilon=1.0\^\\circ
+-   **Minimalphase:** \(\varepsilon=1{,}0^\circ\)
 
 -   **Sättigungsdeckel:** 99%-Perzentil
-    (cap\_quantile=0.99cap\\\_quantile = 0.99)
+    (`cap_quantile = 0.99`)
 
 -   **Zonen-Schwellen:**
 
-    -   \*kohärent\*: B≥0.80B\\ge 0.80 **und** S≤0.20S\\le 0.20
+    -   *kohärent*: \(B\ge 0{,}80\) **und** \(S\le 0{,}20\)
 
-    -   \*fragmentiert\*: B≤0.20B\\le 0.20 **und** S≥0.80S\\ge 0.80
+    -   *fragmentiert*: \(B\le 0{,}20\) **und** \(S\ge 0{,}80\)
 
-    -   \*regulativ\*: übrige Lagen (Schwellenraum/Übergang)
+    -   *regulativ*: übrige Lagen (Schwellenraum/Übergang)
 
 **Arbeitsgröße & Zonen (physik‑lesbar)**
 
-**Arbeitsgröße FresF\_{res}Fres​.** Im Datenbuch wird FresF\_{res}Fres​
+**Arbeitsgröße \(F_{\mathrm{res}}\).** Im Datenbuch wird \(F_{\mathrm{res}}\)
 als kanonische Arbeitsgröße geführt. Praktisch genügt für die
-Brücken‑Lesart eine monotone Funktion von Kopplung CCC, Phasenlage
-Δφ\\Delta\\varphiΔφ und τ\\tauτ:
+Brücken‑Lesart eine monotone Funktion von Kopplung \(C\), Phasenlage
+\(\Delta\varphi\) und \(\tau\):
 
-Fres=N f(C, Δφ, τ)(Skalierung N kanonisch).F\_{res} = \\mathcal{N}\\,
-f(C,\\,\\Delta\\varphi,\\,\\tau) \\quad \\text{(Skalierung
-\\(\\mathcal{N}\\) kanonisch)}.Fres​=Nf(C,Δφ,τ)(Skalierung N kanonisch).
+\[
+F_{\mathrm{res}} = \mathcal{N}\,f(C,\Delta\varphi,\tau)
+\qquad \text{(Skalierung }\mathcal{N}\text{ kanonisch).}
+\]
 
 **Zonen als Betriebsregime.** Die bestehenden Entscheidungszonen werden
 **physikalisch lesbar** gemacht (synonymes Mapping):
@@ -1948,8 +1962,8 @@ f(C,\\,\\Delta\\varphi,\\,\\tau) \\quad \\text{(Skalierung
     die **Kap‑Deckelung** „F\_cap".
 
 **Artefakte (Soll‑Sichtbarkeit):** Resonanznase
-(FresF\_{res}Fres​-Maxima), τ‑Fenster (stabile Inseln), Phasenplateaus
-(Δφ\\Delta\\varphiΔφ-Stufen), B/S‑Scheren.
+(\(F_{\mathrm{res}}\)-Maxima), τ‑Fenster (stabile Inseln), Phasenplateaus
+(\(\Delta\varphi\)-Stufen), B/S‑Scheren.
 
 **Datenreferenzen (ohne neue Dateien):** Zonen‑Baseline/Recommended
 (CSV) und Kennzahlen (JSON) bleiben **unverändert**; die Brücke ergänzt
@@ -1974,24 +1988,23 @@ Zusatzdateien (Abschnitt 2).
 
 **Definition der Kenngrößen:**
 
--   **Bindestärke** BB: Quantil-Rang von FcapF\_{cap} ∈\[0,1\]\\in
-    \[0,1\]
+-   **Bindestärke** \(B\): Quantil-Rang von \(F_{\mathrm{cap}}\) in \([0,1]\)
 
--   **Spannmaß** SS: Quantil-Rang des Ausdrucks
-    ΔφC τ\\dfrac{\\Delta\\varphi}{C\\,\\tau} ∈\[0,1\]\\in \[0,1\]
+-   **Spannmaß** \(S\): Quantil-Rang des Ausdrucks
+    \(\Delta\varphi/(C\,\tau)\) in \([0,1]\)
 
 **Zonenregeln:**
 
--   **Kohärent:** B≥BhiB \\ge B\_{hi} **und** S≤SloS \\le S\_{lo}
+-   **Kohärent:** \(B\ge B_{\mathrm{hi}}\) **und** \(S\le S_{\mathrm{lo}}\)
 
--   **Fragmentiert:** B≤BloB \\le B\_{lo} **und** S≥ShiS \\ge S\_{hi}
+-   **Fragmentiert:** \(B\le B_{\mathrm{lo}}\) **und** \(S\ge S_{\mathrm{hi}}\)
 
 -   **Regulativ:** sonst
 
 **Interpretation (TSM-Rahmen):**
 
--   **Kohärent** ≈ Nähe zur Null-Linie (hohes C, Δφ→0\\Delta\\varphi\\to
-    0), starke Wirkkraft, niedrige Rückholspannung.
+-   **Kohärent** ≈ Nähe zur Null-Linie (hohes \(C\),
+    \(\Delta\varphi\to 0\)), starke Wirkkraft, niedrige Rückholspannung.
 
 -   **Regulativ** ≈ Übergangszonen/Schwellen
     (Kopplung--Wechsel--Balance).
@@ -2004,8 +2017,8 @@ Zusatzdateien (Abschnitt 2).
 -   **Zonenanteile (empfohlen):**\
     Kohärent ≈ 20 %, Regulativ ≈ 60 %, Fragmentiert ≈ 20 %.
 
--   **Resonanzfenster:** Oberes Quantil (z. B. Top-5 % nach B) liegt
-    erwartungsgemäß bei hohen C und kleinen Δφ\\Delta\\varphi.
+-   **Resonanzfenster:** Oberes Quantil (z. B. Top-5 % nach \(B\)) liegt
+    erwartungsgemäß bei hohem \(C\) und kleinen \(\Delta\varphi\).
 
 -   **τ-Sensitivität:** (falls vorhanden) Kohärenzbänder bleiben über τ
     stabil; lokale Verschiebungen markieren Betriebsfenster.
@@ -2014,12 +2027,12 @@ Zusatzdateien (Abschnitt 2).
 
 **6) Visual-Atlas (Artefakte)**
 
--   **Heatmap** Fcap(C,Δφ)F\_{cap}(C,\\Delta\\varphi) je τ-Schicht
+-   **Heatmap** \(F_{\mathrm{cap}}(C,\Delta\varphi)\) je τ-Schicht
 
 -   **Zonenkarte** (C×Δφ, Farbcodierung:
     kohärent/regulativ/fragmentiert)
 
--   **3D-Surface** Fcap(C,Δφ)F\_{cap}(C,\\Delta\\varphi), ggf. mit
+-   **3D-Surface** \(F_{\mathrm{cap}}(C,\Delta\varphi)\), ggf. mit
     τ-Slider
 
 Hinweis: HTML-Dateien können direkt eingebettet oder als statische
@@ -2033,8 +2046,7 @@ Bilder exportiert werden.
 -   **Nachvollziehbarkeit:** Parameter, Skripte und Sensitivitäten sind
     versioniert (siehe Quell- und Manifestdateien).
 
--   **Datenschutz:** Es werden keine personenbezogenen Daten
-    verarbeitet.
+-   **Datenschutz:** In den vorgesehenen Auswertedateien sind keine personenbezogenen Roh-, Profil- oder Entscheidungsdaten von Nutzer:innen oder bewerteten Personen vorgesehen; bibliografische Angaben und öffentlich dokumentierte Quelleninformationen bleiben davon unberührt. Abweichende Datensätze benötigen eine gesonderte Datenschutzprüfung.
 
 **8) Nutzung im Korpus**
 
@@ -2176,14 +2188,15 @@ Diagnostik, Technik, Ethik).
 
 5.4 Arbeitsgröße & Zonen (physik‑lesbar)
 
-**Arbeitsgröße FresF\_{res}Fres​.** Im Datenbuch wird FresF\_{res}Fres​
+**Arbeitsgröße \(F_{\mathrm{res}}\).** Im Datenbuch wird \(F_{\mathrm{res}}\)
 als kanonische Arbeitsgröße geführt. Praktisch genügt für die
-Brücken‑Lesart eine monotone Funktion von Kopplung CCC, Phasenlage
-Δφ\\Delta\\varphiΔφ und τ\\tauτ:
+Brücken‑Lesart eine monotone Funktion von Kopplung \(C\), Phasenlage
+\(\Delta\varphi\) und \(\tau\):
 
-Fres=N f(C, Δφ, τ)(Skalierung N kanonisch).F\_{res} = \\mathcal{N}\\,
-f(C,\\,\\Delta\\varphi,\\,\\tau) \\quad \\text{(Skalierung
-\\(\\mathcal{N}\\) kanonisch)}.Fres​=Nf(C,Δφ,τ)(Skalierung N kanonisch).
+\[
+F_{\mathrm{res}} = \mathcal{N}\,f(C,\Delta\varphi,\tau)
+\qquad \text{(Skalierung }\mathcal{N}\text{ kanonisch).}
+\]
 
 **Zonen als Betriebsregime.** Die bestehenden Entscheidungszonen werden
 **physikalisch lesbar** gemacht (synonymes Mapping):
@@ -2205,8 +2218,8 @@ f(C,\\,\\Delta\\varphi,\\,\\tau) \\quad \\text{(Skalierung
     die **Kap‑Deckelung** „F\_cap".
 
 **Artefakte (Soll‑Sichtbarkeit):** Resonanznase
-(FresF\_{res}Fres​-Maxima), τ‑Fenster (stabile Inseln), Phasenplateaus
-(Δφ\\Delta\\varphiΔφ-Stufen), B/S‑Scheren.
+(\(F_{\mathrm{res}}\)-Maxima), τ‑Fenster (stabile Inseln), Phasenplateaus
+(\(\Delta\varphi\)-Stufen), B/S‑Scheren.
 
 **Datenreferenzen (ohne neue Dateien):** Zonen‑Baseline/Recommended
 (CSV) und Kennzahlen (JSON) bleiben **unverändert**; die Brücke ergänzt
@@ -2394,8 +2407,9 @@ Der **Übersetzungstunnel** im TSM ist ein dreistufiger Prozess:
 
 **Übersetzungsformel (für META-09):**
 
-U=S    ⟷    F    ∣    RU = S \\;\\;\\longleftrightarrow\\;\\; F
-\\;\\;\|\\;\\; R
+\[
+U = S \longleftrightarrow F \mid R
+\]
 
 -   **U** = Übersetzungsprozess
 
@@ -2522,10 +2536,11 @@ Messpfade.
 
 Formel:
 
-TSM-Begriff    ⟷    {Fachsprache,  Kennzahl,  Quelle}    ∣    Resonanzkern\\text{TSM-Begriff}
-\\;\\; \\longleftrightarrow \\;\\; \\{\\text{Fachsprache}, \\;
-\\text{Kennzahl}, \\; \\text{Quelle}\\} \\;\\;\|\\;\\;
-\\text{Resonanzkern}
+\[
+\text{TSM-Begriff} \longleftrightarrow
+\{\text{Fachsprache},\,\text{Kennzahl},\,\text{Quelle}\}
+\mid \text{Resonanzkern}
+\]
 
 **3. Beispiele (Auszug)**
 
@@ -3073,91 +3088,116 @@ Verhältnissen.
 Diese Verhältnisse sind in realweltlichen Rhythmen nachweisbar (z. B.
 Planetenzyklen, biologische Übergänge, historische Phasen).
 
-Die mathematischen Konstanten (\\(\\pi, \\Phi, e\\)) wirken als
+Die mathematischen Konstanten (\(\pi, \Phi, e\)) wirken als
 Schwellen, Resonanzfilter oder Modulationsanker.
 
 **Kernartefakte und Aktivierungsformeln**
 
-**(A) Resonanz-Verhältnismaß (für \\(\\pi, \\Phi, e\\))**
+**(A) Resonanz-Verhältnismaß (für \(\pi, \Phi, e\))**
 
-\\rho = \\frac{T\_{\\text{obs}}}{T\_{\\text{int}}}, \\quad d\_c(\\rho)=
-\\min\_{k\\in\\mathbb{Z}} \\left\| \\ln \\rho - k\\ln c \\right\|,
-\\quad
-C\_c(\\rho)=\\exp\\!\\Big(-\\frac{d\_c(\\rho)\^2}{2\\sigma\_c\^2}\\Big)
+\[
+\rho = \frac{T_{\mathrm{obs}}}{T_{\mathrm{int}}},
+\qquad
+d_c(\rho)=\min_{k\in\mathbb{Z}}\left|\ln\rho-k\ln c\right|,
+\qquad
+C_c(\rho)=\exp\left(-\frac{d_c(\rho)^2}{2\sigma_c^2}\right).
+\]
 
-Startwerte: \\(\\sigma\_\\pi=0{,}06, \\sigma\_\\Phi=0{,}05,
-\\sigma\_e=0{,}07\\)
+Startwerte: \(\sigma_\pi=0{,}06\), \(\sigma_\Phi=0{,}05\),
+\(\sigma_e=0{,}07\).
 
 **(B) Zyklusdetektion (32/45/69)**
 
-P\_T=\\text{Periodenstärke}, \\qquad
-\\text{PLV}\_{T}=\\Big\|\\frac{1}{N}\\sum\_{n=1}\^{N}
-e\^{\\,i\\,\\Delta\\varphi\_T(n)}\\Big\| .
+\[
+P_T=\text{Periodenstärke},
+\qquad
+\mathrm{PLV}_T=\left|\frac{1}{N}\sum_{n=1}^{N}e^{i\Delta\varphi_T(n)}\right|.
+\]
 
-Aktiv: \\(P\_T\\ge \\alpha\\) und \\(\\text{PLV}\_{T}\\ge 0{,}6\\).
+Aktiv: \(P_T\ge\alpha\) und \(\mathrm{PLV}_T\ge 0{,}6\).
 
 **(C) Phasenfenster / Tunnelresonanz**
 
-\\Delta\\varphi =
-\\left\|\\varphi\_{\\text{Feld}}-\\varphi\_{\\text{Träger}}\\right\|,
-\\qquad D\_{\\varphi}=\\exp\\!\\Big(-\\frac{\\Delta\\varphi\^2}{2\\cdot
-(0{,}1)\^2}\\Big)
+\[
+\Delta\varphi=\left|\varphi_{\mathrm{Feld}}-\varphi_{\mathrm{Träger}}\right|,
+\qquad
+D_{\varphi}=\exp\left(-\frac{\Delta\varphi^2}{2\cdot(0{,}1)^2}\right).
+\]
 
-**(D) Diskrete Marker ( \\(M\_{ ext{diskret}}\\) )**
+**(D) Diskrete Marker (\(M_{\mathrm{diskret}}\))**
 
-Z\_p=\\sqrt{2n}\\,R\_p, \\quad
-p\_p=e\^{-Z\_p\^{2}/2}\\xrightarrow{\\text{BH-FDR}}\\tilde p\_p, \\quad
-M\_{\\text{diskret}}=\\frac{1}{\|P\^\\\*\|}\\sum\_{p\\in
-P\^\\\*}\\max\\!\\bigl(0,\\ \\mathcal{Z}\^{-1}(1-\\tfrac{\\tilde
-p\_p}{2})\\bigr)
+\[
+Z_p=\sqrt{2n}\,R_p,
+\qquad
+p_p=e^{-Z_p^2/2}\xrightarrow{\mathrm{BH-FDR}}\widetilde p_p,
+\qquad
+M_{\mathrm{diskret}}=\frac{1}{|P^*|}\sum_{p\in P^*}
+\max\left(0,\mathcal{Z}^{-1}\left(1-\frac{\widetilde p_p}{2}\right)\right),
+\]
 
-mit \\(P\^\* = \\{11, 23, 43, 67\\}\\).
+mit \(P^*=\{11,23,43,67\}\).
 
 **(E) NEI-142**
 
-\\text{Rtest}=1-\\frac{V\_{\\text{circ}}}{V\_{\\text{circ,max}}},
-\\qquad \\text{Rep}=\\frac{\\text{Anzahl(}\\tau\\text{-Fenster mit
-Aktivierung)}}{\\text{Anzahl(alle }\\tau\\text{-Fenster)}}
+\[
+\mathrm{Rtest}=1-\frac{V_{\mathrm{circ}}}{V_{\mathrm{circ,max}}},
+\qquad
+\mathrm{Rep}=\frac{\text{Anzahl der τ-Fenster mit Aktivierung}}{\text{Anzahl aller τ-Fenster}},
+\]
 
-\\text{NEI}=w\_1(1-\\text{Rtest})+w\_2(1-\\text{Rep})+w\_3\\cdot\\text{DomIncons},
-\\quad (w\_1{+}w\_2{+}w\_3=1), \\quad w\_1{=}0{,}4,\\ w\_2{=}0{,}4,\\
-w\_3{=}0{,}2
+\[
+\mathrm{NEI}=w_1(1-\mathrm{Rtest})+w_2(1-\mathrm{Rep})+w_3\,\mathrm{DomIncons},
+\qquad
+w_1+w_2+w_3=1,
+\]
 
-**(F) Energie-Kriterium ( \\( \\Delta E \\ge S \\) )**
+mit \(w_1=0{,}4\), \(w_2=0{,}4\), \(w_3=0{,}2\).
 
-\\Delta
-E=\\log\\!\\big(P\_{\\text{on}}(T\^\\\*)+\\varepsilon\\big)-\\operatorname{median}\\!\\big(\\log(P\_{\\text{off}}(T\^\\\*)+\\varepsilon)\\big),
+**(F) Energie-Kriterium (\(\Delta E\ge S\))**
 
-S=\\operatorname{median}(\\Delta
-E\_{\\text{Baseline}})+1{,}5\\cdot\\text{IQR}, \\qquad
-\\varepsilon=10\^{-12}
+\[
+\Delta E=\log\big(P_{\mathrm{on}}(T^*)+\varepsilon\big)
+-\operatorname{median}\big(\log(P_{\mathrm{off}}(T^*)+\varepsilon)\big),
+\]
 
-**(G) Gesamt-Score ( \\( S\_{142} \\) )**
+\[
+S=\operatorname{median}(\Delta E_{\mathrm{Baseline}})+1{,}5\cdot\mathrm{IQR},
+\qquad \varepsilon=10^{-12}.
+\]
 
-\\boxed{S\_{142}=\\alpha(C\_\\pi+C\_{\\Phi}+C\_e) +
-\\beta\\big(P\_{32}\\,\\text{PLV}\_{32}+P\_{45}\\,\\text{PLV}\_{45}+P\_{69}\\,\\text{PLV}\_{69}\\big)
-+ \\gamma D\_{\\varphi} + \\delta M\_{\\text{diskret}} -
-\\eta\\,\\text{NEI}}
+**(G) Gesamt-Score (\(S_{142}\))**
 
-Startwerte: \\(\\alpha=1{,}0,\\ \\beta=1{,}2,\\ \\gamma=0{,}8,\\
-\\delta=0{,}3,\\ \\eta=1{,}0,\\ \\theta=2{,}0,\\ \\epsilon=0{,}4\\).
+\[
+\boxed{
+S_{142}=\alpha(C_\pi+C_\Phi+C_e)
++\beta\big(P_{32}\mathrm{PLV}_{32}+P_{45}\mathrm{PLV}_{45}+P_{69}\mathrm{PLV}_{69}\big)
++\gamma D_{\varphi}+\delta M_{\mathrm{diskret}}-\eta\,\mathrm{NEI}
+}
+\]
+
+Startwerte: \(\alpha=1{,}0\), \(\beta=1{,}2\), \(\gamma=0{,}8\),
+\(\delta=0{,}3\), \(\eta=1{,}0\), \(\theta=2{,}0\), \(\epsilon=0{,}4\).
 
 **Aktivierungskriterien (vereinheitlicht)**
 
-S\_{142}\\ge \\theta \\ \\land\\ \\text{PLV}\_{\\tau}\\ge 0{,}6 \\
-\\land\\ \\Delta E\\ge S \\ \\land\\ \\text{NEI}\\le \\epsilon.
+\[
+S_{142}\ge\theta
+\;\land\;\mathrm{PLV}_{\tau}\ge 0{,}6
+\;\land\;\Delta E\ge S
+\;\land\;\mathrm{NEI}\le\epsilon.
+\]
 
 **Minimal-Protokoll MDP-142 für TSM-136D**
 
 Preprocessing: Detrending, Prewhitening, Lückenhandling → Lomb-Scargle
 
-Perioden-Analyse: \\( P\_T \\), \\( ext{PLV}\_T \\)
+Perioden-Analyse: \(P_T\), \(\mathrm{PLV}_T\)
 
-Konstanten-Nähe: \\( C\_c(\\rho) \\) mit festem Set {(π, Φ, e)}
+Konstanten-Nähe: \(C_c(\rho)\) mit festem Set {(π, Φ, e)}
 
-Phasenanalyse: \\( \\Delta\\varphi \\), \\( D\_{\\varphi} \\)
+Phasenanalyse: \(\Delta\varphi\), \(D_{\varphi}\)
 
-Markeranalyse: \\( M\_{\\text{diskret}} \\) via Rayleigh + BH-FDR
+Markeranalyse: \(M_{\mathrm{diskret}}\) via Rayleigh + BH-FDR
 
 NEI: Stabilität, Replikation, Domänenkonsistenz
 
@@ -3165,14 +3205,14 @@ Gate: Nur aktivieren, wenn alle Aktivierungsbedingungen erfüllt
 
 **Prüfbare Hypothesen**
 
-Phasenfenster-These: Aktivierungen signifikant bei \\( \\Delta\\varphi
-\\le 0{,}1 \\) rad (Rayleigh-Test, FDR-korr.).
+Phasenfenster-These: Aktivierungen signifikant bei
+\(\Delta\varphi\le 0{,}1\) rad (Rayleigh-Test, FDR-korr.).
 
-Konstanten-Raster: Ereignisverhältnisse auf \\( \\log c \\)-Gittern
+Konstanten-Raster: Ereignisverhältnisse auf \(\log c\)-Gittern
 (Permutation gg. Surrogat).
 
-Zyklische Synchronfelder: Power × PLV \> Power allein ( \\( \\Delta
-\\text{AUC} \> 0{,}1 \\) ).
+Zyklische Synchronfelder: Power × PLV > Power allein
+(\(\Delta\mathrm{AUC}>0{,}1\)).
 
 ## **TSM-143 -- Quantenkohärenz & Feldbindung**
 
@@ -3498,7 +3538,7 @@ Der CCC‑Ansatz postuliert, dass fundamentale Kopplungen (z. B. \(G, c, h, k\
 
 | CCC (extern) | TSM‑Entsprechung |
 |---|---|
-| Kovariierende „Konstanten“ \(G,c,h,k,…) = \(f(x,t)\) | **τ‑getaktete Phasen‑ & K‑Feld‑Modulation** \(K(x,\tau), \lambda(x,\tau), \varphi(x,\tau)\) |
+| Kovariierende „Konstanten“ \(G,c,h,k,\ldots)=f(x,t)\) | **τ‑getaktete Phasen‑ & K‑Feld‑Modulation** \(K(x,\tau), \lambda(x,\tau), \varphi(x,\tau)\) |
 | „DM/DE‑ähnliche“ Effekte ohne neue Substanz | **Dunkelresonanz‑Antwort** (Struktur ohne Manifest) |
 | Lokale Variation (Galaxien, Lensing, Expansion) | **Mikro‑Tunnelmodulationen / Zonen** (F/R/K gemäß 136D) |
 
@@ -3628,8 +3668,7 @@ TSM-146 macht die Anti-Seite **operativ nutzbar**: Vier Grundtypen (A1–A4) wer
 - **Kohärenz-Gate:** PLV_τ ≥ **0,60**
 
 **K-Proxy (praxisnah):**
-- \(Q_{eff} = 	au / \max(|\Delta\phi|,\ 
-arepsilon_{rad})\)  
+- \(Q_{eff} = \tau / \max(|\Delta\phi|,\varepsilon_{rad})\)  
 - \(PLV = |\cos(\Delta\phi)|\)  
 - \(R_{combo} = \mathrm{minmax}(Q_{eff}\cdot PLV)\)  → monotone K-Annäherung in [0,1]
 
@@ -3670,7 +3709,7 @@ arepsilon_{rad})\)
 - **136D-Output (optionale Zusatzspalten):**  
   `anti_typ ∈ {A1,A2,A3,A4}`, `anti_score ∈ [0,1]`, `gate_ok ∈ {0,1}`  
 - **141:** Nutzung der **Tunnel-Gates** und Regime-Wechsel als Lock-Kontrolle.  
-- **127:** Zeitvektor \(z = t·e_t + 	au·e_	au + a·e_A\) als Rahmen für Wiederholfenster.
+- **127:** Zeitvektor \(z=t\,e_t+\tau\,e_\tau+a\,e_A\) als Rahmen für Wiederholfenster.
 
 **Pseudocode (Heuristik):**
 ```text
@@ -3963,7 +4002,7 @@ Die Beschreibung ist **phänomenologisch**: Es werden **keine** klassischen Erha
 
 ## 7) Governance & Transparenz
 - **Label:** *Erweiterungsmodul · Arbeits-Hypothese; keine Zusatzkraft.*
-- **Transparenzfußnote (EU-AI-Act-konform):** Dieses Modul stellt eine **nicht validierte** theoretische Lesart dar; Limitationen sind ausgewiesen, Prüfpfade im Korpus verlinkt.
+- **Transparenzfußnote:** Dieses Modul stellt eine **nicht validierte** theoretische Lesart dar; Limitationen sind ausgewiesen, Prüfpfade im Korpus verlinkt. Diese Kennzeichnung unterstützt Transparenz, ist aber keine rechtliche AI-Act-Konformitätsbescheinigung.
 
 > **Changelog**  
 > *2025-11-06* – Erstintegration TSM-151; Mess-Brücke 136D (Reporting-only) hinzugefügt; Verweis auf TSM-152.
@@ -4325,7 +4364,6 @@ Quellen (Populär / Primärhinweis):
 
 – Populäre Zusammenfassungen u. a. in „Kosmologie: Dunkle Materie gehorcht Einstein (fast) perfekt“ (t3n, 2025) und „Beeinflusst eine ‚fünfte Kraft‘ die Dunkle Materie?“ (Forschung-und-Wissen, 2025). 
 t3n Magazin
-+1
 
 – Technische Details siehe zugehörige Publikation/Uni-Genf-Meldung (Datenstand: ca. 2025).
 
@@ -7177,9 +7215,8 @@ Für die formale Governance der kosmischen Endbilder vgl. META-14 „Kosmische K
 
 ## **📘 META-01 -- Querverbindungsmechanismus**
 
-**Version:** 15.07.2026 · Korpus v6.0  
+**Stand:** 15.07.2026  
 **Status:** aktiv -- semantisch kuratierte, typologisch getrennte Verbindungsschicht  
-**Gültigkeit:** ersetzt die META-01-Indexfassung aus v5.7.1  
 **Zweck:** selektive Resonanzachsen-, Wirkebenen- und Modulnavigation ohne starre Verbindungsquoten
 
 ### 1. Autorität und Schichtentrennung
@@ -7699,7 +7736,9 @@ Alle 136D-Bezüge sind nur im Vollkontext mit den Symbolmodulen zulässig
 
 **Resonanz-Masterformel (Brücke Schwingungslehre ↔ Physik):**
 
-F  =  R⋅CΔφF \\;=\\; \\frac{R \\cdot C}{\\Delta \\varphi}F=ΔφR⋅C​
+\[
+F = \frac{R \cdot C}{\Delta\varphi}
+\]
 
 -   **R** = Resonanzfaktor (Kopplung/Verstärkung; TSM: (K\_A·K\_R)/Δτ)
 
@@ -7821,7 +7860,7 @@ interpretationspflichtig im TSM-Kontext (Null-Linie/Schwellen).
 • Parameter & Versionen dokumentiert (Recommended Defaults,
 Sensitivität).
 
-• Keine personenbezogenen Daten in den verarbeiteten Dateien.
+• Personenbezogene Bewertungs- und Profildaten von Nutzer:innen oder bewerteten Personen sind in den vorgesehenen 136D-Auswertedateien nicht enthalten. Bibliografische Angaben und öffentlich dokumentierte Quelleninformationen bleiben davon unberührt.
 
 • Geltungsbereich: Einsatz nur im vereinbarten Kontext; keine
 Automatisierung ohne fachliche Gegenlese.
@@ -7923,13 +7962,12 @@ und darf nur unter Wahrung kohärenter Resonanz erfolgen."*
 
 **Ziel.** Artefakte und τ‑Fenster im Labor nachweisen.
 
-**Setup.** Zwei schwach gekoppelte Resonatoren (Ziel:
-C≈0.03--0.05C\\approx 0.03--0.05C≈0.03--0.05).\
-**Sweep.** Δφ\\Delta\\varphiΔφ von 0.05 bis 0.50 in 0.01‑Schritten;
-τeff\\tau\_{eff}τeff​ konstant halten.\
-**Messgrößen.**
-Fres, Δφ, τ, B/SF\_{res},\\,\\Delta\\varphi,\\,\\tau,\\,B/SFres​,Δφ,τ,B/S;
-Sampling ≥ 10 Hz.\
+**Setup.** Zwei schwach gekoppelte Resonatoren; Zielbereich:
+\(C\approx 0{,}03\text{–}0{,}05\).\\
+**Sweep.** \(\Delta\varphi\) von 0,05 bis 0,50 in 0,01‑Schritten;
+\(\tau_{\mathrm{eff}}\) konstant halten.\\
+**Messgrößen.** \(F_{\mathrm{res}}\), \(\Delta\varphi\),
+\(\tau_{\mathrm{eff}}\), \(B\), \(S\); Samplingrate mindestens 10 Hz.\\
 **Artefakt‑Check.** Resonanznase, Phasenplateaus, B/S‑Schere.\
 **Gate‑Scan.** τ‑Windows gemäß § 1.5; **Trefferlog** in CSV
 (Zeitstempel, Gate, Artefakt, Hinweis).\
@@ -7941,7 +7979,7 @@ Sampling ≥ 10 Hz.\
 
 -   FRB/GRB‑Timestamps: τ‑Clustering **ohne** Zusatzparameter.
 
--   GW‑O4‑Ereignisse: Suchmuster auf Δφ\\Delta\\varphiΔφ‑Stufen
+-   GW‑O4‑Ereignisse: Suchmuster auf \(\Delta\varphi\)-Stufen
     (qualitativ).\
     **Evidenzstufe:** indiziell/qualitativ, **keine**
     Konstantenableitung.

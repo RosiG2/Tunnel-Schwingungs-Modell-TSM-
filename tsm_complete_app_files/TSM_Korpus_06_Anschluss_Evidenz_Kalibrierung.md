@@ -11,6 +11,8 @@ Diese Datei ist die kanonische META- und Methodenschicht für:
 - Proxy-Operationalisierung,
 - relationale Physik-Kalibrierung,
 - Rechenzulässigkeit, Sensitivität und Fail-closed-Entscheidungen,
+- hypothesengeführte Screening- und Priorisierungsmodelle,
+- Rollenprofile sowie getrennte Primär- und Überlagerungsebenen,
 - öffentliche Formulierungen zu Anschluss, Datenankern, Reanalyse und Validierung.
 
 Die tatsächlichen TSM-, Symbol- und META-Modultexte bleiben die primäre semantische Autorität. Diese Datei darf deren Bedeutung weder ersetzen noch rückwirkend umschreiben. Sie regelt ausschließlich, wie externe Theorien, Messgrößen, Daten und Berechnungen an den TSM-Kanon angeschlossen werden.
@@ -683,6 +685,8 @@ META-01 bleibt DOI-frei. DOI-Angaben werden nicht in die unveränderten Modultex
 | `SRC-VC-07` | Komplexitätstheorie / Netzwerke / Selbstorganisation ↔ TSM: Ein Mapping von Komplexitätstheorie, nichtlineare Dynamik und Netzwerktheorie (Working Paper, Textfassung VC-07) | `10.5281/zenodo.18601776` | kanonische Regelquelle | §§ 2, 3.7, 13.1, 14 |
 | `SRC-VC-08` | Kognitionswissenschaft / Pragmatik ↔ TSM: Ein Mapping von Agenten arbeiten mit generativen Modellen, reduzieren Unsicherheit, handeln in Kontexten… zu Resonanz-Zonen und τ-Zeit (Working Paper, Textfassung VC-08) | `10.5281/zenodo.18601798` | kanonische Regelquelle | §§ 2, 3.8, 13.1, 14 |
 | `SRC-LUH-01` | Luhmann ↔ TSM: Ein Mapping von Systemtheorie zu Resonanz-Zonen, τ-Zeit und auditierbaren Proxy-Reports (Working Paper + Supplement S0.2) | `10.5281/zenodo.18445034` | kanonische Regelquelle | §§ 2, 4, 9, 10, 13, 14, 15 |
+| `SRC-PSE-01` | TSM-PSE Tiefenintegration: Begleitdokument zur Systemanalyse des Periodensystems | `10.5281/zenodo.20076067` | stützende Veröffentlichung | §§ 18.2, 18.3, 18.4 |
+| `SRC-IFM-01` | TSM Interface Matrix 2D-Halbleiter: Public-Data-Calibrated Screening mit spekulativer TSM-Prognoselogik | `10.5281/zenodo.20138253` | stützende Veröffentlichung | §§ 18.1, 18.4 |
 
 ### 16.3 Komponentenregel für Kalibrierung 10
 
@@ -780,3 +784,46 @@ Unzulässig:
 - „Der Bündelkompass bestimmt eine physikalische Kohärenzlänge.“
 - „Die Karte beweist die Resonanz eines Systems.“
 - „Der Gesamtwert zeigt, dass alle Teilbereiche tragfähig sind.“
+
+## 18. Hypothesengeführte Screening-, Rollen- und Überlagerungslogik
+
+### 18.1 Screening und Priorisierung von Kandidatenräumen
+
+Diese Regeln gelten, wenn Materialien, Varianten, Maßnahmen, Paarungen oder andere Kandidaten anhand mehrerer Kriterien vorselektiert oder priorisiert werden.
+
+1. Eine Rangfolge ist an Erkenntnisziel, Szenario, Gewichtung, Datenqualität und Geltungsbereich gebunden. Sie bezeichnet eine **Prüfpriorität, keine absolute Eignungs- oder Wahrheitsaussage**.
+2. Direkte Fachmessungen, konkrete Literatur- oder Falldaten, allgemeine Datenbank- oder Materialanker, Proxies, Modellannahmen und TSM-Hypothesen sind getrennt auszuweisen. Keine Quellenklasse darf stillschweigend den Status einer stärkeren Klasse erhalten.
+3. Jeder priorisierte Kandidat benötigt mindestens: tragende Anzeiger, relevante Gegenindikatoren, offene Datenlücken, Unsicherheit oder Sensitivität und den nächsten fachlich geeigneten Validierungsschritt.
+4. Ein unbelegbarer Wert bleibt leer oder wird ausdrücklich als Proxy beziehungsweise Modellannahme markiert. Scheinpräzise Ergänzungen sind unzulässig.
+5. Ändert sich die Rangfolge unter plausiblen Gewichten, Szenarien oder Proxyvarianten wesentlich, ist diese Ranginstabilität selbst ein Ergebnis. Eine robuste Priorität darf dann nicht behauptet werden.
+6. Ein Screening erzeugt keine automatische technische, wissenschaftliche, politische, medizinische, rechtliche oder industrielle Freigabe.
+
+### 18.2 Primärprofil und Überlagerungsebenen
+
+Ein Gegenstand wird zunächst innerhalb der maßgeblichen Fachlogik als Primärprofil beschrieben. Zusätzliche Risiko-, Schutz-, Rechts-, Kern-, Zeit-, Kontext- oder Systemebenen werden getrennt als Überlagerungen geführt.
+
+Eine Überlagerung kann die Gesamteinschätzung begrenzen, dominieren oder blockieren. Sie darf das Primärprofil jedoch nicht stillschweigend ersetzen, umbenennen oder rückwirkend umschreiben. Die Synthese muss deshalb ausweisen:
+
+1. welches Primärprofil fachlich getragen ist,
+2. welche Überlagerung hinzutritt,
+3. wie beide Ebenen miteinander wechselwirken,
+4. ob die Überlagerung die Anwendung, Interpretation oder Freigabe verändert.
+
+Auch bei einer dominierenden Überlagerung bleibt das fachliche Grundprofil sichtbar. Getrennte Ebenen werden erst in der abschließenden Bewertung zusammengeführt.
+
+### 18.3 Optionaler Rollenabstand
+
+Wo mehrere funktionale Rollen oder Achsen auf einer gemeinsamen, fachlich begründeten Skala ausgewiesen werden, kann ergänzend die stärkste und die zweitstärkste Rolle sowie ihr Abstand berichtet werden:
+
+`Rollenabstand = stärkster Rollenwert − zweitstärkster Rollenwert`
+
+Der Rollenabstand ist eine optionale Profilheuristik, keine allgemeine TSM-Grundgröße. Ein geringer Abstand bezeichnet zunächst nur ein Misch- oder Mehrfachprofil. Er ist kein automatischer Nachweis für Resonanz, Kohärenz, Vermittlung, Tragfähigkeit oder besondere Eignung.
+
+Universelle Schwellen sind unzulässig. Grenzwerte müssen domänenspezifisch begründet, kalibriert und gegen alternative Skalierungen geprüft werden. Sind Rollenwerte nicht vergleichbar oder beruhen sie auf inkompatiblen Proxies, wird kein Rollenabstand berechnet.
+
+### 18.4 Geltungsstatus und Grenze
+
+Die methodischen Trennregeln dieses Abschnitts sind `[S]`. Die Auswahl konkreter Kandidaten, Rollenachsen, Gewichte, Proxies und Überlagerungsebenen ist fallbezogen `[H]` und beginnt auf E1. Datenbasierte Rankings oder Profilbefunde dürfen nur bei offenem Quellen-, Methoden-, Unsicherheits- und Auditpfad als `[D]` ausgegeben werden.
+
+Domänenspezifische Karten, Zonen, Rankings oder Rollenmodelle bleiben Anwendungsartefakte. Sie werden durch ihre Referenzierung weder zu universellen TSM-Klassifikationen noch zu neuen Werkzeugen, Zonen oder Evidenzsystemen des Korpus.
+

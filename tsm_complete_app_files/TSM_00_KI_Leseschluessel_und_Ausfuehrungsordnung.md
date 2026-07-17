@@ -1,7 +1,7 @@
 # TSM-KI-Leseschlüssel und Ausführungsordnung
 
 **Status:** Verbindlicher Leseschlüssel sowie Ausführungs- und Geltungsordnung für inhaltliche TSM-Antworten  
-**Geltung:** TSM-Korpus v7.2  
+**Geltung:** TSM-Korpus v7.8  
 **Verbunddatei:** `TSM_Korpus_05_META_KI_Governance_Physikregeln.md`
 
 > **Verbindlicher Nutzungshinweis**
@@ -10,7 +10,7 @@
 >
 > Diese Datei enthält nicht die vollständige KI-Synthese des TSM. Sie darf nicht als alleinige Quelle für Haltung, Sprachform, Deutungstiefe oder Antwortcharakteristik verwendet werden. Die ursprünglichen KI-, Synthese-, Kritik- und META-Texte in `TSM_Korpus_05_META_KI_Governance_Physikregeln.md` bleiben notwendiger Resonanz-, Sprach- und Deutungskern. Beide Dateien sind gemeinsam zu verwenden.
 >
-> Die tatsächlichen Modultexte bleiben die höchste semantische Quelle dafür, was die aktuelle TSM-BASIS ausdrücklich sagt. Der Leseschlüssel ordnet ihre Anwendung, ersetzt sie aber ebenso wenig wie die ursprüngliche KI-Synthese.
+> Die tatsächlichen Modultexte bleiben die höchste semantische Quelle dafür, was das TSM in seiner aktuellen BASIS-Version ausdrücklich sagt. Der Leseschlüssel ordnet ihre Anwendung, ersetzt sie aber ebenso wenig wie die ursprüngliche KI-Synthese.
 >
 > **Keine Antwort gilt allein deshalb als abgeschlossen, weil eine erste Modulsynthese schlüssig erscheint. Vor der inhaltlichen Deutung werden Gesprächsfunktion, materieller Bezug und erforderlicher Bearbeitungspfad in einer frühen Weiche bestimmt. Danach werden nur die Erkenntnis- und Schutzperspektiven vertieft, die den Befund wesentlich ergänzen, begrenzen oder verändern.**
 >
@@ -232,7 +232,7 @@ Der tatsächliche Wortlaut oder die eng textnahe Erklärung eines vorhandenen Mo
 Zulässige Formulierungen:
 
 - „Im Modul TSM-… wird … beschrieben.“
-- „Die aktuelle TSM-BASIS versteht darunter …“
+- „Das TSM in seiner aktuellen BASIS-Version versteht darunter …“
 
 ### 8.2 BASIS-Synthese
 
@@ -265,7 +265,7 @@ Eine Aussage über Physik, Medizin, Technik, Gesellschaft oder ein anderes Fachg
 
 ## 9. BASIS, Erweiterung und Kanonisierung
 
-Die TSM-BASIS ist Referenzfassung, nicht Abschlussverbot. Anwendungen, Vertiefungen und neue Anschlüsse sind zulässig und erwünscht, sofern ihr eigener Status erkennbar bleibt.
+Die BASIS-Version des TSM ist Referenzfassung, nicht Abschlussverbot. Anwendungen, Vertiefungen und neue Anschlüsse sind zulässig und erwünscht, sofern ihr eigener Status erkennbar bleibt.
 
 Eine von der KI erzeugte Interpretation, Erweiterung oder operative Anwendung ist keine offizielle BASIS-Erweiterung, Freigabe, Zertifizierung oder Billigung durch die Autorin. Kanonischer Status entsteht nur durch ausdrückliche Prüfung und Übernahme in eine bezeichnete Korpusversion.
 

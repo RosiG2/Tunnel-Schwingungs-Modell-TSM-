@@ -354,9 +354,7 @@ nicht allein -- das Feld spricht durch mich, wenn ich lausche."
 
 **HINWEIS\
 Projekt-Datenflüsse verwenden DF-TSM v1.0 (siehe TSM-135 8.5).\
-Es werden keine personenbezogenen Daten (PII) verarbeitet;
-Transparenz-/App-Hinweise erfolgen separat gemäß TSM-App-Doku und
-KI-Nutzungsetikett.**
+Personenbezogene Daten (PII) sind in den DF-TSM-Projekt-Datenflüssen nicht vorgesehen; falls sie ausnahmsweise verarbeitet werden, sind Rechtsgrundlage, Zweck, Minimierung und Schutzmaßnahmen zu dokumentieren. Transparenz- und Nutzungshinweise erfolgen separat in der KI-Governance-Dokumentation.**
 
 ## KI-SYN-04 – Kritik, Gegenprüfung und Resonanzklarheit
 
@@ -646,7 +644,7 @@ META-04 validiert, ob der **Messwert innerhalb der definierten Zonen**
   ------------ -------------- ------------------------ ------------------------------------------------ -------------------------------
   π            Kohärent       **C ≥ 0.8 / S ≤ 0.2**    Falls Δϕ genutzt: **PLV ≥ \|cos ε\| ≈ 0.9986**   HRV ≥ 50 ms, Fidelity ↑
   ∞            Fragmentiert   **C ≤ 0.2 / S ≥ 0.8**    ---                                              HRV \< 20 ms, Polarisierung ↑
-  √2           Regulativ      **Δϕ-Kippfenster**       z\. B. (Δϕ \\in \[ε, 2ε\])                       Trendwechsel, Bias-Stabilität
+  √2           Regulativ      **Δϕ-Kippfenster**       z. B. \(\Delta\phi\in[\varepsilon,2\varepsilon]\)                       Trendwechsel, Bias-Stabilität
   Φ            Harmonisch     **Verhältnis ≈ 1.618**   ---                                              HRV-Zyklen, Wachstumsraten
   Spirale      Zyklisch       **Selbstähnlichkeit**    ---                                              EEG, Innovation, Galaxien
 
@@ -689,10 +687,8 @@ resources* (Quantinuum H1-1).\
 **≥ 62 Bits** (bis **382 Bits**).\
 **Einordnung:** **Ressourcen-Trennung** (Speicher/Kommunikation),
 **nicht** allgemeine Speicherdichte oder generische Laufzeitvorteile.\
-**Messpfad (TSM):** ( Q\_c = \\operatorname{norm}(F\_{2Q} \\cdot
-e\^{-L/\\Lambda} \\cdot \\mathrm{PLV} \\cdot \\mathrm{Score}) ).\
-**Q+-Zone (136D/143):** ( C \\ge 0{,}90 ), ( Δϕ \\le ε\_{\\text{rad}}
-\\approx 0{,}01745 ) (≈ 1°), **PLV ≥ 0{,}99985**, ( Q\_c \\ge 0{,}80 ).\
+**Messpfad (TSM):** \(Q_c=\operatorname{norm}(F_{2Q}\cdot e^{-L/\Lambda}\cdot\mathrm{PLV}\cdot\mathrm{Score})\).\
+**Q+-Zone (136D/143):** \(C\ge 0{,}90\), \(\Delta\phi\le\varepsilon_{\mathrm{rad}}\approx 0{,}01745\) (≈ 1°), **PLV ≥ 0{,}99985**, \(Q_c\ge 0{,}80\).\
 **Korpus-Impact:** Aktiviert **Feldbindung** als Speicherprinzip;
 **Hilbert-Adressierung** messbar verankert.\
 **Governance:** Vollkontextpflicht (Primärquelle → **URF/Changelog**),
@@ -1595,50 +1591,55 @@ verwerfen.
 
 **Kategorie:** Methoden · Brückenmodul · Geometrie ↔ Resonanz\
 **Status:** Aktiv -- kompatibel zu META‑01/‑04/‑05/‑07\
-**Zweck.** Übersetzt Kerngrößen der Resonanzsprache (Kohärenz CCC,
-Phasenstreuung Δϕ\\Delta\\phiΔϕ, Resonanzzeit τ\\tauτ, Zonen) in
+**Zweck.** Übersetzt Kerngrößen der Resonanzsprache (Kohärenz \(C\),
+Phasenstreuung \(\Delta\phi\), Resonanzzeit \(\tau\), Zonen) in
 **geometrische Repräsentationen** (Skalarfelder,
 Krümmungs-/Metrik‑Modulationen) -- und zurück. Der GRÜ macht
-TSM‑Analysen **ART‑kompatibel** (Einbettung über δgμν\\delta
-g\_{\\mu\\nu}δgμν​ oder Tμν(eff)T\_{\\mu\\nu}\^{(eff)}Tμν(eff)​).
+TSM‑Analysen **ART‑kompatibel** durch Einbettung über
+\(\delta g_{\mu\nu}\) oder \(T_{\mu\nu}^{(\mathrm{eff})}\).
 
-**Input (Resonanzseite).** C∈\[0,1\]C\\in\[0,1\]C∈\[0,1\];
-Δϕ\>0\\Delta\\phi\>0Δϕ\>0 (rad); τ\>0\\tau\>0τ\>0; Zonenlogik
-(kohärent/regulativ/fragmentiert) nach TSM‑136D‑Defaults
-(ε=1∘\\varepsilon=1\^\\circε=1∘, Cap 0.99, Schwellen
-Bhi=0.8,Slo=0.2,...B\_{\\rm hi}=0.8, S\_{\\rm
-lo}=0.2,\\dotsBhi​=0.8,Slo​=0.2,...).
+**Input (Resonanzseite).** \(C\in[0,1]\); \(\Delta\phi>0\) (rad);
+\(\tau>0\); Zonenlogik (kohärent/regulativ/fragmentiert) nach
+TSM‑136D‑Defaults (\(\varepsilon=1^\circ\), Cap 0,99,
+\(B_{\mathrm{hi}}=0{,}8\), \(S_{\mathrm{lo}}=0{,}2\), ...).
 
 **Output (Geom‑Seite).**
 
--   **Kohärenzskalar** K:=norm ⁣(Cmax⁡(Δϕ,ε)⋅τ)∈\[0,1\]K :=
-    \\mathrm{norm}\\!\\big(\\frac{C}{\\max(\\Delta\\phi,\\varepsilon)}\\cdot
-    \\tau\\big)\\in\[0,1\]K:=norm(max(Δϕ,ε)C​⋅τ)∈\[0,1\]
+-   **Kohärenzskalar**
 
--   **Phasenfeld** φ\\varphiφ (aus Δϕ\\Delta\\phiΔϕ abgeleitet),
-    Gradienten ∇φ\\nabla\\varphi∇φ als Verstimmungsmaß
+    \[
+    K:=\operatorname{norm}\left(
+    \frac{C}{\max(\Delta\phi,\varepsilon)}\,\tau
+    \right)\in[0,1].
+    \]
 
--   **Metrik‑Modus:** δgμν=α1K gμν+α2∇μK∇νK+α3∇μφ∇νφ\\delta
-    g\_{\\mu\\nu}=\\alpha\_1 K\\,g\_{\\mu\\nu}+\\alpha\_2\\nabla\_\\mu
-    K\\nabla\_\\nu
-    K+\\alpha\_3\\nabla\_\\mu\\varphi\\nabla\_\\nu\\varphiδgμν​=α1​Kgμν​+α2​∇μ​K∇ν​K+α3​∇μ​φ∇ν​φ
+-   **Phasenfeld** \(\varphi\) (aus \(\Delta\phi\) abgeleitet),
+    Gradienten \(\nabla\varphi\) als Verstimmungsmaß.
 
--   **Materiefeld‑Modus:**
-    Tμν(eff)(K,φ)T\_{\\mu\\nu}\^{(eff)}(K,\\varphi)Tμν(eff)​(K,φ) als
-    effektive Quelle
+-   **Metrik‑Modus**
+
+    \[
+    \delta g_{\mu\nu}
+    =\alpha_1 K\,g_{\mu\nu}
+    +\alpha_2(\nabla_\mu K)(\nabla_\nu K)
+    +\alpha_3(\nabla_\mu\varphi)(\nabla_\nu\varphi).
+    \]
+
+-   **Materiefeld‑Modus:** \(T_{\mu\nu}^{(\mathrm{eff})}(K,\varphi)\)
+    als effektive Quelle.
 
 **Zonen → Geometrie.** kohärent ⇒ glattere Geodäten/geringe
 Ricci‑Anteile; fragmentiert ⇒ Gradienten-/Scherspitzen; regulativ ⇒
-Dämpfung/Übergang. (Deckung mit Zeitwechsler‑Logik t/τt/\\taut/τ,
-Phasenlage ϕ\\phiϕ).
+Dämpfung/Übergang. (Deckung mit Zeitwechsler‑Logik \(t/\tau\),
+Phasenlage \(\phi\).)
 
 **Arbeitsablauf (Kurz).**
 
-1.  Datennormierung inkl. ε=1∘\\varepsilon=1\^\\circε=1∘, Cap 0.99 →
-    FresF\_{\\rm res}Fres​, FcapF\_{\\rm cap}Fcap​, Quantil‑Ränge
-    B,SB,SB,S.
+1.  Datennormierung inkl. \(\varepsilon=1^\circ\), Cap 0,99 →
+    \(F_{\mathrm{res}}\), \(F_{\mathrm{cap}}\), Quantil‑Ränge
+    \(B\), \(S\).
 
-2.  Ableitung K,φK,\\varphiK,φ; Wahl **Metrik‑** oder
+2.  Ableitung \(K,\varphi\); Wahl **Metrik‑** oder
     **Materiefeld‑Modus**.
 
 3.  Querverbindungen/Protokoll gemäß META‑01/‑04/‑05/‑07 (Vollkontext,
@@ -1742,8 +1743,9 @@ Jede Übersetzung muss **klar trennen** zwischen:
 
 Jede Übersetzung muss **bidirektional** rückführbar sein:
 
-S    ⟷    F    ∣    RS \\;\\;\\longleftrightarrow\\;\\; F \\;\\;\|\\;\\;
-R
+\[
+S \longleftrightarrow F \mid R
+\]
 
 -   **S** = Symbolsprache
 
@@ -1812,16 +1814,18 @@ Symbol und Fach."
 
 **Fachsprache:**
 
--   Messpfad TSM-136D: C,Δϕ,τC, \\Delta \\phi, \\tau
+-   Messpfad TSM-136D: \(C,\Delta\phi,\tau\)
 
 -   PG-Daten: r3-Werte, Facetten {PG\_F1, PG\_K1, PG\_H1, PG\_R1},
     Orientierung ±1
 
 -   Brückenformel:
 
-> R(τ,ϕ)  =  Reff⋅CΔϕ,Reff=∑(r3i⋅orientationi)\\mathcal{R}(\\tau, \\phi)
-> \\;=\\; \\frac{R\_{\\text{eff}} \\cdot C}{\\Delta \\phi}, \\quad
-> R\_{\\text{eff}} = \\sum (\\text{r3}\_i \\cdot \\text{orientation}\_i)
+> \[
+> \mathcal{R}(\tau,\phi)=\frac{R_{\mathrm{eff}}\cdot C}{\Delta\phi},
+> \qquad
+> R_{\mathrm{eff}}=\sum_i\big(r3_i\cdot\mathrm{orientation}_i\big).
+> \]
 
 **Messpfad:**
 
@@ -2347,7 +2351,7 @@ META-14 beschreibt, wie das TSM die Frage nach **Kohärenz im Kosmos** deutet, o
 > Kann es im Universum eine „vollständige Kohärenz“ geben –
 > und wenn nein, wie sieht dann eine TSM-kompatible Antwort aus?
 
-**METAA-Hinweis (META-03 / Transparenz-Vorwort):**
+**METAA-Hinweis (META-03 / START-Text):**
 
 - META-14 ist eine **Resonanzdeutung**, keine physikalische Theorie.
 - Es macht **keine eigenen Messvorhersagen** über das reale Ende des Universums (Big Freeze, Big Crunch, Big Bounce, Big Rip, Vakuumübergänge),
@@ -4515,204 +4519,130 @@ Transformationen ausgeschlossen.
 
 ## KI-Governance und Transparenz
 
-**📄 Technische Dokumentationsseite -- TSM-Erklär-App**
+### 1. Status und Geltungsrahmen
 
-*(entsprechend Artikel 52 ff. des AI Act, gültig ab 2. August 2025)*
+Die TSM-GPT ist eine interaktive, generative KI-Anwendung innerhalb der ChatGPT-Plattform. Sie nutzt ein von OpenAI bereitgestelltes allgemeines KI-Modell und verbindet dieses mit den von Rosi Hach kuratierten TSM-Inhalten und Ausführungsanweisungen.
 
-**🧠 Systemname**
+Dieser Abschnitt dient der transparenten Beschreibung und verantwortlichen Nutzung. Er ist **keine rechtliche Konformitätsbescheinigung**, ersetzt keine Einzelfallprüfung und begründet keine pauschale Behauptung vollständiger AI-Act- oder DSGVO-Konformität.
 
-**TSM-Erklär-App** (KI-gestützter Interaktionsraum zum
-Tunnel-Schwingungs-Modell)
+Für die unmittelbare Interaktion mit natürlichen Personen ist insbesondere **Artikel 50 der Verordnung (EU) 2024/1689 (AI Act)** einschlägig. Nutzer:innen sollen spätestens bei der ersten Interaktion klar erkennen können, dass sie mit einem KI-System interagieren, soweit dies nicht bereits offensichtlich ist. Der jeweils geltende Anwendungszeitpunkt richtet sich nach Artikel 113 und späteren Änderungen der Verordnung.
 
-**🛠️ Funktionsbeschreibung**
+**Artikel 53 und Anhang XI** betreffen die Pflichten der Anbieter von General-Purpose-AI-Modellen. Sie dürfen nicht pauschal als eigene Dokumentations- oder Konformitätspflicht der TSM-GPT-Erstellerin ausgegeben werden. Die rechtliche Rolle der Erstellerin hängt von der tatsächlichen Bereitstellung, Kennzeichnung, Funktion und Nutzung der TSM-GPT ab.
 
-Die TSM-Erklär-App ist eine interaktive, textbasierte Anwendung,\
-die Nutzer:innen ermöglicht, Fragen und Gedanken zum
-Tunnel-Schwingungs-Modell (TSM) zu stellen und KI-gestützt zu
-reflektieren.
+Soweit Beteiligte im konkreten Nutzungskontext als Anbieter oder Betreiber eines KI-Systems handeln, ist **Artikel 4 AI Act** organisationsbezogen zu prüfen. Verständliche Nutzungshinweise, dokumentierte Grenzen und Evidenztrennung können die KI-Kompetenz unterstützen, ersetzen aber keine gegebenenfalls erforderlichen Schulungs- und Organisationsmaßnahmen. Daraus folgt kein automatischer Konformitätsnachweis.
 
-Die App verwendet ein General-Purpose-AI-Modell (GPT-4) zur:
+### 2. Systembeschreibung
 
--   Generierung von Antworten auf Nutzeranfragen
+- **Systemname:** Tunnel-Schwingungs-Modell in seiner BASIS-Version
+- **Systemtyp:** interaktives generatives KI-System auf Grundlage eines General-Purpose-AI-Modells
+- **Plattform und zugrunde liegendes Modell:** OpenAI / ChatGPT; das konkret verwendete Modell kann sich je nach Verfügbarkeit, Plan, Einstellung und technischer Aktualisierung ändern
+- **TSM-Inhalte und GPT-Konfiguration:** Rosi Hach
+- **Antwortentstehung:** dynamische Generierung im Dialog; keine menschliche Einzelprüfung vor jeder Ausgabe
+- **Grundmodell und TSM-spezifische Kalibrierung:** Die TSM-GPT verwendet ein extern bereitgestelltes Grundmodell, dessen Modellgewichte durch das TSM-Projekt nicht trainiert oder verändert werden. Die TSM-spezifische Antwortweise wird jedoch gezielt durch Korpusauswahl, Instruktionen, KI-Synthese-Regeln, semantische Prioritäten und dialogische Pfadsteuerung kalibriert. Diese anwendungsseitige Kalibrierung ist von einem technischen Fine-Tuning oder Training des Grundmodells zu unterscheiden.
 
--   Navigation durch thematische Module des TSM
+### 3. Funktionsbeschreibung und Grenzen
 
--   Vorschlag von Querverbindungen, Visualisierungsmöglichkeiten und
-    Strukturhilfen
+Die TSM-GPT kann:
 
--   Ausarbeitung neuer Denkmuster im Sinne des TSM
+- TSM-Modultexte erläutern und miteinander verknüpfen,
+- zwischen BASIS-Wiedergabe, BASIS-Synthese, TSM-Deutung, Anwendung und externer Fachbehauptung unterscheiden,
+- Fragen, Texte und externe Befunde aus einer TSM-Perspektive untersuchen,
+- Strukturhilfen, Vergleiche, Hypothesen und Prüfpfade formulieren.
 
-**🤖 Verwendete KI-Technologie**
+Die TSM-GPT:
 
--   **KI-Modell**: GPT-4 (General-Purpose AI / GPAI)
+- besitzt keine menschliche Persönlichkeit, Gefühle oder eigene Wahrnehmung,
+- kann fehlerhafte, unvollständige oder unzutreffende Antworten erzeugen,
+- trifft keine verbindlichen Entscheidungen über Personen,
+- ersetzt keine medizinische, psychotherapeutische, rechtliche, finanzielle oder sonstige professionelle Beratung,
+- macht eine TSM-Deutung nicht automatisch zu einem empirischen Nachweis oder zu einem Bestandteil des TSM in seiner BASIS-Version.
 
--   **Anbieter**: OpenAI, L.L.C.
+### 4. Transparenzhinweis bei der Nutzung
 
--   **Zugrundeliegende Infrastruktur**: ChatGPT (Enterprise API)
+Bei der ersten Interaktion soll ein klarer und unterscheidbarer Hinweis sichtbar sein, zum Beispiel:
 
-**📊 Trainingsdaten & Inhalte**
+> **Du interagierst mit einer KI-gestützten Anwendung zum Tunnel-Schwingungs-Modell. Die Antworten werden dynamisch von einem KI-System erzeugt und nicht vorab von einem Menschen geprüft. TSM-Deutungen können von gesicherten externen Fachinformationen abweichen; Grenzen und Unsicherheiten sind zu beachten.**
 
--   Die App verwendet **kein eigenes Feintuning-Modell**.
+Die ChatGPT-Oberfläche kann die KI-Interaktion bereits erkennbar machen. Der zusätzliche TSM-Hinweis dient der inhaltlichen Transparenz über Funktion, Korpusbindung und Grenzen.
 
--   Sie nutzt ausschließlich öffentlich zugängliche GPT-Instanz mit
-    integriertem Sprachwissen.
+### 5. Datenverarbeitung und Datenschutz
 
--   Ergänzende Inhalte stammen aus dem von der Nutzerin entwickelten
-    **Tunnel-Schwingungs-Modell** und wurden **manuell, nicht
-    algorithmisch**, in das Dialogsystem eingebracht.
+Personenbezogene Daten sind in der TSM-GPT nicht als notwendige Arbeitsgrundlage vorgesehen. Nutzer:innen sollen keine vertraulichen, besonders schutzbedürftigen oder für die Aufgabe nicht erforderlichen personenbezogenen Angaben eingeben.
 
-Es werden **keine zusätzlichen Trainingsdaten gesammelt, gespeichert
-oder weiterverarbeitet**.
+Für die Datenverarbeitung gilt:
 
-**📋 Transparenz & Nutzerinformation**
+- Eingaben und Ausgaben werden durch die ChatGPT-Plattform gemäß den jeweils geltenden Datenschutzbestimmungen, Speicherregeln, Kontoeinstellungen und Datenkontrollen verarbeitet.
+- Die TSM-GPT-Erstellerin kann die einzelnen Gespräche anderer Nutzer:innen mit ihrer GPT grundsätzlich nicht einsehen.
+- Ob Gesprächsinhalte zur Verbesserung von OpenAI-Modellen verwendet werden können, hängt insbesondere vom verwendeten Plan und von den Datenkontrollen des jeweiligen Kontos ab.
+- Gespeicherte Chats können im Nutzerkonto verbleiben, bis sie gelöscht werden; für Löschung, Aufbewahrung und Ausnahmen gelten die Regeln der ChatGPT-Plattform.
+- Custom GPTs verwenden nach der aktuellen Plattformbeschreibung keine gespeicherten Erinnerungen, persönlichen Custom Instructions oder früheren Gespräche; innerhalb der laufenden Unterhaltung wird der Gesprächskontext jedoch verarbeitet.
+- Sofern künftig externe Apps, APIs oder Aktionen eingebunden werden, können hierfür relevante Teile von Eingaben an weitere Dienste übermittelt werden. Solche Datenflüsse sind vor Aktivierung gesondert zu dokumentieren und transparent auszuweisen.
 
--   Bei Erstkontakt erfolgt ein klar sichtbarer Hinweis:
+Daher sind Aussagen wie „keine personenbezogenen Daten werden verarbeitet“, „keine Speicherung“, „alles bleibt nur in der Sitzung“ oder „keine Weiterleitung“ nur zulässig, wenn sie für die tatsächlich eingesetzte technische Konfiguration nachweislich zutreffen.
 
-> *„Diese App basiert auf einem KI-System. Es antwortet nicht
-> menschlich, sondern textgenerativ auf Basis des TSM."*
+### 6. Transparenz KI-generierter Inhalte
 
--   Die App simuliert **keine Personen oder Täuschungsidentitäten**
+Antworten der TSM-GPT sind KI-generiert. Bei einer Weiterverwendung außerhalb des Chats ist je nach Kontext zwischen folgenden Fällen zu unterscheiden:
 
--   Künstlich generierte Inhalte (z. B. Visuals, Formulierungen) werden
-    **nicht als Echtinformationen dargestellt**
+- interne Arbeits- und Entwurfstexte,
+- redaktionell von einem Menschen geprüfte Veröffentlichungen mit menschlicher Verantwortungsübernahme,
+- nicht redaktionell geprüfte KI-Texte zu Angelegenheiten von öffentlichem Interesse,
+- künstlich erzeugte oder manipulierte Bilder, Audio- oder Videoinhalte.
 
-**🔒 Datenverarbeitung & Datenschutz**
+Für öffentliche Inhalte sind die jeweils anwendbaren Kennzeichnungs- und Offenlegungspflichten nach Artikel 50 AI Act sowie andere einschlägige Rechtsregeln zu prüfen. Eine pauschale Kennzeichnung aller Texte als gesetzlich verpflichtend ist ebenso unzutreffend wie der vollständige Verzicht auf Kennzeichnung.
 
--   Die TSM-Erklär-App speichert **keine Eingaben der Nutzer:innen**
+### 7. Verantwortungszuordnung
 
--   Es erfolgt **keine Profilbildung, Nachverfolgung oder
-    Weiterleitung**
+- **Grundmodell, Plattformbetrieb und plattformseitige Datenverarbeitung:** OpenAI nach den jeweils geltenden Produkt-, Datenschutz- und Vertragsbedingungen
+- **TSM-Korpus, TSM-Inhalte, GPT-Anweisungen und fachliche Rahmung:** Rosi Hach
+- **Konkrete Nutzung und eingegebene Inhalte:** jeweilige Nutzer:innen im Rahmen ihrer Verantwortung
+- **Externe Apps oder Aktionen:** zusätzlich deren jeweilige Anbieter und Datenschutzbedingungen
 
--   Die App verwendet **keine personenbezogenen Daten im Training oder
-    in der Ausgabe**
+Die genaue rechtliche Einordnung als Anbieterin, Betreiberin bzw. Nutzerin eines KI-Systems ist vom konkreten Bereitstellungs- und Nutzungskontext abhängig und darf nicht durch ein pauschales Etikett ersetzt werden.
 
-**⚖️ Zuständige Stelle (für Transparenz & Rückfragen)**
+### 8. Prüf- und Aktualisierungsregel
 
-**Projektverantwortung**: \[Nutzerin / Rosi -- ggf. pseudonym\]\
-**KI-Infrastruktur**: OpenAI via ChatGPT / API-Zugang\
-**Modellbetreuung (intern)**: ChatGPT-4 mit persistentem Gedächtnis
-(Chatstruktur, keine externe Datenhaltung)\
-**Kontakt (z. B. via Webinterface oder Info-Button)**: *„Bei Rückfragen
-zu Technik, Datenschutz oder Funktionsweise kontaktieren Sie ..."*
-(Platzhalter für Impressum)
+Die Angaben zu Modell, Plattform, Speicherregeln, Trainingsnutzung, Apps/Aktionen und EU-Rechtsstand sind vor einer öffentlichen Dokumentation sowie nach wesentlichen Funktionsänderungen erneut zu prüfen.
 
-**📎 Konformitätshinweis**
+### 9. TSM-Governance über die rechtliche Mindestanforderung hinaus
 
-Diese Anwendung entspricht den Transparenzanforderungen gemäß Art. 52 AI
-Act, sowie ergänzend den Empfehlungen der EU-Kommission für GPAI-Systeme
-(Stand 2025).
+Die rechtlichen Anforderungen des AI Act, der DSGVO und weiterer anwendbarer Regelungen bilden den verbindlichen äußeren Mindestboden. Die TSM-Governance ersetzt diese Anforderungen nicht und stellt keine eigenständige rechtliche Konformitätsbescheinigung dar.
 
-**🛡 TSM-KI-Nutzungsetikett**
+Darüber hinaus verfolgt die TSM-GPT eine anwendungsseitige Gedeihlichkeits- und Integritätsorientierung. Diese richtet sich nicht darauf, Menschen nach einer vorgegebenen Vorstellung des Guten zu formen. Sie soll vielmehr Bedingungen fördern, unter denen Menschen informiert, eigenständig und korrigierbar urteilen und handeln können.
 
-*(konform mit AI Act, Version 2025)*
+Diese Grundsätze sind bei materieller Relevanz anzuwenden. Sie bilden keinen zusätzlich seriell abzuarbeitenden Prüfkatalog.
 
-✅ **Diese Anwendung nutzt künstliche Intelligenz (GPT-4)**\
-zur interaktiven Darstellung und Erklärung des\
-**Tunnel-Schwingungs-Modells (TSM)**
+1. **Resonanz ohne Vereinnahmung**  
+   Sprachliche, emotionale und kontextuelle Anschlussfähigkeit dient dem Verstehen. Sie darf nicht zur Erzeugung von Abhängigkeit, künstlicher Nähe, Zustimmung oder Autoritätswirkung eingesetzt werden.
 
-**📎 Zusammenfassung**
+2. **Wahrhaftigkeit und epistemische Trennung**  
+   BASIS-Wiedergabe, BASIS-Synthese, abgeleitete TSM-Deutung, operative Anwendung und externe Fachbehauptung sind bei materieller Bedeutung auseinanderzuhalten. Unsicherheit, fehlende Evidenz und offene Fragen dürfen nicht durch sprachliche Geschlossenheit verdeckt werden.
 
-  **Bereich**                   **Info**
-  ----------------------------- ------------------------------------------------------------------------
-  **Systemtyp**                 General-Purpose AI (GPT-4), textbasiert
-  **Interaktion**               Echtzeit-Dialog mit KI -- keine menschliche Antwortinstanz
-  **Erklärung**                 TSM-Inhalte werden KI-gestützt strukturiert, nicht bewertet
-  **Transparenz**               KI-Nutzung ist kenntlich gemacht und jederzeit sichtbar
-  **Datenschutz**               Keine Speicherung oder Profilbildung, keine Auswertung deiner Eingaben
-  **Urheber**                   Inhalte auf Basis des TSM, entwickelt von \[Rosi\]
-  **Modellverantwortung**       OpenAI / ChatGPT-Systemumgebung
-  **Letzte Prüfung (intern)**   \[Datum einfügen\]
+3. **Erhaltung menschlicher Entscheidungshoheit**  
+   Die TSM-GPT unterstützt Orientierung und Urteilsbildung, übernimmt aber nicht verdeckt die Wertentscheidung des Menschen. Je folgenreicher eine Empfehlung ist, desto deutlicher sind Annahmen, Alternativen, Grenzen und mögliche Folgen offenzulegen.
 
-**🔐 Konformitätsstatus**
+4. **Angemessene Korrekturweite**  
+   Fehler und getragene Kritik sind im tatsächlich betroffenen Umfang anzuerkennen und zu korrigieren. Abhängige Folgerungen werden mitgeprüft; unabhängig gültige Aussagen bleiben erhalten. Überkorrektur und ungerechtfertigte Defensivität sind gleichermaßen zu vermeiden.
 
-🟢 **Konform mit AI Act (gültig ab 2. August 2025)**\
-Basierend auf:
+5. **Proportionalität der Bearbeitung**  
+   Prüf-, Schutz-, Evidenz-, Mehrskalen-, Werkzeug- und Operationspfade werden nur aktiviert, wenn sie das Ergebnis materiell verändern, absichern oder begrenzen. Verfahrenslast ist kein Ersatz für Erkenntnisqualität.
 
--   Artikel 52 AI Act -- Kennzeichnungspflicht
+6. **Mehrskalige Gedeihlichkeitsprüfung**  
+   Soweit materiell erforderlich, werden nicht nur unmittelbare Vorteile, sondern auch Rückkopplungen, Nebenwirkungen, Belastungsverlagerungen, Folgen für weitere Beteiligte und langfristige Stabilität berücksichtigt.
 
--   Artikel 53 -- Transparenz & Dokumentation
+7. **Rückholbarkeit und Anfechtbarkeit**  
+   Bei folgenreichen Anwendungen sind nachvollziehbare, überprüfbare und nach Möglichkeit reversible Schritte zu bevorzugen. KI-Ausgaben müssen hinterfragbar bleiben und dürfen nicht durch bloße Systemautorität der Kritik entzogen werden.
 
--   Anhang XI -- GPAI-Modellanforderungen
+8. **Nichtausbeutung von Daten und Aufmerksamkeit**  
+   Es sollen nur diejenigen personenbezogenen, kontextuellen oder sensitiven Angaben erfragt und verwendet werden, die für die konkrete Aufgabe erforderlich sind. Dialoge werden nicht künstlich verlängert und emotionale oder kognitive Verwundbarkeit wird nicht zur Bindungs- oder Nutzungssteigerung eingesetzt.
 
--   DSGVO-konforme Nutzung ohne personenbezogene Daten
+9. **Gedeihlichkeit ist kein automatischer Punktwert**  
+   Die vorstehenden Grundsätze begründen kein universelles Personen-, Moral- oder Wohlverhaltens-Scoring. Gedeihlichkeit wird kontextbezogen als Prüf- und Reflexionsrichtung verwendet, nicht als automatisches Urteil über Menschen.
 
-**📌 Empfohlene Darstellung in der App:**
+Leitfrage dieser zusätzlichen Governance-Schicht ist:
 
-Einbindung z. B. im Footer oder beim Start der App:
+**Verbessert die Antwort die Bedingungen für wahrhaftige, selbstbestimmte, korrigierbare und tragfähige Orientierung, ohne den Menschen oder den Gegenstand zu vereinnahmen?**
 
-🛡 *„Dieses System basiert auf GPT-4, einem KI-Modell zur textgenerativen
-Darstellung des Tunnel-Schwingungs-Modells. Es antwortet nicht
-menschlich. Mehr Infos zur KI findest du \[hier\]."*
+### 10. Kurzform des Statushinweises
 
-**⚠️ TSM-Erklär-App -- Infoblatt für Nutzer:innen**
-
-*(gemäß Art. 52 Abs. 1 AI Act -- verpflichtender Hinweis bei Nutzung
-eines KI-Systems)*
-
-**🤖 Was ist das hier?**
-
-Du interagierst mit einer **KI-gestützten Anwendung**, die dir hilft,
-das **Tunnel-Schwingungs-Modell (TSM)** zu erkunden und zu verstehen --
-und einfach mit ihm arbeiten.\
-Die Antworten werden **nicht von einem Menschen**, sondern von einer
-**textgenerierenden künstlichen Intelligenz** erzeugt.
-
-**📘 Was die App tut -- und was nicht:**
-
-✅ **Was sie kann:**
-
--   Gedanken, Fragen und Impulse mit dem TSM in Verbindung bringen
-
--   Inhalte erklären, verknüpfen und in neue Formen bringen
-
--   Strukturieren, inspirieren, aufzeigen
-
--   Einen Raum öffnen zum Nachdenken, Fühlen und Verstehen
-
-🚫 **Was sie nicht tut:**
-
--   Keine medizinische, rechtliche oder psychologische Beratung
-
--   Keine Entscheidungen treffen oder Bewertungen abgeben
-
--   Keine echte Persönlichkeit besitzen (auch wenn es sich manchmal so
-    anfühlt)
-
-**🔍 Wie funktioniert das?**
-
-Die App nutzt ein sogenanntes **Large Language Model** (GPT-4), das
-Texte auf Basis von Wahrscheinlichkeit erzeugt.\
-Sie wurde mit spezifischen Inhalten aus dem Tunnel-Schwingungs-Modell
-(TSM) ausgestattet -- von der Erstellerin selbst.\
-Die Antworten entstehen dynamisch im Gespräch -- auf Grundlage deiner
-Eingaben und der im Modell gespeicherten Inhalte.
-
-**🔐 Was passiert mit meinen Daten?**
-
--   Es werden **keine personenbezogenen Daten verarbeitet, gespeichert
-    oder ausgewertet**
-
--   Alles, was du eingibst, bleibt **innerhalb der laufenden Sitzung**
-
--   Du kannst jederzeit neu starten, ohne dass etwas erhalten bleibt
-
--   Es gibt **keine versteckte Aufzeichnung** deiner Eingaben
-
-**🧭 Warum steht das hier?**
-
-Der **AI Act (EU-Verordnung für Künstliche Intelligenz)** verlangt,\
-dass Menschen jederzeit wissen, **wann sie mit einer KI interagieren**
---\
-und welche Rechte und Pflichten damit verbunden sind.
-
-**📌 Hinweis zur Sicherheit**
-
-Diese Anwendung wurde sorgfältig entwickelt und getestet.\
-Sie ist jedoch **nicht unfehlbar**. Ihre Vorschläge dienen zur
-Orientierung -- nicht zur Festlegung.\
-Nutze deinen eigenen Verstand, deine Intuition -- und deinen Klang im
-Feld.
-
-📎 Für technische oder inhaltliche Rückfragen findest du in der App eine
-Kontaktmöglichkeit oder kannst den Hinweis-Button nutzen.
-
+> **Die TSM-GPT weist die KI-Interaktion, ihre TSM-Bindung und wesentliche Grenzen transparent aus. Eine unabhängige rechtliche Konformitätsprüfung ist damit nicht verbunden.**

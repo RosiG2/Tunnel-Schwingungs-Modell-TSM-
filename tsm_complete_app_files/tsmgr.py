@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""TSM compact operations runner v7.2.
+"""TSM compact operations runner v7.8.
 
 Standard-library-only reference runner for the active TSM corpus package.
 It is a synthetic/numerical work runner, not empirical validation and not a
@@ -11,6 +11,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 import argparse
+import difflib
 import copy
 import csv
 import hashlib
@@ -24,6 +25,10 @@ import sys
 import unicodedata
 from datetime import datetime, timezone
 from collections import deque
+
+
+RUNNER_VERSION = "v7.8"
+RUNNER_COMMAND_COUNT = 66
 
 
 def sha256_file(path: Path) -> str:
@@ -53,6 +58,11 @@ def require(d: dict, dotted_path: str):
             raise ValueError(f"Missing required operations field: {dotted_path}")
         current = current[part]
     return current
+
+
+def release_version_token(value: object) -> str | None:
+    match = re.search(r"v\d+\.\d+", str(value or ""))
+    return match.group(0) if match else None
 
 
 def parse_bool(value: str | bool | None) -> bool | None:
@@ -951,9 +961,34 @@ def validate_operations(bundle: dict) -> tuple[dict, dict]:
     if tf_profile.get("policies", {}).get("no_new_scoring_formula") is not True:
         raise ValueError("The TF profile must forbid a new scoring formula.")
 
+    release = require(bundle, "release_metadata")
+    release_version = release.get("version")
+    if release_version != RUNNER_VERSION:
+        raise ValueError(f"Release version {release_version!r} does not match runner version {RUNNER_VERSION!r}.")
+    if release.get("runner_version") != RUNNER_VERSION:
+        raise ValueError("Release metadata runner_version is inconsistent.")
+    if int(release.get("runner_command_count", -1)) != RUNNER_COMMAND_COUNT:
+        raise ValueError("Release metadata runner_command_count is inconsistent.")
+    if int(bundle.get("validation_summary", {}).get("commands_available", -1)) != RUNNER_COMMAND_COUNT:
+        raise ValueError("Validation summary commands_available is inconsistent with the runner.")
+    if bundle.get("status") != release.get("status"):
+        raise ValueError("Top-level status and release metadata status are inconsistent.")
+    if release_version_token(bundle.get("package_id")) != release_version:
+        raise ValueError("Package ID version and release metadata version are inconsistent.")
+
     execution_profile = require(bundle, "canonical_execution_profile")
-    if execution_profile.get("version") != "v7.2":
-        raise ValueError("The active canonical execution profile must be v7.2.")
+    if execution_profile.get("version") != release_version:
+        raise ValueError("Canonical execution profile version and release metadata version are inconsistent.")
+
+    companion = require(bundle, "companion_configuration")
+    if companion.get("version") != release_version:
+        raise ValueError("Companion version and release metadata version are inconsistent.")
+    if release.get("companion_version") != companion.get("version"):
+        raise ValueError("Release metadata companion_version is inconsistent.")
+    if companion.get("external_to_active_file_budget") is not True:
+        raise ValueError("The application-hint companion must remain external to the active 13-file budget.")
+    if not re.fullmatch(r"[0-9a-f]{64}", str(companion.get("sha256", ""))):
+        raise ValueError("Companion configuration requires a valid SHA-256 digest.")
 
     ai_system = require(bundle, "ai_synthesis_system")
     if ai_system.get("joint_use_required") is not True:
@@ -1011,6 +1046,36 @@ def validate_operations(bundle: dict) -> tuple[dict, dict]:
     ]
     if not all(requirements.get(name) is True for name in required_correction_flags):
         raise ValueError("The active correction branch is incomplete.")
+
+    semantic_protection = require(bundle, "semantic_regression_protection")
+    if semantic_protection.get("schema_id") != "tsm.semantic-regression-protection.v1":
+        raise ValueError("The semantic regression protection schema is missing or unsupported.")
+    invariant_spec = semantic_protection.get("canonical_invariants", {})
+    anchors = invariant_spec.get("required_anchors", [])
+    if len(anchors) < 15 or len({x.get("anchor_id") for x in anchors}) != len(anchors):
+        raise ValueError("Canonical semantic invariant catalogue is incomplete or contains duplicate IDs.")
+    if semantic_protection.get("baseline_comparison", {}).get("baseline_must_remain_external") is not True:
+        raise ValueError("Semantic baseline comparison must use an external predecessor package.")
+
+    text_integrity = require(bundle, "text_formula_integrity")
+    if text_integrity.get("schema_id") != "tsm.text-formula-integrity.v1":
+        raise ValueError("The text/formula integrity schema is missing or unsupported.")
+    if len(text_integrity.get("semantic_files", [])) < 3:
+        raise ValueError("The text/formula integrity audit requires the protected semantic files.")
+    if len(text_integrity.get("forbidden_patterns", [])) < 8:
+        raise ValueError("The text/formula integrity forbidden-pattern catalogue is incomplete.")
+    if len(text_integrity.get("required_formula_anchors", [])) < 12:
+        raise ValueError("The text/formula integrity anchor catalogue is incomplete.")
+    for anchor in text_integrity.get("required_formula_anchors", []):
+        parts = anchor.get("all_contains") or [anchor.get("contains", "")]
+        minimum = anchor.get("minimum_occurrences", 1)
+        if not all(isinstance(part, str) and part for part in parts):
+            raise ValueError(f"Formula anchor {anchor.get('anchor_id')} contains an empty protected text part.")
+        if isinstance(minimum, list):
+            if len(minimum) != len(parts) or not all(isinstance(value, int) and value >= 1 for value in minimum):
+                raise ValueError(f"Formula anchor {anchor.get('anchor_id')} has invalid occurrence requirements.")
+        elif not isinstance(minimum, int) or minimum < 1:
+            raise ValueError(f"Formula anchor {anchor.get('anchor_id')} has an invalid minimum occurrence count.")
     return profile, gates
 
 
@@ -1076,6 +1141,12 @@ def validate_package(root: Path, bundle: dict) -> dict:
     dialog_framework = dialog_routing_audit(root, bundle)
     if dialog_framework["status"] != "PASS":
         raise ValueError(f"Dialog-routing audit failed: {dialog_framework}")
+    invariants = canonical_invariants_audit(root, bundle)
+    if invariants["status"] != "PASS":
+        raise ValueError(f"Canonical semantic invariants failed: {invariants}")
+    text_integrity = text_formula_integrity_audit(root, bundle)
+    if text_integrity["status"] != "PASS":
+        raise ValueError(f"Text/formula integrity audit failed: {text_integrity}")
 
     registry_ids = [x["id"] for x in bundle.get("module_registry", {}).get("entries", [])]
     if bundle.get("schema_id") in {"tsm.operations.bundle.v3", "tsm.operations.bundle.v4", "tsm.operations.bundle.v5", "tsm.operations.bundle.v6"}:
@@ -1101,6 +1172,7 @@ def validate_package(root: Path, bundle: dict) -> dict:
         "study_groups": group_counts,
         "module_registry_entries": len(registry_ids),
         "meta04_rules": len(bundle.get("meta04_rules", {}).get("rules", [])),
+        "text_formula_integrity": text_integrity,
     }
 
 
@@ -4364,6 +4436,45 @@ def comparison_framework_audit(root: Path, bundle: dict) -> dict:
         checks["calculation_statuses_complete"] = set(framework.get("calculation_statuses", [])) == required_statuses
         checks["calculation_statuses_present"] = all(status in text for status in required_statuses)
 
+        screening = framework.get("screening_prioritization_policy", {})
+        required_screening_flags = [
+            "rankings_are_scenario_bound_priorities_not_truth",
+            "data_classes_must_remain_distinct",
+            "counterindicators_required",
+            "next_validation_required",
+            "empty_preferred_over_pseudoprecision",
+            "ranking_instability_is_result",
+            "no_automatic_release",
+        ]
+        checks["screening_prioritization_policy_complete"] = all(
+            screening.get(name) is True for name in required_screening_flags
+        )
+        checks["screening_policy_present_in_markdown"] = all(marker in text for marker in (
+            "Prüfpriorität, keine absolute Eignungs- oder Wahrheitsaussage",
+            "Ein unbelegbarer Wert bleibt leer",
+            "Ranginstabilität selbst ein Ergebnis",
+        ))
+
+        role_policy = framework.get("role_profile_overlay_policy", {})
+        required_role_flags = [
+            "primary_profile_preserved",
+            "overlay_layers_separate",
+            "overlay_may_dominate_without_erasing_primary_profile",
+            "role_gap_optional",
+            "small_gap_only_indicates_mixed_profile",
+            "no_universal_role_gap_threshold",
+            "role_gap_not_resonance_or_136d_evidence",
+        ]
+        checks["role_profile_overlay_policy_complete"] = all(
+            role_policy.get(name) is True for name in required_role_flags
+        )
+        checks["role_profile_policy_present_in_markdown"] = all(marker in text for marker in (
+            "Primärprofil beschrieben",
+            "Überlagerung kann die Gesamteinschätzung begrenzen",
+            "Rollenabstand ist eine optionale Profilheuristik",
+            "Universelle Schwellen sind unzulässig",
+        ))
+
         registry_ids = {
             x.get("source_id") for x in bundle.get("publication_source_registry", {}).get("sources", [])
         }
@@ -4801,6 +4912,369 @@ def dialog_routing_audit(root: Path, bundle: dict) -> dict:
     }
 
 
+
+def _normalize_semantic_text(value: str) -> str:
+    return re.sub(r"\s+", " ", value.strip())
+
+
+def _semantic_headings(text: str) -> list[str]:
+    return [_normalize_semantic_text(line) for line in text.splitlines() if re.match(r"^#{1,6}\s+\S", line)]
+
+
+def _semantic_paragraphs(text: str) -> list[str]:
+    chunks = re.split(r"\n\s*\n", text)
+    paragraphs = []
+    for chunk in chunks:
+        normalized = _normalize_semantic_text(chunk)
+        if len(normalized) < 45:
+            continue
+        if normalized.startswith("```"):
+            continue
+        paragraphs.append(normalized)
+    return paragraphs
+
+
+
+def companion_configuration_audit(root: Path, bundle: dict, companion_path: Path | str) -> dict:
+    config = bundle.get("companion_configuration", {})
+    path = Path(companion_path)
+    if not path.is_absolute():
+        path = (root / path).resolve()
+    checks = {
+        "configuration_present": bool(config),
+        "file_exists": path.is_file(),
+        "expected_filename": path.name == config.get("expected_filename"),
+        "version_matches_release": config.get("version") == bundle.get("release_metadata", {}).get("version"),
+        "external_to_active_file_budget": config.get("external_to_active_file_budget") is True,
+    }
+    actual_hash = None
+    text = ""
+    if path.is_file():
+        actual_hash = sha256_file(path)
+        text = path.read_text(encoding="utf-8")
+    checks["sha256_matches"] = actual_hash == config.get("sha256")
+    required_marker = str(config.get("required_marker", ""))
+    checks["required_marker_present"] = bool(required_marker) and required_marker in text
+    checks["version_marker_present"] = str(config.get("version", "")) in text
+    status = "PASS" if checks and all(checks.values()) else "FAIL"
+    return {
+        "status": status,
+        "companion_path": str(path),
+        "expected_filename": config.get("expected_filename"),
+        "expected_sha256": config.get("sha256"),
+        "actual_sha256": actual_hash,
+        "checks": checks,
+        "role": config.get("role"),
+        "claim_scope": "external_application_hint_identity_version_and_integrity_not_semantic_equivalence_proof",
+    }
+
+def text_formula_integrity_audit(root: Path, bundle: dict) -> dict:
+    """Fail-closed audit for known rendering corruption and protected formula relations.
+
+    This audit verifies textual/markup integrity only. It does not validate the
+    empirical truth or physical interpretation of the formulas.
+    """
+    spec = require(bundle, "text_formula_integrity")
+    semantic_files = list(spec.get("semantic_files", []))
+    forbidden = list(spec.get("forbidden_patterns", []))
+    anchors = list(spec.get("required_formula_anchors", []))
+    missing_files: list[str] = []
+    pattern_hits: list[dict] = []
+    control_character_hits: list[dict] = []
+    zero_width_hits: list[dict] = []
+    texts: dict[str, str] = {}
+
+    for rel in semantic_files:
+        path = root / rel
+        if not path.is_file():
+            missing_files.append(rel)
+            continue
+        text = path.read_text(encoding="utf-8")
+        texts[rel] = text
+        for pattern in forbidden:
+            flags = re.MULTILINE
+            if pattern.get("ignore_case"):
+                flags |= re.IGNORECASE
+            rx = re.compile(str(pattern["regex"]), flags)
+            for match in rx.finditer(text):
+                line = text.count("\n", 0, match.start()) + 1
+                line_text = text.splitlines()[line - 1] if text.splitlines() else ""
+                pattern_hits.append({
+                    "pattern_id": pattern.get("pattern_id"),
+                    "file": rel,
+                    "line": line,
+                    "excerpt": line_text[:240],
+                })
+        for index, char in enumerate(text):
+            code = ord(char)
+            if code < 32 and char not in {"\t", "\n", "\r"}:
+                control_character_hits.append({
+                    "file": rel,
+                    "line": text.count("\n", 0, index) + 1,
+                    "codepoint": f"U+{code:04X}",
+                })
+            if char in {"\u200b", "\u200c", "\u200d", "\ufeff"}:
+                zero_width_hits.append({
+                    "file": rel,
+                    "line": text.count("\n", 0, index) + 1,
+                    "codepoint": f"U+{code:04X}",
+                })
+
+    missing_anchors: list[dict] = []
+    for anchor in anchors:
+        rel = str(anchor["file"])
+        text = texts.get(rel)
+        required_parts = anchor.get("all_contains") or [anchor.get("contains", "")]
+        minimum = anchor.get("minimum_occurrences", 1)
+        if isinstance(minimum, list):
+            if len(minimum) != len(required_parts):
+                raise ValueError(
+                    f"Formula anchor {anchor.get('anchor_id')} has an occurrence-count list "
+                    "whose length does not match its protected text parts."
+                )
+            minimum_counts = [int(value) for value in minimum]
+        else:
+            minimum_counts = [int(minimum)] * len(required_parts)
+        deficits = []
+        for part, expected_count in zip(required_parts, minimum_counts):
+            if not part:
+                continue
+            actual_count = 0 if text is None else text.count(part)
+            if actual_count < expected_count:
+                deficits.append({
+                    "part": part,
+                    "minimum_occurrences": expected_count,
+                    "actual_occurrences": actual_count,
+                })
+        if deficits:
+            missing_anchors.append({
+                "anchor_id": anchor.get("anchor_id"),
+                "file": rel,
+                "occurrence_deficits": deficits,
+                "relation_scope": anchor.get("relation_scope"),
+            })
+
+    status = "FAIL" if (
+        missing_files or pattern_hits or control_character_hits or
+        zero_width_hits or missing_anchors
+    ) else "PASS"
+    return {
+        "status": status,
+        "schema_id": spec.get("schema_id"),
+        "semantic_files_checked": len(semantic_files) - len(missing_files),
+        "forbidden_patterns_checked": len(forbidden),
+        "formula_anchors_checked": len(anchors),
+        "missing_files": missing_files,
+        "pattern_hits": pattern_hits,
+        "control_character_hits": control_character_hits,
+        "zero_width_hits": zero_width_hits,
+        "missing_formula_anchors": missing_anchors,
+        "claim_scope": "text_markup_and_formula_relation_presence_not_empirical_or_physical_validation",
+    }
+
+
+def canonical_invariants_audit(root: Path, bundle: dict) -> dict:
+    spec = bundle.get("semantic_regression_protection", {}).get("canonical_invariants", {})
+    anchors = spec.get("required_anchors", [])
+    results = []
+    missing_files = set()
+    for anchor in anchors:
+        rel = str(anchor.get("file", ""))
+        marker = str(anchor.get("marker", ""))
+        path = root / rel
+        if not path.is_file():
+            present = False
+            missing_files.add(rel)
+        else:
+            text = path.read_text(encoding="utf-8")
+            present = marker in text
+        results.append({
+            "anchor_id": anchor.get("anchor_id"),
+            "category": anchor.get("category"),
+            "file": rel,
+            "present": present,
+        })
+    missing = [x for x in results if not x["present"]]
+    category_counts = {}
+    for row in results:
+        category = str(row.get("category", "unspecified"))
+        category_counts.setdefault(category, {"required": 0, "present": 0})
+        category_counts[category]["required"] += 1
+        category_counts[category]["present"] += int(row["present"])
+    return {
+        "status": "PASS" if not missing else "FAIL",
+        "schema_id": bundle.get("semantic_regression_protection", {}).get("schema_id"),
+        "required_anchors": len(results),
+        "present_anchors": len(results) - len(missing),
+        "missing_anchor_ids": [x.get("anchor_id") for x in missing],
+        "missing_files": sorted(missing_files),
+        "category_counts": category_counts,
+        "results": results,
+        "claim_scope": "canonical_semantic_presence_and_protection_not_empirical_validation",
+    }
+
+
+def semantic_regression_audit(root: Path, bundle: dict, baseline_root: Path) -> dict:
+    baseline_root = baseline_root.resolve()
+    if not baseline_root.is_dir():
+        raise FileNotFoundError(f"Baseline root is not a directory: {baseline_root}")
+
+    current_files = [bundle.get("ai_synthesis_system", {}).get("execution_key_file")]
+    current_files.extend(bundle.get("semantic_authority", {}).get("files", []))
+    current_files = [str(x) for x in current_files if x]
+    current_files = list(dict.fromkeys(current_files))
+
+    baseline_bundle = None
+    baseline_operations = baseline_root / "TSM_Operations.json"
+    if baseline_operations.is_file():
+        try:
+            baseline_bundle = load_json(baseline_operations)
+        except Exception:
+            baseline_bundle = None
+
+    if baseline_bundle:
+        baseline_files = [baseline_bundle.get("ai_synthesis_system", {}).get("execution_key_file")]
+        baseline_files.extend(baseline_bundle.get("semantic_authority", {}).get("files", []))
+        baseline_files = [str(x) for x in baseline_files if x]
+    else:
+        baseline_files = list(current_files)
+    compare_files = sorted(set(current_files) | set(baseline_files))
+
+    file_results = []
+    removed_headings_total = []
+    removed_paragraphs_total = []
+    modified_paragraphs_total = []
+    missing_current_files = []
+    missing_baseline_files = []
+
+    for rel in compare_files:
+        current_path = root / rel
+        baseline_path = baseline_root / rel
+        if not current_path.is_file():
+            missing_current_files.append(rel)
+            file_results.append({"file": rel, "status": "MISSING_CURRENT"})
+            continue
+        if not baseline_path.is_file():
+            missing_baseline_files.append(rel)
+            file_results.append({"file": rel, "status": "NEW_CURRENT_FILE"})
+            continue
+
+        current_text = current_path.read_text(encoding="utf-8")
+        baseline_text = baseline_path.read_text(encoding="utf-8")
+        if current_text == baseline_text:
+            file_results.append({"file": rel, "status": "UNCHANGED", "removed_headings": 0, "removed_paragraphs": 0, "modified_paragraphs": 0})
+            continue
+
+        current_headings = set(_semantic_headings(current_text))
+        baseline_headings = set(_semantic_headings(baseline_text))
+        removed_headings = sorted(baseline_headings - current_headings)
+        current_paragraphs = _semantic_paragraphs(current_text)
+        baseline_paragraphs = _semantic_paragraphs(baseline_text)
+        current_set = set(current_paragraphs)
+        removed_paragraphs = []
+        modified_paragraphs = []
+
+        # Build a deterministic token index so predecessor comparison remains
+        # conservative without the quadratic all-paragraphs-against-all-paragraphs
+        # cost of earlier releases. Exact matches are still handled first.
+        token_index: dict[str, set[int]] = {}
+        paragraph_tokens: list[set[str]] = []
+        for idx, candidate in enumerate(current_paragraphs):
+            tokens = set(re.findall(r"[\wÀ-ÖØ-öø-ÿ]{4,}", candidate.casefold()))
+            paragraph_tokens.append(tokens)
+            for token in tokens:
+                token_index.setdefault(token, set()).add(idx)
+
+        for paragraph in baseline_paragraphs:
+            if paragraph in current_set:
+                continue
+            baseline_tokens = set(re.findall(r"[\wÀ-ÖØ-öø-ÿ]{4,}", paragraph.casefold()))
+            ranked_tokens = sorted(
+                (token for token in baseline_tokens if token in token_index),
+                key=lambda token: (len(token_index[token]), token),
+            )
+            candidate_ids: set[int] = set()
+            for token in ranked_tokens[:12]:
+                candidate_ids.update(token_index[token])
+                if len(candidate_ids) >= 400:
+                    break
+            length = max(1, len(paragraph))
+            filtered = [
+                idx for idx in candidate_ids
+                if 0.45 <= len(current_paragraphs[idx]) / length <= 2.20
+            ]
+            if len(filtered) > 250:
+                filtered.sort(
+                    key=lambda idx: (
+                        -len(baseline_tokens & paragraph_tokens[idx]),
+                        abs(len(current_paragraphs[idx]) - length),
+                        idx,
+                    )
+                )
+                filtered = filtered[:250]
+
+            best_ratio = 0.0
+            best_match = None
+            for idx in filtered:
+                candidate = current_paragraphs[idx]
+                ratio = difflib.SequenceMatcher(None, paragraph, candidate, autojunk=False).ratio()
+                if ratio > best_ratio:
+                    best_ratio = ratio
+                    best_match = candidate
+            if best_ratio >= 0.72:
+                modified_paragraphs.append({"baseline": paragraph, "current": best_match, "similarity": round(best_ratio, 4)})
+            else:
+                removed_paragraphs.append(paragraph)
+
+        removed_headings_total.extend({"file": rel, "heading": x} for x in removed_headings)
+        removed_paragraphs_total.extend({"file": rel, "paragraph": x} for x in removed_paragraphs)
+        modified_paragraphs_total.extend({"file": rel, **x} for x in modified_paragraphs)
+        file_results.append({
+            "file": rel,
+            "status": "CHANGED",
+            "removed_headings": len(removed_headings),
+            "removed_paragraphs": len(removed_paragraphs),
+            "modified_paragraphs": len(modified_paragraphs),
+        })
+
+    invariants = canonical_invariants_audit(root, bundle)
+    protected_losses = []
+    for anchor in bundle.get("semantic_regression_protection", {}).get("canonical_invariants", {}).get("required_anchors", []):
+        rel = str(anchor.get("file", ""))
+        marker = str(anchor.get("marker", ""))
+        baseline_path = baseline_root / rel
+        current_path = root / rel
+        baseline_had = baseline_path.is_file() and marker in baseline_path.read_text(encoding="utf-8")
+        current_has = current_path.is_file() and marker in current_path.read_text(encoding="utf-8")
+        if baseline_had and not current_has:
+            protected_losses.append(anchor.get("anchor_id"))
+
+    if invariants["status"] == "FAIL" or missing_current_files or protected_losses:
+        status = "FAIL"
+    elif removed_headings_total or removed_paragraphs_total:
+        status = "PASS_WITH_REVIEW_ITEMS"
+    elif any(x.get("status") == "CHANGED" for x in file_results):
+        status = "PASS_WITH_MODIFICATIONS"
+    else:
+        status = "PASS"
+
+    return {
+        "status": status,
+        "baseline_root": str(baseline_root),
+        "current_root": str(root),
+        "compared_files": len(compare_files),
+        "file_results": file_results,
+        "missing_current_files": missing_current_files,
+        "missing_baseline_files": missing_baseline_files,
+        "removed_headings": removed_headings_total,
+        "removed_paragraphs": removed_paragraphs_total,
+        "modified_paragraphs": modified_paragraphs_total,
+        "protected_anchor_losses": protected_losses,
+        "canonical_invariants": invariants,
+        "review_rule": "Any removed heading or non-matching predecessor paragraph requires explicit human review; only protected-anchor loss or a missing current semantic file fails automatically.",
+        "claim_scope": "deterministic_predecessor_diff_and_protected_anchor_audit_not_semantic_equivalence_proof",
+    }
+
 def audit_package(root: Path, bundle: dict) -> dict:
     findings = []
     try:
@@ -4845,6 +5319,10 @@ def audit_package(root: Path, bundle: dict) -> dict:
     findings.append({"check": "ai_execution_order", "status": ai_order["status"], "detail": ai_order})
     dialog_routing = dialog_routing_audit(root, bundle)
     findings.append({"check": "dialog_status_and_early_routing", "status": dialog_routing["status"], "detail": dialog_routing})
+    invariants = canonical_invariants_audit(root, bundle)
+    findings.append({"check": "canonical_semantic_invariants", "status": invariants["status"], "detail": invariants})
+    text_integrity = text_formula_integrity_audit(root, bundle)
+    findings.append({"check": "text_formula_integrity", "status": text_integrity["status"], "detail": text_integrity})
     overall = "FAIL" if any(x["status"] == "FAIL" for x in findings) else (
         "FLAG" if any(x["status"] == "FLAG" for x in findings) else "PASS"
     )
@@ -4891,12 +5369,13 @@ def _simple_command_result(rows: list[dict], status_field: str) -> dict:
 
 
 def main(argv=None) -> int:
-    parser = argparse.ArgumentParser(description="TSM compact operations runner v7.2")
+    parser = argparse.ArgumentParser(description="TSM compact operations runner v7.8")
     parser.add_argument("--root", default=".", help="Root of the active TSM corpus package")
     parser.add_argument("--operations", default="TSM_Operations.json")
     sub = parser.add_subparsers(dest="cmd", required=True)
 
-    sub.add_parser("validate")
+    validate_cmd = sub.add_parser("validate")
+    validate_cmd.add_argument("--companion", default=None)
     analyze = sub.add_parser("analyze-core")
     analyze.add_argument("--input", default=None)
     analyze.add_argument("--out", default=None)
@@ -4936,8 +5415,18 @@ def main(argv=None) -> int:
     connection_cmd.add_argument("--out", default=None)
     ai_order_cmd = sub.add_parser("ai-execution-order-audit")
     dialog_routing_cmd = sub.add_parser("dialog-routing-audit")
+    canonical_invariants_cmd = sub.add_parser("canonical-invariants-audit")
+    semantic_regression_cmd = sub.add_parser("semantic-regression-audit")
+    semantic_regression_cmd.add_argument("--baseline-root", required=True)
+    companion_cmd = sub.add_parser("companion-audit")
+    companion_cmd.add_argument("--companion", required=True)
+    companion_cmd.add_argument("--out", default=None)
+    text_integrity_cmd = sub.add_parser("text-integrity-audit")
+    text_integrity_cmd.add_argument("--out", default=None)
     ai_order_cmd.add_argument("--out", default=None)
     dialog_routing_cmd.add_argument("--out", default=None)
+    canonical_invariants_cmd.add_argument("--out", default=None)
+    semantic_regression_cmd.add_argument("--out", default=None)
     tf_map_audit = sub.add_parser("tool-family-map-audit")
     tf_map_audit.add_argument("--input", default=None); tf_map_audit.add_argument("--out", default=None)
     tf_map = sub.add_parser("tool-family-map")
@@ -5071,7 +5560,15 @@ def main(argv=None) -> int:
         print(json.dumps(value, ensure_ascii=False))
 
     if args.cmd == "validate":
-        emit(validate_package(root, bundle)); return 0
+        result = validate_package(root, bundle)
+        if args.companion:
+            companion_result = companion_configuration_audit(root, bundle, args.companion)
+            result["companion_audit"] = companion_result
+            if companion_result["status"] != "PASS":
+                raise ValueError(f"Companion audit failed: {companion_result}")
+        else:
+            result["companion_audit"] = {"status": "NOT_CHECKED_EXTERNAL", "required_for_full_configuration_validation": True}
+        emit(result); return 0
     if args.cmd == "analyze-core":
         result = analyze_core(root / (args.input or profile["paths"]["core_data"]), profile)
         emit(result, args.out); return 0 if result["passed"] else 2
@@ -5121,6 +5618,18 @@ def main(argv=None) -> int:
         emit(result, args.out); return 0 if result["status"] != "FAIL" else 2
     if args.cmd == "dialog-routing-audit":
         result = dialog_routing_audit(root, bundle)
+        emit(result, args.out); return 0 if result["status"] != "FAIL" else 2
+    if args.cmd == "canonical-invariants-audit":
+        result = canonical_invariants_audit(root, bundle)
+        emit(result, args.out); return 0 if result["status"] != "FAIL" else 2
+    if args.cmd == "semantic-regression-audit":
+        result = semantic_regression_audit(root, bundle, Path(args.baseline_root))
+        emit(result, args.out); return 0 if result["status"] != "FAIL" else 2
+    if args.cmd == "companion-audit":
+        result = companion_configuration_audit(root, bundle, args.companion)
+        emit(result, args.out); return 0 if result["status"] != "FAIL" else 2
+    if args.cmd == "text-integrity-audit":
+        result = text_formula_integrity_audit(root, bundle)
         emit(result, args.out); return 0 if result["status"] != "FAIL" else 2
     if args.cmd == "tool-family-map-audit":
         rows = load_records(root / args.input) if args.input else None

@@ -774,13 +774,14 @@ Beispiel: **Antiprotonen-Spin als Qubit**
 
 **Formelvorschlag:**
 
-iℏ(∂∂t+R(τ))ψ(t,τ)=H\^resψ(t,τ)i\\hbar \\left(
-\\frac{{\\partial}}{{\\partial t}} + R(τ) \\right) \\psi(t, τ) =
-\\hat{H}\_{res} \\psi(t, τ)iℏ(∂t∂​+R(τ))ψ(t,τ)=H\^res​ψ(t,τ)
+\[
+i\hbar\left(\frac{\partial}{\partial t}+R(\tau)\right)\psi(t,\tau)
+=\hat H_{\mathrm{res}}\,\psi(t,\tau)
+\]
 
--   R(τ)R(τ)R(τ) = Rückholoperator (τ-Spannung)
+-   \(R(\tau)\) = Rückholoperator (τ-Spannung)
 
--   H\^res\\hat{H}\_{res}H\^res​ = erweiterter Resonanz-Hamiltonoperator
+-   \(\hat H_{\mathrm{res}}\) = erweiterter Resonanz-Hamiltonoperator
 
 **🧠 9. Schlussfolgerung**
 
@@ -2562,9 +2563,9 @@ keine Realstruktur vorliegt.
     → *Dunkelresonanz = nicht-sichtbares, aber rückholfähiges
     Informationsgedächtnis des Raumes*
 
-+> **Hinweis (TSM-151 · Gravitative Resonanzüberlagerung).**  
-+> *„Die in TSM-108 beschriebenen Dunkelresonanzräume können in makroskopischen Skalen mit der klassischen Gravitation überlagert erscheinen. Dies bedeutet nicht, dass Dunkelresonanz gravitative Energie trägt, sondern dass Tunnelräume in kohärenten Zonen eine geometrische Krümmung erzeugen können, die sich gravitationsähnlich auswirkt. Das Phänomen wird im Modul TSM-151 näher erläutert.“*
-+
+> **Hinweis (TSM-151 · Gravitative Resonanzüberlagerung).**  
+> *„Die in TSM-108 beschriebenen Dunkelresonanzräume können in makroskopischen Skalen mit der klassischen Gravitation überlagert erscheinen. Dies bedeutet nicht, dass Dunkelresonanz gravitative Energie trägt, sondern dass Tunnelräume in kohärenten Zonen eine geometrische Krümmung erzeugen können, die sich gravitationsähnlich auswirkt. Das Phänomen wird im Modul TSM-151 näher erläutert.“*
+
 
 **🧬 3. Arten von Informationshaltung**
 
@@ -2933,9 +2934,11 @@ Schwingung strukturierte Form wird.
 
 Mathematisch definiert sich π als Verhältnis:
 
-π=Udπ = \\frac{U}{d}π=dU​
+\[
+\pi = \frac{U}{d}
+\]
 
-Mit UUU als Umfang eines Kreises, ddd als Durchmesser. Diese Beziehung
+Mit \(U\) als Umfang eines Kreises und \(d\) als Durchmesser. Diese Beziehung
 ist konstant in euklidischer Geometrie und unabhängig von der konkreten
 Größe der Kreisfigur.
 

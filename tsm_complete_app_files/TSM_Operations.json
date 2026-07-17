@@ -1,8 +1,8 @@
 {
   "schema_id": "tsm.operations.bundle.v6",
-  "package_id": "TSM-CustomGPT-13Files-v7.2-dialog-status-early-routing-conditional-depth",
-  "generated_utc": "2026-07-16T19:22:12.568757+00:00",
-  "status": "canonical_validated_dialog_status_early_routing_v7_2",
+  "package_id": "TSM-CustomGPT-13Files-v7.8-text-formula-integrity-deployment-hardening",
+  "generated_utc": "2026-07-17T18:33:38.177717+00:00",
+  "status": "canonical_validated_governance_privacy_semantic_regression_companion_text_formula_integrity_v7_8",
   "file_budget": {
     "custom_gpt_max_files": 20,
     "active_files": 13,
@@ -62,22 +62,22 @@
       {
         "path": "TSM_00_KI_Leseschluessel_und_Ausfuehrungsordnung.md",
         "role": "binding_ai_reading_key_execution_validity_order",
-        "sha256": "e4311f1c466565523a1ed81cfa731cc21516d8a160e521a664afc9c3fa00f959"
+        "sha256": "77acf8cb60f683655387eb61a0f294d2a64f69eb9cc226323fcb12ab736fce0d"
       },
       {
         "path": "TSM_Korpus_01_Grundlagen_TSM-000-083.md",
         "role": "semantic_authority",
-        "sha256": "c9baed307d8e7357c459d3b891fcfe1245b857a4fe658c1c88caf4e3c991c32c"
+        "sha256": "e85d489a6dae01d79e39fd53b1f40dac99131707f857f61cf010f72ad0e2202f"
       },
       {
         "path": "TSM_Korpus_02_Module_TSM-084-126.md",
         "role": "semantic_authority",
-        "sha256": "4d66ff271a213d0b02c819ff5d717e2e45f331acfba5b79923e1edc8538edfdd"
+        "sha256": "d226e4d4751f6834c5b760eed069b994ac80d7ad26cc594e3514052c1044e9e6"
       },
       {
         "path": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
         "role": "semantic_authority",
-        "sha256": "5bc9629baac0fc2834ee8e2129dbb0fa9772314d85f329ae7d21f3c2bdfa49e3"
+        "sha256": "cc1371c777740c9272d39a0fb7c3c70451085f192a021133f28838099991fe1b"
       },
       {
         "path": "TSM_Korpus_04_Symbolmodule_SM-01-26.md",
@@ -87,7 +87,7 @@
       {
         "path": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
         "role": "semantic_authority",
-        "sha256": "a9ba394ace46e61978ef1d3b5edc56b76a9cb29199da199d063ebf255c8dfab9"
+        "sha256": "2f93335de1be3c52627f675dc0cca24fb1004a5696b21b315bcb4f1753821a96"
       },
       {
         "path": "TSM_Operationalisierung_Werkzeugfamilie.md",
@@ -97,7 +97,7 @@
       {
         "path": "TSM_Korpus_06_Anschluss_Evidenz_Kalibrierung.md",
         "role": "semantic_authority_comparison_evidence_calibration",
-        "sha256": "0bb764fb08ceedb688437b06b370bbe5c390e35b79045338cc2405cd21bacd15"
+        "sha256": "54ce55a63c26354a21ad6cd0e3e15e92f0625849f8f13f002573999c57c0b4b0"
       },
       {
         "path": "TSM_Operations.json",
@@ -107,7 +107,7 @@
       {
         "path": "tsmgr.py",
         "role": "standard_library_reference_runner",
-        "sha256": "d58f9c70fa25fa138075fa4c73c4fee8fd3181e55b4fff3c0a5598ebe6c223ce"
+        "sha256": "017d05e84fae56e46ab2df62fb72d63a68283d35ff6e03a5f645f6afad6ba83f"
       },
       {
         "path": "TSM_136D_Core.csv",
@@ -4458,7 +4458,11 @@
     "tool_family_structural_reach_is_profile_first": true,
     "tool_family_missing_scale_levels_must_not_be_interpolated": true,
     "tool_family_local_global_thresholds_are_candidate_baselines": true,
-    "tool_family_protection_must_not_be_hidden_by_aggregation": true
+    "tool_family_protection_must_not_be_hidden_by_aggregation": true,
+    "canonical_semantic_invariants_required": true,
+    "semantic_regression_baseline_must_remain_external": true,
+    "protected_governance_anchor_loss_is_fail_closed": true,
+    "privacy_precision_may_not_be_reduced_to_absolute_no_personal_data_claim": true
   },
   "normalization_and_losslessness": {
     "core_join_key": "record_id",
@@ -4507,7 +4511,7 @@
     "external_validation_dependency": false,
     "active_files": 13,
     "reserved_custom_gpt_slots": 7,
-    "commands_available": 62,
+    "commands_available": 66,
     "command_smoke_tests": [
       "tool-family-audit",
       "operational-namespace-audit",
@@ -4523,7 +4527,11 @@
       "tool-family-map",
       "tool-family-map-compare",
       "ai-execution-order-audit",
-      "dialog-routing-audit"
+      "dialog-routing-audit",
+      "canonical-invariants-audit",
+      "semantic-regression-audit",
+      "companion-audit",
+      "text-integrity-audit"
     ],
     "feature_audits": {
       "module_registry": "PASS",
@@ -4539,7 +4547,11 @@
       "comparison_calibration": "PASS",
       "curated_connections": "PASS",
       "ai_execution_order": "PASS",
-      "dialog_routing": "PASS"
+      "dialog_routing": "PASS",
+      "screening_role_overlay": "PASS",
+      "release_metadata_consistency": "PASS",
+      "companion_configuration": "PASS",
+      "text_formula_integrity": "PASS"
     },
     "operation_checks": {
       "UB_OK": true,
@@ -4585,13 +4597,13 @@
     },
     "publication_source_registry": {
       "status": "PASS",
-      "source_ids": 22,
-      "unique_dois": 20,
+      "source_ids": 24,
+      "unique_dois": 22,
       "canonical_sources": 13,
-      "supporting_publications": 9,
+      "supporting_publications": 11,
       "component_doi_reuse_documented": true,
       "runtime_audit": "publication-source-audit",
-      "checked_utc": "2026-07-14T18:08:15.465708+00:00"
+      "checked_utc": "2026-07-17T15:19:49.759436+00:00"
     },
     "active_ai_policy_checks": {
       "joint_ai_synthesis_system": "PASS",
@@ -4609,17 +4621,28 @@
       "retrospective_motive_invention_forbidden": true,
       "materiality_horizon_is_not_serial_checklist": true,
       "compact_integrity_check_present": true,
-      "dialog_regression_status": "SPECIFICATION_ONLY_REAL_MODEL_TEST_REQUIRED"
+      "dialog_regression_status": "SPECIFICATION_ONLY_REAL_MODEL_TEST_REQUIRED",
+      "tsm_governance_beyond_legal_minimum_present": "PASS",
+      "privacy_precision_anchors_present": "PASS",
+      "canonical_semantic_invariants": "PASS",
+      "semantic_predecessor_regression_audit": "PASS_WITH_MODIFICATIONS",
+      "article_4_role_sensitive_ai_literacy": "PASS",
+      "governance_status_heading_structure": "PASS",
+      "all_nine_governance_principles_individually_protected": "PASS",
+      "companion_configuration_integrity": "PASS",
+      "formula_relationship_preservation_audit": "PASS"
     },
-    "last_validation_utc": "2026-07-16T19:22:12.568757+00:00",
+    "last_validation_utc": "2026-07-17T20:03:23.698006+00:00",
     "validation_command": "python tsmgr.py --root . validate",
     "audit_command": "python tsmgr.py --root . audit",
-    "audit_findings": 16,
+    "audit_findings": 18,
     "ai_execution_order_checks": 29,
     "mutation_guards": {
       "early_route_removal_rejected": true,
       "irony_signal_not_proof_removal_detected": true,
-      "anti_defensiveness_rule_removal_detected": true
+      "anti_defensiveness_rule_removal_detected": true,
+      "formula_single_occurrence_removal_rejected": true,
+      "patch_marker_insertion_rejected": true
     },
     "structural_checks": {
       "markdown_code_fences_balanced": true,
@@ -4628,9 +4651,41 @@
       "compact_workflow_steps": 6,
       "materiality_horizon_clusters": 6,
       "consolidated_dialog_routing_audit": true,
-      "execution_key_bytes": 22634
+      "execution_key_bytes": 22634,
+      "canonical_invariants_integrated_into_validate": true,
+      "canonical_invariants_integrated_into_audit": true,
+      "external_baseline_semantic_regression_command_present": true,
+      "active_corpus_contains_no_migration_history_file": true,
+      "release_version_metadata_cross_checked": true,
+      "external_companion_hash_bound": true,
+      "companion_audit_command_present": true,
+      "all_nine_governance_principles_individually_protected": true,
+      "runner_command_count_cross_checked": true,
+      "text_formula_integrity_integrated_into_validate": true,
+      "text_formula_integrity_integrated_into_audit": true,
+      "known_duplicate_render_patterns_fail_closed": true,
+      "formula_occurrence_minima_fail_closed": true,
+      "formula_cleanup_manually_diff_reviewed": true,
+      "csv_data_hashes_unchanged_from_v7_7": true
     },
-    "dialog_routing_checks": 38
+    "dialog_routing_checks": 38,
+    "canonical_invariants_command": "python tsmgr.py --root . canonical-invariants-audit",
+    "semantic_regression_command": "python tsmgr.py --root . semantic-regression-audit --baseline-root <external_predecessor_root>",
+    "canonical_invariants_checks": 22,
+    "semantic_regression_protected_anchor_losses": 0,
+    "semantic_regression_removed_headings": 0,
+    "semantic_regression_review_items_acknowledged": true,
+    "semantic_regression_removed_paragraphs": 22,
+    "semantic_regression_modified_paragraphs": 69,
+    "full_configuration_validation_command": "python tsmgr.py --root . validate --companion ../TSM_v7.8_Anwendungshinweis_CustomGPT.md",
+    "companion_audit_command": "python tsmgr.py --root . companion-audit --companion ../TSM_v7.8_Anwendungshinweis_CustomGPT.md",
+    "companion_validation_status": "PASS",
+    "text_integrity_command": "python tsmgr.py --root . text-integrity-audit",
+    "text_integrity_formula_anchors": 22,
+    "text_integrity_forbidden_patterns": 10,
+    "semantic_regression_status_against_v7_7": "PASS_WITH_REVIEW_ITEMS",
+    "text_integrity_formula_occurrences_protected": 51,
+    "text_integrity_status": "PASS"
   },
   "module_registry": {
     "schema_id": "tsm.module.registry.v3",
@@ -22012,6 +22067,54 @@
         "not_evaluable"
       ],
       "no_change_claim_when_method_changed": true
+    },
+    "canonical_invariants_audit": {
+      "status": "active_fail_closed",
+      "command": "canonical-invariants-audit",
+      "checks": [
+        "TSM-000",
+        "KI-SYN-01_to_KI-SYN-08",
+        "governance_principles",
+        "privacy_precision"
+      ],
+      "integrated_into": [
+        "validate",
+        "audit"
+      ],
+      "claim_scope": "canonical_semantic_presence_not_empirical_validation"
+    },
+    "semantic_regression_audit": {
+      "status": "active_external_baseline_required",
+      "command": "semantic-regression-audit",
+      "arguments": [
+        "--baseline-root",
+        "--out"
+      ],
+      "checks": [
+        "changed_semantic_files",
+        "removed_headings",
+        "removed_paragraphs",
+        "modified_paragraphs",
+        "protected_anchor_losses"
+      ],
+      "baseline_policy": "external_predecessor_package_not_active_corpus_file",
+      "claim_scope": "deterministic_diff_and_anchor_protection_not_semantic_equivalence_proof"
+    },
+    "text_integrity_audit": {
+      "status": "active_fail_closed",
+      "command": "text-integrity-audit",
+      "checks": [
+        "known_duplicate_render_patterns",
+        "patch_and_search_artifacts",
+        "control_characters",
+        "zero_width_characters",
+        "required_formula_relation_anchors"
+      ],
+      "integrated_into": [
+        "validate",
+        "audit"
+      ],
+      "claim_scope": "text_markup_and_formula_relation_presence_not_empirical_or_physical_validation"
     }
   },
   "tool_family_registry": {
@@ -22166,7 +22269,7 @@
     "TF_is_orchestration_namespace_not_fourth_tool": true
   },
   "canonical_execution_profile": {
-    "version": "v7.2",
+    "version": "v7.8",
     "profile_id": "dialog_status_early_routing_conditional_depth",
     "basis": "actual_module_texts",
     "module_text_rewrite": "forbidden",
@@ -22188,7 +22291,13 @@
       "multiscale_tool_family_orchestration",
       "symbol_numeric_and_136d_operationalization",
       "compact_integrity_check",
-      "dialog_regression_specification"
+      "dialog_regression_specification",
+      "hypothesis_screening_role_profile_and_overlay_method",
+      "canonical_semantic_invariants_and_external_baseline_regression_audit",
+      "role_sensitive_ai_literacy_and_external_information_execution_precision",
+      "complete_nine_principle_governance_invariant_protection",
+      "external_companion_identity_and_release_consistency_audit",
+      "text_formula_integrity_audit_and_external_deployment_acceptance"
     ],
     "conditional_paths": {
       "dialog_routes": {
@@ -22214,9 +22323,9 @@
     }
   },
   "comparison_calibration_framework": {
-    "schema_id": "tsm.comparison-evidence-calibration.v1",
+    "schema_id": "tsm.comparison-evidence-calibration.v2",
     "canonical_file": "TSM_Korpus_06_Anschluss_Evidenz_Kalibrierung.md",
-    "generated_utc": "2026-07-14T18:08:15.465708+00:00",
+    "generated_utc": "2026-07-17T15:19:31.087169+00:00",
     "authority": {
       "actual_module_texts_remain_primary": true,
       "external_reference_theory_remains_primary": true,
@@ -22316,11 +22425,15 @@
       ],
       "synthesis": [
         "SRC-CAL-09"
+      ],
+      "screening_and_role_profile_methods": [
+        "SRC-PSE-01",
+        "SRC-IFM-01"
       ]
     },
     "runtime_validation": {
       "status": "PASS",
-      "checked_utc": "2026-07-14T18:08:15.465708+00:00",
+      "checked_utc": "2026-07-17T15:19:49.759436+00:00",
       "runtime_command": "python tsmgr.py --root . comparison-framework-audit",
       "checks": {
         "framework_present": true,
@@ -22340,16 +22453,38 @@
         "proxy_stop_rules_present": true,
         "calculation_statuses_complete": true,
         "calculation_statuses_present": true,
+        "screening_prioritization_policy_complete": true,
+        "screening_policy_present_in_markdown": true,
+        "role_profile_overlay_policy_complete": true,
+        "role_profile_policy_present_in_markdown": true,
         "source_groups_nonempty": true,
         "source_group_ids_resolve": true,
         "publication_registry_reference_valid": true,
         "source_package_hashes_syntactically_valid": true
       }
+    },
+    "screening_prioritization_policy": {
+      "rankings_are_scenario_bound_priorities_not_truth": true,
+      "data_classes_must_remain_distinct": true,
+      "counterindicators_required": true,
+      "next_validation_required": true,
+      "empty_preferred_over_pseudoprecision": true,
+      "ranking_instability_is_result": true,
+      "no_automatic_release": true
+    },
+    "role_profile_overlay_policy": {
+      "primary_profile_preserved": true,
+      "overlay_layers_separate": true,
+      "overlay_may_dominate_without_erasing_primary_profile": true,
+      "role_gap_optional": true,
+      "small_gap_only_indicates_mixed_profile": true,
+      "no_universal_role_gap_threshold": true,
+      "role_gap_not_resonance_or_136d_evidence": true
     }
   },
   "publication_source_registry": {
     "schema_id": "tsm.publication-source-registry.v1",
-    "generated_utc": "2026-07-14T18:08:15.465708+00:00",
+    "generated_utc": "2026-07-17T15:19:31.087169+00:00",
     "canonical_file": "TSM_Korpus_06_Anschluss_Evidenz_Kalibrierung.md",
     "registry_basis": {
       "doi_index": "TSM_Zenodo_Uebersicht.xlsx",
@@ -22376,10 +22511,10 @@
       ]
     },
     "counts": {
-      "source_ids": 22,
-      "unique_dois": 20,
+      "source_ids": 24,
+      "unique_dois": 22,
       "canonical_sources": 13,
-      "supporting_publications": 9
+      "supporting_publications": 11
     },
     "sources": [
       {
@@ -22786,11 +22921,46 @@
           "15"
         ],
         "verification_status": "matched_to_user_supplied_TSM_Zenodo_Uebersicht.xlsx"
+      },
+      {
+        "source_id": "SRC-PSE-01",
+        "title": "TSM-PSE Tiefenintegration: Begleitdokument zur Systemanalyse des Periodensystems",
+        "author": "Rosi Hach",
+        "year": 2026,
+        "doi": "10.5281/zenodo.20076067",
+        "doi_url": "https://doi.org/10.5281/zenodo.20076067",
+        "doi_kind": "zenodo_record_doi_user_supplied",
+        "registry_role": "supporting_publication",
+        "source_type": "functional_role_profile_and_overlay_framework",
+        "supports_sections": [
+          "18.2",
+          "18.3",
+          "18.4"
+        ],
+        "verification_status": "user_supplied_doi_and_local_artifact_read",
+        "notes": "Stützende Anwendungs- und Entwicklungsreferenz; keine universelle chemische Klassifikation."
+      },
+      {
+        "source_id": "SRC-IFM-01",
+        "title": "TSM Interface Matrix 2D-Halbleiter: Public-Data-Calibrated Screening mit spekulativer TSM-Prognoselogik",
+        "author": "Rosi Hach",
+        "year": 2026,
+        "doi": "10.5281/zenodo.20138253",
+        "doi_url": "https://doi.org/10.5281/zenodo.20138253",
+        "doi_kind": "zenodo_record_doi_user_supplied",
+        "registry_role": "supporting_publication",
+        "source_type": "applied_screening_and_hypothesis_framework",
+        "supports_sections": [
+          "18.1",
+          "18.4"
+        ],
+        "verification_status": "user_supplied_doi_and_local_artifact_read",
+        "notes": "Stützende domänenspezifische Anwendung; keine validierte Materialdatenbank oder universelle Ranglogik."
       }
     ],
     "validation": {
       "status": "PASS",
-      "checked_utc": "2026-07-14T18:08:15.465708+00:00",
+      "checked_utc": "2026-07-17T15:19:49.759436+00:00",
       "runtime_command": "python tsmgr.py --root . publication-source-audit",
       "checks": {
         "registry_present": true,
@@ -23197,7 +23367,8 @@
       "answer_character",
       "indicator_key_thinking",
       "critique_and_reconnection_impulse",
-      "original_meta_methods"
+      "original_meta_methods",
+      "governance_and_non_appropriation"
     ],
     "execution_key_roles": [
       "dialog_status_and_early_routing",
@@ -23282,7 +23453,14 @@
       "dialog_status_and_route_precede_epistemic_goal": true,
       "only_material_horizons_are_deepened": true,
       "compact_integrity_check_required": true,
-      "dialogue_control_must_not_dominate_visible_answer": true
+      "dialogue_control_must_not_dominate_visible_answer": true,
+      "tsm_governance_beyond_legal_minimum_is_binding_when_material": true,
+      "resonance_without_appropriation_required": true,
+      "human_decision_authority_preserved": true,
+      "correction_scope_must_be_proportionate": true,
+      "reversibility_and_contestability_required_when_material": true,
+      "data_and_attention_exploitation_forbidden": true,
+      "automatic_person_moral_or_wellbeing_scoring_forbidden": true
     },
     "mandatory_disclosures": [
       "material_uncertainty",
@@ -23581,5 +23759,556 @@
         ]
       }
     ]
+  },
+  "semantic_regression_protection": {
+    "schema_id": "tsm.semantic-regression-protection.v1",
+    "generated_utc": "2026-07-17T17:56:49.474260+00:00",
+    "canonical_invariants": {
+      "policy": "required markers are fail-closed and are checked by validate, audit and canonical-invariants-audit",
+      "required_anchors": [
+        {
+          "anchor_id": "INV-TSM-000",
+          "category": "axiomatic_root",
+          "file": "TSM_Korpus_01_Grundlagen_TSM-000-083.md",
+          "marker": "TSM-000: -- Die Zwei Grundaxiome"
+        },
+        {
+          "anchor_id": "INV-KI-SYN-01",
+          "category": "ai_synthesis_anchor",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "## KI-SYN-01 – Wirkebenen und Anwendungslogik"
+        },
+        {
+          "anchor_id": "INV-KI-SYN-02",
+          "category": "ai_synthesis_anchor",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "## KI-SYN-02 – Anzeiger, Schlüssel und Rückbindung"
+        },
+        {
+          "anchor_id": "INV-KI-SYN-03",
+          "category": "ai_synthesis_anchor",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "## KI-SYN-03 – Poetisch-reflexive KI-Haltung und Selbstbeschreibung"
+        },
+        {
+          "anchor_id": "INV-KI-SYN-04",
+          "category": "ai_synthesis_anchor",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "## KI-SYN-04 – Kritik, Gegenprüfung und Resonanzklarheit"
+        },
+        {
+          "anchor_id": "INV-KI-SYN-05",
+          "category": "ai_synthesis_anchor",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "## KI-SYN-05 – Vollkontext, Abgleich und Prüfpflicht"
+        },
+        {
+          "anchor_id": "INV-KI-SYN-06",
+          "category": "ai_synthesis_anchor",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "## KI-SYN-06 – Rückwärtsforschung und verborgene Entstehungspfade"
+        },
+        {
+          "anchor_id": "INV-KI-SYN-07",
+          "category": "ai_synthesis_anchor",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "## KI-SYN-07 – Übertragung, Wahrhaftigkeit und Verantwortung"
+        },
+        {
+          "anchor_id": "INV-KI-SYN-08",
+          "category": "ai_synthesis_anchor",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "## KI-SYN-08 – Anschluss, Weiterentwicklung und Governance"
+        },
+        {
+          "anchor_id": "INV-GOV-01",
+          "category": "tsm_governance",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "1. **Resonanz ohne Vereinnahmung**"
+        },
+        {
+          "anchor_id": "INV-GOV-02",
+          "category": "tsm_governance",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "2. **Wahrhaftigkeit und epistemische Trennung**"
+        },
+        {
+          "anchor_id": "INV-GOV-03",
+          "category": "tsm_governance",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "3. **Erhaltung menschlicher Entscheidungshoheit**"
+        },
+        {
+          "anchor_id": "INV-GOV-04",
+          "category": "tsm_governance",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "4. **Angemessene Korrekturweite**"
+        },
+        {
+          "anchor_id": "INV-GOV-05",
+          "category": "tsm_governance",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "5. **Proportionalität der Bearbeitung**"
+        },
+        {
+          "anchor_id": "INV-GOV-06",
+          "category": "tsm_governance",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "6. **Mehrskalige Gedeihlichkeitsprüfung**"
+        },
+        {
+          "anchor_id": "INV-GOV-07",
+          "category": "tsm_governance",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "7. **Rückholbarkeit und Anfechtbarkeit**"
+        },
+        {
+          "anchor_id": "INV-GOV-08",
+          "category": "tsm_governance",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "8. **Nichtausbeutung von Daten und Aufmerksamkeit**"
+        },
+        {
+          "anchor_id": "INV-GOV-09",
+          "category": "tsm_governance",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "9. **Gedeihlichkeit ist kein automatischer Punktwert**"
+        },
+        {
+          "anchor_id": "INV-PRIVACY-01",
+          "category": "privacy_precision",
+          "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+          "marker": "keine personenbezogenen Roh-, Profil- oder Entscheidungsdaten von Nutzer:innen oder bewerteten Personen vorgesehen; bibliografische Angaben und öffentlich dokumentierte Quelleninformationen bleiben davon unberührt"
+        },
+        {
+          "anchor_id": "INV-PRIVACY-02",
+          "category": "privacy_precision",
+          "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+          "marker": "Personenbezogene Bewertungs- und Profildaten von Nutzer:innen oder bewerteten Personen sind in den vorgesehenen 136D-Auswertedateien nicht enthalten. Bibliografische Angaben und öffentlich dokumentierte Quelleninformationen bleiben davon unberührt."
+        },
+        {
+          "anchor_id": "INV-AI-ACT-04",
+          "category": "role_sensitive_ai_literacy",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "Soweit Beteiligte im konkreten Nutzungskontext als Anbieter oder Betreiber eines KI-Systems handeln, ist **Artikel 4 AI Act** organisationsbezogen zu prüfen."
+        },
+        {
+          "anchor_id": "INV-STATUS-HEADING-10",
+          "category": "governance_document_structure",
+          "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+          "marker": "### 10. Kurzform des Statushinweises"
+        }
+      ]
+    },
+    "baseline_comparison": {
+      "command": "python tsmgr.py --root . semantic-regression-audit --baseline-root <external_predecessor_root>",
+      "baseline_must_remain_external": true,
+      "active_corpus_history_markers_forbidden": true,
+      "compares": [
+        "reading_key",
+        "semantic_authority_files"
+      ],
+      "reports": [
+        "changed_files",
+        "removed_headings",
+        "removed_paragraphs",
+        "modified_paragraphs",
+        "protected_anchor_losses"
+      ],
+      "automatic_fail_conditions": [
+        "missing_current_semantic_file",
+        "missing_current_canonical_invariant",
+        "protected_anchor_loss"
+      ],
+      "human_review_conditions": [
+        "removed_heading",
+        "removed_nonmatching_predecessor_paragraph"
+      ],
+      "does_not_prove_semantic_equivalence": true
+    },
+    "repair_basis": {
+      "governance_source_version": "v7.2",
+      "privacy_precision_source_version": "v7.2",
+      "start_text_policy": "retain_v7.3_v7.4_start_text_without_parallel_reconstruction",
+      "screening_role_reference_integration": "retain_v7.4",
+      "article_4_ai_literacy_precision_source_version": "v7.2",
+      "status_heading_structure_source_version": "v7.2",
+      "application_hint_policy": "corpus_authority_external_sources_actuality_unavailable_disclosure_full_governance_activation_current_companion",
+      "companion_integrity_policy": "external_companion_filename_version_sha256_and_required_marker_bound_current_release",
+      "governance_invariant_policy": "all_nine_governance_principles_protected_as_individual_required_anchors"
+    },
+    "runtime_validation": {
+      "checked_utc": "2026-07-17T20:03:23.698006+00:00",
+      "canonical_invariants_status": "PASS",
+      "canonical_invariants_present": 22,
+      "canonical_invariants_required": 22,
+      "predecessor_audit_baseline": "v7.7 external package root",
+      "predecessor_audit_status": "PASS_WITH_REVIEW_ITEMS",
+      "protected_anchor_losses": 0,
+      "removed_headings": 0,
+      "removed_paragraphs_requiring_review": 22,
+      "modified_paragraphs": 69,
+      "review_disposition": "All removed predecessor paragraphs were manually reviewed. They are corrupted or duplicated render forms, obsolete patch/search artifacts, or the deliberately removed META-01 migration/version block. Their cleaned successors preserve the documented variables, operators, thresholds, constants and relation directions. No protected heading, canonical invariant, module section, CSV dataset or operational rule was removed."
+    }
+  },
+  "release_metadata": {
+    "version": "v7.8",
+    "status": "canonical_validated_governance_privacy_semantic_regression_companion_text_formula_integrity_v7_8",
+    "runner_version": "v7.8",
+    "companion_version": "v7.8",
+    "active_file_count": 13,
+    "release_kind": "text_formula_integrity_and_deployment_hardening",
+    "validated_utc": "2026-07-17T20:03:23.698006+00:00",
+    "validation_status": "PASS",
+    "runner_command_count": 66
+  },
+  "companion_configuration": {
+    "expected_filename": "TSM_v7.8_Anwendungshinweis_CustomGPT.md",
+    "version": "v7.8",
+    "sha256": "f4af24b535d66b343120d8e1e2b74d34088d6418e726231c34cc5ee2ba38a1e7",
+    "role": "binding_customgpt_application_hint_external_companion",
+    "required_for_full_configuration_validation": true,
+    "external_to_active_file_budget": true,
+    "required_marker": "# Anwendungshinweis für die TSM-GPT – Korpus v7.8",
+    "audit_command": "python tsmgr.py --root . companion-audit --companion ../TSM_v7.8_Anwendungshinweis_CustomGPT.md",
+    "combined_validation_command": "python tsmgr.py --root . validate --companion ../TSM_v7.8_Anwendungshinweis_CustomGPT.md"
+  },
+  "text_formula_integrity": {
+    "schema_id": "tsm.text-formula-integrity.v1",
+    "status": "active_fail_closed",
+    "semantic_files": [
+      "TSM_00_KI_Leseschluessel_und_Ausfuehrungsordnung.md",
+      "TSM_Korpus_01_Grundlagen_TSM-000-083.md",
+      "TSM_Korpus_02_Module_TSM-084-126.md",
+      "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+      "TSM_Korpus_04_Symbolmodule_SM-01-26.md",
+      "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+      "TSM_Korpus_06_Anschluss_Evidenz_Kalibrierung.md",
+      "TSM_Operationalisierung_Werkzeugfamilie.md"
+    ],
+    "forbidden_patterns": [
+      {
+        "pattern_id": "PATCH_QUOTE_MARKER",
+        "regex": "^\\+>",
+        "description": "leftover diff marker before Markdown blockquote"
+      },
+      {
+        "pattern_id": "PATCH_EMPTY_MARKER",
+        "regex": "^\\+$",
+        "description": "standalone leftover diff marker"
+      },
+      {
+        "pattern_id": "SEARCH_ARTIFACT_PLUS_ONE",
+        "regex": "^\\+1$",
+        "description": "standalone search/source artifact"
+      },
+      {
+        "pattern_id": "STALE_META01_PACKAGE_MARKER",
+        "regex": "Korpus v6\\.0",
+        "description": "stale embedded package version marker"
+      },
+      {
+        "pattern_id": "DUPLICATE_F_RENDER",
+        "regex": "FresF|FcapF",
+        "description": "joined plain/LaTeX duplicate rendering"
+      },
+      {
+        "pattern_id": "DUPLICATE_PHASE_RENDER",
+        "regex": "Δφ\\\\\\\\Delta|Δϕ\\\\\\\\Delta",
+        "description": "joined Unicode/LaTeX phase rendering"
+      },
+      {
+        "pattern_id": "DUPLICATE_TAU_PHI_RENDER",
+        "regex": "τ\\\\\\\\tauτ|φ\\\\\\\\varphiφ",
+        "description": "joined Unicode/LaTeX symbol rendering"
+      },
+      {
+        "pattern_id": "DUPLICATE_PI_RENDER",
+        "regex": "π=Udπ",
+        "description": "joined Pi formula rendering"
+      },
+      {
+        "pattern_id": "BROKEN_TAU_CONTROL_SEQUENCE",
+        "regex": "\\tau|\\taut|\\tarepsilon",
+        "description": "tab/control corruption where LaTeX tau or varepsilon was intended"
+      },
+      {
+        "pattern_id": "BROKEN_LATEX_TEXT_COMMAND",
+        "regex": "(?<![\\\\\\\\A-Za-z])ext\\{(?:PLV|diskret)\\}",
+        "description": "missing leading t/backslash in text command"
+      }
+    ],
+    "required_formula_anchors": [
+      {
+        "anchor_id": "FORM-K02-QM-01",
+        "file": "TSM_Korpus_02_Module_TSM-084-126.md",
+        "all_contains": [
+          "i\\hbar\\left(\\frac{\\partial}{\\partial t}+R(\\tau)\\right)\\psi(t,\\tau)",
+          "=\\hat H_{\\mathrm{res}}\\,\\psi(t,\\tau)"
+        ],
+        "relation_scope": "extended_wave_equation_with_return_operator",
+        "minimum_occurrences": [
+          1,
+          1
+        ]
+      },
+      {
+        "anchor_id": "FORM-K02-PI-01",
+        "file": "TSM_Korpus_02_Module_TSM-084-126.md",
+        "contains": "\\pi = \\frac{U}{d}",
+        "relation_scope": "pi_circumference_diameter_ratio",
+        "minimum_occurrences": 1
+      },
+      {
+        "anchor_id": "FORM-K03-MASTER-01",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "contains": "F = \\frac{R \\cdot C}{\\Delta\\varphi}",
+        "relation_scope": "master_resonance_relation",
+        "minimum_occurrences": 4
+      },
+      {
+        "anchor_id": "FORM-K03-FULL-01",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "all_contains": [
+          "\\frac{K_A \\cdot K_R}{\\Delta\\tau}",
+          "\\frac{E_{\\mathrm{syn}}}{E_{\\mathrm{tot}}}",
+          "\\frac{1}{\\Delta\\varphi}"
+        ],
+        "relation_scope": "expanded_resonance_relation_factors",
+        "minimum_occurrences": [
+          3,
+          3,
+          2
+        ]
+      },
+      {
+        "anchor_id": "FORM-K03-REDUCTION-01",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "all_contains": [
+          "R \\doteq \\frac{K_A \\cdot K_R}{\\Delta\\tau}",
+          "C \\doteq \\frac{E_{\\mathrm{syn}}}{E_{\\mathrm{tot}}}"
+        ],
+        "relation_scope": "expanded_to_reduced_mapping",
+        "minimum_occurrences": [
+          1,
+          1
+        ]
+      },
+      {
+        "anchor_id": "FORM-K03-136D-01",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "contains": "F_{\\mathrm{res}} = \\frac{C}{\\Delta\\varphi}\\,\\tau",
+        "relation_scope": "136d_working_quantity",
+        "minimum_occurrences": 1
+      },
+      {
+        "anchor_id": "FORM-K03-142-RATIO",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "all_contains": [
+          "\\rho = \\frac{T_{\\mathrm{obs}}}{T_{\\mathrm{int}}}",
+          "C_c(\\rho)=\\exp\\left(-\\frac{d_c(\\rho)^2}{2\\sigma_c^2}\\right)"
+        ],
+        "relation_scope": "tsm142_constant_ratio_closeness",
+        "minimum_occurrences": [
+          1,
+          1
+        ]
+      },
+      {
+        "anchor_id": "FORM-K03-142-PLV",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "contains": "\\mathrm{PLV}_T=\\left|\\frac{1}{N}\\sum_{n=1}^{N}e^{i\\Delta\\varphi_T(n)}\\right|",
+        "relation_scope": "tsm142_phase_locking_value",
+        "minimum_occurrences": 1
+      },
+      {
+        "anchor_id": "FORM-K03-142-PHASE",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "all_contains": [
+          "\\Delta\\varphi=\\left|\\varphi_{\\mathrm{Feld}}-\\varphi_{\\mathrm{Träger}}\\right|",
+          "D_{\\varphi}=\\exp\\left(-\\frac{\\Delta\\varphi^2}{2\\cdot(0{,}1)^2}\\right)"
+        ],
+        "relation_scope": "tsm142_phase_window",
+        "minimum_occurrences": [
+          1,
+          1
+        ]
+      },
+      {
+        "anchor_id": "FORM-K03-142-MARKER",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "all_contains": [
+          "Z_p=\\sqrt{2n}\\,R_p",
+          "M_{\\mathrm{diskret}}=\\frac{1}{|P^*|}\\sum_{p\\in P^*}"
+        ],
+        "relation_scope": "tsm142_discrete_marker",
+        "minimum_occurrences": [
+          1,
+          1
+        ]
+      },
+      {
+        "anchor_id": "FORM-K03-142-NEI",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "contains": "\\mathrm{NEI}=w_1(1-\\mathrm{Rtest})+w_2(1-\\mathrm{Rep})+w_3\\,\\mathrm{DomIncons}",
+        "relation_scope": "tsm142_nei",
+        "minimum_occurrences": 1
+      },
+      {
+        "anchor_id": "FORM-K03-142-ENERGY",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "all_contains": [
+          "\\Delta E=\\log\\big(P_{\\mathrm{on}}(T^*)+\\varepsilon\\big)",
+          "S=\\operatorname{median}(\\Delta E_{\\mathrm{Baseline}})+1{,}5\\cdot\\mathrm{IQR}"
+        ],
+        "relation_scope": "tsm142_energy_criterion",
+        "minimum_occurrences": [
+          1,
+          1
+        ]
+      },
+      {
+        "anchor_id": "FORM-K03-142-SCORE",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "all_contains": [
+          "S_{142}=\\alpha(C_\\pi+C_\\Phi+C_e)",
+          "+\\gamma D_{\\varphi}+\\delta M_{\\mathrm{diskret}}-\\eta\\,\\mathrm{NEI}"
+        ],
+        "relation_scope": "tsm142_total_score",
+        "minimum_occurrences": [
+          1,
+          1
+        ]
+      },
+      {
+        "anchor_id": "FORM-K03-142-GATE",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "all_contains": [
+          "S_{142}\\ge\\theta",
+          "\\mathrm{PLV}_{\\tau}\\ge 0{,}6",
+          "\\Delta E\\ge S",
+          "\\mathrm{NEI}\\le\\epsilon"
+        ],
+        "relation_scope": "tsm142_activation_conjunction",
+        "minimum_occurrences": [
+          1,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "anchor_id": "FORM-K03-QEFF-01",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "contains": "Q_{eff} = \\tau / \\max(|\\Delta\\phi|,\\varepsilon_{rad})",
+        "relation_scope": "anti_atlas_qeff_proxy",
+        "minimum_occurrences": 1
+      },
+      {
+        "anchor_id": "FORM-K03-CCC-01",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "contains": "\\Delta K=\\mathcal{A}\\,\\alpha,\\quad \\Delta\\lambda=\\mathcal{B}\\,\\alpha,\\quad \\Delta\\varphi=\\mathcal{C}\\,\\alpha",
+        "relation_scope": "ccc_to_tsm_mapping",
+        "minimum_occurrences": 1
+      },
+      {
+        "anchor_id": "FORM-K03-LAB-01",
+        "file": "TSM_Korpus_03_Module_TSM-127-167_META-01.md",
+        "all_contains": [
+          "C\\approx 0{,}03\\text{–}0{,}05",
+          "\\Delta\\varphi\\) von 0,05 bis 0,50",
+          "\\tau_{\\mathrm{eff}}\\) konstant halten"
+        ],
+        "relation_scope": "laboratory_protocol_target_and_sweep",
+        "minimum_occurrences": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "anchor_id": "FORM-K05-QC-01",
+        "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+        "contains": "Q_c=\\operatorname{norm}(F_{2Q}\\cdot e^{-L/\\Lambda}\\cdot\\mathrm{PLV}\\cdot\\mathrm{Score})",
+        "relation_scope": "quantum_field_binding_score",
+        "minimum_occurrences": 1
+      },
+      {
+        "anchor_id": "FORM-K05-GRU-K",
+        "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+        "all_contains": [
+          "K:=\\operatorname{norm}\\left(",
+          "\\frac{C}{\\max(\\Delta\\phi,\\varepsilon)}\\,\\tau",
+          "\\right)\\in[0,1]"
+        ],
+        "relation_scope": "geometry_resonance_coherence_scalar",
+        "minimum_occurrences": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "anchor_id": "FORM-K05-GRU-METRIC",
+        "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+        "all_contains": [
+          "\\delta g_{\\mu\\nu}",
+          "=\\alpha_1 K\\,g_{\\mu\\nu}",
+          "+\\alpha_3(\\nabla_\\mu\\varphi)(\\nabla_\\nu\\varphi)"
+        ],
+        "relation_scope": "geometry_resonance_metric_mode",
+        "minimum_occurrences": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "anchor_id": "FORM-K05-TRANSLATION",
+        "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+        "contains": "S \\longleftrightarrow F \\mid R",
+        "relation_scope": "bidirectional_symbol_specialist_translation",
+        "minimum_occurrences": 1
+      },
+      {
+        "anchor_id": "FORM-K05-BRIDGE",
+        "file": "TSM_Korpus_05_META_KI_Governance_Physikregeln.md",
+        "all_contains": [
+          "\\mathcal{R}(\\tau,\\phi)=\\frac{R_{\\mathrm{eff}}\\cdot C}{\\Delta\\phi}",
+          "R_{\\mathrm{eff}}=\\sum_i\\big(r3_i\\cdot\\mathrm{orientation}_i\\big)"
+        ],
+        "relation_scope": "pg_tsm_bridge_relation",
+        "minimum_occurrences": [
+          1,
+          1
+        ]
+      }
+    ],
+    "policies": {
+      "formatting_cleanup_must_preserve_variable_relationships": true,
+      "formula_audit_is_not_empirical_validation": true,
+      "control_characters_forbidden_except_tab_newline_carriage_return": true,
+      "zero_width_characters_forbidden": true,
+      "integrated_into_validate": true,
+      "integrated_into_audit": true
+    },
+    "command": "python tsmgr.py --root . text-integrity-audit",
+    "runtime_validation": {
+      "checked_utc": "2026-07-17T20:03:23.698006+00:00",
+      "status": "PASS",
+      "semantic_files_checked": 8,
+      "forbidden_patterns_checked": 10,
+      "formula_relation_anchors_checked": 22,
+      "minimum_formula_occurrences_protected": 51,
+      "control_character_hits": 0,
+      "zero_width_hits": 0,
+      "pattern_hits": 0,
+      "formula_occurrence_deficits": 0,
+      "negative_mutation_tests": {
+        "single_master_formula_occurrence_removed": "REJECTED_AS_EXPECTED",
+        "patch_blockquote_marker_inserted": "REJECTED_AS_EXPECTED"
+      },
+      "claim_scope": "text_markup_and_formula_relation_preservation_not_empirical_or_physical_validation"
+    }
   }
 }
