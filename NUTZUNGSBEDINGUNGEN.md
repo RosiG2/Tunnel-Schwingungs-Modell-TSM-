@@ -1,6 +1,6 @@
 # Nutzungsbedingungen für KI-Anwendungen des Tunnel-Schwingungs-Modells (TSM)
 
-**Entwurf zur redaktionellen und rechtlichen Freigabe**
+**Stand: 2. November 2026**
 
 ## 1. Geltungsbereich
 
