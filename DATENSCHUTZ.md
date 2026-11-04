@@ -1,114 +1,111 @@
-# Datenschutzinformationen zum Tunnel-Schwingungs-Modell (TSM)
+# Datenschutzinformationen zu meinen KI-Plugins und Assistenten
 
-**Stand: 2. November 2026**
+**Stand: 4. November 2026**
 
-## 1\. Geltungsbereich
+## 1. Geltungsbereich
 
-Diese Datenschutzinformationen betreffen die von Rosi Hach herausgegebenen KI-gestützten Anwendungen, Assistenten, Plugins und vergleichbaren Zugänge zum **Tunnel-Schwingungs-Modell (TSM)**, soweit sie mit den hier beschriebenen Funktionen bereitgestellt werden. Sie sind unabhängig von einer bestimmten TSM-Korpusversion und einem bestimmten KI-Plattformanbieter formuliert.
+Diese Datenschutzinformationen gelten für die von **Rosi Hach** herausgegebenen KI-Plugins, Assistenten, Skills und vergleichbaren KI-Anwendungen, die auf diese Seite verweisen, **soweit ihre tatsächliche technische Bereitstellung den nachstehenden Beschreibungen entspricht**. Dazu können beispielsweise Anwendungen zum Tunnel-Schwingungs-Modell (TSM), Lese- und Diskussionshilfen zur Systemtheorie oder andere von mir veröffentlichte Themenangebote gehören.
 
-Die TSM-Anwendungen dienen dem Auffinden, Erklären, Vergleichen und Diskutieren von TSM-Inhalten. Sie können TSM-Texte, Module, Daten und weitere Materialien als Wissens- oder Referenzdateien enthalten.
+Die Informationen sind nicht auf einen bestimmten Plugin-Namen, eine Korpusversion oder einen KI-Plattformanbieter beschränkt. Sie unterscheiden zwischen der Datenverarbeitung durch den jeweils genutzten Plattformanbieter und den Verarbeitungsvorgängen, die ich selbst verantworte.
 
-Diese Erklärung betrifft **meine eigenen Verarbeitungsvorgänge und die beschriebene Bereitstellung der TSM-Inhalte**. Für die Nutzung der jeweiligen KI-Plattform gelten zusätzlich deren Datenschutzinformationen. Bei Angeboten Dritter, eigenständigen TSM-Abwandlungen oder technisch anders ausgestatteten Installationen ist zu prüfen, welche weiteren Angaben erforderlich sind.
+**Wichtige Abgrenzung:** Die nachfolgenden Angaben zur Bereitstellung ohne eigenen Gesprächsserver gelten für wissens- oder skillbasierte Anwendungen **ohne zusätzliche, von mir betriebene externe Datenanbindung**. Nutzt ein bestimmtes Plugin dagegen einen eigenen Server, eine externe API, eine MCP-Verbindung, ein Formular, ein Analysetool oder eine sonstige zusätzliche Übermittlung personenbezogener Daten, müssen dessen konkrete Datenflüsse und erforderlichenfalls ergänzende Datenschutzinformationen gesondert ausgewiesen werden. Ein Verweis auf diese allgemeine Seite allein deckt solche abweichenden Verarbeitungen nicht ab.
 
-## 2\. Herausgeberin und Kontakt
+## 2. Verantwortliche und Kontakt
 
 **Rosi Hach**  
 Pfarrwiesenallee 49  
 71067 Sindelfingen  
 Deutschland  
-**E-Mail:** rosig2@web.de
+**E-Mail:** [rosig2@web.de](mailto:rosig2@web.de)
 
-Weitere Angaben zur Anbieterkennzeichnung finden Sie im [**Impressum**](https://github.com/RosiG2/Tunnel-Schwingungs-Modell-TSM-/blob/main/IMPRESSUM.md).
+Weitere Angaben enthält das [Impressum](./IMPRESSUM.md). Anfragen zu Verarbeitungen, für die ich selbst verantwortlich bin, können an diese E-Mail-Adresse gerichtet werden.
 
-Anfragen zur Datenverarbeitung, die ich selbst verantworte, können an die genannte E-Mail-Adresse gerichtet werden.
+Die datenschutzrechtliche Verantwortlichkeit für die Gesprächsplattform und deren Dienste ergibt sich aus der tatsächlichen Bereitstellungsform und den Angaben des jeweiligen Anbieters; sie wird hier nicht pauschal für alle KI-Dienste festgelegt.
 
-## 3\. Technische Bereitstellung und Zuständigkeiten
+## 3. Technische Bereitstellung und Datenwege
 
-Die von mir veröffentlichten TSM-Wissens- und Skill-Pakete können in unterstützten KI-Plattformen eingesetzt werden, beispielsweise in ChatGPT oder Claude. Die jeweilige Plattform stellt den Gesprächsdienst zur Verfügung und verarbeitet dabei nach ihren eigenen Nutzungsbedingungen und Datenschutzregelungen beispielsweise Eingaben, angehängte Dateien, technische Nutzungsdaten und Antworten.
+Meine Anwendungen können auf unterstützten KI-Plattformen, beispielsweise ChatGPT oder Claude, bereitgestellt werden. Dort werden Gespräche und gegebenenfalls hochgeladene Materialien über die technischen Dienste des jeweiligen Anbieters verarbeitet.
 
-**Bei den derzeit von mir bereitgestellten TSM-Paketen ohne eigene externe Schnittstelle** betreibe ich keinen eigenen Gesprächsserver, keine eigene Chat-Datenbank und keinen Dienst, über den mir individuelle Gespräche der Nutzerinnen und Nutzer automatisch übermittelt werden. Die bereitgestellten TSM-Dateien dienen als Referenzmaterial und sind nicht selbst ein System zur Sammlung von Nutzerdaten.
+Bei **rein wissens- oder skillbasierten Plugins ohne eigene externe Schnittstelle** betreibe ich keinen eigenen Gesprächsserver, keine eigene Chat-Datenbank und keinen Dienst, an den mir die privaten Einzelgespräche der Nutzerinnen und Nutzer automatisch übermittelt werden. Die bereitgestellten Quelltexte, Module und Referenzdateien dienen dem jeweiligen Anwendungszweck und sind keine eigene Chat-Datensammlung.
 
-Welche Daten ein Plattformanbieter verarbeitet, zu welchen Zwecken und auf welcher Rechtsgrundlage, wie lange sie gespeichert werden und welche Einstellungen verfügbar sind, ergibt sich aus den Datenschutzinformationen und dem jeweiligen Vertrag der verwendeten Plattform. Die datenschutzrechtlichen Rollen können je nach Dienst, Kontoart und Bereitstellungsform unterschiedlich sein; diese Erklärung trifft keine pauschale Rollenfestlegung für alle Anbieter.
+Allein dadurch, dass ich ein solches Plugin veröffentliche, erhalte ich **keinen automatischen Zugriff auf einzelne private Chatverläufe**. Dies schließt nicht aus, dass Nutzerinnen und Nutzer mir Inhalte freiwillig übermitteln oder eine anders ausgestattete Anwendung zusätzliche Datenwege besitzt, über die gesondert zu informieren ist.
 
-**Wichtig:** Diese Beschreibung gilt nicht unverändert für eine künftig ergänzte eigene API, einen MCP-Server, eine externe Action, ein Webformular, eine Nutzungsanalyse oder sonstige Erweiterungen, über die personenbezogene Daten zusätzlich an mich oder weitere Empfänger fließen. Vor einer solchen Bereitstellung werden die konkreten Datenwege geprüft und diese Informationen erforderlichenfalls ergänzt.
+## 4. Kategorien personenbezogener Daten und Zwecke
 
-## 4\. Kategorien personenbezogener Daten und Zwecke
+### 4.1 Nutzung innerhalb der KI-Plattform
 
-### 4.1 Nutzung innerhalb einer KI-Plattform
+Je nach Plattform und aktivierten Funktionen können insbesondere folgende Daten verarbeitet werden:
 
-Je nach Anbieter und gewählter Funktion können insbesondere folgende Daten verarbeitet werden:
+- Fragen, Nachrichten, Anweisungen und weitere Gesprächsinhalte;
+- hochgeladene Dateien und deren Inhalte;
+- Konto- und technische Nutzungsdaten;
+- Daten aus zusätzlichen Funktionen oder Verbindungen, die Nutzerinnen und Nutzer selbst aktivieren.
 
-* eingegebene Fragen, Nachrichten und sonstige Gesprächsinhalte;
-* hochgeladene Dateien und deren Inhalte;
-* Kontoinformationen und technische Nutzungsdaten;
-* gegebenenfalls weitere Informationen aus Funktionen, die Nutzer selbst aktivieren.
-
-Diese Verarbeitung dient insbesondere der Bereitstellung des jeweiligen Gesprächsdienstes und der Beantwortung von TSM-bezogenen Fragen. Informationen über darüber hinausgehende Zwecke des Plattformanbieters, etwa Sicherheit, Produktverbesserung oder Modelltraining, müssen den Angaben dieses Anbieters entnommen werden.
-
-Ich erhalte durch die Bereitstellung der oben beschriebenen TSM-Pakete **keinen automatischen Zugriff auf einzelne private Chatverläufe** und verwende solche Gespräche nicht für eine eigene Profilbildung.
+Dies dient insbesondere der Bereitstellung des KI-Dienstes und der Bearbeitung der jeweiligen Nutzeranfrage. Weitere Zwecke des Plattformanbieters, etwa Sicherheitsmaßnahmen, Produktverbesserung oder gegebenenfalls Modelltraining, richten sich nach dessen aktuellen Datenschutzinformationen und Einstellungen.
 
 ### 4.2 Direkte Kontaktaufnahme mit mir
 
-Wenn Sie mich freiwillig per E-Mail kontaktieren, können insbesondere Ihre E-Mail-Adresse, Ihr Name (soweit angegeben), die Nachricht, Anhänge und die technisch für die E-Mail-Kommunikation erforderlichen Angaben verarbeitet werden. Dies geschieht zur Bearbeitung Ihrer Anfrage und zur weiteren Korrespondenz darüber.
+Bei einer freiwilligen Anfrage per E-Mail verarbeite ich die zur Bearbeitung erforderlichen Angaben, insbesondere E-Mail-Adresse, gegebenenfalls Namen, Nachrichtentext, freiwillige Anhänge sowie technisch notwendige Kommunikationsdaten. Zweck ist die Beantwortung und gegebenenfalls Dokumentation der Anfrage und die daran anschließende Korrespondenz.
 
-Ich erhebe über die beschriebenen TSM-Pakete keine zusätzlichen personenbezogenen Daten für eigene Werbung oder ein eigenes Nutzertracking.
+Für die hier beschriebenen, von mir ohne zusätzliche externe Dienste bereitgestellten Plugins betreibe ich **kein eigenes Werbe- oder Nutzertracking** und keine eigene Profilbildung auf Grundlage privater Chatverläufe.
 
-## 5\. Rechtsgrundlagen meiner eigenen Verarbeitung
+### 4.3 Öffentliche Projektseiten und Quelldokumente
 
-Die Bearbeitung freiwilliger Anfragen erfolgt, soweit einschlägig, auf Grundlage von **Art. 6 Abs. 1 lit. f DSGVO** (berechtigtes Interesse an der Beantwortung und Dokumentation von Anfragen). Wenn eine Anfrage auf den Abschluss oder die Durchführung eines Vertrags gerichtet ist, kann **Art. 6 Abs. 1 lit. b DSGVO** einschlägig sein. Gesetzlich erforderliche Aufbewahrung erfolgt gegebenenfalls nach **Art. 6 Abs. 1 lit. c DSGVO**.
+Dokumentationen, Wissensdateien oder projektbezogene Materialien können über GitHub, Zenodo oder andere Veröffentlichungsplattformen zugänglich sein. Beim Aufruf dieser Seiten gelten deren jeweilige Datenschutzinformationen. Der Besuch einer solchen Seite ist nicht mit einer automatischen Übermittlung privater Chat-Inhalte an mich gleichzusetzen.
 
-Die Rechtsgrundlagen für Verarbeitungen durch den jeweiligen Plattformanbieter ergeben sich aus dessen Datenschutzinformationen und der konkreten rechtlichen Rollenverteilung; sie werden hier nicht stellvertretend festgelegt.
+## 5. Rechtsgrundlagen meiner eigenen Verarbeitung
 
-## 6\. Empfänger und Übermittlungen
+Freiwillige Kontaktanfragen bearbeite ich, soweit einschlägig, auf Grundlage von **Art. 6 Abs. 1 lit. f DSGVO** (berechtigtes Interesse an der Beantwortung und Dokumentation von Anfragen). Soweit eine Anfrage die Anbahnung oder Durchführung eines Vertrags betrifft, kann **Art. 6 Abs. 1 lit. b DSGVO** einschlägig sein; bei gesetzlichen Aufbewahrungspflichten gegebenenfalls **Art. 6 Abs. 1 lit. c DSGVO**.
 
-Bei einer direkten Kontaktaufnahme per E-Mail können die für die E-Mail-Kommunikation eingesetzten Dienstleister die technisch notwendigen Daten verarbeiten. Daten werden nicht ohne entsprechenden Grund an Dritte weitergegeben; gesetzliche Offenlegungspflichten bleiben unberührt.
+Die Rechtsgrundlagen für Verarbeitungen durch andere KI-Plattformen oder gegebenenfalls hinzugefügte Dienste ergeben sich aus deren tatsächlichen Datenverarbeitungsvorgängen und der jeweiligen rechtlichen Rollenverteilung. Sie werden hier nicht stellvertretend festgelegt.
 
-Bei Nutzung einer KI-Plattform ist der betreffende Plattformanbieter in die Verarbeitung der dort eingegebenen Inhalte eingebunden. Es gelten dessen Datenschutzinformationen. Auch die Frage, ob Daten außerhalb des Europäischen Wirtschaftsraums verarbeitet werden und auf welchen Schutzmechanismen eine solche Übermittlung beruht, richtet sich nach dem jeweils verwendeten Dienst und den geltenden Vereinbarungen. Ich behaupte für die hier beschriebenen TSM-Pakete keine eigenen, nicht belegten Standardvertragsklauseln.
+## 6. Empfänger, Dienstleister und internationale Übermittlungen
 
-Öffentlich bereitgestellte TSM-Dateien können über Angebote wie GitHub oder Zenodo zugänglich sein. Wenn Sie diese Webseiten aufrufen, gelten zusätzlich die dortigen Datenschutzinformationen. Ein freiwilliger Aufruf einer Webseite ist von einer automatischen Übermittlung von Chat-Inhalten durch ein Plugin zu unterscheiden.
+Bei einer E-Mail-Anfrage können die für die Kommunikation eingesetzten E-Mail-Dienstleister die technisch erforderlichen Daten verarbeiten. Eine Weitergabe an andere Empfänger erfolgt nur, soweit hierfür ein entsprechender Grund besteht oder eine gesetzliche Verpflichtung vorliegt.
 
-## 7\. Speicherdauer
+Bei der Nutzung einer KI-Plattform ist deren Betreiber in die Verarbeitung der dort eingegebenen Daten eingebunden. Ob und unter welchen Voraussetzungen dabei Daten außerhalb des Europäischen Wirtschaftsraums verarbeitet werden, ergibt sich aus den Informationen und Vereinbarungen des betreffenden Dienstes.
 
-**Eigene Kontaktkorrespondenz:** Ich bewahre Nachrichten nur so lange auf, wie dies für die Bearbeitung der Anfrage, eine erforderliche Anschlusskommunikation oder die Erfüllung gesetzlicher Pflichten notwendig ist. Anschließend werden sie gelöscht, sofern nicht rechtliche Gründe eine weitere Aufbewahrung erfordern.
+Für die beschriebenen Plugins ohne eigene externe Datenanbindung behaupte ich keine zusätzlichen, tatsächlich nicht eingerichteten Datenübermittlungen oder von mir abgeschlossenen Schutzvereinbarungen.
 
-**Gespräche auf KI-Plattformen:** Ich bestimme im beschriebenen Betrieb ohne eigene Chat-Datenhaltung weder die Speicherfristen noch die Löschmöglichkeiten der Plattform. Hierfür gelten die Angaben und Einstellungen des jeweiligen Anbieters.
+## 7. Speicherdauer
 
-**TSM-Wissensdateien:** Diese werden als Werk- und Referenzmaterial versioniert und veröffentlicht; die Dateien dienen nicht der Speicherung privater Nutzerchats.
+**Direkte Kontaktkorrespondenz:** Ich bewahre E-Mails und damit verbundene Informationen so lange auf, wie dies für die Bearbeitung, eine erforderliche Anschlusskommunikation oder die Erfüllung gesetzlicher Pflichten notwendig ist. Danach werden sie gelöscht, soweit keine rechtlichen Gründe für die weitere Aufbewahrung bestehen.
 
-## 8\. Ihre Datenschutzrechte und Kontrollmöglichkeiten
+**Gespräche innerhalb der KI-Plattform:** Im beschriebenen Betrieb ohne eigene Chat-Datenhaltung lege ich weder die Speicherfristen noch die Löschfunktionen der Plattform fest. Maßgeblich sind deren Einstellungen und Datenschutzinformationen.
 
-Soweit die gesetzlichen Voraussetzungen erfüllt sind, haben Sie insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Wenn eine Verarbeitung auf Einwilligung beruht, kann diese mit Wirkung für die Zukunft widerrufen werden.
+**Veröffentlichte Werk- und Referenzdateien:** Diese können aus Gründen der Dokumentation und Nachvollziehbarkeit versioniert und langfristig öffentlich bereitgestellt werden. Sie sind nicht als Speicher für private Nutzerchats vorgesehen.
 
-Für personenbezogene Daten aus einer **direkten Kontaktaufnahme mit mir** können Sie sich an **rosig2@web.de** wenden.
+## 8. Rechte betroffener Personen
 
-Bei **Chatverläufen, Kontodaten oder Einstellungen einer KI-Plattform** nutzen Sie bitte deren Datenschutz- und Kontofunktionen beziehungsweise die dort angegebenen Kontaktwege. Dort können je nach Anbieter und Produkt Einstellungen zum Chatverlauf, zur Löschung und zur Verwendung von Inhalten bereitstehen.
+Soweit die gesetzlichen Voraussetzungen erfüllt sind, bestehen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Eine erteilte Einwilligung kann mit Wirkung für die Zukunft widerrufen werden.
 
-Sie können sich außerdem bei einer zuständigen Datenschutzaufsichtsbehörde beschweren (**Art. 77 DSGVO**).
+Für **direkte Kontaktaufnahmen mit mir** verwenden Sie bitte [rosig2@web.de](mailto:rosig2@web.de). Für **Chatverläufe, Kontodaten, hochgeladene Dateien und Einstellungen des Plattformanbieters** nutzen Sie bitte dessen Datenschutz- und Kontofunktionen beziehungsweise die angegebenen Kontaktwege.
 
-## 9\. Schutz personenbezogener Daten und freiwillige Angaben
+Außerdem besteht nach **Art. 77 DSGVO** das Recht auf Beschwerde bei einer zuständigen Datenschutzaufsichtsbehörde.
 
-Ich veröffentliche in den beschriebenen TSM-Paketen keine eigenen Zugangsdaten oder API-Schlüssel. Die technischen und organisatorischen Schutzmaßnahmen einer genutzten KI-Plattform oder eines E-Mail-Anbieters liegen im Verantwortungsbereich der jeweiligen Betreiber beziehungsweise richten sich nach der konkreten Vertragsgestaltung.
+## 9. Datenminimierung und Sicherheit
 
-Bitte geben Sie nur personenbezogene Informationen in KI-Gespräche oder E-Mails ein, die für Ihr Anliegen erforderlich sind. Besonders sensible Informationen sollten nicht ohne Not übermittelt werden.
+Bitte übermitteln Sie keine Passwörter, API-Schlüssel, Sicherheitscodes oder unnötigen personenbezogenen beziehungsweise besonders sensiblen Angaben. Ich fordere solche Zugangsdaten nicht im Rahmen des allgemeinen Supports an.
 
-## 10\. Keine eigenen automatisierten Entscheidungen mit Rechtswirkung
+Die Sicherheitsmaßnahmen der verwendeten KI-Plattformen und E-Mail-Anbieter richten sich nach den jeweiligen Diensten und Vereinbarungen. In von mir veröffentlichten Wissens- und Skill-Paketen werden keine eigenen geheimen Zugangsschlüssel für einen öffentlichen Zugriff bereitgestellt.
 
-Durch die Bereitstellung der hier beschriebenen TSM-Wissens- und Skill-Pakete treffe ich keine ausschließlich automatisierten Entscheidungen über einzelne Nutzerinnen oder Nutzer mit rechtlicher oder ähnlich erheblicher Wirkung. Die Funktionen und Datenschutzregelungen des jeweils verwendeten KI-Anbieters bleiben davon unberührt.
+## 10. Keine eigenen automatisierten Einzelentscheidungen mit Rechtswirkung
 
-## 11\. Hinweise zu verschiedenen Plattformen
+Durch die Veröffentlichung der hier beschriebenen wissens- und skillbasierten Anwendungen treffe ich selbst keine ausschließlich automatisierten Entscheidungen über einzelne Nutzerinnen oder Nutzer, die ihnen gegenüber rechtliche oder ähnlich erhebliche Wirkungen entfalten. Gegebenenfalls abweichende Funktionen eines Plattformanbieters oder einer gesondert beschriebenen Anwendung sind davon zu unterscheiden.
 
-Diese Richtlinie ist bewusst **anbieterneutral**. Für bestimmte Datenverarbeitungen – insbesondere Chat-Speicherung, Modelltraining, internationale Übermittlungen sowie Kontofunktionen – sind die jeweils aktuellen Informationen des konkret genutzten Dienstes maßgeblich.
+## 11. Verschiedene Plattformen und projektbezogene Ergänzungen
 
-Beispiele für Datenschutzinformationen von KI-Anbietern:
+Diese Informationen sind **plattform- und themenübergreifend** angelegt. Für die Verarbeitungen eines konkret eingesetzten KI-Dienstes sind dessen aktuelle Datenschutzinformationen maßgeblich. Beispielsweise:
 
-* [OpenAI – EU-Datenschutzrichtlinie](https://openai.com/policies/eu-privacy-policy/)
-* [Anthropic – Datenschutz- und Rechtstexte](https://www.anthropic.com/legal)
+- [OpenAI – EU-Datenschutzrichtlinie](https://openai.com/policies/eu-privacy-policy/)
+- [Anthropic – Datenschutz- und Rechtstexte](https://www.anthropic.com/legal)
 
-Die Aufnahme dieser Verweise bedeutet nicht, dass jede TSM-Anwendung auf beiden Plattformen verfügbar ist. Bei weiteren Anbietern sind deren entsprechende Datenschutzinformationen heranzuziehen.
+Die Nennung eines Anbieters bedeutet nicht, dass jedes meiner Plugins dort verfügbar ist.
 
-## 12\. Änderungen
+Projektbezogene Ergänzungen können insbesondere erforderlich sein, wenn einzelne Anwendungen eigene Datenspeicher, verbundene Konten, Drittanbieterwerkzeuge oder abweichende Funktionen einsetzen. Solche Ergänzungen sind direkt bei der jeweiligen Anwendung beziehungsweise ihrer Dokumentation kenntlich zu machen.
 
-Diese Erklärung wird angepasst, wenn sich **tatsächliche Datenflüsse, Verantwortlichkeiten oder wesentliche technische Funktionen** einer von mir angebotenen TSM-Anwendung ändern. Ein bloßer Wechsel der TSM-Korpusversion erfordert keine Änderung dieser Erklärung, sofern sich dadurch an der beschriebenen Datenverarbeitung nichts ändert.
+## 12. Änderungen
 
-Die jeweils veröffentlichte Fassung ist über die Datenschutzseite des TSM-Projekts abrufbar.
+Ich überprüfe diese Erklärung bei Änderungen der tatsächlichen Datenflüsse, Verantwortlichkeiten oder wesentlichen technischen Funktionen. Ein bloßer Wechsel eines Plugin-Namens oder einer Korpusversion erfordert für sich genommen keine Anpassung, solange sich die Datenverarbeitung nicht ändert.
 
+Die aktuelle allgemeine Fassung ist über die von mir verlinkte öffentliche Datenschutzseite abrufbar.
