@@ -1,0 +1,23 @@
+{
+  "title": "Luhmann Lesehilfe & Forum – ergänzende Erkenntnisbasis",
+  "edition": "pilot-0.1",
+  "purpose": "Nur redaktionelle Orientierung, keine Primärtextsammlung. Vor Veröffentlichung manuell freigeben.",
+  "entries": [
+    {
+      "id": "beobachtung-zweiter-ordnung",
+      "title": "Beobachtung zweiter Ordnung",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-pilot",
+      "last_reviewed": "2026-11-05",
+      "note": "Keine authentifizierte Primärtextstelle"
+    },
+    {
+      "id": "kommunikation-und-verstehen",
+      "title": "Kommunikation und Verstehen",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-pilot",
+      "last_reviewed": "2026-11-05",
+      "note": "Keine authentifizierte Primärtextstelle"
+    }
+  ]
+}
