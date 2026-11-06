@@ -1,51 +1,47 @@
-# So nutzt du den Luhmann – Theorieatlas
+# Einführung in den Luhmann – Theorieatlas
 
-**ID:** `so-nutzt-du-den-theorieatlas`  
-**Hauptbibliothek:** Einstieg/Orientierung; **Sekundärbibliotheken:** A–E  
-**Status:** `redaktioneller-arbeitsstand`; **Stand:** 2026-11-06  
-**Quellenstatus:** redaktionelle Gebrauchsanleitung, keine Luhmann-Primärquelle.
+Der Luhmann – Theorieatlas erschließt zentrale Begriffe und Argumentationszusammenhänge der Gesellschaftstheorie Niklas Luhmanns. Er verbindet systematische Begriffskommentare, werkgeschichtliche Orientierung, die Prüfung theoretischer Erkenntnisleistungen und die Analyse gesellschaftlicher Fälle. Der Zugang ist sowohl für die vertiefende Lektüre als auch für eigenständige wissenschaftliche Fragestellungen angelegt.
 
-> **Zweck des Theorieatlas:** Er hilft, eine eigene gesellschaftliche oder organisatorische Frage mithilfe der Systemtheorie zu untersuchen – mit unterscheidbaren Begriffen, offengelegten Quellen, alternativen Sichtweisen und revidierbaren Ergebnissen.
+Der Atlas versteht Theorie nicht als Vokabular, in das sich jede Beobachtung übersetzen ließe. Untersucht wird vielmehr, **welche Unterscheidungen die Theorie ermöglicht, was durch sie sichtbar wird und an welchen Punkten andere Perspektiven erforderlich sind**.
 
-## 1. Was du konkret damit tun kannst
+## 1. Fünf Zugänge zur Theorie
 
-**Einstieg A – Einen Begriff verstehen:** Frage beispielsweise: „Worin liegt bei Luhmann der Unterschied zwischen einer Schule als Organisation und dem Erziehungssystem?“ Der Atlas erschließt die Begriffe und ihre Grenzen. Passend: `systemtypen-und-systemdifferenzierung`.
+Die fünf Bibliothekspfade bilden unterschiedliche wissenschaftliche Zugänge, keine voneinander isolierten Sammlungen:
 
-**Einstieg B – Die Quellenlage prüfen:** Frage: „Ist das wirklich bei Luhmann belegt, oder eine redaktionelle Rekonstruktion?“ Passend: `werkentwicklung-und-quellenstatus` und die Quellenabschnitte jedes Artikels.
+- **A – Begriffs- und Strukturatlas:** Definitionen, Argumentationszusammenhänge und systematische Differenzen, etwa System/Umwelt, Autopoiesis, Sinn oder Systemtypen.
+- **B – Werk- und Quellenatlas:** Werkentwicklung und quellenkritische Nachweise; der Umfang der tatsächlich eingesehenen Primärpassagen wird gegenüber bibliografischen und sekundären Informationen kenntlich gemacht.
+- **C – Erkenntnis- und Gegenbeobachtungsatlas:** Untersuchung des Beobachtungsgewinns, des Zusammenhangsgewinns, des Erklärungsgewinns und der Beobachtungsverluste theoretischer Unterscheidungen.
+- **D – Anwendungs- und Fallatlas:** Analyse schulischer, organisatorischer, politischer und kommunikativer Konstellationen anhand ausdrücklich hypothetischer Fälle.
+- **E – Forschungs- und Revisionsregister:** Dokumentation offener Fragen, begrenzter Belege, konkurrierender Erklärungen und veränderter Einschätzungen.
 
-**Einstieg C – Den Erkenntniswert prüfen:** Frage: „Was macht die Unterscheidung zusätzlich sichtbar? Erklärt sie den Verlauf oder benennt sie ihn nur anders?“ Passend: `erklaerung-oder-umbenennung` und `kontrollierter-beobachtungswechsel`.
+## 2. Von der Frage zur Untersuchung
 
-**Einstieg D – Einen Fall untersuchen:** Nenne die Situation: Schulreform, Organisationskonflikt, politische Forderung oder Mensch–KI-Dialog. Der Atlas bietet hypothetische Beispielfälle und ein Prüfgerüst, **keine** frei erfundenen Befunde über deinen tatsächlichen Fall.
+Eine produktive Auseinandersetzung beginnt mit der Präzisierung der Ausgangsfrage. Anschließend lassen sich die einschlägigen Begriffe bestimmen, ihre Werkbezüge überprüfen und mögliche Deutungen an einem konkreten Sachverhalt untersuchen. Dabei sind vier Leistungen zu unterscheiden: Ein Begriff kann einen Unterschied erstmals beobachtbar machen, Relationen zwischen Vorgängen erschließen, einen Verlauf erklären oder durch seine Selektivität bestimmte Bedingungen ausblenden.
 
-**Einstieg E – Forschungsstand prüfen:** Frage, welche Aussagen noch offen, unzureichend belegt oder revidiert sind. Passend: `forschungs-und-revisionsregister`.
+Diese Gesichtspunkte sind **keine automatische Bewertungszahl**. Eine beobachtungserschließende Theorie kann gerade dann hilfreich sein, wenn aus ihr noch keine empirisch bestätigte Kausalerklärung folgt. Ebenso kann eine terminologisch konsistente Deutung an einer konkreten Frage wenig zusätzlichen Erkenntniswert besitzen.
 
-## 2. Der durchgehende Atlasweg
+Der Beitrag `erklaerung-oder-umbenennung` erläutert dieses Verfahren; `kontrollierter-beobachtungswechsel` zeigt, wie konkurrierende Beobachtungsweisen systematisch verglichen werden können.
 
-1. **Alltagsfrage:** Was soll verstanden werden? Formuliere sie ohne Fachwörter.
-2. **Begriffsbrücke:** Welche luhmannsche Unterscheidung passt tatsächlich dazu?
-3. **Quellenprüfung:** Ist die verwendete Aussage als Originaltext belegt oder nur redaktionell rekonstruiert?
-4. **Vierfachprüfung:** Was bringt die Sicht an Beobachtungsgewinn, Zusammenhangsgewinn, Erklärungsgewinn und Beobachtungsverlust?
-5. **Perspektivwechsel:** Welche alternative Beobachtung macht relevante weitere Faktoren sichtbar?
-6. **Ergebnis:** Was ist nun geklärt, was nur plausibel, was noch offen? Welche nächste Beobachtung wäre sinnvoll?
+## 3. Ein Beispiel aus der Bildungsforschung
 
-Nicht jede kurze Frage benötigt alle sechs Schritte. Ein Begriff kann knapp erklärt werden. Eine weitreichende Behauptung braucht mehr Quellen- und Gegenprüfung.
+Warum kann eine Schulreform Lehrpläne und Unterrichtsmethoden verändern, ohne dass sich das erlebte Lernklima erkennbar verbessert? Der Begriffskomplex `system-und-umwelt` erlaubt es zunächst, politische Reformbeschlüsse, organisatorische Entscheidungen und Unterrichtskommunikation auseinanderzuhalten. `systemtypen-und-systemdifferenzierung` präzisiert die beteiligten Systemzusammenhänge. `schulreform-und-lernklima` entwickelt daraus einen hypothetischen Untersuchungsfall und stellt alternative Ursachen wie Personalmangel, Erwartungsstrukturen oder Prüfungsdruck gegenüber.
 
-## 3. Beispiel: Warum hilft eine Reform nicht?
+Das Ergebnis ist keine pauschale Erklärung aller Schulreformen. Es ist eine theoretisch begründete Strukturierung der zu untersuchenden Prozesse. Die Geltung einer konkreten Erklärung ist anhand entsprechender Beobachtungs- und Vergleichsdaten zu prüfen.
 
-**Frage:** „Die Lehrpläne sind modernisiert, aber das Lernklima verbessert sich nicht. Warum?“
+## 4. Werkbezug und Quellenkritik
 
-**Atlas-Start:** `schulreform-und-lernklima` (ausdrücklich hypothetischer Demonstrationsfall). Dann `systemtypen-und-systemdifferenzierung` für unterschiedliche Ebenen. Dann `erklaerung-oder-umbenennung` für den Erkenntnistest.
+Luhmanns Arbeiten sind historisch gewachsen. Eine Formulierung aus einem Aufsatz von 1982 kann nicht ohne Weiteres als Textbeleg für die spätere Systematik gelesen werden. Der Werk- und Quellenatlas unterscheidet daher eingesehene Textstellen, begrenzte Teilprüfungen, Abstracts, bibliografische Angaben und sekundäre Interpretationen. Diese Unterscheidung ist insbesondere dann wichtig, wenn eine Aussage wortgetreu zitiert oder werkgeschichtlich eingeordnet werden soll.
 
-**Mögliche Antwort:** „Ein Reformbeschluss, eine schulinterne Entscheidung und ein Unterrichtsgespräch sind verschiedene Vorgänge. Das macht unterschiedliche Übergänge sichtbar. Um zu erklären, warum das Lernklima unverändert blieb, wären beobachtete Unterrichtsroutinen, Ressourcen und die Erfahrungen der Lernenden zu vergleichen. Die Theorie eröffnet Fragen, liefert allein aber noch keinen empirischen Befund.“
+Die Beiträge des Theorieatlas sind eigenständige wissenschaftsorientierte Darstellungen und keine kritische Gesamtausgabe der Werke Niklas Luhmanns. Eine Quellenreferenz besitzt jeweils nur die im Beitrag bezeichnete Nachweiskraft.
 
-## 4. Die technische Grenze
+## 5. Arbeitsform und Grenzen
 
-Die vorhandene read-only-Wissensbrücke stellt zwei Funktionen bereit: **`luhmann_wissensindex`** (freigegebene Einträge und Status) und **`luhmann_wissenseintrag`** (Markdowntext eines bekannten Eintrags). Sie kann keine GitHub-Dateien ändern, keinen fremden Text frei durchsuchen und keine empirische Prüfung durchführen. Eine weitere Suchfunktion ist nicht vorhanden. Der Erfolg einer früheren Inspector-Prüfung belegt zudem nicht automatisch, dass das Plugin im jeweiligen ChatGPT-Host Zugriff auf die Werkzeuge hat.
+Die Beiträge lassen sich über ein gemeinsames Register mit stabilen Kennungen erschließen; ihre Verknüpfungen ermöglichen die vertiefende Lektüre über einzelne Begriffsartikel hinaus. Die digitale Wissensbrücke bietet einen lesenden Zugang zum Register und zu einzelnen registrierten Artikeln. Sie ersetzt weder Primärtextlektüre noch eigenständige empirische Forschung. Darüber hinausgehende Recherchen oder Aktualisierungen müssen durch geeignete Verfahren erfolgen.
 
-Wird ein Text nicht gefunden, soll der Atlas das sagen. Wird eine Quelle nicht verifiziert, soll er keine Seitenzahl erfinden. Die Luhmann Lesehilfe & Forum 0.8.2 ist **ein anderes, eigenständiges Skills-only-Plugin** und wird hier nicht automatisch verbunden.
+Der Theorieatlas kann für unterschiedliche Untersuchungsabsichten verschiedene Ergebnisse liefern: eine präzisere Begriffsfassung, eine dokumentierte Quellenentscheidung, eine plausible Prozesshypothese oder einen begründeten Perspektivwechsel. Keines dieser Ergebnisse setzt voraus, die Theorie insgesamt zu bestätigen oder zurückzuweisen.
 
-## 5. Was der Atlas nicht verspricht
+---
 
-Keine wissenschaftliche Endgültigkeit, keine automatische Bestätigung Luhmanns, keine routinemäßige Widerlegung und keine persönlichen oder fachlichen Entscheidungen ohne angemessene Datengrundlage. Sein nutzbares Ergebnis kann auch eine **präzisere Frage**, eine aufgedeckte Verwechslung oder eine gut begründete Gegenbeobachtung sein.
+### Quellen- und Editionshinweis
 
-**Redaktionsnotiz:** 2026-11-06 – Nutzerorientierung für den ersten erweiterten öffentlichen Arbeitsstand; Veröffentlichung und Live-Funktion erst nach separater Prüfung.
+**Registerkennung:** `so-nutzt-du-den-theorieatlas`. **Funktion:** Redaktionell verantwortete Einführung und methodische Orientierung; keine eigenständige Luhmann-Primärquelle. **Editionsstand:** 6. November 2026.

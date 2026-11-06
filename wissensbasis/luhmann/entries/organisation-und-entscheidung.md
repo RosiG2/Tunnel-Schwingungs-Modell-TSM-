@@ -1,12 +1,6 @@
-# Organisation und Entscheidung – warum Beschlüsse nicht automatisch Verhalten ändern
+# Organisation und Entscheidung
 
-**ID:** `organisation-und-entscheidung`  
-**Hauptbibliothek:** D – Anwendung; **Sekundärbibliotheken:** A, B, C  
-**Status:** `redaktioneller-arbeitsstand`; **Stand:** 2026-11-06  
-**Quellenlage:** Luhmann-orientierte Rekonstruktion und hypothetische Anwendung, kein dokumentierter Organisationsdatensatz.  
-**Bezüge:** `systemtypen-und-systemdifferenzierung`, `operative-geschlossenheit`, `autopoiesis`, `kontrollierter-beobachtungswechsel`, `erklaerung-oder-umbenennung`.
-
-> **Praktischer Nutzen:** Untersuchen, warum eine Organisation Entscheidungen trifft, ihre tägliche Praxis aber nicht im erhofften Sinn verändert – ohne vorschnell mangelnden Willen oder persönliches Versagen zu unterstellen.
+Organisationen reproduzieren sich in der systemtheoretischen Perspektive durch Entscheidungen, die wiederum weitere Entscheidungen vorbereiten. Ob ein Beschluss die erwarteten Verhaltensänderungen hervorbringt, ist damit nicht entschieden. Der Beitrag untersucht den Unterschied zwischen formaler Entscheidung, ihrer organisatorischen Weiterverarbeitung und konkreten Handlungsbedingungen anhand eines hypothetischen Falls.
 
 ## 1. Rekonstruktion der Theorieperspektive
 
@@ -30,9 +24,9 @@ Eine konkurrierende Ressourcenanalyse könnte zeigen, dass zu wenig Personal vor
 
 Die Hypothesen sind **keine** gemessenen Befunde und können gemeinsam zutreffen. Ein belastbarer Test benötigt Vergleichszeiträume, tatsächliche Prozessdaten, Zuständigkeiten und möglichst eine Gegenprobe.
 
-## 4. Erkenntnisleistungen
+## 4. Erkenntnisleistung und Beobachtungsgrenzen
 
-**Beobachtungsgewinn:** Statt Entscheidung und Wirkung zu identifizieren, wird die Kette von Anschlussentscheidungen sichtbar.
+**Beobachtungsperspektive:** Statt Entscheidung und Wirkung zu identifizieren, wird die Kette von Anschlussentscheidungen sichtbar.
 
 **Zusammenhangsgewinn:** Ziele, Routinen, Programme, Mitgliedschaft und Verantwortung werden als ineinandergreifende Entscheidungsbedingungen untersucht.
 
@@ -40,7 +34,7 @@ Die Hypothesen sind **keine** gemessenen Befunde und können gemeinsam zutreffen
 
 **Beobachtungsverlust:** Subjektive Erschöpfung, informelle Macht, Arbeitsbedingungen, finanzielle Zwänge oder bewusst strategisches Verhalten dürfen nicht hinter dem Ausdruck „Organisation operiert“ verschwinden.
 
-## 5. Mini-Arbeitsprotokoll
+## 5. Analytische Vorgehensweise
 
 ```text
 1. Ausgangsbeschluss und Datum:
@@ -57,8 +51,18 @@ Die Hypothesen sind **keine** gemessenen Befunde und können gemeinsam zutreffen
 
 Die Konzentration auf Entscheidungen kann den Eindruck erwecken, alles Organisationshandeln sei bewusst entscheidbar und mit Dokumenten rekonstruierbar. Informelle Praktiken, historische Abhängigkeiten und äußere Notwendigkeiten werden so leicht unterschätzt. Eine brauchbare Analyse muss genau dort ergänzen, wo die Entscheidungsperspektive relevante Bedingungen nicht erfasst. Umgekehrt darf ein Ressourcenmodell nicht alle organisationsinternen Auswahlregeln einfach ausblenden.
 
-## 7. Quellen- und Revisionslage
+## 7. Quellenbasis und Editionshinweise
 
 Die luhmannorientierte Rekonstruktion folgt dem Arbeitsstandard des Atlas; noch nicht durch konkrete, in diesem Beitrag erneut kontrollierte Originalpassagen zu Organisation und Entscheidung belegt. Die unter `werkentwicklung-und-quellenstatus` dokumentierten Primäranker betreffen vor allem frühere allgemeine Theorie und ersetzen keine gezielte Lektüre von Luhmanns Organisationstheorie. Keine empirische Fallstudie wurde durchgeführt.
 
-**Revision:** 2026-11-06 – eigenständiger Anwendungsartikel zum priorisierten Eintrag 16; mit drei konkurrierenden, prüfbaren Verlaufsannahmen.
+**Editionsgeschichte:** 6. November 2026 – Drei konkurrierende, prinzipiell prüfbare Verlaufsannahmen wurden in die Fallanalyse aufgenommen.
+
+---
+
+### Quellen- und Editionshinweis
+
+**Bibliothek:** D – Anwendungs- und Fallatlas. **Registerkennung:** `organisation-und-entscheidung`.
+
+**Nachweischarakter:** Theorieorientierte Rekonstruktion mit konstruiertem Beispiel; kein empirischer Organisationsbefund.
+
+**Editionsstand:** 6. November 2026.

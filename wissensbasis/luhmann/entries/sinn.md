@@ -1,12 +1,6 @@
-# Sinn – aktuelle Auswahl und Horizont anderer Möglichkeiten
+# Sinn: Aktualität und Möglichkeit
 
-**ID:** `sinn`  
-**Hauptbibliothek:** A; **Sekundärbibliotheken:** B, C, D  
-**Status:** `redaktioneller-arbeitsstand`; **Stand:** 2026-11-06  
-**Quellenstufe:** redaktionelle Rekonstruktion, für diesen Text keine durchgehende überprüfte Luhmann-Primärstelle.  
-**Anschlüsse:** `komplexitaet-und-kontingenz` [geplant], `doppelte-kontingenz` [geplant], `system-und-umwelt`, `kommunikation-und-verstehen`, `kontrollierter-beobachtungswechsel`.
-
-> **Wozu dieser Artikel nützt:** Er hilft, Bedeutung nicht als ein Ding, einen bloßen inneren Gedanken oder einen festen Inhalt zu behandeln, sondern als fortlaufende Selektion vor einem Horizont nicht gewählter Möglichkeiten.
+In der systemtheoretischen Rekonstruktion bezeichnet Sinn die Verweisung eines jeweils aktualisierten Gehalts auf andere weiterhin mögliche Anschlüsse. Der Begriff erschließt damit die zeitliche Offenheit psychischer und sozialer Operationen, ohne deren Verschiedenheit aufzuheben. Der Beitrag erläutert die Differenz von Aktualität und Möglichkeit sowie ihre Reichweite gegenüber sprachphilosophischen und psychologischen Erklärungen.
 
 ## 1. Ausgangsproblem
 
@@ -14,7 +8,7 @@ Jede aktuelle Äußerung oder Entscheidung hätte auch anders ausfallen können.
 
 In einem Gespräch beantwortet eine Äußerung nicht nur eine Frage, sie verändert zugleich, was als Nächstes erwartet, bestritten oder vertieft werden kann. Die Differenz **aktuell / möglich** macht verstehbar, weshalb Ablehnung, Zweifel und Missverständnis die Sinnverarbeitung nicht beenden müssen. [R/I]
 
-## 2. Luhmann-orientierte Rekonstruktion
+## 2. Theoretische Rekonstruktion
 
 Sinn darf nicht schlicht mit bewusst erlebter Bedeutung gleichgesetzt werden. In der ausgearbeiteten Theorie nutzen psychische und soziale Systeme Sinn als Medium ihrer jeweils unterschiedlichen Operationen. Gedanken und Kommunikation können auf denselben Gegenstand bezogen sein, sind aber nicht dieselbe Operation. Ein soziales System wird deshalb nicht aus psychischen Sinnereignissen „zusammengesetzt“. [R]
 
@@ -28,9 +22,9 @@ Sinn ist im Zusammenhang mit **Komplexität** zu lesen: Es gibt mehr denkbare An
 
 Mit dem Sinnbegriff lässt sich deshalb fragen: Welcher Anschluss wird nahegelegt? Was bleibt unausgesprochen, aber erreichbar? Welche Erwartungen werden sichtbar? Wo kommt ein scheinbar abgeschlossenes Thema in einer späteren Kommunikation wieder? Diese Fragen sind eine **Anwendung** der Theorie, nicht schon eine kausale Erklärung des tatsächlichen Verhaltens der Eltern.
 
-## 4. Die vier Erkenntnisleistungen
+## 4. Erkenntnisleistung und Beobachtungsgrenzen
 
-- **Beobachtungsgewinn:** Ausdrücklich zwischen aktualisierter Äußerung und dem Horizont weiterer Möglichkeiten unterscheiden.
+- **Beobachtungsperspektive:** Ausdrücklich zwischen aktualisierter Äußerung und dem Horizont weiterer Möglichkeiten unterscheiden.
 - **Zusammenhangsgewinn:** Erwartung, Anschluss, Kontingenz und zeitliche Fortsetzung gemeinsam betrachten.
 - **Erklärungsgewinn:** Bei dokumentierten Sequenzen könnte nachgezeichnet werden, warum einige Anschlussmöglichkeiten wahrscheinlicher werden; die abstrakte Sinnform allein erklärt keine konkreten Reaktionen.
 - **Beobachtungsverlust:** Wenn jede Lebenslage vornehmlich als Sinnselektion beschrieben wird, drohen Materialität, Zwang, asymmetrische Ressourcen und emotionale Verletzlichkeit zu verblassen.
@@ -41,8 +35,18 @@ Eine sprachphilosophische, pragmatische oder psychologische Analyse kann oft pr�
 
 Sinn als Begriff ist nicht direkt ein Messwert. Möglich wäre eine Analyse aufeinanderfolgender Kommunikationsbeiträge: Wird eine neue Möglichkeit relevant, geschlossen, überraschend wieder geöffnet? Daraus folgt noch keine standardisierte quantitative Skala und kein empirischer Beleg für die Gesamtlehre.
 
-## 6. Quelle und Redaktionsauftrag
+## 6. Quellenlage und weiterer Forschungsbedarf
 
 Für die Werkgeschichte sind *Soziale Systeme* (1984) sowie Texte zu Sinn, Komplexität und Selbstreferenz im Original heranzuziehen. Die vorliegende Fassung ist eine **redaktionelle Synthese**, keine Primärtextedition. Wörtliche Luhmann-Zitate und überprüfte Seitenbelege werden hier nicht behauptet. Die gegenüber Peter Fuchs und anderen Autoren anschlussfähige Rede von Wirklichkeit/Möglichkeit wäre gegebenenfalls als sekundäre oder vergleichende Lesart separat zu dokumentieren.
 
-**Revision:** 2026-11-06 – erster eigenständiger Begriffsknoten, mit offengelegtem Quellenauftrag.
+**Editionsgeschichte:** 6. November 2026 – Ausarbeitung der begrifflichen Rekonstruktion und ihrer weiteren Quellenfragen.
+
+---
+
+### Quellen- und Editionshinweis
+
+**Bibliothek:** A – Begriffs- und Strukturatlas. **Registerkennung:** `sinn`.
+
+**Nachweischarakter:** Sekundärrekonstruktion des Sinnbegriffs; für diese Darstellung wird keine durchgängig geprüfte Primärtextstelle und kein wörtliches Luhmann-Zitat beansprucht.
+
+**Editionsstand:** 6. November 2026.

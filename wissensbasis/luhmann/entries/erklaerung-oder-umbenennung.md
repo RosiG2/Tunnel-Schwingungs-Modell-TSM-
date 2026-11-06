@@ -1,13 +1,6 @@
-# Erklärung, Beobachtungsgewinn oder bloße Umbenennung?
+# Beobachtung, Erklärung und theoretischer Erkenntnisgewinn
 
-**ID:** `erklaerung-oder-umbenennung`  
-**Hauptbibliothek:** C – Erkenntnis- und Gegenbeobachtungsatlas  
-**Sekundärbibliotheken:** A, B, D, E  
-**Status:** `redaktioneller-arbeitsstand`; **Stand:** 2026-11-06  
-**Quellenstatus:** eigenständiges redaktionelles Prüfverfahren; **nicht** als Methodenkatalog Niklas Luhmanns ausgeben.  
-**Querverweise:** `system-und-umwelt`, `autopoiesis`, `operative-geschlossenheit`, `kontrollierter-beobachtungswechsel`, `schulreform-und-lernklima`, `forschungs-und-revisionsregister`.
-
-> **Nutzerfrage:** „Was hilft mir Luhmann hier wirklich zu verstehen?“ Dieser Beitrag macht den Erkenntnisnutzen anhand von vier getrennten Leistungen und einem nachvollziehbaren Prüfablauf sichtbar.
+Die Erkenntnisleistung theoretischer Begriffe erschöpft sich weder in der Umformulierung eines Sachverhalts noch in dessen kausaler Erklärung. Das hier entwickelte Verfahren unterscheidet Beobachtungsgewinn, Zusammenhangsgewinn, Erklärungsgewinn und Beobachtungsverlust. Es ermöglicht, die Leistung einer systemtheoretischen Deutung an einer konkreten Frage zu beurteilen und mit alternativen Analysen zu vergleichen. Das Verfahren ist eine eigenständige Methode des Theorieatlas.
 
 ## 1. Das Problem der Theorieprüfung
 
@@ -39,7 +32,7 @@ Die Frage „Erklärt Luhmann etwas oder übersetzt er nur?“ ist wichtig, aber
 
 **Gegenprüfung:** Ist der Verlust für die Leitfrage wesentlich? Ein bewusst beschränkter Untersuchungsgegenstand kann angemessen sein. Problematisch wird er, wenn die Begrenzung unbemerkt als vollständige Welterklärung auftritt.
 
-## 3. Sieben Schritte des redaktionellen Prüfprotokolls
+## 3. Sieben Schritte der vergleichenden Theorieanalyse
 
 1. **Ausgangsproblem (Explanandum):** Was genau soll verstanden werden? Formuliere in gewöhnlicher Sprache, bevor Begriffe angewendet werden. Wenn die Theorie das Problem neu bestimmt, dokumentiere die Verschiebung.
 2. **Beobachtungseinheit:** Welche Ereignisse und Zusammenhänge sollen erfasst werden: Aussagen, Entscheidungen, Interaktionen, Organisationen, Bewusstseinsvorgänge? Begründe eine Arbeitsgrenze, statt eine beobachterlose „wahre Grenze“ zu behaupten.
@@ -57,7 +50,7 @@ Das ist eine Methode des Theorieatlas – **keine von Luhmann übernommene Siebe
 
 Die Alternativerklärung lautet beispielsweise: Die erste Schule verfügt über mehr Personal, geringere Fluktuation und professionellere Fortbildung. Beide Perspektiven können vereinbar sein; die systemtheoretische Darstellung muss ihren zusätzlichen Nutzen nicht durch Abwertung der Ressourcenanalyse künstlich herstellen.
 
-## 5. Ergebnisform statt Pseudo-Skala
+## 5. Formen der Ergebnisdarstellung
 
 | Aussage | Zulässiger Befund | Nicht zulässig |
 |---|---|---|
@@ -69,9 +62,9 @@ Die Alternativerklärung lautet beispielsweise: Die erste Schule verfügt über 
 
 Die vier Leistungen sind **kein Ranking von Personen, Schulen oder Theorien**. Es gibt keinen automatisch zu berechnenden Gesamtwert.
 
-## 6. Das Protokoll für den alltäglichen Einsatz
+## 6. Anwendung des Prüfverfahrens
 
-**Nutzerfrage:** „Warum verändert eine Unternehmensentscheidung trotz klarer Zielvorgabe das Verhalten nicht?“
+**Ausgangsfrage:** „Warum verändert eine Unternehmensentscheidung trotz klarer Zielvorgabe das Verhalten nicht?“
 
 **Atlasweg:** `luhmann_wissensindex` abrufen → passenden Eintrag wie `organisation-und-entscheidung` öffnen → notwendige Begriffe (`system-und-umwelt`, `operative-geschlossenheit`) prüfen → in C1–C4 ausweisen, was dadurch zusätzlich sichtbar wird → konkurrierende Erklärung nennen → Quellen- und Fallstatus angeben. Die beiden MCP-Werkzeuge liefern **Index und einzelne Texte**, sie analysieren nicht selbst empirische Daten und haben keine freie Suchfunktion.
 
@@ -84,3 +77,13 @@ Ein sehr hoher Abstraktionsgrad kann dazu führen, dass fast jeder Verlauf als k
 **Quellenlage:** Luhmanns 1982er Aufsatz *Autopoiesis, Handlung und kommunikative Verständigung* ist im früheren Atlas-Paket partiell überprüft, DOI https://doi.org/10.1515/zfsoz-1982-0403. Das vorliegende Vierfachschema wurde **redaktionell neu entwickelt**; es ist nicht Luhmann zugeschrieben. Weitere Theorie- und Quellenvergleiche siehe `werkentwicklung-und-quellenstatus`.
 
 **Revision:** 2026-11-06 – erweitert von der früheren Dreiteilung um expliziten Beobachtungsgewinn, Zusammenhangsgewinn, Beobachtungsverlust und den begründeten Grenzwechsel.
+
+---
+
+### Quellen- und Editionshinweis
+
+**Bibliothek:** C – Erkenntnis- und Gegenbeobachtungsatlas. **Registerkennung:** `erklaerung-oder-umbenennung`.
+
+**Nachweischarakter:** Eigenständiges methodisches Instrument des Theorieatlas; keine von Luhmann selbst veröffentlichte Vierfachklassifikation.
+
+**Editionsstand:** 6. November 2026.

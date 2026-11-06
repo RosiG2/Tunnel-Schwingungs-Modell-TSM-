@@ -1,41 +1,39 @@
-# Luhmann – Theorieatlas: öffentliche, versionierte Erkenntnisbasis
+# Luhmann – Theorieatlas
 
-Dieser Ordner enthält die **ergänzende Wissensbasis** des eigenständigen Plugins **„Luhmann – Theorieatlas“**, herausgegeben von **Rosi Hach**. Er ist nicht die private Skill-Bibliothek des anderen Plugins **„Luhmann Lesehilfe & Forum“**. Beide bleiben organisatorisch und technisch getrennt.
+*Systemtheorie, Werkzusammenhänge und gesellschaftliche Beobachtung*
 
-## Wozu der Theorieatlas dient
+Der **Luhmann – Theorieatlas** erschließt die Gesellschaftstheorie Niklas Luhmanns in einem zusammenhängenden, fortlaufend ergänzbaren Wissensbestand. Neben der Auslegung zentraler Begriffe stehen ihre Werkgeschichte, ihre Anwendung auf gesellschaftliche und organisatorische Phänomene und die Frage nach ihrem jeweils spezifischen Erkenntniswert im Mittelpunkt.
 
-Eine konkrete Frage über Gesellschaft, Organisation, Bildung oder Kommunikation kann über fünf redaktionelle Zugänge bearbeitet werden:
+Ein besonderes Anliegen ist die Unterscheidung von **theoretischer Beobachtung und erklärendem Nachweis**. Eine Begriffsdifferenz kann einen bislang übersehenen Sachverhalt erschließen, ohne damit bereits eine empirisch bestätigte Kausalerklärung zu liefern. Umgekehrt kann eine konsistente systemtheoretische Beschreibung an einer konkreten Fragestellung wenig zusätzlichen Erkenntnisgewinn bieten. Der Theorieatlas behandelt beide Möglichkeiten als Gegenstände wissenschaftlicher Untersuchung.
 
-| Bibliothek | Aufgabe | Beispiel |
+## Die fünf Wissensbibliotheken
+
+| Bibliothek | Gegenstand | Zugang |
 |---|---|---|
-| A – Begriffe | Begriffe unterscheidungsscharf erklären und vernetzen | Warum ist eine Schule als Organisation nicht identisch mit Unterricht oder dem Erziehungssystem? |
-| B – Quellen | Werkangaben und tatsächlich geprüfte Primärstellen trennen | Was ist an Luhmann 1982 geprüft, was zu 1992 nur bibliografisch nachgewiesen? |
-| C – Erkenntnis | Beobachtungs-, Zusammenhangs- und Erklärungsgewinn sowie Beobachtungsverlust prüfen | Was macht „operative Geschlossenheit“ im Fall sichtbar? |
-| D – Anwendungen | Fälle an mehreren Perspektiven untersuchen, Hypothesen von Daten trennen | Schulreform, Organisationsentscheidung, Politik/Recht oder Mensch–KI-Dialog |
-| E – Forschung | Offene Fragen, negative Befunde und Revisionen dokumentieren | Welche Textprüfung oder Falluntersuchung steht noch aus? |
+| **A – Begriffs- und Strukturatlas** | Grundbegriffe, Systemtypen und theoretische Zusammenhänge | [System und Umwelt](entries/system-und-umwelt.md), [Autopoiesis](entries/autopoiesis.md), [Operative Geschlossenheit](entries/operative-geschlossenheit.md) |
+| **B – Werk- und Quellenatlas** | Werkentwicklung und nachgewiesene Quellenbezüge | [Werkentwicklung und Quellenkritik](entries/werkentwicklung-und-quellenstatus.md) |
+| **C – Erkenntnis- und Gegenbeobachtungsatlas** | Reichweite von Beschreibungen, Erklärungen und Perspektivwechseln | [Theoretischer Erkenntnisgewinn](entries/erklaerung-oder-umbenennung.md), [Kontrollierter Beobachtungswechsel](entries/kontrollierter-beobachtungswechsel.md) |
+| **D – Anwendungs- und Fallatlas** | Konstruierte Fälle als Gegenstände theoriegeleiteter Analyse | [Schulreform](entries/schulreform-und-lernklima.md), [Organisation](entries/organisation-und-entscheidung.md), [Politik und Recht](entries/politik-recht-konflikt.md), [Mensch–KI-Kommunikation](entries/mensch-ki-kommunikation.md) |
+| **E – Forschungs- und Revisionsregister** | Offene Fragen, Nachweisgrenzen und begründete Änderungen | [Forschungsfragen und Revisionen](entries/forschungs-und-revisionsregister.md) |
 
-**Direkter Einstieg:** [`so-nutzt-du-den-theorieatlas.md`](entries/so-nutzt-du-den-theorieatlas.md).
+Die weiteren Begriffsartikel [Sinn](entries/sinn.md), [Strukturelle Kopplung](entries/strukturelle-kopplung.md), [Systemtypen](entries/systemtypen-und-systemdifferenzierung.md), [Beobachtung zweiter Ordnung](entries/beobachtung-zweiter-ordnung.md) und [Kommunikation und Verstehen](entries/kommunikation-und-verstehen.md) ergänzen den Strukturatlas.
 
-## Wie die Daten gelesen werden
+Eine zusammenhängende Orientierung bietet die [Einführung in den Theorieatlas](entries/so-nutzt-du-den-theorieatlas.md).
 
-`index.json` ist das gemeinsame Register. Alle tatsächlich registrierten Inhalte liegen unter `entries/<id>.md`. Die fünf Bibliotheken sind redaktionelle Zugänge im **selben** Register, keine separaten Verzeichnisse. Das ist eine bewusste Kompatibilitätsentscheidung, weil der bestehende read-only-Cloudflare-Worker genau dieses Schema nutzt.
+## Wissenschaftliche Arbeitsweise
 
-Im jeweiligen Eintrag ist angegeben, ob es sich um einen redaktionellen Arbeitsstand, eine punktuell belegte Textrekonstruktion, eine Hypothese oder ein Gedankenexperiment handelt. **Redaktioneller Arbeitsstand** ist kein Synonym für geprüfte Primärtextedition. Quellenlinks sind inhaltlich begrenzt zu verwenden: Ein bibliografischer Nachweis beweist nicht jede Theoriebehauptung.
+Der Theorieatlas verfolgt drei miteinander verbundene Ziele: die Rekonstruktion luhmannscher Begriffe in ihren theoretischen Zusammenhängen, den Nachweis ihrer jeweiligen Herkunft und die Untersuchung ihrer Erklärungskraft an konkreten Problemen. Gegenbeobachtungen sind keine routinemäßige Polemik; sie erschließen konkurrierende Beschreibungen, Einwände und bislang ausgeblendete Voraussetzungen.
 
-## Nutzungsbeispiele
+Die quellenkritische Darstellung unterscheidet ausdrücklich **eingesehene Originalpassagen**, **begrenzte Primärtextprüfungen**, **bibliografische Nachweise**, **Abstracts** und **eigenständige redaktionelle Rekonstruktionen**. Die im Atlas dokumentierten Fallanalysen sind, sofern nicht anders angegeben, Gedankenexperimente; sie werden nicht als empirische Befunde ausgegeben. Eine nachgewiesene Werkreferenz ersetzt keinen überprüften Wortlaut.
 
-1. „Warum führen neue Schulpläne nicht automatisch zu besseren Unterrichtsgesprächen? Unterscheide Beobachtung und Erklärung.“
-2. „Welche Luhmann-Aussagen zu Autopoiesis sind anhand der dokumentierten Quelle von 1982 geprüft?“
-3. „Untersuche eine Organisationsentscheidung und zeige alternative Erklärungen.“
-4. „Vergleiche politische und rechtliche Beobachtungen eines hypothetischen Konflikts.“
-5. „Welche Forschungsfragen sind noch offen, und was hat sich seit dem ersten Redaktionsentwurf geändert?“
+Der Theorieatlas ist eine unabhängige wissenschaftsorientierte Publikation, keine amtliche oder von Niklas Luhmann autorisierte Ausgabe. Die einzelnen Beiträge geben ihre Quellenbasis und ihre Nachweisgrenzen an.
 
-## Technische Zugänglichkeit
+## Digitale Erschließung
 
-Der derzeitige MCP-Server bietet `luhmann_wissensindex` und `luhmann_wissenseintrag` als **lesende** Werkzeuge. Ein erster inhaltlicher Funktionstest in der ChatGPT-Desktop-App wurde am 06.11.2026 durch die Nutzerin berichtet; die unabhängig einsehbare Host-Tool-Aufrufspur und die negativen Reviewfälle stehen noch aus. Das Repository ist keine eigenständige dynamische Analyse-Engine. Für die Veröffentlichung von Änderungen sind redaktionelle Prüfung und ein manueller GitHub-Desktop-Push durch die Projektverantwortliche vorgesehen.
+Das maschinenlesbare [Artikelregister](index.json) bildet den gemeinsamen Zugang zu allen fünf Bibliotheken. Jeder Eintrag besitzt eine stabile Kennung und liegt unter `entries/<kennung>.md`. Die Bibliothekspfade bezeichnen sachliche Zugänge innerhalb eines vernetzten Bestands, keine getrennten Textarchive.
 
-## Rechte und Quellen
+Der ergänzende ChatGPT-Zugang kann das öffentlich zugängliche Register und einzelne registrierte Beiträge über eine lesende Wissensbrücke heranziehen. Die inhaltliche Auswertung richtet sich nach der jeweils verfügbaren Quellenbasis. Eine digitale Such- oder Abruffunktion ersetzt weder die Lektüre der Originalwerke noch die Prüfung empirischer Annahmen.
 
-Eigene redaktionelle Texte stehen unter der jeweils auf Repository-/Dateiebene ausgewiesenen Lizenz; Rechte an Originalwerken und verlinkten Quellen bleiben bei den Berechtigten. Der Atlas enthält keine vollständigen fremden Primärtexte. Für Zitate und Nachweise sind die Originalpublikationen heranzuziehen.
+**Herausgabe:** Rosi Hach. Für Kontakt und Nutzung gelten die veröffentlichten [Supportinformationen](../../SUPPORT.md), [Datenschutzinformationen](../../DATENSCHUTZ.md) und [Nutzungsbedingungen](../../NUTZUNGSBEDINGUNGEN.md). Rechte an den Werken Luhmanns und anderer Autorinnen und Autoren bleiben bei den jeweiligen Berechtigten.
 
-**Stand:** Arbeitsausgabe 2026-11-06. Der Inhaltsstand (`edition` in `index.json`) ist unabhängig von der Versionsnummer des installierten Plugins.
+**Edition:** `atlas-0.3-redaktion` · 6. November 2026. Die Kennungen und der Stand des öffentlichen Korpus sind im [Register](index.json) dokumentiert.

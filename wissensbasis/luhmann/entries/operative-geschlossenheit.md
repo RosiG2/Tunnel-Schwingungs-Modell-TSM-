@@ -1,23 +1,14 @@
-# Operative Geschlossenheit – redaktioneller Arbeitsstand
+# Operative Geschlossenheit
 
-**ID:** `operative-geschlossenheit`  
-**Hauptpfad:** A – Begriffs- und Strukturatlas  
-**Sekundärpfade:** B, C, D, E  
-**Status:** `redaktioneller-arbeitsstand – zur öffentlichen Freigabe vorbereitet`  
-**Letzte redaktionelle Bearbeitung:** 2026-11-06  
-**Quellenstufe:** `sekundaerrekonstruktion` mit punktuell `primaertext-geprueften` Teilbehauptungen.  
-**Vernetzte Einträge:** `system-und-umwelt` [als Arbeitsstand im geplanten Atlas-Update], `autopoiesis` [als Arbeitsstand im geplanten Atlas-Update], `strukturelle-kopplung` [im vorbereiteten GitHub-Update], `kommunikation-und-verstehen` [online: Pilot], `selbstreferenz-und-fremdreferenz` [geplant], `organisation-und-entscheidung` [im vorbereiteten GitHub-Update], `erklaerung-oder-umbenennung` [als Arbeitsstand im geplanten Atlas-Update].
+Operative Geschlossenheit bezeichnet die Eigenart der Operationen, durch die ein System seinen Zusammenhang reproduziert. Mit Umweltunabhängigkeit oder Abschottung ist der Begriff nicht gleichzusetzen. Der Beitrag behandelt die Verbindung von Geschlossenheit und struktureller Kopplung, unterscheidet Bedingungen von Operationen und diskutiert die Grenzen einer systemtheoretischen Deutung äußerer Interventionen.
 
-> **Wozu dieser Artikel nützt:** Wie können äußere Ereignisse wirksam werden, ohne selbst die Operationen eines Systems zu bestimmen? Der Artikel gibt nicht nur eine Definition, sondern prüft an Fallunterscheidungen, welche Anschlussfrage sich daraus ergibt. Die Quellenverweise sind nach Prüftiefe gekennzeichnet.
-> **Lesestatus:** Redaktionelle Arbeit aus einer dokumentierten Vorprüfung (06.11.2026), nicht vollständig kritisch edierte Luhmann-Primärtextausgabe.
-
-## 1. Ausgangsproblem und Leitfrage
+## 1. Problemstellung
 
 Systeme hängen von Umweltbedingungen ab. Eine Schule benötigt Lehrkräfte, Schülerinnen und Schüler, Geld, Räume, Rechtsnormen und öffentliche Aufmerksamkeit. Gleichwohl wird ein Gesetz nicht von selbst zur Unterrichtsstunde und ein politischer Appell nicht von selbst zur Entscheidung der Schulkonferenz. **Wie lässt sich die Eigenart der Systemoperation bestimmen, ohne seine Umweltwirksamkeit zu leugnen?**
 
 „Operative Geschlossenheit“ antwortet darauf mit einer kategorialen, nicht mit einer geografischen oder physischen Unterscheidung: Was innerhalb eines bestimmten Systems als Operation wirksam wird, muss **in der Operationsweise dieses Systems** stattfinden. Diese These sagt zunächst nichts darüber, dass die Umwelt keine Ursachen setzt, dass Systeme nie lernen oder dass Interventionen wirkungslos wären.
 
-## 2. Rekonstruktion der luhmannschen Denkbewegung
+## 2. Theoretische Rekonstruktion
 
 ### 2.1 Was ist hier geschlossen?
 
@@ -56,12 +47,12 @@ Eine Selbstbeschreibung kann aber fehlerhaft sein. Dass die Organisation ihre La
 **`system-und-umwelt`:** die Differenz bezeichnet die beiden Seiten der Betrachtung.  
 **`autopoiesis`:** die fortgesetzte Produktion eigener Operationen gibt der Differenz eine zeitliche Reproduktionsform.  
 **`operative-geschlossenheit`:** systemfremde Ereignisse treten nicht unverändert in die systemeigene Operationskette ein.  
-**`strukturelle-kopplung` [im vorbereiteten GitHub-Update]:** wiederkehrende Beziehungen und Umweltabhängigkeiten können gerade bei unterschiedlicher Operationsart bestehen.  
-**`selbstreferenz-und-fremdreferenz` [geplant]:** der Umweltbezug wird innerhalb der eigenen Beobachtungs- und Kommunikationsweise hergestellt.
+**`strukturelle-kopplung`:** wiederkehrende Beziehungen und Umweltabhängigkeiten können gerade bei unterschiedlicher Operationsart bestehen.  
+**`selbstreferenz-und-fremdreferenz`:** der Umweltbezug wird innerhalb der eigenen Beobachtungs- und Kommunikationsweise hergestellt.
 
 Diese Zusammenhänge sind **Theoriearchitektur**, kein empirischer Nachweis, dass ein konkret benanntes Teil- oder Funktionssystem in einer beobachteten Situation genau so funktioniert.
 
-## 4. Was erklärt diese Unterscheidung?
+## 4. Erkenntnisleistung und Erklärungsgrenzen
 
 **[I – redaktionelle Ableitung]** Operative Geschlossenheit kann zunächst gegen die Illusion eines **direkten Steuerungsdurchgriffs** schützen. Wer ein Gesetz verabschiedet, hat damit noch keine Unterrichtsinteraktion verändert; wer einen Forschungsbericht veröffentlicht, hat damit noch keine politische Entscheidung erzeugt. In jedem Fall sind Anschlussprozesse erforderlich, die die jeweilige Mitteilung in eine andere operative Folge einbringen.
 
@@ -79,7 +70,7 @@ Ein naives Input-Output-Modell könnte annehmen, dass eine zunehmende Zahl öffe
 
 Die Gegenprobe wäre ein Fall, in dem die rechtliche Entscheidung bei identischen Normen und Beweislagen systematisch mit öffentlichem Druck variiert. Dann wäre zu klären, ob das Verfahren zusätzliche rechtliche Anschlussbedingungen aufgenommen hat, ob der angenommene Grad operativer Autonomie überschätzt wurde oder ob das zunächst gewählte Systemmodell unzureichend ist. Das darf nicht im Nachhinein reflexhaft als „eben doch strukturelle Kopplung“ etikettiert und so der Prüfung entzogen werden.
 
-## 6. Stärkste faire Gegenbeobachtung
+## 6. Kritische Perspektiven
 
 **[G]** Gerade bei realen Organisationen erscheinen die Grenzen der Operationsarten weniger eindeutig als die Theorie suggerieren kann: Politikerinnen, Juristen, Verwaltungsleitungen, Forschende und Bürger kommunizieren über hybride Organisationen, Geldflüsse, Algorithmen und informelle Kontakte. Die empirische Untersuchung könnte zeigen, dass tatsächliche institutionelle Praktiken **Mischlagen** aus unterschiedlichen Erwartungen und Entscheidungslogiken hervorbringen, die sich nicht mit nur einer Funktionslogik gut beschreiben lassen.
 
@@ -89,7 +80,7 @@ Die faire Antwort aus Luhmanns Perspektive wäre: Ein materieller oder personell
 
 Auch die Gegenbeobachtung bleibt perspektivisch: Wer nur kausale Übertragung modelliert, kann die selektive Herstellung von Bedeutung, Geltung und Zuständigkeit unterschätzen.
 
-## 7. Quellenlage und Quellenaufträge
+## 7. Quellenlage und weiterer Forschungsbedarf
 
 **P1 – Primärtext tatsächlich punktuell geprüft:** Niklas Luhmann (1982), *Autopoiesis, Handlung und kommunikative Verständigung*, *Zeitschrift für Soziologie* **11(4)**, S. 366–379, DOI `10.1515/zfsoz-1982-0403`. Eingesehen S. 368 (geschlossene Reproduktion schließt Umweltabhängigkeit auf anderen Ebenen nicht aus) und S. 374 (kommunikative Reproduktion durch Kommunikation). https://www.degruyterbrill.com/document/doi/10.1515/zfsoz-1982-0403/pdf?licenseType=free
 
@@ -99,7 +90,7 @@ Auch die Gegenbeobachtung bleibt perspektivisch: Wer nur kausale Übertragung mo
 
 **P6 – redaktionelle Herausgeberquelle geprüft (keine Luhmann-Originalpassage):** Dirk Baeckers Vorwort zur transkribierten Vorlesung *Einführung in die Systemtheorie*, Verlag Carl-Auer, Ausgabe 2020, S. 7–8 der Druckfassung; die Vorlesungsedition dokumentiert eine Akzentverschiebung in Luhmanns Theoriearbeit. Die im Inhaltsverzeichnis nachgewiesenen Kapitel „Operative Geschlossenheit“ und „Strukturelle Kopplung“ sind noch nicht als Primärtext eingesehen. https://www.carl-auer.de/media/carl-auer/sample/LP/978-3-89670-839-7.pdf
 
-## 8. Offene Forschungsfragen und Prüfpfade
+## 8. Offene Forschungsfragen
 
 1. Welche **operationale Kennzeichnung** unterscheidet in Grenzfällen politische, rechtliche, wissenschaftliche oder organisatorische Anschlusskommunikation?
 2. Lassen sich vergleichbare externe Anstöße und divergierende Anschlussfolgen dokumentieren, ohne die Systemgrenze nachträglich zu verändern?
@@ -108,22 +99,31 @@ Auch die Gegenbeobachtung bleibt perspektivisch: Wer nur kausale Übertragung mo
 5. Ist die Aussage „Geschlossenheit ermöglicht Offenheit“ in einem benannten Fall eine **prüfbare Beziehung** oder bleibt sie eine begriffliche Umstellung?
 6. Kann eine Fallforschung ein zunächst als „Kopplung“ behandeltes Phänomen überzeugender als Änderung der angenommenen Operationsgrenze ausweisen?
 
-**Vorläufiges Forschungsurteil:** Operative Geschlossenheit ist **keine These sozialer Isolation**. Ihre Stärke liegt in der klaren Unterscheidung von kausaler Ermöglichung und systemspezifischem Anschluss. Ein eigenständiger empirischer Mehrwert wird erst sichtbar, wenn die jeweils behauptete Operationsart und ihre Grenzen im Fall konkret bestimmt und mit alternativen Erklärungen verglichen werden.
+**Erkenntnisstand:** Operative Geschlossenheit ist **keine These sozialer Isolation**. Ihre Stärke liegt in der klaren Unterscheidung von kausaler Ermöglichung und systemspezifischem Anschluss. Ein eigenständiger empirischer Mehrwert wird erst sichtbar, wenn die jeweils behauptete Operationsart und ihre Grenzen im Fall konkret bestimmt und mit alternativen Erklärungen verglichen werden.
 
-## 9. Nutzwertprofil und kontrollierter Beobachtungswechsel
+## 9. Analytische Reichweite und Perspektivwechsel
 
-- **Beobachtungsgewinn:** Äußere Anlässe und innere Verarbeitung als unterschiedliche Ebenen der Erklärung sichtbar machen.
+- **Beobachtungsperspektive:** Äußere Anlässe und innere Verarbeitung als unterschiedliche Ebenen der Erklärung sichtbar machen.
 - **Zusammenhangsgewinn:** Nach Entscheidungsprämissen, Programmen und kommunikativen Anschlüssen suchen, die den Übergang von Anlass zu Reaktion vermitteln.
 - **Erklärungsgewinn:** Bei ähnlichen Störungen untersuchen, warum Organisationen unterschiedlich reagieren; zunächst nur hypothetisch, solange keine Fallbeobachtungen vorliegen.
 - **Beobachtungsverlust:** Die Eigenlogik verdeckt reale Zwangslagen oder kausale Einschränkungen, wenn man Umweltabhängigkeit vorschnell nur noch als „Irritation“ bezeichnet.
 
-**Nutzungsschritt:** Unterscheide bei jedem Fall (1) Anlass, (2) interne Selektionsbedingungen, (3) kommunikative Folge, (4) nicht systemtheoretisch erschöpfte Umweltbedingungen.
+**Analytischer Vorschlag:** Unterscheide bei jedem Fall (1) Anlass, (2) interne Selektionsbedingungen, (3) kommunikative Folge, (4) nicht systemtheoretisch erschöpfte Umweltbedingungen.
 
 **Querpfade:** `strukturelle-kopplung`, `organisation-und-entscheidung`, `erklaerung-oder-umbenennung`, `politik-recht-konflikt`.
 
-## 10. Revisionsnotiz
+## 10. Editionsgeschichte
 
-- **2026-11-06 – Erstentwurf:** Theoriearchitektur und Primärtextbelege getrennt, 1992er Werk nur bibliografisch zugeordnet; kein falscher Volltextnachweis. Bei Erstentwurf keine Änderung öffentlicher Artikel oder Register; Freigabe noch offen.
+- **6. November 2026 – Grundfassung:** Theoriearchitektur und Primärtextbelege getrennt, 1992er Werk nur bibliografisch zugeordnet; ohne ungesicherten Volltextnachweis. Der Stand der Primärtextprüfung und die noch offenen Fragen wurden erfasst.
 
+- **6. November 2026 – Erweiterung der Analytik:** Die vier Erkenntnisdimensionen und der kontrollierte Vergleich von Beobachtungsweisen wurden systematisch ausgearbeitet.
 
-- **2026-11-06 – Nutzwertfassung:** Vierfachprofil und kontrollierte Perspektivwechsel ergänzt; Dateien für GitHub Desktop lokal vorbereitet. Veröffentlichung allein durch die Projektverantwortliche.
+---
+
+### Quellen- und Editionshinweis
+
+**Bibliothek:** A – Begriffs- und Strukturatlas. **Registerkennung:** `operative-geschlossenheit`.
+
+**Nachweischarakter:** Systematische Rekonstruktion mit begrenzten Primärtextbezügen zu Luhmann (1982); der Aufsatz von 1992 ist bibliografisch, nicht als vollständig geprüfter Originalpassus ausgewiesen.
+
+**Editionsstand:** 6. November 2026.

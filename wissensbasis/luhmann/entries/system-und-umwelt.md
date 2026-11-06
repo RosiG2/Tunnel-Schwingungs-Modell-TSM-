@@ -1,23 +1,14 @@
-# System und Umwelt – redaktioneller Arbeitsstand
+# System und Umwelt
 
-**ID:** `system-und-umwelt`  
-**Hauptpfad:** A – Begriffs- und Strukturatlas  
-**Sekundärpfade:** B (Werk/Quellen), C (Erklärungsprüfung), D (Fälle), E (Revision)  
-**Status:** `redaktioneller-arbeitsstand – zur öffentlichen Freigabe vorbereitet`  
-**Letzte redaktionelle Bearbeitung:** 2026-11-06  
-**Quellenstufe:** `sekundaerrekonstruktion`; die unter P1 ausdrücklich benannten Teilbehauptungen sind `primaertext-geprueft`.  
-**Vernetzte Einträge:** `autopoiesis` [als Arbeitsstand im geplanten Atlas-Update], `operative-geschlossenheit` [als Arbeitsstand im geplanten Atlas-Update], `strukturelle-kopplung` [im vorbereiteten GitHub-Update], `beobachtung-zweiter-ordnung` [online: redaktioneller Pilot], `komplexitaet-und-kontingenz` [geplant], `erklaerung-oder-umbenennung` [als Arbeitsstand im geplanten Atlas-Update].
+Die Differenz von System und Umwelt gehört zu den Grundentscheidungen der luhmannschen Theoriearchitektur. Sie bestimmt soziale Ordnung nicht als isolierten Bestand von Personen oder Dingen, sondern über die Fortsetzung spezifischer Operationen im Unterschied zu deren Umweltbedingungen. Der Beitrag rekonstruiert diesen Ansatz, erläutert seine Verbindung zu Autopoiesis und operativer Geschlossenheit und erörtert seinen Erkenntniswert am Beispiel schulischer Reformprozesse.
 
-> **Wozu dieser Artikel nützt:** Was unterscheidet die Betrachtung einer sozialen Ordnung als System von einer Betrachtung als bloßes Ensemble von Menschen und Dingen? Der Artikel gibt nicht nur eine Definition, sondern prüft an Fallunterscheidungen, welche Anschlussfrage sich daraus ergibt. Die Quellenverweise sind nach Prüftiefe gekennzeichnet.
-> **Lesestatus:** Redaktionelle Arbeit aus einer dokumentierten Vorprüfung (06.11.2026), nicht vollständig kritisch edierte Luhmann-Primärtextausgabe.
-
-## 1. Ausgangsproblem und Leitfrage
+## 1. Problemstellung
 
 Wenn wir von einer Schule, einer Verwaltung, einer wissenschaftlichen Disziplin oder der Gesellschaft als *System* sprechen, was haben wir damit erklärt? Eine Aufzählung der Beteiligten und Dinge reicht nicht: Dieselben Menschen können an verschiedenen Kommunikationszusammenhängen mitwirken; dieselbe Organisation kann sich bei wechselndem Personal fortsetzen; ein Thema kann politisch, rechtlich, wissenschaftlich oder privat verarbeitet werden. Die Leitfrage lautet daher: **Wie entsteht und reproduziert sich eine unterscheidbare Ordnung innerhalb einer Welt, deren Bedingungen sie weder vollständig enthält noch vollständig beherrscht?**
 
 Die System/Umwelt-Differenz soll diese Frage umstellen. Anstelle einer isoliert betrachteten Einheit rückt das Verhältnis in den Mittelpunkt, in dem eine Einheit überhaupt als solche erkennbar und fortsetzbar wird. Die begriffliche Pointe ist nicht, dass Systeme eine Außenseite *haben*; sie liegt darin, dass ihre spezifische Einheit nur durch eine Unterscheidung ihrer eigenen Operationen von Nicht-Systemoperationen bestimmt werden kann.
 
-## 2. Textnahe Rekonstruktion der luhmannschen Unterscheidung
+## 2. Theoretische Rekonstruktion
 
 ### 2.1 Das System ist keine bloße Ansammlung
 
@@ -35,7 +26,7 @@ Daraus folgt eine doppelte Relativität. Erstens muss angegeben werden, **welche
 
 **[R]** Eine soziale Systemgrenze verläuft nicht notwendig entlang einer Grundstücks- oder Institutionsgrenze. Sie zeigt sich daran, dass eine Kommunikation als Anschluss *dieses* Zusammenhangs behandelt wird, während andere Vorgänge nur als Bedingungen, Anlass oder Thema für solche Anschlüsse vorkommen. Ein Elternbrief kann etwa schulische Organisationskommunikation sein, während die private Empörung einer Mutter zunächst ein psychisches Ereignis bleibt; wird die Empörung in einer Beschwerde mitgeteilt und bearbeitet, findet Kommunikation statt, deren systemische Zuordnung erst im konkreten Anschluss zu bestimmen ist. Eine einzelne Äußerung ist nicht allein aufgrund des Ortes eindeutig einem einzigen Funktionssystem zugewiesen.
 
-**[P1 – in der Vorredaktion geprüfte Passage]** In Luhmanns Aufsatz von 1982 wird bereits die relative Konstitution der Elemente hervorgehoben: Das, was als Element gilt, hängt vom Systemzusammenhang ab. Der Text betont zugleich, dass Materialien, Energien und externe Voraussetzungen für diese Konstitution erforderlich bleiben. Es folgt gerade **nicht** die These, ein System erzeuge alle Ursachen seiner Existenz selbst (S. 367–368).
+**[P1 – in der dokumentierten Quellenprüfung geprüfte Passage]** In Luhmanns Aufsatz von 1982 wird bereits die relative Konstitution der Elemente hervorgehoben: Das, was als Element gilt, hängt vom Systemzusammenhang ab. Der Text betont zugleich, dass Materialien, Energien und externe Voraussetzungen für diese Konstitution erforderlich bleiben. Es folgt gerade **nicht** die These, ein System erzeuge alle Ursachen seiner Existenz selbst (S. 367–368).
 
 ### 2.4 Systembildung heißt auch Selektion und Zeitgewinn
 
@@ -54,12 +45,12 @@ Die drei Grundartikel dürfen nicht zu Synonymen werden:
 - **`system-und-umwelt`** benennt das *Differenzproblem*: Was zählt für eine gewählte Betrachtung zur Einheit, was bildet ihre andere Seite?
 - **`autopoiesis`** behandelt das *Reproduktionsproblem*: Wie werden systemeigene Ereignisse aus einem laufenden Operationszusammenhang hervorgebracht?
 - **`operative-geschlossenheit`** behandelt das *Operationsproblem*: Warum kann eine systemfremde Operation nicht unverändert als systemeigene Operation fungieren?
-- **`strukturelle-kopplung` [im vorbereiteten GitHub-Update]** wird das *Abhängigkeitsproblem* bearbeiten: Wie können getrennte Operationsweisen regelmäßig füreinander relevant werden?
-- **`beobachtung-zweiter-ordnung` [online, Pilot]** fragt nach den Unterscheidungen, mit denen Beobachter überhaupt Systeme und Umwelten erkennen und darstellen.
+- **`strukturelle-kopplung`** wird das *Abhängigkeitsproblem* bearbeiten: Wie können getrennte Operationsweisen regelmäßig füreinander relevant werden?
+- **`beobachtung-zweiter-ordnung`** fragt nach den Unterscheidungen, mit denen Beobachter überhaupt Systeme und Umwelten erkennen und darstellen.
 
 Diese Relationen begründen keine logische Identität. Ein Beobachter kann eine Grenze markieren, ohne damit schon nachgewiesen zu haben, dass ein autopoietisches System existiert. Umgekehrt wäre Autopoiesis ohne die Bestimmung einer beobachtbaren Operationsgrenze empirisch schwer zu prüfen.
 
-## 4. Was erklärt die Unterscheidung – und was nur eine Benennung?
+## 4. Erkenntnisleistung und Erklärungsgrenzen
 
 **[I – redaktionelle Ableitung]** Der begriffliche Ertrag ist zunächst, zwei üblicherweise vermischte Fragen auseinanderzuhalten: *Was ermöglicht einen Vorgang kausal?* und *Was macht ihn zur Operation gerade dieses Systems?* Ein Urteil setzt Richter, Akten, Sprache, Technik, Ausbildung und Gesellschaft voraus; es wird aber nicht schon dadurch zum rechtlichen Urteil, dass irgendeine dieser Voraussetzungen vorhanden ist. Der systemische Zusammenhang schränkt ein, was im jeweiligen Kontext als rechtlich anschlussfähig gilt.
 
@@ -77,7 +68,7 @@ Eine vorschnelle Erklärung wäre: „Die Schule ist ein geschlossenes System un
 
 Der Mehrwert der System/Umwelt-Unterscheidung läge darin, **Übergänge zwischen verschiedenen Operationszusammenhängen** sichtbar zu machen, an denen ein Reformimpuls seine Bedeutung verändert. Ob das empirisch besser erklärt als Ressourcenmangel, Klassengröße, schulische Führung, Ungleichheit oder Unterrichtsqualität, bleibt zu testen.
 
-## 6. Stärkste faire Gegenbeobachtung
+## 6. Kritische Perspektiven
 
 **[G – eigenständige Gegenbeobachtung]** Die Entscheidung, welche Operation als systemeigen zählt, ist selbst beobachterabhängig und kann bei verschachtelten Organisations-, Interaktions- und Funktionszusammenhängen umstritten sein. Eine Schule ist zugleich Organisation, Ort vielfältiger Interaktionen und Knoten in Rechts-, Politik- und Erziehungskommunikation. Wenn für jedes Untersuchungsziel eine neue Systemgrenze gezogen wird, droht Immunisierung: Die Theorie könnte immer nachträglich passend gemacht werden.
 
@@ -85,7 +76,7 @@ Eine stärkere Konkurrenzbeschreibung arbeitet mit **konkreten Akteuren, Entsche
 
 Auch die Gegenbeobachtung hat einen blinden Fleck: Akteursmodelle können die Eigendynamik von Kommunikationsketten unterschätzen, die nicht auf individuelle Absichten reduzierbar sind. Ein fruchtbarer Vergleich setzt beide Modelle auf **denselben erklärungsbedürftigen Fall** an und prüft, welche relevanten Unterschiede jedes Modell übersieht.
 
-## 7. Quellenlage und Quellenaufträge
+## 7. Quellenlage und weiterer Forschungsbedarf
 
 **P1 – laut dokumentierter Erstredaktion inhaltlich geprüfter Originaltext:** Niklas Luhmann (1982), *Autopoiesis, Handlung und kommunikative Verständigung*, **Zeitschrift für Soziologie 11(4), S. 366–379**, DOI `10.1515/zfsoz-1982-0403`. Eingesehen: Textpassagen zu Systemrelativität der Elemente und Umweltvoraussetzungen (S. 367–368), Reproduktion kommunikativer Systeme (S. 374) sowie Anschluss und Zeitlichkeit (S. 376–377). Zugänglich über: https://www.degruyterbrill.com/document/doi/10.1515/zfsoz-1982-0403/pdf?licenseType=free . Die vorstehenden Verweise sind **Paraphrasen**, keine wörtlichen Zitate.
 
@@ -93,7 +84,7 @@ Auch die Gegenbeobachtung hat einen blinden Fleck: Akteursmodelle können die Ei
 
 **P4 – bibliografisch und im Abstract verifiziert, Vortragstext nicht eingesehen:** Niklas Luhmann, *System as Difference*, **Organization 13(1)** (2006), S. 37 ff., DOI `10.1177/1350508406059638`. Das Abstract beschreibt den systemtheoretischen Differenzansatz; es ist **kein Ersatz für eine überprüfte Passage aus dem Vortragstext**. https://doi.org/10.1177/1350508406059638 .
 
-**Redaktionelle Orientierung:** `Axiome_Luhmann_kompakt.md`, `Glossar_Luhmann.md` aus Theorieatlas 1.0.0; sekundäre Arbeitsmaterialien. Die zwei öffentlichen Piloten bleiben redaktionelle Orientierung, keine Primärquellen.
+**Ergänzende Begriffssystematik:** Die herangezogenen redaktionellen Glossare sind sekundäre Orientierungen, keine Primärtextbelege. Gleiches gilt für die einführenden Kommentare zu Beobachtung zweiter Ordnung und Kommunikation/Verstehen.
 
 ## 8. Offene Fragen und Prüfwege
 
@@ -103,22 +94,31 @@ Auch die Gegenbeobachtung hat einen blinden Fleck: Akteursmodelle können die Ei
 4. **Werkentwicklung:** Wie verändert Luhmann zwischen 1982, 1984 und der späteren formtheoretischen Phase die Relation von Operation, Element, Differenz und Beobachtung? Volltextvergleich erforderlich.
 5. **Grenzfall:** Wo ist die Rede von „dem“ sozialen System weniger brauchbar als eine mehrfache, konkurrierende Beschreibung von Interaktion, Organisation und Gesellschaft?
 
-**Vorläufiges Forschungsurteil:** Die System/Umwelt-Differenz ist ein leistungsfähiger Ansatz zur *Bestimmung des theoretischen Gegenstands* und zur Entflechtung von Umweltbedingung und systemeigener Operation. Als **erklärender Mechanismus** wird sie erst dort belastbar, wo Grenzen, Anschlüsse und konkurrierende Fallverläufe explizit untersucht werden. Das ist ein offenes Prüfprogramm, weder eine Verteidigung noch eine Widerlegung der Theorie.
+**Erkenntnisstand:** Die System/Umwelt-Differenz ist ein leistungsfähiger Ansatz zur *Bestimmung des theoretischen Gegenstands* und zur Entflechtung von Umweltbedingung und systemeigener Operation. Als **erklärender Mechanismus** wird sie erst dort belastbar, wo Grenzen, Anschlüsse und konkurrierende Fallverläufe explizit untersucht werden. Das ist ein offenes Prüfprogramm, weder eine Verteidigung noch eine Widerlegung der Theorie.
 
-## 9. Nutzwertprofil und kontrollierter Beobachtungswechsel
+## 9. Analytische Reichweite und Perspektivwechsel
 
-- **Beobachtungsgewinn:** Nicht allein fragen, welche Personen betroffen sind, sondern welche Anschlüsse einen bestimmten Kommunikationszusammenhang bilden.
+- **Beobachtungsperspektive:** Nicht allein fragen, welche Personen betroffen sind, sondern welche Anschlüsse einen bestimmten Kommunikationszusammenhang bilden.
 - **Zusammenhangsgewinn:** Umweltvoraussetzungen (Personal, Technik, Erwartungen) und systemspezifische Fortsetzung voneinander unterscheiden, ohne ihre Wechselwirkungen zu leugnen.
 - **Erklärungsgewinn:** Bei vergleichbaren Anlässen überprüfen, welche unterschiedlichen Anschlussstrukturen einen anderen Verlauf nachvollziehbar machen; andernfalls ist die Grenze zunächst nur eine heuristische Beschreibung.
 - **Beobachtungsverlust:** Eine starke Betonung kommunikativer Grenzbildung kann Ressourcenengpässe, körperliche Belastungen, Machtasymmetrien oder Biografien aus dem Blick rücken. Für diese Fragen andere Beobachtungsansätze hinzuziehen.
 
-**Nutzungsschritt:** Nenne die untersuchte Situation; lege *mindestens zwei mögliche Grenzziehungen* offen; benenne, was jede sichtbar und unsichtbar macht; dokumentiere, ob die Differenz eine unterscheidbare Folge erklärt. Grenzziehungen sind begründet, nicht als beobachterunabhängige natürliche Kanten behauptet.
+**Analytischer Vorschlag:** Nenne die untersuchte Situation; lege *mindestens zwei mögliche Grenzziehungen* offen; benenne, was jede sichtbar und unsichtbar macht; dokumentiere, ob die Differenz eine unterscheidbare Folge erklärt. Grenzziehungen sind begründet, nicht als beobachterunabhängige natürliche Kanten behauptet.
 
 **Querpfade:** `erklaerung-oder-umbenennung`, `kontrollierter-beobachtungswechsel`, `systemtypen-und-systemdifferenzierung`, `schulreform-und-lernklima`.
 
-## 10. Revisionsnotiz
+## 10. Editionsgeschichte
 
-- **2026-11-06 – Erstentwurf:** Grundartikel mit punktuell überprüftem Luhmann-Primärtext; begriffliche Rekonstruktion und Gegenbeobachtung gesondert gekennzeichnet. Bei Erstentwurf noch ohne Änderung an `entries/` oder `index.json`. Weiterer Quellenabgleich und redaktionelle Prüfung offen.
+- **6. November 2026 – Grundfassung:** Grundartikel mit punktuell überprüftem Luhmann-Primärtext; begriffliche Rekonstruktion und Gegenbeobachtung gesondert gekennzeichnet. Die Abgrenzung zur dokumentierten Quellenbasis wurde festgehalten. Weitere textstellenbezogene Quellenprüfungen bleiben erforderlich.
 
+- **6. November 2026 – Erweiterung der Analytik:** Die vier Erkenntnisdimensionen und der kontrollierte Vergleich von Beobachtungsweisen wurden systematisch ausgearbeitet.
 
-- **2026-11-06 – Nutzwertfassung:** Vierfachprofil und kontrollierte Perspektivwechsel ergänzt; Dateien für GitHub Desktop lokal vorbereitet. Veröffentlichung allein durch die Projektverantwortliche.
+---
+
+### Quellen- und Editionshinweis
+
+**Bibliothek:** A – Begriffs- und Strukturatlas. **Registerkennung:** `system-und-umwelt`.
+
+**Nachweischarakter:** Systematische Rekonstruktion mit punktuell geprüften Aussagen aus Luhmann (1982). Die Zuordnung späterer Begriffsvarianten bleibt eine gesondert zu belegende Interpretation.
+
+**Editionsstand:** 6. November 2026.

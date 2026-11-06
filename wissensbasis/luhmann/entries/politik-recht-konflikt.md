@@ -1,13 +1,6 @@
-# Politik und Recht: Warum Zustimmung kein Gerichtsurteil ersetzt
+# Politik und Recht: unterschiedliche Entscheidungszusammenhänge
 
-**ID:** `politik-recht-konflikt`  
-**Hauptbibliothek:** D; **Sekundärbibliotheken:** A, B, C  
-**Status:** `redaktioneller-arbeitsstand`; **Stand:** 2026-11-06  
-**Fallart:** hypothetischer Vergleich, keine aktuelle Rechtsauskunft und keine empirische Studie.  
-**Quellenstatus:** redaktionelle Rekonstruktion mit bibliografisch verifiziertem Luhmann-Hinweis, ohne geprüfte Einzelpassage aus dem 1992er Cardozo-Aufsatz.  
-**Bezüge:** `systemtypen-und-systemdifferenzierung`, `operative-geschlossenheit`, `strukturelle-kopplung`, `kontrollierter-beobachtungswechsel`.
-
-> **Wozu dieser Fall nützt:** Er hilft, einen scheinbaren Widerspruch zu entflechten: Die öffentliche Mehrheit fordert ein bestimmtes Ergebnis, aber ein Gericht entscheidet anders. Warum sind nicht beide nach demselben Maßstab zu beurteilen?
+Politische Zustimmung und rechtliche Entscheidung folgen unterschiedlichen Beobachtungs- und Entscheidungsbedingungen. Die Untersuchung einer öffentlichen Forderung und ihrer rechtlichen Behandlung kann diese Differenz sichtbar machen, ohne beide Bereiche voneinander zu isolieren. Der vorliegende Fall ist konstruiert; er dient der begrifflichen Analyse und begründet keinen empirischen Befund über ein bestimmtes Verfahren.
 
 ## 1. Konstruiertes Szenario
 
@@ -34,14 +27,24 @@ Die Unterscheidung macht zunächst sichtbar, weshalb **öffentliche Zustimmung u
 | Erklärungsgewinn | Erst mit Fallunterlagen kann geprüft werden, welche Regeln tatsächlich wirksam wurden | Theorie allein entscheidet keinen Einzelfall |
 | Beobachtungsverlust | Ungleich verteilte Ressourcen und reale Einflussnahmen können verschwinden | Empirische Macht- und Verfahrensanalyse ergänzen |
 
-## 5. Kontrollierter Beobachtungswechsel
+## 5. Vergleich der Beobachtungsperspektiven
 
 **Schritt A – rechtlich:** Welche tatsächlichen Voraussetzungen und Beweisregeln tragen das Urteil? **Schritt B – politisch:** Welche Forderungen und Legitimitätsstrategien knüpfen daran an? **Schritt C – sozialwissenschaftlich:** Welche Ressourcen, Medienlogiken und Konflikte beeinflussen die öffentliche Bewertung? Erst nach dieser Trennung vergleichen wir, welche Perspektive welche Frage beantwortet.
 
 Eine zentrale Gegenbeobachtung lautet: Systemtheoretische Differenzierungen dürfen nicht als Immunisierung gegen Kritik an konkreten Gerichtsinstitutionen oder politischer Einflussnahme verwendet werden. Operative Geschlossenheit bedeutet nicht moralische Unangreifbarkeit oder nachweisliche faktische Unabhängigkeit jeder Entscheidung.
 
-## 6. Quelle und Begrenzung
+## 6. Quellenbasis und Grenzen der Fallanalyse
 
 **Bibliografisch gesichert:** Niklas Luhmann, „Operational Closure and Structural Coupling: The Differentiation of the Legal System“, *Cardozo Law Review* 13 (1992), ab S. 1419, https://larc.cardozo.yu.edu/clr/vol13/iss5/2/. Der ursprüngliche Atlas-Quellenaudit bescheinigt **keinen** abgeschlossenen Originaltextabgleich dieses Aufsatzes; alle systemtheoretischen Erläuterungen hier sind entsprechend [R] bzw. [I]. Für aktuelle oder individuelle Rechtsfragen sind einschlägige geltende Normen und fachliche Informationen nötig.
 
 **Revision:** 2026-11-06 – unabhängiger hypothetischer D-Fall zur Differenz von Politik und Recht.
+
+---
+
+### Quellen- und Editionshinweis
+
+**Bibliothek:** D – Anwendungs- und Fallatlas. **Registerkennung:** `politik-recht-konflikt`.
+
+**Nachweischarakter:** Theorieorientierte Analyse eines konstruierten Falles; keine Aussage über eine konkrete Gerichtsentscheidung.
+
+**Editionsstand:** 6. November 2026.

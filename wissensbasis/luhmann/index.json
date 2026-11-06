@@ -1,7 +1,7 @@
 {
-  "title": "Luhmann – Theorieatlas – ergänzende Erkenntnisbasis",
-  "edition": "atlas-0.2-redaktion",
-  "purpose": "Versionierter, redaktioneller Theorieatlas mit fünf Bibliothekspfaden A–E. Dient Begriffsklärung, Quellenprüfung, Erkenntnisvergleich, hypothetischer Fallanalyse und Revision; keine Luhmann-Primärtextsammlung oder empirische Validierung.",
+  "title": "Luhmann – Theorieatlas | Systemtheorie und Erkenntnisperspektiven",
+  "edition": "atlas-0.3-redaktion",
+  "purpose": "Systematische Begriffskommentare, Werk- und Quellenorientierung, theoretische Erkenntnisanalyse, Fallinterpretationen und Forschungsrevisionen in fünf vernetzten Bibliotheken A–E.",
   "entries": [
     {
       "id": "beobachtung-zweiter-ordnung",
@@ -9,7 +9,7 @@
       "category": "begriffshilfe",
       "status": "redaktioneller-pilot",
       "last_reviewed": "2026-11-05",
-      "note": "Keine authentifizierte Primärtextstelle"
+      "note": "Sekundärer Begriffskommentar über Beobachtungsunterscheidungen und deren Grenzen; ohne eigenständigen Primärtextnachweis."
     },
     {
       "id": "kommunikation-und-verstehen",
@@ -17,15 +17,15 @@
       "category": "begriffshilfe",
       "status": "redaktioneller-pilot",
       "last_reviewed": "2026-11-05",
-      "note": "Keine authentifizierte Primärtextstelle"
+      "note": "Sekundärer Begriffskommentar zu Information, Mitteilung, Verstehen und kommunikativen Anschlüssen; ohne eigenständigen Primärtextnachweis."
     },
     {
       "id": "so-nutzt-du-den-theorieatlas",
-      "title": "So nutzt du den Theorieatlas",
+      "title": "Einführung in den Luhmann – Theorieatlas",
       "category": "einstieg",
       "status": "redaktioneller-arbeitsstand",
       "last_reviewed": "2026-11-06",
-      "note": "Redaktionelle Gebrauchsanleitung: sechs Schritte von der Alltagsfrage zur überprüfbaren Erkenntnis.",
+      "note": "Wissenschaftliche Einführung in die Bibliotheken, Quellenordnung und Verfahren theoretischer Erkenntnisanalyse.",
       "library": "START",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": []
@@ -80,7 +80,7 @@
     },
     {
       "id": "sinn",
-      "title": "Sinn",
+      "title": "Sinn: Aktualität und Möglichkeit",
       "category": "begriffshilfe",
       "status": "redaktioneller-arbeitsstand",
       "last_reviewed": "2026-11-06",
@@ -125,11 +125,11 @@
     },
     {
       "id": "werkentwicklung-und-quellenstatus",
-      "title": "Werkentwicklung und Quellenstatus",
+      "title": "Werkentwicklung und Quellenkritik",
       "category": "quellenorientierung",
       "status": "redaktioneller-arbeitsstand",
       "last_reviewed": "2026-11-06",
-      "note": "Sechs Quellenkarten und werkgeschichtliche Prüffragen mit unterscheidbarer Nachweistiefe.",
+      "note": "Quellenkritische Unterscheidung von geprüften Originalpassagen, Werkmetadaten und sekundären Rekonstruktionen.",
       "library": "B",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
@@ -140,11 +140,11 @@
     },
     {
       "id": "erklaerung-oder-umbenennung",
-      "title": "Erklärung oder Umbenennung?",
+      "title": "Beobachtung, Erklärung und theoretischer Erkenntnisgewinn",
       "category": "analyseverfahren",
       "status": "redaktioneller-arbeitsstand",
       "last_reviewed": "2026-11-06",
-      "note": "Vier Erkenntnisdimensionen und sieben Schritte zur transparenten Theorieprüfung.",
+      "note": "Methodische Differenzierung von Beobachtungs-, Zusammenhangs- und Erklärungsgewinn sowie Beobachtungsverlust.",
       "library": "C",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
@@ -159,7 +159,7 @@
       "category": "analyseverfahren",
       "status": "redaktioneller-arbeitsstand",
       "last_reviewed": "2026-11-06",
-      "note": "Eine Frage unter mehreren begründeten Unterscheidungen untersuchen und Gewinne/Verluste dokumentieren.",
+      "note": "Verfahren zum Vergleich theoretischer Unterscheidungen an einer konstant gehaltenen Ausgangsfrage.",
       "library": "C",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
@@ -173,7 +173,7 @@
       "category": "fallanalyse",
       "status": "redaktioneller-arbeitsstand",
       "last_reviewed": "2026-11-06",
-      "note": "Hypothetischer Reformfall mit kontrastierbaren Übergängen und alternativen Erklärungen.",
+      "note": "Theoriegeleitete Analyse eines konstruierten schulischen Reformfalls unter Berücksichtigung alternativer Erklärungen.",
       "library": "D",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
@@ -187,7 +187,7 @@
       "category": "fallanalyse",
       "status": "redaktioneller-arbeitsstand",
       "last_reviewed": "2026-11-06",
-      "note": "Hypothetische Organisationsentscheidung, Entscheidungsketten und Ressourcenalternative.",
+      "note": "Organisatorische Entscheidung und ihre Fortsetzung in einem hypothetischen Fall.",
       "library": "D",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
@@ -198,11 +198,11 @@
     },
     {
       "id": "politik-recht-konflikt",
-      "title": "Politik und Recht im Konflikt",
+      "title": "Politik und Recht: unterschiedliche Entscheidungszusammenhänge",
       "category": "fallanalyse",
       "status": "redaktioneller-arbeitsstand",
       "last_reviewed": "2026-11-06",
-      "note": "Hypothetischer Unterschied zwischen öffentlicher Forderung und rechtlicher Entscheidung.",
+      "note": "Unterscheidung politischer und rechtlicher Entscheidungszusammenhänge anhand eines konstruierten Falles.",
       "library": "D",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
@@ -212,11 +212,11 @@
     },
     {
       "id": "mensch-ki-kommunikation",
-      "title": "Mensch–KI-Kommunikation",
+      "title": "Mensch–KI-Kommunikation: Verstehen und Zurechnung",
       "category": "fallanalyse",
       "status": "redaktioneller-arbeitsstand",
       "last_reviewed": "2026-11-06",
-      "note": "Gedankenexperiment zu Verstehen, Zurechnung, Korrektur und technischen Grenzen.",
+      "note": "Kommunikative Anschlüsse und Zurechnungen in einem hypothetischen Mensch–KI-Dialog.",
       "library": "D",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
@@ -227,11 +227,11 @@
     },
     {
       "id": "forschungs-und-revisionsregister",
-      "title": "Forschungs- und Revisionsregister",
+      "title": "Forschungsfragen und Revisionen",
       "category": "revision",
       "status": "redaktioneller-arbeitsstand",
       "last_reviewed": "2026-11-06",
-      "note": "Offene Quellen- und Methodenfragen, negative Befunde und redaktionelle Revision.",
+      "note": "Offene Forschungsfragen, Grenzen bisheriger Belege, Werkgeschichte und wissenschaftliche Revisionsdokumentation.",
       "library": "E",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
@@ -249,5 +249,6 @@
     "D": "Anwendungs- und Fallatlas",
     "E": "Forschungs- und Revisionsregister",
     "START": "Gebrauchsanleitung"
-  }
+  },
+  "edition_note": "Wissenschaftsorientierte Redaktion. Statuswerte kennzeichnen Editions- und Nachweisumfang, nicht externe fachwissenschaftliche Begutachtung."
 }

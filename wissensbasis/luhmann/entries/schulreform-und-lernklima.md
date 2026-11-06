@@ -1,12 +1,6 @@
-# Schulreform und Lernklima – was ein Reformbeschluss nicht von selbst verändert
+# Schulreform und Lernklima
 
-**ID:** `schulreform-und-lernklima`  
-**Status:** `redaktioneller-arbeitsstand`; hypothetischer Fall, keine empirische Fallstudie  
-**Datum:** 2026-11-06  
-**Hauptpfad:** D – Anwendungs- und Fallatlas  
-> **Praktischer Nutzen:** Der Beitrag zerlegt die oft zu einfache Frage „Warum wirkt die Reform nicht?“ in untersuchbare Übergänge und kontrastierbare Erklärungen. Er darf nicht als Bericht über eine reale Schule gelesen werden.
-
-**Bezüge:** `system-und-umwelt`, `autopoiesis`, `operative-geschlossenheit` [in diesem geplanten GitHub-Update], `organisation-und-entscheidung` [geplant], `strukturelle-kopplung` [geplant], `erklaerung-oder-umbenennung` [in diesem geplanten GitHub-Update].
+Bildungsreformen ändern häufig formale Programme und organisatorische Entscheidungsprämissen. Daraus folgt nicht, dass sich Unterrichtskommunikation und subjektiv erfahrenes Lernklima im gleichen Umfang verändern. An einem ausdrücklich konstruierten Fall wird untersucht, welche Differenzen die Systemtheorie sichtbar macht, welche Prozesshypothesen sich daraus ableiten lassen und welche alternativen Ursachen einzubeziehen sind.
 
 ## Ausgangsfrage
 
@@ -54,14 +48,13 @@ Wenn dagegen dokumentiert wird, dass identische Reformvorgaben bei vergleichbare
 
 Aus „Menschen sind nicht die Elemente sozialer Systeme“ folgt weder, dass ihre Erfahrungen irrelevant seien, noch, dass Bildungspolitik keine Verantwortung für Wohlergehen, Schutz und Teilhabe trage. Die Theorieentscheidung darüber, *was als Operation beobachtet wird*, ersetzt keine Bewertung der Folgen für Menschen.
 
-## Quellen und nächste Schritte
+## Quellen und weiterführende Forschung
 
 Diese Fallskizze ist **vollständig redaktionell konstruiert**. Es wurden keine empirischen Bildungsstudien für diesen Fall geprüft. Theoretische Grundlagen zum Verhältnis von System und Umwelt und zur Eigenreproduktion stammen teilweise aus dem tatsächlich eingesehenen Luhmann-Aufsatz von 1982, DOI https://doi.org/10.1515/zfsoz-1982-0403 . Für eine empirische Veröffentlichung sind ein realer Fall, konkrete Datenquellen, ethischer und datenschutzkonformer Zugang sowie unabhängige konkurrierende Erklärungen erforderlich.
 
-**Revisionsnotiz:** 2026-11-06 – erste D-Fallskizze; `hypothetisch`, zunächst lokal zur redaktionellen Freigabe vorbereitet.
+**Editionsgeschichte:** 6. November 2026 – Entwicklung des hypothetischen Fallvergleichs; keine empirische Fallprüfung.
 
-
-## Vierfacher Nutzentest und nächster Handlungsschritt
+## Erkenntnisprofil und Untersuchungsansatz
 
 | Leistung | Was sich im hypothetischen Fall zeigt | Belastungsfrage |
 |---|---|---|
@@ -70,6 +63,16 @@ Diese Fallskizze ist **vollständig redaktionell konstruiert**. Es wurden keine 
 | Erklärungsgewinn | Unterschiedliche Entscheidungsprämissen könnten einen Verlaufsunterschied erklären. | Tun es vielleicht Ressourcen oder Leitungshandeln genauso gut? |
 | Beobachtungsverlust | Belastung und Motivation der Lernenden könnten im Kommunikationsfokus verschwinden. | Welche zusätzlichen Datentypen fehlen? |
 
-**Nutzeranwendung:** Benenne eine konkrete Reform, zwei beobachtbare Veränderungen, den betrachteten Zeitraum und die bislang vorhandenen Daten. Ohne diese Angaben eignet sich der Artikel für Hypothesenbildung, nicht für eine Tatsachenbehauptung über eine reale Reform.
+**Hinweis zur Fallanalyse:** Benenne eine konkrete Reform, zwei beobachtbare Veränderungen, den betrachteten Zeitraum und die bislang vorhandenen Daten. Ohne diese Angaben eignet sich der Artikel für Hypothesenbildung, nicht für eine Tatsachenbehauptung über eine reale Reform.
 
 **Weiterlesen:** `systemtypen-und-systemdifferenzierung`, `erklaerung-oder-umbenennung`, `kontrollierter-beobachtungswechsel`, `forschungs-und-revisionsregister`.
+
+---
+
+### Quellen- und Editionshinweis
+
+**Bibliothek:** D – Anwendungs- und Fallatlas. **Registerkennung:** `schulreform-und-lernklima`.
+
+**Nachweischarakter:** Konstruiertes Fallbeispiel und theoriegeleitete Hypothesenbildung; keine empirische Untersuchung einer konkreten Schule.
+
+**Editionsstand:** 6. November 2026.

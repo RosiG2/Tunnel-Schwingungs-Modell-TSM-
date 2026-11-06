@@ -1,12 +1,6 @@
-# Strukturelle Kopplung – Umweltabhängigkeit ohne operative Verschmelzung
+# Strukturelle Kopplung
 
-**ID:** `strukturelle-kopplung`  
-**Hauptbibliothek:** A – Begriffe und Struktur; **Nebenpfade:** B, C, D  
-**Status:** `redaktioneller-arbeitsstand`; **Stand:** 2026-11-06  
-**Quellenstatus:** Luhmann-orientierte Rekonstruktion; Luhmann 1992 zum Thema bibliografisch verifiziert, **nicht** als konkreter Volltextbeleg ausgewertet.  
-**Verweise:** `system-und-umwelt`, `operative-geschlossenheit`, `autopoiesis`, `bewusstsein-und-kommunikation` [geplant], `mensch-ki-kommunikation`, `erklaerung-oder-umbenennung`.
-
-> **Wozu dieser Beitrag nützt:** Er hilft zu verstehen, warum eine rechtliche, organisatorische oder kommunikative Ordnung stark von anderen Zusammenhängen abhängen kann und dennoch nicht einfach deren Operationen übernimmt.
+Strukturelle Kopplung beschreibt die dauerhafte Empfänglichkeit operativ eigenständiger Systeme für bestimmte Umweltkonstellationen. Der Begriff soll erklären helfen, wie verschiedene Operationszusammenhänge aufeinander bezogen sein können, ohne ineinander überzugehen. Der Beitrag entwickelt die begrifflichen Voraussetzungen, erörtert Beispiele und unterscheidet theoretische Plausibilität von empirisch belegten Wirkungsbeziehungen.
 
 ## 1. Das Problem
 
@@ -33,7 +27,7 @@ Die bloße Aussage „Recht und Politik sind strukturell gekoppelt“ erfüllt n
 
 ## 4. Erkenntnisprofil
 
-**Beobachtungsgewinn:** Zwischen unmittelbarem Ursache-Wirkungs-Denken und völliger Abkopplung tritt die Frage nach selektiven Übergängen.
+**Beobachtungsperspektive:** Zwischen unmittelbarem Ursache-Wirkungs-Denken und völliger Abkopplung tritt die Frage nach selektiven Übergängen.
 
 **Zusammenhangsgewinn:** Bedingungen der Abhängigkeit und die Eigenlogik der anschließenden Operation können gleichzeitig benannt werden.
 
@@ -53,6 +47,16 @@ Die gleiche Reformvorgabe erreicht zwei Schulen. In Schule A verändern sich die
 
 **Bibliografisch geprüft:** Niklas Luhmann (1992), „Operational Closure and Structural Coupling: The Differentiation of the Legal System“, *Cardozo Law Review*, 13, 1419 ff., https://larc.cardozo.yu.edu/clr/vol13/iss5/2/ . Der Text wurde im zugrundeliegenden Redaktionspaket nicht als vollständig eingesehener Originaltext dokumentiert; hier werden **keine** aus diesem Aufsatz angeblich wörtlichen Sätze oder Seitenbelege behauptet.
 
-**Vorredaktionell partiell geprüfter Anker:** Niklas Luhmann (1982), „Autopoiesis, Handlung und kommunikative Verständigung“, https://doi.org/10.1515/zfsoz-1982-0403; der Aufsatz behandelt Umweltvoraussetzungen und Eigenreproduktion, ist aber nicht mit der gesamten späteren Kopplungstheorie gleichzusetzen.
+**Quellenprüfungell partiell geprüfter Anker:** Niklas Luhmann (1982), „Autopoiesis, Handlung und kommunikative Verständigung“, https://doi.org/10.1515/zfsoz-1982-0403; der Aufsatz behandelt Umweltvoraussetzungen und Eigenreproduktion, ist aber nicht mit der gesamten späteren Kopplungstheorie gleichzusetzen.
 
 **Revision:** 2026-11-06 – begriffs- und anwendungsorientierte Erstfassung; explizite Lektüre von Luhmann 1992 und weiterer Primärtexte ausstehend.
+
+---
+
+### Quellen- und Editionshinweis
+
+**Bibliothek:** A – Begriffs- und Strukturatlas. **Registerkennung:** `strukturelle-kopplung`.
+
+**Nachweischarakter:** Begriffskommentar auf Grundlage einer systemtheoretischen Rekonstruktion; für Luhmann (1992) liegt bislang lediglich ein bibliografischer Nachweis vor.
+
+**Editionsstand:** 6. November 2026.

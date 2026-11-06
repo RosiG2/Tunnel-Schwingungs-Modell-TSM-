@@ -1,11 +1,6 @@
-# Werkentwicklung und Quellenstatus – sechs kontrollierte Quellenkarten
+# Werkentwicklung und Quellenkritik
 
-**ID:** `werkentwicklung-und-quellenstatus`  
-**Hauptbibliothek:** B – Quellen und Werkentwicklung  
-**Status:** `redaktioneller-arbeitsstand` – für die kontrollierte GitHub-Veröffentlichung vorbereitet  
-**Datum:** 2026-11-06  
-**Zweck:** Nachvollziehbare Trennung zwischen **inhaltlich eingesehener Originalstelle**, **bibliografischem Nachweis**, **Abstract** und **redaktioneller Zusatzquelle**. Keine Kopie geschützter Volltexte.  
-**Verknüpfte A-Artikel:** `system-und-umwelt`, `autopoiesis`, `operative-geschlossenheit`, `sinn`, `systemtypen-und-systemdifferenzierung`, `erklaerung-oder-umbenennung` [als Uploadpaket vorbereitet]
+Die Rekonstruktion einer Theorie verlangt, zwischen der Geschichte ihrer Begriffe und deren späterer systematischer Darstellung zu unterscheiden. Die vorliegenden Werk- und Quellenkarten dokumentieren den jeweils erreichten Nachweisumfang ausgewählter Primär- und Sekundärquellen. Sie dienen einer begriffsgeschichtlich kontrollierten Lektüre der systemtheoretischen Literatur, nicht der Gleichsetzung bibliografischer Existenznachweise mit geprüften Originalpassagen.
 
 ## B-001 – Luhmann 1982: Autopoiesis, Handlung und kommunikative Verständigung
 
@@ -13,7 +8,7 @@
 - **Identifikation:** Niklas Luhmann (1982), „Autopoiesis, Handlung und kommunikative Verständigung“, *Zeitschrift für Soziologie*, 11(4), S. 366–379.
 - **DOI:** https://doi.org/10.1515/zfsoz-1982-0403
 - **Volltextzugang beim Verlag:** https://www.degruyterbrill.com/document/doi/10.1515/zfsoz-1982-0403/pdf?licenseType=free
-- **Prüfstufe:** **Primärtext in der dokumentierten Vorredaktion inhaltlich eingesehen** (über den zugänglichen textuellen PDF-Abruf; einzelne Screenshot-Abrufe waren technisch nicht erfolgreich). Die hier genannten Seiten sind im Dokument durch Druckseitenmarkierungen nachvollziehbar.
+- **Prüfstufe:** **Primärtext in der dokumentierten Quellenprüfung inhaltlich eingesehen** (die Prüfung beschränkt sich auf die in der Dokumentation bezeichneten Textstellen). Die hier genannten Seiten sind im Dokument durch Druckseitenmarkierungen nachvollziehbar.
 - **Tatsächlich geprüfte Stellen/Argumente:**
   - S. **367**: Elementbegriff als systemrelativer Zusammenhang, materielle/energetische Voraussetzungen, Ausdifferenzierung in Relation zur Umwelt.
   - S. **368**: Autopoiesis geht über Selbstorganisation hinaus, weil auch Elemente als Ergebnisse laufender Reproduktion betrachtet werden; operative Eigenständigkeit leugnet Umweltabhängigkeit nicht. Die Übertragung auf Soziales wird als problematisch und diskutierbar kenntlich gemacht.
@@ -37,9 +32,9 @@
 - **Typ:** Luhmann-Primärwerk, Zeitschriftenaufsatz, Schwerpunkt Rechtssystem.
 - **Identifikation:** Niklas Luhmann (1992), „Operational Closure and Structural Coupling: The Differentiation of the Legal System“, *Cardozo Law Review* 13, S. 1419–1441.
 - **Verlags-/Zeitschriftennachweis:** https://larc.cardozo.yu.edu/clr/vol13/iss5/2/
-- **Prüfstufe:** **Bibliografie verifiziert; Volltext nicht eingesehen.** Der Download wurde über den verfügbaren Abrufweg mit HTTP 403 verweigert.
-- **Relevanz:** Gezielter Anschlussauftrag für `operative-geschlossenheit` und `strukturelle-kopplung`. Rechtliches Beispiel in der ersten Arbeitsfassung ist eine **theoriegeleitete Rekonstruktion**, kein Bericht aus diesem ungelesenen Aufsatz.
-- **Auftrag:** Zugang zu einer legal bereitgestellten Fassung finden, Fundstellen gegen die konkrete Ausgabe prüfen und erst dann auf `primaertext-geprueft` hochstufen.
+- **Prüfstufe:** **Bibliografie verifiziert; Originalpassagen nicht geprüft.** Ein zugänglicher vollständiger Text lag für die dokumentierte Prüfung nicht vor.
+- **Relevanz:** Werkgeschichtlicher Anknüpfungspunkt für `operative-geschlossenheit` und `strukturelle-kopplung`. Rechtliches Beispiel in der ersten Arbeitsfassung ist eine **theoriegeleitete Rekonstruktion**, kein Bericht aus diesem ungelesenen Aufsatz.
+- **Weiterer Forschungsbedarf:** Eine zugängliche Originalfassung ist heranzuziehen; erst nach überprüfter Fundstellenlektüre kann eine Aussage als primärtextlich geprüft gelten.
 
 ## B-004 – Luhmann: System as Difference (2006 publiziert)
 
@@ -54,9 +49,9 @@
 
 - **Typ:** Primärquelle zur **biologischen**, nicht zur luhmannschen sozialen Autopoiesis.
 - **Identifikation:** Francisco G. Varela, Humberto R. Maturana und R. Uribe (1974), „Autopoiesis: The Organization of Living Systems, Its Characterization and a Model“, *Biosystems* 5(4), S. 187–196, DOI https://doi.org/10.1016/0303-2647(74)90031-8 .
-- **Primärtext-Einsicht laut Vorredaktion:** Einleitung und Abschnitte über Produktionsnetzwerke, lebende Einheiten und Abgrenzung von **individueller Organisation** gegenüber **Fortpflanzung** im verfügbaren PDF. https://users.sussex.ac.uk/~inmanh/adsys10/Readings/Varela_etal_-_1974_-_Autopoiesis_the_organization_of_the_living_characterization_n_model_-_Biosystems.pdf
+- **Primärtext-Einsicht laut Quellenprüfung:** Einleitung und Abschnitte über Produktionsnetzwerke, lebende Einheiten und Abgrenzung von **individueller Organisation** gegenüber **Fortpflanzung** im verfügbaren PDF. https://users.sussex.ac.uk/~inmanh/adsys10/Readings/Varela_etal_-_1974_-_Autopoiesis_the_organization_of_the_living_characterization_n_model_-_Biosystems.pdf
 - **Bibliografische Gegenprüfung:** https://pubmed.ncbi.nlm.nih.gov/4407425/ und https://www.sciencedirect.com/science/article/pii/0303264774900318 .
-- **Prüfstufe:** **Originaltext laut dokumentierter Vorredaktion punktuell geprüft**, OCR-/Textreihenfolge teils unzuverlässig; für direkte englische Zitate vor Freigabe optische Durchsicht der Druckseite erforderlich.
+- **Prüfstufe:** **Originaltext in bezeichneten Passagen geprüft**; die maschinelle Textreihenfolge ist teilweise unzuverlässig. Vor wörtlichen Zitaten ist deshalb die jeweilige Druckseite gesondert zu kontrollieren.
 - **Relevanz:** Sichert die Nichtgleichsetzung biologischer Komponentenproduktion mit kommunikativer Anschlussproduktion. Besonders wichtig: Autopoiesis einer Einheit ist nicht dasselbe wie **Vermehrung von Organismen**.
 
 ## B-006 – Baecker zu Luhmanns Einführungsvorlesung
@@ -67,42 +62,51 @@
 - **Prüfstufe:** **Vorwort S. 7–8 tatsächlich gelesen**, Inhaltsverzeichnis angeschaut; die angekündigten Vorlesungskapitel selbst nicht gelesen.
 - **Relevanz:** Redaktioneller Werkentwicklungshinweis: Baecker beschreibt die Vorlesung 1991/92 als theoretische, auch gegenüber *Soziale Systeme* akzentverschiebende und nicht einfach identische Fassung; Schwerpunktverschiebung zur Beobachtung/Formanalyse. Das ist **Baeckers Einordnung**, keine als Luhmann selbst geprüfte Aussage.
 
-## B-007 – Werkgeschichtliche Konkordanz (orientierende Forschungslandkarte)
+## B-007 – Werkgeschichtliche Konkordanz
 
 Die folgende Matrix soll verhindern, dass Aussagen verschiedener Werkphasen ohne Quellenhinweis als ein zeitloser Luhmann-Wortlaut erscheinen. Sie ist **redaktionelle Arbeitsorientierung**, keine vollständige Werkgeschichte und keine neue Primärquellenprüfung.
 
-| Werkphase / Text | Thematischer Schwerpunkt für den Atlas | Status in diesem Paket | Nicht still daraus ableiten |
+| Werkphase / Text | Thematischer Schwerpunkt für den Atlas | Nachweisgrad | Nicht still daraus ableiten |
 |---|---|---|---|
-| 1982, *Autopoiesis, Handlung und kommunikative Verständigung* | Ereignishaftigkeit, Handlung, Selbstreproduktion, Kommunikation | Originalpassagen laut Vorpaket teilweise geprüft | spätere Gesellschaftstheorie als vollständig identischer Wortlaut |
+| 1982, *Autopoiesis, Handlung und kommunikative Verständigung* | Ereignishaftigkeit, Handlung, Selbstreproduktion, Kommunikation | Bezeichnete Originalpassagen punktuell geprüft | spätere Gesellschaftstheorie als vollständig identischer Wortlaut |
 | 1984, *Soziale Systeme* | System/Umwelt, Sinn, Selbstreferenz, soziale Autopoiesis | bibliografisch nachgewiesen; Detailstellen offen | konkrete Seitenzitate ohne erneute Lektüre |
 | 1992, *Operational Closure and Structural Coupling* | juristischer Bezug von Schließung und Kopplung | bibliografisch nachgewiesen | direkte Sätze oder Argumentstufen ohne Textsichtung |
-| 1991/92 gehaltene Einführungsvorlesungen, später ediert | stärker beobachtungs- und formorientierte Darstellung | Herausgeberhinweis Baecker geprüft; Luhmann-Passagen offen | Herausgeberinterpretation als Luhmann-Originalsatz |
+| 1991/92 gehaltene Einführungsvorlesungen, später ediert | stärker beobachtungs- und formorientierte Darstellung | Herausgebervorwort Baeckers geprüft; Luhmann-Passagen offen | Herausgeberinterpretation als Luhmann-Originalsatz |
 | 2006 veröffentlichter Text *System as Difference* | Differenz- und Formperspektive | Metadaten und Abstract geprüft | englischen Text als vollständig gelesene Quelle ausgeben |
 
 **Verwendungsregel:** Jede spätere Begriffskonkordanz nennt *Quelle, Ausgabe, geprüften Abschnitt, interpretierte Veränderung und offene Abweichungen*. Ein späterer Begriff darf einen früheren Gedanken erläutern, aber nicht unbemerkt dessen damalige Formulierung ersetzen.
 
 **Prüfbare Ergänzung:** Das offizielle Niklas-Luhmann-Archiv führt ein Werkverzeichnis: https://niklas-luhmann-archiv.de/person/werkverzeichnis . Der Verzeichnisnachweis ersetzt keine Lektüre des zitierten Werks.
 
-## Quellenordnung für den weiteren Atlas
+## Differenzierung der Nachweisgrade
 
-**Prüfstufen dürfen nicht zusammengezogen werden:**
+**Unterschiedliche Nachweisgrade sind auseinanderzuhalten:**
 
-- `VOLLTEXT_GEPRUEFT`: Textstelle tatsächlich eingesehen, Fundstelle überprüft, Aussage im Umfang des Gesehenen belegt.
-- `TEILTEXT_GEPRUEFT`: genau benannter Ausschnitt geprüft, keine Vollständigkeitsbehauptung.
-- `ABSTRACT_GEPRUEFT`: bibliografischer/abstractbezogener Befund, **kein** Originalabschnittsbeleg.
-- `BIBLIOGRAFIE_GEPRUEFT`: Existenz und Metadaten des Werks nachgewiesen.
-- `SEKUNDAER`: rekonstruierende Arbeitshilfe, nicht durch Umbenennung zur Primärquelle machen.
-- `OFFEN`: noch nicht zuverlässig geprüft.
+- **Originalpassage eingesehen:** Textstelle tatsächlich eingesehen, Fundstelle überprüft, Aussage im Umfang des Gesehenen belegt.
+- **Textausschnitt geprüft:** genau benannter Ausschnitt geprüft, keine Vollständigkeitsbehauptung.
+- **Abstract geprüft:** bibliografischer/abstractbezogener Befund, **kein** Originalabschnittsbeleg.
+- **Bibliografische Angaben geprüft:** Existenz und Metadaten des Werks nachgewiesen.
+- **Sekundärrekonstruktion:** rekonstruierende Arbeitshilfe, nicht durch Umbenennung zur Primärquelle machen.
+- **Noch nicht geprüft:** noch nicht zuverlässig geprüft.
 
-Diese Klassen sind **Arbeitsbegriffe dieses Entwurfs**, keine behaupteten bereits implementierten Felder des Live-Registers. Kein technisches Schema wurde verändert.
+Diese Kategorien bestimmen die Nachweistiefe der Quellenlektüre. Sie sind nicht mit einem automatischen Prüfverfahren für Originaltexte gleichzusetzen.
 
-## Revisionsnotiz
+## Editionsgeschichte
 
-- **2026-11-06:** Erste sechs Quellenkarten aus tatsächlich vorhandenen Nachweisen und zugänglichen Textausschnitten angelegt; vorhandene Beleggrenzen dokumentiert. Veröffentlichung ausstehend.
+- **2026-11-06:** Erste sechs Quellenkarten aus tatsächlich vorhandenen Nachweisen und zugänglichen Textausschnitten angelegt; vorhandene Beleggrenzen dokumentiert. Die Prüfung weiterer Werkpassagen bleibt ausstehend.
 
+## Beitrag zur werkgeschichtlichen Interpretation
 
-## Wozu Bibliothek B im praktischen Dialog dient
+Bei der Frage, ob eine bestimmte Aussage bereits in Luhmanns Aufsatz von 1982 vorliegt, ist zunächst der Nachweisgrad zu ermitteln. Das Register kann *bibliografisch vorhanden*, *Originalpassage punktuell geprüft* und *redaktionell rekonstruiert* unterscheiden. Fehlt der konkrete Passus, ist „nicht verifiziert“ die korrekte Antwort – nicht eine plausibel klingende Seitenzahl.
 
-Eine Nutzerfrage wie „Hat Luhmann 1982 schon genau dies behauptet?“ soll zuerst zum passenden Quellenstatus führen. Das Register kann *bibliografisch vorhanden*, *Originalpassage punktuell geprüft* und *redaktionell rekonstruiert* unterscheiden. Fehlt der konkrete Passus, ist „nicht verifiziert“ die korrekte Antwort – nicht eine plausibel klingende Seitenzahl.
+**Beobachtungsperspektive:** Unterschiedliche theoretische Werkstände werden selbst zum Untersuchungsgegenstand. **Grenze:** Auch diese Landkarte bleibt ohne gezielte erneute Volltextlektüre unvollständig.
 
-**Beobachtungsgewinn:** Unterschiedliche theoretische Werkstände werden selbst zum Untersuchungsgegenstand. **Grenze:** Auch diese Landkarte bleibt ohne gezielte erneute Volltextlektüre unvollständig.
+---
+
+### Quellen- und Editionshinweis
+
+**Bibliothek:** B – Werk- und Quellenatlas. **Registerkennung:** `werkentwicklung-und-quellenstatus`.
+
+**Nachweischarakter:** Dokumentation unterschiedlicher Nachweisgrade. Die Hinweise auf geprüfte Textpassagen gelten nur für die ausdrücklich bezeichneten Stellen, nicht pauschal für sämtliche Werke.
+
+**Editionsstand:** 6. November 2026.

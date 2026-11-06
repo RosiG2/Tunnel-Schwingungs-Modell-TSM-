@@ -1,17 +1,8 @@
-# Autopoiesis – redaktioneller Arbeitsstand
+# Autopoiesis
 
-**ID:** `autopoiesis`  
-**Hauptpfad:** A – Begriffs- und Strukturatlas  
-**Sekundärpfade:** B, C, D, E  
-**Status:** `redaktioneller-arbeitsstand – zur öffentlichen Freigabe vorbereitet`  
-**Letzte redaktionelle Bearbeitung:** 2026-11-06  
-**Quellenstufe:** `sekundaerrekonstruktion`, mit einzelnen `primaertext-geprueft` gekennzeichneten Aussagen (P1, P5).  
-**Vernetzte Einträge:** `system-und-umwelt` [als Arbeitsstand im geplanten Atlas-Update], `operative-geschlossenheit` [als Arbeitsstand im geplanten Atlas-Update], `kommunikation-und-verstehen` [online: Pilot], `bewusstsein-und-kommunikation` [geplant], `organisation-und-entscheidung` [im vorbereiteten GitHub-Update], `evolution` [geplant], `erklaerung-oder-umbenennung` [als Arbeitsstand im geplanten Atlas-Update].
+Autopoiesis bezeichnet in der Systemtheorie die operative Reproduktion eines Zusammenhangs aus den Ereignissen, die ihn konstituieren. Der biologische Ausgangspunkt und Luhmanns soziologische Transformation des Begriffs sind dabei auseinanderzuhalten: Die Selbstproduktion lebender Komponenten ist nicht mit dem zeitlichen Anschluss sozialer Kommunikation gleichzusetzen. Der Beitrag rekonstruiert die begriffliche Entwicklung, erläutert ihre Reichweite und diskutiert Voraussetzungen einer empirisch unterscheidbaren Anwendung.
 
-> **Wozu dieser Artikel nützt:** Wie kann soziale Kommunikation fortgesetzt werden, obwohl Beteiligte wechseln, Inhalte bestritten werden und Ereignisse vergehen? Der Artikel gibt nicht nur eine Definition, sondern prüft an Fallunterscheidungen, welche Anschlussfrage sich daraus ergibt. Die Quellenverweise sind nach Prüftiefe gekennzeichnet.
-> **Lesestatus:** Redaktionelle Arbeit aus einer dokumentierten Vorprüfung (06.11.2026), nicht vollständig kritisch edierte Luhmann-Primärtextausgabe.
-
-## 1. Ausgangsproblem und Leitfrage
+## 1. Problemstellung
 
 Dass ein Zusammenhang heute existiert, erklärt noch nicht, warum er morgen wieder in einer anschlussfähigen Form auftreten kann. Eine Sitzung endet, doch die Organisation trifft erneut Entscheidungen. Eine Äußerung vergeht, doch das Gespräch geht weiter. Die Beteiligten wechseln, eine Debatte bleibt wiedererkennbar. **Wie können Systeme fortbestehen, deren grundlegende Ereignisse selbst nicht fortbestehen?**
 
@@ -21,7 +12,7 @@ Die Autopoiesis-Theorie verändert die Antwort. Sie setzt nicht allein bei dauer
 
 ### 2.1 Ursprüngliche biologische Problemstellung
 
-**[P5 – im Vorpaket punktuell dokumentierte Originalprüfung bei Varela/Maturana/Uribe]** Der Autopoiesisbegriff stammt aus der Biologie. Der Aufsatz von **Varela, Maturana und Uribe (1974)** beschreibt lebende Einheiten über ein Netzwerk von Produktionsprozessen, dessen Komponenten an der Produktion eben dieses Netzwerks beteiligt sind. Das Organisationsmuster konstituiert eine Einheit; eine Zelle dient als Beispiel, während ein Minimalmodell die Idee illustriert. Die Autoren unterscheiden ausdrücklich **die Selbstproduktion einer bestehenden Einheit** von **Fortpflanzung oder Teilung dieser Einheit**. Verwechslungen beider Arten von „Reproduktion“ würden den biologischen Ausgangspunkt verfälschen.
+**[P5 – in der dokumentierten Quellenprüfung punktuell dokumentierte Originalprüfung bei Varela/Maturana/Uribe]** Der Autopoiesisbegriff stammt aus der Biologie. Der Aufsatz von **Varela, Maturana und Uribe (1974)** beschreibt lebende Einheiten über ein Netzwerk von Produktionsprozessen, dessen Komponenten an der Produktion eben dieses Netzwerks beteiligt sind. Das Organisationsmuster konstituiert eine Einheit; eine Zelle dient als Beispiel, während ein Minimalmodell die Idee illustriert. Die Autoren unterscheiden ausdrücklich **die Selbstproduktion einer bestehenden Einheit** von **Fortpflanzung oder Teilung dieser Einheit**. Verwechslungen beider Arten von „Reproduktion“ würden den biologischen Ausgangspunkt verfälschen.
 
 **[R – redaktionelle Rekonstruktion]** Diese biologisch gemeinte Organisation lässt sich nicht ohne Weiteres auf eine Behörde oder ein Gespräch übertragen: Bei einer Zelle geht es um stoffliche Prozesse und die Hervorbringung einer materiellen Einheit. Bei sozialen Systemen ist zu bestimmen, worin das operationale Äquivalent besteht, ohne aus einer Analogie eine biologische Identität zu machen.
 
@@ -53,11 +44,11 @@ Umgekehrt ist nicht jede systemische Veränderung ein Bruch der Autopoiesis. Pro
 
 ## 3. Zusammenhang mit den anderen Grundbegriffen
 
-**`system-und-umwelt`** fragt nach der Unterscheidung einer Einheit und ihrer Außenseite. **Autopoiesis** fragt, wie ihre Operationsfolgen fortlaufend zustande kommen. **`operative-geschlossenheit`** bezeichnet die damit verbundene Beschränkung auf die eigene Operationsart. **`strukturelle-kopplung` [im vorbereiteten GitHub-Update]** soll erklären, wie Umweltbedingungen dennoch regelmäßig für diese Fortsetzung relevant werden.
+**`system-und-umwelt`** fragt nach der Unterscheidung einer Einheit und ihrer Außenseite. **Autopoiesis** fragt, wie ihre Operationsfolgen fortlaufend zustande kommen. **`operative-geschlossenheit`** bezeichnet die damit verbundene Beschränkung auf die eigene Operationsart. **`strukturelle-kopplung`** soll erklären, wie Umweltbedingungen dennoch regelmäßig für diese Fortsetzung relevant werden.
 
 **Psychische und soziale Systeme müssen unterschieden bleiben.** Die Fortsetzung von Gedanken und die Fortsetzung von Kommunikationen sind nicht ein einziger Prozess. Kommunikation setzt Bewusstsein und Wahrnehmung vielfach voraus; trotzdem wird ein Gedanke nicht unmittelbar zum Kommunikationsereignis, und kein Gespräch übernimmt die subjektive Erfahrung eines Menschen unverändert. Diese Unterscheidung ist **analytisch**; sie ist keine Aufforderung, Menschen bei sozialer Forschung zu ignorieren oder ihre Interessen geringzuschätzen.
 
-## 4. Was erklärt Autopoiesis?
+## 4. Erkenntnisleistung und Erklärungsgrenzen
 
 **[I – redaktionelle Ableitung]** Der stärkste Erklärungsanspruch besteht in der **Verschiebung des Bestandsproblems**: Eine Institution bleibt nicht deshalb dieselbe, weil alle Bestandteile konstant bleiben; sie bleibt als sozialer Zusammenhang erkennbar, wenn ihre aktuellen Operationen neue, zu ihr passende Operationen ermöglichen. So wird verständlich, warum eine Organisation trotz Personalwechseln bestehen und trotz derselben Personen in einen anderen Kommunikationsmodus wechseln kann.
 
@@ -75,7 +66,7 @@ Eine personenbezogene Erklärung könnte auf Führungsstil, Motivation oder Konf
 
 Der mögliche Gewinn liegt nicht im Satz „Die Schule lebt weiter“. Er läge darin, eine **nachvollziehbare Sequenz von Entscheidungsanschlüssen** zu rekonstruieren, die bei wechselnden Personen bestehen bleibt oder gerade durch bestimmte Entscheidungen unterbrochen wird. Das könnte erklären, warum ein Führungswechsel allein manche Routinen nicht verändert. Ob diese Perspektive im Fall mehr leistet als etablierte Organisationstheorien, ist offen.
 
-## 6. Stärkste faire Gegenbeobachtung
+## 6. Kritische Perspektiven
 
 **[G] Die Übertragung aus der Biologie ist nicht trivial.** Bei einer Zelle lassen sich Produktionsprozesse und Komponenten materiell erfassen; bei Kommunikation ist die Identität eines „Elements“ stärker von sozialer Deutung und analytischer Entscheidung abhängig. Wenn eine Kommunikation als Einheit immer erst durch eine weitere Kommunikation bestimmt werden muss, kann das Reproduktionskriterium empirisch zirkulär erscheinen. Es ist zu klären, welche **unabhängigen Beobachtungsprozeduren** die behauptete Fortsetzung identifizierbar machen.
 
@@ -85,7 +76,7 @@ Der mögliche Gewinn liegt nicht im Satz „Die Schule lebt weiter“. Er läge 
 
 Die Gegenbeobachtung könnte ihrerseits verfehlen, dass „Akteur“, „Interesse“ oder „Institution“ ebenfalls Beobachtungskategorien sind, deren Einheiten sich nicht von selbst ergeben. Der Vergleich muss seine eigenen Kategorien offenlegen.
 
-## 7. Quellenlage und Quellenaufträge
+## 7. Quellenlage und weiterer Forschungsbedarf
 
 **P1 – Primärtext tatsächlich geprüft:** Niklas Luhmann (1982), *Autopoiesis, Handlung und kommunikative Verständigung*, *Zeitschrift für Soziologie* **11(4)**, S. 366–379, DOI `10.1515/zfsoz-1982-0403`. Für diese Fassung ausdrücklich geprüft: Element- und Operationsproblem, Anwendung der biologischen Idee, Umweltabhängigkeit S. 367–368; Kommunikation als Reproduktionsbedingung S. 374; Zeitlichkeit und Konsens/Dissens S. 376–377. https://www.degruyterbrill.com/document/doi/10.1515/zfsoz-1982-0403/pdf?licenseType=free
 
@@ -93,9 +84,9 @@ Die Gegenbeobachtung könnte ihrerseits verfehlen, dass „Akteur“, „Interes
 
 **P2 – Werkhinweis, kein inhaltlich geprüfter Kapitelbeleg:** Niklas Luhmann (1984), *Soziale Systeme*, Suhrkamp. https://books.google.de/books?id=13cSAQAAMAAJ . Kapitel zu Selbstreferenz und Autopoiesis für eine Fassungskonkordanz noch einzusehen.
 
-**Redaktionelle Arbeitshilfen:** `Axiome_Luhmann_kompakt.md` und `Glossar_Luhmann.md` aus dem Atlas-Plugin. Diese Texte bleiben Sekundärrekonstruktionen.
+**Ergänzende Begriffssystematik:** Redaktionelle Begriffsübersichten wurden als sekundäre Hilfsmittel herangezogen, nicht als selbständige Primärtextbelege.
 
-## 8. Forschungsfragen und Prüfmöglichkeiten
+## 8. Offene Forschungsfragen
 
 1. **Identifikation:** Wie werden die Grenzen eines Kommunikationsereignisses vorab bestimmt, um die Existenz einer Anschlussfolge nicht nachträglich hineinzulesen?
 2. **Abbruch versus Verlagerung:** Wann ist die Fortsetzung eines Systems abgerissen, wann wandert Kommunikation nur in einen anderen Zusammenhang?
@@ -104,22 +95,31 @@ Die Gegenbeobachtung könnte ihrerseits verfehlen, dass „Akteur“, „Interes
 5. **Werkentwicklung:** Was ist in Luhmanns 1982er Handlungsterminologie noch versuchsweise, was wird 1984 und später anders festgelegt?
 6. **Gegenstandsgerechtigkeit:** In welchen Bereichen ist die biologische Autopoiesis streng operationalisierbar und in welchen bleibt die soziologische Erweiterung eine interpretative Theorieentscheidung?
 
-**Vorläufiges Forschungsurteil:** Die Autopoiesis-Perspektive erklärt am stärksten, warum **die Fortsetzung ereignishafter Operationen** eine Grundfrage sozialer Ordnung ist. Sie liefert noch keine universale Kausalerklärung einzelner Entscheidungen. Ihr entscheidender Prüfpunkt ist die unabhängig nachvollziehbare Bestimmung von Operation, Anschluss und Abbruch.
+**Erkenntnisstand:** Die Autopoiesis-Perspektive erklärt am stärksten, warum **die Fortsetzung ereignishafter Operationen** eine Grundfrage sozialer Ordnung ist. Sie liefert noch keine universale Kausalerklärung einzelner Entscheidungen. Ihr entscheidender Prüfpunkt ist die unabhängig nachvollziehbare Bestimmung von Operation, Anschluss und Abbruch.
 
-## 9. Nutzwertprofil und kontrollierter Beobachtungswechsel
+## 9. Analytische Reichweite und Perspektivwechsel
 
-- **Beobachtungsgewinn:** Auf Anschlussfähigkeit von Ereignissen achten statt allein auf Akteursidentitäten oder die Dauer einer Institution.
+- **Beobachtungsperspektive:** Auf Anschlussfähigkeit von Ereignissen achten statt allein auf Akteursidentitäten oder die Dauer einer Institution.
 - **Zusammenhangsgewinn:** In einer zeitlichen Sequenz rekonstruieren, auf welche vorherigen Äußerungen, Entscheidungen und Erwartungen Bezug genommen wird.
 - **Erklärungsgewinn:** Den Unterschied zwischen unterbrochener und fortgesetzter Kommunikation anhand konkreter Folgen herausarbeiten; Wiederholung der Bezeichnung „autopoietisch“ allein genügt nicht.
 - **Beobachtungsverlust:** Nicht jede Ursache, die eine kommunikative Folge ermöglicht oder verhindert (etwa ein Stromausfall oder Zwang), wird durch den autopoietischen Begriff selbst erklärt.
 
-**Nutzungsschritt:** Erstelle eine kleine Ereigniskette mit Zeitpunkt, Mitteilung/Entscheidung, nächstem Anschluss und dokumentierter Unterbrechung. Vergleiche anschließend eine handlungs-, ressourcen- oder institutionentheoretische Lesart.
+**Analytischer Vorschlag:** Erstelle eine kleine Ereigniskette mit Zeitpunkt, Mitteilung/Entscheidung, nächstem Anschluss und dokumentierter Unterbrechung. Vergleiche anschließend eine handlungs-, ressourcen- oder institutionentheoretische Lesart.
 
 **Querpfade:** `erklaerung-oder-umbenennung`, `kommunikation-und-verstehen`, `organisation-und-entscheidung`, `kontrollierter-beobachtungswechsel`.
 
-## 10. Revisionsnotiz
+## 10. Editionsgeschichte
 
-- **2026-11-06 – Erstentwurf:** Biologische Herkunft, luhmannsche Übertragung und historische Differenz 1982/spätere Systematik getrennt; pointierte, aber nicht automatisch abschließende Gegenbeobachtung. Keine Veröffentlichung, Nutzerfreigabe offen.
+- **6. November 2026 – Grundfassung:** Biologische Herkunft, luhmannsche Übertragung und historische Differenz 1982/spätere Systematik getrennt; eigenständige kritische Perspektive mit offener empirischer Prüfung. Wissenschaftliche Detailprüfung weiter ausstehend.
 
+- **6. November 2026 – Erweiterung der Analytik:** Die vier Erkenntnisdimensionen und der kontrollierte Vergleich von Beobachtungsweisen wurden systematisch ausgearbeitet.
 
-- **2026-11-06 – Nutzwertfassung:** Vierfachprofil und kontrollierte Perspektivwechsel ergänzt; Dateien für GitHub Desktop lokal vorbereitet. Veröffentlichung allein durch die Projektverantwortliche.
+---
+
+### Quellen- und Editionshinweis
+
+**Bibliothek:** A – Begriffs- und Strukturatlas. **Registerkennung:** `autopoiesis`.
+
+**Nachweischarakter:** Theoriegeschichtliche Rekonstruktion unter Bezug auf punktuell geprüfte Passagen aus Luhmann (1982) sowie Varela, Maturana und Uribe (1974). Weitere Werkbezüge besitzen die jeweils im Text bezeichnete Nachweistiefe.
+
+**Editionsstand:** 6. November 2026.

@@ -1,81 +1,65 @@
-# Forschungs- und Revisionsregister des Theorieatlas
+# Forschungsfragen und Revisionen
 
-**ID:** `forschungs-und-revisionsregister`  
-**Hauptbibliothek:** E – offene Forschung und Revision  
-**Sekundärbibliotheken:** A, B, C, D  
-**Status:** `redaktioneller-arbeitsstand`; **Bearbeitung:** 2026-11-06  
-**Quellenstufe:** redaktionelles Fortschritts- und Negativregister; keine selbständige Primärquelle.
+Eine systematische Theorieerschließung muss den Unterschied zwischen bereits begründeten Aussagen, offenen Forschungsfragen und revidierten Interpretationen kenntlich machen. Das Forschungs- und Revisionsregister des Theorieatlas dokumentiert solche Unterschiede, ohne offene Probleme durch eine konsistente Terminologie bereits für gelöst zu erklären.
 
-> **Nutzen:** Wer einen Atlasbeitrag liest, soll sehen können, welche Fragen tatsächlich beantwortet, welche Quellen nur vorgemerkt, welche Aussagen revidiert und welche Prüfungen noch offen sind. Unwissen wird nicht durch glatte Formulierungen verdeckt.
+Die nachstehenden Hinweise betreffen den gegenwärtigen Stand der Quellenlektüre und der theoriegeleiteten Fallanalyse. Sie begründen weder einen Anspruch auf Vollständigkeit der Luhmann-Forschung noch die empirische Bestätigung der untersuchten Deutungen.
 
-## 1. Ausgangspunkt und Geltung
+## 1. Forschungsprogramm
 
-**Gegenwärtiger Quellenstand (am 06.11.2026 erneut geprüft):** Das öffentliche GitHub-Register `wissensbasis/luhmann/index.json` führt die Edition `atlas-0.2-redaktion` mit **17 registrierten Einträgen**. Eine lesende Kontrolle des Verzeichnisses `entries/` bestätigte **17 vorhandene Markdown-Dateien und keine fehlenden Registerziele**. Unter den 17 bleiben die beiden ursprünglichen Einträge `beobachtung-zweiter-ordnung` und `kommunikation-und-verstehen` als `redaktioneller-pilot` gekennzeichnet; die übrigen 15 haben den Status `redaktioneller-arbeitsstand`. Ein GitHub-Push ist damit nachgewiesen, ohne dass die Dateien dadurch zu wissenschaftlich freigegebenen Primärtexteditionen werden.
-
-**Host-Nutzungsprüfung (Bericht der Nutzerin, 06.11.2026):** Der Theorieatlas 1.0.0 lieferte in der ChatGPT-Desktop-App auf einen kombinierten Testprompt die korrekten Editions- und Registerdaten und eine ausführliche, quellendifferenzierte Auswertung aus fünf Atlas-Artikeln. In der übermittelten Antwort gab das Plugin den Einsatz von `luhmann_wissensindex` und fünf Aufrufen von `luhmann_wissenseintrag` an. Der Redaktion liegt **der Antworttext, aber kein unabhängiges Host-Toolprotokoll** vor. Dies ist ein starker funktionaler Hinweis und ein erfolgreicher inhaltlicher Demonstrationsfall; es ist weder ein vollständig auditiertes MCP-Hostprotokoll noch eine Ausführung sämtlicher Reviewfälle.
-
-**Historischer Stand:** Die am selben Tag zuvor gesicherte Edition `pilot-0.1` umfasste nur zwei Pilotartikel. Diese Angabe bleibt als Entwicklungsgeschichte gültig, jedoch nicht mehr als aktueller Bestand.
-
-## 2. Offene Forschungsfragen
-
-| ID | Gegenstand | Konkreter nächster Prüfweg | Status |
+| Kennung | Gegenstand | Weiterführende Untersuchung | Erkenntnisstand |
 |---|---|---|---|
-| E-001 | Systemgrenzen | Mindestens zwei begründete Grenzziehungen am selben Fall nebeneinanderstellen; Ergebnisabhängigkeit offenlegen | offen |
-| E-002 | Autopoiesis | Kommunikationsereignisse und darauf anschließende Kommunikation an einem dokumentierten Verlauf unterscheiden | offen |
-| E-003 | Geschlossenheit | Bei vergleichbarem Umweltanlass interne Verarbeitungsschritte und externe Zwänge dokumentieren | offen |
-| E-004 | Werkentwicklung | Luhmann 1982/1984/1992 und späteren Formansatz an tatsächlich gelesenen Textstellen kontrastieren | teils Quellen vorhanden |
-| E-005 | Biologie-Transfer | Explizite Grenze zwischen Produktionsnetzwerk lebender Einheiten und sozialer Kommunikationsfolge rekonstruieren | offen |
-| E-006 | Zusätzlicher Erklärungswert | Gleichen Fall systemtheoretisch und institutionell prüfen; C1–C4 getrennt vergleichen | offen |
-| E-007 | Schulreform | Reale, rechtlich zugängliche Fallbeobachtungen erheben, ohne hypothetisches Beispiel zu reifizieren | offen |
-| E-008 | Quellennachweise | Volltexte *Soziale Systeme* und Cardozo 1992 an konkreten Stellen kontrollieren | offen |
-| E-009 | Frühere Piloten | Beide Dateien sind wieder vorhanden; ihre weitere Überführung in das Quellen- und Revisionsschema bleibt erforderlich | offen: Redaktion |
-| E-010 | Technische Abnahme | GitHub-Register und 17 Dateipfade verifiziert; Desktop-Erstbericht vorhanden. Host-Werkzeugprotokoll, Wiederholung und Negativtests gesondert prüfen | teilweise geprüft |
-| E-011 | Systemtypen | Funktionssystem, Organisation, Interaktion und weitere Typologien werkgeschichtlich vergleichen | offen |
-| E-012 | Mensch–KI-Fall | Kommunikationstheoretische Zurechnung vs. technische Fehlerursachen an anonymisierten Sequenzen vergleichen | offen |
-| E-013 | Politischer Code | Machtmedium, demokratische Regierung/Opposition-Unterscheidung und konkrete Programme an Primärstellen auseinanderhalten | offen |
-| E-014 | Beobachtungswechsel | Prüfen, ob der explizite Wechsel Fälle besser strukturiert als eine einzelne Erklärung | offen |
+| **E-001** | Systemgrenzen | Alternative Grenzziehungen am selben Fall rekonstruieren und ihre Ergebnisabhängigkeit vergleichen | Offen |
+| **E-002** | Autopoiesis | Kommunikationsereignisse, Anschlüsse und Unterbrechungen anhand dokumentierter Verläufe unterscheiden | Offen |
+| **E-003** | Operative Geschlossenheit | Externe Bedingungen, interne Verarbeitung und materielle Zwänge fallbezogen auseinanderhalten | Offen |
+| **E-004** | Werkentwicklung | Die Begriffsverwendung 1982, 1984, 1992 und im späteren Formansatz an eingesehenen Originalstellen kontrastieren | Teilweise Quellenbasis |
+| **E-005** | Biologischer Ausgangspunkt | Den biologischen Produktionsbegriff und die sozialtheoretische Übertragung der Autopoiesis historisch vergleichen | Offen |
+| **E-006** | Eigenständiger Erklärungswert | Systemtheoretische, institutionelle und ressourcenorientierte Analysen desselben Falles gegenüberstellen | Offen |
+| **E-007** | Schulreform | Ein reales, dokumentierbares Beispiel unter Einbeziehung von Unterrichts- und Befragungsdaten untersuchen | Offen |
+| **E-008** | Primärtextbelege | *Soziale Systeme* und Luhmanns Aufsatz zur operativen Geschlossenheit von 1992 textstellenbezogen erschließen | Offen |
+| **E-009** | Beobachtung und Kommunikation | Die beiden einführenden Begriffskommentare in eine werkbezogene Primärquellenprüfung einbeziehen | Offen |
+| **E-010** | Digitale Dokumentation | Den Zusammenhang zwischen Artikelkennung, Versionsstand, Nachweisgrad und digitalem Abruf nachvollziehbar halten | Fortlaufend dokumentiert |
+| **E-011** | Systemtypen | Interaktion, Organisation, Gesellschaft und neuere Typologien werk- und theoriegeschichtlich vergleichen | Offen |
+| **E-012** | Mensch–KI-Kommunikation | Kommunikative Zurechnungen gegenüber technischen Fehlerursachen an geeigneten Fallsequenzen unterscheiden | Offen |
+| **E-013** | Politische Codierung | Das Medium Macht, Regierung/Opposition und politische Programme anhand konkret belegter Werkstellen auseinanderhalten | Offen |
+| **E-014** | Beobachtungswechsel | Den Erkenntniswert eines methodisch kontrollierten Perspektivwechsels mit einperspektivischen Analysen vergleichen | Offen |
 
-## 3. Dokumentierte Begrenzungen und Negativbefunde
+## 2. Dokumentierte Grenzen der bisherigen Forschung
 
-**N-001:** Der Aufsatz zu operativer Geschlossenheit und struktureller Kopplung (Luhmann 1992) ist bibliografisch nachgewiesen, wurde im Vorpaket aber **nicht** als vollständig geprüfte Primärtextpassage dokumentiert.
+Die bisherige Quellenlage erlaubt mehrere wichtige, aber begrenzte Aussagen:
 
-**N-002:** Die dargestellten Fälle Schulreform, Politik/Recht, Organisation und Mensch–KI-Kommunikation sind **hypothetisch**. Sie liefern keine empirisch gemessene Bestätigung.
+**Originalstellen und bibliografische Nachweise.** Luhmanns Aufsatz von 1982 wurde in bezeichneten Passagen geprüft. Der Aufsatz *Operational Closure and Structural Coupling* (1992) ist bislang bibliografisch erschlossen, jedoch nicht durch eine vollständige Auswertung seiner Originalpassagen abgesichert. Für *System as Difference* (2006) liegt derzeit eine Prüfung von Metadaten und Abstract vor, keine vollständige kritische Lektüre.
 
-**N-003:** Keine der bisherigen Atlas-Anwendungen hat einen eigenständigen **empirisch nachgewiesenen** Erklärungsvorsprung gegenüber allen relevanten Alternativen gezeigt.
+**Theoretische Rekonstruktion und empirische Prüfung.** Die Fallanalysen zu Schulreform, Organisation, Politik und Recht sowie Mensch–KI-Kommunikation sind konstruiert. Sie dienen der Entwicklung und Unterscheidung von Hypothesen. Ein eigenständiger empirisch nachgewiesener Erklärungsvorsprung gegenüber den jeweils einschlägigen Alternativen ist bisher nicht festgestellt.
 
-**N-004:** Der 2006 veröffentlichte Text *System as Difference* ist im Vorpaket über Metadaten/Abstract, nicht durch eine vollständige kritische Textlektüre erschlossen.
+**Übertragung von Begriffen.** Die Ausdehnung biologischer Autopoiesiskonzepte auf soziale Kommunikation ist eine theoretische Transformation, deren begriffliche Voraussetzungen historisch rekonstruiert und gegen konkurrierende Ansätze geprüft werden müssen. Auch der kontrollierte Beobachtungswechsel ist eine Methode des Theorieatlas und bislang nicht durch vergleichende Anwenderstudien evaluiert.
 
-**N-005 – präzisierter Prüfstatus:** Ein früherer MCP-Inspector-Test war erfolgreich. Die Nutzerin hat am 06.11.2026 eine Antwort des privaten Theorieatlas aus der ChatGPT-Desktop-App übermittelt, die sechs Toolaufrufe (Index plus fünf Einzelabrufe) berichtet und mit den öffentlich geprüften Registerdaten übereinstimmt. Der tatsächliche interne Werkzeugverlauf wurde hier jedoch nicht separat eingesehen. Daher: **inhaltlich stark gestützter Ersttest; unabhängiger Host-Audit und negative Host-Tests weiter offen**.
+**Beobachtungsgrenzen.** Eine auf Kommunikation und Systemgrenzen konzentrierte Analyse kann materielle Bedingungen, Zwang, psychisches Erleben und ungleiche Handlungsmöglichkeiten unzureichend berücksichtigen. Der methodisch begründete Perspektivwechsel soll diesen Verlust bearbeitbar machen, nicht das Vorhandensein solcher Bedingungen bestreiten.
 
-**N-006:** Der Atlas verfügt nach dem geprüften Worker-Quellstand über **Indexabruf und Einzelabruf per ID**, aber keinen implementierten Volltextsuch-Endpunkt und keine selbständige Analyse- oder Updatefunktion.
+## 3. Werkgeschichtliche und methodische Revisionen
 
-**N-007:** Der Wert des kontrollierten Beobachtungswechsels ist hier methodisch begründet, **nicht** in einer vergleichenden Nutzerstudie evaluiert.
-
-## 4. Revisionsprotokoll
-
-| Datum | Arbeitsobjekt | Veränderung | Bedeutung |
+| Datum | Gegenstand | Inhaltliche Veränderung | Geltung |
 |---|---|---|---|
-| 2026-11-06 | A1–A3 | Drei Vollartikel aus dem ersten Redaktionspaket beibehalten; Nutzungsprofile und Verweise ergänzt | Redaktionelle Arbeitsstände, keine pauschale Primärtext-Aufwertung |
-| 2026-11-06 | C | Vierdimensionale Nutzenprüfung und kontrollierten Beobachtungswechsel ergänzt | Methodische Eigenleistung des Atlas, kein Originalverfahren Luhmanns |
-| 2026-11-06 | A | Systemtypen, strukturelle Kopplung, Sinn als neue Knoten ausgearbeitet | Weitere Begriffsarbeit, Detail-Primärprüfung offen |
-| 2026-11-06 | D | Schulreform vertieft; drei unabhängige Anwendungen vorbereitet | Ausschließlich hypothetische Fälle |
-| 2026-11-06 | B | Quellenkarten um Werkentwicklungsmatrix erweitert | Keine erfundenen Originalbelege |
-| 2026-11-06 | GitHub, nach Upload | Edition `atlas-0.2-redaktion` mit 17 registrierten Dateien auf `main` bestätigt; beide historischen Piloten wiederhergestellt | Verzeichnisvollständigkeit und ID-Zuordnung nachgewiesen |
+| 6. November 2026 | Grundbegriffe | System/Umwelt, Autopoiesis und operative Geschlossenheit als eigenständige, aufeinander bezogene Begriffskomplexe ausgearbeitet | Systematische Rekonstruktion mit begrenzten, ausgewiesenen Quellenprüfungen |
+| 6. November 2026 | Erkenntnisanalyse | Vier analytische Dimensionen eingeführt: Beobachtungsgewinn, Zusammenhangsgewinn, Erklärungsgewinn und Beobachtungsverlust | Eigenständige Methode des Theorieatlas |
+| 6. November 2026 | Systemtypen und Sinn | Begriffliche Differenzierungen um Systemtypen, strukturelle Kopplung und Sinn erweitert | Weiterer textstellenbezogener Quellenabgleich erforderlich |
+| 6. November 2026 | Fallanalysen | Konstruierte Fälle aus Bildung, Organisation, Politik/Recht und Mensch–KI-Kommunikation miteinander vergleichbar gemacht | Hypothesenbildung; keine Fallvalidierung |
+| 6. November 2026 | Werk- und Quellenatlas | Nachweisgrade und werkgeschichtliche Zuordnungen getrennt dokumentiert | Ausgewählte Textpassagen geprüft, andere Werkbezüge bibliografisch oder sekundär |
+| 6. November 2026 | Editionsgestaltung | Fachliche Darstellung, Quellenapparat und technische Bearbeitungsgeschichte voneinander getrennt | Inhaltliche Quellengrenzen und offene Forschungsfragen bleiben bestehen |
 
-## 5. Wie das Register benutzt wird
+## 4. Quellenkritische Revisionsregel
 
-Bei einer Antwort nennt der Atlas nicht nur den „aktuellsten“ Eintrag, sondern den **beanspruchten Geltungsstatus**. Ein neuerer Text kann eine weiterführende Redaktion sein, ohne quellenmäßig besser belegt zu sein. Ändert eine spätere Primärprüfung eine Aussage, werden das neue Ergebnis und der Änderungsgrund ergänzt, ohne frühere offene Punkte verschwinden zu lassen.
+Eine Änderung der theoretischen Darstellung soll nicht allein deshalb als Erkenntnisfortschritt gelten, weil sie neuer formuliert wurde. Maßgeblich sind die identifizierbare Ausgangsbehauptung, der Anlass ihrer Überprüfung, der Nachweisumfang, die begründete Änderung und die weiterhin offenen Fragen.
 
-## 6. Testlage nach dem ersten Desktop-Durchlauf
+Der Werk- und Quellenatlas (`werkentwicklung-und-quellenstatus`) dokumentiert die Zuordnung der verwendeten Veröffentlichungen. Die Prüfung theoretischer Erkenntnisleistungen erfolgt nach dem Verfahren `erklaerung-oder-umbenennung`; der methodische Vergleich alternativer Beobachtungsweisen wird unter `kontrollierter-beobachtungswechsel` beschrieben.
 
-| Prüfung | Beobachteter Nachweis | Einordnung |
-|---|---|---|
-| GitHub-Register | `atlas-0.2-redaktion`, 17 IDs, 17 passende Markdown-Dateien | **Bestanden (lesende GitHub-Kontrolle)** |
-| Host-Demonstration (Schulreform) | Nutzerin übermittelte Antwort aus der Desktop-App; korrekte Edition, fünf Bibliotheken, fünf Artikel-IDs, vier Erkenntnisdimensionen, Quellenstatus | **Inhaltlich bestanden (Nutzerbericht)** |
-| Exakte MCP-Aufrufspur | Aufrufangaben stehen in der übermittelten Plugin-Antwort; separater Tool-Trace liegt nicht vor | **Noch unabhängig zu prüfen** |
-| Negative Host-Tests (Schreibwunsch, unbelegte Textstelle, unbekannte ID) | Serververtrag und Redaktionsregeln lassen erwartetes Fehlverhalten bestimmen; keine Desktop-Antworten dazu eingereicht | **Nicht ausgeführt in der Zielumgebung** |
-| Publikationsreview | Demonstrationsvideo, Prüfdurchlauf und datenschutzrechtliche MCP-Ergänzung stehen aus | **Offen** |
+## 5. Editionsstand
 
-Die Quellen- und Teststufen beziehen sich jeweils nur auf das benannte Objekt. Aus dem positiven Desktop-Fall folgt keine allgemeine Bestätigung sämtlicher Funktionen, Veröffentlichungsfreigabe oder empirischer Erklärungsüberlegenheit.
+Die digitale Ausgabe umfasst in der Edition **`atlas-0.3-redaktion`** siebzehn registrierte Beiträge. Sie geht auf eine erste Auswahl von zwei kürzeren Begriffskommentaren (`pilot-0.1`) und die anschließende Erweiterung (`atlas-0.2-redaktion`) zurück. Die Kennzeichnung der Beiträge im Register dokumentiert ihre redaktionelle Herkunft und bedeutet keine externe fachwissenschaftliche Begutachtung.
 
-**Revision:** 2026-11-06 – historischer Pilotstand und nun bestätigter GitHub-Upload zeitlich getrennt; erste Desktop-Antwort als Nutzerbericht aufgenommen, fehlenden Host-Tooltrace und Negativtests ausdrücklich offen gehalten. Frühere Negativbefunde ohne neue Gegenbelege bleiben bestehen.
+Betriebs- und Publikationsvorgänge sind Gegenstand einer separaten Editionsverwaltung; sie sind für die wissenschaftliche Geltung der Beiträge nicht maßgeblich.
+
+---
+
+### Quellen- und Editionshinweis
+
+**Bibliothek:** E – Forschungs- und Revisionsregister. **Registerkennung:** `forschungs-und-revisionsregister`. **Quellencharakter:** Redaktionelle Forschungsdokumentation; keine eigenständige Luhmann-Primärquelle. **Editionsstand:** 6. November 2026.
