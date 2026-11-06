@@ -1,7 +1,7 @@
 {
-  "title": "Luhmann Lesehilfe & Forum – ergänzende Erkenntnisbasis",
-  "edition": "pilot-0.1",
-  "purpose": "Nur redaktionelle Orientierung, keine Primärtextsammlung. Vor Veröffentlichung manuell freigeben.",
+  "title": "Luhmann – Theorieatlas – ergänzende Erkenntnisbasis",
+  "edition": "atlas-0.2-redaktion",
+  "purpose": "Versionierter, redaktioneller Theorieatlas mit fünf Bibliothekspfaden A–E. Dient Begriffsklärung, Quellenprüfung, Erkenntnisvergleich, hypothetischer Fallanalyse und Revision; keine Luhmann-Primärtextsammlung oder empirische Validierung.",
   "entries": [
     {
       "id": "beobachtung-zweiter-ordnung",
@@ -18,6 +18,236 @@
       "status": "redaktioneller-pilot",
       "last_reviewed": "2026-11-05",
       "note": "Keine authentifizierte Primärtextstelle"
+    },
+    {
+      "id": "so-nutzt-du-den-theorieatlas",
+      "title": "So nutzt du den Theorieatlas",
+      "category": "einstieg",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Redaktionelle Gebrauchsanleitung: sechs Schritte von der Alltagsfrage zur überprüfbaren Erkenntnis.",
+      "library": "START",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": []
+    },
+    {
+      "id": "system-und-umwelt",
+      "title": "System und Umwelt",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Unterschied zwischen Umweltbedingung und systemeigener Operation; schulisches Fallbeispiel.",
+      "library": "A",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "autopoiesis",
+        "operative-geschlossenheit",
+        "erklaerung-oder-umbenennung"
+      ],
+      "priority_position": 3
+    },
+    {
+      "id": "autopoiesis",
+      "title": "Autopoiesis",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Eigenreproduktion durch anschlussfähige Operationen, biologischer Ursprung und soziale Übertragung.",
+      "library": "A",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "system-und-umwelt",
+        "operative-geschlossenheit",
+        "kommunikation-und-verstehen"
+      ],
+      "priority_position": 4
+    },
+    {
+      "id": "operative-geschlossenheit",
+      "title": "Operative Geschlossenheit",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Operative Eigenständigkeit und reale Umweltabhängigkeit als getrennte Fragen.",
+      "library": "A",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "system-und-umwelt",
+        "strukturelle-kopplung",
+        "erklaerung-oder-umbenennung"
+      ],
+      "priority_position": 5
+    },
+    {
+      "id": "sinn",
+      "title": "Sinn",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Sinn als Aktualisierung unter Horizont weiterer Möglichkeiten; Grenzen der Rekonstruktion.",
+      "library": "A",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "kommunikation-und-verstehen",
+        "system-und-umwelt"
+      ],
+      "priority_position": 6
+    },
+    {
+      "id": "strukturelle-kopplung",
+      "title": "Strukturelle Kopplung",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Selektive Umweltabhängigkeiten ohne operative Verschmelzung.",
+      "library": "A",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "operative-geschlossenheit",
+        "politik-recht-konflikt"
+      ],
+      "priority_position": 9
+    },
+    {
+      "id": "systemtypen-und-systemdifferenzierung",
+      "title": "Systemtypen und Systemdifferenzierung",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Organisation, Interaktion, Gesellschaft und Funktionssysteme unterscheiden.",
+      "library": "A",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "system-und-umwelt",
+        "organisation-und-entscheidung",
+        "schulreform-und-lernklima"
+      ]
+    },
+    {
+      "id": "werkentwicklung-und-quellenstatus",
+      "title": "Werkentwicklung und Quellenstatus",
+      "category": "quellenorientierung",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Sechs Quellenkarten und werkgeschichtliche Prüffragen mit unterscheidbarer Nachweistiefe.",
+      "library": "B",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "autopoiesis",
+        "operative-geschlossenheit",
+        "sinn"
+      ]
+    },
+    {
+      "id": "erklaerung-oder-umbenennung",
+      "title": "Erklärung oder Umbenennung?",
+      "category": "analyseverfahren",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Vier Erkenntnisdimensionen und sieben Schritte zur transparenten Theorieprüfung.",
+      "library": "C",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "kontrollierter-beobachtungswechsel",
+        "schulreform-und-lernklima"
+      ],
+      "priority_position": 19
+    },
+    {
+      "id": "kontrollierter-beobachtungswechsel",
+      "title": "Kontrollierter Beobachtungswechsel",
+      "category": "analyseverfahren",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Eine Frage unter mehreren begründeten Unterscheidungen untersuchen und Gewinne/Verluste dokumentieren.",
+      "library": "C",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "erklaerung-oder-umbenennung",
+        "politik-recht-konflikt"
+      ]
+    },
+    {
+      "id": "schulreform-und-lernklima",
+      "title": "Schulreform und Lernklima",
+      "category": "fallanalyse",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Hypothetischer Reformfall mit kontrastierbaren Übergängen und alternativen Erklärungen.",
+      "library": "D",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "systemtypen-und-systemdifferenzierung",
+        "erklaerung-oder-umbenennung"
+      ]
+    },
+    {
+      "id": "organisation-und-entscheidung",
+      "title": "Organisation und Entscheidung",
+      "category": "fallanalyse",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Hypothetische Organisationsentscheidung, Entscheidungsketten und Ressourcenalternative.",
+      "library": "D",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "systemtypen-und-systemdifferenzierung",
+        "autopoiesis"
+      ],
+      "priority_position": 16
+    },
+    {
+      "id": "politik-recht-konflikt",
+      "title": "Politik und Recht im Konflikt",
+      "category": "fallanalyse",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Hypothetischer Unterschied zwischen öffentlicher Forderung und rechtlicher Entscheidung.",
+      "library": "D",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "strukturelle-kopplung",
+        "kontrollierter-beobachtungswechsel"
+      ]
+    },
+    {
+      "id": "mensch-ki-kommunikation",
+      "title": "Mensch–KI-Kommunikation",
+      "category": "fallanalyse",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Gedankenexperiment zu Verstehen, Zurechnung, Korrektur und technischen Grenzen.",
+      "library": "D",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "kommunikation-und-verstehen",
+        "autopoiesis",
+        "kontrollierter-beobachtungswechsel"
+      ]
+    },
+    {
+      "id": "forschungs-und-revisionsregister",
+      "title": "Forschungs- und Revisionsregister",
+      "category": "revision",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-06",
+      "note": "Offene Quellen- und Methodenfragen, negative Befunde und redaktionelle Revision.",
+      "library": "E",
+      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "related_ids": [
+        "werkentwicklung-und-quellenstatus",
+        "erklaerung-oder-umbenennung"
+      ]
     }
-  ]
+  ],
+  "last_editorial_update": "2026-11-06",
+  "usage_entry_id": "so-nutzt-du-den-theorieatlas",
+  "library_key": {
+    "A": "Begriffs- und Strukturatlas",
+    "B": "Werk- und Quellenatlas",
+    "C": "Erkenntnis- und Gegenbeobachtungsatlas",
+    "D": "Anwendungs- und Fallatlas",
+    "E": "Forschungs- und Revisionsregister",
+    "START": "Gebrauchsanleitung"
+  }
 }
