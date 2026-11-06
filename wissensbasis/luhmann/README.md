@@ -1,6 +1,6 @@
 # Luhmann – Theorieatlas: öffentliche, versionierte Erkenntnisbasis
 
-Dieser Ordner enthält die **ergänzende Wissensbasis** des eigenständigen Plugins **„Luhmann – Theorieatlas“**. Er ist nicht die private Skill-Bibliothek des anderen Plugins **„Luhmann Lesehilfe & Forum“**. Beide bleiben organisatorisch und technisch getrennt.
+Dieser Ordner enthält die **ergänzende Wissensbasis** des eigenständigen Plugins **„Luhmann – Theorieatlas“**, herausgegeben von **Rosi Hach**. Er ist nicht die private Skill-Bibliothek des anderen Plugins **„Luhmann Lesehilfe & Forum“**. Beide bleiben organisatorisch und technisch getrennt.
 
 ## Wozu der Theorieatlas dient
 
@@ -32,7 +32,7 @@ Im jeweiligen Eintrag ist angegeben, ob es sich um einen redaktionellen Arbeitss
 
 ## Technische Zugänglichkeit
 
-Der derzeitige MCP-Server bietet `luhmann_wissensindex` und `luhmann_wissenseintrag` als **lesende** Werkzeuge. Der konkrete Zugang innerhalb eines ChatGPT-Hosts muss getrennt geprüft werden. Das Repository ist keine eigenständige dynamische Analyse-Engine. Für die Veröffentlichung von Änderungen sind redaktionelle Prüfung und ein manueller GitHub-Desktop-Push durch die Projektverantwortliche vorgesehen.
+Der derzeitige MCP-Server bietet `luhmann_wissensindex` und `luhmann_wissenseintrag` als **lesende** Werkzeuge. Ein erster inhaltlicher Funktionstest in der ChatGPT-Desktop-App wurde am 06.11.2026 durch die Nutzerin berichtet; die unabhängig einsehbare Host-Tool-Aufrufspur und die negativen Reviewfälle stehen noch aus. Das Repository ist keine eigenständige dynamische Analyse-Engine. Für die Veröffentlichung von Änderungen sind redaktionelle Prüfung und ein manueller GitHub-Desktop-Push durch die Projektverantwortliche vorgesehen.
 
 ## Rechte und Quellen
 

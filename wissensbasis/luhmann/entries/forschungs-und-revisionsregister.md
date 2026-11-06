@@ -10,7 +10,11 @@
 
 ## 1. Ausgangspunkt und Geltung
 
-Der dokumentierte öffentliche Snapshot vom 06.11.2026 zeigt `edition: pilot-0.1` und **zwei** vorhandene Piloten (`beobachtung-zweiter-ordnung`, `kommunikation-und-verstehen`). Das neue GitHub-Paket bereitet weitere Beiträge zur möglichen Veröffentlichung vor. **Diese Datei belegt weder ihren bereits erfolgten Push noch einen erfolgreichen Test des Plugins im ChatGPT-Host.** Die beiden bestehenden Piloten bleiben redaktionelle Arbeitsnotizen ohne authentifizierte Primärtextstelle.
+**Gegenwärtiger Quellenstand (am 06.11.2026 erneut geprüft):** Das öffentliche GitHub-Register `wissensbasis/luhmann/index.json` führt die Edition `atlas-0.2-redaktion` mit **17 registrierten Einträgen**. Eine lesende Kontrolle des Verzeichnisses `entries/` bestätigte **17 vorhandene Markdown-Dateien und keine fehlenden Registerziele**. Unter den 17 bleiben die beiden ursprünglichen Einträge `beobachtung-zweiter-ordnung` und `kommunikation-und-verstehen` als `redaktioneller-pilot` gekennzeichnet; die übrigen 15 haben den Status `redaktioneller-arbeitsstand`. Ein GitHub-Push ist damit nachgewiesen, ohne dass die Dateien dadurch zu wissenschaftlich freigegebenen Primärtexteditionen werden.
+
+**Host-Nutzungsprüfung (Bericht der Nutzerin, 06.11.2026):** Der Theorieatlas 1.0.0 lieferte in der ChatGPT-Desktop-App auf einen kombinierten Testprompt die korrekten Editions- und Registerdaten und eine ausführliche, quellendifferenzierte Auswertung aus fünf Atlas-Artikeln. In der übermittelten Antwort gab das Plugin den Einsatz von `luhmann_wissensindex` und fünf Aufrufen von `luhmann_wissenseintrag` an. Der Redaktion liegt **der Antworttext, aber kein unabhängiges Host-Toolprotokoll** vor. Dies ist ein starker funktionaler Hinweis und ein erfolgreicher inhaltlicher Demonstrationsfall; es ist weder ein vollständig auditiertes MCP-Hostprotokoll noch eine Ausführung sämtlicher Reviewfälle.
+
+**Historischer Stand:** Die am selben Tag zuvor gesicherte Edition `pilot-0.1` umfasste nur zwei Pilotartikel. Diese Angabe bleibt als Entwicklungsgeschichte gültig, jedoch nicht mehr als aktueller Bestand.
 
 ## 2. Offene Forschungsfragen
 
@@ -24,8 +28,8 @@ Der dokumentierte öffentliche Snapshot vom 06.11.2026 zeigt `edition: pilot-0.1
 | E-006 | Zusätzlicher Erklärungswert | Gleichen Fall systemtheoretisch und institutionell prüfen; C1–C4 getrennt vergleichen | offen |
 | E-007 | Schulreform | Reale, rechtlich zugängliche Fallbeobachtungen erheben, ohne hypothetisches Beispiel zu reifizieren | offen |
 | E-008 | Quellennachweise | Volltexte *Soziale Systeme* und Cardozo 1992 an konkreten Stellen kontrollieren | offen |
-| E-009 | Frühere Piloten | Zwei GitHub-Piloten vollständig in Quellenschema überführen, ohne sie rückwirkend aufzuwerten | offen |
-| E-010 | Technische Abnahme | Index/Einträge nach GitHub-Push prüfen; MCP-Inspector-Test und ChatGPT-Host-Test getrennt protokollieren | offen |
+| E-009 | Frühere Piloten | Beide Dateien sind wieder vorhanden; ihre weitere Überführung in das Quellen- und Revisionsschema bleibt erforderlich | offen: Redaktion |
+| E-010 | Technische Abnahme | GitHub-Register und 17 Dateipfade verifiziert; Desktop-Erstbericht vorhanden. Host-Werkzeugprotokoll, Wiederholung und Negativtests gesondert prüfen | teilweise geprüft |
 | E-011 | Systemtypen | Funktionssystem, Organisation, Interaktion und weitere Typologien werkgeschichtlich vergleichen | offen |
 | E-012 | Mensch–KI-Fall | Kommunikationstheoretische Zurechnung vs. technische Fehlerursachen an anonymisierten Sequenzen vergleichen | offen |
 | E-013 | Politischer Code | Machtmedium, demokratische Regierung/Opposition-Unterscheidung und konkrete Programme an Primärstellen auseinanderhalten | offen |
@@ -41,7 +45,7 @@ Der dokumentierte öffentliche Snapshot vom 06.11.2026 zeigt `edition: pilot-0.1
 
 **N-004:** Der 2006 veröffentlichte Text *System as Difference* ist im Vorpaket über Metadaten/Abstract, nicht durch eine vollständige kritische Textlektüre erschlossen.
 
-**N-005:** Ein früherer MCP-Inspector-Test war erfolgreich. Die Nutzung der MCP-Werkzeuge **innerhalb des privaten ChatGPT-Theorieatlas-Plugins** ist nach dem übergebenen Stand nicht unabhängig bestätigt.
+**N-005 – präzisierter Prüfstatus:** Ein früherer MCP-Inspector-Test war erfolgreich. Die Nutzerin hat am 06.11.2026 eine Antwort des privaten Theorieatlas aus der ChatGPT-Desktop-App übermittelt, die sechs Toolaufrufe (Index plus fünf Einzelabrufe) berichtet und mit den öffentlich geprüften Registerdaten übereinstimmt. Der tatsächliche interne Werkzeugverlauf wurde hier jedoch nicht separat eingesehen. Daher: **inhaltlich stark gestützter Ersttest; unabhängiger Host-Audit und negative Host-Tests weiter offen**.
 
 **N-006:** Der Atlas verfügt nach dem geprüften Worker-Quellstand über **Indexabruf und Einzelabruf per ID**, aber keinen implementierten Volltextsuch-Endpunkt und keine selbständige Analyse- oder Updatefunktion.
 
@@ -56,10 +60,22 @@ Der dokumentierte öffentliche Snapshot vom 06.11.2026 zeigt `edition: pilot-0.1
 | 2026-11-06 | A | Systemtypen, strukturelle Kopplung, Sinn als neue Knoten ausgearbeitet | Weitere Begriffsarbeit, Detail-Primärprüfung offen |
 | 2026-11-06 | D | Schulreform vertieft; drei unabhängige Anwendungen vorbereitet | Ausschließlich hypothetische Fälle |
 | 2026-11-06 | B | Quellenkarten um Werkentwicklungsmatrix erweitert | Keine erfundenen Originalbelege |
-| 2026-11-06 | GitHub | Paket mit möglichem neuen Registerstand lokal vorbereitet | **Noch kein Push oder Live-Test erfolgt** |
+| 2026-11-06 | GitHub, nach Upload | Edition `atlas-0.2-redaktion` mit 17 registrierten Dateien auf `main` bestätigt; beide historischen Piloten wiederhergestellt | Verzeichnisvollständigkeit und ID-Zuordnung nachgewiesen |
 
 ## 5. Wie das Register benutzt wird
 
 Bei einer Antwort nennt der Atlas nicht nur den „aktuellsten“ Eintrag, sondern den **beanspruchten Geltungsstatus**. Ein neuerer Text kann eine weiterführende Redaktion sein, ohne quellenmäßig besser belegt zu sein. Ändert eine spätere Primärprüfung eine Aussage, werden das neue Ergebnis und der Änderungsgrund ergänzt, ohne frühere offene Punkte verschwinden zu lassen.
 
-**Revision:** 2026-11-06 – frühere E-Entwurfsfassung auf den erweiterten A–E-Arbeitsstand bezogen; kein GitHub-Commit behauptet.
+## 6. Testlage nach dem ersten Desktop-Durchlauf
+
+| Prüfung | Beobachteter Nachweis | Einordnung |
+|---|---|---|
+| GitHub-Register | `atlas-0.2-redaktion`, 17 IDs, 17 passende Markdown-Dateien | **Bestanden (lesende GitHub-Kontrolle)** |
+| Host-Demonstration (Schulreform) | Nutzerin übermittelte Antwort aus der Desktop-App; korrekte Edition, fünf Bibliotheken, fünf Artikel-IDs, vier Erkenntnisdimensionen, Quellenstatus | **Inhaltlich bestanden (Nutzerbericht)** |
+| Exakte MCP-Aufrufspur | Aufrufangaben stehen in der übermittelten Plugin-Antwort; separater Tool-Trace liegt nicht vor | **Noch unabhängig zu prüfen** |
+| Negative Host-Tests (Schreibwunsch, unbelegte Textstelle, unbekannte ID) | Serververtrag und Redaktionsregeln lassen erwartetes Fehlverhalten bestimmen; keine Desktop-Antworten dazu eingereicht | **Nicht ausgeführt in der Zielumgebung** |
+| Publikationsreview | Demonstrationsvideo, Prüfdurchlauf und datenschutzrechtliche MCP-Ergänzung stehen aus | **Offen** |
+
+Die Quellen- und Teststufen beziehen sich jeweils nur auf das benannte Objekt. Aus dem positiven Desktop-Fall folgt keine allgemeine Bestätigung sämtlicher Funktionen, Veröffentlichungsfreigabe oder empirischer Erklärungsüberlegenheit.
+
+**Revision:** 2026-11-06 – historischer Pilotstand und nun bestätigter GitHub-Upload zeitlich getrennt; erste Desktop-Antwort als Nutzerbericht aufgenommen, fehlenden Host-Tooltrace und Negativtests ausdrücklich offen gehalten. Frühere Negativbefunde ohne neue Gegenbelege bleiben bestehen.
