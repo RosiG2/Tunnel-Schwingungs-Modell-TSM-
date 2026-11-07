@@ -1,6 +1,6 @@
 # Datenschutzinformationen zu meinen KI-Plugins und Assistenten
 
-**Stand: 4. November 2026**
+**Stand: 7. November 2026**
 
 ## 1. Geltungsbereich
 
@@ -9,6 +9,8 @@ Diese Datenschutzinformationen gelten für die von **Rosi Hach** herausgegebenen
 Die Informationen sind nicht auf einen bestimmten Plugin-Namen, eine Korpusversion oder einen KI-Plattformanbieter beschränkt. Sie unterscheiden zwischen der Datenverarbeitung durch den jeweils genutzten Plattformanbieter und den Verarbeitungsvorgängen, die ich selbst verantworte.
 
 **Wichtige Abgrenzung:** Die nachfolgenden Angaben zur Bereitstellung ohne eigenen Gesprächsserver gelten für wissens- oder skillbasierte Anwendungen **ohne zusätzliche, von mir betriebene externe Datenanbindung**. Nutzt ein bestimmtes Plugin dagegen einen eigenen Server, eine externe API, eine MCP-Verbindung, ein Formular, ein Analysetool oder eine sonstige zusätzliche Übermittlung personenbezogener Daten, müssen dessen konkrete Datenflüsse und erforderlichenfalls ergänzende Datenschutzinformationen gesondert ausgewiesen werden. Ein Verweis auf diese allgemeine Seite allein deckt solche abweichenden Verarbeitungen nicht ab.
+
+**Ergänzung für den Luhmann – Theorieatlas:** Das Plugin verwendet eine eigene, nur lesend zugreifende MCP-Wissensbrücke auf Cloudflare Workers für die Recherche in einer öffentlichen GitHub-Wissensbibliothek. Bei ihrer Nutzung werden die tatsächlich aufgerufenen Werkzeugargumente, beispielsweise Suchfragen oder Artikelkennungen, an den Cloudflare-Worker übertragen. Der dafür maßgebliche [projektspezifische Datenschutznachtrag zum Luhmann – Theorieatlas](./wissensbasis/luhmann/DATENSCHUTZ_MCP.md) ergänzt diese allgemeine Erklärung. Er beschreibt die Datenwege und Empfänger, die überprüften Cloudflare-Protokollierungs- und Exportkonfigurationen sowie die Datenschutz- und Vertragsgrundlagen. **Beide Texte sind für die Nutzung dieses Plugins gemeinsam zu lesen.**
 
 ## 2. Verantwortliche und Kontakt
 
