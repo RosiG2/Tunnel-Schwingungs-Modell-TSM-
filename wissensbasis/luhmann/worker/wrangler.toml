@@ -1,0 +1,7 @@
+name = "luhmann-knowledge-mcp"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+[vars]
+# Öffentliches, LOKALES Wissen aus Deinem GitHub-Repository. Konfiguriere nach Wunsch.
+KNOWLEDGE_ROOT = "https://raw.githubusercontent.com/RosiG2/Tunnel-Schwingungs-Modell-TSM-/main/wissensbasis/luhmann"
