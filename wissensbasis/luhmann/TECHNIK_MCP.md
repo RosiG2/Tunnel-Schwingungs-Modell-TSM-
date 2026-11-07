@@ -13,7 +13,7 @@ Die Serverimplementierung definiert vier lesende MCP-Werkzeuge:
 | `luhmann_themenrecherche` | Registrierte Artikel über eine nachvollziehbare, lexikalische Relevanzbewertung erschließen; Fundstellen und redaktionellen Nachweisstatus ausgeben | Register und Artikeltexte |
 | `luhmann_bezugspfad` | Explizite `related_ids`-Verweise zwischen Artikeln beidseitig und höchstens zweistufig erschließen | Register |
 
-Der Quellcode belegt die **vorgesehene Funktionalität**, nicht die tatsächliche Bereitstellung aller vier Werkzeuge. Der verbindliche Betriebsstand ergibt sich aus der Werkzeugliste der aktiven MCP-Verbindung unter `https://luhmann-knowledge-mcp.rosig2.workers.dev/mcp`. Die beiden zusätzlichen Werkzeuge sind erst nach einem geprüften Cloudflare-Deployment nutzbar.
+**Betriebsnachweis vom 7. November 2026:** Die beiden zusätzlichen Werkzeuge `luhmann_themenrecherche` und `luhmann_bezugspfad` haben über den öffentlich angebundenen MCP Inspector produktive Ergebnisse geliefert. Die registrierten 17 Einträge stammen aus `atlas-0.3-redaktion`. Der produktive Stand ist unabhängig davon jederzeit anhand der Werkzeugliste und tatsächlicher Aufrufe am MCP-Endpunkt zu prüfen. Die Werkzeugbereitstellung in ChatGPT Work war beim letzten dokumentierten Test noch nicht verfügbar; dies ist kein Beleg für einen Ausfall des öffentlichen MCP-Servers. Einzelheiten stehen in [`MCP_ABNAHME_2026-11-07.md`](MCP_ABNAHME_2026-11-07.md).
 
 ## Wissenschaftliche Reichweite
 
