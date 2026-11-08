@@ -6,3 +6,4 @@ keep_vars = true
 [vars]
 # Öffentliches, LOKALES Wissen aus Deinem GitHub-Repository. Konfiguriere nach Wunsch.
 KNOWLEDGE_ROOT = "https://raw.githubusercontent.com/RosiG2/Tunnel-Schwingungs-Modell-TSM-/main/wissensbasis/luhmann"
+OPENAI_CHALLENGE = "jY6KhIyZTr3KmlIx5XHIsPAvOGZWNUNrgHLqL_Bb4k0"
