@@ -16,6 +16,10 @@ Eine luhmannorientierte Fallrekonstruktion würde nicht bei der Verkündung steh
 
 Eine konkurrierende Ressourcenanalyse könnte zeigen, dass zu wenig Personal vorhanden ist. Eine arbeitspsychologische Analyse könnte eine belastende Arbeitsorganisation oder fehlende Befugnisse identifizieren. Diese Erklärungen sind nicht automatisch schlechter, nur weil sie nicht systemtheoretisch formuliert sind.
 
+### Erwartung, Vertrauen und Konflikt
+
+Die bisherigen Hypothesen zu Entscheidungsketten, Zielkonflikten und Ressourcenbindung bleiben eigenständig. Der neue Verbindungsstrang `doppelte-kontingenz-und-erwartungen` → `vertrauen-risiko-und-gefahr` → `widerspruch-konflikt-und-protest` erweitert die Frage, wie eine Organisation schlechte Nachrichten verarbeitet und ob ihre eigenen Routinen überraschende Folgeentscheidungen wahrscheinlicher machen. Auch dies ist eine Hypothese, nicht die Behauptung einer tatsächlich beobachteten Unternehmenskrise.
+
 ## 3. Drei alternative Verlaufsannahmen
 
 - **H1 – Entscheidungskette:** Der Beschluss bleibt ohne Folgeroutinen. Erwartbar wäre, dass weder Aufgabenprioritäten noch Zuständigkeiten oder Eskalationsregeln dokumentierbar geändert wurden.

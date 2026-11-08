@@ -20,6 +20,10 @@ Eine Bildungsverwaltung beurteilt eine Reform nach der erfolgreichen Einführung
 
 Das Beispiel ist ein Gedankenexperiment, kein Befund zu einer konkreten Schulreform. Es zeigt die Unterscheidung zwischen Beobachtung und Kausalerklärung: Die Rekonstruktion konkurrierender Kriterien kann erkenntnisreich sein, ohne die Ursache des untersuchten Verlaufs bereits zu bestimmen.
 
+## Selbst- und Fremdreferenz als Beobachtungsproblem
+
+Selbst- und Fremdreferenz sind für eine Beobachtung zweiter Ordnung besonders relevant: Wer eine Beobachtung beobachtet, kann untersuchen, welche Unterscheidung der erste Beobachter verwendet und was diese Unterscheidung nicht erfasst. Das ist weder automatisch eine Widerlegung noch eine privilegierte Sicht von „außerhalb“. Die Frage nach dem blinden Fleck bleibt auf jede eigene Beobachtung rückbeziehbar. Dazu führen `system-und-umwelt` und `semantik-selbstbeschreibung-und-gedaechtnis` unterschiedliche Lesepfade vor; `kontrollierter-beobachtungswechsel` macht daraus eine redaktionelle Vergleichsmethode, keine historische Luhmann-Technik.
+
 ## Quellenlage und Weiterführung
 
 Diese Darstellung ist ein systematischer Begriffskommentar zur luhmannschen Beobachtungstheorie. Eine konkrete, eigenständig geprüfte Primärtextpassage mit Seitenangabe liegt diesem Beitrag bislang **nicht** zugrunde; wörtliche Zitate werden nicht beansprucht. Für eine werkgeschichtliche Rekonstruktion sind die einschlägigen Texte zu Beobachtung, Selbstreferenz und Formtheorie gesondert zu prüfen.

@@ -50,6 +50,12 @@ Die drei Grundartikel dürfen nicht zu Synonymen werden:
 
 Diese Relationen begründen keine logische Identität. Ein Beobachter kann eine Grenze markieren, ohne damit schon nachgewiesen zu haben, dass ein autopoietisches System existiert. Umgekehrt wäre Autopoiesis ohne die Bestimmung einer beobachtbaren Operationsgrenze empirisch schwer zu prüfen.
 
+### Selbstreferenz, Fremdreferenz und gesellschaftliche Außenbezüge
+
+Selbstreferenz und Fremdreferenz bezeichnen nicht zwei voneinander unabhängig zugängliche Welten. Ein System kann in seinen Operationen auf die Unterscheidung von sich selbst und anderem Bezug nehmen; dabei bleibt der Umweltbezug eine eigene Beobachtungsleistung. Gerade deshalb ist operative Geschlossenheit kein Satz darüber, die Umwelt sei folgenlos. `beobachtung-zweiter-ordnung` und `semantik-selbstbeschreibung-und-gedaechtnis` schärfen diese Differenz.
+
+Wo ein System „seine Umwelt“ nennt, ist die konkrete Systemreferenz zu prüfen. `inklusion-exklusion-und-weltgesellschaft` zeigt am gesellschaftlichen Zugang, warum eine System/Umwelt-Unterscheidung nicht als pauschale Grenzlinie zwischen „Menschen innerhalb“ und „Menschen außerhalb“ der Gesellschaft verwendet werden darf.
+
 ## 4. Erkenntnisleistung und Erklärungsgrenzen
 
 **[I – redaktionelle Ableitung]** Der begriffliche Ertrag ist zunächst, zwei üblicherweise vermischte Fragen auseinanderzuhalten: *Was ermöglicht einen Vorgang kausal?* und *Was macht ihn zur Operation gerade dieses Systems?* Ein Urteil setzt Richter, Akten, Sprache, Technik, Ausbildung und Gesellschaft voraus; es wird aber nicht schon dadurch zum rechtlichen Urteil, dass irgendeine dieser Voraussetzungen vorhanden ist. Der systemische Zusammenhang schränkt ein, was im jeweiligen Kontext als rechtlich anschlussfähig gilt.

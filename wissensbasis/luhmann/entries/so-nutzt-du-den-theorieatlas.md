@@ -28,6 +28,12 @@ Warum kann eine Schulreform Lehrpläne und Unterrichtsmethoden verändern, ohne 
 
 Das Ergebnis ist keine pauschale Erklärung aller Schulreformen. Es ist eine theoretisch begründete Strukturierung der zu untersuchenden Prozesse. Die Geltung einer konkreten Erklärung ist anhand entsprechender Beobachtungs- und Vergleichsdaten zu prüfen.
 
+## Vernetzte Lesewege durch den Atlas
+
+Die Edition erschließt nicht nur einzelne Stichwörter, sondern zusammenhängende Theorieprobleme: **Begegnung:** doppelte Kontingenz → Person/Rolle → Moral/Achtung → Anerkennung und Fremdheit; **Organisation:** Entscheidung → Erwartungen → Risiko/Gefahr → Konflikt; **Gesellschaft:** Sinn → Kommunikationsmedien → funktionale Differenzierung → Inklusion/Exklusion → Evolution und Selbstbeschreibung. Die registrierte `begriffs-und-anschlusslandkarte` bietet dazu alltagssprachliche Suchwörter und methodisch gekennzeichnete Verweise.
+
+Der wissenschaftliche Standard bleibt unverändert: Ein Lektürepfeil ist eine redaktionelle Verbindung, keine geprüfte theoretische Folgerung. Aktuelle Editionsangaben und Artikelzahlen stammen aus dem live gelesenen Register; statische Unterlagen und historische Prüffälle sind Momentaufnahmen.
+
 ## 4. Werkbezug und Quellenkritik
 
 Luhmanns Arbeiten sind historisch gewachsen. Eine Formulierung aus einem Aufsatz von 1982 kann nicht ohne Weiteres als Textbeleg für die spätere Systematik gelesen werden. Der Werk- und Quellenatlas unterscheidet daher eingesehene Textstellen, begrenzte Teilprüfungen, Abstracts, bibliografische Angaben und sekundäre Interpretationen. Diese Unterscheidung ist insbesondere dann wichtig, wenn eine Aussage wortgetreu zitiert oder werkgeschichtlich eingeordnet werden soll.

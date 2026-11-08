@@ -14,6 +14,10 @@ Eine öffentliche Debatte fordert nach einem Vorfall eine scharfe Sanktion. Eine
 
 **Organisationen:** Partei, Regierung, Verwaltung, Gericht und Medienredaktion sind keine einzelnen „Funktionen“. Sie sind unterschiedliche organisierte Zusammenhänge, die ihrerseits in mehreren gesellschaftlichen Bezügen kommunizieren können. Ein Gericht ist Organisation; es repräsentiert nicht die Gesamtheit des Rechts. [R/I]
 
+### Rechtliche, politische und moralische Kommunikation
+
+Der neue Beitrag `codierung-programme-und-funktionssysteme` vertieft die Unterscheidung von Code und Entscheidungsprogramm. `moral-achtung-und-missachtung` ergänzt die Frage, wann sich ein Streit vom Gegenstand einer rechtlichen oder politischen Entscheidung auf die moralische Bewertung von Personen verschiebt. Keine dieser Beobachtungsweisen darf als Ersatz der anderen gelten. Der hypothetische Fall bleibt als solcher gekennzeichnet.
+
 ## 3. Was erklärt die Theorie?
 
 Die Unterscheidung macht zunächst sichtbar, weshalb **öffentliche Zustimmung und rechtliche Geltung nicht dieselbe Frage beantworten**. Daraus folgt keine Vorhersage des konkreten Urteils. Eine wirkliche Erklärung des Freispruchs benötigt das anwendbare Recht, Tatsachenfeststellungen, die Beweiswürdigung und den Entscheidungsweg. Eine Erklärung politischer Mobilisierung benötigt andere Daten, beispielsweise Kommunikation, Interessen, Medien und Organisationsstrategien. [I]

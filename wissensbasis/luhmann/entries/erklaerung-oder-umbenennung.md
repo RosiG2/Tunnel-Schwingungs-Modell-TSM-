@@ -44,6 +44,12 @@ Die Frage „Erklärt Luhmann etwas oder übersetzt er nur?“ ist wichtig, aber
 
 Das ist eine Methode des Theorieatlas – **keine von Luhmann übernommene Sieben-Punkte-Lehre**.
 
+### Erklärung und normative Rechtfertigung
+
+Die neuen Themen Moral, Anerkennung und Exklusion verlangen eine zusätzliche disziplinäre Unterscheidung: Die Beschreibung, **wie** eine moralische Bewertung, ein sozialer Ausschluss oder eine Rollenadressierung kommunikativ fortgesetzt wird, entscheidet nicht, **ob** sie gerechtfertigt ist. Das sind verschiedene Untersuchungsfragen. Ein theoretischer Gewinn kann deshalb in einer präziseren Konfliktbeschreibung bestehen, während die rechtliche, ethische oder anerkennungstheoretische Bewertung weiterhin offen ist.
+
+Für die neuen Beiträge gilt dasselbe Prüfraster C1–C4 wie für die bisherigen Fälle. Lexikalischer Suchtreffer, Registerverknüpfung, bibliografischer Werkhinweis und empirischer Nachweis sind jeweils getrennte Stufen.
+
 ## 4. Beispiel: Schulreform und Lernklima
 
 *Alle Angaben hypothetisch.* Zwei Schulen erhalten dieselbe gesetzliche Reform. In der ersten ändern sich Besprechungsroutinen und Bewertungsverfahren; in der zweiten werden neue Formulare ausgefüllt, ohne dass Unterrichtsgespräche sich erkennbar verändern. Ein erster Beobachtungsgewinn besteht darin, *Gesetzgebung*, *Schulorganisation* und *Unterrichtsinteraktion* nicht zusammenzufalten. Der Zusammenhangsgewinn liegt in der Suche nach den vermittelnden Entscheidungen. Ein konkreter Erklärungsgewinn könnte entstehen, wenn Protokolle, Beobachtungen und Zeitverläufe zeigen, welche internen Entscheidungsprämissen die Unterschiede mittragen. Ein Beobachtungsverlust entstünde, wenn wir Ressourcen- oder Belastungsunterschiede nicht erfassen.

@@ -24,6 +24,10 @@ Die Gegenrichtung ist ebenso relevant: Die Verwendung maschinell produzierter Ä
 
 **Was lässt sich untersuchen?** Die Äußerungen wechseln ihren Kontext und ihre Anschlussbedingungen. Die Korrektur kann kommunikativ wirksam werden. **Was lässt sich nicht schon folgern?** Dass das Modell über menschliches Erleben, ein bewusstes Selbst oder ein gleichartiges soziales System wie eine Person verfügt; ebenso wenig, dass es die behauptete Quelle tatsächlich eingesehen hat.
 
+### Vermittlung, Rolle und Zuschreibung
+
+`medium-form-und-kommunikationsmedien` erlaubt eine präzisere Analyse der Verbreitung und Weiterverwendung maschinell erzeugter Texte; `person-rolle-und-interpenetration` schärft die Unterscheidung von sozialer Personenzuschreibung und psychischem System. Daraus folgt weder, dass ein Sprachmodell ein Mensch sei, noch dass technische Ausgaben in jedem Kontext dieselbe Kommunikationsstellung besitzen. Die konkrete Zurechnung muss am Fall untersucht werden.
+
 ## 4. Erkenntnisleistung und Beobachtungsgrenzen
 
 **Beobachtungsperspektive:** Generierung, kommunikative Zurechnung und menschliche Anschlussinterpretation treten als verschiedene Fragen hervor. **Zusammenhangsgewinn:** Die Weiterverwendung eines Textes verknüpft Mensch, Software, Organisation, Publikationskontext und Verantwortung, ohne dass deren Operationen identisch sind. **Erklärungsgewinn:** Eine begrenzte Prozesshypothese könnte zeigen, warum bestimmte Korrekturhinweise den folgenden Dialog ändern; dafür wären aufgezeichnete Sequenzen und alternative Erklärungsmuster erforderlich. **Beobachtungsverlust:** Eine ausschließlich kommunikative Sicht kann technische Modellfehler, Trainingsdaten, Machtasymmetrien und konkrete Folgen für Menschen übersehen.

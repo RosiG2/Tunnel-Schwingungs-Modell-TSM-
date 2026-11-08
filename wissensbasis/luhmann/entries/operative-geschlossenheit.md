@@ -48,9 +48,13 @@ Eine Selbstbeschreibung kann aber fehlerhaft sein. Dass die Organisation ihre La
 **`autopoiesis`:** die fortgesetzte Produktion eigener Operationen gibt der Differenz eine zeitliche Reproduktionsform.  
 **`operative-geschlossenheit`:** systemfremde Ereignisse treten nicht unverändert in die systemeigene Operationskette ein.  
 **`strukturelle-kopplung`:** wiederkehrende Beziehungen und Umweltabhängigkeiten können gerade bei unterschiedlicher Operationsart bestehen.  
-**`selbstreferenz-und-fremdreferenz`:** der Umweltbezug wird innerhalb der eigenen Beobachtungs- und Kommunikationsweise hergestellt.
+**Selbstreferenz/Fremdreferenz (`system-und-umwelt`):** der Umweltbezug wird innerhalb der eigenen Beobachtungs- und Kommunikationsweise hergestellt.
 
 Diese Zusammenhänge sind **Theoriearchitektur**, kein empirischer Nachweis, dass ein konkret benanntes Teil- oder Funktionssystem in einer beobachteten Situation genau so funktioniert.
+
+### Gegenreferenz statt Isolation
+
+Die hier schon entwickelte Selbst-/Fremdreferenzfrage ist keine Ankündigung einer zusätzlichen unabhängigen Registerdatei. Sie wird in `system-und-umwelt`, `beobachtung-zweiter-ordnung` und `semantik-selbstbeschreibung-und-gedaechtnis` vertieft. Die neuen Beiträge `medium-form-und-kommunikationsmedien` und `person-rolle-und-interpenetration` eröffnen außerdem zwei verschiedene Anschlussrichtungen: kommunikative Formbildung und das Verhältnis psychischer und sozialer Systeme. Daraus folgt nicht, dass Interpenetration und strukturelle Kopplung deckungsgleich wären.
 
 ## 4. Erkenntnisleistung und Erklärungsgrenzen
 

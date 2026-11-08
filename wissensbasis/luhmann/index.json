@@ -1,48 +1,83 @@
 {
   "title": "Luhmann – Theorieatlas | Systemtheorie und Erkenntnisperspektiven",
-  "edition": "atlas-0.3-redaktion",
-  "purpose": "Systematische Begriffskommentare, Werk- und Quellenorientierung, theoretische Erkenntnisanalyse, Fallinterpretationen und Forschungsrevisionen in fünf vernetzten Bibliotheken A–E.",
+  "edition": "atlas-0.4-redaktion",
+  "purpose": "Integrierter Begriffs-, Werk-, Gegenbeobachtungs-, Fall- und Revisionsatlas mit redaktioneller Anschlusslandkarte; der Quellenstatus jedes Beitrags bleibt eigenständig.",
   "entries": [
     {
       "id": "beobachtung-zweiter-ordnung",
       "title": "Beobachtung zweiter Ordnung",
       "category": "begriffshilfe",
       "status": "redaktioneller-pilot",
-      "last_reviewed": "2026-11-05",
-      "note": "Sekundärer Begriffskommentar über Beobachtungsunterscheidungen und deren Grenzen; ohne eigenständigen Primärtextnachweis."
+      "last_reviewed": "2026-11-08",
+      "note": "Sekundärer Begriffskommentar über Beobachtungsunterscheidungen und deren Grenzen; ohne eigenständigen Primärtextnachweis.",
+      "related_ids": [
+        "system-und-umwelt",
+        "semantik-selbstbeschreibung-und-gedaechtnis",
+        "kontrollierter-beobachtungswechsel"
+      ],
+      "library": "A",
+      "source_scope": "sekundäre Begriffserschließung ohne eigenständige Originalstellenprüfung; neuer Editionsanschluss 2026-11-08"
     },
     {
       "id": "kommunikation-und-verstehen",
       "title": "Kommunikation und Verstehen",
       "category": "begriffshilfe",
       "status": "redaktioneller-pilot",
-      "last_reviewed": "2026-11-05",
-      "note": "Sekundärer Begriffskommentar zu Information, Mitteilung, Verstehen und kommunikativen Anschlüssen; ohne eigenständigen Primärtextnachweis."
+      "last_reviewed": "2026-11-08",
+      "note": "Sekundärer Begriffskommentar zu Information, Mitteilung, Verstehen und kommunikativen Anschlüssen; ohne eigenständigen Primärtextnachweis.",
+      "related_ids": [
+        "medium-form-und-kommunikationsmedien",
+        "doppelte-kontingenz-und-erwartungen"
+      ],
+      "library": "A",
+      "source_scope": "sekundäre Begriffserschließung ohne eigenständige Originalstellenprüfung; neuer Editionsanschluss 2026-11-08"
     },
     {
       "id": "so-nutzt-du-den-theorieatlas",
       "title": "Einführung in den Luhmann – Theorieatlas",
       "category": "einstieg",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Wissenschaftliche Einführung in die Bibliotheken, Quellenordnung und Verfahren theoretischer Erkenntnisanalyse.",
       "library": "START",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
-      "related_ids": []
+      "related_ids": [
+        "begriffs-und-anschlusslandkarte",
+        "werkentwicklung-und-quellenstatus"
+      ]
+    },
+    {
+      "id": "begriffs-und-anschlusslandkarte",
+      "title": "Begriffs- und Anschlusslandkarte",
+      "category": "einstieg",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Diese Landkarte erschließt den gesamten Theorieatlas über fachliche Kernbegriffe, Nachbarbegriffe und Alltagssprache. Ein Suchwort ist keine Theoriebehauptung: Die Zuordn…",
+      "library": "START",
+      "source_scope": "redaktionelle Zugangslandkarte; Zuordnungen sind Lektürehinweise, keine semantische oder empirische Verifikation",
+      "related_ids": [
+        "so-nutzt-du-den-theorieatlas",
+        "doppelte-kontingenz-und-erwartungen",
+        "medium-form-und-kommunikationsmedien",
+        "anerkennung-fremdheit-und-begegnung",
+        "werkentwicklung-und-quellenstatus"
+      ]
     },
     {
       "id": "system-und-umwelt",
       "title": "System und Umwelt",
       "category": "begriffshilfe",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Unterschied zwischen Umweltbedingung und systemeigener Operation; schulisches Fallbeispiel.",
       "library": "A",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "autopoiesis",
         "operative-geschlossenheit",
-        "erklaerung-oder-umbenennung"
+        "erklaerung-oder-umbenennung",
+        "beobachtung-zweiter-ordnung",
+        "inklusion-exklusion-und-weltgesellschaft"
       ],
       "priority_position": 3
     },
@@ -51,14 +86,16 @@
       "title": "Autopoiesis",
       "category": "begriffshilfe",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Eigenreproduktion durch anschlussfähige Operationen, biologischer Ursprung und soziale Übertragung.",
       "library": "A",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "system-und-umwelt",
         "operative-geschlossenheit",
-        "kommunikation-und-verstehen"
+        "kommunikation-und-verstehen",
+        "gesellschaftliche-evolution",
+        "person-rolle-und-interpenetration"
       ],
       "priority_position": 4
     },
@@ -67,14 +104,16 @@
       "title": "Operative Geschlossenheit",
       "category": "begriffshilfe",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Operative Eigenständigkeit und reale Umweltabhängigkeit als getrennte Fragen.",
       "library": "A",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "system-und-umwelt",
         "strukturelle-kopplung",
-        "erklaerung-oder-umbenennung"
+        "erklaerung-oder-umbenennung",
+        "beobachtung-zweiter-ordnung",
+        "person-rolle-und-interpenetration"
       ],
       "priority_position": 5
     },
@@ -83,13 +122,15 @@
       "title": "Sinn: Aktualität und Möglichkeit",
       "category": "begriffshilfe",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Sinn als Aktualisierung unter Horizont weiterer Möglichkeiten; Grenzen der Rekonstruktion.",
       "library": "A",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "kommunikation-und-verstehen",
-        "system-und-umwelt"
+        "system-und-umwelt",
+        "komplexitaet-und-kontingenz",
+        "doppelte-kontingenz-und-erwartungen"
       ],
       "priority_position": 6
     },
@@ -98,13 +139,15 @@
       "title": "Strukturelle Kopplung",
       "category": "begriffshilfe",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Selektive Umweltabhängigkeiten ohne operative Verschmelzung.",
       "library": "A",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "operative-geschlossenheit",
-        "politik-recht-konflikt"
+        "politik-recht-konflikt",
+        "person-rolle-und-interpenetration",
+        "doppelte-kontingenz-und-erwartungen"
       ],
       "priority_position": 9
     },
@@ -113,14 +156,196 @@
       "title": "Systemtypen und Systemdifferenzierung",
       "category": "begriffshilfe",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Organisation, Interaktion, Gesellschaft und Funktionssysteme unterscheiden.",
       "library": "A",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "system-und-umwelt",
         "organisation-und-entscheidung",
+        "schulreform-und-lernklima",
+        "codierung-programme-und-funktionssysteme",
+        "inklusion-exklusion-und-weltgesellschaft"
+      ]
+    },
+    {
+      "id": "komplexitaet-und-kontingenz",
+      "title": "Komplexität und Kontingenz",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Komplexität bezeichnet mehr mögliche Beziehungen und Fortsetzungen, als in einem konkreten Moment aktualisiert werden können. Kontingenz markiert, dass etwas weder notwen…",
+      "library": "A",
+      "source_scope": "sekundäre theorieorientierte Rekonstruktion; Werk- und Inhaltsnachweise, keine durchgehende Primärtextprüfung",
+      "related_ids": [
+        "sinn",
+        "doppelte-kontingenz-und-erwartungen",
+        "system-und-umwelt",
+        "organisation-und-entscheidung"
+      ]
+    },
+    {
+      "id": "doppelte-kontingenz-und-erwartungen",
+      "title": "Doppelte Kontingenz und Erwartungen",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Ego und Alter orientieren sich jeweils an einem Gegenüber, das auch anders handeln könnte. Gerade diese wechselseitige Unbestimmtheit macht die Bildung von Erwartungen fü…",
+      "library": "A",
+      "source_scope": "sekundäre Rekonstruktion mit lokalisiertem, öffentlich eingesehenem Manuskript-Primäranker; keine systematische Volltextedition",
+      "related_ids": [
+        "komplexitaet-und-kontingenz",
+        "person-rolle-und-interpenetration",
+        "kommunikation-und-verstehen",
+        "vertrauen-risiko-und-gefahr",
+        "moral-achtung-und-missachtung"
+      ]
+    },
+    {
+      "id": "person-rolle-und-interpenetration",
+      "title": "Person, Rolle und Interpenetration",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Personen sind nicht schlicht die Elemente sozialer Systeme. Mit der Unterscheidung von psychischer und sozialer Operation kann Luhmann dennoch untersuchen, wie soziale Ko…",
+      "library": "A",
+      "source_scope": "sekundäre theorieorientierte Rekonstruktion; Werk- und Inhaltsnachweise, keine durchgehende Primärtextprüfung",
+      "related_ids": [
+        "doppelte-kontingenz-und-erwartungen",
+        "strukturelle-kopplung",
+        "systemtypen-und-systemdifferenzierung",
+        "anerkennung-fremdheit-und-begegnung",
+        "mensch-ki-kommunikation"
+      ]
+    },
+    {
+      "id": "medium-form-und-kommunikationsmedien",
+      "title": "Medium, Form und Kommunikationsmedien",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Die Begriffe Medium und Form, Verbreitungsmedien sowie symbolisch generalisierte Kommunikationsmedien beschreiben verschiedene Probleme. Das eine betrifft die Bildung bes…",
+      "library": "A",
+      "source_scope": "sekundäre theorieorientierte Rekonstruktion; Werk- und Inhaltsnachweise, keine durchgehende Primärtextprüfung",
+      "related_ids": [
+        "sinn",
+        "kommunikation-und-verstehen",
+        "codierung-programme-und-funktionssysteme",
+        "semantik-selbstbeschreibung-und-gedaechtnis"
+      ]
+    },
+    {
+      "id": "codierung-programme-und-funktionssysteme",
+      "title": "Codierung, Programme und Funktionssysteme",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Funktionale Differenzierung lässt sich nicht einfach als Aufteilung der Gesellschaft in Berufsgruppen oder Behörden beschreiben. Entscheidend ist, in welchem Kommunikatio…",
+      "library": "A",
+      "source_scope": "sekundäre theorieorientierte Rekonstruktion; Werk- und Inhaltsnachweise, keine durchgehende Primärtextprüfung",
+      "related_ids": [
+        "systemtypen-und-systemdifferenzierung",
+        "medium-form-und-kommunikationsmedien",
+        "inklusion-exklusion-und-weltgesellschaft",
+        "politik-recht-konflikt",
         "schulreform-und-lernklima"
+      ]
+    },
+    {
+      "id": "inklusion-exklusion-und-weltgesellschaft",
+      "title": "Inklusion, Exklusion und Weltgesellschaft",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Inklusion und Exklusion verweisen auf die Bedingungen, unter denen Menschen für soziale Kommunikation als Beteiligte relevant werden können. Die Begriffe benennen keine e…",
+      "library": "A",
+      "source_scope": "sekundäre theorieorientierte Rekonstruktion; Werk- und Inhaltsnachweise, keine durchgehende Primärtextprüfung",
+      "related_ids": [
+        "codierung-programme-und-funktionssysteme",
+        "person-rolle-und-interpenetration",
+        "systemtypen-und-systemdifferenzierung",
+        "anerkennung-fremdheit-und-begegnung"
+      ]
+    },
+    {
+      "id": "gesellschaftliche-evolution",
+      "title": "Gesellschaftliche Evolution: Variation, Selektion, Restabilisierung",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Gesellschaftliche Evolution ist bei Luhmann weder bloßer Fortschritt noch ein geplanter Modernisierungsprozess. Die Unterscheidung von Variation, Selektion und Restabilis…",
+      "library": "A",
+      "source_scope": "sekundäre theorieorientierte Rekonstruktion; Werk- und Inhaltsnachweise, keine durchgehende Primärtextprüfung",
+      "related_ids": [
+        "systemtypen-und-systemdifferenzierung",
+        "organisation-und-entscheidung",
+        "semantik-selbstbeschreibung-und-gedaechtnis",
+        "komplexitaet-und-kontingenz"
+      ]
+    },
+    {
+      "id": "semantik-selbstbeschreibung-und-gedaechtnis",
+      "title": "Semantik, Selbstbeschreibung und Gedächtnis",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Gesellschaftliche Selbstbeschreibungen sind nicht einfach Spiegel einer bereits fertig gegebenen Wirklichkeit. Mit Begriffen wie Semantik, Beobachtung zweiter Ordnung und…",
+      "library": "A",
+      "source_scope": "sekundäre theorieorientierte Rekonstruktion; Werk- und Inhaltsnachweise, keine durchgehende Primärtextprüfung",
+      "related_ids": [
+        "beobachtung-zweiter-ordnung",
+        "gesellschaftliche-evolution",
+        "medium-form-und-kommunikationsmedien",
+        "organisation-und-entscheidung"
+      ]
+    },
+    {
+      "id": "moral-achtung-und-missachtung",
+      "title": "Moral, Achtung und Missachtung",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Moralische Kommunikation lässt sich bei Luhmann unter anderem daran erkennen, dass Verhalten zum Anlass wird, Personen Achtung oder Missachtung zuzuschreiben. Das ermögli…",
+      "library": "A",
+      "source_scope": "rekonstruktiver Artikel mit lokalisiertem und partiell eingesehenem Manuskript-Primäranker; ethische Geltungsfragen bleiben offen",
+      "related_ids": [
+        "doppelte-kontingenz-und-erwartungen",
+        "widerspruch-konflikt-und-protest",
+        "anerkennung-fremdheit-und-begegnung",
+        "politik-recht-konflikt"
+      ]
+    },
+    {
+      "id": "vertrauen-risiko-und-gefahr",
+      "title": "Vertrauen, Risiko und Gefahr",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Vertrauen hilft, unter Unsicherheit Entscheidungen zu ermöglichen. Die Unterscheidung von Risiko und Gefahr betrifft dagegen die Zurechnung möglicher Schäden – insbesonde…",
+      "library": "A",
+      "source_scope": "sekundäre theorieorientierte Rekonstruktion; Werk- und Inhaltsnachweise, keine durchgehende Primärtextprüfung",
+      "related_ids": [
+        "doppelte-kontingenz-und-erwartungen",
+        "organisation-und-entscheidung",
+        "inklusion-exklusion-und-weltgesellschaft",
+        "moral-achtung-und-missachtung"
+      ]
+    },
+    {
+      "id": "widerspruch-konflikt-und-protest",
+      "title": "Widerspruch, Konflikt und Protest",
+      "category": "begriffshilfe",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Ein kommunizierter Widerspruch ist noch nicht dasselbe wie ein dauerhaftes Konfliktsystem. Konflikte können sich jedoch durch die wechselseitige Erwartung weiterer Gegenh…",
+      "library": "A",
+      "source_scope": "sekundäre theorieorientierte Rekonstruktion; Werk- und Inhaltsnachweise, keine durchgehende Primärtextprüfung",
+      "related_ids": [
+        "doppelte-kontingenz-und-erwartungen",
+        "moral-achtung-und-missachtung",
+        "organisation-und-entscheidung",
+        "politik-recht-konflikt",
+        "semantik-selbstbeschreibung-und-gedaechtnis"
       ]
     },
     {
@@ -128,14 +353,16 @@
       "title": "Werkentwicklung und Quellenkritik",
       "category": "quellenorientierung",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Quellenkritische Unterscheidung von geprüften Originalpassagen, Werkmetadaten und sekundären Rekonstruktionen.",
       "library": "B",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "autopoiesis",
         "operative-geschlossenheit",
-        "sinn"
+        "sinn",
+        "moral-achtung-und-missachtung",
+        "doppelte-kontingenz-und-erwartungen"
       ]
     },
     {
@@ -143,13 +370,15 @@
       "title": "Beobachtung, Erklärung und theoretischer Erkenntnisgewinn",
       "category": "analyseverfahren",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Methodische Differenzierung von Beobachtungs-, Zusammenhangs- und Erklärungsgewinn sowie Beobachtungsverlust.",
       "library": "C",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "kontrollierter-beobachtungswechsel",
-        "schulreform-und-lernklima"
+        "schulreform-und-lernklima",
+        "anerkennung-fremdheit-und-begegnung",
+        "moral-achtung-und-missachtung"
       ],
       "priority_position": 19
     },
@@ -158,13 +387,14 @@
       "title": "Kontrollierter Beobachtungswechsel",
       "category": "analyseverfahren",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Verfahren zum Vergleich theoretischer Unterscheidungen an einer konstant gehaltenen Ausgangsfrage.",
       "library": "C",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "erklaerung-oder-umbenennung",
-        "politik-recht-konflikt"
+        "politik-recht-konflikt",
+        "anerkennung-fremdheit-und-begegnung"
       ]
     },
     {
@@ -172,13 +402,15 @@
       "title": "Schulreform und Lernklima",
       "category": "fallanalyse",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Theoriegeleitete Analyse eines konstruierten schulischen Reformfalls unter Berücksichtigung alternativer Erklärungen.",
       "library": "D",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "systemtypen-und-systemdifferenzierung",
-        "erklaerung-oder-umbenennung"
+        "erklaerung-oder-umbenennung",
+        "doppelte-kontingenz-und-erwartungen",
+        "inklusion-exklusion-und-weltgesellschaft"
       ]
     },
     {
@@ -186,13 +418,15 @@
       "title": "Organisation und Entscheidung",
       "category": "fallanalyse",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Organisatorische Entscheidung und ihre Fortsetzung in einem hypothetischen Fall.",
       "library": "D",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "systemtypen-und-systemdifferenzierung",
-        "autopoiesis"
+        "autopoiesis",
+        "vertrauen-risiko-und-gefahr",
+        "widerspruch-konflikt-und-protest"
       ],
       "priority_position": 16
     },
@@ -201,13 +435,15 @@
       "title": "Politik und Recht: unterschiedliche Entscheidungszusammenhänge",
       "category": "fallanalyse",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Unterscheidung politischer und rechtlicher Entscheidungszusammenhänge anhand eines konstruierten Falles.",
       "library": "D",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "strukturelle-kopplung",
-        "kontrollierter-beobachtungswechsel"
+        "kontrollierter-beobachtungswechsel",
+        "codierung-programme-und-funktionssysteme",
+        "moral-achtung-und-missachtung"
       ]
     },
     {
@@ -215,13 +451,32 @@
       "title": "Mensch–KI-Kommunikation: Verstehen und Zurechnung",
       "category": "fallanalyse",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Kommunikative Anschlüsse und Zurechnungen in einem hypothetischen Mensch–KI-Dialog.",
       "library": "D",
       "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
       "related_ids": [
         "kommunikation-und-verstehen",
         "autopoiesis",
+        "kontrollierter-beobachtungswechsel",
+        "person-rolle-und-interpenetration",
+        "medium-form-und-kommunikationsmedien"
+      ]
+    },
+    {
+      "id": "anerkennung-fremdheit-und-begegnung",
+      "title": "Anerkennung, Fremdheit und Begegnung: ein kontrollierter Theorievergleich",
+      "category": "fallanalyse",
+      "status": "redaktioneller-arbeitsstand",
+      "last_reviewed": "2026-11-08",
+      "note": "Nicht jede respektvolle Begegnung ist bereits als Anerkennung im sozialphilosophischen Sinne untersucht. Ebenso ist Fremdheit nicht lediglich ein Defizit an Wissen. Der B…",
+      "library": "D",
+      "source_scope": "eigenständiger redaktioneller Theorievergleich mit konstruiertem Fall; keine empirische Untersuchung oder externer Peer Review",
+      "related_ids": [
+        "doppelte-kontingenz-und-erwartungen",
+        "person-rolle-und-interpenetration",
+        "inklusion-exklusion-und-weltgesellschaft",
+        "moral-achtung-und-missachtung",
         "kontrollierter-beobachtungswechsel"
       ]
     },
@@ -230,17 +485,18 @@
       "title": "Forschungsfragen und Revisionen",
       "category": "revision",
       "status": "redaktioneller-arbeitsstand",
-      "last_reviewed": "2026-11-06",
+      "last_reviewed": "2026-11-08",
       "note": "Offene Forschungsfragen, Grenzen bisheriger Belege, Werkgeschichte und wissenschaftliche Revisionsdokumentation.",
       "library": "E",
-      "source_scope": "redaktionelle Rekonstruktion, Teilprüfung oder eigene Methode; Einzelheiten im Artikel",
+      "source_scope": "redaktionelles Revisionsprogramm, keine Primärquelle",
       "related_ids": [
         "werkentwicklung-und-quellenstatus",
-        "erklaerung-oder-umbenennung"
+        "erklaerung-oder-umbenennung",
+        "begriffs-und-anschlusslandkarte"
       ]
     }
   ],
-  "last_editorial_update": "2026-11-06",
+  "last_editorial_update": "2026-11-08",
   "usage_entry_id": "so-nutzt-du-den-theorieatlas",
   "library_key": {
     "A": "Begriffs- und Strukturatlas",
@@ -250,5 +506,5 @@
     "E": "Forschungs- und Revisionsregister",
     "START": "Gebrauchsanleitung"
   },
-  "edition_note": "Wissenschaftsorientierte Redaktion. Statuswerte kennzeichnen Editions- und Nachweisumfang, nicht externe fachwissenschaftliche Begutachtung."
+  "edition_note": "Integrierte Edition aus 17 redaktionell weiterentwickelten Bestandsartikeln und 13 neuen Beiträgen. Registerverweise sind Lektürehinweise, keine Theoriebeweise; kein Anspruch auf vollständige Primärtextprüfung oder Peer Review."
 }

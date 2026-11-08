@@ -14,7 +14,11 @@ Sinn darf nicht schlicht mit bewusst erlebter Bedeutung gleichgesetzt werden. In
 
 Ebenso wenig ist Sinn notwendig Konsens oder positive Wertschätzung. Auch Kritik, Widerspruch, Täuschung, Ironie oder die Verweigerung eines Anschlusses können sinnhaft beobachtet werden, soweit sie Möglichkeiten für weitere Operationen eröffnen oder begrenzen. Der Beobachtungsfokus liegt auf **Selektion und Verweisung**, nicht darauf, ob die Äußerung sympathisch erscheint. [R]
 
-Sinn ist im Zusammenhang mit **Komplexität** zu lesen: Es gibt mehr denkbare Anschlüsse, als ein Ereignis aktualisieren kann. Die Wahl einer Möglichkeit lässt andere ungewählt und doch als Horizont verfügbar. **Kontingenz** verweist darauf, dass das Gewählte weder notwendig noch unmöglich ist. Diese begriffliche Nachbarschaft ist im späteren Artikel `komplexitaet-und-kontingenz` zu vertiefen. [R]
+Sinn ist im Zusammenhang mit **Komplexität** zu lesen: Es gibt mehr denkbare Anschlüsse, als ein Ereignis aktualisieren kann. Die Wahl einer Möglichkeit lässt andere ungewählt und doch als Horizont verfügbar. **Kontingenz** verweist darauf, dass das Gewählte weder notwendig noch unmöglich ist. Diese begriffliche Nachbarschaft ist im Artikel `komplexitaet-und-kontingenz` zu vertiefen. [R]
+
+### Sinn, Komplexität und Erwartung
+
+Die zuvor angekündigte Vertiefung `komplexitaet-und-kontingenz` ist Teil der integrierten Edition. Sie behandelt, warum der Horizont möglicher Anschlüsse nicht mit einer beliebigen Ansammlung von Optionen verwechselt werden sollte. Der weitere Anschluss `doppelte-kontingenz-und-erwartungen` fragt, weshalb in sozialen Situationen Erwartungen an Erwartungen relevant werden. Auch hier ist Sinn weder individuelle Zustimmung noch die normative Güte eines gewählten Anschlusses.
 
 ## 3. Konkrete Verwendung: ein Elternbrief
 

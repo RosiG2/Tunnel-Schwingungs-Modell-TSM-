@@ -23,6 +23,10 @@ Der praktische Anspruch lautet nicht: „Alle Perspektiven sind gleich richtig.�
 
 Was erklärt die Differenz? Sie verhindert zunächst die Vermischung von öffentlicher Zustimmung und rechtlicher Geltung. Die konkrete Gerichtsentscheidung erklärt erst eine Analyse der Akten, Rechtslage und Entscheidungsgründe. Wir dürfen aus abstrakten Systembegriffen kein bestimmtes Urteil ableiten.
 
+### Anerkennungstheorie und Systemtheorie im kontrollierten Vergleich
+
+Der neue Beitrag `anerkennung-fremdheit-und-begegnung` demonstriert, wie eine luhmannorientierte Kommunikationsanalyse und eine normative Anerkennungstheorie dasselbe konstruierte Ereignis mit unterschiedlichen Fragen untersuchen. Der kontrollierte Beobachtungswechsel besteht gerade darin, den Gegenstand beizubehalten, aber die jeweils behauptete Erkenntnisleistung und den jeweiligen Beobachtungsverlust gesondert auszuweisen. Aus einem Wechsel des Vokabulars allein folgt noch keine zusätzliche Erklärung.
+
 ## 4. Darstellung der Analyse
 
 ```text

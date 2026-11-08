@@ -48,6 +48,10 @@ Umgekehrt ist nicht jede systemische Veränderung ein Bruch der Autopoiesis. Pro
 
 **Psychische und soziale Systeme müssen unterschieden bleiben.** Die Fortsetzung von Gedanken und die Fortsetzung von Kommunikationen sind nicht ein einziger Prozess. Kommunikation setzt Bewusstsein und Wahrnehmung vielfach voraus; trotzdem wird ein Gedanke nicht unmittelbar zum Kommunikationsereignis, und kein Gespräch übernimmt die subjektive Erfahrung eines Menschen unverändert. Diese Unterscheidung ist **analytisch**; sie ist keine Aufforderung, Menschen bei sozialer Forschung zu ignorieren oder ihre Interessen geringzuschätzen.
 
+### Reproduktion ist nicht Evolution
+
+Autopoiesis bezeichnet die Reproduktion der jeweiligen Operationen; `gesellschaftliche-evolution` untersucht dagegen Veränderungen durch Variation, Selektion und Restabilisierung. Ein wiederholtes Kommunikationsmuster kann autopoietisch fortgesetzt werden, ohne dass eine neue Gesellschaftsform entsteht. Umgekehrt verlangt eine Erklärung von Veränderung mehr als die Aussage, das System „reproduziere sich anders“. Am Übergang zu `person-rolle-und-interpenetration` bleibt die Differenz biologischer, psychischer und sozialer Operationen zu wahren.
+
 ## 4. Erkenntnisleistung und Erklärungsgrenzen
 
 **[I – redaktionelle Ableitung]** Der stärkste Erklärungsanspruch besteht in der **Verschiebung des Bestandsproblems**: Eine Institution bleibt nicht deshalb dieselbe, weil alle Bestandteile konstant bleiben; sie bleibt als sozialer Zusammenhang erkennbar, wenn ihre aktuellen Operationen neue, zu ihr passende Operationen ermöglichen. So wird verständlich, warum eine Organisation trotz Personalwechseln bestehen und trotz derselben Personen in einen anderen Kommunikationsmodus wechseln kann.

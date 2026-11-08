@@ -78,6 +78,18 @@ Die folgende Matrix soll verhindern, dass Aussagen verschiedener Werkphasen ohne
 
 **Prüfbare Ergänzung:** Das offizielle Niklas-Luhmann-Archiv führt ein Werkverzeichnis: https://niklas-luhmann-archiv.de/person/werkverzeichnis . Der Verzeichnisnachweis ersetzt keine Lektüre des zitierten Werks.
 
+## B-008 – Zusätzliche Primäranker und Werkzugänge
+
+- **Niklas Luhmann, *Soziale Systeme* (1984):** Die öffentlich nachgewiesene Kapitelstruktur umfasst unter anderem doppelte Kontingenz, Interpenetration, Struktur und Zeit sowie Widerspruch und Konflikt. Nachweis: https://books.google.com/books/about/Soziale_Systeme.html?hl=de&id=13cSAQAAMAAJ. **Status:** Werk- und Kapitelnachweis, keine vollständige erneute Primärtextlektüre.
+- **Niklas Luhmann, *Die Gesellschaft der Gesellschaft* (1997):** Das Inhaltsverzeichnis weist die Kapitel „Kommunikationsmedien“, „Evolution“, „Differenzierung“ und „Selbstbeschreibungen“ sowie den Abschnitt „Weltgesellschaft“ aus. Nachweis: https://d-nb.info/967754534/04. **Status:** verifizierte Werkstruktur, keine vollständige Primärtextlektüre.
+- **Manuskript zum Erziehungssystem (1976):** öffentlich zugänglicher Textausschnitt zu doppelter Kontingenz und Erwartungserwartungen. https://niklas-luhmann-archiv.de/bestand/manuskripte/manuskript/MS_0112_0080. **Status:** begrenzter tatsächlich textlich eingesehener Primäranker.
+- **Manuskript zum Erziehungssystem (1974):** öffentlich zugänglicher Abschnitt „Moral als Code“ über Achtung und Missachtung. https://niklas-luhmann-archiv.de/bestand/manuskripte/manuskript/MS_0109_0001. **Status:** begrenzter tatsächlich textlich eingesehener Primäranker; keine automatische Übertragung auf das Spätwerk.
+- **„Inklusion und Exklusion“ (1994/1995):** Werkverzeichniseintrag im Luhmann-Archiv. https://niklas-luhmann-archiv.de/assets/NL-Werkverzeichnis.pdf. **Status:** bibliografischer Nachweis, nicht als vollständig gelesener Primärtext zu behandeln.
+- **Niklas Luhmann, *Die Moral der Gesellschaft* (2008):** Verlagsangaben zu den enthaltenen Aufsätzen. https://www.suhrkamp.de/buch/niklas-luhmann-die-moral-der-gesellschaft-t-9783518294710. **Status:** Werkverzeichnis und Themenzuordnung, nicht Volltextprüfung.
+- **Axel Honneth, *Kampf um Anerkennung*, sowie Nancy Fraser/Axel Honneth, *Umverteilung oder Anerkennung?*:** Verlagsangaben: https://www.suhrkamp.de/buch/axel-honneth-kampf-um-anerkennung-t-9783518287293 und https://www.suhrkamp.de/buch/umverteilung-oder-anerkennungo-t-9783518290606. **Status:** Vergleichsliteratur, keine Zuschreibung als Luhmannsche Originaltheorie.
+
+Die Bündelung schafft keine pauschale Höherstufung der 30 Beiträge auf Primärtextnachweisniveau. Jeder neue Artikel hält den Umfang seiner tatsächlich geprüften Quellen ausdrücklich fest.
+
 ## Differenzierung der Nachweisgrade
 
 **Unterschiedliche Nachweisgrade sind auseinanderzuhalten:**

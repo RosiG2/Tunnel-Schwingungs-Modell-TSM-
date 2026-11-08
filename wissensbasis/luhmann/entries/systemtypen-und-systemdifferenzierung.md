@@ -30,6 +30,10 @@ Moderne Gesellschaft wird unter anderem durch unterschiedliche gesellschaftliche
 
 Eine konkrete Kommunikation kann in mehreren Beschreibungen relevant werden: Eine Schulleitung entscheidet über Prüfungsorganisation, diskutiert rechtliche Zulässigkeit und reagiert auf politische Vorgaben. Daraus folgt nicht, dass ein einziges Ereignis ohne Unterscheidungsschärfe „alles gleichzeitig“ ist. Zu fragen ist, *in welcher Beobachtung* und *unter welchen Anschlussbedingungen* das Ereignis einer Organisation, Interaktion oder einem Funktionszusammenhang zugerechnet wird. Diese Zurechnungsfrage ist analytisch; sie darf nicht durch räumliche Zuordnung ersetzt werden. [R/I]
 
+### Systemtyp, Code und soziale Teilnahme
+
+Die Unterscheidung von Interaktion, Organisation und Gesellschaft betrifft die Art der Systembildung. Sie ist deshalb nicht identisch mit der funktionalen Differenzierung, deren Codes und Programme in `codierung-programme-und-funktionssysteme` vertieft werden. `inklusion-exklusion-und-weltgesellschaft` ergänzt die Frage, welche Positionen Personen in konkreten Kommunikationszusammenhängen einnehmen können. Eine Organisation kann an mehreren Funktionszusammenhängen teilnehmen, ohne mit ihnen begrifflich zusammenzufallen.
+
 ## 3. Anwendungslandkarte
 
 | Fragestellung | Zunächst passender Beobachtungsfokus | Was zusätzlich geprüft werden muss |

@@ -20,6 +20,10 @@ Eine Hochschulleitung kündigt eine neue Prüfungsordnung an. Studierende könne
 
 Der dargestellte Fall ist hypothetisch. Er verdeutlicht, warum die begriffliche Trennung von Kommunikation und bloßer Informationsweitergabe für die Beobachtung organisatorischer Abläufe relevant sein kann.
 
+## Medien, Erwartungen und kommunikative Anschlüsse
+
+Die Unterscheidung von Information, Mitteilung und Verstehen beantwortet noch nicht, weshalb Kommunikation über weite Entfernungen verbreitet oder trotz Ablehnungsmöglichkeiten angenommen wird. `medium-form-und-kommunikationsmedien` erschließt diese Medienprobleme; `doppelte-kontingenz-und-erwartungen` behandelt die wechselseitige Ungewissheit über Anschlussreaktionen. Gerade bei elektronischer Verbreitung sind technische Übertragung, kommunikatives Verstehen und Zustimmung analytisch getrennt zu halten.
+
 ## Quellenlage und Weiterführung
 
 Der Beitrag bietet eine sekundäre, systematische Rekonstruktion. Er enthält keine eigenständig authentifizierte Luhmann-Primärtextpassage und keine wörtlichen Zitate. Die Werkentwicklung zwischen der frühen Handlungsterminologie und späteren Darstellungen kommunikativer Autopoiesis wird im Werk- und Quellenatlas als eigener Prüfgegenstand behandelt.

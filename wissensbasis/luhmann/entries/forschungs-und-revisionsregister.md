@@ -23,6 +23,10 @@ Die nachstehenden Hinweise betreffen den gegenwärtigen Stand der Quellenlektür
 | **E-013** | Politische Codierung | Das Medium Macht, Regierung/Opposition und politische Programme anhand konkret belegter Werkstellen auseinanderhalten | Offen |
 | **E-014** | Beobachtungswechsel | Den Erkenntniswert eines methodisch kontrollierten Perspektivwechsels mit einperspektivischen Analysen vergleichen | Offen |
 
+### Neue Grundlagenanschlüsse und offene Forschung
+
+Die integrierte Edition schließt bisher offen gebliebene Grundlagenübergänge zwischen Sinn, Komplexität, doppelter Kontingenz, Person/Rolle, Medien, funktionaler Differenzierung, Evolution, Moral und Konflikt; sie ergänzt einen ausdrücklich theorievergleichenden Begegnungsfall. Die neuen Artikel sind redaktionelle Rekonstruktionen mit einzeln ausgewiesenem Werk-/Quellenstand. Die fortbestehenden **offenen wissenschaftlichen Aufgaben** sind insbesondere: (a) Primärtextprüfung der neu hinzugekommenen Monografieteile; (b) werkgeschichtliche Kontrolle früherer und späterer Moral- und Medientheorie; (c) empirische Gegenproben in den konstruierten Fällen; (d) Evaluation, ob die Begriffslandkarte die Suche verbessert, ohne falsche Begriffsäquivalenzen hervorzurufen. Das Erscheinen eines Artikels bedeutet nicht die Erledigung dieser Prüfaufgaben.
+
 ## 2. Dokumentierte Grenzen der bisherigen Forschung
 
 Die bisherige Quellenlage erlaubt mehrere wichtige, aber begrenzte Aussagen:
@@ -54,7 +58,7 @@ Der Werk- und Quellenatlas (`werkentwicklung-und-quellenstatus`) dokumentiert di
 
 ## 5. Editionsstand
 
-Die digitale Ausgabe umfasst in der Edition **`atlas-0.3-redaktion`** siebzehn registrierte Beiträge. Sie geht auf eine erste Auswahl von zwei kürzeren Begriffskommentaren (`pilot-0.1`) und die anschließende Erweiterung (`atlas-0.2-redaktion`) zurück. Die Kennzeichnung der Beiträge im Register dokumentiert ihre redaktionelle Herkunft und bedeutet keine externe fachwissenschaftliche Begutachtung.
+Die digitale Ausgabe umfasst seit dem 8. November 2026 in der Edition **`atlas-0.4-redaktion`** dreißig registrierte Beiträge; die vorherige Edition `atlas-0.3-redaktion` umfasste siebzehn. Sie geht auf eine erste Auswahl von zwei kürzeren Begriffskommentaren (`pilot-0.1`) und die anschließende Erweiterung (`atlas-0.2-redaktion`) zurück. Die Kennzeichnung der Beiträge im Register dokumentiert ihre redaktionelle Herkunft und bedeutet keine externe fachwissenschaftliche Begutachtung.
 
 Betriebs- und Publikationsvorgänge sind Gegenstand einer separaten Editionsverwaltung; sie sind für die wissenschaftliche Geltung der Beiträge nicht maßgeblich.
 

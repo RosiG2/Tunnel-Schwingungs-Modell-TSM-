@@ -14,6 +14,10 @@ Ein psychischer Vorgang wird nicht allein dadurch zu Kommunikation, dass jemand 
 
 Ein weiteres Beispiel ist das Verhältnis von Politik und Recht. Ein politischer Beschluss kann rechtlich folgenreich sein, muss jedoch durch rechtliche Verfahren, Normen und Unterscheidungen anschlussfähig werden. Eine richterliche Entscheidung ist nicht schlicht eine politische Weisung. Umgekehrt ist die Politik von Recht und Gerichtsentscheidungen betroffen, ohne deshalb identisch mit Recht zu operieren. Das Beispiel ist eine illustrative Rekonstruktion, **keine** geprüfte Analyse eines bestimmten Urteils. [I]
 
+### Psychisches, Soziales und Begegnung
+
+`person-rolle-und-interpenetration` unterscheidet die soziale Adressierung von Personen von psychischem Erleben. `doppelte-kontingenz-und-erwartungen` untersucht, warum gerade die Undurchsichtigkeit des Gegenübers Erwartungsbildung begünstigen kann. Beide Anschlüsse präzisieren eine wichtige Grenze dieses Artikels: Die Rede von struktureller Kopplung ersetzt weder die Erklärung einer konkreten individuellen Erfahrung noch den Nachweis eines kausalen Zusammenhangs zwischen Bewusstsein und Kommunikation.
+
 ## 3. Struktur statt Zauberwort
 
 Eine tragfähige Kopplungsanalyse muss vier Angaben machen:

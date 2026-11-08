@@ -32,6 +32,10 @@ Eine Schulbehörde schreibt ein neues Curriculum mit kooperativen Lernformen vor
 
 Diese Hypothesen konkurrieren nicht notwendig miteinander. Ihre konkrete Tragweite ist empirisch zu prüfen.
 
+### Erwartungen und Beteiligung im Unterricht
+
+Zusätzlich zur bisherigen Unterscheidung von Reformbeschluss, Organisation und Unterrichtsinteraktion lassen sich die neuen Artikel `doppelte-kontingenz-und-erwartungen`, `person-rolle-und-interpenetration` und `inklusion-exklusion-und-weltgesellschaft` als konkurrierende oder ergänzende Untersuchungspfade heranziehen. Konkret wäre zu erheben, ob Lernende Fragen stellen können, welche Reaktionen erwartet werden und welche rechtlichen oder materiellen Zugangsbedingungen bestehen. Damit wird kein bisheriger Fallbefund nachträglich behauptet; die Ergänzung benennt prüfbare weitere Beobachtungsgrößen.
+
 ## Vergleichsdesign ohne Scheingenauigkeit
 
 Eine spätere Studie könnte zwei oder mehr Schulen mit unterschiedlichen Reformverläufen vergleichen. Erforderlich wären vorab festgelegte Vergleichskriterien: Schulform, sozioökonomischer Kontext, Lehrkräftemangel, Umfang der Reform und Zeitpunkt. Die Erhebung könnte dokumentierte Entscheidungswege, Unterrichtsbeobachtungen, anonymisierte Schüler- und Lehrkräftebefragungen und zeitliche Veränderungen zusammenführen.
