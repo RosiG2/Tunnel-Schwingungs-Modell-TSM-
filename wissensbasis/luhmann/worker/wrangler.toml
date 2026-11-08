@@ -1,6 +1,7 @@
 name = "luhmann-knowledge-mcp"
 main = "src/index.ts"
 compatibility_date = "2026-10-01"
+keep_vars = true
 
 [vars]
 # Öffentliches, LOKALES Wissen aus Deinem GitHub-Repository. Konfiguriere nach Wunsch.
