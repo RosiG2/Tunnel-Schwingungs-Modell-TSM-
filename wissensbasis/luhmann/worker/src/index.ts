@@ -48,7 +48,7 @@ function makeServer(root:string){
       if(!entry)return errorText('Eintrag existiert nicht im veröffentlichten Register');
       const url=`${root}/entries/${id}.md`;
       const content=await readPublicText(url);
-      return {content:[{type:'text' as const,text:JSON.stringify({metadata:entry,edition:index.edition,source:url,content},null,2)}]};
+      return {content:[{type:'text' as const,text:JSON.stringify({metadata:entry,edition:index.edition,source:url,article_markdown:content},null,2)}]};
     }catch(e){return errorText(String(e));}
   });
   server.registerTool('luhmann_themenrecherche',{
