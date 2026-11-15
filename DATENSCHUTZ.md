@@ -1,6 +1,6 @@
 # Datenschutzinformationen zu meinen KI-Plugins und Assistenten
 
-**Stand: 7. November 2026**
+**Stand: 15. November 2026**
 
 ## 1. Geltungsbereich
 
@@ -11,6 +11,8 @@ Die Informationen sind nicht auf einen bestimmten Plugin-Namen, eine Korpusversi
 **Wichtige Abgrenzung:** Die nachfolgenden Angaben zur Bereitstellung ohne eigenen Gesprächsserver gelten für wissens- oder skillbasierte Anwendungen **ohne zusätzliche, von mir betriebene externe Datenanbindung**. Nutzt ein bestimmtes Plugin dagegen einen eigenen Server, eine externe API, eine MCP-Verbindung, ein Formular, ein Analysetool oder eine sonstige zusätzliche Übermittlung personenbezogener Daten, müssen dessen konkrete Datenflüsse und erforderlichenfalls ergänzende Datenschutzinformationen gesondert ausgewiesen werden. Ein Verweis auf diese allgemeine Seite allein deckt solche abweichenden Verarbeitungen nicht ab.
 
 **Ergänzung für den Luhmann – Theorieatlas:** Das Plugin verwendet eine eigene, nur lesend zugreifende MCP-Wissensbrücke auf Cloudflare Workers für die Recherche in einer öffentlichen GitHub-Wissensbibliothek. Bei ihrer Nutzung werden die tatsächlich aufgerufenen Werkzeugargumente, beispielsweise Suchfragen oder Artikelkennungen, an den Cloudflare-Worker übertragen. Der dafür maßgebliche [projektspezifische Datenschutznachtrag zum Luhmann – Theorieatlas](./wissensbasis/luhmann/DATENSCHUTZ_MCP.md) ergänzt diese allgemeine Erklärung. Er beschreibt die Datenwege und Empfänger, die überprüften Cloudflare-Protokollierungs- und Exportkonfigurationen sowie die Datenschutz- und Vertragsgrundlagen. **Beide Texte sind für die Nutzung dieses Plugins gemeinsam zu lesen.**
+
+**Ergänzung für das Tunnel-Schwingungs-Modell mit PGK-Forschungsbrücke:** Bei der Nutzung der PGK-Forschungswerkzeuge können konkrete Werkzeugargumente, etwa Suchbegriffe, Kennungen oder zu prüfende Entwürfe, an eine öffentlich erreichbare, lesende Cloudflare-MCP-Wissensbrücke übertragen werden. Die Datenwege, die Verarbeitung der Werkzeugargumente, beteiligte Anbieter und die Grenzen der technischen Protokollierung beschreibt die [ergänzende Datenschutzerklärung zur TSM–PGK-Forschungsbrücke](./wissensbasis/tsm-pgk/DATENSCHUTZ_MCP.md). **Für diese Anbindung sind die allgemeine Erklärung und die PGK-Ergänzung gemeinsam zu lesen.**
 
 ## 2. Verantwortliche und Kontakt
 
