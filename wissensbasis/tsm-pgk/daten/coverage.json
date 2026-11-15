@@ -1,0 +1,2502 @@
+{
+  "items": [
+    {
+      "claim_ids": [
+        "PGKC-031",
+        "PGKC-032",
+        "PGKC-299"
+      ],
+      "finding_id": "INTEGRATION-FIND-0001",
+      "originalkennung": "BASE-v1.39",
+      "pgkm_vorschlag": [
+        "PGKM-015"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-031",
+        "PGKC-099",
+        "PGKC-116"
+      ],
+      "finding_id": "INTEGRATION-FIND-0002",
+      "originalkennung": "PROV-INTEGRATION-01 / PTL-01",
+      "pgkm_vorschlag": [
+        "PGKM-007",
+        "PGKM-015",
+        "PGKM-026"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-014",
+        "PGKC-062",
+        "PGKC-302"
+      ],
+      "finding_id": "INTEGRATION-FIND-0003",
+      "originalkennung": "TG-ROOT-01 / ZR-ROOT-01",
+      "pgkm_vorschlag": [
+        "PGKM-007",
+        "PGKM-020",
+        "PGKM-027"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-001"
+      ],
+      "finding_id": "INTEGRATION-FIND-0004",
+      "originalkennung": "EARLY-TOY",
+      "pgkm_vorschlag": [
+        "PGKM-001"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-002",
+        "PGKC-003"
+      ],
+      "finding_id": "INTEGRATION-FIND-0005",
+      "originalkennung": "PGK-0.20/0.21",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-002"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-002",
+        "PGKC-033",
+        "PGKC-034"
+      ],
+      "finding_id": "INTEGRATION-FIND-0006",
+      "originalkennung": "PGK-0.29",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-002",
+        "PGKM-017"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-033",
+        "PGKC-034"
+      ],
+      "finding_id": "INTEGRATION-FIND-0007",
+      "originalkennung": "PGK-0.30",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-002",
+        "PGKM-017"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-002",
+        "PGKC-004"
+      ],
+      "finding_id": "INTEGRATION-FIND-0008",
+      "originalkennung": "PGK-0.31",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-002",
+        "PGKM-017"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-001",
+        "PGKC-034"
+      ],
+      "finding_id": "INTEGRATION-FIND-0009",
+      "originalkennung": "PGK-0.32",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-002",
+        "PGKM-017"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-002",
+        "PGKC-047"
+      ],
+      "finding_id": "INTEGRATION-FIND-0010",
+      "originalkennung": "PGK-0.33",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-002",
+        "PGKM-017"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-042",
+        "PGKC-047"
+      ],
+      "finding_id": "INTEGRATION-FIND-0011",
+      "originalkennung": "PGK-0.34",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-002",
+        "PGKM-017"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-047",
+        "PGKC-132"
+      ],
+      "finding_id": "INTEGRATION-FIND-0012",
+      "originalkennung": "PGK-0.35",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-002",
+        "PGKM-017"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-047",
+        "PGKC-098"
+      ],
+      "finding_id": "INTEGRATION-FIND-0013",
+      "originalkennung": "PGK-0.36",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-002",
+        "PGKM-017"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-042",
+        "PGKC-047"
+      ],
+      "finding_id": "INTEGRATION-FIND-0014",
+      "originalkennung": "PGK-0.37A",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-024"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-042",
+        "PGKC-047"
+      ],
+      "finding_id": "INTEGRATION-FIND-0015",
+      "originalkennung": "PGK-0.37B",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-024"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-042",
+        "PGKC-047"
+      ],
+      "finding_id": "INTEGRATION-FIND-0016",
+      "originalkennung": "PGK-0.37C",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-024"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-042",
+        "PGKC-047"
+      ],
+      "finding_id": "INTEGRATION-FIND-0017",
+      "originalkennung": "PGK-0.38",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-024"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-033",
+        "PGKC-034"
+      ],
+      "finding_id": "INTEGRATION-FIND-0018",
+      "originalkennung": "PGK-0.39",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-002",
+        "PGKM-017"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-001",
+        "PGKC-033"
+      ],
+      "finding_id": "INTEGRATION-FIND-0019",
+      "originalkennung": "PGK-0.40",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-002",
+        "PGKM-017"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-001",
+        "PGKC-033",
+        "PGKC-034"
+      ],
+      "finding_id": "INTEGRATION-FIND-0020",
+      "originalkennung": "PGK-0.41",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-002",
+        "PGKM-017"
+      ],
+      "research_group_id": "B01"
+    },
+    {
+      "claim_ids": [
+        "PGKC-129",
+        "PGKC-185",
+        "PGKC-229"
+      ],
+      "finding_id": "INTEGRATION-FIND-0021",
+      "originalkennung": "PGK-0.42E / G20R / G20E / G22",
+      "pgkm_vorschlag": [
+        "PGKM-014",
+        "PGKM-028"
+      ],
+      "research_group_id": "B02"
+    },
+    {
+      "claim_ids": [
+        "PGKC-130",
+        "PGKC-186",
+        "PGKC-230",
+        "PGKC-029",
+        "PGKC-030"
+      ],
+      "finding_id": "INTEGRATION-FIND-0022",
+      "originalkennung": "PGK-0.43A2YE / BS1–BS3 / FULLC-90330",
+      "pgkm_vorschlag": [
+        "PGKM-014",
+        "PGKM-028"
+      ],
+      "research_group_id": "B02"
+    },
+    {
+      "claim_ids": [
+        "PGKC-129",
+        "PGKC-130",
+        "PGKC-185",
+        "PGKC-186",
+        "PGKC-229",
+        "PGKC-230"
+      ],
+      "finding_id": "INTEGRATION-FIND-0023",
+      "originalkennung": "PGK-0.43A2YE / EventGerm_C",
+      "pgkm_vorschlag": [
+        "PGKM-014",
+        "PGKM-028"
+      ],
+      "research_group_id": "B02"
+    },
+    {
+      "claim_ids": [
+        "PGKC-131",
+        "PGKC-187"
+      ],
+      "finding_id": "INTEGRATION-FIND-0024",
+      "originalkennung": "PGK-0.43A2YF",
+      "pgkm_vorschlag": [
+        "PGKM-014",
+        "PGKM-017"
+      ],
+      "research_group_id": "B02"
+    },
+    {
+      "claim_ids": [
+        "PGKC-129",
+        "PGKC-130"
+      ],
+      "finding_id": "INTEGRATION-FIND-0025",
+      "originalkennung": "PGK-0.43A2YG",
+      "pgkm_vorschlag": [
+        "PGKM-014",
+        "PGKM-017"
+      ],
+      "research_group_id": "B02"
+    },
+    {
+      "claim_ids": [
+        "PGKC-130",
+        "PGKC-187"
+      ],
+      "finding_id": "INTEGRATION-FIND-0026",
+      "originalkennung": "PGK-0.43A2YH",
+      "pgkm_vorschlag": [
+        "PGKM-014",
+        "PGKM-017"
+      ],
+      "research_group_id": "B02"
+    },
+    {
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-302"
+      ],
+      "finding_id": "INTEGRATION-FIND-0027",
+      "originalkennung": "PGK-0.43A2YI",
+      "pgkm_vorschlag": [
+        "PGKM-014",
+        "PGKM-017"
+      ],
+      "research_group_id": "B02"
+    },
+    {
+      "claim_ids": [
+        "PGKC-024",
+        "PGKC-281",
+        "PGKC-302"
+      ],
+      "finding_id": "INTEGRATION-FIND-0028",
+      "originalkennung": "PGK-0.43A2YJ",
+      "pgkm_vorschlag": [
+        "PGKM-014",
+        "PGKM-017"
+      ],
+      "research_group_id": "B02"
+    },
+    {
+      "claim_ids": [
+        "PGKC-029",
+        "PGKC-030",
+        "PGKC-275",
+        "PGKC-276"
+      ],
+      "finding_id": "INTEGRATION-FIND-0029",
+      "originalkennung": "PGK-0.43A2YE-RQ / reduced-QQ",
+      "pgkm_vorschlag": [
+        "PGKM-014"
+      ],
+      "research_group_id": "B02"
+    },
+    {
+      "claim_ids": [
+        "PGKC-002",
+        "PGKC-024",
+        "PGKC-025",
+        "PGKC-267"
+      ],
+      "finding_id": "INTEGRATION-FIND-0030",
+      "originalkennung": "FSTT-01E2",
+      "pgkm_vorschlag": [
+        "PGKM-012"
+      ],
+      "research_group_id": "B03"
+    },
+    {
+      "claim_ids": [
+        "PGKC-002",
+        "PGKC-024",
+        "PGKC-025",
+        "PGKC-266",
+        "PGKC-267",
+        "PGKC-281",
+        "A6N-C001"
+      ],
+      "finding_id": "INTEGRATION-FIND-0031",
+      "originalkennung": "FSTT-01F",
+      "pgkm_vorschlag": [
+        "PGKM-012",
+        "PGKM-002"
+      ],
+      "research_group_id": "B03"
+    },
+    {
+      "claim_ids": [
+        "A6N-C002",
+        "A6N-C008",
+        "PGKC-031"
+      ],
+      "finding_id": "INTEGRATION-FIND-0032",
+      "originalkennung": "CSTOP-ACCESS-01 / PGK-ROOT-01",
+      "pgkm_vorschlag": [
+        "PGKM-005",
+        "PGKM-011",
+        "PGKM-015"
+      ],
+      "research_group_id": "B03"
+    },
+    {
+      "claim_ids": [
+        "A6N-C002",
+        "A6N-C003"
+      ],
+      "finding_id": "INTEGRATION-FIND-0033",
+      "originalkennung": "FSTT-01B/01C/01D",
+      "pgkm_vorschlag": [
+        "PGKM-005",
+        "PGKM-012",
+        "PGKM-013"
+      ],
+      "research_group_id": "B03"
+    },
+    {
+      "claim_ids": [
+        "A6N-C002",
+        "A6N-C004",
+        "PGKC-026",
+        "PGKC-032"
+      ],
+      "finding_id": "INTEGRATION-FIND-0034",
+      "originalkennung": "PGK-LAMBDA-NAHT / SEAM-H3",
+      "pgkm_vorschlag": [
+        "PGKM-013",
+        "PGKM-008",
+        "PGKM-012"
+      ],
+      "research_group_id": "B03"
+    },
+    {
+      "claim_ids": [
+        "PGKC-014",
+        "PGKC-022",
+        "PGKC-302"
+      ],
+      "finding_id": "INTEGRATION-FIND-0035",
+      "originalkennung": "PGK-TG-ROOT-01D",
+      "pgkm_vorschlag": [
+        "PGKM-007",
+        "PGKM-011"
+      ],
+      "research_group_id": "B04"
+    },
+    {
+      "claim_ids": [
+        "PGKC-004",
+        "PGKC-022",
+        "PGKC-302"
+      ],
+      "finding_id": "INTEGRATION-FIND-0036",
+      "originalkennung": "TG-ROOT-01A/01B/01C",
+      "pgkm_vorschlag": [
+        "PGKM-007",
+        "PGKM-011"
+      ],
+      "research_group_id": "B04"
+    },
+    {
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-116",
+        "PGKC-302"
+      ],
+      "finding_id": "INTEGRATION-FIND-0037",
+      "originalkennung": "PGK-TG-ROOT-01E",
+      "pgkm_vorschlag": [
+        "PGKM-007",
+        "PGKM-026"
+      ],
+      "research_group_id": "B04"
+    },
+    {
+      "claim_ids": [
+        "PGKC-021"
+      ],
+      "finding_id": "INTEGRATION-FIND-0038",
+      "originalkennung": "FRE-01 / Recovery-Checkpoint",
+      "pgkm_vorschlag": [
+        "PGKM-010"
+      ],
+      "research_group_id": "B04"
+    },
+    {
+      "claim_ids": [
+        "PGKC-021"
+      ],
+      "finding_id": "INTEGRATION-FIND-0039",
+      "originalkennung": "FRE-01B / 107300–107301 × tr/eta",
+      "pgkm_vorschlag": [
+        "PGKM-010"
+      ],
+      "research_group_id": "B04"
+    },
+    {
+      "claim_ids": [
+        "PGKC-021"
+      ],
+      "finding_id": "INTEGRATION-FIND-0040",
+      "originalkennung": "FRE-01B / BLOCKED-Checkpoint",
+      "pgkm_vorschlag": [
+        "PGKM-010"
+      ],
+      "research_group_id": "B04"
+    },
+    {
+      "claim_ids": [
+        "PGKC-023",
+        "PGKC-206",
+        "PGKC-250",
+        "PGKC-264"
+      ],
+      "finding_id": "INTEGRATION-FIND-0041",
+      "originalkennung": "BRW1G_D / DICT_D",
+      "pgkm_vorschlag": [
+        "PGKM-011",
+        "PGKM-028"
+      ],
+      "research_group_id": "B04"
+    },
+    {
+      "claim_ids": [
+        "PGKC-023",
+        "PGKC-206",
+        "PGKC-250",
+        "PGKC-264"
+      ],
+      "finding_id": "INTEGRATION-FIND-0042",
+      "originalkennung": "PGK-BRW-CANONICAL-REBUILD-01 / D9",
+      "pgkm_vorschlag": [
+        "PGKM-011",
+        "PGKM-028"
+      ],
+      "research_group_id": "B04"
+    },
+    {
+      "claim_ids": [
+        "PGKC-022",
+        "PGKC-031"
+      ],
+      "finding_id": "INTEGRATION-FIND-0043",
+      "originalkennung": "WR-01 / MA-ROOT-01",
+      "pgkm_vorschlag": [
+        "PGKM-011",
+        "PGKM-015"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-315",
+        "PGKC-316",
+        "PGKC-317",
+        "A6N-C004",
+        "A6N-C005",
+        "A6N-C006"
+      ],
+      "finding_id": "INTEGRATION-FIND-0044",
+      "originalkennung": "A6N-01 / A6N-T1 / PGKM-029",
+      "pgkm_vorschlag": [
+        "PGKM-029",
+        "PGKM-013",
+        "PGKM-008"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "A6N-C001",
+        "A6N-C002",
+        "A6N-C003",
+        "A6N-C007",
+        "A6N-C008",
+        "A6N-C009",
+        "PGKC-293",
+        "PGKC-300",
+        "PGKC-305"
+      ],
+      "finding_id": "INTEGRATION-FIND-0045",
+      "originalkennung": "A6N-01 / prospektives G6",
+      "pgkm_vorschlag": [
+        "PGKM-005",
+        "PGKM-009",
+        "PGKM-020"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-092",
+        "PGKC-099"
+      ],
+      "finding_id": "INTEGRATION-FIND-0046",
+      "originalkennung": "PGK-0.100",
+      "pgkm_vorschlag": [
+        "PGKM-023",
+        "PGKM-025"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-093",
+        "PGKC-109"
+      ],
+      "finding_id": "INTEGRATION-FIND-0047",
+      "originalkennung": "PGK-0.101",
+      "pgkm_vorschlag": [
+        "PGKM-023",
+        "PGKM-026"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-094"
+      ],
+      "finding_id": "INTEGRATION-FIND-0048",
+      "originalkennung": "PGK-0.102",
+      "pgkm_vorschlag": [
+        "PGKM-024"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-095"
+      ],
+      "finding_id": "INTEGRATION-FIND-0049",
+      "originalkennung": "PGK-0.103",
+      "pgkm_vorschlag": [
+        "PGKM-024"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-096",
+        "PGKC-111"
+      ],
+      "finding_id": "INTEGRATION-FIND-0050",
+      "originalkennung": "PGK-0.104",
+      "pgkm_vorschlag": [
+        "PGKM-024",
+        "PGKM-026"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-097"
+      ],
+      "finding_id": "INTEGRATION-FIND-0051",
+      "originalkennung": "PGK-0.105",
+      "pgkm_vorschlag": [
+        "PGKM-024"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-098",
+        "PGKC-166",
+        "PGKC-286",
+        "PGKC-287"
+      ],
+      "finding_id": "INTEGRATION-FIND-0052",
+      "originalkennung": "PGK-0.106",
+      "pgkm_vorschlag": [
+        "PGKM-024"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-099",
+        "PGKC-286",
+        "PGKC-287"
+      ],
+      "finding_id": "INTEGRATION-FIND-0053",
+      "originalkennung": "PGK-0.107",
+      "pgkm_vorschlag": [
+        "PGKM-025",
+        "PGKM-024"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-100"
+      ],
+      "finding_id": "INTEGRATION-FIND-0054",
+      "originalkennung": "PGK-0.108",
+      "pgkm_vorschlag": [
+        "PGKM-025"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-101"
+      ],
+      "finding_id": "INTEGRATION-FIND-0055",
+      "originalkennung": "PGK-0.109",
+      "pgkm_vorschlag": [
+        "PGKM-025"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-102",
+        "PGKC-096"
+      ],
+      "finding_id": "INTEGRATION-FIND-0056",
+      "originalkennung": "PGK-0.110",
+      "pgkm_vorschlag": [
+        "PGKM-025",
+        "PGKM-024"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-103",
+        "PGKC-167"
+      ],
+      "finding_id": "INTEGRATION-FIND-0057",
+      "originalkennung": "PGK-0.111",
+      "pgkm_vorschlag": [
+        "PGKM-025"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-104",
+        "PGKC-168"
+      ],
+      "finding_id": "INTEGRATION-FIND-0058",
+      "originalkennung": "PGK-0.112R",
+      "pgkm_vorschlag": [
+        "PGKM-025"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-105",
+        "PGKC-169"
+      ],
+      "finding_id": "INTEGRATION-FIND-0059",
+      "originalkennung": "PGK-0.113R",
+      "pgkm_vorschlag": [
+        "PGKM-025"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-009",
+        "PGKC-010",
+        "PGKC-106",
+        "PGKC-170",
+        "PGKC-288"
+      ],
+      "finding_id": "INTEGRATION-FIND-0060",
+      "originalkennung": "PGK-0.114",
+      "pgkm_vorschlag": [
+        "PGKM-005",
+        "PGKM-025"
+      ],
+      "research_group_id": "B05"
+    },
+    {
+      "claim_ids": [
+        "PGKC-107",
+        "PGKC-297"
+      ],
+      "finding_id": "INTEGRATION-FIND-0061",
+      "originalkennung": "PGK-0.115A",
+      "pgkm_vorschlag": [
+        "PGKM-025"
+      ],
+      "research_group_id": "B06"
+    },
+    {
+      "claim_ids": [
+        "PGKC-106",
+        "PGKC-107",
+        "PGKC-172"
+      ],
+      "finding_id": "INTEGRATION-FIND-0062",
+      "originalkennung": "PRE-0.115",
+      "pgkm_vorschlag": [
+        "PGKM-025",
+        "PGKM-026"
+      ],
+      "research_group_id": "B06"
+    },
+    {
+      "claim_ids": [
+        "PGKC-106",
+        "PGKC-107",
+        "PGKC-171",
+        "PGKC-290"
+      ],
+      "finding_id": "INTEGRATION-FIND-0063",
+      "originalkennung": "PGK-0.115B / FINAL 4254e250",
+      "pgkm_vorschlag": [
+        "PGKM-025",
+        "PGKM-026"
+      ],
+      "research_group_id": "B06"
+    },
+    {
+      "claim_ids": [
+        "PGKC-106",
+        "PGKC-107",
+        "PGKC-171",
+        "PGKC-290",
+        "PGKC-297"
+      ],
+      "finding_id": "INTEGRATION-FIND-0064",
+      "originalkennung": "PGK-0.115B / FINAL d78604a0",
+      "pgkm_vorschlag": [
+        "PGKM-025",
+        "PGKM-026"
+      ],
+      "research_group_id": "B06"
+    },
+    {
+      "claim_ids": [
+        "PGKC-106",
+        "PGKC-107",
+        "PGKC-171",
+        "PGKC-290"
+      ],
+      "finding_id": "INTEGRATION-FIND-0065",
+      "originalkennung": "PGK-0.115B / FINAL edda3993",
+      "pgkm_vorschlag": [
+        "PGKM-025",
+        "PGKM-026"
+      ],
+      "research_group_id": "B06"
+    },
+    {
+      "claim_ids": [
+        "PGKC-106",
+        "PGKC-107",
+        "PGKC-297"
+      ],
+      "finding_id": "INTEGRATION-FIND-0066",
+      "originalkennung": "PGK-0.115B / WORK",
+      "pgkm_vorschlag": [
+        "PGKM-025",
+        "PGKM-026"
+      ],
+      "research_group_id": "B06"
+    },
+    {
+      "claim_ids": [
+        "PGKC-107",
+        "PGKC-171",
+        "PGKC-272",
+        "PGKC-273",
+        "PGKC-274",
+        "PGKC-280",
+        "PGKC-289",
+        "PGKC-290"
+      ],
+      "finding_id": "INTEGRATION-FIND-0067",
+      "originalkennung": "PGK-0.115C",
+      "pgkm_vorschlag": [
+        "PGKM-006",
+        "PGKM-025",
+        "PGKM-026"
+      ],
+      "research_group_id": "B06"
+    },
+    {
+      "claim_ids": [
+        "PGKC-108",
+        "PGKC-172"
+      ],
+      "finding_id": "INTEGRATION-FIND-0068",
+      "originalkennung": "PGK-0.116",
+      "pgkm_vorschlag": [
+        "PGKM-026",
+        "PGKM-019"
+      ],
+      "research_group_id": "B06"
+    },
+    {
+      "claim_ids": [
+        "PGKC-109",
+        "PGKC-093",
+        "PGKC-171"
+      ],
+      "finding_id": "INTEGRATION-FIND-0069",
+      "originalkennung": "PGK-0.117",
+      "pgkm_vorschlag": [
+        "PGKM-026",
+        "PGKM-023"
+      ],
+      "research_group_id": "B06"
+    },
+    {
+      "claim_ids": [
+        "PGKC-110",
+        "PGKC-111"
+      ],
+      "finding_id": "INTEGRATION-FIND-0070",
+      "originalkennung": "PGK-0.118",
+      "pgkm_vorschlag": [
+        "PGKM-026"
+      ],
+      "research_group_id": "B06"
+    },
+    {
+      "claim_ids": [
+        "PGKC-111",
+        "PGKC-096"
+      ],
+      "finding_id": "INTEGRATION-FIND-0071",
+      "originalkennung": "PGK-0.119",
+      "pgkm_vorschlag": [
+        "PGKM-026",
+        "PGKM-024"
+      ],
+      "research_group_id": "B06"
+    },
+    {
+      "claim_ids": [
+        "PGKC-112",
+        "PGKC-037",
+        "PGKC-049",
+        "PGKC-067"
+      ],
+      "finding_id": "INTEGRATION-FIND-0072",
+      "originalkennung": "PGK-0.120",
+      "pgkm_vorschlag": [
+        "PGKM-026",
+        "PGKM-020"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-113",
+        "PGKC-173"
+      ],
+      "finding_id": "INTEGRATION-FIND-0073",
+      "originalkennung": "PGK-0.121",
+      "pgkm_vorschlag": [
+        "PGKM-026"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-114",
+        "PGKC-038"
+      ],
+      "finding_id": "INTEGRATION-FIND-0074",
+      "originalkennung": "PGK-0.122",
+      "pgkm_vorschlag": [
+        "PGKM-026",
+        "PGKM-016"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-115",
+        "PGKC-116"
+      ],
+      "finding_id": "INTEGRATION-FIND-0075",
+      "originalkennung": "PGK-0.123",
+      "pgkm_vorschlag": [
+        "PGKM-026"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-116",
+        "PGKC-115"
+      ],
+      "finding_id": "INTEGRATION-FIND-0076",
+      "originalkennung": "PGK-0.124",
+      "pgkm_vorschlag": [
+        "PGKM-026"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-117",
+        "PGKC-118"
+      ],
+      "finding_id": "INTEGRATION-FIND-0077",
+      "originalkennung": "PGK-0.125",
+      "pgkm_vorschlag": [
+        "PGKM-026",
+        "PGKM-027"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-118",
+        "PGKC-174",
+        "PGKC-201"
+      ],
+      "finding_id": "INTEGRATION-FIND-0078",
+      "originalkennung": "PGK-0.126",
+      "pgkm_vorschlag": [
+        "PGKM-007",
+        "PGKM-027"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-119",
+        "PGKC-175"
+      ],
+      "finding_id": "INTEGRATION-FIND-0079",
+      "originalkennung": "PGK-0.127",
+      "pgkm_vorschlag": [
+        "PGKM-027"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-014",
+        "PGKC-120",
+        "PGKC-176"
+      ],
+      "finding_id": "INTEGRATION-FIND-0080",
+      "originalkennung": "PGK-0.128",
+      "pgkm_vorschlag": [
+        "PGKM-027",
+        "PGKM-007"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-121",
+        "PGKC-177",
+        "PGKC-246",
+        "PGKC-256"
+      ],
+      "finding_id": "INTEGRATION-FIND-0081",
+      "originalkennung": "PGK-0.129",
+      "pgkm_vorschlag": [
+        "PGKM-027"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-114",
+        "PGKC-035"
+      ],
+      "finding_id": "INTEGRATION-FIND-0082",
+      "originalkennung": "PGK-0.130",
+      "pgkm_vorschlag": [
+        "PGKM-006",
+        "PGKM-026"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-015",
+        "PGKC-035"
+      ],
+      "finding_id": "INTEGRATION-FIND-0083",
+      "originalkennung": "PGK-0.131",
+      "pgkm_vorschlag": [
+        "PGKM-006",
+        "PGKM-008"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-035",
+        "PGKC-114"
+      ],
+      "finding_id": "INTEGRATION-FIND-0084",
+      "originalkennung": "PGK-0.132",
+      "pgkm_vorschlag": [
+        "PGKM-006",
+        "PGKM-026"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-035",
+        "PGKC-112"
+      ],
+      "finding_id": "INTEGRATION-FIND-0085",
+      "originalkennung": "PGK-0.133",
+      "pgkm_vorschlag": [
+        "PGKM-006",
+        "PGKM-026"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-035",
+        "PGKC-074",
+        "PGKC-115"
+      ],
+      "finding_id": "INTEGRATION-FIND-0086",
+      "originalkennung": "PGK-0.134",
+      "pgkm_vorschlag": [
+        "PGKM-006",
+        "PGKM-026"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-012"
+      ],
+      "finding_id": "INTEGRATION-FIND-0087",
+      "originalkennung": "PGK-0.135",
+      "pgkm_vorschlag": [
+        "PGKM-006",
+        "PGKM-008"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-015",
+        "PGKC-016"
+      ],
+      "finding_id": "INTEGRATION-FIND-0088",
+      "originalkennung": "PGK-0.136",
+      "pgkm_vorschlag": [
+        "PGKM-008",
+        "PGKM-013"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-015",
+        "PGKC-027"
+      ],
+      "finding_id": "INTEGRATION-FIND-0089",
+      "originalkennung": "PGK-0.137",
+      "pgkm_vorschlag": [
+        "PGKM-008",
+        "PGKM-013"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-015",
+        "PGKC-031"
+      ],
+      "finding_id": "INTEGRATION-FIND-0090",
+      "originalkennung": "PGK-0.138",
+      "pgkm_vorschlag": [
+        "PGKM-008",
+        "PGKM-015"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-017",
+        "PGKC-277",
+        "PGKC-291",
+        "PGKC-296"
+      ],
+      "finding_id": "INTEGRATION-FIND-0091",
+      "originalkennung": "PGK-0.139",
+      "pgkm_vorschlag": [
+        "PGKM-009"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-018",
+        "PGKC-278",
+        "PGKC-296"
+      ],
+      "finding_id": "INTEGRATION-FIND-0092",
+      "originalkennung": "PGK-0.140",
+      "pgkm_vorschlag": [
+        "PGKM-009"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-019",
+        "PGKC-020",
+        "PGKC-279",
+        "PGKC-296"
+      ],
+      "finding_id": "INTEGRATION-FIND-0093",
+      "originalkennung": "PGK-0.141",
+      "pgkm_vorschlag": [
+        "PGKM-010",
+        "PGKM-009"
+      ],
+      "research_group_id": "B07"
+    },
+    {
+      "claim_ids": [
+        "PGKC-042",
+        "PGKC-080"
+      ],
+      "finding_id": "INTEGRATION-FIND-0094",
+      "originalkennung": "PGK-0.43A2YK",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-022"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-080",
+        "PGKC-082"
+      ],
+      "finding_id": "INTEGRATION-FIND-0095",
+      "originalkennung": "PGK-0.43A2YL",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-022"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-045",
+        "PGKC-080",
+        "PGKC-099"
+      ],
+      "finding_id": "INTEGRATION-FIND-0096",
+      "originalkennung": "PGK-0.43A2YM",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-025"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-024",
+        "PGKC-288"
+      ],
+      "finding_id": "INTEGRATION-FIND-0097",
+      "originalkennung": "PGK-0.43A2YN",
+      "pgkm_vorschlag": [
+        "PGKM-012",
+        "PGKM-017"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-042",
+        "PGKC-045"
+      ],
+      "finding_id": "INTEGRATION-FIND-0098",
+      "originalkennung": "PGK-0.43A2YO",
+      "pgkm_vorschlag": [
+        "PGKM-017"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-030",
+        "PGKC-045"
+      ],
+      "finding_id": "INTEGRATION-FIND-0099",
+      "originalkennung": "PGK-0.43A2YP",
+      "pgkm_vorschlag": [
+        "PGKM-014",
+        "PGKM-017"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-042",
+        "PGKC-090"
+      ],
+      "finding_id": "INTEGRATION-FIND-0100",
+      "originalkennung": "PGK-0.43A2YQ",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-023"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-047",
+        "PGKC-092"
+      ],
+      "finding_id": "INTEGRATION-FIND-0101",
+      "originalkennung": "PGK-0.43A2YR",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-023"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-001",
+        "PGKC-042"
+      ],
+      "finding_id": "INTEGRATION-FIND-0102",
+      "originalkennung": "PGK-0.43A2YS",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-017"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-001",
+        "PGKC-132"
+      ],
+      "finding_id": "INTEGRATION-FIND-0103",
+      "originalkennung": "PGK-0.43A2YT",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-017"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-042",
+        "PGKC-070"
+      ],
+      "finding_id": "INTEGRATION-FIND-0104",
+      "originalkennung": "PGK-0.43A2YU",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-021"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-047",
+        "PGKC-131"
+      ],
+      "finding_id": "INTEGRATION-FIND-0105",
+      "originalkennung": "PGK-0.43A2YV",
+      "pgkm_vorschlag": [
+        "PGKM-017"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-001",
+        "PGKC-132"
+      ],
+      "finding_id": "INTEGRATION-FIND-0106",
+      "originalkennung": "PGK-0.43A2YW",
+      "pgkm_vorschlag": [
+        "PGKM-001",
+        "PGKM-017"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-092",
+        "PGKC-304"
+      ],
+      "finding_id": "INTEGRATION-FIND-0107",
+      "originalkennung": "PGK-0.43A2YX",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-023"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-025",
+        "PGKC-042"
+      ],
+      "finding_id": "INTEGRATION-FIND-0108",
+      "originalkennung": "PGK-0.43A2YY",
+      "pgkm_vorschlag": [
+        "PGKM-012",
+        "PGKM-017"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-088",
+        "PGKC-089"
+      ],
+      "finding_id": "INTEGRATION-FIND-0109",
+      "originalkennung": "PGK-0.43A2YZ",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-021",
+        "PGKM-023"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-045"
+      ],
+      "finding_id": "INTEGRATION-FIND-0110",
+      "originalkennung": "PGK-0.43A2ZA",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-021"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-047",
+        "PGKC-088"
+      ],
+      "finding_id": "INTEGRATION-FIND-0111",
+      "originalkennung": "PGK-0.43A2ZB",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-021"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-068",
+        "PGKC-074"
+      ],
+      "finding_id": "INTEGRATION-FIND-0112",
+      "originalkennung": "PGK-0.43A2ZC",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-021"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-005",
+        "PGKC-070"
+      ],
+      "finding_id": "INTEGRATION-FIND-0113",
+      "originalkennung": "PGK-0.43A2ZD",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-021"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-045",
+        "PGKC-088"
+      ],
+      "finding_id": "INTEGRATION-FIND-0114",
+      "originalkennung": "PGK-0.43A2ZE",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-021"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-302"
+      ],
+      "finding_id": "INTEGRATION-FIND-0115",
+      "originalkennung": "PGK-0.43A2ZF",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-021"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-132",
+        "PGKC-188",
+        "PGKC-232",
+        "PGKC-091"
+      ],
+      "finding_id": "INTEGRATION-FIND-0116",
+      "originalkennung": "PGK-0.43A2ZG",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-023",
+        "PGKM-028"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-047",
+        "PGKC-095"
+      ],
+      "finding_id": "INTEGRATION-FIND-0117",
+      "originalkennung": "PGK-0.43A2ZH",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-024"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-302"
+      ],
+      "finding_id": "INTEGRATION-FIND-0118",
+      "originalkennung": "PGK-0.43A2ZI",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-007"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-045",
+        "PGKC-070"
+      ],
+      "finding_id": "INTEGRATION-FIND-0119",
+      "originalkennung": "PGK-0.43A2ZJ",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-018"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-045",
+        "PGKC-070",
+        "PGKC-132"
+      ],
+      "finding_id": "INTEGRATION-FIND-0120",
+      "originalkennung": "PGK-0.43A2ZK",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-018"
+      ],
+      "research_group_id": "B08"
+    },
+    {
+      "claim_ids": [
+        "PGKC-036"
+      ],
+      "finding_id": "INTEGRATION-FIND-0121",
+      "originalkennung": "PGK-0.44A",
+      "pgkm_vorschlag": [
+        "PGKM-016"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-036"
+      ],
+      "finding_id": "INTEGRATION-FIND-0122",
+      "originalkennung": "PGK-0.44B",
+      "pgkm_vorschlag": [
+        "PGKM-016"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-036",
+        "PGKC-070"
+      ],
+      "finding_id": "INTEGRATION-FIND-0123",
+      "originalkennung": "PGK-0.44C",
+      "pgkm_vorschlag": [
+        "PGKM-016",
+        "PGKM-017"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-037",
+        "PGKC-045"
+      ],
+      "finding_id": "INTEGRATION-FIND-0124",
+      "originalkennung": "PGK-0.45A",
+      "pgkm_vorschlag": [
+        "PGKM-016"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-037",
+        "PGKC-046"
+      ],
+      "finding_id": "INTEGRATION-FIND-0125",
+      "originalkennung": "PGK-0.45B",
+      "pgkm_vorschlag": [
+        "PGKM-016",
+        "PGKM-020"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-037",
+        "PGKC-066"
+      ],
+      "finding_id": "INTEGRATION-FIND-0126",
+      "originalkennung": "PGK-0.45C",
+      "pgkm_vorschlag": [
+        "PGKM-016",
+        "PGKM-020"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-038",
+        "PGKC-062"
+      ],
+      "finding_id": "INTEGRATION-FIND-0127",
+      "originalkennung": "PGK-0.46A",
+      "pgkm_vorschlag": [
+        "PGKM-016",
+        "PGKM-020"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-038"
+      ],
+      "finding_id": "INTEGRATION-FIND-0128",
+      "originalkennung": "PGK-0.46B",
+      "pgkm_vorschlag": [
+        "PGKM-016"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-038"
+      ],
+      "finding_id": "INTEGRATION-FIND-0129",
+      "originalkennung": "PGK-0.46C",
+      "pgkm_vorschlag": [
+        "PGKM-016"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-039",
+        "PGKC-054"
+      ],
+      "finding_id": "INTEGRATION-FIND-0130",
+      "originalkennung": "PGK-0.47A",
+      "pgkm_vorschlag": [
+        "PGKM-016",
+        "PGKM-018"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-040"
+      ],
+      "finding_id": "INTEGRATION-FIND-0131",
+      "originalkennung": "PGK-0.48A",
+      "pgkm_vorschlag": [
+        "PGKM-016"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-041"
+      ],
+      "finding_id": "INTEGRATION-FIND-0132",
+      "originalkennung": "PGK-0.49A",
+      "pgkm_vorschlag": [
+        "PGKM-016"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-042"
+      ],
+      "finding_id": "INTEGRATION-FIND-0133",
+      "originalkennung": "PGK-0.50A",
+      "pgkm_vorschlag": [
+        "PGKM-017"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-042"
+      ],
+      "finding_id": "INTEGRATION-FIND-0134",
+      "originalkennung": "PGK-0.50B",
+      "pgkm_vorschlag": [
+        "PGKM-017"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-043",
+        "PGKC-134"
+      ],
+      "finding_id": "INTEGRATION-FIND-0135",
+      "originalkennung": "PGK-0.51A",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-028"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-044",
+        "PGKC-134",
+        "PGKC-190",
+        "PGKC-234"
+      ],
+      "finding_id": "INTEGRATION-FIND-0136",
+      "originalkennung": "PGK-0.52A",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-028"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-043",
+        "PGKC-044",
+        "PGKC-045",
+        "PGKC-134"
+      ],
+      "finding_id": "INTEGRATION-FIND-0137",
+      "originalkennung": "PGK-0.53A",
+      "pgkm_vorschlag": [
+        "PGKM-017"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-046",
+        "PGKC-066"
+      ],
+      "finding_id": "INTEGRATION-FIND-0138",
+      "originalkennung": "PGK-0.54A",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-020"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-047",
+        "PGKC-132"
+      ],
+      "finding_id": "INTEGRATION-FIND-0139",
+      "originalkennung": "PGK-0.55A",
+      "pgkm_vorschlag": [
+        "PGKM-017"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-048",
+        "PGKC-067"
+      ],
+      "finding_id": "INTEGRATION-FIND-0140",
+      "originalkennung": "PGK-0.56A",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-020"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-049",
+        "PGKC-133"
+      ],
+      "finding_id": "INTEGRATION-FIND-0141",
+      "originalkennung": "PGK-0.57A",
+      "pgkm_vorschlag": [
+        "PGKM-017",
+        "PGKM-018"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-050"
+      ],
+      "finding_id": "INTEGRATION-FIND-0142",
+      "originalkennung": "PGK-0.58A",
+      "pgkm_vorschlag": [
+        "PGKM-018"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-051"
+      ],
+      "finding_id": "INTEGRATION-FIND-0143",
+      "originalkennung": "PGK-0.59A",
+      "pgkm_vorschlag": [
+        "PGKM-018"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-052"
+      ],
+      "finding_id": "INTEGRATION-FIND-0144",
+      "originalkennung": "PGK-0.60A",
+      "pgkm_vorschlag": [
+        "PGKM-018"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-053"
+      ],
+      "finding_id": "INTEGRATION-FIND-0145",
+      "originalkennung": "PGK-0.61A",
+      "pgkm_vorschlag": [
+        "PGKM-018"
+      ],
+      "research_group_id": "B09"
+    },
+    {
+      "claim_ids": [
+        "PGKC-039",
+        "PGKC-049",
+        "PGKC-053",
+        "PGKC-054",
+        "PGKC-055",
+        "PGKC-133"
+      ],
+      "finding_id": "INTEGRATION-FIND-0146",
+      "originalkennung": "PGK-0.62A",
+      "pgkm_vorschlag": [
+        "PGKM-018"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-055",
+        "PGKC-092"
+      ],
+      "finding_id": "INTEGRATION-FIND-0147",
+      "originalkennung": "PGK-0.63A",
+      "pgkm_vorschlag": [
+        "PGKM-018",
+        "PGKM-023"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-056"
+      ],
+      "finding_id": "INTEGRATION-FIND-0148",
+      "originalkennung": "PGK-0.64A",
+      "pgkm_vorschlag": [
+        "PGKM-018"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-056"
+      ],
+      "finding_id": "INTEGRATION-FIND-0149",
+      "originalkennung": "PGK-0.64B",
+      "pgkm_vorschlag": [
+        "PGKM-018"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-057"
+      ],
+      "finding_id": "INTEGRATION-FIND-0150",
+      "originalkennung": "PGK-0.65A",
+      "pgkm_vorschlag": [
+        "PGKM-019"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-057"
+      ],
+      "finding_id": "INTEGRATION-FIND-0151",
+      "originalkennung": "PGK-0.65B",
+      "pgkm_vorschlag": [
+        "PGKM-019"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-058"
+      ],
+      "finding_id": "INTEGRATION-FIND-0152",
+      "originalkennung": "PGK-0.66A",
+      "pgkm_vorschlag": [
+        "PGKM-019"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-059",
+        "PGKC-108"
+      ],
+      "finding_id": "INTEGRATION-FIND-0153",
+      "originalkennung": "PGK-0.67A",
+      "pgkm_vorschlag": [
+        "PGKM-019",
+        "PGKM-026"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-005",
+        "PGKC-060"
+      ],
+      "finding_id": "INTEGRATION-FIND-0154",
+      "originalkennung": "PGK-0.68A",
+      "pgkm_vorschlag": [
+        "PGKM-003",
+        "PGKM-019"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-060"
+      ],
+      "finding_id": "INTEGRATION-FIND-0155",
+      "originalkennung": "PGK-0.68B",
+      "pgkm_vorschlag": [
+        "PGKM-019"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-060"
+      ],
+      "finding_id": "INTEGRATION-FIND-0156",
+      "originalkennung": "PGK-0.68C",
+      "pgkm_vorschlag": [
+        "PGKM-019"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-060",
+        "PGKC-061"
+      ],
+      "finding_id": "INTEGRATION-FIND-0157",
+      "originalkennung": "PGK-0.68D",
+      "pgkm_vorschlag": [
+        "PGKM-019"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-061"
+      ],
+      "finding_id": "INTEGRATION-FIND-0158",
+      "originalkennung": "PGK-0.69",
+      "pgkm_vorschlag": [
+        "PGKM-019",
+        "PGKM-021"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-062",
+        "PGKC-282",
+        "PGKC-304"
+      ],
+      "finding_id": "INTEGRATION-FIND-0159",
+      "originalkennung": "PGK-0.70",
+      "pgkm_vorschlag": [
+        "PGKM-002",
+        "PGKM-020"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-063"
+      ],
+      "finding_id": "INTEGRATION-FIND-0160",
+      "originalkennung": "PGK-0.71",
+      "pgkm_vorschlag": [
+        "PGKM-020"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-064"
+      ],
+      "finding_id": "INTEGRATION-FIND-0161",
+      "originalkennung": "PGK-0.72",
+      "pgkm_vorschlag": [
+        "PGKM-020"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-065"
+      ],
+      "finding_id": "INTEGRATION-FIND-0162",
+      "originalkennung": "PGK-0.73",
+      "pgkm_vorschlag": [
+        "PGKM-020"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-066"
+      ],
+      "finding_id": "INTEGRATION-FIND-0163",
+      "originalkennung": "PGK-0.74",
+      "pgkm_vorschlag": [
+        "PGKM-020"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-067",
+        "PGKC-283"
+      ],
+      "finding_id": "INTEGRATION-FIND-0164",
+      "originalkennung": "PGK-0.75",
+      "pgkm_vorschlag": [
+        "PGKM-020"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-007",
+        "PGKC-068",
+        "PGKC-284"
+      ],
+      "finding_id": "INTEGRATION-FIND-0165",
+      "originalkennung": "PGK-0.76",
+      "pgkm_vorschlag": [
+        "PGKM-004",
+        "PGKM-021"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-069",
+        "PGKC-284"
+      ],
+      "finding_id": "INTEGRATION-FIND-0166",
+      "originalkennung": "PGK-0.77",
+      "pgkm_vorschlag": [
+        "PGKM-021"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-070"
+      ],
+      "finding_id": "INTEGRATION-FIND-0167",
+      "originalkennung": "PGK-0.78",
+      "pgkm_vorschlag": [
+        "PGKM-021"
+      ],
+      "research_group_id": "B10"
+    },
+    {
+      "claim_ids": [
+        "PGKC-008",
+        "PGKC-071"
+      ],
+      "finding_id": "INTEGRATION-FIND-0168",
+      "originalkennung": "PGK-0.79",
+      "pgkm_vorschlag": [
+        "PGKM-004",
+        "PGKM-021"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-072",
+        "PGKC-139"
+      ],
+      "finding_id": "INTEGRATION-FIND-0169",
+      "originalkennung": "PGK-0.80",
+      "pgkm_vorschlag": [
+        "PGKM-021"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-006",
+        "PGKC-073"
+      ],
+      "finding_id": "INTEGRATION-FIND-0170",
+      "originalkennung": "PGK-0.81",
+      "pgkm_vorschlag": [
+        "PGKM-003",
+        "PGKM-021"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-074",
+        "PGKC-077"
+      ],
+      "finding_id": "INTEGRATION-FIND-0171",
+      "originalkennung": "PGK-0.82",
+      "pgkm_vorschlag": [
+        "PGKM-021",
+        "PGKM-022"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-075",
+        "PGKC-285"
+      ],
+      "finding_id": "INTEGRATION-FIND-0172",
+      "originalkennung": "PGK-0.83",
+      "pgkm_vorschlag": [
+        "PGKM-021"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-076",
+        "PGKC-285"
+      ],
+      "finding_id": "INTEGRATION-FIND-0173",
+      "originalkennung": "PGK-0.84",
+      "pgkm_vorschlag": [
+        "PGKM-021"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-078",
+        "PGKC-282",
+        "PGKC-304"
+      ],
+      "finding_id": "INTEGRATION-FIND-0174",
+      "originalkennung": "PGK-0.86",
+      "pgkm_vorschlag": [
+        "PGKM-022",
+        "PGKM-020"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-079",
+        "PGKC-114"
+      ],
+      "finding_id": "INTEGRATION-FIND-0175",
+      "originalkennung": "PGK-0.87",
+      "pgkm_vorschlag": [
+        "PGKM-022",
+        "PGKM-026"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-080",
+        "PGKC-139"
+      ],
+      "finding_id": "INTEGRATION-FIND-0176",
+      "originalkennung": "PGK-0.88",
+      "pgkm_vorschlag": [
+        "PGKM-022"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-081"
+      ],
+      "finding_id": "INTEGRATION-FIND-0177",
+      "originalkennung": "PGK-0.89",
+      "pgkm_vorschlag": [
+        "PGKM-022"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-082"
+      ],
+      "finding_id": "INTEGRATION-FIND-0178",
+      "originalkennung": "PGK-0.90",
+      "pgkm_vorschlag": [
+        "PGKM-022"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-083"
+      ],
+      "finding_id": "INTEGRATION-FIND-0179",
+      "originalkennung": "PGK-0.91",
+      "pgkm_vorschlag": [
+        "PGKM-022"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-074",
+        "PGKC-076",
+        "PGKC-077"
+      ],
+      "finding_id": "INTEGRATION-FIND-0180",
+      "originalkennung": "PGK-0.85",
+      "pgkm_vorschlag": [
+        "PGKM-022",
+        "PGKM-021"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-084",
+        "PGKC-083"
+      ],
+      "finding_id": "INTEGRATION-FIND-0181",
+      "originalkennung": "PGK-0.92",
+      "pgkm_vorschlag": [
+        "PGKM-023"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-085"
+      ],
+      "finding_id": "INTEGRATION-FIND-0182",
+      "originalkennung": "PGK-0.93",
+      "pgkm_vorschlag": [
+        "PGKM-023"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-086"
+      ],
+      "finding_id": "INTEGRATION-FIND-0183",
+      "originalkennung": "PGK-0.94",
+      "pgkm_vorschlag": [
+        "PGKM-023"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-087",
+        "PGKC-088"
+      ],
+      "finding_id": "INTEGRATION-FIND-0184",
+      "originalkennung": "PGK-0.95",
+      "pgkm_vorschlag": [
+        "PGKM-023"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-087",
+        "PGKC-088"
+      ],
+      "finding_id": "INTEGRATION-FIND-0185",
+      "originalkennung": "PGK-0.96",
+      "pgkm_vorschlag": [
+        "PGKM-023"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-089"
+      ],
+      "finding_id": "INTEGRATION-FIND-0186",
+      "originalkennung": "PGK-0.97",
+      "pgkm_vorschlag": [
+        "PGKM-023"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-090"
+      ],
+      "finding_id": "INTEGRATION-FIND-0187",
+      "originalkennung": "PGK-0.98",
+      "pgkm_vorschlag": [
+        "PGKM-023"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-091",
+        "PGKC-131",
+        "PGKC-142"
+      ],
+      "finding_id": "INTEGRATION-FIND-0188",
+      "originalkennung": "PGK-0.99",
+      "pgkm_vorschlag": [
+        "PGKM-023"
+      ],
+      "research_group_id": "B11"
+    },
+    {
+      "claim_ids": [
+        "PGKC-026",
+        "PGKC-027",
+        "A6N-C004",
+        "A6N-C005"
+      ],
+      "finding_id": "INTEGRATION-FIND-0189",
+      "originalkennung": "RΦ-01 / RΦ-02",
+      "pgkm_vorschlag": [
+        "PGKM-013",
+        "PGKM-029"
+      ],
+      "research_group_id": "B12"
+    },
+    {
+      "claim_ids": [
+        "PGKC-015",
+        "PGKC-016",
+        "PGKC-028",
+        "PGKC-268",
+        "PGKC-269",
+        "PGKC-270",
+        "PGKC-271",
+        "PGKC-280",
+        "PGKC-290",
+        "PGKC-303"
+      ],
+      "finding_id": "INTEGRATION-FIND-0190",
+      "originalkennung": "RΦ-03",
+      "pgkm_vorschlag": [
+        "PGKM-008",
+        "PGKM-013"
+      ],
+      "research_group_id": "B12"
+    },
+    {
+      "claim_ids": [
+        "PGKC-001",
+        "PGKC-302"
+      ],
+      "finding_id": "INTEGRATION-FIND-0191",
+      "originalkennung": "EW/BRUECKEN",
+      "pgkm_vorschlag": [
+        "PGKM-001"
+      ],
+      "research_group_id": "B12"
+    }
+  ],
+  "meaning": "Fachliche Zuordnung der Forschungsbefunde zu Modulen und Claims",
+  "schema": "pgk.public.open-coverage.v1"
+}

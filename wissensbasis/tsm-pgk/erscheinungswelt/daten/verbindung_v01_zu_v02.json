@@ -1,0 +1,41 @@
+{
+  "schema": "pgk.erscheinungswelt.v01-reference.v0.2",
+  "previous_candidates_preserved_as_references": [
+    {
+      "id": "EW-KAND-001",
+      "title": "Paaradressverlust, Partnerwechsel und Netzwerkwirkung",
+      "doi_url": "https://doi.org/10.1111/1365-2656.13935",
+      "bridge_id": "BR-KAND-001",
+      "previous_bridge_status": "PROPOSED_NOT_TESTED"
+    },
+    {
+      "id": "EW-KAND-002",
+      "title": "Herkunftsgedächtnis und unterschiedliches Verhalten bei gleichem Grobzustand",
+      "doi_url": "https://doi.org/10.1038/s41598-021-83382-y",
+      "bridge_id": "BR-KAND-002",
+      "previous_bridge_status": "PROPOSED_NOT_TESTED"
+    },
+    {
+      "id": "EW-KAND-003",
+      "title": "Funktionserhalt und Träger-/Zelllinienwechsel bei Regeneration",
+      "doi_url": "https://doi.org/10.1038/s41467-023-41944-w",
+      "bridge_id": "BR-KAND-003",
+      "previous_bridge_status": "PROPOSED_NOT_TESTED"
+    },
+    {
+      "id": "EW-KAND-004",
+      "title": "Ereignisordnung versus physikalische Zeitmessung",
+      "doi_url": "https://doi.org/10.1038/s41586-021-04349-7",
+      "bridge_id": "BR-KAND-004",
+      "previous_bridge_status": "PROPOSED_NOT_TESTED"
+    },
+    {
+      "id": "EW-KAND-005",
+      "title": "Mehrere mathematische Full-C-Roots und physikalische Realisierung",
+      "doi_url": null,
+      "bridge_id": "BR-KAND-005",
+      "previous_bridge_status": "UNMAPPED_RESEARCH_FRONT"
+    }
+  ],
+  "does_not_modify_canonical_appearance_or_bridges_registers": true
+}

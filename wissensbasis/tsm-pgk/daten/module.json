@@ -1,0 +1,788 @@
+{
+  "modules": [
+    {
+      "claim_ids": [
+        "PGKC-001",
+        "PGKC-002",
+        "PGKC-034"
+      ],
+      "erkenntnisbereiche": [
+        "ER-09",
+        "ER-05",
+        "ER-07"
+      ],
+      "geltungsbereich": "Frühes PGK; Frozen-D; d ist Modellordnung, keine emergierte Dimension",
+      "id": "PGKM-001",
+      "kontrastachsen": [
+        "SP-07",
+        "SP-10"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Reversibler Ausgangskern und historische Schutzgrenzen"
+    },
+    {
+      "claim_ids": [
+        "PGKC-003",
+        "PGKC-004",
+        "PGKC-304",
+        "A6N-C003"
+      ],
+      "erkenntnisbereiche": [
+        "ER-01",
+        "ER-02",
+        "ER-03"
+      ],
+      "geltungsbereich": "Historischer atomarer Quotient; E/C-Operator; seriale Ereignisauswahl",
+      "id": "PGKM-002",
+      "kontrastachsen": [
+        "SP-01",
+        "SP-13"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "E/C-Ereignisse, Fronten und Auswahl"
+    },
+    {
+      "claim_ids": [
+        "PGKC-005",
+        "PGKC-006",
+        "PGKC-033"
+      ],
+      "erkenntnisbereiche": [
+        "ER-02",
+        "ER-01",
+        "ER-08"
+      ],
+      "geltungsbereich": "PGK 0.68–0.84; State/Fiber/Selection",
+      "id": "PGKM-003",
+      "kontrastachsen": [
+        "SP-01",
+        "SP-09"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Möglichkeit, Zulässigkeit und Realisierung"
+    },
+    {
+      "claim_ids": [
+        "PGKC-007",
+        "PGKC-008"
+      ],
+      "erkenntnisbereiche": [
+        "ER-02",
+        "ER-03"
+      ],
+      "geltungsbereich": "PGK 0.76–0.84; vorgegebene Rewrite-Wörter",
+      "id": "PGKM-004",
+      "kontrastachsen": [
+        "SP-06"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Präreaktive Mesoordnung und Rewrite-Klassen"
+    },
+    {
+      "claim_ids": [
+        "PGKC-009",
+        "PGKC-010",
+        "PGKC-288",
+        "A6N-C002"
+      ],
+      "erkenntnisbereiche": [
+        "ER-01",
+        "ER-02",
+        "ER-09"
+      ],
+      "geltungsbereich": "PGK 0.107–0.114; QPROC, globaler E+C-Horizont",
+      "id": "PGKM-005",
+      "kontrastachsen": [
+        "SP-01",
+        "SP-10"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Occurrence-konsistente native Passage"
+    },
+    {
+      "claim_ids": [
+        "PGKC-011",
+        "PGKC-012",
+        "PGKC-035",
+        "PGKC-272",
+        "PGKC-273",
+        "PGKC-274",
+        "PGKC-289"
+      ],
+      "erkenntnisbereiche": [
+        "ER-03",
+        "ER-04"
+      ],
+      "geltungsbereich": "0.116–0.135; Formklasse und strukturelle Folge",
+      "id": "PGKM-006",
+      "kontrastachsen": [
+        "SP-09",
+        "SP-04"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Form, Rekursion und gehaltene Organisation"
+    },
+    {
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-014",
+        "PGKC-302"
+      ],
+      "erkenntnisbereiche": [
+        "ER-05",
+        "ER-01"
+      ],
+      "geltungsbereich": "0.126–0.129; Prozessordnung, Uhr, Metrik getrennt",
+      "id": "PGKM-007",
+      "kontrastachsen": [
+        "SP-02"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Prozessordnung, Eichrelation und lokale Zeit"
+    },
+    {
+      "claim_ids": [
+        "PGKC-015",
+        "PGKC-016"
+      ],
+      "erkenntnisbereiche": [
+        "ER-04",
+        "ER-10"
+      ],
+      "geltungsbereich": "0.136–0.138, RΦ 01–03",
+      "id": "PGKM-008",
+      "kontrastachsen": [
+        "SP-04"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Funktionale Rollen, Trägerwechsel und Regeneration"
+    },
+    {
+      "claim_ids": [
+        "PGKC-017",
+        "PGKC-018",
+        "PGKC-277",
+        "PGKC-278",
+        "PGKC-291",
+        "PGKC-292",
+        "PGKC-294",
+        "PGKC-295",
+        "PGKC-296",
+        "A6N-C008"
+      ],
+      "erkenntnisbereiche": [
+        "ER-08",
+        "ER-09"
+      ],
+      "geltungsbereich": "0.139–0.140; pre-rewrite vs transition-contemporaneous",
+      "id": "PGKM-009",
+      "kontrastachsen": [
+        "SP-03",
+        "SP-12"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Vorhersehbarkeit ohne Informationsleck"
+    },
+    {
+      "claim_ids": [
+        "PGKC-019",
+        "PGKC-020",
+        "PGKC-021",
+        "PGKC-279",
+        "PGKC-299"
+      ],
+      "erkenntnisbereiche": [
+        "ER-08",
+        "ER-06",
+        "ER-09"
+      ],
+      "geltungsbereich": "0.141, FRE-01, ID-freie Funktionsäquivalenz",
+      "id": "PGKM-010",
+      "kontrastachsen": [
+        "SP-12"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Konfigurationsprofil, FRE und Äquivalenz"
+    },
+    {
+      "claim_ids": [
+        "PGKC-022",
+        "PGKC-023"
+      ],
+      "erkenntnisbereiche": [
+        "ER-02",
+        "ER-08"
+      ],
+      "geltungsbereich": "WR/MA/BRW-1G; W-Margen; Dictionary und Rebuild",
+      "id": "PGKM-011",
+      "kontrastachsen": [
+        "SP-09",
+        "SP-12"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Gewichtete Erreichbarkeit und BRW-Provenienz"
+    },
+    {
+      "claim_ids": [
+        "PGKC-024",
+        "PGKC-025",
+        "PGKC-266",
+        "PGKC-267",
+        "A6N-C001"
+      ],
+      "erkenntnisbereiche": [
+        "ER-01",
+        "ER-09"
+      ],
+      "geltungsbereich": "FSTT-01F; Archivfolge versus wirklich frühester Crossing",
+      "id": "PGKM-012",
+      "kontrastachsen": [
+        "SP-10"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Root-Isolation und historischer Selektorfehler"
+    },
+    {
+      "claim_ids": [
+        "PGKC-026",
+        "PGKC-027",
+        "PGKC-028",
+        "PGKC-268",
+        "PGKC-269",
+        "PGKC-270",
+        "PGKC-271",
+        "PGKC-303",
+        "A6N-C004",
+        "A6N-C005"
+      ],
+      "erkenntnisbereiche": [
+        "ER-04",
+        "ER-10"
+      ],
+      "geltungsbereich": "RΦ-01 bis 04a; intrinsische vs explizit externe Funktionsaufgabe",
+      "id": "PGKM-013",
+      "kontrastachsen": [
+        "SP-05",
+        "SP-04"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "HΦ, RΦ, NΦ: Funktion und Rückgewinnbarkeit"
+    },
+    {
+      "claim_ids": [
+        "PGKC-029",
+        "PGKC-030",
+        "PGKC-275",
+        "PGKC-276"
+      ],
+      "erkenntnisbereiche": [
+        "ER-06",
+        "ER-09"
+      ],
+      "geltungsbereich": "90330, reduziert QQ; unabhängige Full-C-Repräsentationsgrenze",
+      "id": "PGKM-014",
+      "kontrastachsen": [
+        "SP-08"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Intrinsische Rank-2-Lösung und Full-C-Repräsentation"
+    },
+    {
+      "claim_ids": [
+        "PGKC-031",
+        "PGKC-032"
+      ],
+      "erkenntnisbereiche": [
+        "ER-06",
+        "ER-04",
+        "ER-09"
+      ],
+      "geltungsbereich": "FGT-01 T0–T3/S1–S3; kanonische Instanziierung offen",
+      "id": "PGKM-015",
+      "kontrastachsen": [
+        "SP-12"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Geschichtete Funktionsgrammatik und TSM-Konkordanz"
+    },
+    {
+      "claim_ids": [
+        "PGKC-036",
+        "PGKC-037",
+        "PGKC-038",
+        "PGKC-039",
+        "PGKC-040",
+        "PGKC-041"
+      ],
+      "erkenntnisbereiche": [
+        "ER-07",
+        "ER-10"
+      ],
+      "geltungsbereich": "Historische PGK-0.44–0.49; Studien/Varianten nur in originaler Domäne",
+      "id": "PGKM-016",
+      "kontrastachsen": [
+        "SP-07",
+        "SP-11"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Lokalität, Balance und rekursive Einheiten"
+    },
+    {
+      "claim_ids": [
+        "PGKC-042",
+        "PGKC-043",
+        "PGKC-044",
+        "PGKC-045",
+        "PGKC-046",
+        "PGKC-047",
+        "PGKC-048",
+        "PGKC-049"
+      ],
+      "erkenntnisbereiche": [
+        "ER-03",
+        "ER-06",
+        "ER-07"
+      ],
+      "geltungsbereich": "Historische PGK-0.50–0.57; Studien/Varianten nur in originaler Domäne",
+      "id": "PGKM-017",
+      "kontrastachsen": [
+        "SP-09"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Skalenorganisation, Geschichte und getypte Antwort"
+    },
+    {
+      "claim_ids": [
+        "PGKC-050",
+        "PGKC-051",
+        "PGKC-052",
+        "PGKC-053",
+        "PGKC-054",
+        "PGKC-055",
+        "PGKC-056"
+      ],
+      "erkenntnisbereiche": [
+        "ER-07",
+        "ER-02"
+      ],
+      "geltungsbereich": "Historische PGK-0.58–0.64; Studien/Varianten nur in originaler Domäne",
+      "id": "PGKM-018",
+      "kontrastachsen": [
+        "SP-07"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Grenz-, Zugänglichkeits- und Lokalitätsgates"
+    },
+    {
+      "claim_ids": [
+        "PGKC-057",
+        "PGKC-058",
+        "PGKC-059",
+        "PGKC-060",
+        "PGKC-061"
+      ],
+      "erkenntnisbereiche": [
+        "ER-03",
+        "ER-02",
+        "ER-07"
+      ],
+      "geltungsbereich": "Historische PGK-0.65–0.69; Studien/Varianten nur in originaler Domäne",
+      "id": "PGKM-019",
+      "kontrastachsen": [
+        "SP-09",
+        "SP-12"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Modellforks, Historienfeld und Base–Fiber-Architektur"
+    },
+    {
+      "claim_ids": [
+        "PGKC-062",
+        "PGKC-063",
+        "PGKC-064",
+        "PGKC-065",
+        "PGKC-066",
+        "PGKC-067",
+        "PGKC-282",
+        "PGKC-283",
+        "PGKC-293",
+        "PGKC-300",
+        "A6N-C007"
+      ],
+      "erkenntnisbereiche": [
+        "ER-10",
+        "ER-02"
+      ],
+      "geltungsbereich": "Historische PGK-0.70–0.75; Studien/Varianten nur in originaler Domäne",
+      "id": "PGKM-020",
+      "kontrastachsen": [
+        "SP-11",
+        "SP-05"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Bewegliche Regulation und fehlender nativer Rückholselektor"
+    },
+    {
+      "claim_ids": [
+        "PGKC-068",
+        "PGKC-069",
+        "PGKC-070",
+        "PGKC-071",
+        "PGKC-072",
+        "PGKC-073",
+        "PGKC-074",
+        "PGKC-075",
+        "PGKC-076",
+        "PGKC-284",
+        "PGKC-285"
+      ],
+      "erkenntnisbereiche": [
+        "ER-02",
+        "ER-03"
+      ],
+      "geltungsbereich": "Historische PGK-0.76–0.84; Studien/Varianten nur in originaler Domäne",
+      "id": "PGKM-021",
+      "kontrastachsen": [
+        "SP-06",
+        "SP-01"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Möglichkeitsfeld und präreaktive Organisationsgrammatik"
+    },
+    {
+      "claim_ids": [
+        "PGKC-077",
+        "PGKC-078",
+        "PGKC-079",
+        "PGKC-080",
+        "PGKC-081",
+        "PGKC-082",
+        "PGKC-083"
+      ],
+      "erkenntnisbereiche": [
+        "ER-01",
+        "ER-03",
+        "ER-06"
+      ],
+      "geltungsbereich": "Historische PGK-0.85–0.91; Studien/Varianten nur in originaler Domäne",
+      "id": "PGKM-022",
+      "kontrastachsen": [
+        "SP-10",
+        "SP-09"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Rootordnung, Ereignisgeschichte und Repräsentationsquotient"
+    },
+    {
+      "claim_ids": [
+        "PGKC-084",
+        "PGKC-085",
+        "PGKC-086",
+        "PGKC-087",
+        "PGKC-088",
+        "PGKC-089",
+        "PGKC-090",
+        "PGKC-091",
+        "PGKC-092",
+        "PGKC-093"
+      ],
+      "erkenntnisbereiche": [
+        "ER-01",
+        "ER-06",
+        "ER-03"
+      ],
+      "geltungsbereich": "Historische PGK-0.92–0.101; Studien/Varianten nur in originaler Domäne",
+      "id": "PGKM-023",
+      "kontrastachsen": [
+        "SP-01",
+        "SP-08"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Native Grammatik, volle Antwort und unmittelbare Q-Rückwirkung"
+    },
+    {
+      "claim_ids": [
+        "PGKC-094",
+        "PGKC-095",
+        "PGKC-096",
+        "PGKC-097",
+        "PGKC-098",
+        "PGKC-166",
+        "PGKC-286",
+        "PGKC-287"
+      ],
+      "erkenntnisbereiche": [
+        "ER-06",
+        "ER-02"
+      ],
+      "geltungsbereich": "Historische PGK-0.102–0.106; Studien/Varianten nur in originaler Domäne",
+      "id": "PGKM-024",
+      "kontrastachsen": [
+        "SP-08"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Projektorkomposition und endliche native Domäne"
+    },
+    {
+      "claim_ids": [
+        "PGKC-099",
+        "PGKC-100",
+        "PGKC-101",
+        "PGKC-102",
+        "PGKC-103",
+        "PGKC-104",
+        "PGKC-105",
+        "PGKC-106",
+        "PGKC-107",
+        "PGKC-167",
+        "PGKC-168",
+        "PGKC-169",
+        "PGKC-170",
+        "PGKC-171",
+        "PGKC-297",
+        "PGKC-305"
+      ],
+      "erkenntnisbereiche": [
+        "ER-01",
+        "ER-02",
+        "ER-08"
+      ],
+      "geltungsbereich": "Historische PGK-0.107–0.115; Studien/Varianten nur in originaler Domäne",
+      "id": "PGKM-025",
+      "kontrastachsen": [
+        "SP-01"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Generative Suffizienz, Entscheidung und ausgewählte Passage"
+    },
+    {
+      "claim_ids": [
+        "PGKC-108",
+        "PGKC-109",
+        "PGKC-110",
+        "PGKC-111",
+        "PGKC-112",
+        "PGKC-113",
+        "PGKC-114",
+        "PGKC-115",
+        "PGKC-116",
+        "PGKC-117",
+        "PGKC-172",
+        "PGKC-173",
+        "PGKC-290",
+        "PGKC-298",
+        "A6N-C006"
+      ],
+      "erkenntnisbereiche": [
+        "ER-04",
+        "ER-03",
+        "ER-10"
+      ],
+      "geltungsbereich": "Historische PGK-0.116–0.125; Studien/Varianten nur in originaler Domäne",
+      "id": "PGKM-026",
+      "kontrastachsen": [
+        "SP-05"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Response, Rückkehr, Funktion und relationale Herkunft"
+    },
+    {
+      "claim_ids": [
+        "PGKC-118",
+        "PGKC-119",
+        "PGKC-120",
+        "PGKC-121",
+        "PGKC-174",
+        "PGKC-175",
+        "PGKC-176",
+        "PGKC-177",
+        "PGKC-281"
+      ],
+      "erkenntnisbereiche": [
+        "ER-05",
+        "ER-07"
+      ],
+      "geltungsbereich": "Historische PGK-0.126–0.129; Studien/Varianten nur in originaler Domäne",
+      "id": "PGKM-027",
+      "kontrastachsen": [
+        "SP-02",
+        "SP-07"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Relationale Prozessordnung, Eichrelation und Metrikgrenze"
+    },
+    {
+      "claim_ids": [
+        "PGKC-122",
+        "PGKC-123",
+        "PGKC-124",
+        "PGKC-125",
+        "PGKC-126",
+        "PGKC-127",
+        "PGKC-128",
+        "PGKC-129",
+        "PGKC-130",
+        "PGKC-131",
+        "PGKC-132",
+        "PGKC-133",
+        "PGKC-134",
+        "PGKC-135",
+        "PGKC-136",
+        "PGKC-137",
+        "PGKC-138",
+        "PGKC-139",
+        "PGKC-140",
+        "PGKC-141",
+        "PGKC-142",
+        "PGKC-143",
+        "PGKC-144",
+        "PGKC-145",
+        "PGKC-146",
+        "PGKC-147",
+        "PGKC-148",
+        "PGKC-149",
+        "PGKC-150",
+        "PGKC-151",
+        "PGKC-152",
+        "PGKC-153",
+        "PGKC-154",
+        "PGKC-155",
+        "PGKC-156",
+        "PGKC-157",
+        "PGKC-158",
+        "PGKC-159",
+        "PGKC-160",
+        "PGKC-161",
+        "PGKC-162",
+        "PGKC-163",
+        "PGKC-164",
+        "PGKC-165",
+        "PGKC-178",
+        "PGKC-222",
+        "PGKC-179",
+        "PGKC-223",
+        "PGKC-180",
+        "PGKC-224",
+        "PGKC-181",
+        "PGKC-225",
+        "PGKC-182",
+        "PGKC-226",
+        "PGKC-183",
+        "PGKC-227",
+        "PGKC-184",
+        "PGKC-228",
+        "PGKC-185",
+        "PGKC-229",
+        "PGKC-186",
+        "PGKC-230",
+        "PGKC-187",
+        "PGKC-231",
+        "PGKC-188",
+        "PGKC-232",
+        "PGKC-189",
+        "PGKC-233",
+        "PGKC-190",
+        "PGKC-234",
+        "PGKC-191",
+        "PGKC-235",
+        "PGKC-192",
+        "PGKC-236",
+        "PGKC-193",
+        "PGKC-237",
+        "PGKC-194",
+        "PGKC-238",
+        "PGKC-195",
+        "PGKC-239",
+        "PGKC-196",
+        "PGKC-240",
+        "PGKC-197",
+        "PGKC-241",
+        "PGKC-198",
+        "PGKC-242",
+        "PGKC-199",
+        "PGKC-243",
+        "PGKC-200",
+        "PGKC-244",
+        "PGKC-201",
+        "PGKC-245",
+        "PGKC-202",
+        "PGKC-246",
+        "PGKC-203",
+        "PGKC-247",
+        "PGKC-204",
+        "PGKC-248",
+        "PGKC-205",
+        "PGKC-249",
+        "PGKC-206",
+        "PGKC-250",
+        "PGKC-207",
+        "PGKC-251",
+        "PGKC-208",
+        "PGKC-252",
+        "PGKC-209",
+        "PGKC-253",
+        "PGKC-210",
+        "PGKC-254",
+        "PGKC-211",
+        "PGKC-255",
+        "PGKC-212",
+        "PGKC-256",
+        "PGKC-213",
+        "PGKC-257",
+        "PGKC-214",
+        "PGKC-258",
+        "PGKC-215",
+        "PGKC-259",
+        "PGKC-216",
+        "PGKC-260",
+        "PGKC-217",
+        "PGKC-261",
+        "PGKC-218",
+        "PGKC-262",
+        "PGKC-219",
+        "PGKC-263",
+        "PGKC-220",
+        "PGKC-264",
+        "PGKC-221",
+        "PGKC-265",
+        "PGKC-280",
+        "PGKC-301",
+        "A6N-C009"
+      ],
+      "erkenntnisbereiche": [
+        "ER-09",
+        "ER-08"
+      ],
+      "geltungsbereich": "44 A5-Entscheidungsfälle C01–C44; nicht gleichbedeutend mit 44 formal bewiesenen Sätzen",
+      "id": "PGKM-028",
+      "kontrastachsen": [
+        "SP-12",
+        "SP-07"
+      ],
+      "status": "NONCANONICAL_RESEARCH_SYNTHESIS",
+      "titel": "Widerspruchs-, Status- und Geltungsentscheidungen A5"
+    },
+    {
+      "claim_ids": [
+        "PGKC-315",
+        "PGKC-316",
+        "PGKC-317"
+      ],
+      "erkenntnisbereiche": [
+        "ER-01",
+        "ER-03",
+        "ER-04",
+        "ER-09"
+      ],
+      "geltungsbereich": "A6N-01-Korollar, festes U0; Merge- und Singleton-Geburt",
+      "id": "PGKM-029",
+      "kontrastachsen": [
+        "SP-14",
+        "SP-05"
+      ],
+      "status": "DERIVED_FORMAL_RESULT_NOT_EMPIRICAL",
+      "titel": "Exakte Paarverlustbilanz im nativen E/C-Partitionskern"
+    }
+  ],
+  "schema": "pgk.public.modules.v1"
+}

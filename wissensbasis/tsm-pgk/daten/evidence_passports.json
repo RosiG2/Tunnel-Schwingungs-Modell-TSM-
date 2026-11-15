@@ -1,0 +1,1598 @@
+{
+  "count": 19,
+  "original_fulltext_not_embedded": true,
+  "passports": [
+    {
+      "autoritaet": [
+        "KANONISCHER_AUSGANGSSTAND"
+      ],
+      "claim_ids": [
+        "PGKC-031",
+        "PGKC-032",
+        "PGKC-299"
+      ],
+      "dokumentierter_quellenabgleich": "Originalstatus, Manifest und Vorversion gelesen.",
+      "ergebnis": "FGT_C companion-bestätigt, kanonische Instanziierung offen.",
+      "forschungskennung": "PGK Research Memory v1.39",
+      "gegenbefunde_und_geltungsgrenzen": "Formale Typkohärenz und native Trace-Coverage sind verschiedene Leistungen. Die offenen Prädiktionen und historischen STOPs bleiben erhalten.",
+      "guards": [
+        "DEMO_ONLY | Frozen D, wo vereinbart | A_time NOT INSERTED | t_PGK NOT INSERTED | historische STOPs unverändert zitieren"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Companion-Adjudikation in der Originalquelle.",
+      "id": "INTEGRATION-PASSPORT-001",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "PGK Research Memory v1.39"
+      ],
+      "offene_fragen": "Ein übergreifend kanonisch konsolidierter neuerer PGK-Stand ist nicht dokumentiert.",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "T0 FLOW/PASSAGE-REWRITE; T1 Ω/Admissibility; T2 W/Ordnung; T3 Kontext; S1 Heldness; S2 Reentry; S3 Regulation."
+    },
+    {
+      "autoritaet": [
+        "POST_V139_SOURCE_BOUND"
+      ],
+      "claim_ids": [
+        "PGKC-023",
+        "PGKC-206",
+        "PGKC-250",
+        "PGKC-264"
+      ],
+      "dokumentierter_quellenabgleich": "Originale und alle 4855 Dateien des D9-Manifests geprüft. Technischen Originalverifier lokal ausgeführt: PASS, 747/747 D9-Dateien. Historischer Replay anhand Begleitbericht belegt.",
+      "ergebnis": "Technischer REBUILD_A unabhängig bestätigt. D9-Ergänzung in v1.1 physisch vorhanden, SHA/Größen vollständig konsistent.",
+      "forschungskennung": "PGK-BRW-CANONICAL-REBUILD-01",
+      "gegenbefunde_und_geltungsgrenzen": "PATH_R bleibt unreconstructible; PATH_N und technische Instanziierung erteilen keine Effekt-/Feasibility-Freigabe.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Original Companion initiierte drittes Clean Replay mit PYTHONHASHSEED=2. D9-v1.1 ist ein dokumentarischer Nachtrag.",
+      "id": "INTEGRATION-PASSPORT-002",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "BRW Source/Identity, PATH_N"
+      ],
+      "offene_fragen": "Explizite wissenschaftliche Abnahme der D9-Nachlieferung und separate Feasibility.",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Source/Identity D0–D12, alte BRW-COV-01-Population; gefrorene Counts und Keys. D9-v1.1 ergänzt echte Event-Keys aus D8/D10."
+    },
+    {
+      "autoritaet": [
+        "ZWEIGGEBUNDENER_ABGESCHLOSSENER_ERGEBNISSTAND"
+      ],
+      "claim_ids": [
+        "PGKC-039",
+        "PGKC-049",
+        "PGKC-053",
+        "PGKC-054",
+        "PGKC-055",
+        "PGKC-133"
+      ],
+      "dokumentierter_quellenabgleich": "Original manifestiert; Hauptwerte aus CSV/JSON und separaten frozen Tabellen geprüft. Kein nativer Replay.",
+      "ergebnis": {
+        "dateienachweis": {
+          "aktivierung": {
+            "confirmation": {
+              "activated": 70,
+              "activation_frac": 0.5833333333333334,
+              "n": 120,
+              "wait_mean": 5.142857142857143
+            },
+            "discovery": {
+              "activated": 77,
+              "activation_frac": 0.6416666666666667,
+              "n": 120,
+              "wait_mean": 4.6103896103896105
+            },
+            "final": {
+              "activated": 143,
+              "activation_frac": 0.7447916666666666,
+              "n": 192,
+              "wait_mean": 5.2377622377622375
+            }
+          },
+          "confirmation": {
+            "n_seeds": 5,
+            "primary_A25_mean": 0.9473484848484848,
+            "primary_Aeff8_mean": 0.8176657058197829,
+            "primary_nondec_n": 22,
+            "recip_asym_mean": 0.33720297092863305
+          },
+          "discovery": {
+            "n_seeds": 5,
+            "primary_A25_mean": 0.9516666666666665,
+            "primary_Aeff8_mean": 0.8609450823260552,
+            "primary_nondec_n": 40,
+            "recip_asym_mean": 0.5497532730006113
+          },
+          "final": {
+            "n_seeds": 8,
+            "primary_A25_mean": 0.9535714285714285,
+            "primary_Aeff8_mean": 0.7919796264880224,
+            "primary_nondec_n": 56,
+            "recip_asym_mean": 0.4353869409929288
+          },
+          "reichweiten_csv": [
+            {
+              "A_band_mean": "0.9516666666666665",
+              "A_band_min": "0.5",
+              "Aeff_mean": "0.8609450823260552",
+              "dataset": "discovery",
+              "latency_mean": "2.6375",
+              "n": "40",
+              "spearman": "-0.14057425726728762",
+              "threshold": "25"
+            },
+            {
+              "A_band_mean": "0.7669940476190475",
+              "A_band_min": "0.25",
+              "Aeff_mean": "0.8609450823260552",
+              "dataset": "discovery",
+              "latency_mean": "4.1875",
+              "n": "40",
+              "spearman": "-0.0772626827515282",
+              "threshold": "50"
+            },
+            {
+              "A_band_mean": "0.9473484848484848",
+              "A_band_min": "0.5",
+              "Aeff_mean": "0.8176657058197829",
+              "dataset": "confirmation",
+              "latency_mean": "3.590909090909091",
+              "n": "22",
+              "spearman": "-0.03989559857007373",
+              "threshold": "25"
+            },
+            {
+              "A_band_mean": "0.6819805194805196",
+              "A_band_min": "0.25",
+              "Aeff_mean": "0.8176657058197829",
+              "dataset": "confirmation",
+              "latency_mean": "5.0227272727272725",
+              "n": "22",
+              "spearman": "-0.05272791619934637",
+              "threshold": "50"
+            },
+            {
+              "A_band_mean": "0.9535714285714285",
+              "A_band_min": "0.4",
+              "Aeff_mean": "0.7919796264880224",
+              "dataset": "final",
+              "latency_mean": "3.044642857142857",
+              "n": "56",
+              "spearman": "-0.05570067773829955",
+              "threshold": "25"
+            },
+            {
+              "A_band_mean": "0.7181547619047619",
+              "A_band_min": "0.2",
+              "Aeff_mean": "0.7919796264880224",
+              "dataset": "final",
+              "latency_mean": "4.482142857142857",
+              "n": "56",
+              "spearman": "0.070971927601821",
+              "threshold": "50"
+            },
+            {
+              "A_band_mean": "0.9444444444444443",
+              "A_band_min": "0.4285714285714285",
+              "Aeff_mean": "0.8191476820692557",
+              "dataset": "null",
+              "latency_mean": "3.1875",
+              "n": "24",
+              "spearman": "0.16081334853208062",
+              "threshold": "25"
+            },
+            {
+              "A_band_mean": "0.7316468253968255",
+              "A_band_min": "0.1428571428571428",
+              "Aeff_mean": "0.8191476820692557",
+              "dataset": "null",
+              "latency_mean": "4.479166666666667",
+              "n": "24",
+              "spearman": "0.05805128796726931",
+              "threshold": "50"
+            }
+          ]
+        },
+        "gate_I": "REOPENED; PASS NOT ESTABLISHED",
+        "gate_II": "PASS, MECHANISTIC INTERFACE-BALANCE FORM",
+        "gate_III": "NOT OPENED",
+        "status": "ACCESSIBILITY–RATE FACTORIZATION PARTIAL — NO BOUNDED DIRECTED REACH"
+      },
+      "forschungskennung": "PGK-0.62A",
+      "gegenbefunde_und_geltungsgrenzen": "25%-Zielband ~95 % erreicht; kein B_access≥.8, kein robustes low-access/fast-latency-Regime. λ=.5 behält Richtung in 7/13, Q-Rotationsnull bringt vergleichbare Asymmetrie. Rang-2-Subtraktion ist diagnostisch und kann bei kleiner Zielzahl trivial null sein.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Original archiviert native Interventionsdaten und Q-Rotations-/λ-Guards. run_all.py des Pakets reaggregiert frozen Daten und prüft Gates; es enthält keinen neuen vollständigen nativen Collector-Lauf.",
+      "id": "INTEGRATION-PASSPORT-003",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "recovered K0, Frozen D im Realpfad, nativer E/C-Selektor des jeweiligen Vertrags"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "λ=2 skaliert alle atom_vecs einer gewählten effektiven Komponente. P/Q/K/W am Anker gleich. Wahre Aktivierung durch vergrößernden nativen C-Merge, dann Zielantwort (PDu_j,QDu_j) bis h=8. Führender SVD-Mode als Claim-Guard."
+    },
+    {
+      "autoritaet": [
+        "ZWEIGGEBUNDENER_FINAL_STAND"
+      ],
+      "claim_ids": [
+        "PGKC-074",
+        "PGKC-076",
+        "PGKC-077"
+      ],
+      "dokumentierter_quellenabgleich": "Original-SHA und 1694/1694 SHA-Einträge sowie 4/4 Freeze-Hashes. Gate-Logik gegen archivierte Maschinenwerte eigenständig geprüft.",
+      "ergebnis": {
+        "bloecke": {
+          "confirmation": {
+            "additionality": {
+              "candidate_within_native": {
+                "ci95": [
+                  -6.407449003127058,
+                  0.7704754447128999
+                ],
+                "coefficients": {
+                  "candidate_conf_margin": -1.5886038507021893,
+                  "delta_within_dim": -0.1026502370829811,
+                  "intercept": -2.2948249251088475
+                },
+                "n_boot_valid": 4000,
+                "n_seeds": 10,
+                "n_states": 115,
+                "point": -0.1026502370829811
+              },
+              "class": {
+                "ci95": [
+                  -24.859106068947867,
+                  -2.143639596772324
+                ],
+                "coefficients": {
+                  "class_conf_margin": -1.6631455833105742,
+                  "delta_class_dim": -3.737175245038265,
+                  "intercept": -3.8682181685579184
+                },
+                "n_boot_valid": 4000,
+                "n_seeds": 10,
+                "n_states": 109,
+                "point": -3.737175245038265
+              }
+            },
+            "localization": {
+              "candidate_within_native": {
+                "error_small": 0.3333333333333333,
+                "error_wide": 0.043478260869565216,
+                "n_small": 18,
+                "n_wide": 46,
+                "small_minus_wide": {
+                  "ci95": [
+                    0.06666666666666667,
+                    0.49333333333333335
+                  ],
+                  "n_seeds": 5,
+                  "point": 0.2866666666666667
+                }
+              },
+              "class": {
+                "error_small": 0.5,
+                "error_wide": 0.0,
+                "n_small": 28,
+                "n_wide": 26,
+                "small_minus_wide": {
+                  "ci95": [
+                    0.2962962962962963,
+                    0.6851851851851852
+                  ],
+                  "n_seeds": 9,
+                  "point": 0.5
+                }
+              }
+            },
+            "wide": {
+              "candidate_within_native": {
+                "by_depth": {
+                  "0": {
+                    "errors": 0,
+                    "n": 22,
+                    "rate": 0.0
+                  },
+                  "4": {
+                    "errors": 2,
+                    "n": 24,
+                    "rate": 0.08333333333333333
+                  }
+                },
+                "by_variant": {
+                  "eta": {
+                    "errors": 1,
+                    "n": 21,
+                    "rate": 0.047619047619047616
+                  },
+                  "tr": {
+                    "errors": 1,
+                    "n": 25,
+                    "rate": 0.04
+                  }
+                },
+                "error_rate": 0.043478260869565216,
+                "n_seeds": 10,
+                "n_states": 46,
+                "seed_error_prevalence": 0.1,
+                "substantial": false
+              },
+              "class": {
+                "by_depth": {
+                  "0": {
+                    "errors": 0,
+                    "n": 14,
+                    "rate": 0.0
+                  },
+                  "4": {
+                    "errors": 0,
+                    "n": 12,
+                    "rate": 0.0
+                  }
+                },
+                "by_variant": {
+                  "eta": {
+                    "errors": 0,
+                    "n": 11,
+                    "rate": 0.0
+                  },
+                  "tr": {
+                    "errors": 0,
+                    "n": 15,
+                    "rate": 0.0
+                  }
+                },
+                "error_rate": 0.0,
+                "n_seeds": 10,
+                "n_states": 26,
+                "seed_error_prevalence": 0.0,
+                "substantial": false
+              }
+            }
+          },
+          "final": {
+            "additionality": {
+              "candidate_within_native": {
+                "ci95": [
+                  -32.28849591755043,
+                  -0.26604372194560955
+                ],
+                "coefficients": {
+                  "candidate_conf_margin": -1.663743912073135,
+                  "delta_within_dim": -0.791481849502149,
+                  "intercept": -2.025145096777917
+                },
+                "n_boot_valid": 4000,
+                "n_seeds": 10,
+                "n_states": 103,
+                "point": -0.791481849502149
+              },
+              "class": {
+                "ci95": [
+                  -16.9414076667358,
+                  2.239786364438628
+                ],
+                "coefficients": {
+                  "class_conf_margin": -1.6177126775922626,
+                  "delta_class_dim": -0.3337987689438239,
+                  "intercept": -3.4387602727862427
+                },
+                "n_boot_valid": 3997,
+                "n_seeds": 10,
+                "n_states": 102,
+                "point": -0.3337987689438239
+              }
+            },
+            "localization": {
+              "candidate_within_native": {
+                "error_small": 0.5384615384615384,
+                "error_wide": 0.1111111111111111,
+                "n_small": 26,
+                "n_wide": 27,
+                "small_minus_wide": {
+                  "ci95": [
+                    0.17857142857142852,
+                    0.7222222222222222
+                  ],
+                  "n_seeds": 6,
+                  "point": 0.4396825396825396
+                }
+              },
+              "class": {
+                "error_small": 0.07692307692307693,
+                "error_wide": 0.10526315789473684,
+                "n_small": 13,
+                "n_wide": 19,
+                "small_minus_wide": {
+                  "ci95": [
+                    0.0,
+                    0.75
+                  ],
+                  "n_seeds": 4,
+                  "point": 0.25
+                }
+              }
+            },
+            "wide": {
+              "candidate_within_native": {
+                "by_depth": {
+                  "0": {
+                    "errors": 2,
+                    "n": 15,
+                    "rate": 0.13333333333333333
+                  },
+                  "4": {
+                    "errors": 1,
+                    "n": 12,
+                    "rate": 0.08333333333333333
+                  }
+                },
+                "by_variant": {
+                  "eta": {
+                    "errors": 3,
+                    "n": 20,
+                    "rate": 0.15
+                  },
+                  "tr": {
+                    "errors": 0,
+                    "n": 7,
+                    "rate": 0.0
+                  }
+                },
+                "error_rate": 0.1111111111111111,
+                "n_seeds": 8,
+                "n_states": 27,
+                "seed_error_prevalence": 0.25,
+                "substantial": false
+              },
+              "class": {
+                "by_depth": {
+                  "0": {
+                    "errors": 1,
+                    "n": 10,
+                    "rate": 0.1
+                  },
+                  "4": {
+                    "errors": 1,
+                    "n": 9,
+                    "rate": 0.1111111111111111
+                  }
+                },
+                "by_variant": {
+                  "eta": {
+                    "errors": 2,
+                    "n": 13,
+                    "rate": 0.15384615384615385
+                  },
+                  "tr": {
+                    "errors": 0,
+                    "n": 6,
+                    "rate": 0.0
+                  }
+                },
+                "error_rate": 0.10526315789473684,
+                "n_seeds": 8,
+                "n_states": 19,
+                "seed_error_prevalence": 0.125,
+                "substantial": false
+              }
+            }
+          }
+        },
+        "gates": {
+          "G_LEVEL_MATCHED_MARGIN_LOCALIZATION": "FAIL",
+          "G_NATIVE_MARGIN_ADDITIONALITY": "FAIL",
+          "G_ROOT_ORDER_TRACKING": "PASS",
+          "G_ROOT_RACE_EXPLANATION": "FAIL",
+          "G_WIDE_MARGIN_GUARD": "PASS"
+        },
+        "outcome": "B"
+      },
+      "forschungskennung": "PGK-0.85",
+      "gegenbefunde_und_geltungsgrenzen": "Kandidaten-in-Klasse lokalisieren Fehler auf beiden Held-outs; Klassenebene Final-CI schließt 0 nicht aus. Margin-Additionality kippt zwischen Level/Block. Wide-margin-Fehler existieren, erreichen nicht gleichzeitig ≥10 % Rate und ≥50 % Seed-Prävalenz.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Originaler cold-run-Log mit Hash/Logic, drei nativen Stichproben 94900/94920/94940 tr/4/d0 und parent084; kein unabhängiger Vollreplay.",
+      "id": "INTEGRATION-PASSPORT-004",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "recovered K0, Frozen D im Realpfad, nativer E/C-Selektor des jeweiligen Vertrags"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Frozen Direct-Class 0.82 und Candidate-Score 0.70. Root_K=min_c∈K root_c; margins je Level, dimensionslos normiert durch |first root| mit Floor 1e-12; Discovery-Quartile und seedweise Bootstraps."
+    },
+    {
+      "autoritaet": [
+        "ZWEIGGEBUNDENER_FINAL_STAND_DES_PRE_VORLAEUFERS",
+        "HISTORISCHER_ARBEITSSTAND",
+        "BERICHTSREFERENZ_SHA_EXAKT / ZWEIGGEBUNDENER_FINAL_STAND",
+        "ZWEIGGEBUNDENE_FINAL_VARIANTE"
+      ],
+      "claim_ids": [
+        "PGKC-106",
+        "PGKC-107",
+        "PGKC-171",
+        "PGKC-172",
+        "PGKC-290",
+        "PGKC-297"
+      ],
+      "dokumentierter_quellenabgleich": "Original-SHAs, Manifestgrößen, Gate-JSONs, CSV.GZ-Zensus und paarweiser Hashabgleich; Original d78604a0 statisch aus unveränderten Dateien geprüft. Kein nativer Vollreplay.",
+      "ergebnis": {
+        "adjudicationen": {
+          "4254e250840f343243a20b61a75427b333518e084809ee488989cff27eda053f": {
+            "A_time": "NOT_INSERTED",
+            "CLOCK": "NOT_OPENED",
+            "DELAYED_ORIENTATION_EFFECT": "SUPPORTED",
+            "DISCRETE_EVENT_MEDIATED_B_TRANSITION": "SUPPORTED",
+            "EFFECTIVE_UNIT_INTERNAL_FIBER": "ALGEBRAIC_ONLY",
+            "FACTOR_h": "NOT_CLAIMED",
+            "FINE_RESPONSE_HORIZON_CONTINUATION": "MIXED",
+            "GEOMETRY": "NOT_OPENED",
+            "HELD_ORDER_B": "SUPPORTED",
+            "INTERNAL_PAYLOAD_SWAP_ROLE": "FORWARD_SILENT_ALGEBRAIC_FIBER",
+            "MOBILE_ORIENTATION_WITHIN_B": "SUPPORTED",
+            "NATIVE_FIBER": "REACHABLE_FOUND",
+            "OMEGA_NATIVE_ROOT_IDENTITY": "OCCURRENCE_DEFINED",
+            "ORIENTATION_ARCHITECTURE": "MULTICOMPONENT",
+            "ORIENTATION_CARRIER_LOCALIZATION": "EXISTING_X_PI_DYNAMIC_PAIR_UNDER_FIXED_LAW",
+            "RETURN_ORDER": "SUPPORTED_AS_FUNCTIONAL_SEARCH_SPACE",
+            "ROOT_ROLE_AT_B_LEVEL": "NOT_OBSERVED",
+            "ROOT_ROLE_FINE_RESPONSE": "RELEVANT",
+            "SCOPE": "DEMO_ONLY",
+            "VALIDITY": "PASS",
+            "W_X_NATIVE_IDENTITY": "EQUIVALENCE_CLASS"
+          },
+          "d78604a03eff1b339444267cf3ea5f22687cddc48389dc5bdfd8a92064172e6d": {
+            "ALGEBRAIC_EFFECTIVE_UNIT_SWAP": "ALGEBRAIC_ONLY__MATHEMATICALLY_INERT_UNDER_TESTED_LAW",
+            "A_time": "NOT_INSERTED",
+            "DELAYED_ORIENTATION_EFFECT": "SUPPORTED",
+            "DISCRETE_EVENT_MEDIATED_B_TRANSITION": "SUPPORTED",
+            "EFFECTIVE_UNIT_INTERNAL_FIBER": "ALGEBRAIC_ONLY",
+            "FACTOR_h": "NOT_CLAIMED",
+            "FINE_RESPONSE_HORIZON_CONTINUATION": "DIFFERENT",
+            "GEOMETRY": "NOT_OPENED",
+            "HELD_ORDER_B": "SUPPORTED",
+            "MOBILE_ORIENTATION_WITHIN_B": "STRONGLY_SUPPORTED",
+            "NATIVE_FIBER": "REACHABLE_FOUND",
+            "ORIENTATION_ARCHITECTURE": "NOT_RESOLVED",
+            "PHYSICAL_TIME": "NOT_OPENED",
+            "RETURN_ORDER": "SUPPORTED_AS_FUNCTIONAL_SEARCH_SPACE",
+            "ROOT_ROLE_AT_B_LEVEL": "MIXED_NOT_NECESSARY_FOR_B_TRANSITION",
+            "SCOPE": "DEMO_ONLY"
+          },
+          "edda3993bedb14bfb94844927c7fa60fcdabd9d69f643c643b1ce3d80cde06dd": {
+            "ALGEBRAIC_INTERNAL_FIBER_DYNAMICS": "CURRENTLY_SILENT_AT_GENERATION_0__POST_MERGE_EXACT_FINGERPRINT_DRIFT_WITH_NATIVE_PASSAGE_EQUIVALENCE",
+            "A_time": "NOT INSERTED",
+            "CLOCK": "NOT OPENED",
+            "DISCRETE_EVENT_MEDIATED_B_TRANSITION": "SUPPORTED",
+            "EFFECTIVE_UNIT_INTERNAL_FIBER": "ALGEBRAIC_ONLY",
+            "FACTOR_h": "NOT_YET_REQUIRED__NOT_CLAIMED",
+            "FINE_RESPONSE_HORIZON_CONTINUATION": "DIFFERENT",
+            "GEOMETRY": "NOT OPENED",
+            "HELD_ORDER_B": "SUPPORTED",
+            "MOBILE_ORIENTATION_WITHIN_B": "STRONGLY_SUPPORTED",
+            "NATIVE_B_FIBER": "REACHABLE_FOUND",
+            "OMEGA_NATIVE_ROOT_IDENTITY": "OCCURRENCE_DEFINED_WITH_INHERITED_TOLERANCE_SIDECAR",
+            "ORIENTATION_ARCHITECTURE": "MULTICOMPONENT",
+            "PARENT_REGRESSION": "PASS",
+            "RETURN_ORDER": "SUGGESTIVE",
+            "ROOT_ROLE_AT_B_LEVEL": "NOT_OBSERVED",
+            "TSM_H": "NOT IDENTIFIED",
+            "VALIDITY": "PASS",
+            "WX_NATIVE_IDENTITY": "EXACT_PROJECTOR_IDENTITY"
+          }
+        },
+        "reaggregation": {
+          "4254e250840f343243a20b61a75427b333518e084809ee488989cff27eda053f": {
+            "aequivalenz_geprueft": 209,
+            "delay_eligible": 38,
+            "delay_signal": 34,
+            "diskrete_Passage_gleich": 67,
+            "fine_current_verschieden": 202,
+            "gruppen": 73,
+            "naturpaare": 209,
+            "repraesentativ_markiert": 4,
+            "swap_forward_depth3_equal": 430,
+            "swap_paare": 430,
+            "swap_reachability": 0
+          },
+          "d78604a03eff1b339444267cf3ea5f22687cddc48389dc5bdfd8a92064172e6d": {
+            "WX_und_Omega_verschieden": 117,
+            "aequivalenz_geprueft": 117,
+            "darunter_root_ausserhalb_toleranz": 38,
+            "delay_B_n2_verschieden": 19,
+            "delay_Ostar_verschieden": 39,
+            "delay_eligible": 39,
+            "diskrete_Passage_gleich": 39,
+            "naturpaare": 117,
+            "swap_aktuell_exakt_gleich": 61,
+            "swap_folgeschritt_exakt_gleich": 60,
+            "swap_paare": 61
+          },
+          "edda3993bedb14bfb94844927c7fa60fcdabd9d69f643c643b1ce3d80cde06dd": {
+            "WX_und_Omega_verschieden": 209,
+            "aequivalenz_geprueft": 209,
+            "diskrete_Passage_gleich": 70,
+            "naturpaare": 209,
+            "rekursive_zeilen": 1475,
+            "swap_paare": 388
+          },
+          "paaridentitaet": {
+            "d78604a0_vollstaendig_in_beiden_anderen": 117,
+            "divergente_flagzeilen": [
+              {
+                "block": "final",
+                "flags_4254e250": [
+                  "0",
+                  "0"
+                ],
+                "flags_d78604a0": [
+                  "1",
+                  "1"
+                ],
+                "flags_edda3993": [
+                  "1",
+                  "1"
+                ],
+                "qproc_hashpaar": [
+                  "8ea0e69fb629cb891626112ff5e083c7ed4dd1488a206c5d5f843f7a88ab941c",
+                  "b7795b2db3c69bebac69b1ab026d08eeb3cc783a8e28864570d9dbfac0f1e22a"
+                ],
+                "variante": "eta",
+                "zustandstabellen": {
+                  "4254e250": [
+                    {
+                      "anker": 8,
+                      "event_key": "('E', ((0,), (4, 5, 9), (10, 13)))",
+                      "root_hex": "0x1.69ec009352163p-3",
+                      "seed": 101761,
+                      "selected_native_idx": 1,
+                      "tiefe": 4
+                    },
+                    {
+                      "anker": 8,
+                      "event_key": "('C', (((0, 1, 2, 3), (0, 1, 2, 4), (0, 1, 3, 4), (0, 2, 3, 4), (0, 2, 4, 10), (0, 2, 10, 12), (1, 2, 3, 4)), ((0, 11), (1,), (2, 7, 8), (3, 6), (4, 5, 9), (10, 13), (12,))))",
+                      "root_hex": "0x1.6167e5d628a19p-2",
+                      "seed": 101761,
+                      "selected_native_idx": 8,
+                      "tiefe": 4
+                    }
+                  ],
+                  "d78604a0": [
+                    {
+                      "anker": 8,
+                      "event_key": "('C', (((0, 1, 2, 3), (0, 1, 2, 4), (0, 1, 3, 4), (0, 2, 3, 4), (0, 2, 4, 10), (0, 2, 10, 12), (1, 2, 3, 4)), ((0, 11), (1,), (2, 7, 8), (3, 6), (4, 5, 9), (10, 13), (12,))))",
+                      "root_hex": "0x1.2ca9ff436c6b3p+0",
+                      "seed": 101761,
+                      "selected_native_idx": 8,
+                      "tiefe": 4
+                    },
+                    {
+                      "anker": 8,
+                      "event_key": "('C', (((0, 1, 2, 3), (0, 1, 2, 4), (0, 1, 3, 4), (0, 2, 3, 4), (0, 2, 4, 10), (0, 2, 10, 12), (1, 2, 3, 4)), ((0, 11), (1,), (2, 7, 8), (3, 6), (4, 5, 9), (10, 13), (12,))))",
+                      "root_hex": "0x1.6167e5d626cc2p-2",
+                      "seed": 101761,
+                      "selected_native_idx": 8,
+                      "tiefe": 4
+                    }
+                  ],
+                  "edda3993": [
+                    {
+                      "anker": 8,
+                      "event_key": "('C', (((0, 1, 2, 3), (0, 1, 2, 4), (0, 1, 3, 4), (0, 2, 3, 4), (0, 2, 4, 10), (0, 2, 10, 12), (1, 2, 3, 4)), ((0, 11), (1,), (2, 7, 8), (3, 6), (4, 5, 9), (10, 13), (12,))))",
+                      "root_hex": "0x1.2ca9ff436c6b3p+0",
+                      "seed": 101761,
+                      "selected_native_idx": 8,
+                      "tiefe": 4
+                    },
+                    {
+                      "anker": 8,
+                      "event_key": "('C', (((0, 1, 2, 3), (0, 1, 2, 4), (0, 1, 3, 4), (0, 2, 3, 4), (0, 2, 4, 10), (0, 2, 10, 12), (1, 2, 3, 4)), ((0, 11), (1,), (2, 7, 8), (3, 6), (4, 5, 9), (10, 13), (12,))))",
+                      "root_hex": "0x1.6167e5d626cc2p-2",
+                      "seed": 101761,
+                      "selected_native_idx": 8,
+                      "tiefe": 4
+                    }
+                  ]
+                }
+              },
+              {
+                "block": "final",
+                "flags_4254e250": [
+                  "0",
+                  "0"
+                ],
+                "flags_d78604a0": [
+                  "1",
+                  "1"
+                ],
+                "flags_edda3993": [
+                  "1",
+                  "1"
+                ],
+                "qproc_hashpaar": [
+                  "2af1d1b4000d6901862822efa730ebf8ceaa3a4f513b4835a8898eed673602ae",
+                  "313296366a7131e234635dae1131087369994a9ff42650ebb34304be3452c916"
+                ],
+                "variante": "tr",
+                "zustandstabellen": {
+                  "4254e250": [
+                    {
+                      "anker": 4,
+                      "event_key": "('E', ((0,), (2, 5), (6,)))",
+                      "root_hex": "0x1.aae2872ba40f4p-2",
+                      "seed": 101766,
+                      "selected_native_idx": 2,
+                      "tiefe": 0
+                    },
+                    {
+                      "anker": 4,
+                      "event_key": "('C', (((0, 1, 2, 3), (0, 2, 3, 7)), ((0,), (1,), (2, 5), (3, 4, 6), (7,))))",
+                      "root_hex": "0x1.6716ccdfb3b6ep-2",
+                      "seed": 101766,
+                      "selected_native_idx": 8,
+                      "tiefe": 0
+                    }
+                  ],
+                  "d78604a0": [
+                    {
+                      "anker": 4,
+                      "event_key": "('E', ((0,), (2, 5), (6,)))",
+                      "root_hex": "0x1.aae2872b9be21p-2",
+                      "seed": 101766,
+                      "selected_native_idx": 2,
+                      "tiefe": 0
+                    },
+                    {
+                      "anker": 4,
+                      "event_key": "('E', ((0,), (2, 5), (6,)))",
+                      "root_hex": "0x1.170e2659a7e87p-2",
+                      "seed": 101766,
+                      "selected_native_idx": 2,
+                      "tiefe": 0
+                    }
+                  ],
+                  "edda3993": [
+                    {
+                      "anker": 4,
+                      "event_key": "('E', ((0,), (2, 5), (6,)))",
+                      "root_hex": "0x1.aae2872b9be21p-2",
+                      "seed": 101766,
+                      "selected_native_idx": 2,
+                      "tiefe": 0
+                    },
+                    {
+                      "anker": 4,
+                      "event_key": "('E', ((0,), (2, 5), (6,)))",
+                      "root_hex": "0x1.170e2659a7e87p-2",
+                      "seed": 101766,
+                      "selected_native_idx": 2,
+                      "tiefe": 0
+                    }
+                  ]
+                }
+              },
+              {
+                "block": "final",
+                "flags_4254e250": [
+                  "0",
+                  "0"
+                ],
+                "flags_d78604a0": [
+                  "1",
+                  "1"
+                ],
+                "flags_edda3993": [
+                  "1",
+                  "1"
+                ],
+                "qproc_hashpaar": [
+                  "b3e1546e4ad242f63e803fe0cc50c5ae75314751f7432f2c102f69cc74e01b45",
+                  "c47bf83fd5e5513edf1197c7ec5e1339052baf2f1eda691a30b0957b013978f1"
+                ],
+                "variante": "tr",
+                "zustandstabellen": {
+                  "4254e250": [
+                    {
+                      "anker": 8,
+                      "event_key": "('E', ((0,), (1,), (2, 5)))",
+                      "root_hex": "0x1.24f897c5655fdp-4",
+                      "seed": 101767,
+                      "selected_native_idx": 0,
+                      "tiefe": 4
+                    },
+                    {
+                      "anker": 8,
+                      "event_key": "('E', ((0,), (1,), (7, 8)))",
+                      "root_hex": "0x1.5ffac344cb8d0p-1",
+                      "seed": 101767,
+                      "selected_native_idx": 1,
+                      "tiefe": 4
+                    }
+                  ],
+                  "d78604a0": [
+                    {
+                      "anker": 8,
+                      "event_key": "('E', ((0,), (1,), (7, 8)))",
+                      "root_hex": "0x1.8bf0bc13df407p-1",
+                      "seed": 101767,
+                      "selected_native_idx": 1,
+                      "tiefe": 4
+                    },
+                    {
+                      "anker": 8,
+                      "event_key": "('E', ((0,), (1,), (7, 8)))",
+                      "root_hex": "0x1.5ffac344cbcfep-1",
+                      "seed": 101767,
+                      "selected_native_idx": 1,
+                      "tiefe": 4
+                    }
+                  ],
+                  "edda3993": [
+                    {
+                      "anker": 8,
+                      "event_key": "('E', ((0,), (1,), (7, 8)))",
+                      "root_hex": "0x1.8bf0bc13df407p-1",
+                      "seed": 101767,
+                      "selected_native_idx": 1,
+                      "tiefe": 4
+                    },
+                    {
+                      "anker": 8,
+                      "event_key": "('E', ((0,), (1,), (7, 8)))",
+                      "root_hex": "0x1.5ffac344cbcfep-1",
+                      "seed": 101767,
+                      "selected_native_idx": 1,
+                      "tiefe": 4
+                    }
+                  ]
+                }
+              }
+            ],
+            "flagreihenfolge": [
+              "diskrete_Passage_gleich",
+              "B_n_plus_1_gleich"
+            ],
+            "gleiche_naturpaare_4254e250_und_edda3993": 209,
+            "kriterien": [
+              "block",
+              "variant",
+              "ungeordnetes QPROC-Hashpaar"
+            ]
+          }
+        }
+      },
+      "forschungskennung": "PGK-0.115B",
+      "gegenbefunde_und_geltungsgrenzen": "Die 117 Hashpaare sind eine Teilmenge der beiden identischen 209er-Mengen. Drei gemeinsame Paare wechseln Doppel-Flags. Algebraische Swaps wurden unter verschiedenem Sampling und exakter/semantischer Gleichheitsprüfung getestet. Return-Order bleibt Suchraum, kein Faktor h, keine Uhr.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": {
+        "4254e250": "Cold-Bericht dokumentiert 40 frische Release-Seeds, drei Current/Algebraic-Shard-Checks, einen Transition-Shard-Check und 4 Depth-3-Swap-Recomputes; Cross-runtime nicht belegt.",
+        "d78604a0": "Statisches PASS und split Fresh-Recompute beim Releasebau laut Report. Begleitinstanz dokumentiert eigenen statischen PASS, keinen vollen Fresh-Recompute.",
+        "edda3993": "Kandidat 40/40 frozen seeds, row-exact in vier Tabellenfamilien, gleiche Runtime; RECOMPUTE_VALIDATION_SUMMARY belegt Run. Keine externe Replikation."
+      },
+      "id": "INTEGRATION-PASSPORT-005",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "recovered K0, QPROC-1/DIRECT-092, Frozen D, tr/eta soweit im Original",
+        "QPROC-F114/F115A, ACTSIG plus nativer Index, Frozen D, tr/eta"
+      ],
+      "offene_fragen": "Kein globaler Ablösebeschluss zwischen den drei FINAL-Ständen. Validierungsnotiz mit 07493fee… liegt vor, passender ZIP-Körper bisher nicht gefunden.",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Genau gleiche B=(U,M,I) bei gleicher Law Context/Variante; natürliche reachable Faser und algebraischer vorhandener Size-2-Payload-Swap getrennt. Diskrete Event-ID/Index, exakte Rootbytes und toleranzbasierte Occurrence sind getrennte Prädikate."
+    },
+    {
+      "autoritaet": [
+        "POST_V139_SOURCE_BOUND"
+      ],
+      "claim_ids": [
+        "PGKC-014",
+        "PGKC-022",
+        "PGKC-302"
+      ],
+      "dokumentierter_quellenabgleich": "Originalberichte/Output und 20/20 SHA-Einträge gelesen und geprüft.",
+      "ergebnis": "Q′=Q−l_A l_Aᵀ, l′_B=(l_B−c l_A)/√(1−c²), c=l_A·l_B. ||ΔJ_B||₂=|c|, ||ΔJ_B||_F=√2|c|. Im matched cut c≈−.7561, ||ΔJ_B||_F≈1.06922, Δg_B≈.00463639. FLOW-Port u_B=−P_B D(I−P_B)X.",
+      "forschungskennung": "PGK-TG-ROOT-01D",
+      "gegenbefunde_und_geltungsgrenzen": "Offblock-2-Norm≈.535884. Bei festem P_B und ohne Rewrite liefert Energie einen endlichen Fehlerbound, keinen nativen Winner. Formale Paare und synthetischer Beschleunigungszeuge haben keinen zweiten ausgewählten Historienstatus.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Original berichtet Read-only Audit, 26/26 Portidentitäten (max Fehler ~3.31e-15) und finite FLOW-Bounds.",
+      "id": "INTEGRATION-PASSPORT-006",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "DIRECT-092, archivierter CFG oder explizit markierter Kontrollzweig, 64D, Frozen D"
+      ],
+      "offene_fragen": "Welche minimale Außeninformation reicht unter einem festen Horizont für eine ausgewählte lokale Ereignisprognose?",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Matched cut q_flow/q_after bei identischen globalen X,Π und B-Support. A-Insertion mit unabhängiger E-Richtung; offener harmonischer FLOW auf festem B-Unterraum."
+    },
+    {
+      "autoritaet": [
+        "POST_V139_SOURCE_BOUND"
+      ],
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-116",
+        "PGKC-302"
+      ],
+      "dokumentierter_quellenabgleich": "Originalreport und 20/20 SHA-Einträge geprüft. FSTT-01F als Selektorgrenze beibehalten.",
+      "ergebnis": "10/10 Cue-Adressen und ABSENT-Kontrolle. 17 FLOW-Rückrechnungen bis ~9.89e-14 X und ~2.11e-13 Π. Vollständiges C-Ledger nicht aus q ablesbar.",
+      "forschungskennung": "PGK-TG-ROOT-01E",
+      "gegenbefunde_und_geltungsgrenzen": "Bekannte Seedgrenze für Neugeburtszählung erforderlich; Rootzeiten extern. Formal verschobene Δτ bei konstantem Summenparameter sind keine zwei nativen Rootfolgen.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Original berichtet Cue-, Baseline- und FLOW-Inversionstests auf archiviertem CFG.",
+      "id": "INTEGRATION-PASSPORT-007",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "DIRECT-092, archivierter CFG oder explizit markierter Kontrollzweig, 64D, Frozen D"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Adresse A(q,a) findet das rohe Simplex mit max(simplex)=a und liest den gespeicherten E-Geburtsvektor. Getrennte Seed-Inventur und Cue-Auswertung."
+    },
+    {
+      "autoritaet": [
+        "POST_V139_SOURCE_BOUND",
+        "POST_V139_KORREKTURAUTORITAET"
+      ],
+      "claim_ids": [
+        "A6N-C001",
+        "PGKC-002",
+        "PGKC-024",
+        "PGKC-025",
+        "PGKC-266",
+        "PGKC-267",
+        "PGKC-281"
+      ],
+      "dokumentierter_quellenabgleich": "Original Summary, Enclosures und 26/26 Manifestdateien geprüft.",
+      "ergebnis": "33 abgesicherte Rootfälle. Schritt 6 E-Rootinsel ≈0.0932519093543–0.0978344170104, von beiden Rastern verpasst. Schritt 10 alter Parent C-Insel ≈0.668422789849–0.684539225877, CFG .06 verpasst und Chooser .04 erkennt.",
+      "forschungskennung": "FSTT-01F",
+      "gegenbefunde_und_geltungsgrenzen": "Bedingter Schritt 10 bleibt Archivdiagnose, da korrigierte Folge ab 6 abweicht. Fixierte Koeffizienten sind keine Rundungsenclosure der gesamten IEEE-Quelloperation. Lambda/S3 bleibt nicht adjudiziert.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Original dokumentiert getrennte CFG/Bound-first/STOP-Tracks und multipräzise Isolationen. Ältere A6/3-Nachrechnung lokal auf Schritte 6/10.",
+      "id": "INTEGRATION-PASSPORT-008",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "DIRECT-092, archivierter CFG oder explizit markierter Kontrollzweig, 64D, Frozen D"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Erstes gerichtetes Crossing im festen harmonischen Float-Koeffizientenmodell. 65-digit Mittelpunkt plus analytische Krümmungsabschätzung; alter CFG- und Chooser-Rastervergleich getrennt."
+    },
+    {
+      "autoritaet": [
+        "POST_V139_SOURCE_BOUND"
+      ],
+      "claim_ids": [
+        "A6N-C002",
+        "A6N-C004",
+        "A6N-C008",
+        "PGKC-026",
+        "PGKC-031",
+        "PGKC-032"
+      ],
+      "dokumentierter_quellenabgleich": "Rang-1-H3-Maps aus 17 CSV-Zeilen und Manifest geprüft.",
+      "ergebnis": {
+        "Nahtbeobachtungen": 51,
+        "Uebergaenge": 17,
+        "andere_E_Kontakte": 43,
+        "identische_Naht_wieder_frei": 0,
+        "positive_Transportabbildungen_Rang1": 15
+      },
+      "forschungskennung": "Naht und H3",
+      "gegenbefunde_und_geltungsgrenzen": "STOP b3=1 und 0 E/C; 51/51 innere Nähte mit Inzidenz 2, 0/51 E-frei, aber 43/51 anderer Nachfolgerkontakt. Der letzte gespeicherte Auswahlvorschlag ist kein ausgeführtes Ereignis. Kein isolierter Nahtmechanismus oder S3.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Original berechnet Betti-Zahlen, induzierte H3-Maps, 19/19 native Facetteninventare.",
+      "id": "INTEGRATION-PASSPORT-009",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "DIRECT-092, archivierter CFG oder explizit markierter Kontrollzweig, 64D, Frozen D",
+        "DIRECT-092 und formale CSTOP-Kontrollen"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "GF(2)-Kettenoperator über realisierte Tetraeder; native E-Inklusion bzw. C-Vertexabbildung; H3-Rang, freie Facette und Ereignisse separat."
+    },
+    {
+      "autoritaet": [
+        "EINGEFRORENER_EXAKTER_ENDPUNKT",
+        "ZWEIGGEBUNDENER_ERGEBNISSTAND"
+      ],
+      "claim_ids": [
+        "PGKC-029",
+        "PGKC-030",
+        "PGKC-129",
+        "PGKC-130",
+        "PGKC-185",
+        "PGKC-186",
+        "PGKC-229",
+        "PGKC-230",
+        "PGKC-275",
+        "PGKC-276"
+      ],
+      "dokumentierter_quellenabgleich": "Originale, Sidecar-SHA, Manifeste und Abschlusslog geprüft. Keine neue SC-Rechnung, eingefrorener SC-Stand bleibt geschlossen.",
+      "ergebnis": {
+        "SC_genuine_R2_FullC_count": 3,
+        "SC_intersection_EventGerm_C_count": 1,
+        "event10_coupled_crossing": "VERIFIED-DP/IV PASS (embedded authority rerun)",
+        "event_eta_sector": "I0=[0.009,0.011]",
+        "historical_branch_identification": "REPRESENTATION-CONSISTENT VERIFIED-DP/IV PASS",
+        "nonhistorical_event_exclusion": "EXACT/IV PASS"
+      },
+      "forschungskennung": "90330/trace/event10 Full-C und EventGerm",
+      "gegenbefunde_und_geltungsgrenzen": "RQ-Reset löst drei bekannte Wurzeln erneut, trägt keine ambient Count-Autorität. Separate gekoppelte und QQ-exaktifizierte Zustände werden invariant über Sektor, nicht punktweise gleichgesetzt. Rank-1-Scope separat.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "BS3-Paket dokumentiert drei Good-prime-Snapshots; EventGerm-Log dokumentiert gekoppelte IV/DP-Kontrolle und positive Root0-Zuordnung nach frühen OPEN-Subtests.",
+      "id": "INTEGRATION-PASSPORT-010",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "PGK-0.43A2YE FQ/BS, exact ambient 64D",
+        "gekoppeltes EventConsistent + exact ambient branch identification",
+        "canonical-symmetric QQ (D+Dᵀ)/2"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Exact ambient Full-C S^FQ_393 plus BS1 Rücksubstitution, BS2 Rückrichtung, BS3 J≠0. Separater gekoppelter C-Crossing- und eta-Sektorvertrag."
+    },
+    {
+      "autoritaet": [
+        "HISTORISCHER_RECOVERY_VERTRAG",
+        "HISTORISCH",
+        "HISTORISCHER_TEILJOB_NACHWEIS"
+      ],
+      "claim_ids": [
+        "PGKC-021"
+      ],
+      "dokumentierter_quellenabgleich": "Vier RUN_MANIFEST-Dateien, Verfügbarkeit und jobbezogene Reichweite geprüft.",
+      "ergebnis": {
+        "0eae04eead8c3a8fe4bdab891f0170eb8faad7663b9e0c4fe4732090f9604ab5": {
+          "canonicalizer": "FRE01_TYPED_INCIDENCE_BLISS_1",
+          "definition_lock_sha256": "e6e10fdd351103632d219aa52f8c491d25a297ba7a13995f7dcc01ce283a4271",
+          "native_run_result": {
+            "decode_failures": 0,
+            "elapsed_seconds": 30.452747344970703,
+            "identity_failures": 0,
+            "metric_states": 15,
+            "records": 16,
+            "selected_types": {
+              "C": 7,
+              "E": 8
+            },
+            "source_identity_failures": 0,
+            "status": "PASS",
+            "stop_counts": {
+              "NO_SELECTED_OCCURRENCE": 1
+            },
+            "transitions": 15
+          },
+          "outcome_analysis_performed": false,
+          "parameters": {
+            "anchor": 8,
+            "base_depth": 4,
+            "horizon": 64,
+            "seed": 107301,
+            "variant": "tr"
+          },
+          "runtime_portability_status": "PASS__BEHAVIORALLY_EQUIVALENT_FOR_FRE_01"
+        },
+        "10fcc43afce0c132243f2235745b49ebec23b93afb176dd0f4999d9925c5cb35": {
+          "canonicalizer": "FRE01_TYPED_INCIDENCE_BLISS_1",
+          "definition_lock_sha256": "e6e10fdd351103632d219aa52f8c491d25a297ba7a13995f7dcc01ce283a4271",
+          "native_run_result": {
+            "decode_failures": 0,
+            "elapsed_seconds": 3980.811887025833,
+            "identity_failures": 0,
+            "metric_states": 512,
+            "records": 520,
+            "selected_types": {
+              "C": 186,
+              "E": 326
+            },
+            "source_identity_failures": 0,
+            "status": "PASS",
+            "stop_counts": {
+              "HORIZON": 8
+            },
+            "transitions": 512
+          },
+          "outcome_analysis_performed": false,
+          "parameters": {
+            "anchor": 8,
+            "base_depth": 4,
+            "horizon": 64,
+            "seed": 107301,
+            "variant": "eta"
+          },
+          "runtime_portability_status": "PASS__BEHAVIORALLY_EQUIVALENT_FOR_FRE_01"
+        },
+        "65a70d357d6d89543ad75a27f95ebc820bef680cd89ffbe56c4e459fb3120994": {
+          "canonicalizer": "FRE01_TYPED_INCIDENCE_BLISS_1",
+          "definition_lock_sha256": "e6e10fdd351103632d219aa52f8c491d25a297ba7a13995f7dcc01ce283a4271",
+          "native_run_result": {
+            "decode_failures": 0,
+            "elapsed_seconds": 899.2956051826477,
+            "identity_failures": 0,
+            "metric_states": 378,
+            "records": 385,
+            "selected_types": {
+              "C": 143,
+              "E": 235
+            },
+            "source_identity_failures": 0,
+            "status": "PASS",
+            "stop_counts": {
+              "HORIZON": 5,
+              "NO_SELECTED_OCCURRENCE": 2
+            },
+            "transitions": 378
+          },
+          "outcome_analysis_performed": false,
+          "parameters": {
+            "anchor": 4,
+            "base_depth": 0,
+            "horizon": 64,
+            "seed": 107300,
+            "variant": "eta"
+          },
+          "runtime_portability_status": "PASS__BEHAVIORALLY_EQUIVALENT_FOR_FRE_01"
+        },
+        "fc668fffeefc83ba409a8d336d807b488783d5020eb679f102e932a14809a27a": {
+          "canonicalizer": "FRE01_TYPED_INCIDENCE_BLISS_1",
+          "definition_lock_sha256": "e6e10fdd351103632d219aa52f8c491d25a297ba7a13995f7dcc01ce283a4271",
+          "native_run_result": {
+            "decode_failures": 0,
+            "elapsed_seconds": 139.7469882965088,
+            "identity_failures": 0,
+            "metric_states": 138,
+            "records": 141,
+            "selected_types": {
+              "C": 49,
+              "E": 89
+            },
+            "source_identity_failures": 0,
+            "status": "PASS",
+            "stop_counts": {
+              "HORIZON": 1,
+              "NO_SELECTED_OCCURRENCE": 2
+            },
+            "transitions": 138
+          },
+          "outcome_analysis_performed": false,
+          "parameters": {
+            "anchor": 4,
+            "base_depth": 0,
+            "horizon": 64,
+            "seed": 107300,
+            "variant": "tr"
+          },
+          "runtime_portability_status": "PASS__BEHAVIORALLY_EQUIVALENT_FOR_FRE_01"
+        }
+      },
+      "forschungskennung": "FRE-01B",
+      "gegenbefunde_und_geltungsgrenzen": "Verlorener älterer Definition-Lock; Recovery-Freeze ab 03.10. Früherer BLOCKED-Checkpoint und Teiljob-PASS sind kompatibel. outcome_analysis_performed=false; Verification A/B aus.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Vier Jobs tatsächlich als persistierte Outputs mit nativen Counts und separaten PASS-Audits archiviert.",
+      "id": "INTEGRATION-PASSPORT-011",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "FRE01_TYPED_INCIDENCE_BLISS_1 / PGK-CFG-01/v1; typed incidence und getrennte CFG-.06/Actor-.04",
+        "FRE-01B",
+        "FRE01_TYPED_INCIDENCE_BLISS_1, unveränderter Recovery-Vertrag"
+      ],
+      "offene_fragen": "107302–107307 × tr/eta als vollständige persistierte Jobs sowie erneuter Zielhost-Portabilitätsnachweis.",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Typed-Incidence-Isomorphie mit getrennten Q0 exakter Kontext, Q1 CFG-ID-Orbit, Q2 Reachability-Role-Orbit, Q3 Selected-Role-Orbit. E1–E10 eingefroren; Auswahlverträge .06/.04 getrennt."
+    },
+    {
+      "autoritaet": [
+        "ZWEIGGEBUNDENE_EXPLORATION"
+      ],
+      "claim_ids": [
+        "PGKC-042",
+        "PGKC-045",
+        "PGKC-080",
+        "PGKC-082",
+        "PGKC-099"
+      ],
+      "dokumentierter_quellenabgleich": "Original-Status und Claim-Ledgers gelesen.",
+      "ergebnis": "1102 nichtkommutierende E/C-Diamanten. Quellgeschlossener gegenwärtiger Zustand M_pred=(Topo,{Sα},[X:Π]) unter festem D/eigens.",
+      "forschungskennung": "A2YK–A2YM / Dynamic Present",
+      "gegenbefunde_und_geltungsgrenzen": "Grober Bigrad/Topologie und niedrige Jet-Snapshots reichen nicht. Globale Minimalität und universelle History-Kompression offen.",
+      "guards": [
+        "DEMO_ONLY | Frozen D | A_time NOT INSERTED | t_PGK NOT INSERTED | Full-C SC geschlossen"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Quell-Audit und endliche DP-Replays/Regressionskontrollen in Originalen.",
+      "id": "INTEGRATION-PASSPORT-012",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "0.43A2Y/Z, recovered Frozen-D-Kern, historische Nachfolge-/Kontrollsuite"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Kanonischer post-event Zustand; Operation, getimter Morphismus und spätere Beobachtung getrennt."
+    },
+    {
+      "autoritaet": [
+        "ZWEIGGEBUNDENE_EXPLORATION"
+      ],
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-025",
+        "PGKC-042",
+        "PGKC-045",
+        "PGKC-047",
+        "PGKC-088",
+        "PGKC-089",
+        "PGKC-302"
+      ],
+      "dokumentierter_quellenabgleich": "Originale, Status und Zensusanker geprüft.",
+      "ergebnis": "m5 65/65 Development, 119/120 Holdout. m8–10 120/120 Holdout; m beschreibt Taylor-Germordnung.",
+      "forschungskennung": "A2YZ–A2ZE / Manifestability",
+      "gegenbefunde_und_geltungsgrenzen": "Keine universelle feste m5-Tiefe, physische Skala oder Geometrie. A2YY korrigiert genau ein A2YX-Rootdetail.",
+      "guards": [
+        "DEMO_ONLY | Frozen D | A_time NOT INSERTED | t_PGK NOT INSERTED | Full-C SC geschlossen"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Original dokumentiert Holdout-Replay und Candidate-Resolved-Prognosen. Timing- und Deskriptortests separat.",
+      "id": "INTEGRATION-PASSPORT-013",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "0.43A2Y/Z, recovered Frozen-D-Kern, historische Nachfolge-/Kontrollsuite"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Kandidatenidentität, orientiertes Crossing-Jet und Timing-Toleranz; getrennte Development-/Holdout-Scopes."
+    },
+    {
+      "autoritaet": [
+        "ZWEIGGEBUNDENE_EXPLORATION"
+      ],
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-045",
+        "PGKC-047",
+        "PGKC-070",
+        "PGKC-091",
+        "PGKC-095",
+        "PGKC-132",
+        "PGKC-188",
+        "PGKC-232",
+        "PGKC-302"
+      ],
+      "dokumentierter_quellenabgleich": "Originale Status-/Claim-Ledgers gelesen.",
+      "ergebnis": "8193D generische Einzelkandidaten-Zyklizität im Spektralvertrag. Binding ändert W(M). Phasenmaps kommutieren. Finite Verteilungsnähe und weiterlaufende Trajektorien koexistieren.",
+      "forschungskennung": "A2ZG–A2ZK / Generator und Makrogrenze",
+      "gegenbefunde_und_geltungsgrenzen": "Kein universeller kleiner Lie/Krylov-Quotient, neue Mikrodynamik, Markov-Abschluss oder Makro-Fixpunkt. Exact scalar 50 und candidate-response Rank 64 betreffen andere Objekte.",
+      "guards": [
+        "DEMO_ONLY | Frozen D | A_time NOT INSERTED | t_PGK NOT INSERTED | Full-C SC geschlossen"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Archivierte analytische Ableitung, numerische Kontrollen und Censuses.",
+      "id": "INTEGRATION-PASSPORT-014",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "0.43A2Y/Z, recovered Frozen-D-Kern, historische Nachfolge-/Kontrollsuite"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Unterscheide zyklischen Kandidatenträger, Kandidaten-Generatorspan, feste Phasenpropagation und statistische coarse Signaturen."
+    },
+    {
+      "autoritaet": [
+        "ZWEIGGEBUNDENER_FINAL_STAND"
+      ],
+      "claim_ids": [
+        "PGKC-087",
+        "PGKC-088",
+        "PGKC-089",
+        "PGKC-090",
+        "PGKC-091",
+        "PGKC-131",
+        "PGKC-142"
+      ],
+      "dokumentierter_quellenabgleich": "Archive/SHA und Originalentscheidungen direkt eingesehen.",
+      "ergebnis": "Kandidatenstruktur rekonstruierbar; vereinfachte Aktivierung FAIL. Full-support-Rekonstruktion und Rang64 stützen komplette Antwortdarstellung, keine universelle Reduktion.",
+      "forschungskennung": "PGK-0.95–0.99 / Kandidat und Aktivierung",
+      "gegenbefunde_und_geltungsgrenzen": "Early 0.96-Work-Order ist historischer Quellenstand. 0.97-Low-germ-STOP bleibt erhalten. Coverage fehlender E-Kanäle separat.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Originale FINAL-Gate-Outputs und historische Cold-Run-Reports soweit in den Paketen.",
+      "id": "INTEGRATION-PASSPORT-015",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "recovered K0, QPROC-1/DIRECT-092, Frozen D, tr/eta soweit im Original"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "PGRAM-1, PRES-1, CW1, HSR, vollständige Native-Crossing-Response jeweils mit eigener Zielgröße."
+    },
+    {
+      "autoritaet": [
+        "ZWEIGGEBUNDENER_FINAL_STAND"
+      ],
+      "claim_ids": [
+        "PGKC-009",
+        "PGKC-010",
+        "PGKC-098",
+        "PGKC-099",
+        "PGKC-103",
+        "PGKC-104",
+        "PGKC-105",
+        "PGKC-106",
+        "PGKC-166",
+        "PGKC-167",
+        "PGKC-168",
+        "PGKC-169",
+        "PGKC-170",
+        "PGKC-286",
+        "PGKC-287",
+        "PGKC-288"
+      ],
+      "dokumentierter_quellenabgleich": "SHA-gebundene Originalentscheidungen und 0.114-Parent geprüft.",
+      "ergebnis": "Exakter endlicher Q-Join-Lift. Q alleine für künftige Domäne unzureichend. Korrigierter QPROC-Vertrag und Übergabe von Candidate + selected root schließen getestete native Fortsetzung.",
+      "forschungskennung": "PGK-0.106–0.114 / Q, Zustand und Occurrence",
+      "gegenbefunde_und_geltungsgrenzen": "0.111-F2-Fail gehört zum enumerierten S0_A-Registry-Vertrag. 0.112R trennt Provenienz und native Prospektivität, löscht den historischen Fail nicht. 0.113R gibt keinen eindeutigen autonomen Zusatzselektor.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Archivierte Cold-Run-/Closureberichte der jeweiligen FINALs; separate 0.107-, 0.112R-, 0.113R-Korrekturen.",
+      "id": "INTEGRATION-PASSPORT-016",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "recovered K0, QPROC-1/DIRECT-092, Frozen D, tr/eta soweit im Original"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Endlicher C-Pfad, identischer Q-Endpunkt, vollständiger aktueller Zustand, prospektive native Leiter und ausgewählte globale E+C-Occurrence getrennt."
+    },
+    {
+      "autoritaet": [
+        "ZWEIGGEBUNDENER_FINAL_STAND"
+      ],
+      "claim_ids": [
+        "PGKC-038",
+        "PGKC-093",
+        "PGKC-096",
+        "PGKC-109",
+        "PGKC-110",
+        "PGKC-111",
+        "PGKC-113",
+        "PGKC-114",
+        "PGKC-115",
+        "PGKC-116",
+        "PGKC-117",
+        "PGKC-118",
+        "PGKC-171",
+        "PGKC-173"
+      ],
+      "dokumentierter_quellenabgleich": "Originale lesbar und zugeordnet; keine Vollreproduktion.",
+      "ergebnis": "Gemeinsame native Response und getypter Transport. Rollen-/Rückordnungsbefunde und aktueller relationaler Ursprung; keine separate Return-Kraft.",
+      "forschungskennung": "PGK-0.117–0.125 / Antwort und Herkunft",
+      "gegenbefunde_und_geltungsgrenzen": "Strukturelle Domäne bedarf native viability. Isolierte Unit reicht nicht; Level3 im Final nicht repliziert. TR-3 readiness ohne neue Uhr.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Historische Source-Replay-/Holdout-Prüfungen in den Original-Entscheidungen.",
+      "id": "INTEGRATION-PASSPORT-017",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "recovered K0, QPROC-1/DIRECT-092, Frozen D, tr/eta soweit im Original"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Zwei Seiten der Responsefunktion, viable Kandidaten, Return-Verteilung, Rolle bei Rebinding und Unit+Embedding im aktuellen Zustand."
+    },
+    {
+      "autoritaet": [
+        "ZWEIGGEBUNDENER_FINAL_STAND"
+      ],
+      "claim_ids": [
+        "PGKC-013",
+        "PGKC-014",
+        "PGKC-118",
+        "PGKC-119",
+        "PGKC-120",
+        "PGKC-121",
+        "PGKC-174",
+        "PGKC-175",
+        "PGKC-176",
+        "PGKC-177",
+        "PGKC-201",
+        "PGKC-246",
+        "PGKC-256"
+      ],
+      "dokumentierter_quellenabgleich": "Vier Branch-FINALs einschließlich früher fehlendem 0.128 direkt gelesen.",
+      "ergebnis": "Native relationale Ordnung und lokale Gaugefähigkeit. Cross-domain-Brückennetz und Metrikabschluss nicht erreicht.",
+      "forschungskennung": "PGK-0.126–0.129 / Chronometrie",
+      "gegenbefunde_und_geltungsgrenzen": "Verteilte Kaskade ohne Front. Reskalierungskovarianz ist kein unabhängiger Chronometrienachweis. Kein t_PGK.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Originale dokumentieren geprüfte Intervalle, lokale Rekurrenz und die unterdeckte Brückenprüfung.",
+      "id": "INTEGRATION-PASSPORT-018",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "recovered K0, QPROC-1/DIRECT-092, Frozen D, tr/eta soweit im Original"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Prozessordnung, ordinales Delay, lokales Intervall, Vergleichsuhr und cross-domain metric readiness je eigenes Tor."
+    },
+    {
+      "autoritaet": [
+        "LOKALER_FORMALSATZ",
+        "POST_V139_SOURCE_BOUND",
+        "ZWEIGGEBUNDENER_FINAL_STAND"
+      ],
+      "claim_ids": [
+        "A6N-C004",
+        "A6N-C005",
+        "A6N-C006",
+        "PGKC-015",
+        "PGKC-016",
+        "PGKC-027",
+        "PGKC-028",
+        "PGKC-268",
+        "PGKC-269",
+        "PGKC-270",
+        "PGKC-271",
+        "PGKC-280",
+        "PGKC-290",
+        "PGKC-303",
+        "PGKC-315",
+        "PGKC-316",
+        "PGKC-317"
+      ],
+      "dokumentierter_quellenabgleich": "Volltext, Modulclaims, SHA und Originalentscheidungen abgeglichen.",
+      "ergebnis": "Paarverlustformel exakt. RΦ-03 8/8 Teilportgleichheit, 0/8 volle Operatorgleichheit. ID-freier Funktionshandoff partiell nach 0.136.",
+      "forschungskennung": "A6N-T1, PGKM-029 und Trägerwechsel",
+      "gegenbefunde_und_geltungsgrenzen": "Kein Schluss von alter Paaradressierung auf jede Funktion. 0.137-Recovery-Additionality scheitert; Φ+Γ-Restoration offen.",
+      "guards": [
+        "DEMO_ONLY"
+      ],
+      "historisch_ausgefuehrte_pruefung": "Formaler Beweis und vorhandene Kleinstpartitionen-Prüfung im Bestand. RΦ-03 Original-Read-only, 0.136/0.137 eigene Held-outs.",
+      "id": "INTEGRATION-PASSPORT-019",
+      "is_full_original": false,
+      "is_public_original": false,
+      "modellzweige": [
+        "A6N-01; Partition des ursprünglichen E/C-Kerns",
+        "DIRECT-092, archivierter CFG oder explizit markierter Kontrollzweig, 64D, Frozen D",
+        "recovered K0, QPROC-1/DIRECT-092, Frozen D, tr/eta soweit im Original"
+      ],
+      "offene_fragen": "",
+      "original_access": "ORIGINAL_FULLTEXT_NOT_INCLUDED",
+      "public_record_scope": "OPEN_RESEARCH_MEMORY",
+      "public_research_memory": true,
+      "record_kind": "passport",
+      "record_source_type": "DERIVED_EVIDENCE_PASSPORT",
+      "scientific_confirmation_not_implied": true,
+      "testvertrag": "Festes U₀, native Merge/Add-only-Partition. RΦ-03 separater 2D-Teilport/64D-Volloperator. 0.136/137 eigene ID-freie Φ-Funktionsverträge."
+    }
+  ],
+  "schema": "pgk.public.open-evidence-passports.v1"
+}

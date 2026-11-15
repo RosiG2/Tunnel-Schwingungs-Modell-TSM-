@@ -1,0 +1,31 @@
+{
+  "schema": "pgk.erscheinungswelt.addons.v0.2",
+  "not_part_of_191_findings": true,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "id": "EW-EXTRA-01",
+      "titel": "Außenrollenvererbung / Funktionserbe",
+      "source": "historische CFG-Forschungsreferenz; Primärbeleg aktuell nicht öffentlich abrufbar",
+      "statement": "Sechs C-Merges: insgesamt 31 vorherige äußere Partnerpaare, 21 nachher; 21/21 Nachfolgerpaare aus mindestens einem Vorgänger, 10 verloren, 0 gegen beide Eltern neue äußere Paare; 1+1→2-Naht: sechs positive und drei STOP.",
+      "limit": "Gilt für die untersuchte historische CFG-Kette. Geerbter Partnerbezug ist nicht die vollständige Eventfunktion; Originalartefaktzuordnung für Public Release nochmals prüfen.",
+      "analogy_ids": [
+        "EW-01",
+        "EW-03"
+      ],
+      "status": "QUELLENVERMITTELTER_MODELLBEFUND_VERIFIKATION_AUSSTEHEND"
+    },
+    {
+      "id": "EW-EXTRA-02",
+      "titel": "Regenerierbarkeitsvertrag höherer Ordnung",
+      "source": "fachlich referenzierte Forschung zur bedingten und ausgewählten Wiederherstellung; vollständiger Primärtext nicht öffentlich abrufbar",
+      "statement": "HΦ(q): gegenwärtiger Funktionsvollzug; RcondΦ(q;I,k,ρ): konditional legaler Wiederherstellungspfad; NΦ(q;I,k,ρ): tatsächlich rootgesichert gewählter Wiederherstellungspfad. N=1 impliziert Rcond=1, nicht umgekehrt.",
+      "limit": "THEORETICAL / NOT_NATIVE_PASS / NO_VALID_PHI: intrinsische Φ-Funktion fehlt.",
+      "analogy_ids": [
+        "EW-11",
+        "EW-03"
+      ],
+      "status": "THEORETISCHE_HYPOTHESE"
+    }
+  ]
+}

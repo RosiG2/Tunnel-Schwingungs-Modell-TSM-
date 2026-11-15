@@ -1,0 +1,165 @@
+{
+  "areas": [
+    {
+      "funktion": "E/C-Kandidaten, Root-Bestimmung, tatsächliche native Passage und Ereignisidentität",
+      "id": "ER-01",
+      "status": "EDITORIELLE_ERSTORDNUNG",
+      "titel": "Native Ereignisse und Auswahl"
+    },
+    {
+      "funktion": "Feasible Sets, Kandidatenhorizonte, präreaktive Ordnung und bedingte Auswahl",
+      "id": "ER-02",
+      "status": "EDITORIELLE_ERSTORDNUNG",
+      "titel": "Möglichkeitsräume und Zulässigkeit"
+    },
+    {
+      "funktion": "Weitergabe von Zustands- und Relationsgeschichte, History-Lineage und Rekursion",
+      "id": "ER-03",
+      "status": "EDITORIELLE_ERSTORDNUNG",
+      "titel": "Geschichte, Rückwirkung und Rekursion"
+    },
+    {
+      "funktion": "Funktionsrollen, Trägerwechsel, Teil-/Vollgleichheit, Rückgewinnbarkeit",
+      "id": "ER-04",
+      "status": "EDITORIELLE_ERSTORDNUNG",
+      "titel": "Form, Funktion und Regeneration"
+    },
+    {
+      "funktion": "Ereignisfolge, ordinale und lokale Vergleichsordnung, Eichung, Metrikgrenzen",
+      "id": "ER-05",
+      "status": "EDITORIELLE_ERSTORDNUNG",
+      "titel": "Prozessordnung und Zeitmaß"
+    },
+    {
+      "funktion": "Getypte Operatoren, Rang, Quotienten, Komposition, lokale und globale Darstellung",
+      "id": "ER-06",
+      "status": "EDITORIELLE_ERSTORDNUNG",
+      "titel": "Operatorik, Algebra und Repräsentation"
+    },
+    {
+      "funktion": "Binnengrenzen, Kopplungsräume, Erreichbarkeit, Modell- versus Naturraum",
+      "id": "ER-07",
+      "status": "EDITORIELLE_ERSTORDNUNG",
+      "titel": "Lokalität, Grenze und Skalen"
+    },
+    {
+      "funktion": "Prospektivität, Leakage, generative Suffizienz, unabhängige und bedingte Tests",
+      "id": "ER-08",
+      "status": "EDITORIELLE_ERSTORDNUNG",
+      "titel": "Vorhersage und Informationszugang"
+    },
+    {
+      "funktion": "Replays, historische Entscheidungen, Negativbefunde, Quellentreue, Prüfgrenzen",
+      "id": "ER-09",
+      "status": "EDITORIELLE_ERSTORDNUNG",
+      "titel": "Audit, Quellenstatus und Geltung"
+    },
+    {
+      "funktion": "Bewegliche Referenzen, Rückkopplung, Return-like-Verhalten und selektierte Wiederherstellung",
+      "id": "ER-10",
+      "status": "EDITORIELLE_ERSTORDNUNG",
+      "titel": "Regulation, Referenz und Rückkehr"
+    }
+  ],
+  "contrast_axes": [
+    {
+      "id": "SP-01",
+      "pol_a": "Kandidatenraum",
+      "pol_b": "tatsächlich gewählte Passage",
+      "prueffunktion": "Kandidatenexistenz ist noch keine ausgewählte native Occurrence",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-02",
+      "pol_a": "native Prozessordnung",
+      "pol_b": "Uhr- bzw. Raummetrik",
+      "prueffunktion": "Ereignisreihenfolge trägt ohne zusätzliche Eichung keine universelle Zeitmetrik",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-03",
+      "pol_a": "vor dem Rewrite verfügbare Information",
+      "pol_b": "erst nach dem Rewrite bekannte Information",
+      "prueffunktion": "Nachinformation darf keinen prospektiven Erfolg begründen",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-04",
+      "pol_a": "gleiche Teilfunktion / Teilantwort",
+      "pol_b": "vollständige Funktions- bzw. Zustandsidentität",
+      "prueffunktion": "Begrenzte funktionale Gleichheit belegt keine totale dynamische Identität",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-05",
+      "pol_a": "Return-like / rekonstruierbare Leistung",
+      "pol_b": "ausgewählte und zieltypisierte Regeneration",
+      "prueffunktion": "Rückkehrähnlichkeit allein belegt noch keine native Wiederherstellung",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-06",
+      "pol_a": "bedingt vorgegebenes Rewrite- oder Klassenwort",
+      "pol_b": "autonom ausgewählte Klasse / Folge",
+      "prueffunktion": "Ein bedingter Kompositionslauf ist keine freie Selektion",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-07",
+      "pol_a": "modellinterne Lokalität / Integrationsordnung",
+      "pol_b": "physikalische Raum- oder Kausalgeometrie",
+      "prueffunktion": "Formale Lokalität darf nicht als physische Raumlokalität ausgegeben werden",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-08",
+      "pol_a": "lokaler algebraischer Satz / getypte Domäne",
+      "pol_b": "globale Repräsentation / unbeschränkte Domäne",
+      "prueffunktion": "Lokale Formalbeweise tragen nicht ohne Gate die gesamte Repräsentation",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-09",
+      "pol_a": "Zustands-/Verlaufsbeschreibung",
+      "pol_b": "generativer oder autonomer Mechanismus",
+      "prueffunktion": "Ein komprimierter Reporter ist nicht automatisch vollständiger Generator",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-10",
+      "pol_a": "historischer rastergebundener Replay",
+      "pol_b": "kontinuierlich früheste gerichtete Root-Isolation",
+      "prueffunktion": "Ein reproduzierter Rasterreport kann frühere Ereignisse verpassen",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-11",
+      "pol_a": "bewegliche relationale Referenz",
+      "pol_b": "absoluter Ursprung oder universeller Rückholpunkt",
+      "prueffunktion": "Eine relative Rückkehr begründet keinen absoluten Ursprung",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-12",
+      "pol_a": "lokaler Prüfstatus / enger PASS",
+      "pol_b": "erweiterter Natur- oder Prognoseanspruch",
+      "prueffunktion": "Validierung eines begrenzten Testvertrags ist keine Generalbestätigung",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-13",
+      "pol_a": "Änderung des Feasible Sets / Folgeraums",
+      "pol_b": "spezifisch geprüfte Feedbacksteuerung",
+      "prueffunktion": "Eine beobachtete Folgeveränderung zeigt noch nicht jeden stärkeren Regelungsanspruch",
+      "status": "QUELLENNAHER_KONTRAST_KEINE_MODULSPIEGEL_AUTOMATIK"
+    },
+    {
+      "id": "SP-14",
+      "pol_a": "Altpaar-Adressen, die bei C verloren gehen",
+      "pol_b": "Neupaar-Adressen, die durch E hinzukommen",
+      "prueffunktion": "Der Verlust getrennt adressierbarer benannter Altpaare ist nicht durch die wachsende Anzahl aller neuen Paare kompensiert; exakter Verlust anhand der alten Blockbelegung.",
+      "status": "FORMALKOROLLAR_A6N01_KEINE_MODULSPIEGEL_BESTAETIGUNG"
+    }
+  ],
+  "schema": "pgk.public.axes.v1"
+}

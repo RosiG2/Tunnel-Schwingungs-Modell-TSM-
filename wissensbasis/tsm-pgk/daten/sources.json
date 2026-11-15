@@ -1,0 +1,473 @@
+{
+  "schema": "pgk.public.source-status.v1",
+  "sources": [
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-001",
+      "original_public": false,
+      "source_kind": "CHAT_EXPORT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-002",
+      "original_public": false,
+      "source_kind": "CHAT_EXPORT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-003",
+      "original_public": false,
+      "source_kind": "HISTORISCHE_SYNTHESE"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-004",
+      "original_public": false,
+      "source_kind": "HISTORISCHE_SYNTHESE"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-005",
+      "original_public": false,
+      "source_kind": "HISTORISCHE_SYNTHESE"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-006",
+      "original_public": false,
+      "source_kind": "HISTORISCHE_SYNTHESE"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-007",
+      "original_public": false,
+      "source_kind": "ERKENNTNISBAUM"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-008",
+      "original_public": false,
+      "source_kind": "ERKENNTNISBAUM"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-009",
+      "original_public": false,
+      "source_kind": "ERKENNTNISBAUM"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-010",
+      "original_public": false,
+      "source_kind": "ERKENNTNISBAUM"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-011",
+      "original_public": false,
+      "source_kind": "ERKENNTNISBAUM"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-012",
+      "original_public": false,
+      "source_kind": "ERKENNTNISBAUM"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-013",
+      "original_public": false,
+      "source_kind": "QUELLENBERICHT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-014",
+      "original_public": false,
+      "source_kind": "MATHEMATISCHES_LEMMA"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-015",
+      "original_public": false,
+      "source_kind": "QUELLENAUDIT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-016",
+      "original_public": false,
+      "source_kind": "QUELLENAUDIT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-017",
+      "original_public": false,
+      "source_kind": "ORIGINAL_ENTSCHEIDUNG"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-018",
+      "original_public": false,
+      "source_kind": "ORIGINAL_ENTSCHEIDUNG"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-019",
+      "original_public": false,
+      "source_kind": "ORIGINAL_ENTSCHEIDUNG"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-020",
+      "original_public": false,
+      "source_kind": "ORIGINAL_ENTSCHEIDUNG"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-021",
+      "original_public": false,
+      "source_kind": "ORIGINAL_PROVENIENZ"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-022",
+      "original_public": false,
+      "source_kind": "ORIGINAL_ENTSCHEIDUNG"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-023",
+      "original_public": false,
+      "source_kind": "KANON_STATUS"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-024",
+      "original_public": false,
+      "source_kind": "ORIGINAL_REPORT_JSON"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-025",
+      "original_public": false,
+      "source_kind": "TSM_KORPUS"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-026",
+      "original_public": false,
+      "source_kind": "TSM_KORPUS"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-027",
+      "original_public": false,
+      "source_kind": "TSM_KORPUS"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-028",
+      "original_public": false,
+      "source_kind": "QUELLENAUDIT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-029",
+      "original_public": false,
+      "source_kind": "CHAT_EXPORT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-030",
+      "original_public": false,
+      "source_kind": "AUDIT_KONKORDANZ"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-031",
+      "original_public": false,
+      "source_kind": "AUDIT_REPORT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-032",
+      "original_public": false,
+      "source_kind": "CURATED_ORIGINAL_DOKUMENT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-033",
+      "original_public": false,
+      "source_kind": "CURATED_ORIGINAL_DOKUMENT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-034",
+      "original_public": false,
+      "source_kind": "CURATED_ORIGINAL_DOKUMENT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-035",
+      "original_public": false,
+      "source_kind": "CURATED_ORIGINAL_DOKUMENT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-036",
+      "original_public": false,
+      "source_kind": "CURATED_ORIGINAL_DOKUMENT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-037",
+      "original_public": false,
+      "source_kind": "CURATED_ORIGINAL_DOKUMENT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-038",
+      "original_public": false,
+      "source_kind": "CURATED_ORIGINAL_DOKUMENT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-039",
+      "original_public": false,
+      "source_kind": "CURATED_ORIGINAL_DOKUMENT"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-040",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-041",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-042",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-043",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-044",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-045",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-046",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-047",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-048",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-049",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-050",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-051",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-052",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-053",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-054",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-055",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-056",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-057",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-058",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-059",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-060",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-061",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-062",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-063",
+      "original_public": false,
+      "source_kind": "BEGLEITGUTACHTEN_ORIGINALBYTES"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-064",
+      "original_public": false,
+      "source_kind": "ORIGINAL_FINAL_ZIP"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-065",
+      "original_public": false,
+      "source_kind": "ORIGINAL_FINAL_ENTSCHEID"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-066",
+      "original_public": false,
+      "source_kind": "ORIGINAL_FINAL_GRENZE"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-067",
+      "original_public": false,
+      "source_kind": "ORIGINAL_FINAL_RESULT_JSON"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-068",
+      "original_public": false,
+      "source_kind": "AUDIT_KONFLIKTREGISTER"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-069",
+      "original_public": false,
+      "source_kind": "ARCHIV_ORIGINAL_MEMBER"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-070",
+      "original_public": false,
+      "source_kind": "ARCHIV_ORIGINAL_MEMBER"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-071",
+      "original_public": false,
+      "source_kind": "ARCHIV_ORIGINAL_MEMBER"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-072",
+      "original_public": false,
+      "source_kind": "ARCHIV_ORIGINAL_MEMBER"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-073",
+      "original_public": false,
+      "source_kind": "ARCHIV_ORIGINAL_MEMBER"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-074",
+      "original_public": false,
+      "source_kind": "ARCHIV_ORIGINAL_MEMBER"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-075",
+      "original_public": false,
+      "source_kind": "ARCHIV_ORIGINAL_MEMBER"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-076",
+      "original_public": false,
+      "source_kind": "A6_4_THEORETISCHE_ABLeitung"
+    },
+    {
+      "availability": "ORIGINAL_NOT_RELEASED",
+      "id": "SRC-077",
+      "original_public": false,
+      "source_kind": "A6_4_PRUEFERGEBNIS"
+    },
+    {
+      "availability": "ORIGINAL_RELEASED",
+      "id": "SRC-078",
+      "original_public": true,
+      "source_kind": "LOKALES_FORMALPAPIER"
+    }
+  ]
+}

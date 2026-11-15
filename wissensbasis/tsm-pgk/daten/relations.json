@@ -1,0 +1,3730 @@
+{
+  "relations": [
+    {
+      "from": "PGKC-001",
+      "id": "E001",
+      "interpretation_level": "SYNTHETISCHE_VERBINDUNG",
+      "limit": "",
+      "rationale": "Drei-dimensionaler Integrationsrang impliziert keine metrische Uhr oder Raumgeometrie.",
+      "relation_type": "BEGRENZT",
+      "source_ids": [
+        "SRC-016"
+      ],
+      "to": "PGKC-013"
+    },
+    {
+      "from": "PGKC-002",
+      "id": "E002",
+      "interpretation_level": "QUELLEN_VERGLEICH",
+      "limit": "",
+      "rationale": "Rastergebundener historischer Replay wird durch unabhängige früheste Root-Isolation eingeschränkt, nicht in seinem Quellenvertrag gelöscht.",
+      "relation_type": "METHODISCHE_KORREKTUR",
+      "source_ids": [
+        "SRC-015"
+      ],
+      "to": "PGKC-024"
+    },
+    {
+      "from": "PGKC-034",
+      "id": "E032",
+      "interpretation_level": "QUELLENGETRAGEN",
+      "limit": "",
+      "rationale": "Makropredictor verworfen, kurzfristige Kandidatentopologie teilweise repliziert.",
+      "relation_type": "UNTERSCHIEDLICHE_PRUEFENDE",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "to": "PGKC-033"
+    },
+    {
+      "from": "PGKC-001",
+      "id": "X107",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C01: Alte d_int=3-Aussage kein Raumbeweis; späterer Gegenbefund beschränkt den alten Schluss.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-122"
+    },
+    {
+      "from": "PGKC-001",
+      "id": "X110",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C02: Finite-Aperture-Regime und physikalisch emergenter dreidimensionaler Raum sind verschiedene Prädikate.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-123"
+    },
+    {
+      "from": "PGKC-002",
+      "id": "X113",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C03: Kein allgemeiner Hazard-/Survival-Vorteil einer Variante bewiesen.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-124"
+    },
+    {
+      "from": "PGKC-002",
+      "id": "X116",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C04: Lokale Ereignissensitivität beweist weder Makrogenerativität noch physisches Gedächtnis.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-125"
+    },
+    {
+      "from": "PGKC-002",
+      "id": "X119",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C05: Ein Pfadklassifikator kann existieren, obwohl der geprüfte potentialartige Operator nicht integrierbar ist.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-126"
+    },
+    {
+      "from": "PGKC-002",
+      "id": "X122",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C06: Tangentialer lokaler PASS hebt die ältere spezifische No-Go-Aussage nicht auf.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-127"
+    },
+    {
+      "from": "PGKC-001",
+      "id": "X140",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C12: Gate-II-Stabilität einer endlichen Interfacebalance bedeutet nicht Gate-III-Geometrie.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-133"
+    },
+    {
+      "from": "PGKC-001",
+      "id": "X230",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C42: \"PASS NOT ESTABLISHED\" nicht in PASS umwandeln; bis zum Primärgate gilt NOT_ESTABLISHED.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-163"
+    },
+    {
+      "from": "PGKC-003",
+      "id": "E003",
+      "interpretation_level": "SYNTHETISCHE_VERBINDUNG",
+      "limit": "",
+      "rationale": "E/C-Operator und earliest-event Selektor sind verschiedene, gemeinsam relevante Teile der nativen Folge.",
+      "relation_type": "PRUEFVERTRAG",
+      "source_ids": [
+        "SRC-015"
+      ],
+      "to": "PGKC-024"
+    },
+    {
+      "from": "PGKC-004",
+      "id": "E004",
+      "interpretation_level": "QUELLEN_SYNTHETISCH",
+      "limit": "",
+      "rationale": "Kandidatenraum wird erst über gewählte Occurrence zur realisierten Folge.",
+      "relation_type": "PRAEZISIERT",
+      "source_ids": [
+        "SRC-005"
+      ],
+      "to": "PGKC-009"
+    },
+    {
+      "from": "PGKC-003",
+      "id": "X043",
+      "interpretation_level": "INDEXVERBINDUNG_KEINE_NEUE_PHYSIK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Thematischer Anschluss zwischen früherem Modul PGKM-002 und PGK-0.58–0.64; der alte Claim wird nicht auf den neuen Originaltest übertragen.",
+      "relation_type": "MODULKONKORDANZ_KEINE_IMPLIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-050"
+    },
+    {
+      "from": "PGKC-304",
+      "id": "E288",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (OFFENE_BRUECKE): Der in 0.70 berichtete Rewrite-Ablationseffekt verändert den Folgeraum; ob die Art der ausgewählten Passage ihn prospektiv besser macht, ist eine zusätzliche Prüfung. / Als nächster gültiger Test muss dieselbe Native-Variante vorab Psi, Sel_native, T, Funktionsproxy und serielles Nullmodell fixieren; spätere Held-outs bleiben verschlossen.",
+      "relation_type": "FIRST_ROOT_AND_NULL_REQ",
+      "source_ids": [
+        "SRC-004",
+        "SRC-024",
+        "SRC-076"
+      ],
+      "to": "PGKC-305"
+    },
+    {
+      "evidence_link_kind": "EDITORIAL_LINK_NO_SOURCE_CLAIM",
+      "from": "PGKC-004",
+      "id": "A6N-E003",
+      "interpretation_level": "SOURCE_RUN",
+      "limit": "",
+      "rationale": "Kandidaten-vs-realisierte Passage per gleichzeitiger Shadow-Differenz getrennt",
+      "relation_type": "CONTEXTUAL_REWRITE_EFFECT",
+      "review_required": true,
+      "source_ids": [],
+      "to": "A6N-C003"
+    },
+    {
+      "evidence_link_kind": "EDITORIAL_LINK_NO_SOURCE_CLAIM",
+      "from": "A6N-C003",
+      "id": "A6N-E012",
+      "interpretation_level": "LOGICAL_GUARD",
+      "limit": "",
+      "rationale": "Strukturelle Rewrite-Schattenwirkung begruendet keine prospektive Funktion",
+      "relation_type": "NONIMPLICATION",
+      "review_required": true,
+      "source_ids": [],
+      "to": "A6N-C008"
+    },
+    {
+      "from": "PGKC-006",
+      "id": "E005",
+      "interpretation_level": "GELTUNGSUNTERSCHIED",
+      "limit": "",
+      "rationale": "Meso-Z→K scheitert, full-state native Occurrence kann gleichwohl geschlossen sein.",
+      "relation_type": "GELTUNGSUNTERSCHIED",
+      "source_ids": [
+        "SRC-004"
+      ],
+      "to": "PGKC-009"
+    },
+    {
+      "from": "PGKC-033",
+      "id": "E031",
+      "interpretation_level": "QUELLEN_SYNTHETISCH",
+      "limit": "",
+      "rationale": "Front-Kandidatenkorrelation liefert noch keine realisierte C-Closure und löst nicht Meso-Z→K.",
+      "relation_type": "KORREKTUR_GEGEN_UEBERDEHNUNG",
+      "source_ids": [
+        "SRC-002"
+      ],
+      "to": "PGKC-006"
+    },
+    {
+      "from": "PGKC-005",
+      "id": "E033",
+      "interpretation_level": "GELTUNGSUNTERSCHIED",
+      "limit": "",
+      "rationale": "Fehlender skalenstabiler Quotient darf durch offene Funktionsmapping-Ähnlichkeit nicht ersetzt werden.",
+      "relation_type": "NICHT_IDENTISCH",
+      "source_ids": [
+        "SRC-003"
+      ],
+      "to": "PGKC-011"
+    },
+    {
+      "from": "PGKC-005",
+      "id": "X041",
+      "interpretation_level": "INDEXVERBINDUNG_KEINE_NEUE_PHYSIK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Thematischer Anschluss zwischen früherem Modul PGKM-003 und PGK-0.44–0.49; der alte Claim wird nicht auf den neuen Originaltest übertragen.",
+      "relation_type": "MODULKONKORDANZ_KEINE_IMPLIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-036"
+    },
+    {
+      "from": "PGKC-005",
+      "id": "X048",
+      "interpretation_level": "INDEXVERBINDUNG_KEINE_NEUE_PHYSIK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Thematischer Anschluss zwischen früherem Modul PGKM-003 und PGK-0.92–0.101; der alte Claim wird nicht auf den neuen Originaltest übertragen.",
+      "relation_type": "MODULKONKORDANZ_KEINE_IMPLIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-084"
+    },
+    {
+      "from": "PGKC-007",
+      "id": "E006",
+      "interpretation_level": "QUELLEN_SYNTHETISCH",
+      "limit": "",
+      "rationale": "Winner-unabhängige W-Ordnung kann ohne autonome Rewrite-Klassenbestimmung vorkommen.",
+      "relation_type": "BEGRENZT",
+      "source_ids": [
+        "SRC-004"
+      ],
+      "to": "PGKC-008"
+    },
+    {
+      "from": "PGKC-008",
+      "id": "E007",
+      "interpretation_level": "QUELLEN_SYNTHETISCH",
+      "limit": "",
+      "rationale": "Given-word Free Recursion und realer Selected-Passage-Closure haben unterschiedliche Quantoren.",
+      "relation_type": "SCOPE_UNTERSCHIED",
+      "source_ids": [
+        "SRC-005"
+      ],
+      "to": "PGKC-009"
+    },
+    {
+      "from": "PGKC-007",
+      "id": "X046",
+      "interpretation_level": "INDEXVERBINDUNG_KEINE_NEUE_PHYSIK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Thematischer Anschluss zwischen früherem Modul PGKM-004 und PGK-0.76–0.84; der alte Claim wird nicht auf den neuen Originaltest übertragen.",
+      "relation_type": "MODULKONKORDANZ_KEINE_IMPLIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-068"
+    },
+    {
+      "from": "PGKC-009",
+      "id": "E008",
+      "interpretation_level": "QUELLENGETRAGEN",
+      "limit": "",
+      "rationale": "Eventidentität wird um Root/Native-Index/Occurrence präzisiert.",
+      "relation_type": "TYPISIERT",
+      "source_ids": [
+        "SRC-005"
+      ],
+      "to": "PGKC-010"
+    },
+    {
+      "from": "PGKC-009",
+      "id": "E009",
+      "interpretation_level": "ARBEITSABLEITUNG",
+      "limit": "",
+      "rationale": "Selected Passage schließt nicht automatisch Higher-Order-Integration.",
+      "relation_type": "OEFFNET_FRAGE",
+      "source_ids": [
+        "SRC-005"
+      ],
+      "to": "PGKC-011"
+    },
+    {
+      "from": "PGKC-009",
+      "id": "E012",
+      "interpretation_level": "QUELLENGETRAGEN",
+      "limit": "",
+      "rationale": "Ereignisfolge erlaubt Prozessordnung, nicht automatisch Uhrenmetrik.",
+      "relation_type": "GELTUNGSGRENZE",
+      "source_ids": [
+        "SRC-007"
+      ],
+      "to": "PGKC-013"
+    },
+    {
+      "from": "PGKC-009",
+      "id": "E023",
+      "interpretation_level": "HISTORISCHER_KORREKTUR",
+      "limit": "",
+      "rationale": "FSTT korrigiert den historischen 16er Rasterpfad, nicht automatisch den gesonderten 0.114-Occurrence-Beweis.",
+      "relation_type": "METHODISCHER_BERUEHRUNGSPUNKT",
+      "source_ids": [
+        "SRC-024"
+      ],
+      "to": "PGKC-024"
+    },
+    {
+      "from": "PGKC-009",
+      "id": "X049",
+      "interpretation_level": "INDEXVERBINDUNG_KEINE_NEUE_PHYSIK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Thematischer Anschluss zwischen früherem Modul PGKM-005 und PGK-0.102–0.106; der alte Claim wird nicht auf den neuen Originaltest übertragen.",
+      "relation_type": "MODULKONKORDANZ_KEINE_IMPLIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-094"
+    },
+    {
+      "from": "PGKC-009",
+      "id": "X050",
+      "interpretation_level": "INDEXVERBINDUNG_KEINE_NEUE_PHYSIK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Thematischer Anschluss zwischen früherem Modul PGKM-005 und PGK-0.107–0.115; der alte Claim wird nicht auf den neuen Originaltest übertragen.",
+      "relation_type": "MODULKONKORDANZ_KEINE_IMPLIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-099"
+    },
+    {
+      "from": "PGKC-288",
+      "id": "E274",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (QUELLEN_KONTRAST): Für eine prospektive Aussage sind Kandidat, erstes gerichtetes Root und tatsächlich native gewählte Occurrence verschiedene Prüfobjekte. / Verfügbare algebraische Richtung, native Zulässigkeit, ausgewähltes Root und funktionale Regeneration bilden getrennte Existenz-/Quantorverträge.",
+      "relation_type": "NATIVE_OCCURRENCE_GUARD",
+      "source_ids": [
+        "SRC-005",
+        "SRC-024",
+        "SRC-035"
+      ],
+      "to": "PGKC-297"
+    },
+    {
+      "evidence_link_kind": "EDITORIAL_LINK_NO_SOURCE_CLAIM",
+      "from": "PGKC-009",
+      "id": "A6N-E002",
+      "interpretation_level": "SOURCE_RUN",
+      "limit": "",
+      "rationale": "Quellenidentische Native-Occurrence im getesteten DIRECT-092-Fork",
+      "relation_type": "DIRECT_NATIVE_REPLAY",
+      "review_required": true,
+      "source_ids": [],
+      "to": "A6N-C002"
+    },
+    {
+      "from": "PGKC-011",
+      "id": "E010",
+      "interpretation_level": "QUELLEN_VERGLEICH",
+      "limit": "",
+      "rationale": "Form-Identität muss eigenständig geprüft werden, Discovery 0.135 scheiterte.",
+      "relation_type": "GATE",
+      "source_ids": [
+        "SRC-017"
+      ],
+      "to": "PGKC-012"
+    },
+    {
+      "from": "PGKC-035",
+      "id": "E011",
+      "interpretation_level": "ARBEITSABLEITUNG",
+      "limit": "",
+      "rationale": "Ein philosophischer Motorvorschlag darf nicht als bereits bestandener Formidentitätsbeweis gelten.",
+      "relation_type": "NEGATIVER_GEGENCHECK",
+      "source_ids": [
+        "SRC-017"
+      ],
+      "to": "PGKC-012"
+    },
+    {
+      "from": "PGKC-012",
+      "id": "E014",
+      "interpretation_level": "GELTUNGSUNTERSCHIED",
+      "limit": "",
+      "rationale": "Ein negativer Formklassen-Guard verhindert nicht Trägerwechsel-Teilbefunde in anders definierter Funktionsklasse.",
+      "relation_type": "FORSCHUNGSWECHSEL",
+      "source_ids": [
+        "SRC-028"
+      ],
+      "to": "PGKC-015"
+    },
+    {
+      "from": "PGKC-011",
+      "id": "H001",
+      "interpretation_level": "NEUE_HYPOTHESE_KEIN_ERGEBNIS",
+      "limit": "Nur Prüffrage; keine positive Kausalaussage.",
+      "rationale": "Sind die 0.116-Funktionsmaps in die FG-Typgrammatik ohne zusätzliche Mechanik überführbar?",
+      "relation_type": "ZU_PRUEFEN",
+      "source_ids": [
+        "SRC-022"
+      ],
+      "to": "PGKC-031"
+    },
+    {
+      "from": "PGKC-011",
+      "id": "X042",
+      "interpretation_level": "INDEXVERBINDUNG_KEINE_NEUE_PHYSIK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Thematischer Anschluss zwischen früherem Modul PGKM-006 und PGK-0.50–0.57; der alte Claim wird nicht auf den neuen Originaltest übertragen.",
+      "relation_type": "MODULKONKORDANZ_KEINE_IMPLIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-042"
+    },
+    {
+      "from": "PGKC-011",
+      "id": "X044",
+      "interpretation_level": "INDEXVERBINDUNG_KEINE_NEUE_PHYSIK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Thematischer Anschluss zwischen früherem Modul PGKM-006 und PGK-0.65–0.69; der alte Claim wird nicht auf den neuen Originaltest übertragen.",
+      "relation_type": "MODULKONKORDANZ_KEINE_IMPLIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-057"
+    },
+    {
+      "from": "PGKC-011",
+      "id": "E257",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Originale 0.115C-Counts hinzugefügt, ohne spätere Modelle einzufitten.",
+      "relation_type": "A6_3_ORIGINALDATA_CARRIER_REENTRY",
+      "source_ids": [
+        "SRC-072"
+      ],
+      "to": "PGKC-272"
+    },
+    {
+      "from": "PGKC-272",
+      "id": "E258",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Transport- und Reentry-Counts sind bedingte native Familienstatus.",
+      "relation_type": "A6_3_HISTORICAL_TYPED_REENTRY",
+      "source_ids": [
+        "SRC-072"
+      ],
+      "to": "PGKC-273"
+    },
+    {
+      "from": "PGKC-273",
+      "id": "E259",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Eine partielle Rückkehrfunktion reicht nicht für eine metrische Uhr.",
+      "relation_type": "CARRIER_DOES_NOT_PROVE_CLOCK",
+      "source_ids": [
+        "SRC-065"
+      ],
+      "to": "PGKC-274"
+    },
+    {
+      "from": "PGKC-272",
+      "id": "E265",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Operatorgleichheit der Scaffolds ist nicht strikte J_a=J_b-Gleichheit.",
+      "relation_type": "DIFFERENT_OPERATOR_SENSE",
+      "source_ids": [
+        "SRC-072"
+      ],
+      "to": "PGKC-280"
+    },
+    {
+      "from": "PGKC-289",
+      "id": "E275",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (NEUE_ORIGINALDATEN_KREUZTABELLE): Die Originaldaten von 0.115C zeigen in 249 Paaren beobachtete exakte Kopplung der Flags D_same und next_B_same: jeweils 65; trotz überall fehlender Response- und Germgleichheit. / Gleiches Scaffold oder gleicher aktueller Partnermodus erlaubt nicht den Schluss auf gleiche vollständige Antwort, Funktion oder eine native Wiederherstellung.",
+      "relation_type": "SCAFFOLD_VS_FULL_RESPONSE",
+      "source_ids": [
+        "SRC-065",
+        "SRC-077"
+      ],
+      "to": "PGKC-290"
+    },
+    {
+      "from": "PGKC-289",
+      "id": "E276",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (QUELLEN_KONTRAST): Die Originaldaten von 0.115C zeigen in 249 Paaren beobachtete exakte Kopplung der Flags D_same und next_B_same: jeweils 65; trotz überall fehlender Response- und Germgleichheit. / Übereinstimmung an einem 2D-Port ohne gleiche 64D-Antwort ist kein ausgewählter Träger-Ersatz oder regenerierter Rollenpfad.",
+      "relation_type": "CARRIER_NOT_REGENERATION",
+      "source_ids": [
+        "SRC-065",
+        "SRC-070",
+        "SRC-077"
+      ],
+      "to": "PGKC-303"
+    },
+    {
+      "from": "PGKC-013",
+      "id": "E013",
+      "interpretation_level": "QUELLENGETRAGEN",
+      "limit": "",
+      "rationale": "Nach intrinsischer Ordnung ist lokale Eich-/Rekurrenzbeziehung gesondert zu untersuchen.",
+      "relation_type": "FOLGEFRAGE",
+      "source_ids": [
+        "SRC-008"
+      ],
+      "to": "PGKC-014"
+    },
+    {
+      "from": "PGKC-014",
+      "id": "H002",
+      "interpretation_level": "NEUE_HYPOTHESE_KEIN_ERGEBNIS",
+      "limit": "Nur Prüffrage; keine positive Kausalaussage.",
+      "rationale": "Wann ist eine uhrfähige Wiederkehr zugleich eine unabhängig definierte Funktion?",
+      "relation_type": "ZU_PRUEFEN",
+      "source_ids": [
+        "SRC-008"
+      ],
+      "to": "PGKC-026"
+    },
+    {
+      "from": "PGKC-013",
+      "id": "X052",
+      "interpretation_level": "INDEXVERBINDUNG_KEINE_NEUE_PHYSIK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Thematischer Anschluss zwischen früherem Modul PGKM-007 und PGK-0.126–0.129; der alte Claim wird nicht auf den neuen Originaltest übertragen.",
+      "relation_type": "MODULKONKORDANZ_KEINE_IMPLIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-118"
+    },
+    {
+      "from": "PGKC-015",
+      "id": "E015",
+      "interpretation_level": "QUELLEN_SYNTHETISCH",
+      "limit": "",
+      "rationale": "Gleichartige Funktionsrolle ist nur auf klar fixiertem I/O-Port überprüfbar, nicht automatisch full-state identisch.",
+      "relation_type": "BEGRENZT",
+      "source_ids": [
+        "SRC-013"
+      ],
+      "to": "PGKC-016"
+    },
+    {
+      "from": "PGKC-015",
+      "id": "E016",
+      "interpretation_level": "ARBEITSABLEITUNG",
+      "limit": "",
+      "rationale": "Ohne unabhängiges Phi ist Regeneration nicht zieltypisiert bewertbar.",
+      "relation_type": "PREREQUISITE",
+      "source_ids": [
+        "SRC-013"
+      ],
+      "to": "PGKC-026"
+    },
+    {
+      "from": "PGKC-016",
+      "id": "E027",
+      "interpretation_level": "PROVENIENZ",
+      "limit": "",
+      "rationale": "Gleiches RΦ-03 Ergebnis ist derselbe historische Beleg, keine unabhängige zweite Messreihe.",
+      "relation_type": "DOPPELBELEG",
+      "source_ids": [
+        "SRC-013"
+      ],
+      "to": "PGKC-028"
+    },
+    {
+      "from": "PGKC-015",
+      "id": "X045",
+      "interpretation_level": "INDEXVERBINDUNG_KEINE_NEUE_PHYSIK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Thematischer Anschluss zwischen früherem Modul PGKM-008 und PGK-0.70–0.75; der alte Claim wird nicht auf den neuen Originaltest übertragen.",
+      "relation_type": "MODULKONKORDANZ_KEINE_IMPLIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-062"
+    },
+    {
+      "from": "PGKC-015",
+      "id": "X182",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C26: Funktionskontinuität ist nicht neu hervorgebrachte Regenerationsfähigkeit.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-147"
+    },
+    {
+      "from": "PGKC-017",
+      "id": "E017",
+      "interpretation_level": "HISTORISCHE_ENTWICKLUNG",
+      "limit": "",
+      "rationale": "Prospektiver pre-rewrite Nachfolgetest adressiert Leakage, findet jedoch keinen replicated Additionality PASS.",
+      "relation_type": "KORREKTURPFAD",
+      "source_ids": [
+        "SRC-019"
+      ],
+      "to": "PGKC-018"
+    },
+    {
+      "from": "PGKC-018",
+      "id": "E018",
+      "interpretation_level": "HISTORISCHE_ENTWICKLUNG",
+      "limit": "",
+      "rationale": "Nach PGK 0.140 folgt eine strengere Konfigurationsfrage; auch der 0.141 Null-Gate fällt negativ aus.",
+      "relation_type": "FORSCHUNGSWECHSEL",
+      "source_ids": [
+        "SRC-020"
+      ],
+      "to": "PGKC-019"
+    },
+    {
+      "from": "PGKC-017",
+      "id": "E029",
+      "interpretation_level": "SYNTHETISCHE_VERBINDUNG",
+      "limit": "",
+      "rationale": "Die formal getypte Grammatik kann Fehlerarten beschreiben, ersetzt aber keinen prospektiven R10c-Test.",
+      "relation_type": "KATEGORIENTRENNUNG",
+      "source_ids": [
+        "SRC-022"
+      ],
+      "to": "PGKC-031"
+    },
+    {
+      "from": "PGKC-017",
+      "id": "E262",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Post-Rewrite-Klassifikation ist nicht prädiktiv.",
+      "relation_type": "PRE_REWRITE_INFORMATION_GUARD",
+      "source_ids": [
+        "SRC-018"
+      ],
+      "to": "PGKC-277"
+    },
+    {
+      "from": "PGKC-018",
+      "id": "E263",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Formal-Gate und Gain-Gate bleiben unterschiedliche Fragen.",
+      "relation_type": "PASS_FORMAL_FAIL_GAIN",
+      "source_ids": [
+        "SRC-019"
+      ],
+      "to": "PGKC-278"
+    },
+    {
+      "from": "PGKC-291",
+      "id": "E277",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (EXAKTES_ABSTRAKTES_GEGENMODELL): Der 0.139-Deskriptor REORDERING_CLASS ist post-rewrite und somit für die untersuchte Regel kein gültiger pre-rewrite-Selektor. / Zwei Welten mit identischen pre-event-Informationen und unterschiedlichen post-event-Labels erlauben 2/2 retrospektive, aber maximal 1/2 deterministische prospektive Treffer.",
+      "relation_type": "POST_EVENT_LABEL_LEAKAGE",
+      "source_ids": [
+        "SRC-018",
+        "SRC-076",
+        "SRC-077"
+      ],
+      "to": "PGKC-292"
+    },
+    {
+      "from": "PGKC-291",
+      "id": "E278",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (QUELLEN_KONTRAST): Der 0.139-Deskriptor REORDERING_CLASS ist post-rewrite und somit für die untersuchte Regel kein gültiger pre-rewrite-Selektor. / 0.140 und 0.141 bestehen im jeweiligen Originalvertrag nicht die vorab geforderte replizierte Additionality gegen geeignete Vergleichsmodelle.",
+      "relation_type": "POST_EVENT_INVALIDATES_PROSPECTIVITY",
+      "source_ids": [
+        "SRC-018",
+        "SRC-019",
+        "SRC-020"
+      ],
+      "to": "PGKC-296"
+    },
+    {
+      "from": "PGKC-294",
+      "id": "E280",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (EXAKTES_ABSTRAKTES_GEGENMODELL): Ein erfolgreicher vorab sichtbarer Feedbackselektor kann in einer künstlichen endlichen E/C-Variante eine Zielgröße verbessern; dieser neue Selektor wäre für PGK ein eigener Fork. / Die künstliche E/C-Feedback-Demonstration hat einen Gesamteffekt, aber keine positive Verbesserung auf der separat ausgewerteten Teilmenge f<=2.",
+      "relation_type": "TOY_FEEDBACK_VS_NULL_GATES",
+      "source_ids": [
+        "SRC-076",
+        "SRC-077"
+      ],
+      "to": "PGKC-295"
+    },
+    {
+      "from": "PGKC-294",
+      "id": "E281",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (EXAKTES_ABSTRAKTES_GEGENMODELL): Ein erfolgreicher vorab sichtbarer Feedbackselektor kann in einer künstlichen endlichen E/C-Variante eine Zielgröße verbessern; dieser neue Selektor wäre für PGK ein eigener Fork. / Ein Übergang zur Regulation erfordert einen vorab definierten Funktionsvertrag und belegte zeitlich zulässige Auswahlinformation, nicht nur Rekurrenz oder Trägerübereinstimmung.",
+      "relation_type": "TOY_EFFECT_SCOPE_NOT_UNIVERSAL",
+      "source_ids": [
+        "SRC-076",
+        "SRC-077"
+      ],
+      "to": "PGKC-298"
+    },
+    {
+      "from": "PGKC-295",
+      "id": "E282",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (QUELLEN_KONTRAST): Die künstliche E/C-Feedback-Demonstration hat einen Gesamteffekt, aber keine positive Verbesserung auf der separat ausgewerteten Teilmenge f<=2. / Ein Übergang zur Regulation erfordert einen vorab definierten Funktionsvertrag und belegte zeitlich zulässige Auswahlinformation, nicht nur Rekurrenz oder Trägerübereinstimmung.",
+      "relation_type": "ORIGINAL_NEGATIVE_TEST_STATUS_STAYS",
+      "source_ids": [
+        "SRC-023",
+        "SRC-076",
+        "SRC-077"
+      ],
+      "to": "PGKC-298"
+    },
+    {
+      "evidence_link_kind": "EDITORIAL_LINK_NO_SOURCE_CLAIM",
+      "from": "PGKC-017",
+      "id": "A6N-E008",
+      "interpretation_level": "AUDIT",
+      "limit": "",
+      "rationale": "0.139 verbietet nachtraegliche Labels als preevent-Gewinn",
+      "relation_type": "TEMPORAL_GUARD",
+      "review_required": true,
+      "source_ids": [],
+      "to": "A6N-C008"
+    },
+    {
+      "evidence_link_kind": "EDITORIAL_LINK_NO_SOURCE_CLAIM",
+      "from": "PGKC-018",
+      "id": "A6N-E009",
+      "interpretation_level": "AUDIT",
+      "limit": "",
+      "rationale": "0.140-Negativgate bleibt bestehen",
+      "relation_type": "NULL_ADDITIONALITY_GUARD",
+      "review_required": true,
+      "source_ids": [],
+      "to": "A6N-C008"
+    },
+    {
+      "from": "PGKC-019",
+      "id": "E019",
+      "interpretation_level": "PROVENIENZ",
+      "limit": "",
+      "rationale": "0.141-Runs und spätere Recovery-Freeze dürfen nicht als bytegleiche Ursprungsinstanz gelten.",
+      "relation_type": "PROVENIENZ_GUARD",
+      "source_ids": [
+        "SRC-021"
+      ],
+      "to": "PGKC-020"
+    },
+    {
+      "from": "PGKC-019",
+      "id": "E020",
+      "interpretation_level": "HISTORISCHE_ENTWICKLUNG",
+      "limit": "",
+      "rationale": "Zu fingerprintnahe Rollenlogik motiviert ID-freie Reachability, ohne vollständiges FRE-Resultat zu liefern.",
+      "relation_type": "MOTIVIERT",
+      "source_ids": [
+        "SRC-010"
+      ],
+      "to": "PGKC-021"
+    },
+    {
+      "from": "PGKC-021",
+      "id": "E021",
+      "interpretation_level": "GELTUNGSUNTERSCHIED",
+      "limit": "",
+      "rationale": "FRE-Limits und WR-Typen sind kein identisches Testobjekt.",
+      "relation_type": "NEUER_PRUEFGEGENSTAND",
+      "source_ids": [
+        "SRC-011"
+      ],
+      "to": "PGKC-022"
+    },
+    {
+      "from": "PGKC-021",
+      "id": "E034",
+      "interpretation_level": "GELTUNGSUNTERSCHIED",
+      "limit": "",
+      "rationale": "Ein noch offenes identitätsfreies Replikationsprogramm ist kein formaler Typvertrag und umgekehrt.",
+      "relation_type": "NICHT_IDENTISCH",
+      "source_ids": [
+        "SRC-022"
+      ],
+      "to": "PGKC-031"
+    },
+    {
+      "from": "PGKC-019",
+      "id": "X185",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C27: Gleiche Teilfunktion über Teilport widerspricht weder Fprint-Verfehlung noch nichtidentischer Gesamtdynamik.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-148"
+    },
+    {
+      "from": "PGKC-021",
+      "id": "X188",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C28: Technische Ausführbarkeit stellt fehlende exakte historische Definitionen und Heldout-Gates nicht automatisch wieder her.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-149"
+    },
+    {
+      "from": "PGKC-019",
+      "id": "E264",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Konfigurationsrepräsentation bleibt trotz Additionality-Fail zulässig.",
+      "relation_type": "CFG_C0_STATUS_GUARD",
+      "source_ids": [
+        "SRC-020"
+      ],
+      "to": "PGKC-279"
+    },
+    {
+      "from": "PGKC-299",
+      "id": "E285",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (METHODENREGEL): Eine vollständige v1.39 Schichtgrammatik liegt als formaler Typvertrag vor; die kanonische Instantiierung ist ausdrücklich nicht geschlossen. / Die A6/4-Gate-Folge G0–G7 ist ein Forschungsfilter: bestandene Kandidaten- oder Rewrite-Teiltests übertragen keinen PASS auf die spätere prospektive Regulationsleistung.",
+      "relation_type": "A6_4_NEW_GATES_NO_PROMOTION",
+      "source_ids": [
+        "SRC-023",
+        "SRC-076"
+      ],
+      "to": "PGKC-300"
+    },
+    {
+      "from": "PGKC-299",
+      "id": "E286",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (QUELLEN_KONTRAST): Eine vollständige v1.39 Schichtgrammatik liegt als formaler Typvertrag vor; die kanonische Instantiierung ist ausdrücklich nicht geschlossen. / Die historische 0.70-Passage-Rückwirkung, 0.83-Negativselektion und 0.139–0.141-Negativadditionality können ohne Widerspruch nebeneinander bestehen.",
+      "relation_type": "CANONICAL_FROZEN_TYPING",
+      "source_ids": [
+        "SRC-004",
+        "SRC-020",
+        "SRC-023"
+      ],
+      "to": "PGKC-301"
+    },
+    {
+      "evidence_link_kind": "EDITORIAL_LINK_NO_SOURCE_CLAIM",
+      "from": "PGKC-019",
+      "id": "A6N-E010",
+      "interpretation_level": "AUDIT",
+      "limit": "",
+      "rationale": "0.141-Konfigurations-Additionality bleibt geschlossen",
+      "relation_type": "CONFIGURATION_ADDITIONALITY_GUARD",
+      "review_required": true,
+      "source_ids": [],
+      "to": "A6N-C008"
+    },
+    {
+      "from": "PGKC-022",
+      "id": "E022",
+      "interpretation_level": "QUELLEN_VERGLEICH",
+      "limit": "",
+      "rationale": "WR-Architektur ist von der zurückgenommenen BRW-Additionality zu unterscheiden.",
+      "relation_type": "GEGENCHECK",
+      "source_ids": [
+        "SRC-015"
+      ],
+      "to": "PGKC-023"
+    },
+    {
+      "from": "PGKC-022",
+      "id": "H003",
+      "interpretation_level": "NEUE_HYPOTHESE_KEIN_ERGEBNIS",
+      "limit": "Nur Prüffrage; keine positive Kausalaussage.",
+      "rationale": "Kann gleiche Teil-I/O-Funktion bei anderer Vollumgebung eine W-Marge verändern?",
+      "relation_type": "ZU_PRUEFEN",
+      "source_ids": [
+        "SRC-013"
+      ],
+      "to": "PGKC-028"
+    },
+    {
+      "from": "PGKC-023",
+      "id": "X191",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C29: Der frühere Effekt ist nicht als aktueller positiver Befund zu verwenden.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-150"
+    },
+    {
+      "from": "PGKC-023",
+      "id": "X233",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C43: 0.139 ist nicht automatisch BRW1G; keine Quellkorrektur über semantische Ähnlichkeit ersetzen.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-164"
+    },
+    {
+      "from": "PGKC-024",
+      "id": "E024",
+      "interpretation_level": "QUELLENGETRAGEN",
+      "limit": "",
+      "rationale": "Nach erster korrigierter Insel bei Schritt6 ist Schritt10 nur Archivkonditional.",
+      "relation_type": "BRANCHBEDINGUNG",
+      "source_ids": [
+        "SRC-015"
+      ],
+      "to": "PGKC-025"
+    },
+    {
+      "from": "PGKC-024",
+      "id": "E035",
+      "interpretation_level": "ARBEITSABLEITUNG",
+      "limit": "",
+      "rationale": "Root-Precision im Historienpfad ist für ausgewählte Prozessordnung relevant, nicht schon eine Zeitmetrik.",
+      "relation_type": "METHODOLOGISCHE_VERBINDUNG",
+      "source_ids": [
+        "SRC-007"
+      ],
+      "to": "PGKC-013"
+    },
+    {
+      "from": "PGKC-025",
+      "id": "H004",
+      "interpretation_level": "NEUE_HYPOTHESE_KEIN_ERGEBNIS",
+      "limit": "Nur Prüffrage; keine positive Kausalaussage.",
+      "rationale": "Welche RΦ-Gates hängen vom korrigierten earliest-selected Pfad statt dem alten Archiv-Pfad ab?",
+      "relation_type": "ZU_PRUEFEN",
+      "source_ids": [
+        "SRC-015"
+      ],
+      "to": "PGKC-026"
+    },
+    {
+      "from": "PGKC-024",
+      "id": "X047",
+      "interpretation_level": "INDEXVERBINDUNG_KEINE_NEUE_PHYSIK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Thematischer Anschluss zwischen früherem Modul PGKM-012 und PGK-0.85–0.91; der alte Claim wird nicht auf den neuen Originaltest übertragen.",
+      "relation_type": "MODULKONKORDANZ_KEINE_IMPLIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-077"
+    },
+    {
+      "from": "PGKC-024",
+      "id": "X194",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C30: Historisch gewählte Reihe ist nicht durchgängig die Folge der kontinuierlich frühesten gerichteten E/C-Roots.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-151"
+    },
+    {
+      "from": "PGKC-025",
+      "id": "X197",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C31: Schritt10-Befund gilt nur unter Fortsetzung der archivierten CFG-Pfadfolge.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-152"
+    },
+    {
+      "from": "PGKC-024",
+      "id": "E251",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Eigene finite Funktions-/Vorzeichenkontrolle der E-Insel, keine globale Erstwurzel-Zertifizierung.",
+      "relation_type": "A6_3_LOKAL_NACHGERECHNET",
+      "source_ids": [
+        "SRC-069"
+      ],
+      "to": "PGKC-266"
+    },
+    {
+      "from": "PGKC-025",
+      "id": "E252",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Die C-Insel von Schritt10 betrifft nur die alte gefrorene Archivfolge.",
+      "relation_type": "A6_3_ARCHIVZUSTAND_KONDITIONIERT",
+      "source_ids": [
+        "SRC-069"
+      ],
+      "to": "PGKC-267"
+    },
+    {
+      "from": "PGKC-266",
+      "id": "E267",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Zeit-/Ereignisordnung verlangt eigene metrische Gates.",
+      "relation_type": "ROOT_SELECTION_NOT_METRIC_TIME",
+      "source_ids": [
+        "SRC-075"
+      ],
+      "to": "PGKC-281"
+    },
+    {
+      "evidence_link_kind": "EDITORIAL_LINK_NO_SOURCE_CLAIM",
+      "from": "PGKC-024",
+      "id": "A6N-E001",
+      "interpretation_level": "FSTT_ORIG",
+      "limit": "",
+      "rationale": "Sechs fruehe, historisch isolierte erste Root-Occurrences; der spaetere Alias bleibt offen",
+      "relation_type": "ORIGINAL_ROOT_GUARD",
+      "review_required": true,
+      "source_ids": [],
+      "to": "A6N-C001"
+    },
+    {
+      "evidence_link_kind": "EDITORIAL_LINK_NO_SOURCE_CLAIM",
+      "from": "PGKC-025",
+      "id": "A6N-E011",
+      "interpretation_level": "AUDIT",
+      "limit": "",
+      "rationale": "Archivierte event-ID nicht mit global fruehestem Root verwechseln",
+      "relation_type": "ARCHIVAL_SELECTION_CORRECTION",
+      "review_required": true,
+      "source_ids": [],
+      "to": "A6N-C009"
+    },
+    {
+      "from": "PGKC-026",
+      "id": "E025",
+      "interpretation_level": "GELTUNGSUNTERSCHIED",
+      "limit": "",
+      "rationale": "Nach intrinsischem Phi-STOP kann eine externe Alt-ID-Aufgabe definiert werden; sie ist nicht das ursprünglich gesuchte intrinsische Phi.",
+      "relation_type": "AUFGABENWECHSEL",
+      "source_ids": [
+        "SRC-013"
+      ],
+      "to": "PGKC-027"
+    },
+    {
+      "from": "PGKC-027",
+      "id": "E026",
+      "interpretation_level": "GELTUNGSUNTERSCHIED",
+      "limit": "",
+      "rationale": "Negative Wiederherstellung alter IDs und 2D-I/O-Äquivalenz sprechen über unterschiedliche Zielrelationen.",
+      "relation_type": "GELTUNGSUNTERSCHIED",
+      "source_ids": [
+        "SRC-013"
+      ],
+      "to": "PGKC-028"
+    },
+    {
+      "from": "PGKC-026",
+      "id": "X051",
+      "interpretation_level": "INDEXVERBINDUNG_KEINE_NEUE_PHYSIK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Thematischer Anschluss zwischen früherem Modul PGKM-013 und PGK-0.116–0.125; der alte Claim wird nicht auf den neuen Originaltest übertragen.",
+      "relation_type": "MODULKONKORDANZ_KEINE_IMPLIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-108"
+    },
+    {
+      "from": "PGKC-026",
+      "id": "X200",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C32: Externes Role-ID-No-Go behauptet keine quellnative notwendige TSM-Funktion und kein universelles Regenerations-No-Go.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-153"
+    },
+    {
+      "from": "PGKC-028",
+      "id": "X203",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C33: Portgleichheit ist nicht volle dynamische Äquivalenz, gleiche Rootfolge oder Wiederherstellung.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-154"
+    },
+    {
+      "from": "PGKC-028",
+      "id": "X236",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C44: Externe Chemie ist Fragegenerator, kein Beleg für eine neue PGK-Λ/S3-Wirkung.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-165"
+    },
+    {
+      "from": "PGKC-028",
+      "id": "E253",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Die acht Portvergleiche als numerischer Quellen-Querschnitt erneut addiert.",
+      "relation_type": "A6_3_PORT_AGGREGATION",
+      "source_ids": [
+        "SRC-070"
+      ],
+      "to": "PGKC-268"
+    },
+    {
+      "from": "PGKC-028",
+      "id": "E254",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Für 8/8 strikten 64D-Vergleichen keine Vollgleichheit.",
+      "relation_type": "A6_3_FULL_RESPONSE_GEGENCHECK",
+      "source_ids": [
+        "SRC-070"
+      ],
+      "to": "PGKC-269"
+    },
+    {
+      "from": "PGKC-269",
+      "id": "E255",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Drei Differenzen sind sogar am aktuellen Antwortvorzeichen sichtbar.",
+      "relation_type": "A6_3_SIGN_SENSITIVE_DIFFERENCE",
+      "source_ids": [
+        "SRC-070"
+      ],
+      "to": "PGKC-270"
+    },
+    {
+      "from": "PGKC-027",
+      "id": "E256",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Externer Porttest impliziert keinen nativen Ersatzoperator.",
+      "relation_type": "NO_ROLE_REGENERATION_FROM_PORT",
+      "source_ids": [
+        "SRC-074"
+      ],
+      "to": "PGKC-271"
+    },
+    {
+      "from": "PGKC-269",
+      "id": "E266",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "RΦ03 verneint Full-J-Äquivalenz, ohne 0.115C zu widerlegen.",
+      "relation_type": "DIFFERENT_OPERATOR_SENSE",
+      "source_ids": [
+        "SRC-074"
+      ],
+      "to": "PGKC-280"
+    },
+    {
+      "from": "PGKC-303",
+      "id": "E291",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (OFFENE_BRUECKE): Übereinstimmung an einem 2D-Port ohne gleiche 64D-Antwort ist kein ausgewählter Träger-Ersatz oder regenerierter Rollenpfad. / Als nächster gültiger Test muss dieselbe Native-Variante vorab Psi, Sel_native, T, Funktionsproxy und serielles Nullmodell fixieren; spätere Held-outs bleiben verschlossen.",
+      "relation_type": "REGENERATION_GUARD",
+      "source_ids": [
+        "SRC-070",
+        "SRC-074",
+        "SRC-076"
+      ],
+      "to": "PGKC-305"
+    },
+    {
+      "evidence_link_kind": "EDITORIAL_LINK_NO_SOURCE_CLAIM",
+      "from": "PGKC-026",
+      "id": "A6N-E004",
+      "interpretation_level": "SOURCE_RUN",
+      "limit": "",
+      "rationale": "Aufgabenspezifische, nicht-autonome Rollenadressierbarkeit",
+      "relation_type": "TYPED_EXTERNAL_FUNCTION_CONTRAST",
+      "review_required": true,
+      "source_ids": [],
+      "to": "A6N-C004"
+    },
+    {
+      "evidence_link_kind": "EDITORIAL_LINK_NO_SOURCE_CLAIM",
+      "from": "A6N-C004",
+      "id": "A6N-E005",
+      "interpretation_level": "ALGEBRAIC_PROOF",
+      "limit": "",
+      "rationale": "Verlust und rechnerische Unumkehrbarkeit fuer identische alte Rollen",
+      "relation_type": "EXACT_NO_REGENERATION_BOUND",
+      "review_required": true,
+      "source_ids": [],
+      "to": "A6N-C005"
+    },
+    {
+      "evidence_link_kind": "EDITORIAL_LINK_NO_SOURCE_CLAIM",
+      "from": "A6N-C005",
+      "id": "A6N-E006",
+      "interpretation_level": "ALGEBRAIC_PROOF",
+      "limit": "",
+      "rationale": "Neue getrennte Anschluesse sind keine Rueckgewinnung der alten Adresse",
+      "relation_type": "STRICT_ROLE_VS_NEW_CARRIER",
+      "review_required": true,
+      "source_ids": [],
+      "to": "A6N-C006"
+    },
+    {
+      "from": "PGKC-029",
+      "id": "E028",
+      "interpretation_level": "QUELLENGETRAGEN",
+      "limit": "",
+      "rationale": "Die modale Inversion erfasst nicht allein die Full-C-64D-Repräsentationsgenauigkeit.",
+      "relation_type": "BEWEIS_SCOPE",
+      "source_ids": [
+        "SRC-014"
+      ],
+      "to": "PGKC-030"
+    },
+    {
+      "from": "PGKC-029",
+      "id": "E036",
+      "interpretation_level": "GELTUNGSUNTERSCHIED",
+      "limit": "",
+      "rationale": "Exakte reduktive QQ-Lösung und emergente 3D-Geometrie sind verschiedene Problemstellungen.",
+      "relation_type": "NICHT_PHYSISCHE_BEWEISUEBERTRAGUNG",
+      "source_ids": [
+        "SRC-014"
+      ],
+      "to": "PGKC-001"
+    },
+    {
+      "from": "PGKC-029",
+      "id": "X125",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C07: Generischer algebraischer Grad drei ist aus kubischer Gleichungsstruktur nicht ableitbar; endpoint-spezifisch möglich.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-128"
+    },
+    {
+      "from": "PGKC-029",
+      "id": "X128",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C08: Punktweise dyadisch eingefrorene Koeffizienten und gekoppelte Ereignisparameter sind mathematisch nicht identisch.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-129"
+    },
+    {
+      "from": "PGKC-029",
+      "id": "X131",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C09: SC-Existenz ist nicht C-Passage; 3→1 ausdrücklich nur für diesen Endpunkt und Quellfork.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-130"
+    },
+    {
+      "from": "PGKC-029",
+      "id": "X137",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C11: Der ursprüngliche hohe Rang ist keine neue exakte Freiheitsgrad- oder Geometriebestätigung.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-132"
+    },
+    {
+      "from": "PGKC-030",
+      "id": "X212",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C36: FSTT-Quellenreset widerlegt nicht automatisch ein anderswo zertifiziertes gekoppeltes Event10; Zertifikate bleiben endpoint- und branchgebunden.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-157"
+    },
+    {
+      "from": "PGKC-029",
+      "id": "E260",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Nur die 2x2-Modalidentität exakt symbolisch neu kontrolliert.",
+      "relation_type": "A6_3_SYMPY_MODAL_EQUALITY",
+      "source_ids": [
+        "SRC-014"
+      ],
+      "to": "PGKC-275"
+    },
+    {
+      "from": "PGKC-275",
+      "id": "E261",
+      "interpretation_level": "A6_3_SOURCED_LOCAL_VERIFICATION_OR_SCOPE_GUARD",
+      "limit": "DIREKTE_AUDIT_VERBINDUNG_KEINE_TRANSITIVE_WISSENSCHAFTLICHE_IMPLIKATION",
+      "rationale": "Lokale Modalalgebra beweist weder Rootcount noch exact ambient Full-C.",
+      "relation_type": "A6_3_GLOBAL_REPRESENTATION_GUARD",
+      "source_ids": [
+        "SRC-014"
+      ],
+      "to": "PGKC-276"
+    },
+    {
+      "from": "PGKC-031",
+      "id": "E030",
+      "interpretation_level": "QUELLENGETRAGEN",
+      "limit": "",
+      "rationale": "Typvertrag PASS unter begrenztem Contract; kanonische Instanz nicht geschlossen.",
+      "relation_type": "STATUS_GUARD",
+      "source_ids": [
+        "SRC-022"
+      ],
+      "to": "PGKC-032"
+    },
+    {
+      "from": "PGKC-032",
+      "id": "X224",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C40: Spätere datierte Evidenz geht in Forschungs-Overlay, nicht stillschweigend in kanonische v1.39.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-161"
+    },
+    {
+      "from": "PGKC-037",
+      "id": "X053",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.45 und PGK-0.46: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "NEUE_REFERENZ_UND_GRENZE",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-038"
+    },
+    {
+      "from": "PGKC-040",
+      "id": "X054",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.48 und PGK-0.49: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "GEGEN_BOTTLENECK_UND_REKURSION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-041"
+    },
+    {
+      "from": "PGKC-036",
+      "id": "X215",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C37: A3b schließt Nummern-/Statuslücke, nicht Originalbyte-/Runnerprüfung.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-158"
+    },
+    {
+      "from": "PGKC-036",
+      "id": "X221",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C39: Wiederholte Quelltexte sind Provenienzstabilität, keine mehreren unabhängig gleichlaufenden Rechnungen.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-160"
+    },
+    {
+      "from": "PGKC-036",
+      "id": "X227",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C41: Dateieinträge sind weder eindeutige Studien noch unabhängige Module; Nummernregister ist nicht vollständige Inhalt-/Rohbytesdeckung.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-162"
+    },
+    {
+      "from": "PGKC-043",
+      "id": "X055",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.51 und PGK-0.52: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "HISTORY_HYPOTHESE_HISTORISCH",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-044"
+    },
+    {
+      "from": "PGKC-044",
+      "id": "X056",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.52 und PGK-0.53: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "HISTORISCHE_HISTORY_KORREKTUR",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-045"
+    },
+    {
+      "from": "PGKC-046",
+      "id": "X057",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.54 und PGK-0.55: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "SET_UND_GENERATOR_SIND_VERSCHIEDENE_FRAGEN",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-047"
+    },
+    {
+      "from": "PGKC-048",
+      "id": "X058",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.56 und PGK-0.57: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "GETYPTER_PQ_INTERFACE_ZUSAMMENHANG",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-049"
+    },
+    {
+      "from": "PGKC-044",
+      "id": "X143",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C13: Die stärkere History-Kompressionsbehauptung bleibt eingestellt.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-134"
+    },
+    {
+      "from": "PGKC-050",
+      "id": "X059",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.58 und PGK-0.60: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "BOUNDARY_OHNE_PHYSISCHE_LOKALITAET",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-052"
+    },
+    {
+      "from": "PGKC-052",
+      "id": "X060",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.60 und PGK-0.61: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "KOMPOSITE_BOUNDARY_FORTSETZUNG",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-053"
+    },
+    {
+      "from": "PGKC-054",
+      "id": "X061",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.62 und PGK-0.63: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "REACHABILITY_NICHT_LOKALE_KAUSALITAET",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-055"
+    },
+    {
+      "from": "PGKC-055",
+      "id": "X062",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.63 und PGK-0.64: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "MESOSKALE_KOPPLUNG_KEINE_CLOSURE",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-056"
+    },
+    {
+      "from": "PGKC-050",
+      "id": "X146",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C14: Relationale Netzwerkstruktur ist kein Nachweis lokaler Kausalität oder Raumgeometrie.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-135"
+    },
+    {
+      "from": "PGKC-057",
+      "id": "X063",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.65 und PGK-0.66: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "MODELLFORK_HISTORIENWIRKUNG",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-058"
+    },
+    {
+      "from": "PGKC-059",
+      "id": "X064",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.67 und PGK-0.68: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "SKALENARCHITEKTUR_FOLGEFRAGE",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-060"
+    },
+    {
+      "from": "PGKC-060",
+      "id": "X065",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.68 und PGK-0.69: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "BASE_FIBER_TEST_GRENZT_FELDANSPRUCH",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-061"
+    },
+    {
+      "from": "PGKC-057",
+      "id": "X149",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C15: Ergebnis eines modifizierten Kernels darf keine Bestätigung des unchanged-kernel-Gates werden.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-136"
+    },
+    {
+      "from": "PGKC-062",
+      "id": "X066",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.70 und PGK-0.71: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "REGULATION_NICHT_GEWAHLTE_RESTAURATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-063"
+    },
+    {
+      "from": "PGKC-063",
+      "id": "X067",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.71 und PGK-0.72: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "NATIVE_REFERENCE_CROSSING_GEGENTEST",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-064"
+    },
+    {
+      "from": "PGKC-064",
+      "id": "X068",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.72 und PGK-0.73: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "CARRIER_NEUKLASSIFIKATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-065"
+    },
+    {
+      "from": "PGKC-065",
+      "id": "X069",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.73 und PGK-0.74: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "SCALAR_CARRIER_FAIL_FEASIBLE_SET_REGULATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-066"
+    },
+    {
+      "from": "PGKC-062",
+      "id": "X152",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C16: Generelle Negativrückkopplung/Regulation ist nicht automatisch normative bzw. spezifische Rückholung.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-137"
+    },
+    {
+      "from": "PGKC-282",
+      "id": "E268",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (QUELLEN_KONTRAST): 0.70 berichtet bei gleichem Crossing-State einen Vergleich mit/ohne Rewrite, dessen nachfolgende Kandidatenhorizonte und Fortsetzungen voneinander abweichen. / Ein nachgewiesener Unterschied zwischen Kandidatenmengen nach Rewrite und Rewrite-Ablation impliziert allein noch keine Verbesserung einer unabhängig gewählten Funktion.",
+      "relation_type": "REWRITE_EFFECT_VS_FUNCTIONAL_GATE",
+      "source_ids": [
+        "SRC-004",
+        "SRC-076",
+        "SRC-077"
+      ],
+      "to": "PGKC-293"
+    },
+    {
+      "from": "PGKC-282",
+      "id": "E269",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (OFFENE_BRUECKE): 0.70 berichtet bei gleichem Crossing-State einen Vergleich mit/ohne Rewrite, dessen nachfolgende Kandidatenhorizonte und Fortsetzungen voneinander abweichen. / Der in 0.70 berichtete Rewrite-Ablationseffekt verändert den Folgeraum; ob die Art der ausgewählten Passage ihn prospektiv besser macht, ist eine zusätzliche Prüfung.",
+      "relation_type": "REWRITE_EFFECT_VS_SELECTED_SUCCESSOR",
+      "source_ids": [
+        "SRC-004",
+        "SRC-024"
+      ],
+      "to": "PGKC-304"
+    },
+    {
+      "from": "PGKC-283",
+      "id": "E270",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (QUELLEN_KONTRAST): 0.75 berichtet eine Quelle/Senke-Bilanz der Rewrites und einen projektorbezogenen Gain/Loss-Beitrag zur aktuellen Continuation-Cone-Regulation. / Ein nachgewiesener Unterschied zwischen Kandidatenmengen nach Rewrite und Rewrite-Ablation impliziert allein noch keine Verbesserung einer unabhängig gewählten Funktion.",
+      "relation_type": "GAIN_LOSS_VS_TARGET_FUNCTION",
+      "source_ids": [
+        "SRC-004",
+        "SRC-076",
+        "SRC-077"
+      ],
+      "to": "PGKC-293"
+    },
+    {
+      "from": "PGKC-293",
+      "id": "E279",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (EXAKTES_ABSTRAKTES_GEGENMODELL): Ein nachgewiesener Unterschied zwischen Kandidatenmengen nach Rewrite und Rewrite-Ablation impliziert allein noch keine Verbesserung einer unabhängig gewählten Funktion. / Die A6/4-Gate-Folge G0–G7 ist ein Forschungsfilter: bestandene Kandidaten- oder Rewrite-Teiltests übertragen keinen PASS auf die spätere prospektive Regulationsleistung.",
+      "relation_type": "SET_DIFFERENCE_NOT_FEEDBACK",
+      "source_ids": [
+        "SRC-076",
+        "SRC-077"
+      ],
+      "to": "PGKC-300"
+    },
+    {
+      "evidence_link_kind": "EDITORIAL_LINK_NO_SOURCE_CLAIM",
+      "from": "PGKC-062",
+      "id": "A6N-E007",
+      "interpretation_level": "GELTUNG",
+      "limit": "",
+      "rationale": "PGK-0.70 ist anderer historischer Fork; A6N-01 liefert keine Replikation von 0.70",
+      "relation_type": "FORK_COMPARISON_NOT_EQUALITY",
+      "review_required": true,
+      "source_ids": [],
+      "to": "A6N-C007"
+    },
+    {
+      "from": "PGKC-068",
+      "id": "X070",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.76 und PGK-0.77: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "MOEGLICHKEIT_ZU_ORGANISATION",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-069"
+    },
+    {
+      "from": "PGKC-069",
+      "id": "X071",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.77 und PGK-0.78: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "ORGANISATION_ZU_GRAMMATIK",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-070"
+    },
+    {
+      "from": "PGKC-070",
+      "id": "X072",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.78 und PGK-0.79: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "KONDITIONALE_REKURSION_KEINE_AUTONOMIE",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-071"
+    },
+    {
+      "from": "PGKC-071",
+      "id": "X073",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.79 und PGK-0.80: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "SUFFIZIENZWECHSEL_UNBELEGT",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-072"
+    },
+    {
+      "from": "PGKC-072",
+      "id": "X074",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.80 und PGK-0.81: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "AUTONOME_KLASSENWAHL_NEGATIV",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-073"
+    },
+    {
+      "from": "PGKC-074",
+      "id": "X075",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.82 und PGK-0.83: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "KLASSE_ZU_AKTOR_NICHT_UNIQUE",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-075"
+    },
+    {
+      "from": "PGKC-075",
+      "id": "X076",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.83 und PGK-0.84: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "WINDOW_GEGENTEST",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-076"
+    },
+    {
+      "from": "PGKC-070",
+      "id": "X155",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C17: Z plus tatsächlicher Input K ≠ autonomer Generator Z→K.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-138"
+    },
+    {
+      "from": "PGKC-071",
+      "id": "X158",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C18: Weder History-Notwendigkeit noch komplette predictive-state Suffizienz ist aus dem Datensatz bewiesen.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-139"
+    },
+    {
+      "from": "PGKC-074",
+      "id": "X161",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C19: Informative Hierarchie ist weder Top1-Winner noch privilegiertes set-valued Nachbarschaftsfenster.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-140"
+    },
+    {
+      "from": "PGKC-284",
+      "id": "E271",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (QUELLEN_KONTRAST): 0.76–0.77 berichten starke divergierende Candidate-Mikrobelegung bei dennoch ähnlicher wiederkehrender Organisationsform nach Alternativrewrites. / 0.83s robuste Top-1-Klassen-zu-Kandidaten-zu-Nachfolger-Leistung ist in beiden Held-outs nicht erworben.",
+      "relation_type": "MESO_FORM_VS_TOP1_SELECTION",
+      "source_ids": [
+        "SRC-004"
+      ],
+      "to": "PGKC-285"
+    },
+    {
+      "from": "PGKC-077",
+      "id": "X077",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.85 und PGK-0.86: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "ROOT_UND_RUECKWIRKUNG_TRENNEN",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-078"
+    },
+    {
+      "from": "PGKC-078",
+      "id": "X078",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.86 und PGK-0.87: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "REKURRENT_BESCHRIEBEN_NICHT_UNIVERSAL",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-079"
+    },
+    {
+      "from": "PGKC-080",
+      "id": "X079",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.88 und PGK-0.89: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "HISTORY_REPRAESENTATION_KORRIGIERT",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-081"
+    },
+    {
+      "from": "PGKC-081",
+      "id": "X080",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.89 und PGK-0.90: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "ALIAS_ZU_QUOTIENT",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-082"
+    },
+    {
+      "from": "PGKC-082",
+      "id": "X081",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.90 und PGK-0.91: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "QUOTIENT_ADMISSIBLE_DOMAENE",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-083"
+    },
+    {
+      "from": "PGKC-077",
+      "id": "X164",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C20: Root-Reihenfolge nicht pauschal mit jeder margin-spezifischen Zusatzhypothese gleichsetzen.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-141"
+    },
+    {
+      "from": "PGKC-080",
+      "id": "X206",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C34: Ungenügender reduzierter History-Reporter und suffizienter vollständiger deklarierten State können gleichzeitig gelten.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-155"
+    },
+    {
+      "from": "PGKC-086",
+      "id": "X082",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.94 und PGK-0.95: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "KONTEXT_FAKTOR_GUARD",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-087"
+    },
+    {
+      "from": "PGKC-088",
+      "id": "X083",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.96 und PGK-0.97: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "KANDIDATENROLLE_NICHT_CROSSING",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-089"
+    },
+    {
+      "from": "PGKC-090",
+      "id": "X084",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.98 und PGK-0.99: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "FULL_RESPONSE_KEIN_MINIMALER_ZUSTAND",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-091"
+    },
+    {
+      "from": "PGKC-092",
+      "id": "X085",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.100 und PGK-0.101: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "Q_SOFOERTRUECKWIRKUNG_GEGEN_DELAY",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-093"
+    },
+    {
+      "from": "PGKC-090",
+      "id": "X134",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C10: Rank 50 und 64 sind nicht widersprüchlich ohne Identität von Zustandsraum, Observabilitäts- und Kandidatenoperator.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-131"
+    },
+    {
+      "from": "PGKC-090",
+      "id": "X167",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C21: Exakte vollständige Beschreibung widerlegt weder Modell noch zusätzliche Kompression; sie macht Kompression aber unbegründet.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-142"
+    },
+    {
+      "from": "PGKC-093",
+      "id": "X170",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C22: Q-Rewrite ist nicht die in 0.42 verworfene frei stehende D-Konjugation.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-143"
+    },
+    {
+      "from": "PGKC-094",
+      "id": "X086",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.102 und PGK-0.103: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "PROJEKTOR_INNOVATION_UNTERSCHIED",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-095"
+    },
+    {
+      "from": "PGKC-095",
+      "id": "X087",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.103 und PGK-0.104: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "NATIVE_ADMISSIBILITAET_GUARD",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-096"
+    },
+    {
+      "from": "PGKC-096",
+      "id": "X088",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.104 und PGK-0.105: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "DOMAENRESTREKTION_DER_JOINALGEBRA",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-097"
+    },
+    {
+      "from": "PGKC-097",
+      "id": "X089",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.105 und PGK-0.106: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "PARTIAL_JOIN_ZU_FINITE_REACHABILITY",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-098"
+    },
+    {
+      "from": "PGKC-097",
+      "id": "X173",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C23: Möglichkeitsalgebra ≠ garantierte native Übergangsdynamik.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-144"
+    },
+    {
+      "from": "PGKC-098",
+      "id": "X239",
+      "interpretation_level": "DIRECT_COMPANION_CROSSCHECK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b-Quellenledger für 0.106 wird durch erhaltenes Decision/Begleitgutachten präzisiert; kein eigener Replay.",
+      "relation_type": "QUELLENVERTIEFUNG_HISTORISCHER_REPORT",
+      "source_ids": [
+        "SRC-033"
+      ],
+      "to": "PGKC-166"
+    },
+    {
+      "from": "PGKC-286",
+      "id": "E272",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (EXAKTES_ABSTRAKTES_GEGENMODELL): 0.106 berichtet Q-Konfluenz für denselben Ereignissatz bei nativen Länge-3-Pfaden, zugleich pfadabhängige Novelty-Spektren und viele native-undefinierte algebraische Weiterführungen. / Endpunkt-Q-Konfluenz impliziert logisch keine Vollzustands- oder Kandidatendomänen-Konfluenz; dies ist durch ein neues endliches Gegenmodell unabhängig gezeigt.",
+      "relation_type": "Q_CONFLUENCE_NOT_FULL_STATE",
+      "source_ids": [
+        "SRC-033",
+        "SRC-076",
+        "SRC-077"
+      ],
+      "to": "PGKC-287"
+    },
+    {
+      "from": "PGKC-286",
+      "id": "E273",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (QUELLEN_KONTRAST): 0.106 berichtet Q-Konfluenz für denselben Ereignissatz bei nativen Länge-3-Pfaden, zugleich pfadabhängige Novelty-Spektren und viele native-undefinierte algebraische Weiterführungen. / Verfügbare algebraische Richtung, native Zulässigkeit, ausgewähltes Root und funktionale Regeneration bilden getrennte Existenz-/Quantorverträge.",
+      "relation_type": "NATIVE_DOMAIN_NOT_TOTAL_ALGEBRA",
+      "source_ids": [
+        "SRC-005",
+        "SRC-033",
+        "SRC-035"
+      ],
+      "to": "PGKC-297"
+    },
+    {
+      "from": "PGKC-287",
+      "id": "E290",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (EXAKTES_ABSTRAKTES_GEGENMODELL): Endpunkt-Q-Konfluenz impliziert logisch keine Vollzustands- oder Kandidatendomänen-Konfluenz; dies ist durch ein neues endliches Gegenmodell unabhängig gezeigt. / Der in 0.70 berichtete Rewrite-Ablationseffekt verändert den Folgeraum; ob die Art der ausgewählten Passage ihn prospektiv besser macht, ist eine zusätzliche Prüfung.",
+      "relation_type": "Q_NOT_SUFFICIENT_FOR_FUTURE",
+      "source_ids": [
+        "SRC-004",
+        "SRC-076",
+        "SRC-077"
+      ],
+      "to": "PGKC-304"
+    },
+    {
+      "from": "PGKC-099",
+      "id": "X090",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.107 und PGK-0.108: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "RELATIVER_ZUSTAND_DOMAENFLUSS",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-100"
+    },
+    {
+      "from": "PGKC-100",
+      "id": "X091",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.108 und PGK-0.109: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "DOMAENADJAZENZ_COVERAGE_GRENZE",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-101"
+    },
+    {
+      "from": "PGKC-103",
+      "id": "X092",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.111 und PGK-0.112: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "SUFFIZIENZ_F2_GEGEN_KORRIGIERTE_A",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-104"
+    },
+    {
+      "from": "PGKC-104",
+      "id": "X093",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.112 und PGK-0.113: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "CORRECTED_A_MIT_DECISION_GUARD",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-105"
+    },
+    {
+      "from": "PGKC-105",
+      "id": "X094",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.113 und PGK-0.114: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "DECISION_NICHT_UNIQUE_OCCURRENCE_CLOSED",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-106"
+    },
+    {
+      "from": "PGKC-106",
+      "id": "X095",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.114 und PGK-0.115: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "AUSGEWAEHLTE_PASSAGE_ZU_CARRIER_AUDIT",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-107"
+    },
+    {
+      "from": "PGKC-107",
+      "id": "X218",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C38: Doppelte Bytes sind EINE Originalquelle, keine unabhängigen Experimente.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-159"
+    },
+    {
+      "from": "PGKC-103",
+      "id": "X240",
+      "interpretation_level": "DIRECT_COMPANION_CROSSCHECK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b-Quellenledger für 0.111 wird durch erhaltenes Decision/Begleitgutachten präzisiert; kein eigener Replay.",
+      "relation_type": "QUELLENVERTIEFUNG_HISTORISCHER_REPORT",
+      "source_ids": [
+        "SRC-043"
+      ],
+      "to": "PGKC-167"
+    },
+    {
+      "from": "PGKC-104",
+      "id": "X241",
+      "interpretation_level": "DIRECT_COMPANION_CROSSCHECK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b-Quellenledger für 0.112 wird durch erhaltenes Decision/Begleitgutachten präzisiert; kein eigener Replay.",
+      "relation_type": "QUELLENVERTIEFUNG_HISTORISCHER_REPORT",
+      "source_ids": [
+        "SRC-044"
+      ],
+      "to": "PGKC-168"
+    },
+    {
+      "from": "PGKC-105",
+      "id": "X242",
+      "interpretation_level": "DIRECT_COMPANION_CROSSCHECK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b-Quellenledger für 0.113 wird durch erhaltenes Decision/Begleitgutachten präzisiert; kein eigener Replay.",
+      "relation_type": "QUELLENVERTIEFUNG_HISTORISCHER_REPORT",
+      "source_ids": [
+        "SRC-045"
+      ],
+      "to": "PGKC-169"
+    },
+    {
+      "from": "PGKC-106",
+      "id": "X243",
+      "interpretation_level": "DIRECT_COMPANION_CROSSCHECK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b-Quellenledger für 0.114 wird durch erhaltenes Decision/Begleitgutachten präzisiert; kein eigener Replay.",
+      "relation_type": "QUELLENVERTIEFUNG_HISTORISCHER_REPORT",
+      "source_ids": [
+        "SRC-046"
+      ],
+      "to": "PGKC-170"
+    },
+    {
+      "from": "PGKC-107",
+      "id": "X244",
+      "interpretation_level": "DIRECT_COMPANION_CROSSCHECK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b-Quellenledger für 0.115 wird durch erhaltenes Decision/Begleitgutachten präzisiert; kein eigener Replay.",
+      "relation_type": "QUELLENVERTIEFUNG_HISTORISCHER_REPORT",
+      "source_ids": [
+        "SRC-065"
+      ],
+      "to": "PGKC-171"
+    },
+    {
+      "from": "PGKC-297",
+      "id": "E283",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (QUELLEN_KONTRAST): Verfügbare algebraische Richtung, native Zulässigkeit, ausgewähltes Root und funktionale Regeneration bilden getrennte Existenz-/Quantorverträge. / Übereinstimmung an einem 2D-Port ohne gleiche 64D-Antwort ist kein ausgewählter Träger-Ersatz oder regenerierter Rollenpfad.",
+      "relation_type": "CARRIER_EQUIVALENCE_NOT_PORT_EQUIVALENCE",
+      "source_ids": [
+        "SRC-005",
+        "SRC-035",
+        "SRC-070"
+      ],
+      "to": "PGKC-303"
+    },
+    {
+      "from": "PGKC-297",
+      "id": "E292",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (OFFENE_BRUECKE): Verfügbare algebraische Richtung, native Zulässigkeit, ausgewähltes Root und funktionale Regeneration bilden getrennte Existenz-/Quantorverträge. / Als nächster gültiger Test muss dieselbe Native-Variante vorab Psi, Sel_native, T, Funktionsproxy und serielles Nullmodell fixieren; spätere Held-outs bleiben verschlossen.",
+      "relation_type": "NATIVE_EVENT_DOMAIN_GUARD",
+      "source_ids": [
+        "SRC-005",
+        "SRC-035",
+        "SRC-076"
+      ],
+      "to": "PGKC-305"
+    },
+    {
+      "from": "PGKC-108",
+      "id": "X096",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.116 und PGK-0.117: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "HOEHERORDNUNG_ZU_RESPONSE",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-109"
+    },
+    {
+      "from": "PGKC-109",
+      "id": "X097",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.117 und PGK-0.118: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "RESPONSE_TRANSPORT_PARTIAL",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-110"
+    },
+    {
+      "from": "PGKC-110",
+      "id": "X098",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.118 und PGK-0.119: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "DOMAIN_LINEAGE_GUARD",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-111"
+    },
+    {
+      "from": "PGKC-112",
+      "id": "X099",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.120 und PGK-0.121: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "VERTEILTE_RETURN_REFERENZ",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-113"
+    },
+    {
+      "from": "PGKC-113",
+      "id": "X100",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.121 und PGK-0.122: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "RETURN_ZU_FUNKTIONALER_WIEDERKEHR",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-114"
+    },
+    {
+      "from": "PGKC-114",
+      "id": "X101",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.122 und PGK-0.123: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "REKURSION_ZU_RELATIVEM_URSPRUNG",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-115"
+    },
+    {
+      "from": "PGKC-115",
+      "id": "X102",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.123 und PGK-0.124: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "QUELLENLINEAGE_ZU_ADDITIONALITY",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-116"
+    },
+    {
+      "from": "PGKC-116",
+      "id": "X103",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.124 und PGK-0.125: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "URSOPRUNG_LOKAL_NICHT_ABSOLUT",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-117"
+    },
+    {
+      "from": "PGKC-108",
+      "id": "X245",
+      "interpretation_level": "DIRECT_COMPANION_CROSSCHECK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b-Quellenledger für 0.116 wird durch erhaltenes Decision/Begleitgutachten präzisiert; kein eigener Replay.",
+      "relation_type": "QUELLENVERTIEFUNG_HISTORISCHER_REPORT",
+      "source_ids": [
+        "SRC-048"
+      ],
+      "to": "PGKC-172"
+    },
+    {
+      "from": "PGKC-113",
+      "id": "X246",
+      "interpretation_level": "DIRECT_COMPANION_CROSSCHECK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b-Quellenledger für 0.121 wird durch erhaltenes Decision/Begleitgutachten präzisiert; kein eigener Replay.",
+      "relation_type": "QUELLENVERTIEFUNG_HISTORISCHER_REPORT",
+      "source_ids": [
+        "SRC-053"
+      ],
+      "to": "PGKC-173"
+    },
+    {
+      "from": "PGKC-298",
+      "id": "E284",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (METHODENREGEL): Ein Übergang zur Regulation erfordert einen vorab definierten Funktionsvertrag und belegte zeitlich zulässige Auswahlinformation, nicht nur Rekurrenz oder Trägerübereinstimmung. / Die A6/4-Gate-Folge G0–G7 ist ein Forschungsfilter: bestandene Kandidaten- oder Rewrite-Teiltests übertragen keinen PASS auf die spätere prospektive Regulationsleistung.",
+      "relation_type": "GATE_HIERARCHY_RESEARCH_ONLY",
+      "source_ids": [
+        "SRC-023",
+        "SRC-076"
+      ],
+      "to": "PGKC-300"
+    },
+    {
+      "from": "PGKC-298",
+      "id": "E289",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (OFFENE_BRUECKE): Ein Übergang zur Regulation erfordert einen vorab definierten Funktionsvertrag und belegte zeitlich zulässige Auswahlinformation, nicht nur Rekurrenz oder Trägerübereinstimmung. / Als nächster gültiger Test muss dieselbe Native-Variante vorab Psi, Sel_native, T, Funktionsproxy und serielles Nullmodell fixieren; spätere Held-outs bleiben verschlossen.",
+      "relation_type": "PRESPECIFIED_ROLE_TEST",
+      "source_ids": [
+        "SRC-020",
+        "SRC-023",
+        "SRC-076"
+      ],
+      "to": "PGKC-305"
+    },
+    {
+      "from": "PGKC-118",
+      "id": "X104",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.126 und PGK-0.127: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "PROZESSORDNUNG_KEINE_UHR",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-119"
+    },
+    {
+      "from": "PGKC-119",
+      "id": "X105",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.127 und PGK-0.128: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "LOKALE_EICHUNG_ZUSAETZLICH_NOETIG",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-120"
+    },
+    {
+      "from": "PGKC-120",
+      "id": "X106",
+      "interpretation_level": "A3B_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Historical study scopes, model forks, source-access level and negative guards of both numbers must be retained.",
+      "rationale": "Quellenvergleich von PGK-0.128 und PGK-0.129: die im A3b-Ledger getrennt dokumentierten Ergebnisse und Gegenbefunde sind in dieser Beziehung zu prüfen; daraus folgt keine universelle Ursache-Wirkung-Behauptung.",
+      "relation_type": "LOKALE_EICHUNG_KEINE_GLOBALE_METRIK",
+      "source_ids": [
+        "SRC-030"
+      ],
+      "to": "PGKC-121"
+    },
+    {
+      "from": "PGKC-118",
+      "id": "X176",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C24: Reachability/Prozessordnung ≠ lokale kausale Faktorisation oder Lichtkegel.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-145"
+    },
+    {
+      "from": "PGKC-121",
+      "id": "X179",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C25: Lokaler Comparator/Intervall lässt noch keine universell koordinierte Zeitmetrik entstehen.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-146"
+    },
+    {
+      "from": "PGKC-121",
+      "id": "X209",
+      "interpretation_level": "A5_44_FALL_ANNOTATION",
+      "limit": "Ein methodisch aufgelöster Anspruchskonflikt ersetzt weder Originalcode noch numerische Reproduktion.",
+      "rationale": "A5 C35: Spätere Methodentests sind nicht rückwirkend behaupteter Gate-VI-PASS.",
+      "relation_type": "A5_THEMATISCHER_SUCHEINSTIEG_KEIN_DIREKTER_WIDERSPRUCH",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-156"
+    },
+    {
+      "from": "PGKC-118",
+      "id": "X247",
+      "interpretation_level": "DIRECT_COMPANION_CROSSCHECK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b-Quellenledger für 0.126 wird durch erhaltenes Decision/Begleitgutachten präzisiert; kein eigener Replay.",
+      "relation_type": "QUELLENVERTIEFUNG_HISTORISCHER_REPORT",
+      "source_ids": [
+        "SRC-058"
+      ],
+      "to": "PGKC-174"
+    },
+    {
+      "from": "PGKC-119",
+      "id": "X248",
+      "interpretation_level": "DIRECT_COMPANION_CROSSCHECK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b-Quellenledger für 0.127 wird durch erhaltenes Decision/Begleitgutachten präzisiert; kein eigener Replay.",
+      "relation_type": "QUELLENVERTIEFUNG_HISTORISCHER_REPORT",
+      "source_ids": [
+        "SRC-059"
+      ],
+      "to": "PGKC-175"
+    },
+    {
+      "from": "PGKC-120",
+      "id": "X249",
+      "interpretation_level": "DIRECT_COMPANION_CROSSCHECK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b-Quellenledger für 0.128 wird durch erhaltenes Decision/Begleitgutachten präzisiert; kein eigener Replay.",
+      "relation_type": "QUELLENVERTIEFUNG_HISTORISCHER_REPORT",
+      "source_ids": [
+        "SRC-061"
+      ],
+      "to": "PGKC-176"
+    },
+    {
+      "from": "PGKC-121",
+      "id": "X250",
+      "interpretation_level": "DIRECT_COMPANION_CROSSCHECK",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b-Quellenledger für 0.129 wird durch erhaltenes Decision/Begleitgutachten präzisiert; kein eigener Replay.",
+      "relation_type": "QUELLENVERTIEFUNG_HISTORISCHER_REPORT",
+      "source_ids": [
+        "SRC-062"
+      ],
+      "to": "PGKC-177"
+    },
+    {
+      "from": "PGKC-178",
+      "id": "X108",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-222"
+    },
+    {
+      "from": "PGKC-222",
+      "id": "X109",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Alte d_int=3-Aussage kein Raumbeweis; späterer Gegenbefund beschränkt den alten Schluss.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-122"
+    },
+    {
+      "from": "PGKC-179",
+      "id": "X111",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-223"
+    },
+    {
+      "from": "PGKC-223",
+      "id": "X112",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Finite-Aperture-Regime und physikalisch emergenter dreidimensionaler Raum sind verschiedene Prädikate.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-123"
+    },
+    {
+      "from": "PGKC-180",
+      "id": "X114",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-224"
+    },
+    {
+      "from": "PGKC-224",
+      "id": "X115",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Kein allgemeiner Hazard-/Survival-Vorteil einer Variante bewiesen.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-124"
+    },
+    {
+      "from": "PGKC-181",
+      "id": "X117",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-225"
+    },
+    {
+      "from": "PGKC-225",
+      "id": "X118",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Lokale Ereignissensitivität beweist weder Makrogenerativität noch physisches Gedächtnis.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-125"
+    },
+    {
+      "from": "PGKC-182",
+      "id": "X120",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-226"
+    },
+    {
+      "from": "PGKC-226",
+      "id": "X121",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Ein Pfadklassifikator kann existieren, obwohl der geprüfte potentialartige Operator nicht integrierbar ist.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-126"
+    },
+    {
+      "from": "PGKC-183",
+      "id": "X123",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-227"
+    },
+    {
+      "from": "PGKC-227",
+      "id": "X124",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Tangentialer lokaler PASS hebt die ältere spezifische No-Go-Aussage nicht auf.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-127"
+    },
+    {
+      "from": "PGKC-184",
+      "id": "X126",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-228"
+    },
+    {
+      "from": "PGKC-228",
+      "id": "X127",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Generischer algebraischer Grad drei ist aus kubischer Gleichungsstruktur nicht ableitbar; endpoint-spezifisch möglich.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-128"
+    },
+    {
+      "from": "PGKC-185",
+      "id": "X129",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-229"
+    },
+    {
+      "from": "PGKC-229",
+      "id": "X130",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Punktweise dyadisch eingefrorene Koeffizienten und gekoppelte Ereignisparameter sind mathematisch nicht identisch.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-129"
+    },
+    {
+      "from": "PGKC-186",
+      "id": "X132",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-230"
+    },
+    {
+      "from": "PGKC-230",
+      "id": "X133",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "SC-Existenz ist nicht C-Passage; 3→1 ausdrücklich nur für diesen Endpunkt und Quellfork.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-130"
+    },
+    {
+      "from": "PGKC-187",
+      "id": "X135",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-231"
+    },
+    {
+      "from": "PGKC-231",
+      "id": "X136",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Rank 50 und 64 sind nicht widersprüchlich ohne Identität von Zustandsraum, Observabilitäts- und Kandidatenoperator.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-131"
+    },
+    {
+      "from": "PGKC-188",
+      "id": "X138",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-232"
+    },
+    {
+      "from": "PGKC-232",
+      "id": "X139",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Der ursprüngliche hohe Rang ist keine neue exakte Freiheitsgrad- oder Geometriebestätigung.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-132"
+    },
+    {
+      "from": "PGKC-189",
+      "id": "X141",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-233"
+    },
+    {
+      "from": "PGKC-233",
+      "id": "X142",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Gate-II-Stabilität einer endlichen Interfacebalance bedeutet nicht Gate-III-Geometrie.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-133"
+    },
+    {
+      "from": "PGKC-190",
+      "id": "X144",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-234"
+    },
+    {
+      "from": "PGKC-234",
+      "id": "X145",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Die stärkere History-Kompressionsbehauptung bleibt eingestellt.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-134"
+    },
+    {
+      "from": "PGKC-191",
+      "id": "X147",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-235"
+    },
+    {
+      "from": "PGKC-235",
+      "id": "X148",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Relationale Netzwerkstruktur ist kein Nachweis lokaler Kausalität oder Raumgeometrie.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-135"
+    },
+    {
+      "from": "PGKC-192",
+      "id": "X150",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-236"
+    },
+    {
+      "from": "PGKC-236",
+      "id": "X151",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Ergebnis eines modifizierten Kernels darf keine Bestätigung des unchanged-kernel-Gates werden.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-136"
+    },
+    {
+      "from": "PGKC-193",
+      "id": "X153",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-237"
+    },
+    {
+      "from": "PGKC-237",
+      "id": "X154",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Generelle Negativrückkopplung/Regulation ist nicht automatisch normative bzw. spezifische Rückholung.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-137"
+    },
+    {
+      "from": "PGKC-194",
+      "id": "X156",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-238"
+    },
+    {
+      "from": "PGKC-238",
+      "id": "X157",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Z plus tatsächlicher Input K ≠ autonomer Generator Z→K.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-138"
+    },
+    {
+      "from": "PGKC-195",
+      "id": "X159",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-239"
+    },
+    {
+      "from": "PGKC-239",
+      "id": "X160",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Weder History-Notwendigkeit noch komplette predictive-state Suffizienz ist aus dem Datensatz bewiesen.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-139"
+    },
+    {
+      "from": "PGKC-196",
+      "id": "X162",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-240"
+    },
+    {
+      "from": "PGKC-240",
+      "id": "X163",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Informative Hierarchie ist weder Top1-Winner noch privilegiertes set-valued Nachbarschaftsfenster.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-140"
+    },
+    {
+      "from": "PGKC-197",
+      "id": "X165",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-241"
+    },
+    {
+      "from": "PGKC-241",
+      "id": "X166",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Root-Reihenfolge nicht pauschal mit jeder margin-spezifischen Zusatzhypothese gleichsetzen.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-141"
+    },
+    {
+      "from": "PGKC-198",
+      "id": "X168",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-242"
+    },
+    {
+      "from": "PGKC-242",
+      "id": "X169",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Exakte vollständige Beschreibung widerlegt weder Modell noch zusätzliche Kompression; sie macht Kompression aber unbegründet.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-142"
+    },
+    {
+      "from": "PGKC-199",
+      "id": "X171",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-243"
+    },
+    {
+      "from": "PGKC-243",
+      "id": "X172",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Q-Rewrite ist nicht die in 0.42 verworfene frei stehende D-Konjugation.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-143"
+    },
+    {
+      "from": "PGKC-200",
+      "id": "X174",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-244"
+    },
+    {
+      "from": "PGKC-244",
+      "id": "X175",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Möglichkeitsalgebra ≠ garantierte native Übergangsdynamik.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-144"
+    },
+    {
+      "from": "PGKC-201",
+      "id": "X177",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-245"
+    },
+    {
+      "from": "PGKC-245",
+      "id": "X178",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Reachability/Prozessordnung ≠ lokale kausale Faktorisation oder Lichtkegel.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-145"
+    },
+    {
+      "from": "PGKC-202",
+      "id": "X180",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-246"
+    },
+    {
+      "from": "PGKC-246",
+      "id": "X181",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Lokaler Comparator/Intervall lässt noch keine universell koordinierte Zeitmetrik entstehen.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-146"
+    },
+    {
+      "from": "PGKC-203",
+      "id": "X183",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-247"
+    },
+    {
+      "from": "PGKC-247",
+      "id": "X184",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Funktionskontinuität ist nicht neu hervorgebrachte Regenerationsfähigkeit.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-147"
+    },
+    {
+      "from": "PGKC-204",
+      "id": "X186",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-248"
+    },
+    {
+      "from": "PGKC-248",
+      "id": "X187",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Gleiche Teilfunktion über Teilport widerspricht weder Fprint-Verfehlung noch nichtidentischer Gesamtdynamik.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-148"
+    },
+    {
+      "from": "PGKC-205",
+      "id": "X189",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-249"
+    },
+    {
+      "from": "PGKC-249",
+      "id": "X190",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Technische Ausführbarkeit stellt fehlende exakte historische Definitionen und Heldout-Gates nicht automatisch wieder her.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-149"
+    },
+    {
+      "from": "PGKC-206",
+      "id": "X192",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-250"
+    },
+    {
+      "from": "PGKC-250",
+      "id": "X193",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Der frühere Effekt ist nicht als aktueller positiver Befund zu verwenden.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-150"
+    },
+    {
+      "from": "PGKC-207",
+      "id": "X195",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-251"
+    },
+    {
+      "from": "PGKC-251",
+      "id": "X196",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Historisch gewählte Reihe ist nicht durchgängig die Folge der kontinuierlich frühesten gerichteten E/C-Roots.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-151"
+    },
+    {
+      "from": "PGKC-208",
+      "id": "X198",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-252"
+    },
+    {
+      "from": "PGKC-252",
+      "id": "X199",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Schritt10-Befund gilt nur unter Fortsetzung der archivierten CFG-Pfadfolge.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-152"
+    },
+    {
+      "from": "PGKC-209",
+      "id": "X201",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-253"
+    },
+    {
+      "from": "PGKC-253",
+      "id": "X202",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Externes Role-ID-No-Go behauptet keine quellnative notwendige TSM-Funktion und kein universelles Regenerations-No-Go.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-153"
+    },
+    {
+      "from": "PGKC-210",
+      "id": "X204",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-254"
+    },
+    {
+      "from": "PGKC-254",
+      "id": "X205",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Portgleichheit ist nicht volle dynamische Äquivalenz, gleiche Rootfolge oder Wiederherstellung.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-154"
+    },
+    {
+      "from": "PGKC-211",
+      "id": "X207",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-255"
+    },
+    {
+      "from": "PGKC-255",
+      "id": "X208",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Ungenügender reduzierter History-Reporter und suffizienter vollständiger deklarierten State können gleichzeitig gelten.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-155"
+    },
+    {
+      "from": "PGKC-212",
+      "id": "X210",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-256"
+    },
+    {
+      "from": "PGKC-256",
+      "id": "X211",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Spätere Methodentests sind nicht rückwirkend behaupteter Gate-VI-PASS.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-156"
+    },
+    {
+      "from": "PGKC-213",
+      "id": "X213",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-257"
+    },
+    {
+      "from": "PGKC-257",
+      "id": "X214",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "FSTT-Quellenreset widerlegt nicht automatisch ein anderswo zertifiziertes gekoppeltes Event10; Zertifikate bleiben endpoint- und branchgebunden.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-157"
+    },
+    {
+      "from": "PGKC-214",
+      "id": "X216",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-258"
+    },
+    {
+      "from": "PGKC-258",
+      "id": "X217",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A3b schließt Nummern-/Statuslücke, nicht Originalbyte-/Runnerprüfung.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-158"
+    },
+    {
+      "from": "PGKC-215",
+      "id": "X219",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-259"
+    },
+    {
+      "from": "PGKC-259",
+      "id": "X220",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Doppelte Bytes sind EINE Originalquelle, keine unabhängigen Experimente.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-159"
+    },
+    {
+      "from": "PGKC-216",
+      "id": "X222",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-260"
+    },
+    {
+      "from": "PGKC-260",
+      "id": "X223",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Wiederholte Quelltexte sind Provenienzstabilität, keine mehreren unabhängig gleichlaufenden Rechnungen.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-160"
+    },
+    {
+      "from": "PGKC-217",
+      "id": "X225",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-261"
+    },
+    {
+      "from": "PGKC-261",
+      "id": "X226",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Spätere datierte Evidenz geht in Forschungs-Overlay, nicht stillschweigend in kanonische v1.39.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-161"
+    },
+    {
+      "from": "PGKC-218",
+      "id": "X228",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-262"
+    },
+    {
+      "from": "PGKC-262",
+      "id": "X229",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Dateieinträge sind weder eindeutige Studien noch unabhängige Module; Nummernregister ist nicht vollständige Inhalt-/Rohbytesdeckung.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-162"
+    },
+    {
+      "from": "PGKC-219",
+      "id": "X231",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-263"
+    },
+    {
+      "from": "PGKC-263",
+      "id": "X232",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "\"PASS NOT ESTABLISHED\" nicht in PASS umwandeln; bis zum Primärgate gilt NOT_ESTABLISHED.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-163"
+    },
+    {
+      "from": "PGKC-220",
+      "id": "X234",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-264"
+    },
+    {
+      "from": "PGKC-264",
+      "id": "X235",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "0.139 ist nicht automatisch BRW1G; keine Quellkorrektur über semantische Ähnlichkeit ersetzen.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-164"
+    },
+    {
+      "from": "PGKC-221",
+      "id": "X237",
+      "interpretation_level": "A5_QUELLENVERGLEICH_KEIN_NEUER_REPLAY",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "A5 dokumentiert den früheren und späteren Geltungsanspruch als eigene Vergleichsgegenstände; ihre Richtigkeit wird nicht durch die Textgegenüberstellung bewiesen.",
+      "relation_type": "A5_VORHER_NACHHER_GEGENUEBERSTELLUNG",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-265"
+    },
+    {
+      "from": "PGKC-265",
+      "id": "X238",
+      "interpretation_level": "A5_WISSENSCHAFTLICHES_AUDITURTEIL",
+      "limit": "Keine neue numerische Bestätigung; relationale Verknüpfung nur im ausgewiesenen Scope.",
+      "rationale": "Externe Chemie ist Fragegenerator, kein Beleg für eine neue PGK-Λ/S3-Wirkung.",
+      "relation_type": "A5_URTEIL_ZU_VERGLEICHSFALL",
+      "source_ids": [
+        "SRC-068"
+      ],
+      "to": "PGKC-165"
+    },
+    {
+      "from": "PGKC-301",
+      "id": "E287",
+      "interpretation_level": "A6_4_EXPLIZITER_DIREKTVERGLEICH_KEINE_TRANSITIVITAET",
+      "limit": "Keine automatische logische Folgerung, Widerlegung oder durchlaufende Kausalkette; je Originalvertrag und Prüftiefe gesondert.",
+      "rationale": "A6/4 (OFFENE_BRUECKE): Die historische 0.70-Passage-Rückwirkung, 0.83-Negativselektion und 0.139–0.141-Negativadditionality können ohne Widerspruch nebeneinander bestehen. / Als nächster gültiger Test muss dieselbe Native-Variante vorab Psi, Sel_native, T, Funktionsproxy und serielles Nullmodell fixieren; spätere Held-outs bleiben verschlossen.",
+      "relation_type": "FORK_FREEZE_NEXT_TEST",
+      "source_ids": [
+        "SRC-004",
+        "SRC-020",
+        "SRC-076"
+      ],
+      "to": "PGKC-305"
+    },
+    {
+      "from": "PGKC-315",
+      "id": "PGKR-305",
+      "interpretation_level": "EXAKTE_FORMAL_FOLGERUNG_KEIN_NATIVE_REPLAY",
+      "limit": "Keine empirische oder prospektive Zusatzvalidierung",
+      "rationale": "A6N-T1 beweist Nichtwiedertrennbarkeit; PGKC-315 berechnet die genaue Zahl der verlorenen Altpaare.",
+      "relation_type": "QUANTIFIZIERT_BESTEHENDES_NO_SPLIT",
+      "source_ids": [
+        "SRC-078"
+      ],
+      "to": "A6N-C005"
+    },
+    {
+      "from": "PGKC-316",
+      "id": "PGKR-306",
+      "interpretation_level": "EXAKTE_FORMAL_FOLGERUNG_KEIN_NATIVE_REPLAY",
+      "limit": "Keine empirische oder prospektive Zusatzvalidierung",
+      "rationale": "A6N-C006 unterscheidet neue Paare von alten Rollen; PGKC-316 präzisiert die Bilanz.",
+      "relation_type": "ALT_VS_NEU_KONTRAST",
+      "source_ids": [
+        "SRC-078"
+      ],
+      "to": "A6N-C006"
+    },
+    {
+      "from": "PGKC-317",
+      "id": "PGKR-307",
+      "interpretation_level": "EXAKTE_FORMAL_FOLGERUNG_KEIN_NATIVE_REPLAY",
+      "limit": "Keine empirische oder prospektive Zusatzvalidierung",
+      "rationale": "Der berichtete C1-Verlust ist Spezialfall des Bilanzkriteriums; hier wurde nicht erneut der native Root-Solver ausgeführt.",
+      "relation_type": "C1_SPEZIALFALL",
+      "source_ids": [
+        "SRC-078"
+      ],
+      "to": "A6N-C004"
+    }
+  ],
+  "schema": "pgk.public.relations.v2"
+}

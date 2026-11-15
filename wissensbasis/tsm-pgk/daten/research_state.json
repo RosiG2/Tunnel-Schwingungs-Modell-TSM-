@@ -1,0 +1,109 @@
+{
+  "as_of": "2026-11-14",
+  "branch_results": [
+    {
+      "id": "PGK-0.62A",
+      "source_status": "QUELLENPRUEFUNG_DOKUMENTIERT",
+      "status": "PARTIAL — NO BOUNDED DIRECTED REACH"
+    },
+    {
+      "id": "PGK-0.85",
+      "source_status": "FINAL_QUELLENPRUEFUNG_DOKUMENTIERT",
+      "status": "OUTCOME B — ROOT ORDER TRACKING PASS; scalar root margin explanation fails"
+    },
+    {
+      "id": "ROOT-01D",
+      "source_status": "QUELLENPRUEFUNG_DOKUMENTIERT",
+      "status": "LOCAL_CONTEXT_PORT_OPEN; no autonomous local dynamics closure"
+    },
+    {
+      "id": "ROOT-01E",
+      "source_status": "QUELLENPRUEFUNG_DOKUMENTIERT",
+      "status": "10/10 addressable E birth cues; full C history not reconstructed"
+    },
+    {
+      "id": "FSTT-01F",
+      "source_status": "QUELLENPRUEFUNG_DOKUMENTIERT",
+      "status": "Historical earliest selection corrected from step 6; conditional step 10"
+    },
+    {
+      "id": "FRE-01B",
+      "source_status": "TEILQUELLENPRUEFUNG_DOKUMENTIERT",
+      "status": "Four persisted Discovery job combinations; independent Verification A/B closure not demonstrated"
+    },
+    {
+      "final_versions": [
+        {
+          "candidate_identity": "separate source-scoped outcome",
+          "name": "FINAL(2)",
+          "natural_pairs": 117,
+          "same_discrete_and_Bprime": 39,
+          "sha256": "d78604a03eff1b339444267cf3ea5f22687cddc48389dc5bdfd8a92064172e6d"
+        },
+        {
+          "candidate_identity": "different native winner for three common pairs",
+          "name": "FINAL(1)",
+          "natural_pairs": 209,
+          "same_discrete_and_Bprime": 67,
+          "sha256": "4254e250840f343243a20b61a75427b333518e084809ee488989cff27eda053f"
+        },
+        {
+          "candidate_identity": "matches FINAL(2) winner on three differing pairs",
+          "name": "FINAL",
+          "natural_pairs": 209,
+          "same_discrete_and_Bprime": 70,
+          "sha256": "edda3993bedb14bfb94844927c7fa60fcdabd9d69f643c643b1ce3d80cde06dd"
+        }
+      ],
+      "id": "PGK-0.115B",
+      "research_question": "Are differences explained by native selector perspective, contractual scopes or functional equivalence? No single winner is established.",
+      "source_status": "DREI_FINAL_QUELLEN_DOKUMENTIERT",
+      "status": "MULTIPLE_FINAL_PERSPECTIVES; CANDIDATE_SELECTION_EQUIVALENCE_OPEN",
+      "three_pair_differences": [
+        "101761/eta/8/d4",
+        "101766/tr/4/d0",
+        "101767/tr/8/d4"
+      ]
+    }
+  ],
+  "canonical_baseline": {
+    "date": "2026-10-14",
+    "name": "PGK Research Memory",
+    "status": "KANONISCHER_AUSGANGSSTAND; LATER_BRANCH_RESULTS_NOT_AUTOMATICALLY_CANONICAL",
+    "version": "v1.39"
+  },
+  "current_track": "Forschungsstand mit Modellresultaten, offenen Hypothesen und geprüften Geltungsgrenzen",
+  "fixed_contracts": [
+    "DEMO_ONLY",
+    "A_time NOT INSERTED",
+    "t_PGK NOT INSERTED",
+    "Frozen D where explicitly frozen",
+    "Historical STOP decisions remain source-scoped and cannot be silently revised",
+    "Exact ambient Full-C 90330/trace/event10: 3 genuine Full-C roots; 1 EventGerm-consistent solution; endpoint and fork fixed",
+    "Source-scoped PGK results are not empirical validation"
+  ],
+  "next_reproducible_action": "PGK-0.115B: Selektoren und Folgedynamik der drei FINAL-Fassungen paarweise vergleichen; weitere offene Fragen unter unresolved.",
+  "public_information": {
+    "evidence_passports": 19,
+    "existing_claims": 317,
+    "existing_relations": 307,
+    "modules": 29,
+    "public_original_fulltexts": 1,
+    "research_findings": 191,
+    "research_links": 34,
+    "source_metadata": 78
+  },
+  "publication_status": "SEE_DATEN_MANIFEST_FOR_RELEASE_STATUS",
+  "research_policy": "Forschungsergebnisse sind mit Modellbedingungen, Belegstatus und offenen Alternativen zu lesen.",
+  "revisions": {
+    "github_commit": "RESOLVED_BY_MCP_AT_REQUEST_TIME",
+    "public_status": "SEE_DATEN_MANIFEST"
+  },
+  "schema": "pgk.public.open-research-state.v1",
+  "unresolved": [
+    "PGK-0.115B perspective and equivalence test; no forced canonical successor",
+    "FRE-01B Verification A/B outcome, host portability",
+    "Technical BRW-D9 readjudication pending",
+    "Full original-source access for remaining archived source records"
+  ]
+}

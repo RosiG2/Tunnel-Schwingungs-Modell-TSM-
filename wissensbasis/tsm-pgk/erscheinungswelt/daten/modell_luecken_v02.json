@@ -1,0 +1,206 @@
+{
+  "schema": "pgk.erscheinungswelt.gap-ledger.v0.2",
+  "gaps": [
+    {
+      "id": "L01",
+      "forschungsfrage": "Ontologische Einheiten und Identität",
+      "pgk_bezuege": "PGKM-029 | INTEGRATION-FIND-0044",
+      "festgestellte_luecke": "PGK-Atompaare / U0-Partitionen haben keine etablierte Abbildung auf empirische Agenten oder Interaktionskanten.",
+      "moegliche_observablen": "Identitätsstabile Träger, Partnerlisten, Messintervalle",
+      "naechster_modellschritt": "Formaler, prüfbarer Identitäts-/Partitions-Funktor; kein Austausch von Kante und Adresse",
+      "analogie_ids": "EW-01",
+      "prioritaet": "SEHR_HOCH"
+    },
+    {
+      "id": "L02",
+      "forschungsfrage": "Funktionserbe vs Strukturerbe",
+      "pgk_bezuege": "PGK-LAMBDA-FUNKTIONERBE (noch nicht eigener öffentlicher Eintrag)",
+      "festgestellte_luecke": "31→21; 21 ererbte, 10 verlorene äußere Partnerpaare dürfen nicht mit vollständiger Eventfunktion gleichgesetzt werden.",
+      "moegliche_observablen": "Rollenidentität, Funktionsoutput, erneute Störung",
+      "naechster_modellschritt": "Funktionserbe als eigene Modellobservable samt exakter Rolle/Task",
+      "analogie_ids": "EW-01 | EW-03",
+      "prioritaet": "SEHR_HOCH"
+    },
+    {
+      "id": "L03",
+      "forschungsfrage": "Prozessgedächtnis vs verborgene Zustände",
+      "pgk_bezuege": "ROOT-01E | PGK-0.115B",
+      "festgestellte_luecke": "Woran zeigt sich zusätzliche native Herkunftsinformation im Vergleich zu Standard-Hidden-State-Modellen?",
+      "moegliche_observablen": "Gematchte Grobzustände und History-Manipulationen",
+      "naechster_modellschritt": "Minimaler getypter History-Reporter; vergleichbare Held-out-Wirkung",
+      "analogie_ids": "EW-02 | EW-09",
+      "prioritaet": "SEHR_HOCH"
+    },
+    {
+      "id": "L04",
+      "forschungsfrage": "PGK-0.115B Perspektivenäquivalenz",
+      "pgk_bezuege": "PGK-0.115B FINAL 4254e250/d78604a0/edda3993",
+      "festgestellte_luecke": "Drei unterschiedliche Kandidatenauswahlen; Gleichheit grober Folgezustände entscheidet nicht über äquivalente Feindynamik.",
+      "moegliche_observablen": "Event-Key, Rootzeit, B-Prime, Zukunftsprofil",
+      "naechster_modellschritt": "Selector- und Modellvertrag exakt kontrollieren; keine erzwungene Siegerfassung",
+      "analogie_ids": "EW-10 | EW-02",
+      "prioritaet": "SEHR_HOCH"
+    },
+    {
+      "id": "L05",
+      "forschungsfrage": "Legale Möglichkeit vs manifestes Ereignis",
+      "pgk_bezuege": "PGKM-003 | PGKM-005 | PGK-0.31",
+      "festgestellte_luecke": "Erreichbarkeit, Admissibility, Kandidat und tatsächliche Passage dürfen nicht identifiziert werden.",
+      "moegliche_observablen": "Zeitgestempelte beobachtete Passage statt nur Erreichbarkeitsgraph",
+      "naechster_modellschritt": "Operationalisierte native Ereignisdefinition und Eingriffskontrakt",
+      "analogie_ids": "EW-06 | EW-10",
+      "prioritaet": "HOCH"
+    },
+    {
+      "id": "L06",
+      "forschungsfrage": "PGK-Ereignisordnung zu Uhrenzeit",
+      "pgk_bezuege": "PGKM-007 | PGKM-027 | PGK-0.127–0.129",
+      "festgestellte_luecke": "q_tau / lokale Intervallklassen erzeugen noch keine unabhängig messbare Eigenzeit oder relativistische Vergleichsmetrik.",
+      "moegliche_observablen": "Zwei unabhängige Uhren, Frequenz-/Potentialvergleiche",
+      "naechster_modellschritt": "Clock-Mapping plus Pfad-/Zyklus-Konsistenz, relativistischer Grenzfall",
+      "analogie_ids": "EW-05",
+      "prioritaet": "SEHR_HOCH"
+    },
+    {
+      "id": "L07",
+      "forschungsfrage": "PGK-Topologie und dynamischer Transport",
+      "pgk_bezuege": "FSTT-01F | PGK-LAMBDA-NAHT | PGKM-012",
+      "festgestellte_luecke": "15/15 H3-Isomorphien sind historische Modelltransporte; keine allgemeine dynamische Stabilität.",
+      "moegliche_observablen": "Reale Komponenten, Homologie, strukturelle Ereignisantwort",
+      "naechster_modellschritt": "Dynamische Ursache zusätzlich zur Topologie; C→STOP erhalten",
+      "analogie_ids": "EW-07",
+      "prioritaet": "HOCH"
+    },
+    {
+      "id": "L08",
+      "forschungsfrage": "Mathematische 3D/64D-Repräsentation vs physischer Raum",
+      "pgk_bezuege": "PGKM-001 | PGKM-014 | PGK-0.99",
+      "festgestellte_luecke": "Rang, Spektraldimension, 64D-Operator sind nicht räumliche Dimensionen.",
+      "moegliche_observablen": "Physische Längenskalen, Richtungen, metrische Abstände",
+      "naechster_modellschritt": "Raummetrischer Brückenvertrag, unabhängiger empirischer Vorhersagehorizont",
+      "analogie_ids": "EW-14 | EW-15",
+      "prioritaet": "SEHR_HOCH"
+    },
+    {
+      "id": "L09",
+      "forschungsfrage": "Dynamische höherordentliche Wirksamkeit",
+      "pgk_bezuege": "PGK-0.67A | PGK-0.116",
+      "festgestellte_luecke": "Irreduzible höhere Kompatibilität kann reine Struktur sein, ohne zusätzliche kausale Actor-Wirkung.",
+      "moegliche_observablen": "Triaden-/Hyperkanteninterventionen",
+      "naechster_modellschritt": "Kausale Zusatzwirkung gegen Paar-Hypergraph-Baseline",
+      "analogie_ids": "EW-08",
+      "prioritaet": "HOCH"
+    },
+    {
+      "id": "L10",
+      "forschungsfrage": "Rückholung vs spontane Drift",
+      "pgk_bezuege": "PGK-0.45C | PGK-0.71–0.74 | PGKM-020",
+      "festgestellte_luecke": "Mean Reversion, zusätzliche Rückordnung und TSM-gerichtete Rückholung sind nicht gleich.",
+      "moegliche_observablen": "Referenzwert, Störung, Nachlauf, Regelpfad",
+      "naechster_modellschritt": "Kontrollierter Referenz-/Störungs- und Mechanismusvergleich",
+      "analogie_ids": "EW-11 | EW-12",
+      "prioritaet": "SEHR_HOCH"
+    },
+    {
+      "id": "L11",
+      "forschungsfrage": "Intrinsische Φ-Aufgabe",
+      "pgk_bezuege": "RΦ-01–03 | PGKM-013",
+      "festgestellte_luecke": "NO_VALID_PHI: bislang keine intrinsisch notwendige Φ-Funktion; externer Altrollen-Task ist kein native Regenerationstest.",
+      "moegliche_observablen": "Definierte biologische oder technische Funktion, Störung, Erfolg",
+      "naechster_modellschritt": "Hphi, Rcondphi, Nphi getrennt, intrinsische Aufgabe zuerst",
+      "analogie_ids": "EW-03 | EW-11",
+      "prioritaet": "SEHR_HOCH"
+    },
+    {
+      "id": "L12",
+      "forschungsfrage": "Portgleichheit vs Vollfunktion",
+      "pgk_bezuege": "RΦ-03 | PGKM-013",
+      "festgestellte_luecke": "8/8 am 2D-Port, 0/8 im vollen 64D-Operator; reduzierte E-Passage nicht nachgewiesen.",
+      "moegliche_observablen": "Portoutput, Gesamtfunktion, vollständiger Reiz-Antwort-Raum",
+      "naechster_modellschritt": "Operationalisierte Vollfunktionsgleichheit vor Regenerationsanspruch",
+      "analogie_ids": "EW-03 | EW-14",
+      "prioritaet": "HOCH"
+    },
+    {
+      "id": "L13",
+      "forschungsfrage": "Funktionaler Trägerwechsel und wiederkehrende Rollen",
+      "pgk_bezuege": "PGK-0.122–0.125 | PGKM-008",
+      "festgestellte_luecke": "Gleiche Rollenklassen können bei wechselnder Mikrobelegung wiederkehren; vollkommene Fortsetzungsäquivalenz ist offen.",
+      "moegliche_observablen": "Linienidentität, Funktionsprüfung, rekursive Störung",
+      "naechster_modellschritt": "Stabile Funktionsklasse + kontraindikative Ausgangsfälle",
+      "analogie_ids": "EW-03 | EW-04",
+      "prioritaet": "HOCH"
+    },
+    {
+      "id": "L14",
+      "forschungsfrage": "Modellkompression und History Zusatz",
+      "pgk_bezuege": "PGK-0.52–0.55 | PGK-0.81–0.85",
+      "festgestellte_luecke": "Viele Zusatzvorhersagen scheiterten gegen fair kontrollierte Baselines; negative Befunde müssen erhalten bleiben.",
+      "moegliche_observablen": "Unabhängige Held-outs, Fail-Rate, Komplexitätsbudget",
+      "naechster_modellschritt": "Prospektive Nullmodelle ohne Leakage und mit gleicher Kapazität",
+      "analogie_ids": "EW-09 | EW-13",
+      "prioritaet": "HOCH"
+    },
+    {
+      "id": "L15",
+      "forschungsfrage": "Source-Replay und Herkunftsstatus",
+      "pgk_bezuege": "FRE-01B | BRW | FSTT-01F",
+      "festgestellte_luecke": "Technisch restaurierte Quellen / Discovery-Teiljob ersetzen kein vollständiges natives Final-Replay.",
+      "moegliche_observablen": "Reproducible state snapshots, Release-Hashes",
+      "naechster_modellschritt": "Lückenlose Replay-Chain mit Coverage- und STOP-Contracts",
+      "analogie_ids": "EW-13",
+      "prioritaet": "HOCH"
+    },
+    {
+      "id": "L16",
+      "forschungsfrage": "Lokaler / globaler Eingriffshorizont",
+      "pgk_bezuege": "ROOT-01D | PGK-0.62A | PGK-0.63A",
+      "festgestellte_luecke": "Disjunkte Supports sichern keine dynamische lokale Unabhängigkeit; gerichtete Reichweite ist nur teilweise gezeigt.",
+      "moegliche_observablen": "Zeitgestempelte Interventionsorte, Response-Latenz",
+      "naechster_modellschritt": "Lokaleität-/First-hit-Vertrag mit Distanz-/Geschwindigkeitsbezug",
+      "analogie_ids": "EW-06 | EW-10",
+      "prioritaet": "HOCH"
+    },
+    {
+      "id": "L17",
+      "forschungsfrage": "Skalenstabile Ordnung statt endlicher Reporter",
+      "pgk_bezuege": "PGK-0.44–0.51 | PGK-0.68",
+      "festgestellte_luecke": "Starke Makro-/Skalensuffizienz in zahlreichen Tests nicht gefunden.",
+      "moegliche_observablen": "Systemgröße, Skalierungsfenster, Kontrollparameter",
+      "naechster_modellschritt": "Präregistriertes Skalengesetz mit Nullmodellen und Held-outs",
+      "analogie_ids": "EW-15",
+      "prioritaet": "HOCH"
+    },
+    {
+      "id": "L18",
+      "forschungsfrage": "Manifeste Wirkung gegen Operatoralgebra",
+      "pgk_bezuege": "PGK-0.98–0.99 | PGKM-014",
+      "festgestellte_luecke": "Exakte Response- oder SC-Lösung allein identifiziert keinen messbaren Naturmechanismus.",
+      "moegliche_observablen": "Gezielte physische Stimulation und vollständige Output-Basis",
+      "naechster_modellschritt": "Explizite physikalische Zustandsprojektion und Messoperator",
+      "analogie_ids": "EW-14 | EW-16",
+      "prioritaet": "SEHR_HOCH"
+    },
+    {
+      "id": "L19",
+      "forschungsfrage": "Prozess-Reversibilität und Verlustart",
+      "pgk_bezuege": "PGKM-029 | PGK-0.105–0.112",
+      "festgestellte_luecke": "Kombinatorischer Paarverlust ist nicht automatisch thermodynamische Irreversibilität oder Informationslöschwärme.",
+      "moegliche_observablen": "Separat messbarer Entropie-/Energiefluss",
+      "naechster_modellschritt": "Kein Landauer-/Thermodynamik-Anspruch ohne Energie-/Badmodell",
+      "analogie_ids": "EW-16 | EW-01",
+      "prioritaet": "HOCH"
+    },
+    {
+      "id": "L20",
+      "forschungsfrage": "Sinn / Gedeihlichkeit / Wertbezug",
+      "pgk_bezuege": "TSM-61 | PGKM-015",
+      "festgestellte_luecke": "Aus PGK-Form- und Reaktionsgrößen folgt kein operationalisierter biologischer/sozialer Wert oder Sinn.",
+      "moegliche_observablen": "Vorab definierte externe Funktions-/Wertkriterien",
+      "naechster_modellschritt": "TSM-Gedeihlichkeits-Ebene explizit getrennt von PGK-Messverträgen",
+      "analogie_ids": "EW-03 | EW-12",
+      "prioritaet": "MITTEL"
+    }
+  ],
+  "count": 20
+}

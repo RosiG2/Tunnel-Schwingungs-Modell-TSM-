@@ -1,0 +1,4183 @@
+{
+  "claims": [
+    {
+      "aussage": "Paar- und Dreier-Integration liefern keine robuste 3D-Geometrie.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "QUELLEN_TEXT",
+      "geltungsbereich": "frühe PGK-Klassen",
+      "grenze": "Modellinterne d-Ordnung nicht mit physikalischer Dimension verwechseln.",
+      "historischer_status": "LEGACY_NOT_ROBUST",
+      "id": "PGKC-001",
+      "module_id": "PGKM-001",
+      "source_ids": [
+        "SRC-001"
+      ]
+    },
+    {
+      "aussage": "Im historischen Frozen-D-Runner sind Einzelereignisordnung und Rasterparameter festgelegt; ein veränderter Root-Solver ist ein neuer Testvertrag.",
+      "aussagetyp": "METHODIK",
+      "eigene_prueftiefe": "CHAT_REPORT_NICHT_NEU_AUSGEFUEHRT",
+      "geltungsbereich": "PGK-0.27/0.30",
+      "grenze": "Historische Serialität und spätere First-Root-Korrektur nicht vermischen.",
+      "historischer_status": "RECOVERED_REPORTED",
+      "id": "PGKC-002",
+      "module_id": "PGKM-001",
+      "source_ids": [
+        "SRC-002"
+      ]
+    },
+    {
+      "aussage": "Der post-hoc 0.29-Makropredictor zeta_H^(0) wurde in PGK-0.30 unabhängig negativ nachgeprüft.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "CHAT_REPORT_NICHT_NEU_AUSGEFUEHRT",
+      "geltungsbereich": "PGK-0.30 18-Seed unabhängig",
+      "grenze": "Alte positive Pilotkorrelation nicht für Seed-Selektion wiederbenutzen.",
+      "historischer_status": "INDEPENDENT_HOLDOUT_FAIL_REPORTED",
+      "id": "PGKC-034",
+      "module_id": "PGKM-001",
+      "source_ids": [
+        "SRC-002"
+      ]
+    },
+    {
+      "aussage": "Die C-Frontwirkung des atomaren Quotientenoperators ist nicht universell gleich zwei; sie ist F_vor minus F_nach.",
+      "aussagetyp": "FORMAL",
+      "eigene_prueftiefe": "CHAT_REPORT",
+      "geltungsbereich": "historischer atomarer Quotient",
+      "grenze": "Die frühere ΔF_C=-2-Formel bleibt für eingeschränkte Normalformen gültig.",
+      "historischer_status": "RECOVERED_REPORTED",
+      "id": "PGKC-003",
+      "module_id": "PGKM-002",
+      "source_ids": [
+        "SRC-029"
+      ]
+    },
+    {
+      "aussage": "Vorhandene E/C-Kandidaten müssen von einem tatsächlich ausgewählten Crossing unterschieden werden.",
+      "aussagetyp": "GELTUNG",
+      "eigene_prueftiefe": "SYNTHESE_QUELLENGEBUNDEN",
+      "geltungsbereich": "PGK 0.114",
+      "grenze": "Event-ID alleine reicht für gewählte Occurrence nicht.",
+      "historischer_status": "QUELLENGETRAGEN",
+      "id": "PGKC-004",
+      "module_id": "PGKM-002",
+      "source_ids": [
+        "SRC-005"
+      ]
+    },
+    {
+      "aussage": "Der in 0.70 berichtete Rewrite-Ablationseffekt verändert den Folgeraum; ob die Art der ausgewählten Passage ihn prospektiv besser macht, ist eine zusätzliche Prüfung.",
+      "aussagetyp": "OFFENES_BRUECKENGATE",
+      "eigene_prueftiefe": "QUELLEN_SYNTHESEN_BERICHT",
+      "geltungsbereich": "0.70 Archivvariante gegen spätere Root-/Regulationsprüfungen",
+      "grenze": "Ohne First-Root-Rerun nach FSTT-Korrektur keine automatische ausgewählte Zukunftspfadgewissheit.",
+      "historischer_status": "A6_4_QUELLENUEBERGREIFENDE_SYNTHESE",
+      "id": "PGKC-304",
+      "module_id": "PGKM-002",
+      "source_ids": [
+        "SRC-004",
+        "SRC-024"
+      ]
+    },
+    {
+      "aussage": "Der native Rewrite aendert im zeitgleichen No-Rewrite-Shadow die E/C-Folgekandidatenstruktur bei jedem der sechs getesteten Ereignisse.",
+      "aussagetyp": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "eigene_prueftiefe": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "evidence_status": "ORIGINAL_NICHT_PUBLIC_ODER_UNGEKLAERT",
+      "geltungsbereich": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "grenze": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "historischer_status": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "id": "A6N-C003",
+      "metadata_completion": "TECHNISCHE_STANDARDISIERUNG_OHNE_NEUBELEG",
+      "module_id": "PGKM-002",
+      "review_required": true,
+      "source_ids": []
+    },
+    {
+      "aussage": "Ein skalenstabiler endlicher Rewritequotient wurde im preregistrierten 0.68A-Gate nicht etabliert.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "HISTORISCHER_BERICHT",
+      "geltungsbereich": "0.68A L=4/8",
+      "grenze": "Positive partielle Transformationsgesetze bleiben davon getrennt.",
+      "historischer_status": "G_FIBER_QUOTIENT_NEGATIVE",
+      "id": "PGKC-005",
+      "module_id": "PGKM-003",
+      "source_ids": [
+        "SRC-003"
+      ]
+    },
+    {
+      "aussage": "Das komprimierte Z kann den zulässigen Klassenraum kennzeichnen, aber nicht zuverlässig die tatsächlich gewählte Rewriteklasse.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "HISTORISCHER_BERICHT",
+      "geltungsbereich": "PGK-0.81",
+      "grenze": "Zulässigkeit ≠ Selektion.",
+      "historischer_status": "0.81_STRICT_FAIL",
+      "id": "PGKC-006",
+      "module_id": "PGKM-003",
+      "source_ids": [
+        "SRC-004"
+      ]
+    },
+    {
+      "aussage": "Mehr erhaltene Front steht in unabhängigem 0.30-Block mit größerem anschließend verfügbarem C-Kandidatenraum in Zusammenhang; realisierte C-Schließung repliziert nicht.",
+      "aussagetyp": "POSITIV_BEGRENZT",
+      "eigene_prueftiefe": "CHAT_REPORT_NICHT_NEU_AUSGEFUEHRT",
+      "geltungsbereich": "PGK-0.29/0.30, 18-Seed",
+      "grenze": "Keine Kausalbehauptung C-Closure.",
+      "historischer_status": "REPLICATION_PARTIAL",
+      "id": "PGKC-033",
+      "module_id": "PGKM-003",
+      "source_ids": [
+        "SRC-002"
+      ]
+    },
+    {
+      "aussage": "Vor der Passage kann eine winner-unabhängige W-Teilordnung im admissiblen Horizont vorliegen.",
+      "aussagetyp": "POSITIV_BEGRENZT",
+      "eigene_prueftiefe": "HISTORISCHER_BERICHT",
+      "geltungsbereich": "PGK-0.76",
+      "grenze": "W-Ordnung ist nicht hinreichend für autonome Auswahl.",
+      "historischer_status": "0.76_FOUND_REPORTED",
+      "id": "PGKC-007",
+      "module_id": "PGKM-004",
+      "source_ids": [
+        "SRC-004"
+      ]
+    },
+    {
+      "aussage": "Freie Mehrschrittrekursion ist bei vorgegebenem nativen Rewrite-Wort kein Nachweis autonomer Rewriteklasse.",
+      "aussagetyp": "GELTUNG",
+      "eigene_prueftiefe": "HISTORISCHER_BERICHT",
+      "geltungsbereich": "PGK-0.79–0.84",
+      "grenze": "Keine rekursive Klassenwahl aus Z_n behaupten.",
+      "historischer_status": "GIVEN_WORD_POSITIVE_WITH_BOUNDARY",
+      "id": "PGKC-008",
+      "module_id": "PGKM-004",
+      "source_ids": [
+        "SRC-004"
+      ]
+    },
+    {
+      "aussage": "Vollständiger aktueller Zustand, globaler E+C-Möglichkeitshorizont und ausgewählte Occurrence bilden die getestete native Prozesskette.",
+      "aussagetyp": "POSITIV_BEGRENZT",
+      "eigene_prueftiefe": "HISTORISCHER_BERICHT",
+      "geltungsbereich": "PGK 0.107–0.114",
+      "grenze": "Getestete Occurrence-Konsistenz nicht als universale physikalische Dynamik ausgeben.",
+      "historischer_status": "0.114_OUTCOME_A_REPORTED",
+      "id": "PGKC-009",
+      "module_id": "PGKM-005",
+      "source_ids": [
+        "SRC-005"
+      ]
+    },
+    {
+      "aussage": "Eventidentität ist nicht gleich identischem ausgewählten Crossing: Candidate, Root und native Occurrence bleiben prüfpflichtig.",
+      "aussagetyp": "KORREKTUR",
+      "eigene_prueftiefe": "HISTORISCHER_BERICHT",
+      "geltungsbereich": "PGK 0.114",
+      "grenze": "Historische Eventid-Re-Resolution nicht überspringen.",
+      "historischer_status": "0.114_CORRECTION",
+      "id": "PGKC-010",
+      "module_id": "PGKM-005",
+      "source_ids": [
+        "SRC-005"
+      ]
+    },
+    {
+      "aussage": "Für eine prospektive Aussage sind Kandidat, erstes gerichtetes Root und tatsächlich native gewählte Occurrence verschiedene Prüfobjekte.",
+      "aussagetyp": "GELTUNGSGRENZE",
+      "eigene_prueftiefe": "HISTORISCHER_AUDIT",
+      "geltungsbereich": "PGK-0.114, FSTT-01F",
+      "grenze": "FSTT Schritt6 root-korrigierter Folgereplay nicht durchgeführt.",
+      "historischer_status": "A6_4_GELTUNGSSCHUTZ",
+      "id": "PGKC-288",
+      "module_id": "PGKM-005",
+      "source_ids": [
+        "SRC-005",
+        "SRC-024"
+      ]
+    },
+    {
+      "aussage": "Unveraendertes choose_native und apply_direct reproduzieren die native Auswahl-/Rewrite-Folge POS1–5; STOP-C1 besitzt danach keine native E/C-Option.",
+      "aussagetyp": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "eigene_prueftiefe": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "evidence_status": "ORIGINAL_NICHT_PUBLIC_ODER_UNGEKLAERT",
+      "geltungsbereich": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "grenze": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "historischer_status": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "id": "A6N-C002",
+      "metadata_completion": "TECHNISCHE_STANDARDISIERUNG_OHNE_NEUBELEG",
+      "module_id": "PGKM-005",
+      "review_required": true,
+      "source_ids": []
+    },
+    {
+      "aussage": "Das Funktionsnetz nach 0.116 hält historische Struktur- und Funktionsbeziehungen getrennt und weist ungelöste Source-Mappings aus.",
+      "aussagetyp": "OFFEN",
+      "eigene_prueftiefe": "HISTORISCHER_BERICHT",
+      "geltungsbereich": "0.116 F01–F..",
+      "grenze": "Keine positive Identität der Mechanismen ohne kontrakttreuen Vergleich.",
+      "historischer_status": "MAPPING_OPEN",
+      "id": "PGKC-011",
+      "module_id": "PGKM-006",
+      "source_ids": [
+        "SRC-006"
+      ]
+    },
+    {
+      "aussage": "Im Formrepräsentations-Test 0.135 scheitert der Discovery-Guard; Confirmation und Final bleiben geschlossen.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "ORIGINAL_ENTSCHEIDUNG_GELESEN",
+      "geltungsbereich": "0.135 16 Discovery-Shards",
+      "grenze": "Nicht die Existenz aller möglichen Form-/Funktionskonzepte widerlegt.",
+      "historischer_status": "R6b_NEGATIVE__OUTCOME_E",
+      "id": "PGKC-012",
+      "module_id": "PGKM-006",
+      "source_ids": [
+        "SRC-017"
+      ]
+    },
+    {
+      "aussage": "Der 0.132-Erkenntnisbaum formuliert Gedeihlichkeit und Rekursion als Forschungsrichtung, nicht als erwiesene PGK-Motorik.",
+      "aussagetyp": "HYPOTHESE",
+      "eigene_prueftiefe": "ERKENNTNISBAUM_GELESEN",
+      "geltungsbereich": "PGK nach 0.132",
+      "grenze": "Keine Gleichsetzung mit realweltlicher Regenerativität.",
+      "historischer_status": "MOTORHYPOTHESE",
+      "id": "PGKC-035",
+      "module_id": "PGKM-006",
+      "source_ids": [
+        "SRC-009"
+      ]
+    },
+    {
+      "aussage": "PGK-0.115C Confirmation+Final enthält 249 Rohpaarzeilen: 249 mal gleicher Interface-/Operatorscaffold, aber 0 gleiche Response- und Germ-Signaturen.",
+      "aussagetyp": "FORMALE_QUELLENAUSWERTUNG",
+      "eigene_prueftiefe": "A6_3_EIGENE_ROHDATEN_AGGREGATION",
+      "geltungsbereich": "PGK-0.115C heldout confirmation/final; source-native candidate response family",
+      "grenze": "Gleichheit eines diskreten Operatorscaffolds ist nicht Gleichheit einer 64D J-Matrix aus RΦ-03.",
+      "historischer_status": "A6_3_PAIR_AGGREGATION_PASS",
+      "id": "PGKC-272",
+      "module_id": "PGKM-006",
+      "source_ids": [
+        "SRC-065",
+        "SRC-072"
+      ]
+    },
+    {
+      "aussage": "Im selben PGK-0.115C-Rohdatenbestand sind 59 Type-II-Transporte und 23 Type-III-Spätreentry-Fälle klassifiziert.",
+      "aussagetyp": "POSITIVER_TEILBEFUND",
+      "eigene_prueftiefe": "A6_3_EIGENE_ROHDATEN_AGGREGATION",
+      "geltungsbereich": "PGK-0.115C, historische vorgesehene Type-Definition",
+      "grenze": "Zählwerte bestätigen Berichtsklassifikation, nicht die gesamte native Berechnung neu.",
+      "historischer_status": "A6_3_PAIR_AGGREGATION_PASS",
+      "id": "PGKC-273",
+      "module_id": "PGKM-006",
+      "source_ids": [
+        "SRC-072"
+      ]
+    },
+    {
+      "aussage": "PGK-0.115C lässt bei bestätigtem Carrier-Transport die vollständige Rückholordnung offen; CLOCK und GEOMETRY sind nicht eröffnet.",
+      "aussagetyp": "GELTUNGSGRENZE",
+      "eigene_prueftiefe": "ORIGINALDATEI_GEPRUEFT",
+      "geltungsbereich": "PGK-0.115C research fork",
+      "grenze": "Supported transport ≠ mobile-reference dynamics, TSM-Λ oder emergente physikalische Zeit.",
+      "historischer_status": "SOURCE_SCOPE_GUARD",
+      "id": "PGKC-274",
+      "module_id": "PGKM-006",
+      "source_ids": [
+        "SRC-065"
+      ]
+    },
+    {
+      "aussage": "Die Originaldaten von 0.115C zeigen in 249 Paaren beobachtete exakte Kopplung der Flags D_same und next_B_same: jeweils 65; trotz überall fehlender Response- und Germgleichheit.",
+      "aussagetyp": "DESKRIPTIVER_BEOBACHTUNGSBEFUND",
+      "eigene_prueftiefe": "ROHDATEN_NEU_KREUZTABULIERT",
+      "geltungsbereich": "0.115C Confirmation+Final, 249 archivierte Paarzeilen",
+      "grenze": "Eine empirische in-sample-Koinzidenz von Flags ist keine universelle logische Äquivalenz, keine kausale Regulation.",
+      "historischer_status": "A6_4_NEUE_QUELLENTABELLEN_PRUEFUNG",
+      "id": "PGKC-289",
+      "module_id": "PGKM-006",
+      "source_ids": [
+        "SRC-065",
+        "SRC-077"
+      ]
+    },
+    {
+      "aussage": "PGK 0.126 unterscheidet Prozessordnung, ordinalen Delay, relatives Intervall, Uhr und metrische Zeit.",
+      "aussagetyp": "GELTUNG",
+      "eigene_prueftiefe": "ERKENNTNISBAUM_GELESEN",
+      "geltungsbereich": "PGK 0.126",
+      "grenze": "Keine metrische physikalische Zeit aus Prozessindex.",
+      "historischer_status": "CHRONOMETRY_FRONTIER",
+      "id": "PGKC-013",
+      "module_id": "PGKM-007",
+      "source_ids": [
+        "SRC-007"
+      ]
+    },
+    {
+      "aussage": "Lokale Eich-/Rekurrenzbeziehungen bleiben eine eigenständige Aufgabe nach der Entstehung einer nativen Ereignisordnung.",
+      "aussagetyp": "OFFEN",
+      "eigene_prueftiefe": "ERKENNTNISBAUM_GELESEN",
+      "geltungsbereich": "PGK 0.127–0.129",
+      "grenze": "Kein cross-domain metric readiness ohne metrische Vergleichsregel.",
+      "historischer_status": "LOKALE_KALIBRIERUNG_BEGRIFFLICH",
+      "id": "PGKC-014",
+      "module_id": "PGKM-007",
+      "source_ids": [
+        "SRC-008"
+      ]
+    },
+    {
+      "aussage": "Selbst eine native korrigierte Ereignisordnung ist nicht ohne separate Wiederkehr-, Eich- und Brückenprüfung eine globale metrische Zeit.",
+      "aussagetyp": "GELTUNGSGRENZE",
+      "eigene_prueftiefe": "QUELLENGEBUNDENE_SYNTHESE",
+      "geltungsbereich": "0.126–0.129, FSTT",
+      "grenze": "Zyklus/Clock, geometrischer Raum oder emergente Realzeit hier nicht etabliert.",
+      "historischer_status": "A6_4_GELTUNGSSCHUTZ",
+      "id": "PGKC-302",
+      "module_id": "PGKM-007",
+      "source_ids": [
+        "SRC-007",
+        "SRC-024"
+      ]
+    },
+    {
+      "aussage": "Trägerwechsel kann für bestimmte Funktionsklassen gelingen, ohne eine allgemeine Regeneration derselben Rolle zu beweisen.",
+      "aussagetyp": "POSITIV_BEGRENZT",
+      "eigene_prueftiefe": "A5C_QUELLENBERICHT",
+      "geltungsbereich": "PGK 0.136–0.137",
+      "grenze": "Nicht universale Funktionsäquivalenz behaupten.",
+      "historischer_status": "R10_PARTIAL",
+      "id": "PGKC-015",
+      "module_id": "PGKM-008",
+      "source_ids": [
+        "SRC-028"
+      ]
+    },
+    {
+      "aussage": "RΦ-03: 8/8 Paare zeigen eingeschränkte Teil-I/O-Gleichheit, aber 0/8 identischen vollständigen 64D-Operator.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "ORIGINALQUELLEN_BERICHT",
+      "geltungsbereich": "RΦ-03, eingeschränkter U-Port",
+      "grenze": "Auch 3/8 aktuelle Vorzeichenkontraste verhindern Überdehnung.",
+      "historischer_status": "RESTRICTED_EQUIVALENCE_ONLY",
+      "id": "PGKC-016",
+      "module_id": "PGKM-008",
+      "source_ids": [
+        "SRC-013"
+      ]
+    },
+    {
+      "aussage": "PGK-0.139: R10c überschreitet die zeitliche Informationsgrenze, weil die REORDERING_CLASS erst nach dem Rewrite feststeht.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "ORIGINAL_ENTSCHEIDUNG_GELESEN",
+      "geltungsbereich": "PGK 0.139",
+      "grenze": "Transition-contemporaneous Korrelation nicht als pre-rewrite Regulation ausweisen.",
+      "historischer_status": "OUTCOME_T__TEMPORAL_INFORMATION_BOUNDARY_FAIL",
+      "id": "PGKC-017",
+      "module_id": "PGKM-009",
+      "source_ids": [
+        "SRC-018"
+      ]
+    },
+    {
+      "aussage": "PGK-0.140: vorab gesetzter normalisierter Gain >=0.10 scheitert in beiden Held-out-Blöcken.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "ORIGINAL_ENTSCHEIDUNG_GELESEN",
+      "geltungsbereich": "PGK 0.140",
+      "grenze": "Positive kleinere Effekte nicht in den strikten PASS hochstufen.",
+      "historischer_status": "OUTCOME_P0",
+      "id": "PGKC-018",
+      "module_id": "PGKM-009",
+      "source_ids": [
+        "SRC-019"
+      ]
+    },
+    {
+      "aussage": "0.139s Klassifikator REORDERING_CLASS verwendet das nachherige Rewrite-Ergebnis und verdient daher ausschließlich transition-contemporaneous Status.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "SOURCE_CONTRACT_RECHECK",
+      "geltungsbereich": "PGK-0.139 prospective R10c",
+      "grenze": "Keine neue reproduzierte predictive gain calculation; Quellenentscheidung bleibt maßgeblich.",
+      "historischer_status": "HISTORICAL_DECISION_RECONFIRMED",
+      "id": "PGKC-277",
+      "module_id": "PGKM-009",
+      "source_ids": [
+        "SRC-018"
+      ]
+    },
+    {
+      "aussage": "0.140 meldet formal G1–G5 PASS, aber den vorab fixierten Gain >=0.10 in beiden Held-outs FAIL; diese beiden Aussagen sind kompatibel, kein R10c-Erfolg.",
+      "aussagetyp": "GELTUNG",
+      "eigene_prueftiefe": "SOURCE_CONTRACT_RECHECK",
+      "geltungsbereich": "PGK-0.140",
+      "grenze": "Formaler Prüfvertrags-PASS kann nicht den negativen prospektiven Effekt ersetzen.",
+      "historischer_status": "HISTORICAL_DECISION_RECONFIRMED",
+      "id": "PGKC-278",
+      "module_id": "PGKM-009",
+      "source_ids": [
+        "SRC-019"
+      ]
+    },
+    {
+      "aussage": "Der 0.139-Deskriptor REORDERING_CLASS ist post-rewrite und somit für die untersuchte Regel kein gültiger pre-rewrite-Selektor.",
+      "aussagetyp": "GELTUNGSGRENZE",
+      "eigene_prueftiefe": "ORIGINALENTSCHEIDUNG_AUSGELESEN",
+      "geltungsbereich": "PGK-0.139 R10c eingefroren",
+      "grenze": "Repetition und Two-Step-Templates nicht als prospektive Leistung umetikettieren.",
+      "historischer_status": "HISTORISCH_NEGATIV",
+      "id": "PGKC-291",
+      "module_id": "PGKM-009",
+      "source_ids": [
+        "SRC-018"
+      ]
+    },
+    {
+      "aussage": "Zwei Welten mit identischen pre-event-Informationen und unterschiedlichen post-event-Labels erlauben 2/2 retrospektive, aber maximal 1/2 deterministische prospektive Treffer.",
+      "aussagetyp": "MATHEMATISCH_NEGATIVE_IMPLIKATION",
+      "eigene_prueftiefe": "EXAKTES_ABSTRAKTES_GEGENMODELL",
+      "geltungsbereich": "abstrakter Zwei-Welten-Vertrag",
+      "grenze": "Kein Re-Scoring der PGK-0.139-Heldouts; veranschaulicht ausschließlich den zeitlichen Informationsrand.",
+      "historischer_status": "A6_4_EIGENE_FORMALPRUEFUNG",
+      "id": "PGKC-292",
+      "module_id": "PGKM-009",
+      "source_ids": [
+        "SRC-076",
+        "SRC-077"
+      ]
+    },
+    {
+      "aussage": "Ein erfolgreicher vorab sichtbarer Feedbackselektor kann in einer künstlichen endlichen E/C-Variante eine Zielgröße verbessern; dieser neue Selektor wäre für PGK ein eigener Fork.",
+      "aussagetyp": "EXPLORATIVE_LOGISCHE_MOEGLICHKEIT",
+      "eigene_prueftiefe": "EXAKTE_ENDLICHE_DEMONSTRATION",
+      "geltungsbereich": "E/C-Spielzeug Front f=0..4 mit Ziel f=2",
+      "grenze": "Keine Validierung einer nativen PGK-Rückholfunktion; Ziel ist exogen definiert.",
+      "historischer_status": "A6_4_EIGENE_DEMO_NICHT_NATIVE",
+      "id": "PGKC-294",
+      "module_id": "PGKM-009",
+      "source_ids": [
+        "SRC-076",
+        "SRC-077"
+      ]
+    },
+    {
+      "aussage": "Die künstliche E/C-Feedback-Demonstration hat einen Gesamteffekt, aber keine positive Verbesserung auf der separat ausgewerteten Teilmenge f<=2.",
+      "aussagetyp": "GELTUNGSGRENZE",
+      "eigene_prueftiefe": "EXAKTE_ENDLICHE_DEMONSTRATION",
+      "geltungsbereich": "synthetische, vorab geteilte Frontzustände f<=2 und f>=3",
+      "grenze": "Zeigt Heterogenität des Modells, nicht dass die historischen Nulltests 0.140/0.141 neu gerechnet wären.",
+      "historischer_status": "A6_4_EIGENE_DEMO_NICHT_NATIVE",
+      "id": "PGKC-295",
+      "module_id": "PGKM-009",
+      "source_ids": [
+        "SRC-077"
+      ]
+    },
+    {
+      "aussage": "0.140 und 0.141 bestehen im jeweiligen Originalvertrag nicht die vorab geforderte replizierte Additionality gegen geeignete Vergleichsmodelle.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "ORIGINALENTSCHEIDUNGEN_GESICHTET",
+      "geltungsbereich": "PGK-0.140 und CFG_ROLE_CONTEXT_v1 0.141",
+      "grenze": "Keine nachträgliche Schwellenänderung oder Übertragbarkeit des Nullbefundes auf alle denkbaren Merkmale.",
+      "historischer_status": "HISTORISCH_NEGATIV",
+      "id": "PGKC-296",
+      "module_id": "PGKM-009",
+      "source_ids": [
+        "SRC-019",
+        "SRC-020"
+      ]
+    },
+    {
+      "aussage": "Kein neues G6-PASS: externe H-Aufgabe, fehlender legaler Nicht-Rewrite-Baselinepfad und kein unabhaengiger Heldout-Nachweis.",
+      "aussagetyp": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "eigene_prueftiefe": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "evidence_status": "ORIGINAL_NICHT_PUBLIC_ODER_UNGEKLAERT",
+      "geltungsbereich": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "grenze": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "historischer_status": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "id": "A6N-C008",
+      "metadata_completion": "TECHNISCHE_STANDARDISIERUNG_OHNE_NEUBELEG",
+      "module_id": "PGKM-009",
+      "review_required": true,
+      "source_ids": []
+    },
+    {
+      "aussage": "PGK-0.141: Die Konfigurationsbeschreibung bleibt sinnvoll, trägt aber keine replicierte vorausschauende Konfigurations-Additionality.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "ORIGINAL_ENTSCHEIDUNG_GELESEN",
+      "geltungsbereich": "PGK 0.141",
+      "grenze": "Configuration fingerprint ≠ unabhängig diskriminierbare Funktion.",
+      "historischer_status": "OUTCOME_C0__NO_CONFIGURATION_ADDITIONALITY",
+      "id": "PGKC-019",
+      "module_id": "PGKM-010",
+      "source_ids": [
+        "SRC-020"
+      ]
+    },
+    {
+      "aussage": "Der wiederhergestellte 0.141-Freeze wurde ausdrücklich neu aus Discovery und Auftrag rekonstruiert; er ist nicht byteidentisch zum verlorenen Originalfreeze.",
+      "aussagetyp": "PROVENIENZ",
+      "eigene_prueftiefe": "ORIGINAL_PROVENIENZ_GELESEN",
+      "geltungsbereich": "PGK 0.141",
+      "grenze": "Recovery und Originalbytes separat klassifizieren.",
+      "historischer_status": "RECOVERY_QUALIFIED",
+      "id": "PGKC-020",
+      "module_id": "PGKM-010",
+      "source_ids": [
+        "SRC-021"
+      ]
+    },
+    {
+      "aussage": "FRE-01 wurde in Richtung möglicher ID-freier Äquivalenz begonnen, aber Verification A/B nicht freigegeben.",
+      "aussagetyp": "OFFEN",
+      "eigene_prueftiefe": "QUELLENAUDIT_BERICHT",
+      "geltungsbereich": "FRE-01 v1.23",
+      "grenze": "Keine positive unabhängige vollständige FRE-A/B-Reproduktion.",
+      "historischer_status": "INCOMPLETE__PAUSED",
+      "id": "PGKC-021",
+      "module_id": "PGKM-010",
+      "source_ids": [
+        "SRC-015"
+      ]
+    },
+    {
+      "aussage": "0.141 bestätigt den Quellstatus OUTCOME_C0: kein typisiertes Regime besteht den Konfigurations-Additionality-Nullguard repliziert in beiden Held-outs.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "SOURCE_CONTRACT_RECHECK",
+      "geltungsbereich": "PGK-0.141 configuration role context",
+      "grenze": "CFG-Repräsentation bleibt valid, keine universelle No-Go-Aussage zu allen möglichen Konfigurationsbeschreibungen.",
+      "historischer_status": "HISTORICAL_DECISION_RECONFIRMED",
+      "id": "PGKC-279",
+      "module_id": "PGKM-010",
+      "source_ids": [
+        "SRC-020"
+      ]
+    },
+    {
+      "aussage": "Eine vollständige v1.39 Schichtgrammatik liegt als formaler Typvertrag vor; die kanonische Instantiierung ist ausdrücklich nicht geschlossen.",
+      "aussagetyp": "GELTUNGSGRENZE",
+      "eigene_prueftiefe": "KANONISCHER_QUELLTEXT_AUSGELESEN",
+      "geltungsbereich": "Research Memory v1.39, unverändert",
+      "grenze": "A6/4 ist nicht-kanonisch; keine Root-Hochstufung.",
+      "historischer_status": "KANONISCHER_STATUS_ZITIERT",
+      "id": "PGKC-299",
+      "module_id": "PGKM-010",
+      "source_ids": [
+        "SRC-023"
+      ]
+    },
+    {
+      "aussage": "Die Möglichkeitshorizont-Mitgliedschaft Ω und die Ordnung W sind begrifflich unterschiedliche Information.",
+      "aussagetyp": "FORMAL",
+      "eigene_prueftiefe": "ERKENNTNISBAUM_GELESEN",
+      "geltungsbereich": "WR/MA",
+      "grenze": "W-Marge eichabhängig; kein physikalisches Anziehungsgesetz.",
+      "historischer_status": "WR_ARCHITEKTUR",
+      "id": "PGKC-022",
+      "module_id": "PGKM-011",
+      "source_ids": [
+        "SRC-011"
+      ]
+    },
+    {
+      "aussage": "BRW-1G positive Richtung wurde aufgrund von Identitäts-/Zählproblemen zurückgenommen, DICT_D und Rebuild bleiben offen.",
+      "aussagetyp": "KORREKTUR",
+      "eigene_prueftiefe": "QUELLENAUDIT_BERICHT",
+      "geltungsbereich": "BRW1G; 3.610 C×C-Paare",
+      "grenze": "Kein effect rescue vor quellenlegalem D0–D12 Rebuild.",
+      "historischer_status": "BRW1G_D__DICT_D",
+      "id": "PGKC-023",
+      "module_id": "PGKM-011",
+      "source_ids": [
+        "SRC-015"
+      ]
+    },
+    {
+      "aussage": "FSTT-01F fand bei archiviertem Schritt 6 von beiden historischen Rastern verpasste E-Crossing-Insel.",
+      "aussagetyp": "KORREKTUR",
+      "eigene_prueftiefe": "ORIGINAL_JSON_GELESEN_KEIN_MP_RERUN",
+      "geltungsbereich": "FSTT Original-Floatcoefficients",
+      "grenze": "Archiveventfolge unter altem Raster ≠ earliest-root-vollständige Folge.",
+      "historischer_status": "EARLIEST_EVENT_FAIL_STEP6",
+      "id": "PGKC-024",
+      "module_id": "PGKM-012",
+      "source_ids": [
+        "SRC-015",
+        "SRC-024"
+      ]
+    },
+    {
+      "aussage": "Schritt 10 ist nur für den bedingten historischen Archivzustand zu bewerten; die earliest-korrigierte Folge läuft schon ab Schritt 6 anders.",
+      "aussagetyp": "GELTUNG",
+      "eigene_prueftiefe": "QUELLENAUDIT_BERICHT",
+      "geltungsbereich": "FSTT 01F",
+      "grenze": "Kein Schritt10 auf korrigierter neuer Branch behaupten.",
+      "historischer_status": "CONDITIONAL_OLD_STATE_ONLY",
+      "id": "PGKC-025",
+      "module_id": "PGKM-012",
+      "source_ids": [
+        "SRC-015"
+      ]
+    },
+    {
+      "aussage": "Im archivierten CFG-Zustand Schritt 6 bestätigte eine eigene lokale Rechenauswertung eine E-Nullstelleninsel bei t≈0.093251909354 und 0.097834417010; beide historischen Raster haben gleiches negatives Randvorzeichen.",
+      "aussagetyp": "METHODISCHE_KORREKTUR",
+      "eigene_prueftiefe": "A6_3_EIGENE_LOKALE_ROOT_NACHRECHNUNG",
+      "geltungsbereich": "FSTT-01F fixed saved spectral coefficients; archived conditional state Q5",
+      "grenze": "Keine globale earliest-root-Zertifizierung und keine Garantie für unsichere Quelldaten. Schritt6 erstlokal auf Archivpfad.",
+      "historischer_status": "A6_3_LOCAL_NUMERIC_PASS",
+      "id": "PGKC-266",
+      "module_id": "PGKM-012",
+      "source_ids": [
+        "SRC-024",
+        "SRC-069"
+      ]
+    },
+    {
+      "aussage": "Im bedingten archivierten Schritt-10-Zustand wiederholt A6/3 lokale C-Nullstellen bei t≈0.668422789849 und 0.684539225877; dt=0.04 zeigt Vorzeichenwechsel, dt=0.06 nicht.",
+      "aussagetyp": "METHODISCHE_KORREKTUR",
+      "eigene_prueftiefe": "A6_3_EIGENE_LOKALE_ROOT_NACHRECHNUNG",
+      "geltungsbereich": "historischer Archivzustand Schritt10 nach alter Folge",
+      "grenze": "Nicht Schritt 10 des schon ab Schritt 6 korrigierten earliest-selected Pfads.",
+      "historischer_status": "A6_3_LOCAL_NUMERIC_PASS_ARCHIVE_CONDITIONAL",
+      "id": "PGKC-267",
+      "module_id": "PGKM-012",
+      "source_ids": [
+        "SRC-024",
+        "SRC-069"
+      ]
+    },
+    {
+      "aussage": "6 von 6 gewaehlte E/C-Ereignisse entsprechen den schon FSTT-01F-zertifizierten ersten gerichteten Nullstellen (POS1–5 und STOP1).",
+      "aussagetyp": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "eigene_prueftiefe": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "evidence_status": "ORIGINAL_NICHT_PUBLIC_ODER_UNGEKLAERT",
+      "geltungsbereich": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "grenze": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "historischer_status": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "id": "A6N-C001",
+      "metadata_completion": "TECHNISCHE_STANDARDISIERUNG_OHNE_NEUBELEG",
+      "module_id": "PGKM-012",
+      "review_required": true,
+      "source_ids": []
+    },
+    {
+      "aussage": "RΦ-01 findet keine aus dem Original-PGK unabhängig notwendige intrinsische Φ-Aufgabe; R und N sind deshalb nicht adjudizierbar, nicht beide null.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "ORIGINALQUELLEN_BERICHT",
+      "geltungsbereich": "RΦ-01",
+      "grenze": "STOP nur für intrinsisch notwendige Leistung in dieser Quellprüfung.",
+      "historischer_status": "NO_VALID_PHI__STOP",
+      "id": "PGKC-026",
+      "module_id": "PGKM-013",
+      "source_ids": [
+        "SRC-013"
+      ]
+    },
+    {
+      "aussage": "RΦ-02: Bei externer Aufgabe mit feststehenden Altkomponentenadressen kann der native Merge die alte getrennte Identität nicht regenerieren.",
+      "aussagetyp": "NEGATIV_BEGRENZT",
+      "eigene_prueftiefe": "ORIGINALQUELLEN_BERICHT",
+      "geltungsbereich": "RΦ-02",
+      "grenze": "Kein allgemeines regeneratives No-Go; nur diese extern definierte Alt-ID-Aufgabe.",
+      "historischer_status": "R_COND_0_N_0_TASK_RELATIVE",
+      "id": "PGKC-027",
+      "module_id": "PGKM-013",
+      "source_ids": [
+        "SRC-013"
+      ]
+    },
+    {
+      "aussage": "RΦ-03 bestätigt Gleichheit auf einem eingeschränkten Eingangsraum, aber keine vollständige Operatorgleichheit.",
+      "aussagetyp": "GELTUNG",
+      "eigene_prueftiefe": "ORIGINALQUELLEN_BERICHT",
+      "geltungsbereich": "RΦ-03",
+      "grenze": "Nicht als wiedergewählte alte Rolle oder S3-Regulation ausgeben.",
+      "historischer_status": "RESTRICTED_IO_PASS_FULL64D_FAIL",
+      "id": "PGKC-028",
+      "module_id": "PGKM-013",
+      "source_ids": [
+        "SRC-013"
+      ]
+    },
+    {
+      "aussage": "A6/3 reaggregiert 8 RΦ-03 same-state-Partnerportpaare, alle mit maximaler Portabweichung ≤1.683×10^-15.",
+      "aussagetyp": "POSITIVER_TEILBEFUND",
+      "eigene_prueftiefe": "A6_3_EIGENE_ROHDATEN_AGGREGATION",
+      "geltungsbereich": "RΦ-03 external two-partner interface, 8 discovered candidate pairs",
+      "grenze": "Portvergleich war nicht blind vorregistrierte Paarentdeckung; nur eingeschränkter Input, keine Vollantwort.",
+      "historischer_status": "A6_3_RAW_CSV_AGGREGATION_PASS",
+      "id": "PGKC-268",
+      "module_id": "PGKM-013",
+      "source_ids": [
+        "SRC-070",
+        "SRC-071"
+      ]
+    },
+    {
+      "aussage": "A6/3 reaggregiert 0/8 vollständige Operatorgleichheiten in RΦ-03; die minimale volle Operatornormdifferenz ist 0.80492618.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "A6_3_EIGENE_ROHDATEN_AGGREGATION",
+      "geltungsbereich": "RΦ-03 same-state 64D quadratic response",
+      "grenze": "Nicht alle denkbaren Funktionsdefinitionen; Originalmatrizen nicht in neuer nativer 64D-Rechnung rekonstruiert.",
+      "historischer_status": "A6_3_RAW_CSV_AGGREGATION_PASS",
+      "id": "PGKC-269",
+      "module_id": "PGKM-013",
+      "source_ids": [
+        "SRC-070",
+        "SRC-071"
+      ]
+    },
+    {
+      "aussage": "In 3 der 8 RΦ-03-Paarvergleiche unterscheiden sich die Vorzeichen des aktuellen vollen Antwortwertes, trotz gemeinsamer Portgleichheit.",
+      "aussagetyp": "GEGENBEISPIEL",
+      "eigene_prueftiefe": "A6_3_EIGENE_ROHDATEN_AGGREGATION",
+      "geltungsbereich": "RΦ-03, gleicher aktueller Zustand je Paar",
+      "grenze": "Kein direkter Nachweis einer später tatsächlich ausgewählten Ersatzpassage.",
+      "historischer_status": "A6_3_RAW_CSV_AGGREGATION_PASS",
+      "id": "PGKC-270",
+      "module_id": "PGKM-013",
+      "source_ids": [
+        "SRC-070"
+      ]
+    },
+    {
+      "aussage": "Der fixierte RΦ-03-Vertrag definiert keinen nativen Delegationsoperator und keine gewählte Regeneration; die E-Portvergleiche sind externe Reporter.",
+      "aussagetyp": "STATUS_GUARD",
+      "eigene_prueftiefe": "ORIGINALDATEI_GEPRUEFT",
+      "geltungsbereich": "RΦ-03 external task, exploratory matching",
+      "grenze": "0/8 Vollgleichheit und 8/8 Portgleichheit sind keine Aussage NΦ=1.",
+      "historischer_status": "ORIGINAL_CONTRACT_GUARD",
+      "id": "PGKC-271",
+      "module_id": "PGKM-013",
+      "source_ids": [
+        "SRC-070",
+        "SRC-074"
+      ]
+    },
+    {
+      "aussage": "Übereinstimmung an einem 2D-Port ohne gleiche 64D-Antwort ist kein ausgewählter Träger-Ersatz oder regenerierter Rollenpfad.",
+      "aussagetyp": "GELTUNGSGRENZE",
+      "eigene_prueftiefe": "QUELLENGEBUNDENE_SYNTHESE",
+      "geltungsbereich": "RΦ-03",
+      "grenze": "Kein nativer Delegationsoperator oder ausgewählte regenerative Passage gezeigt.",
+      "historischer_status": "A6_4_GELTUNGSSCHUTZ",
+      "id": "PGKC-303",
+      "module_id": "PGKM-013",
+      "source_ids": [
+        "SRC-070",
+        "SRC-074"
+      ]
+    },
+    {
+      "aussage": "Der externe RPHI-02-Rollenauftrag verliert unter C1 fuer POS (1,13) und STOP (4,5) jeweils H=1 zu H=0.",
+      "aussagetyp": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "eigene_prueftiefe": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "evidence_status": "ORIGINAL_NICHT_PUBLIC_ODER_UNGEKLAERT",
+      "geltungsbereich": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "grenze": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "historischer_status": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "id": "A6N-C004",
+      "metadata_completion": "TECHNISCHE_STANDARDISIERUNG_OHNE_NEUBELEG",
+      "module_id": "PGKM-013",
+      "review_required": true,
+      "source_ids": []
+    },
+    {
+      "aussage": "Fuer feste alte Atom-IDs kann ihre einmal verlorene native getrennte Komponentenadressierung unter E-Hinzufuegen/C-Vereinigen nicht wiederhergestellt werden.",
+      "aussagetyp": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "eigene_prueftiefe": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "evidence_status": "ORIGINAL_NICHT_PUBLIC_ODER_UNGEKLAERT",
+      "geltungsbereich": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "grenze": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "historischer_status": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "id": "A6N-C005",
+      "metadata_completion": "TECHNISCHE_STANDARDISIERUNG_OHNE_NEUBELEG",
+      "module_id": "PGKM-013",
+      "review_required": true,
+      "source_ids": []
+    },
+    {
+      "aussage": "Intrinsische modale Rank-2-Rücksubstitution lässt sich im reduzierten QQ-Modell ohne Division durch det(K_Schur) durchführen.",
+      "aussagetyp": "FORMAL_BEGRENZT",
+      "eigene_prueftiefe": "ORIGINAL_LEMMA_GELESEN",
+      "geltungsbereich": "reduced QQ; angegebenes offenes Stratum",
+      "grenze": "Keine automatische 64D Full-C-Zertifikation.",
+      "historischer_status": "G3_LEMMA_MODAL",
+      "id": "PGKC-029",
+      "module_id": "PGKM-014",
+      "source_ids": [
+        "SRC-014"
+      ]
+    },
+    {
+      "aussage": "Das nachgereichte G3-Lemma grenzt einen behaupteten reduced-QQ-Rootcount=3 ausdrücklich vom exakten 64D Full-C-SC-Satz ab.",
+      "aussagetyp": "GELTUNG",
+      "eigene_prueftiefe": "ORIGINAL_LEMMA_GELESEN",
+      "geltungsbereich": "90330/trace/event10",
+      "grenze": "Beweis- und Repräsentationsobjekte nicht verschmelzen.",
+      "historischer_status": "REDUCED_ONLY",
+      "id": "PGKC-030",
+      "module_id": "PGKM-014",
+      "source_ids": [
+        "SRC-014"
+      ]
+    },
+    {
+      "aussage": "Die lokale 2×2-Modalrücksubstitution des G3-Lemmas ist in A6/3 exakt symbolisch nachgerechnet: beide Restkomponenten identisch null.",
+      "aussagetyp": "FORMAL",
+      "eigene_prueftiefe": "A6_3_EIGENE_EXAKTE_SYMBOLISCHE_RECHNUNG",
+      "geltungsbereich": "reduzierter QQ-Modalkern; epsilon≠0, d≠0, mu_j≠xi",
+      "grenze": "Keine neue Elimination Vollständigkeit, keine unabhängige S393-Drei-Root-Beweisführung und keine 64D Full-C-Zertifizierung.",
+      "historischer_status": "A6_3_SYMBOLIC_IDENTITY_PASS",
+      "id": "PGKC-275",
+      "module_id": "PGKM-014",
+      "source_ids": [
+        "SRC-014"
+      ]
+    },
+    {
+      "aussage": "Das G3-Original enthält die behauptete reduced-QQ-Drei-Root-Vollständigkeit, grenzt sie aber selbst vom 64D Full-C-Satz ab; A6/3 hat nur lokale Modalalgebra nachgerechnet.",
+      "aussagetyp": "STATUS_GUARD",
+      "eigene_prueftiefe": "ORIGINAL_G3_LEMMA_PLUS_SCOPE_GUARD",
+      "geltungsbereich": "90330/trace/event10, canonical symmetric reduced QQ",
+      "grenze": "Nicht vom exakten lokalen Algebra-PASS zur vollen globalen Kandidaten-/EventGerm-Klassifikation hochstufen.",
+      "historischer_status": "HISTORICAL_CLAIM_NOT_RERUN",
+      "id": "PGKC-276",
+      "module_id": "PGKM-014",
+      "source_ids": [
+        "SRC-014"
+      ]
+    },
+    {
+      "aussage": "Die geschichtete T0–T3/S1–S3-Typgrammatik erhält im Original eine formale Companion-Bestätigung.",
+      "aussagetyp": "POSITIV_BEGRENZT",
+      "eigene_prueftiefe": "ORIGINAL_ENTSCHEIDUNG_GELESEN",
+      "geltungsbereich": "FGT 14.10",
+      "grenze": "Keine native globale Trace-Coverage und keine automatische TSM-Physik.",
+      "historischer_status": "FGT_C__COMPANION_CONFIRMED",
+      "id": "PGKC-031",
+      "module_id": "PGKM-015",
+      "source_ids": [
+        "SRC-022"
+      ]
+    },
+    {
+      "aussage": "Die kanonische Instanziierung der geschichteten Grammatik ist im v1.39-Freeze ausdrücklich nicht geschlossen.",
+      "aussagetyp": "OFFEN",
+      "eigene_prueftiefe": "ORIGINAL_ENTSCHEIDUNG_GELESEN",
+      "geltungsbereich": "FGT v1.39",
+      "grenze": "Memory-Freeze v1.39 bleibt unverändert.",
+      "historischer_status": "CANONICAL_INSTANTIATION_NOT_CLOSED",
+      "id": "PGKC-032",
+      "module_id": "PGKM-015",
+      "source_ids": [
+        "SRC-022"
+      ]
+    },
+    {
+      "aussage": "Die Studien 0.44A–C formulieren und prüfen native Rewrite-/Lokalitätsgates.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.44; Endogene Lokalität und Rewrite-Relevanz; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Gate-I und Coarse-Sparsification sind nicht als Nachweis physikalischer Lokalität zu behandeln.",
+      "historischer_status": "historischer Prüfpfad; Abschluss im Einzelarchiv nachprüfen",
+      "id": "PGKC-036",
+      "module_id": "PGKM-016",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "0.45C findet Feasible-Set-/Constraint-Regulation.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.45; Predictive macroregime und Constraint-Regulation; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "0.45A findet keinen kleinen fortsetzungssuffizienten Present-State; 0.45B separat zu verifizieren.",
+      "historischer_status": "MIXED: 45A NEGATIVE, 45C POSITIVE",
+      "id": "PGKC-037",
+      "module_id": "PGKM-016",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "0.46A findet bewegliche Balancemannigfaltigkeit; 0.46B/C exakten rekursiven Effective-Unit-Quotienten auf regulär admissibler Domäne.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.46; Moving Balance und effective unit quotient; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein geometrischer Raum- oder dynamischer Closure-Beweis.",
+      "historischer_status": "POSITIVE MIT DOMAENGRENZE",
+      "id": "PGKC-038",
+      "module_id": "PGKM-016",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Globale Payloadwirkung setzt nach source-beteiligter C-Bindung ein.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.47; Binding-gated payload propagation; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine gleichwertige Wirkung vor Aktivierung.",
+      "historischer_status": "POSITIVE MIT AKTIVIERUNGSGUARD",
+      "id": "PGKC-039",
+      "module_id": "PGKM-016",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Breite Wiederverwendung gebildeter Einheiten.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.48; Recursive binding backbone; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Hypothese eines engen exklusiven 5–15%-Manifestationsbottlenecks verworfen.",
+      "historischer_status": "NEGATIVE / BOTTLENECK-STOP",
+      "id": "PGKC-040",
+      "module_id": "PGKM-016",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Skalenübergreifende kompositorische Constraint-Ordnung gefunden.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.49; Cross-scale compositional order; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine einfache Größen-/Massenselektion oder Raumdimension.",
+      "historischer_status": "POSITIVE, KEIN RAUMCLAIM",
+      "id": "PGKC-041",
+      "module_id": "PGKM-016",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "0.50A findet verschachtelte höhere Organisation; 0.50B ein gemeinsames, bewegliches, history-conditioned Response-Manifold.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.50; Higher-order organisation / Cascade sectors; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine autonome Higher-order Closure; keine dauerhaft getrennten Kaskadensektoren.",
+      "historischer_status": "POSITIVE_PARTIAL / POSITIVE",
+      "id": "PGKC-042",
+      "module_id": "PGKM-017",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Kontinuierliches Formenspektrum als Response-Deskriptor.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.51; Binding-form differentiation; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Starke prospektive Vorhersagekraft später herabgestuft.",
+      "historischer_status": "POSITIVE_PARTIAL / PREDICTOR-DOWNGRADE",
+      "id": "PGKC-043",
+      "module_id": "PGKM-017",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Historische Hypothese und Originalprüfung erfasst.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.52; Morphology as compressed history; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Claim Morphologie als komprimierte History später ausdrücklich superseded.",
+      "historischer_status": "SUPERSEDED / NICHT AKTIV",
+      "id": "PGKC-044",
+      "module_id": "PGKM-017",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Verkleinerte rekursive Memoryzustände d=1..32 geprüft.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.53; Predictive history quotient; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein endlicher kleiner prädiktiv suffizienter History-Quotient etabliert.",
+      "historischer_status": "NEGATIVE",
+      "id": "PGKC-045",
+      "module_id": "PGKM-017",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Restoring-/Regulationsstruktur auf Quantil- und Set-Ebene.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.54; Continuation cone / feasible-set shape; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Nicht bloß ein Mean-Level-Effekt; keine TSM-Rückholidentität.",
+      "historischer_status": "POSITIVE / DISTRIBUTIONAL",
+      "id": "PGKC-046",
+      "module_id": "PGKM-017",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Exakte Rewrite-Generatoralgebra identifiziert.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.55; Rewrite generator-span / cone decomposition; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Cone-Rang 2–3 ist kinematisch-algebraisch, nicht räumliche Dimension.",
+      "historischer_status": "POSITIVE MIT DIMENSION-STOP",
+      "id": "PGKC-047",
+      "module_id": "PGKM-017",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Getypte Möglichkeitsfeld-/Candidate-Grammar-Regulation mit J=QDP.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.56; Leakage operator factorisation; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein zusätzlich bewiesenes metrisches Transportfeld.",
+      "historischer_status": "POSITIVE",
+      "id": "PGKC-048",
+      "module_id": "PGKM-017",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "E/C-spezifische Gain–Loss-Bilanz, C→Q→E-Recycling und Interface-Referenz.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.57; PQ interface budget; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Generic-projector Nullmodell reicht nicht; nicht globale TSM-Null-Linie.",
+      "historischer_status": "POSITIVE MIT REFERENZ-GUARD",
+      "id": "PGKC-049",
+      "module_id": "PGKM-017",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "E internalisiert und C externalisiert Kopplungen; K_ij persistent und fortsetzungsrelevant.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.58; Internalized coupling / Proto-Geometrie; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine genuine Lokalität; d_P keine Raumdistanz.",
+      "historischer_status": "POSITIVE / LOCALITY NEGATIVE",
+      "id": "PGKC-050",
+      "module_id": "PGKM-018",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Kontinuierliche, heterogene bindungsarme und bindungsreiche relative Zonen.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.59; Zonal manifestation and propensity; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein exakter 0.8-Naturpunkt, keine robuste native Hysterese, keine stabile Adjazenz.",
+      "historischer_status": "POSITIVE / NUMEROLOGIE-STOP",
+      "id": "PGKC-051",
+      "module_id": "PGKM-018",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "E/C-dynamischer Composite-Boundary-Zyklus, operationales Innen/Außen.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.60; Binding-induced boundary; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Absolute Kopplung bleibt global; keine physikalische lokale Grenze.",
+      "historischer_status": "POSITIVE / LOCALITY NEGATIVE",
+      "id": "PGKC-052",
+      "module_id": "PGKM-018",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Selektive modulartige Grenzstruktur teilweise persistent.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.61; Composite interface network; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine robuste zusätzliche Community-Lokalität oder begrenzte Graphreichweite.",
+      "historischer_status": "POSITIVE / MODULAR LOCALITY NEGATIVE",
+      "id": "PGKC-053",
+      "module_id": "PGKM-018",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Activation, outward reach und First-Hit-Latenz unterscheidbar; Response nichtreziprok.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.62; Directed accessibility; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine bounded directed reach; post-activation weiterhin global.",
+      "historischer_status": "PARTIAL / REACH NEGATIVE",
+      "id": "PGKC-054",
+      "module_id": "PGKM-018",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Source-C-Aktivierung verändert global P/Q und ancestry-fremde Eventflächen.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.63; Activation-dependent event causal order; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine begrenzte Event-Causal-Ancestry; unveränderte native Lokalitätsroute geschlossen.",
+      "historischer_status": "POSITIVE / LOCALITY BRANCH CLOSED",
+      "id": "PGKC-055",
+      "module_id": "PGKM-018",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "0.64A findet persistente Response-Mesoorganisation mit zusätzlicher Future-Information.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.64; Meso process layers and robustness; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Lumpability, Shielding, Cross-Microstate Closure fehlen; 0.64B Reporter-Mismatch-Rescue nicht unterstützt.",
+      "historischer_status": "POSITIVE_PARTIAL / NEGATIVE_ROBUSTNESS",
+      "id": "PGKC-056",
+      "module_id": "PGKM-018",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Modifizierte K/R- bzw. K/A-Kernel mit operativer History-Retention und endogenem Accessibility-Feedback.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.65; Historical reference and accessibility feedback; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine robuste Closure, Shielding oder Überlegenheit der History; weiches Q_eff nicht stets Projektor.",
+      "historischer_status": "MODIFIED KERNEL / POSITIVE_WITH_NEGATIVE",
+      "id": "PGKC-057",
+      "module_id": "PGKM-019",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Zeitliche Reihenfolge bei gleicher B und Signatur kann Next-Crossing-Timing ändern.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.66; Distributed residual history field; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein stabiler Winner-/Branchorder oder Closure-/Shielding-Nachweis.",
+      "historischer_status": "MODIFIED KERNEL / POSITIVE_WITH_NEGATIVE",
+      "id": "PGKC-058",
+      "module_id": "PGKM-019",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "G_AGG PASS, nichtpaarweise höherordentliche Kompatibilität, persistent cross-layer alignment, Rewrite-Generator-Konfluenz.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.67; Native relational aggregation; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "G_TOPO, G_CLOSURE, metrische Raumordnung und Aggregationsrichtung nicht erworben.",
+      "historischer_status": "POSITIVE_WITH_NEGATIVE",
+      "id": "PGKC-059",
+      "module_id": "PGKM-019",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "0.68A/C/D Aufbau eines process/rewrite atlas und kandidatenspezifischer Manifestability-Faser.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.68; Scale-stable rewrite, covariant process atlas, Manifestability; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Noch keine abgeschlossene reziproke Feldarchitektur.",
+      "historischer_status": "FROZEN STRUKTUR; EINZELFINALS NICHT AUSGEFUEHRT",
+      "id": "PGKC-060",
+      "module_id": "PGKM-019",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Fiber-Differenz sagt spätere Base-Divergenz in coarse-confluent E/E-Pfaden voraus; Hierarchical Manifestability Rewrite Architecture.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.69; Recursive Base–Fiber architecture; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "G_RECIP, G_FIBER_TRANSPORT und G_FIELD_ARCH FAIL; pre-metric phase nicht geöffnet.",
+      "historischer_status": "MIXED / ARCHITEKTUR POSITIV, FIELD FAIL",
+      "id": "PGKC-061",
+      "module_id": "PGKM-019",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Bewegliche Referenz; reales Rewrite ändert nächsten Möglichkeitshorizont.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.70; Dynamic reference / Alignment / Passage / Rewrite; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "G_RESTORE FAIL: realisierter Actor nicht privilegiert restoring-günstig.",
+      "historischer_status": "POSITIVE / RESTORE NEGATIVE",
+      "id": "PGKC-062",
+      "module_id": "PGKM-020",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Mehrschrittige Return-like Struktur relativ zu beweglicher Referenz.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.71; Field trajectory restoring; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Admissible Alternativen kehren ebenso zurück; keine native Rückholselektion.",
+      "historischer_status": "POSITIVE RETURN-LIKE / RESTORE NEGATIVE",
+      "id": "PGKC-063",
+      "module_id": "PGKM-020",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Gezielte zusätzliche Reference→Crossing-Kopplung geprüft.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.72; Reference-conditioned passage coupling; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Diese harte Zusatzmechanik besteht die primären Gates nicht; STOP.",
+      "historischer_status": "NEGATIVE / NEW TERM STOP",
+      "id": "PGKC-064",
+      "module_id": "PGKM-020",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Differenzierte Interface-Dynamik und Transportbeschreibung.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.73; Pre-reactive restoring field transport; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "R_if_total als einzelner TSM-Rückholcarrier downgraded; zwei Kanäle nicht skalar zusammenziehen.",
+      "historischer_status": "PARTIAL / SCALAR STOP",
+      "id": "PGKC-065",
+      "module_id": "PGKM-020",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Set-/distributionale Cone-Regulation erneut repliziert.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.74; Feasible-set restoring geometry; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "G_SET_RESTORE FAIL gegen spezifischen Referenz-/Axiom-II-Anspruch.",
+      "historischer_status": "POSITIVE REGULATION / TSM-IDENTITY STOP",
+      "id": "PGKC-066",
+      "module_id": "PGKM-020",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "J=QDP, algebraische Gain/Loss-Bilanz und echte Source/Sink-Möglichkeitsänderungen.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.75; Relational transport and cone regulation; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein notwendiges Fluid-PDE; keine Burgers-Selbstadvektion / erfundene Viskosität.",
+      "historischer_status": "POSITIVE / PDE STOP",
+      "id": "PGKC-067",
+      "module_id": "PGKM-020",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "0.70 berichtet bei gleichem Crossing-State einen Vergleich mit/ohne Rewrite, dessen nachfolgende Kandidatenhorizonte und Fortsetzungen voneinander abweichen.",
+      "aussagetyp": "POSITIVER_SCOPE",
+      "eigene_prueftiefe": "QUELLEN_SYNTHESEN_BERICHT",
+      "geltungsbereich": "PGK-0.70, eingefrorene damalige Variante",
+      "grenze": "Originäres 0.70-Replayartefakt hier nicht frisch ausgeführt; Same-State ist der historische Berichtsvertrag.",
+      "historischer_status": "HISTORISCH_BERICHTET_NICHT_NEU_REPLAYT",
+      "id": "PGKC-282",
+      "module_id": "PGKM-020",
+      "source_ids": [
+        "SRC-004"
+      ]
+    },
+    {
+      "aussage": "0.75 berichtet eine Quelle/Senke-Bilanz der Rewrites und einen projektorbezogenen Gain/Loss-Beitrag zur aktuellen Continuation-Cone-Regulation.",
+      "aussagetyp": "POSITIVER_SCOPE",
+      "eigene_prueftiefe": "QUELLEN_SYNTHESEN_BERICHT",
+      "geltungsbereich": "PGK-0.75 spezieller K0-Fork",
+      "grenze": "Keine universelle Rückholfunktion oder vollständige neue Feldgleichung.",
+      "historischer_status": "HISTORISCH_BERICHTET_NICHT_NEU_REPLAYT",
+      "id": "PGKC-283",
+      "module_id": "PGKM-020",
+      "source_ids": [
+        "SRC-004"
+      ]
+    },
+    {
+      "aussage": "Ein nachgewiesener Unterschied zwischen Kandidatenmengen nach Rewrite und Rewrite-Ablation impliziert allein noch keine Verbesserung einer unabhängig gewählten Funktion.",
+      "aussagetyp": "MATHEMATISCH_NEGATIVE_IMPLIKATION",
+      "eigene_prueftiefe": "EXAKTES_ABSTRAKTES_GEGENMODELL",
+      "geltungsbereich": "abstraktes ein-Schritt-Kandidatenset",
+      "grenze": "Der Witness ist kein Gegenbeweis gegen den historischen 0.70-Kausalbefund.",
+      "historischer_status": "A6_4_EIGENE_FORMALPRUEFUNG",
+      "id": "PGKC-293",
+      "module_id": "PGKM-020",
+      "source_ids": [
+        "SRC-076",
+        "SRC-077"
+      ]
+    },
+    {
+      "aussage": "Die A6/4-Gate-Folge G0–G7 ist ein Forschungsfilter: bestandene Kandidaten- oder Rewrite-Teiltests übertragen keinen PASS auf die spätere prospektive Regulationsleistung.",
+      "aussagetyp": "METHODIK",
+      "eigene_prueftiefe": "THEORETISCHE_METHODIK",
+      "geltungsbereich": "Nichtkanonisches Auditverfahren",
+      "grenze": "Gates sind keine neuen PGK-Naturbedingungen und ändern historische Versuchskontrakte nicht.",
+      "historischer_status": "A6_4_METHODISCHER_NEUENTWURF",
+      "id": "PGKC-300",
+      "module_id": "PGKM-020",
+      "source_ids": [
+        "SRC-076"
+      ]
+    },
+    {
+      "aussage": "Die identifizierte Optionsrueckwirkung ist kein Beleg einer wiederherstellenden oder verbesserten endogenen Selektion; POS C1 verringert alten Rollenraum trotz spaeteren Kandidatenneubildungen.",
+      "aussagetyp": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "eigene_prueftiefe": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "evidence_status": "ORIGINAL_NICHT_PUBLIC_ODER_UNGEKLAERT",
+      "geltungsbereich": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "grenze": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "historischer_status": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "id": "A6N-C007",
+      "metadata_completion": "TECHNISCHE_STANDARDISIERUNG_OHNE_NEUBELEG",
+      "module_id": "PGKM-020",
+      "review_required": true,
+      "source_ids": []
+    },
+    {
+      "aussage": "Winner-unabhängige präreaktive Pareto-Teilordnung W; F→W→Passage.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.76; Possibility field and passage/renewal; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine actor-spezifische Organisations-Neuerzeugung.",
+      "historischer_status": "POSITIVE / ACTOR-RENEWAL NEGATIVE",
+      "id": "PGKC-068",
+      "module_id": "PGKM-021",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Klasse erklärt Organisationsfamilie, Actor eher Mikrobesetzung; gesetzmäßige Reinstantiierung.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.77; Recursive organisational law; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine actor-spezifische Organisationsgesetzlichkeit; keine full operator W-closure.",
+      "historischer_status": "POSITIVE / MICRO-MESO GUARD",
+      "id": "PGKC-069",
+      "module_id": "PGKM-021",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Zustand/Klasse/Kontext verbessern held-out Folgezustandsregel.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.78; Organisational transition grammar; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein sicherer Zusatz expliziter älterer History, kein kleiner autonomer Makroquotient.",
+      "historischer_status": "POSITIVE PARTIAL / MACROQUOTIENT FAIL",
+      "id": "PGKC-070",
+      "module_id": "PGKM-021",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Freie 2-/4-/8-Schritt-Rekursion unter vorgegebenem nativen Klassenwort repliziert.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.79; Predictive organisational state; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Strikte Zustandssuffizienz nicht bewiesen; keine selbstgenerierte Rewriteklassenfolge.",
+      "historischer_status": "CONDITIONAL COMPOSITION PASS / AUTONOMY OPEN",
+      "id": "PGKC-071",
+      "module_id": "PGKM-021",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "State-equivalence Audits erneut; 0.81 gemeinsam archiviert.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.80; Equivalence replication / History tests; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Strikte 1%-Suffizienz nicht entschieden; ein History-Kanal unscharf, kein legitimer positiver History-Bedarf.",
+      "historischer_status": "NOT ESTABLISHED / STOP SAME TEST",
+      "id": "PGKC-072",
+      "module_id": "PGKM-021",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Z liefert fast immer zulässigen Klassenbereich.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.81; Endogenous rewrite-class selection; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Z→K als zuverlässiger Realized-Class-Generator FAIL, auch weicher Posterior rettet nicht.",
+      "historischer_status": "NEGATIVE / IN JOINT 0.80–0.81 FINAL",
+      "id": "PGKC-073",
+      "module_id": "PGKM-021",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Klassenverteilung des eingefrorenen Alignment liefert eigenständige Meso-Passageinformation.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.82; Passage class generation; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Candidate-Pushforward allein unzureich; selbstgewählte K-Klasse schließt Next-Z nicht.",
+      "historischer_status": "POSITIVE Meso / AUTONOMY FAIL",
+      "id": "PGKC-074",
+      "module_id": "PGKM-021",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Class-/Actor-Rank und native Hierarchie informativ.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.83; Hierarchical passage class→actor; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Deterministischer Top-1-Winner und Successor-/Field-Fidelity nicht repliziert überlegen.",
+      "historischer_status": "MIXED / TOP1 FAIL",
+      "id": "PGKC-075",
+      "module_id": "PGKM-021",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Hohe Actor-Abdeckung durch kleine Kandidatenfenster.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.84; Hierarchical passage window; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "2×2-Fenster nicht besser als gleich großes globales; keine strukturelle Nachbarschaft; Envelope-Gates FAIL.",
+      "historischer_status": "NEGATIVE WINDOW / ROOT-RACE HYPOTHESIS",
+      "id": "PGKC-076",
+      "module_id": "PGKM-021",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "0.76–0.77 berichten starke divergierende Candidate-Mikrobelegung bei dennoch ähnlicher wiederkehrender Organisationsform nach Alternativrewrites.",
+      "aussagetyp": "POSITIVER_SCOPE",
+      "eigene_prueftiefe": "QUELLEN_SYNTHESEN_BERICHT",
+      "geltungsbereich": "PGK-0.76/0.77",
+      "grenze": "Reinstantiierung einer Form belegt nicht Gleichheit von Kandidaten oder selektierten Ereignissen.",
+      "historischer_status": "HISTORISCH_BERICHTET_NICHT_NEU_REPLAYT",
+      "id": "PGKC-284",
+      "module_id": "PGKM-021",
+      "source_ids": [
+        "SRC-004"
+      ]
+    },
+    {
+      "aussage": "0.83s robuste Top-1-Klassen-zu-Kandidaten-zu-Nachfolger-Leistung ist in beiden Held-outs nicht erworben.",
+      "aussagetyp": "NEGATIV",
+      "eigene_prueftiefe": "QUELLEN_SYNTHESEN_BERICHT",
+      "geltungsbereich": "PGK-0.83 eingefrorener Meso-Pfad",
+      "grenze": "Positive Klasseninformation bleibt erhalten; negative Top-1-Generativität nicht in allgemeinen No-Go für alle Selektoren umdeuten.",
+      "historischer_status": "HISTORISCH_NEGATIV",
+      "id": "PGKC-285",
+      "module_id": "PGKM-021",
+      "source_ids": [
+        "SRC-004"
+      ]
+    },
+    {
+      "aussage": "Native Root-Reihenfolge wird durch Reporter getragen.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.85; Crossing spectrum root margin; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Margin erklärt Residualfehler nicht robust; G_ROOT_RACE_EXPLANATION FAIL.",
+      "historischer_status": "ROOT ORDER PASS / ROOT-MARGIN FAIL",
+      "id": "PGKC-077",
+      "module_id": "PGKM-022",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Realisierter Actor/Branch verändert nächsten Möglichkeitshorizont und Competition.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.86; Manifestation back-coupling; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine TSM-Cosonanz-, Axiom-II-, Zeit- oder Raumidentität.",
+      "historischer_status": "POSITIVE / BACK-COUPLING",
+      "id": "PGKC-078",
+      "module_id": "PGKM-022",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Recurrent, path-compositional Wirkung und Cross-Level-Composite-Rebinding.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.87; Recurrent branch-resolved path composition; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine semigroup/Markov Closure, Raum oder physikalische Zeit.",
+      "historischer_status": "POSITIVE / RECURSION PASS",
+      "id": "PGKC-079",
+      "module_id": "PGKM-022",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Globale Exact-collision-Coverage ungenügend.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.88; Minimal native process history; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Lokale Composite-Suffizienz FAIL; globale History-Suffizienz NOT ADJUDICABLE.",
+      "historischer_status": "NEGATIVE LOCAL / GLOBAL OPEN",
+      "id": "PGKC-080",
+      "module_id": "PGKM-022",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Scheinbar verschiedene History-Hashes bei gleichem M0.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.89; Native effective-state collision; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Exakte M0-Kollisionen nach Faithfulness nicht repliziert: Repräsentationsalias; Confluence NOT ADJUDICABLE.",
+      "historischer_status": "NEGATIVE / REPRESENTATION CORRECTION",
+      "id": "PGKC-081",
+      "module_id": "PGKM-022",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Repräsentationsquotient erhält aktuelle, Ein-Schritt- und Mehrschrittgesetze.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.90; Native representation quotient; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Raw gluing choices sind Gauge in geprüfter Klasse, keine neuen physikalischen States.",
+      "historischer_status": "POSITIVE / QUOTIENT INVARIANT",
+      "id": "PGKC-082",
+      "module_id": "PGKM-022",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Q→C(Q)→S(Q)→T(Q,alpha*)→Q' im getesteten K0 geschlossen.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.91; Full native quotient continuation; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kontrollierte Alternativen bleiben kausal; native Branch keine Zusatzvariable; keine Physikidentität.",
+      "historischer_status": "POSITIVE / DOMAIN LIMITED",
+      "id": "PGKC-083",
+      "module_id": "PGKM-022",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Quotient-native Prozessregel ohne zusätzlichen Lift etabliert (historischer Erkenntnisbaum).",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.92; Direct quotient process law; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Original-Final ohne neuen unabhängigen Recompute; keine universelle Physik.",
+      "historischer_status": "POSITIVE REPORTED / FINAL OPEN",
+      "id": "PGKC-084",
+      "module_id": "PGKM-023",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Native Action-/Relation-Grammatik im Forschungsstamm positiv registriert.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.93; Native action relation grammar; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine Geometrie-/Zeitidentität; Originalfinal noch ungeprüft.",
+      "historischer_status": "POSITIVE REPORTED / FINAL OPEN",
+      "id": "PGKC-085",
+      "module_id": "PGKM-023",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Kontextsensitive höherordentliche Passage-Grammatik im Forschungsstamm erfasst.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.94; Triadic context dependence; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "No global closure inferred; Originalfinal noch ungeprüft.",
+      "historischer_status": "POSITIVE REPORTED / FINAL OPEN",
+      "id": "PGKC-086",
+      "module_id": "PGKM-023",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Candidate-Formation und Activation als getrennte Kanalstufen.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.95; Native passage grammar factorization; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine punktförmige Mini-State-/Autonomie-Suffizienz.",
+      "historischer_status": "POSITIVE REPORTED / FACTOR GUARD",
+      "id": "PGKC-087",
+      "module_id": "PGKM-023",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "PRES-1: strukturelle Kandidaten-/Transition-Rekonstruktion held-out exakt.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.96; Birth channel / reservoir; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Reduzierte Crossing-/Actor-Activation nicht geschlossen.",
+      "historischer_status": "STRUCTURAL EXACT / ACTIVATION OPEN",
+      "id": "PGKC-088",
+      "module_id": "PGKM-023",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "CW1 schließt C-role-Repräsentation durch kanonischen Zeugen.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.97; Crossing residual C-role; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Low-order CRX-PRED Germs negativ; dynamischer Crossingrest separat.",
+      "historischer_status": "REPRESENTATION EXACT / GERM STOP",
+      "id": "PGKC-089",
+      "module_id": "PGKM-023",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Candidate-spezifische Crossing-Response und C→C exakt rekonstruierbar.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.98; Full spectral response; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "64/64 Modi und volle Frequenzunterstützung; keine exact sparse/compressed spectrum reduction.",
+      "historischer_status": "EXACT FULL SUPPORT / COMPRESSION FAIL",
+      "id": "PGKC-090",
+      "module_id": "PGKM-023",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Alle 1664 getesteten Candidate-Response-Räume Rang 64.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.99; Krylov minimal realization; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein exakter Candidate-lokaler Mini-State, PCA/top-k als exakte Rettung verworfen.",
+      "historischer_status": "FULL RANK / REDUCTION FAIL",
+      "id": "PGKC-091",
+      "module_id": "PGKM-023",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Realer Rewrite verändert sofortige Response auch bei NO_DIRECT Überlappung.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.100; Event-induced response deformation; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein zusätzlicher strikt verzögerter P_prop-Effekt; same-current-state Clone sufficiency unterstützt.",
+      "historischer_status": "IMMEDIATE COUPLING / DELAY FAIL",
+      "id": "PGKC-092",
+      "module_id": "PGKM-023",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "NO_DIRECT C→E-Wirkung in getesteter Interventionsleiter vollständig durch Q-Änderung vermittelt.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.101; Q-mediated immediate back coupling; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "ΔQ Innovationsrang ≠ Raumdimension, Q ≠ TSM-Null-Linie.",
+      "historischer_status": "EXACT Q-MEDIATED / DOMAIN LIMITED",
+      "id": "PGKC-093",
+      "module_id": "PGKM-023",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Kontextabhängige Absorption späterer Innovation durch vorherigen Rewrite.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.102; Sequential projector-update composition; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kontextabhängigkeit ≠ globale Endzustands-Nichtkonfluenz.",
+      "historischer_status": "POSITIVE / CONFLUENCE OPEN",
+      "id": "PGKC-094",
+      "module_id": "PGKM-024",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Exakte Join-Subalgebra für gedeckte orthogonale/nested Paare.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.103; Innovation projector relation algebra; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Nichtkommutierende Algebra entscheidet native Event-Verfügbarkeit nicht.",
+      "historischer_status": "EXACT COVERED / DOMAIN GUARD",
+      "id": "PGKC-095",
+      "module_id": "PGKM-024",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Unterscheidung ABSORBED, INVALID, ABSENT, EXECUTABLE durch native Domain-Leiter.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.104; Sequential native admissibility; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Algebraisches Komplement erzeugt keinen fehlenden Event.",
+      "historischer_status": "ADMISSIBILITY FOUND / GUARD",
+      "id": "PGKC-096",
+      "module_id": "PGKM-024",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Exakter konditionaler Join auf nativ auswertbarer Domain: Confirmation 133/133, Final 113/113.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.105; Partial projector-join law; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Algebraische Verfügbarkeit ≠ native event availability; nichtalle Richtungen auswertbar.",
+      "historischer_status": "EXACT CONDITIONAL / PARTIAL DOMAIN",
+      "id": "PGKC-097",
+      "module_id": "PGKM-024",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Join-Lift auf 43/43 Confirmation und 55/55 Final Länge-3-Pfaden; Q-konfluente gleiche Eventsets.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.106; Finite native path reachability; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Schrittweise Novelty history-abhängig; keine vollen State-/Domain-Gleichheiten oder physische Zeit.",
+      "historischer_status": "EXACT FINITE PATH / GUARDS",
+      "id": "PGKC-098",
+      "module_id": "PGKM-024",
+      "source_ids": [
+        "SRC-030",
+        "SRC-033"
+      ]
+    },
+    {
+      "aussage": "0.106 legt den Bereich einer endlichen nativen Path-Enumeration als besonderen Vertrag fest; er ersetzt keine allgemeine autonome Evolutionsgleichung.",
+      "aussagetyp": "DIREKTE_QUELLENPRUEFUNG",
+      "eigene_prueftiefe": "ORIGINAL_BEGLEITGUTACHTEN_ODER_DECISION_DIREKT_GELESEN",
+      "geltungsbereich": "PGK-0.106, historische Entscheidungsfassung",
+      "grenze": "Kein eigenständiger neuer Runner oder vollständiger mathematischer Proof; A3b-Befund bleibt getrennt.",
+      "historischer_status": "ZEITGENOESSISCHER_ORIGINALBERICHT_BEGRIFFENZT",
+      "id": "PGKC-166",
+      "module_id": "PGKM-024",
+      "source_ids": [
+        "SRC-033"
+      ]
+    },
+    {
+      "aussage": "0.106 berichtet Q-Konfluenz für denselben Ereignissatz bei nativen Länge-3-Pfaden, zugleich pfadabhängige Novelty-Spektren und viele native-undefinierte algebraische Weiterführungen.",
+      "aussagetyp": "POSITIVER_SCOPE",
+      "eigene_prueftiefe": "QUELLENBERICHT_NICHT_NEU_REPLAYT",
+      "geltungsbereich": "0.106 Confirmation/Final, Länge 3",
+      "grenze": "Q-Endpunkt ≠ Full-State/Domain-Konfluenz; kein universeller All-Path-Satz.",
+      "historischer_status": "HISTORISCH_EXAKT_BERICHTET",
+      "id": "PGKC-286",
+      "module_id": "PGKM-024",
+      "source_ids": [
+        "SRC-033"
+      ]
+    },
+    {
+      "aussage": "Endpunkt-Q-Konfluenz impliziert logisch keine Vollzustands- oder Kandidatendomänen-Konfluenz; dies ist durch ein neues endliches Gegenmodell unabhängig gezeigt.",
+      "aussagetyp": "MATHEMATISCH_NEGATIVE_IMPLIKATION",
+      "eigene_prueftiefe": "EXAKTES_ABSTRAKTES_GEGENMODELL",
+      "geltungsbereich": "endliche abstrakte Zustandsklassen, nicht PGK-native Pfade",
+      "grenze": "Der abstrakte Witness beweist nicht, dass PGK genau diese historischen Tags benutzt.",
+      "historischer_status": "A6_4_EIGENE_FORMALPRUEFUNG",
+      "id": "PGKC-287",
+      "module_id": "PGKM-024",
+      "source_ids": [
+        "SRC-076",
+        "SRC-077"
+      ]
+    },
+    {
+      "aussage": "Korrigierter Current-State-Test im Companion als OUTCOME A akzeptiert.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.107; Current-state relative generative sufficiency; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Nur im eingefrorenen Prüfkontrakt; keine absolute Ursprungsthese.",
+      "historischer_status": "CORRECTED A ACCEPTED",
+      "id": "PGKC-099",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-030",
+        "SRC-040"
+      ]
+    },
+    {
+      "aussage": "Companion bestätigt die definierte endogene Domain-Veränderung, OUTCOME B.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.108; Endogenous manifest-state domain flow; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Bewegung relational, nicht räumlich; keine physikalische Zeit.",
+      "historischer_status": "B ACCEPTED",
+      "id": "PGKC-100",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-030",
+        "SRC-041"
+      ]
+    },
+    {
+      "aussage": "Native Adjacency/Feasible-set geprüft.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.109; Native domain adjacency; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Primärer Gate wegen Coverage NOT ADJUDICABLE; kein Geometrienachweis.",
+      "historischer_status": "OUTCOME D / COVERAGE LIMIT",
+      "id": "PGKC-101",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-030",
+        "SRC-042"
+      ]
+    },
+    {
+      "aussage": "Finalarchive zu nativer Domain-Identität lokalisiert; Parent für 0.111.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.110; Native domain identity transport; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine Original-Decision oder unabhängiger Vollrecompute in diesem Audit.",
+      "historischer_status": "FINAL LOCATED / DECISION NOT RECHECKED",
+      "id": "PGKC-102",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "F2 Domain-Adressierung als strenger Test durchgeführt.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.111; Full-state native generative closure; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Full current state generatively sufficient im eingefrorenen FULL-C2-Test nicht erreicht.",
+      "historischer_status": "OUTCOME D / F2 FAIL",
+      "id": "PGKC-103",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-030",
+        "SRC-043"
+      ]
+    },
+    {
+      "aussage": "Nach 0.112 HOLD korrigierter 0.112R-Audit, OUTCOME A akzeptiert.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.112; Generative state boundary (0.112R); Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Unkorrigiertes 0.112 nicht gleich der finalen Revision.",
+      "historischer_status": "CORRECTED A / SUPERSEDES HOLD",
+      "id": "PGKC-104",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-030",
+        "SRC-044"
+      ]
+    },
+    {
+      "aussage": "Korrigierte native Selektor-Entscheidung bestätigt.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.113; Decision integration / selector (0.113R); Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Gamma-Scope bleibt partial; vorangehende 0.113 HOLD nicht zu übergehen.",
+      "historischer_status": "CORRECTED PASS / GAMMA PARTIAL",
+      "id": "PGKC-105",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-030",
+        "SRC-045"
+      ]
+    },
+    {
+      "aussage": "Globale E+C Selected-Path-Closure nach Begleitbericht.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.114; Selected passage occurrence; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein zusätzlicher autonomer Raumzeit-Mechanismus.",
+      "historischer_status": "OUTCOME A / PASSAGE CLOSED",
+      "id": "PGKC-106",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-030",
+        "SRC-046"
+      ]
+    },
+    {
+      "aussage": "0.115A lokalisiert Alias-Effekte; 0.115C nativer kandidatenspezifischer Response-/Surface-Träger, delayed reentry 23/59 Type-II-Paare.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.115; Orientation carrier / surface response; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "B mobile carrier ≠ static P/Q; Return-order partial; clock/geometry/TSM-H unopened.",
+      "historischer_status": "A/C CHAIN / 0.115C ZIP DIRECTLY CRC+SHA CHECKED",
+      "id": "PGKC-107",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-030",
+        "SRC-047",
+        "SRC-065",
+        "SRC-066"
+      ]
+    },
+    {
+      "aussage": "0.111 meldet für die strenge Full-State-Closure einen F2-Domain-Admissibility-Ausfall, trotz weiterer positiver Teiltests.",
+      "aussagetyp": "DIREKTE_QUELLENPRUEFUNG",
+      "eigene_prueftiefe": "ORIGINAL_BEGLEITGUTACHTEN_ODER_DECISION_DIREKT_GELESEN",
+      "geltungsbereich": "PGK-0.111, historische Entscheidungsfassung",
+      "grenze": "Kein eigenständiger neuer Runner oder vollständiger mathematischer Proof; A3b-Befund bleibt getrennt.",
+      "historischer_status": "ZEITGENOESSISCHER_ORIGINALBERICHT_BEGRIFFENZT",
+      "id": "PGKC-167",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-043"
+      ]
+    },
+    {
+      "aussage": "0.112R dokumentiert nach Korrektur einen eingeschränkten positiven Outcome A; der ursprüngliche HOLD darf historisch nicht verschwinden.",
+      "aussagetyp": "DIREKTE_QUELLENPRUEFUNG",
+      "eigene_prueftiefe": "ORIGINAL_BEGLEITGUTACHTEN_ODER_DECISION_DIREKT_GELESEN",
+      "geltungsbereich": "PGK-0.112, historische Entscheidungsfassung",
+      "grenze": "Kein eigenständiger neuer Runner oder vollständiger mathematischer Proof; A3b-Befund bleibt getrennt.",
+      "historischer_status": "ZEITGENOESSISCHER_ORIGINALBERICHT_BEGRIFFENZT",
+      "id": "PGKC-168",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-044"
+      ]
+    },
+    {
+      "aussage": "0.113R nimmt keine einzigartige autonome Native-Decision-Operatorauswahl in Anspruch.",
+      "aussagetyp": "DIREKTE_QUELLENPRUEFUNG",
+      "eigene_prueftiefe": "ORIGINAL_BEGLEITGUTACHTEN_ODER_DECISION_DIREKT_GELESEN",
+      "geltungsbereich": "PGK-0.113, historische Entscheidungsfassung",
+      "grenze": "Kein eigenständiger neuer Runner oder vollständiger mathematischer Proof; A3b-Befund bleibt getrennt.",
+      "historischer_status": "ZEITGENOESSISCHER_ORIGINALBERICHT_BEGRIFFENZT",
+      "id": "PGKC-169",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-045"
+      ]
+    },
+    {
+      "aussage": "0.114 unterscheidet tatsächlich selected E+C passage von nur möglichen Kandidaten.",
+      "aussagetyp": "DIREKTE_QUELLENPRUEFUNG",
+      "eigene_prueftiefe": "ORIGINAL_BEGLEITGUTACHTEN_ODER_DECISION_DIREKT_GELESEN",
+      "geltungsbereich": "PGK-0.114, historische Entscheidungsfassung",
+      "grenze": "Kein eigenständiger neuer Runner oder vollständiger mathematischer Proof; A3b-Befund bleibt getrennt.",
+      "historischer_status": "ZEITGENOESSISCHER_ORIGINALBERICHT_BEGRIFFENZT",
+      "id": "PGKC-170",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-046"
+      ]
+    },
+    {
+      "aussage": "0.115C hält eine candidate response surface family fest; native Return-/Gleichfunktions-Universalität folgt daraus nicht.",
+      "aussagetyp": "DIREKTE_QUELLENPRUEFUNG",
+      "eigene_prueftiefe": "ORIGINAL_BEGLEITGUTACHTEN_ODER_DECISION_DIREKT_GELESEN",
+      "geltungsbereich": "PGK-0.115, historische Entscheidungsfassung",
+      "grenze": "Kein eigenständiger neuer Runner oder vollständiger mathematischer Proof; A3b-Befund bleibt getrennt.",
+      "historischer_status": "ZEITGENOESSISCHER_ORIGINALBERICHT_BEGRIFFENZT",
+      "id": "PGKC-171",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-065"
+      ]
+    },
+    {
+      "aussage": "Verfügbare algebraische Richtung, native Zulässigkeit, ausgewähltes Root und funktionale Regeneration bilden getrennte Existenz-/Quantorverträge.",
+      "aussagetyp": "GELTUNGSGRENZE",
+      "eigene_prueftiefe": "QUELLENGEBUNDENE_KONKORDANZ",
+      "geltungsbereich": "0.106, 0.114, FSTT und RΦ",
+      "grenze": "Eine bloß algebraisch definierte Complement-Richtung begründet keinen nativen Pfeil.",
+      "historischer_status": "A6_4_FACHLICHE_SYNTHESE",
+      "id": "PGKC-297",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-005",
+        "SRC-035"
+      ]
+    },
+    {
+      "aussage": "Als nächster gültiger Test muss dieselbe Native-Variante vorab Psi, Sel_native, T, Funktionsproxy und serielles Nullmodell fixieren; spätere Held-outs bleiben verschlossen.",
+      "aussagetyp": "OFFENES_BRUECKENGATE",
+      "eigene_prueftiefe": "THEORETISCHER_KRITERIENENTWURF",
+      "geltungsbereich": "neue Forschung, noch nicht ausgeführt",
+      "grenze": "Vorab G0–G7 bestimmen, negative Originalgates nicht nachträglich modifizieren.",
+      "historischer_status": "A6_4_NEUES_PRUEFPROTOKOLL",
+      "id": "PGKC-305",
+      "module_id": "PGKM-025",
+      "source_ids": [
+        "SRC-020",
+        "SRC-076"
+      ]
+    },
+    {
+      "aussage": "Strukturelle nichtpaarweise Higher-order Ordnung gegen 0.67A wieder geprüft.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.116; Cross-level higher-order; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Autonome H-Dynamik nicht etabliert; only structural higher order.",
+      "historischer_status": "STRUCTURAL ONLY",
+      "id": "PGKC-108",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-030",
+        "SRC-048"
+      ]
+    },
+    {
+      "aussage": "Gemeinsames natives Response-Gesetz und beidseitiges Retuning im Companion OUTCOME A.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.117; Common response law / two-sided retuning; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine physikalische Feld-/TSM-Identität.",
+      "historischer_status": "A / RESPONSE CLOSED",
+      "id": "PGKC-109",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-030",
+        "SRC-049"
+      ]
+    },
+    {
+      "aussage": "Event-getypter Response-Transport geschlossen.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.118; Response cycle / transport; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Strukturelles Domain-Leg bleibt PARTIAL.",
+      "historischer_status": "OUTCOME C / PARTIAL DOMAIN",
+      "id": "PGKC-110",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-030",
+        "SRC-050"
+      ]
+    },
+    {
+      "aussage": "Admissibility-Boundary-Lineage exakt im Companion OUTCOME A.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.119; Native admissibility-boundary lineage; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine physikalische Raum-/Zeitgrenze.",
+      "historischer_status": "A / DOMAIN BOUNDARY CLOSED",
+      "id": "PGKC-111",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-030",
+        "SRC-051"
+      ]
+    },
+    {
+      "aussage": "Common Mechanism Set-/Response-Regulation im Companion OUTCOME B.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.120; Response–regulation lineage; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Nicht automatisch TSM-Axiom-II-Identität.",
+      "historischer_status": "B / REGULATION LINEAGE",
+      "id": "PGKC-112",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-030",
+        "SRC-052"
+      ]
+    },
+    {
+      "aussage": "Bidirektionale Rückstellung gegen bewegliche Referenz, Geschwister-Kompensation, Two-step narrowing.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.121; Distributed return/reordering; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine bevorzugte selected-branch Rückkehr, kein externer Return-State nötig.",
+      "historischer_status": "A / DISTRIBUTED RETURN CLOSED",
+      "id": "PGKC-113",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-030",
+        "SRC-053"
+      ]
+    },
+    {
+      "aussage": "Wiederkehr funktionaler Rollen auf neu gebildeten Ebenen (OUTCOME A).",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.122; Cross-level functional recurrence; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Vollständige autonome higher-order Closure nicht erworben.",
+      "historischer_status": "A / PARTIAL FUNCTIONAL RECURRENCE",
+      "id": "PGKC-114",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-030",
+        "SRC-054"
+      ]
+    },
+    {
+      "aussage": "Same-event Kontextwirkung zur Zukunftsreferenz; Unit-Kausalität weiterhin partiell.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.123; Recursive origin reference lineage; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein absoluter Ursprung.",
+      "historischer_status": "B / UNIT CAUSALITY PARTIAL",
+      "id": "PGKC-115",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-030",
+        "SRC-055"
+      ]
+    },
+    {
+      "aussage": "Lineage-relational funktionaler Ursprung (OUTCOME A_R).",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.124; Unit causal additionality; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine ontische Ursprung-/Raumgleichsetzung.",
+      "historischer_status": "A_R / FUNCTIONAL ORIGIN",
+      "id": "PGKC-116",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-030",
+        "SRC-056"
+      ]
+    },
+    {
+      "aussage": "Mehrstufige aktuelle relationale Ursprungs-Lineage getragen.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.125; Multilevel current relational origin; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine verifizierte physikalische Zeit.",
+      "historischer_status": "A / MULTILEVEL LINEAGE",
+      "id": "PGKC-117",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-030",
+        "SRC-057"
+      ]
+    },
+    {
+      "aussage": "0.116 zeigt höherordentlichen Organisationszusammenhang, jedoch keine zusätzliche autonome H-Dynamik.",
+      "aussagetyp": "DIREKTE_QUELLENPRUEFUNG",
+      "eigene_prueftiefe": "ORIGINAL_BEGLEITGUTACHTEN_ODER_DECISION_DIREKT_GELESEN",
+      "geltungsbereich": "PGK-0.116, historische Entscheidungsfassung",
+      "grenze": "Kein eigenständiger neuer Runner oder vollständiger mathematischer Proof; A3b-Befund bleibt getrennt.",
+      "historischer_status": "ZEITGENOESSISCHER_ORIGINALBERICHT_BEGRIFFENZT",
+      "id": "PGKC-172",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-048"
+      ]
+    },
+    {
+      "aussage": "0.121 berichtet verteilte Rückstellung, nicht die automatische Bevorzugung eines selected return branch.",
+      "aussagetyp": "DIREKTE_QUELLENPRUEFUNG",
+      "eigene_prueftiefe": "ORIGINAL_BEGLEITGUTACHTEN_ODER_DECISION_DIREKT_GELESEN",
+      "geltungsbereich": "PGK-0.121, historische Entscheidungsfassung",
+      "grenze": "Kein eigenständiger neuer Runner oder vollständiger mathematischer Proof; A3b-Befund bleibt getrennt.",
+      "historischer_status": "ZEITGENOESSISCHER_ORIGINALBERICHT_BEGRIFFENZT",
+      "id": "PGKC-173",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-053"
+      ]
+    },
+    {
+      "aussage": "Gleiches Scaffold oder gleicher aktueller Partnermodus erlaubt nicht den Schluss auf gleiche vollständige Antwort, Funktion oder eine native Wiederherstellung.",
+      "aussagetyp": "GELTUNGSGRENZE",
+      "eigene_prueftiefe": "QUELLENVERGLEICH_KEINE_NEUE_SIMULATION",
+      "geltungsbereich": "0.115C, RΦ-03 und 0.106: verschiedene Objekte",
+      "grenze": "Scaffold, Teilport und Volloperator haben unterschiedliche Quantoren und Räume.",
+      "historischer_status": "A6_4_FACHLICHE_SYNTHESE",
+      "id": "PGKC-290",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-065",
+        "SRC-070"
+      ]
+    },
+    {
+      "aussage": "Ein Übergang zur Regulation erfordert einen vorab definierten Funktionsvertrag und belegte zeitlich zulässige Auswahlinformation, nicht nur Rekurrenz oder Trägerübereinstimmung.",
+      "aussagetyp": "FORSCHUNGSKRITERIUM_KEIN_PASS",
+      "eigene_prueftiefe": "THEORETISCHER_KRITERIENENTWURF",
+      "geltungsbereich": "PGK-Funktionsrückwirkung Forschungsvorschlag",
+      "grenze": "Gilt als notwendiger Prüfanspruch für diese operationalisierte Forschungsfrage, nicht als Naturgesetz.",
+      "historischer_status": "A6_4_NEUE_SYNTHETISCHE_NOTWENDIGKEIT",
+      "id": "PGKC-298",
+      "module_id": "PGKM-026",
+      "source_ids": [
+        "SRC-023",
+        "SRC-076"
+      ]
+    },
+    {
+      "aussage": "Neu geborene Atome koennen neue unterscheidbare Adresspaare erzeugen, ohne irgendein anfangs vereinigtes altes Rollenpaar aufzutrennen.",
+      "aussagetyp": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "eigene_prueftiefe": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "evidence_status": "ORIGINAL_NICHT_PUBLIC_ODER_UNGEKLAERT",
+      "geltungsbereich": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "grenze": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "historischer_status": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "id": "A6N-C006",
+      "metadata_completion": "TECHNISCHE_STANDARDISIERUNG_OHNE_NEUBELEG",
+      "module_id": "PGKM-026",
+      "review_required": true,
+      "source_ids": []
+    },
+    {
+      "aussage": "Verteiltes Adjustment-Netz und endogene relationale Prozessordnung, OUTCOME A.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.126; Distributed adjustment process order; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein einziger bewegter Frontparameter, keine physische Zeit.",
+      "historischer_status": "A / PROCESS ORDER",
+      "id": "PGKC-118",
+      "module_id": "PGKM-027",
+      "source_ids": [
+        "SRC-030",
+        "SRC-058"
+      ]
+    },
+    {
+      "aussage": "Relationales Intervallmapping und Vergleichsordnung geschlossen.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.127; Relational comparator chronometry; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Clock-like structure nicht geschlossen.",
+      "historischer_status": "B / INTERVAL, NOT CLOCK",
+      "id": "PGKC-119",
+      "module_id": "PGKM-027",
+      "source_ids": [
+        "SRC-030",
+        "SRC-059"
+      ]
+    },
+    {
+      "aussage": "Lokale eichbare relationale Chronometrie gemäß 0.129-Parent.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.128; Local calibration recurrent intervals; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Keine globalen synchronisierten Uhren; Nichttrivialitäts-Guard aus Addendum.",
+      "historischer_status": "B / LOCAL GAUGEABLE ONLY",
+      "id": "PGKC-120",
+      "module_id": "PGKM-027",
+      "source_ids": [
+        "SRC-030"
+      ]
+    },
+    {
+      "aussage": "Ein enges recurrent D0-Bridge-Paar gefunden.",
+      "aussagetyp": "HISTORISCHER_STUDIENBEFUND",
+      "eigene_prueftiefe": "A3B_HISTORISCHE_KONKORDANZ_KEINE_NUMERISCHE_NEUPRUEFUNG",
+      "geltungsbereich": "PGK-0.129; Cross-domain calibration coordination; Varianten und Domänen des Originalstudienpfads",
+      "grenze": "Kein Bridge-Network, keine Komposition, kein Zyklus; 0.129-Bridge-Endpunkte nicht beide 0.128-validierte Kalibrationsdomains.",
+      "historischer_status": "D / METRIC READINESS FAIL",
+      "id": "PGKC-121",
+      "module_id": "PGKM-027",
+      "source_ids": [
+        "SRC-030",
+        "SRC-063"
+      ]
+    },
+    {
+      "aussage": "0.126 berichtet relationale native Prozessordnung, ohne damit schon Uhr oder globale Zeitmetrik zu liefern.",
+      "aussagetyp": "DIREKTE_QUELLENPRUEFUNG",
+      "eigene_prueftiefe": "ORIGINAL_BEGLEITGUTACHTEN_ODER_DECISION_DIREKT_GELESEN",
+      "geltungsbereich": "PGK-0.126, historische Entscheidungsfassung",
+      "grenze": "Kein eigenständiger neuer Runner oder vollständiger mathematischer Proof; A3b-Befund bleibt getrennt.",
+      "historischer_status": "ZEITGENOESSISCHER_ORIGINALBERICHT_BEGRIFFENZT",
+      "id": "PGKC-174",
+      "module_id": "PGKM-027",
+      "source_ids": [
+        "SRC-058"
+      ]
+    },
+    {
+      "aussage": "0.127 findet eine Intervallzuordnung, aber keine stabile komparatorübergreifende Uhrkalibrierung.",
+      "aussagetyp": "DIREKTE_QUELLENPRUEFUNG",
+      "eigene_prueftiefe": "ORIGINAL_BEGLEITGUTACHTEN_ODER_DECISION_DIREKT_GELESEN",
+      "geltungsbereich": "PGK-0.127, historische Entscheidungsfassung",
+      "grenze": "Kein eigenständiger neuer Runner oder vollständiger mathematischer Proof; A3b-Befund bleibt getrennt.",
+      "historischer_status": "ZEITGENOESSISCHER_ORIGINALBERICHT_BEGRIFFENZT",
+      "id": "PGKC-175",
+      "module_id": "PGKM-027",
+      "source_ids": [
+        "SRC-059"
+      ]
+    },
+    {
+      "aussage": "0.128 verlangt einen eigenständigen Nichttrivialitätsguard, damit Eichbarkeit nicht als bloße Skalenkovarianz zählt.",
+      "aussagetyp": "DIREKTE_QUELLENPRUEFUNG",
+      "eigene_prueftiefe": "ORIGINAL_BEGLEITGUTACHTEN_ODER_DECISION_DIREKT_GELESEN",
+      "geltungsbereich": "PGK-0.128, historische Entscheidungsfassung",
+      "grenze": "Kein eigenständiger neuer Runner oder vollständiger mathematischer Proof; A3b-Befund bleibt getrennt.",
+      "historischer_status": "ZEITGENOESSISCHER_ORIGINALBERICHT_BEGRIFFENZT",
+      "id": "PGKC-176",
+      "module_id": "PGKM-027",
+      "source_ids": [
+        "SRC-061"
+      ]
+    },
+    {
+      "aussage": "0.129 berichtet einen negativen cross-domain Bridge-/Metrikstatus trotz lokaler Vorleistungen.",
+      "aussagetyp": "DIREKTE_QUELLENPRUEFUNG",
+      "eigene_prueftiefe": "ORIGINAL_BEGLEITGUTACHTEN_ODER_DECISION_DIREKT_GELESEN",
+      "geltungsbereich": "PGK-0.129, historische Entscheidungsfassung",
+      "grenze": "Kein eigenständiger neuer Runner oder vollständiger mathematischer Proof; A3b-Befund bleibt getrennt.",
+      "historischer_status": "ZEITGENOESSISCHER_ORIGINALBERICHT_BEGRIFFENZT",
+      "id": "PGKC-177",
+      "module_id": "PGKM-027",
+      "source_ids": [
+        "SRC-062"
+      ]
+    },
+    {
+      "aussage": "Eine reparierte earliest-Rootwahl des originalen CFG-Replays ist für korrekte Ereignisfolge relevant, belegt aber für sich weder eine physikalische Uhr noch eine globale Zeitmetrik.",
+      "aussagetyp": "GELTUNGSGRENZE",
+      "eigene_prueftiefe": "QUELLENGEBUNDENE_SYNTHETISCHE_ABLEITUNG",
+      "geltungsbereich": "Ereignisauswahl FSTT vs 0.126–0.129 Chronometrie",
+      "grenze": "Zeitmetrische Tests behalten eigenständige Comparator-, Nichttrivialitäts- und Bridge-Gates.",
+      "historischer_status": "A6_3_SCOPE_DERIVATION",
+      "id": "PGKC-281",
+      "module_id": "PGKM-027",
+      "source_ids": [
+        "SRC-007",
+        "SRC-075"
+      ]
+    },
+    {
+      "aussage": "Alte d_int=3-Aussage kein Raumbeweis; späterer Gegenbefund beschränkt den alten Schluss.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "3D-Geometrie: 0.10 → 0.11/0.12",
+      "grenze": "LEGACY_NOT_ROBUST; Modellphase nicht als realen 3D-Raum ausgeben.",
+      "historischer_status": "KORRIGIERTER_HISTORISCHER_CLAIM",
+      "id": "PGKC-122",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Finite-Aperture-Regime und physikalisch emergenter dreidimensionaler Raum sind verschiedene Prädikate.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "Frozen-D: 0.39/0.40 gegen 3D-Schutz",
+      "grenze": "INTERMEDIATE_FINITE_APERTURE != GEOMETRY_3D. ",
+      "historischer_status": "GELTUNGSUNTERSCHIED",
+      "id": "PGKC-123",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Kein allgemeiner Hazard-/Survival-Vorteil einer Variante bewiesen.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "Frozen-D: trace/eta-Survival",
+      "grenze": "Rechtszensur, Seed und Horizont als Datenfelder behalten.",
+      "historischer_status": "ZEITFENSTER_UND_STICHPROBE",
+      "id": "PGKC-124",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Lokale Ereignissensitivität beweist weder Makrogenerativität noch physisches Gedächtnis.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "H2-Wirkung versus Makro-Closure",
+      "grenze": "H2 local relevance != macroscopic geometry.",
+      "historischer_status": "GELTUNGSUNTERSCHIED",
+      "id": "PGKC-125",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Ein Pfadklassifikator kann existieren, obwohl der geprüfte potentialartige Operator nicht integrierbar ist.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "Operatorintegrabilität 0.33 vs. Pfadträger 0.37",
+      "grenze": "PATH-CLASS PASS nicht zu RESPONSE-SUFFICIENCY PASS erklären.",
+      "historischer_status": "VERSCHIEDENE_FORMALFRAGEN",
+      "id": "PGKC-126",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Tangentialer lokaler PASS hebt die ältere spezifische No-Go-Aussage nicht auf.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "Direkte Responsekonjugation vs. Tangentialtransport",
+      "grenze": "LOCAL ENERGY PASS != REVERSE-MARKOV PASS.",
+      "historischer_status": "NEUE_FORMEL_ANDERE_TESTBEDINGUNG",
+      "id": "PGKC-127",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Generischer algebraischer Grad drei ist aus kubischer Gleichungsstruktur nicht ableitbar; endpoint-spezifisch möglich.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "Rank1 0.42F vs 0.42G",
+      "grenze": "Nie den Endpunkt-Rootcount als allgemeines Rank1-Gesetz formulieren.",
+      "historischer_status": "WIDERLEGTE_UNIVERSALISIERUNG",
+      "id": "PGKC-128",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Punktweise dyadisch eingefrorene Koeffizienten und gekoppelte Ereignisparameter sind mathematisch nicht identisch.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "G22 binary64 frozen event vs gekoppelte Capsule",
+      "grenze": "FROZEN_DP_POINT != EVENT_CONSISTENT_COUPLED.",
+      "historischer_status": "REPRAESENTATIONSUNTERSCHIED",
+      "id": "PGKC-129",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "SC-Existenz ist nicht C-Passage; 3→1 ausdrücklich nur für diesen Endpunkt und Quellfork.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "Full-C SC=3 gegen EventGerm=1",
+      "grenze": "HISTORISCH_CERTIFICATE_REPORTED; NO INDEPENDENT RUN.",
+      "historischer_status": "VERSCHIEDENE_PRAEDIKATE",
+      "id": "PGKC-130",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Rank 50 und 64 sind nicht widersprüchlich ohne Identität von Zustandsraum, Observabilitäts- und Kandidatenoperator.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.43 Response-50 versus 0.98/0.99 Full-Support-64",
+      "grenze": "Modalraum, Candidate, Branch, Operator, Ensemble explizit führen.",
+      "historischer_status": "VERSCHIEDENE_OPERATOR_OBJEKTE",
+      "id": "PGKC-131",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Der ursprüngliche hohe Rang ist keine neue exakte Freiheitsgrad- oder Geometriebestätigung.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "49/50D Lie/Krylov SVD",
+      "grenze": "Matrizen, Toleranzen, Exactness-Klasse trennen.",
+      "historischer_status": "NUMERISCHE_KORREKTUR",
+      "id": "PGKC-132",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Gate-II-Stabilität einer endlichen Interfacebalance bedeutet nicht Gate-III-Geometrie.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "Gate II gegen geschlossene Frozen-Makrophase",
+      "grenze": "Explizite Gate-ID und Definition, nicht nur PASS, ausgeben.",
+      "historischer_status": "VERSCHIEDENE_GATE_DEFINITIONEN",
+      "id": "PGKC-133",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Die stärkere History-Kompressionsbehauptung bleibt eingestellt.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.52 Morphology-as-History vs 0.53",
+      "grenze": "0.52 historisch dokumentieren, 0.53-STOP nicht aufheben.",
+      "historischer_status": "SUPERSEDIERTER_ZWEIG",
+      "id": "PGKC-134",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Relationale Netzwerkstruktur ist kein Nachweis lokaler Kausalität oder Raumgeometrie.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.58–0.64 Proto-Kopplung vs Lokalitätsgate",
+      "grenze": "Meso-/relationales Ergebnis nicht als Lichtkegel ausgeben.",
+      "historischer_status": "GELTUNGSUNTERSCHIED",
+      "id": "PGKC-135",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Ergebnis eines modifizierten Kernels darf keine Bestätigung des unchanged-kernel-Gates werden.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "Modified-kernel 0.65/66 vs Frozen-D",
+      "grenze": "KERNEL_FORK Pflichtfeld.",
+      "historischer_status": "MODELLFORK_UNTERSCHIED",
+      "id": "PGKC-136",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Generelle Negativrückkopplung/Regulation ist nicht automatisch normative bzw. spezifische Rückholung.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.70–0.75 Regulation vs TSM-Axiom-II",
+      "grenze": "Axiom-II-Identitätsclaim weiterhin NOT ESTABLISHED.",
+      "historischer_status": "FUNKTIONALE_UNTERSCHEIDUNG",
+      "id": "PGKC-137",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Z plus tatsächlicher Input K ≠ autonomer Generator Z→K.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.78/79 Rekursion vs 0.81 autonome Klasse",
+      "grenze": "Keine freie Generativitätsclosure ohne endogenen K-Test.",
+      "historischer_status": "BEDINGTE_VERSUS_AUTONOME_DYNAMIK",
+      "id": "PGKC-138",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Weder History-Notwendigkeit noch komplette predictive-state Suffizienz ist aus dem Datensatz bewiesen.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "History-Kompaktheit 0.78–0.80",
+      "grenze": "NOT ESTABLISHED beidseitig; keine neue History-DOF.",
+      "historischer_status": "FEHLENDER_BEWEIS_NICHT_GEGENBEWEIS",
+      "id": "PGKC-139",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Informative Hierarchie ist weder Top1-Winner noch privilegiertes set-valued Nachbarschaftsfenster.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.82/83 Mesoorganisation gegen 0.84 Fenster",
+      "grenze": "Explorativ informationsstark ≠ generativer 2×2-PASS.",
+      "historischer_status": "VERSCHIEDENE_ZIELGROESSEN",
+      "id": "PGKC-140",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Root-Reihenfolge nicht pauschal mit jeder margin-spezifischen Zusatzhypothese gleichsetzen.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.85 Root-Reihenfolge vs Margen",
+      "grenze": "Claim und Teststatistik pro Primitiv getrennt.",
+      "historischer_status": "KOMPONENTEN_SPLIT",
+      "id": "PGKC-141",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Exakte vollständige Beschreibung widerlegt weder Modell noch zusätzliche Kompression; sie macht Kompression aber unbegründet.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.98 volle spektrale Antwort vs 0.99 keine exakte Kompression",
+      "grenze": "EXACT_FULL_SUPPORT != SMALL_MINIMAL_STATE.",
+      "historischer_status": "LOGISCH_KOMPATIBEL",
+      "id": "PGKC-142",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Q-Rewrite ist nicht die in 0.42 verworfene frei stehende D-Konjugation.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.101 Q-Rückwirkung gegen 0.42 Operator-No-Go",
+      "grenze": "Q-Änderungsmechanismus darf als intern modelliert, nicht als Energieverletzungsreparatur deklariert werden.",
+      "historischer_status": "VERSCHIEDENE_UPDATE_PRIMITIVE",
+      "id": "PGKC-143",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Möglichkeitsalgebra ≠ garantierte native Übergangsdynamik.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.105/106 Join-Algebra vs native Admissibilität",
+      "grenze": "Partial domain und Actor-Existenz weiterhin prüfpflichtig.",
+      "historischer_status": "DOMAENRESTRIKTION",
+      "id": "PGKC-144",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Reachability/Prozessordnung ≠ lokale kausale Faktorisation oder Lichtkegel.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.126 Prozessordnung vs TG-ROOT lokale Kausalordnung",
+      "grenze": "Kein t_PGK, Eigenzeit oder physikalisches c aus 0.126/TG.",
+      "historischer_status": "VERSCHIEDENE_SKALEN_UND_OPERATOREN",
+      "id": "PGKC-145",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Lokaler Comparator/Intervall lässt noch keine universell koordinierte Zeitmetrik entstehen.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.128 lokale Eichbarkeit vs 0.129 globales metrisches Netz",
+      "grenze": "LOCAL_CALIBRATION ≠ GLOBAL_METRIC_READINESS.",
+      "historischer_status": "VERSCHIEDENE_ABSCHLUSSEBENEN",
+      "id": "PGKC-146",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Funktionskontinuität ist nicht neu hervorgebrachte Regenerationsfähigkeit.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.136 Handoff vs 0.137 Regeneration",
+      "grenze": "Nur jeweils verdiente Funktion und Negativkontrolle übernehmen.",
+      "historischer_status": "VERSCHIEDENE_KAUSALE_FRAGEN",
+      "id": "PGKC-147",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Gleiche Teilfunktion über Teilport widerspricht weder Fprint-Verfehlung noch nichtidentischer Gesamtdynamik.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.141 Rollenfingerprint vs RΦ-03 Teil-I/O",
+      "grenze": "Port, Aufgabenvertrag, Carrier und Full-state explizit.",
+      "historischer_status": "VERSCHIEDENE_AEQUIVALENZRELATIONEN",
+      "id": "PGKC-148",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Technische Ausführbarkeit stellt fehlende exakte historische Definitionen und Heldout-Gates nicht automatisch wieder her.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "FRE Definition Lock vs Runtime Portability",
+      "grenze": "ORIGINAL_DEFINITION_LOCK_BYTES = NOT_RECOVERED; HELDOUT = UNOPENED.",
+      "historischer_status": "TECHNISCHER_FORTSCHRITT_KEIN_RESULTATPASS",
+      "id": "PGKC-149",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Der frühere Effekt ist nicht als aktueller positiver Befund zu verwenden.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "BRW1G Erstrichtung vs Re-Audit",
+      "grenze": "DICT_D / BRW1G_D; Canonical Rebuild D0–D12 remains open.",
+      "historischer_status": "HISTORISCHER_RUECKZUG",
+      "id": "PGKC-150",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Historisch gewählte Reihe ist nicht durchgängig die Folge der kontinuierlich frühesten gerichteten E/C-Roots.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "FSTT ursprünglicher Raster-Selektor vs tatsächliche Erstpassage",
+      "grenze": "ARCHIVE_SELECTED vs ROOT_FIRST_CERTIFIED; ab Schritt6 andere Pfadfolge.",
+      "historischer_status": "QUELLKONTRAKT_FALSIFIZIERT",
+      "id": "PGKC-151",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Schritt10-Befund gilt nur unter Fortsetzung der archivierten CFG-Pfadfolge.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "Schritt 10 im Archiv versus korrigierter Pfad",
+      "grenze": "Kein Step10-Event auf neuer Root-First-Bahn behaupten.",
+      "historischer_status": "BEDINGTER_VS_KORRIGIERTER_PFAD",
+      "id": "PGKC-152",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Externes Role-ID-No-Go behauptet keine quellnative notwendige TSM-Funktion und kein universelles Regenerations-No-Go.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "RΦ-01 intrinsisches Funktionsgate vs RΦ-02 externe Aufgabe",
+      "grenze": "RΦ01 R/N NICHT ADJUDIZIERT; RΦ02 0 nur unter explizitem Task.",
+      "historischer_status": "VERSCHIEDENE_FUNKTIONSVERTRAEGE",
+      "id": "PGKC-153",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Portgleichheit ist nicht volle dynamische Äquivalenz, gleiche Rootfolge oder Wiederherstellung.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "RΦ-03 gleiche begrenzte Funktion vs volle Antwort",
+      "grenze": "I/O-Teilraum im Statusnamen erhalten.",
+      "historischer_status": "RESTRIKTIONSUNTERSCHIED",
+      "id": "PGKC-154",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Ungenügender reduzierter History-Reporter und suffizienter vollständiger deklarierten State können gleichzeitig gelten.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "PGK-0.88 History-Defizit vs 0.100 State-Clone",
+      "grenze": "Full state != reduced reporter, extra-H nur nach matched-state divergence.",
+      "historischer_status": "STATE_REPRAESENTATION_UNTERSCHIED",
+      "id": "PGKC-155",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Spätere Methodentests sind nicht rückwirkend behaupteter Gate-VI-PASS.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "Historische Gate-VI-Sperre vs spätere Chronometrie",
+      "grenze": "Date and claim type Pflichtfelder.",
+      "historischer_status": "TEMPORALE_FORSCHUNGSERWEITERUNG",
+      "id": "PGKC-156",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "FSTT-Quellenreset widerlegt nicht automatisch ein anderswo zertifiziertes gekoppeltes Event10; Zertifikate bleiben endpoint- und branchgebunden.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "0.43 FullC-Zertifizierung vs allgemeines Event-FIRST",
+      "grenze": "Nur gleiche Core/Seed/Event/Fork-Identifier vergleichen.",
+      "historischer_status": "VERSCHIEDENE_TRAJEKTORIEN_UND_FORKS",
+      "id": "PGKC-157",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "A3b schließt Nummern-/Statuslücke, nicht Originalbyte-/Runnerprüfung.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "A3 Zwischenstrecke OFFEN gegen A3b 86/86",
+      "grenze": "A3b supersedes A3 only for REGISTER_COVERAGE.",
+      "historischer_status": "AUDITFORTSCHRITT_NUR_REGISTER",
+      "id": "PGKC-158",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Doppelte Bytes sind EINE Originalquelle, keine unabhängigen Experimente.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "A3b vs A4 0.115C",
+      "grenze": "1 source, 2 locations, 0 additional independent replay.",
+      "historischer_status": "IDENTISCHE_QUELLKOPIE",
+      "id": "PGKC-159",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Wiederholte Quelltexte sind Provenienzstabilität, keine mehreren unabhängig gleichlaufenden Rechnungen.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "A1/A2/A3 Master-Quellverdopplung",
+      "grenze": "Content-Hash als Content-ID; einzelne Speicherorte Provenienz-Einträge.",
+      "historischer_status": "IDENTISCHE_QUELLKOPIE",
+      "id": "PGKC-160",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Spätere datierte Evidenz geht in Forschungs-Overlay, nicht stillschweigend in kanonische v1.39.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "Research-Memory v1.39 gegen spätere ROOT-Ergebnisse",
+      "grenze": "FROZEN_MEMORY_NOT_MODIFIED; A4 companion additive.",
+      "historischer_status": "KANONGRENZE",
+      "id": "PGKC-161",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Dateieinträge sind weder eindeutige Studien noch unabhängige Module; Nummernregister ist nicht vollständige Inhalt-/Rohbytesdeckung.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "A1 Dateizählung vs A3b Modulabdeckung",
+      "grenze": "No claim of 2326 unique studies / 100% corpus.",
+      "historischer_status": "UNTERSCHIEDLICHE_ZAEHLEINHEITEN",
+      "id": "PGKC-162",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "\"PASS NOT ESTABLISHED\" nicht in PASS umwandeln; bis zum Primärgate gilt NOT_ESTABLISHED.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "A1 Gate G_TOPO / G_CLOSURE Labelambiguität",
+      "grenze": "Für Veröffentlichung Gate-Status normalisieren, Originalstring konservieren.",
+      "historischer_status": "LABEL_SEMANTIK_PRUEFEN",
+      "id": "PGKC-163",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "0.139 ist nicht automatisch BRW1G; keine Quellkorrektur über semantische Ähnlichkeit ersetzen.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "A3b 0.139 companion vs A4 BRW1G Rücknahme",
+      "grenze": "Originale getrennt, test-/seed-/gate-key; no pooled rescue.",
+      "historischer_status": "VERSCHIEDENE_VERSUCHSOBJEKTE_UND_VERSIONEN",
+      "id": "PGKC-164",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Externe Chemie ist Fragegenerator, kein Beleg für eine neue PGK-Λ/S3-Wirkung.",
+      "aussagetyp": "HISTORISCHE_KONFLIKT_ENTSCHEIDUNG",
+      "eigene_prueftiefe": "A5_QUELLENVERGLEICH_NICHT_NUMERISCH_RECOMPUTED",
+      "geltungsbereich": "RΦ-04a Carbon-Analogie vs empirische PGK-Mechanik",
+      "grenze": "PROSPECTIVE_ANALOGY only.",
+      "historischer_status": "ANALOGIE_VS_BELEG",
+      "id": "PGKC-165",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Früher d_int=3 bzw. nominaler 3D-Integrationsgrad.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "3D-Geometrie: 0.10 → 0.11/0.12",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-178",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Unabhängige d_s-/Link-/Dual- und Distanzreporter konvergieren nicht auf 3.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "3D-Geometrie: 0.10 → 0.11/0.12",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-222",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Bei d=3 zeigt sich im endlichen Horizont eine positive Frontrückstellnullstelle.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Frozen-D: 0.39/0.40 gegen 3D-Schutz",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-179",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Mehrere unabhängige Geometriemaße und wachsende Skalenphase bleiben unbestätigt.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Frozen-D: 0.39/0.40 gegen 3D-Schutz",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-223",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Eta kann im langen Ende des begrenzten 18-Seed-Pilots mehr offene Fälle zeigen.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Frozen-D: trace/eta-Survival",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-180",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Survival-Kurven kreuzen sich; trace-Tail wird später absorbiert; Auswahl/History wirken gegeneinander.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Frozen-D: trace/eta-Survival",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-224",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "H2-Phasen-Shadows verändern lokale nächste Ereignisse.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "H2-Wirkung versus Makro-Closure",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-181",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "H2 generiert in Frozen-D keine robuste wachsende 3D-Makrophase.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "H2-Wirkung versus Makro-Closure",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-225",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Ein history-unabhängiges D[B] der spezifischen Form dD=λG scheitert an den 86 Diamonds.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Operatorintegrabilität 0.33 vs. Pfadträger 0.37",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-182",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Ein residualer U_R-Transport unterscheidet 86/86 Pfadklassen.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Operatorintegrabilität 0.33 vs. Pfadträger 0.37",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-226",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "D+ = U_R D U_R^T bei festem X verletzt geprüfte Crossing-Energie.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Direkte Responsekonjugation vs. Tangentialtransport",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-183",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Tangentialisierte Konstruktion erhält lokal Energie, scheitert aber an naiver Rückwärtsrekonstruktion.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Direkte Responsekonjugation vs. Tangentialtransport",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-227",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Kubischer multivariater Grad wurde als mögliches 3-Projektivroot-Muster missverstanden.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Rank1 0.42F vs 0.42G",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-184",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Auf Kalibrationshomotopie >=11 genuine reelle Witnesses, Singular- und Rank-Failure-Aste.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Rank1 0.42F vs 0.42G",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-228",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Ein gerundeter historischer true SC-Zustand kann g_C≈-6.08e-16 exakt ≠0 erfüllen.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "G22 binary64 frozen event vs gekoppelte Capsule",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-185",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Event-konsistente gekoppelte historische Capsule liefert positive gerichtete Transversalitätsaussage.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "G22 binary64 frozen event vs gekoppelte Capsule",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-229",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Am exakten 90330/trace/event10 Full-C-Fork sind drei genuine Rank2 SC-Klassen berichtet.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Full-C SC=3 gegen EventGerm=1",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-186",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Der spätere Master dokumentiert nur eine Klasse mit gekoppeltem EventGerm.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Full-C SC=3 gegen EventGerm=1",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-230",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Im Full-C-Fork 90330 besitzt spezielle zyklische Responsegröße Rank 50 / 50 Pole.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.43 Response-50 versus 0.98/0.99 Full-Support-64",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-187",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "0.98–0.99 zeigen für andere candidate-spezifische 64D-Realisierungen vollen Support/Rank 64.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.43 Response-50 versus 0.98/0.99 Full-Support-64",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-231",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Frühe 0.43-Aussagen enthalten numerisch fragilen 49/50D-Ranginterpretationszweig.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "49/50D Lie/Krylov SVD",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-188",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "0.43A2ZG korrigiert diesen als SVD-/Konditionierungsartefakt.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "49/50D Lie/Krylov SVD",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-232",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Historischer Master bezeichnet einen mechanistischen Interface-Balance-Makroregime-Gate als PASS.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Gate II gegen geschlossene Frozen-Makrophase",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-189",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Frozen-D erzeugt keine wachsende dreidimensionale Raum-Makrophase.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Gate II gegen geschlossene Frozen-Makrophase",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-233",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Morphologie als komprimierte Geschichte wurde als Oracle erwogen.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.52 Morphology-as-History vs 0.53",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-190",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Nachfolgender prädiktiver History-Quotient trennt die nötigen Fälle nicht hinreichend.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.52 Morphology-as-History vs 0.53",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-234",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Interface-Netze, zonale Ordnung und gerichtete Erreichbarkeit sind modellintern messbar.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.58–0.64 Proto-Kopplung vs Lokalitätsgate",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-191",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Native physikalische Lokalität bzw. autonome process-layer closure werden nicht stabil gewonnen.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.58–0.64 Proto-Kopplung vs Lokalitätsgate",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-235",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Mit zusätzlichen bzw. modifizierten Kernelbedingungen sind Accessibility- oder Residual-History-Effekte möglich.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Modified-kernel 0.65/66 vs Frozen-D",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-192",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Unveränderter Frozen-D-Kernel bleibt bezüglich seiner Raum-/Makro-Hypothese negativ.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Modified-kernel 0.65/66 vs Frozen-D",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-236",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Bewegliche Balance, return-like Prozessgeometry, P/Q-Gain-Loss und Feasible-Set-Regulation sind berichtet.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.70–0.75 Regulation vs TSM-Axiom-II",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-193",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Direkte nativen Selektor-rückholende TSM-Axiom-II-Funktion nicht gefunden.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.70–0.75 Regulation vs TSM-Axiom-II",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-237",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Mit vorgegebenem nativem Rewrite-Klassenwort K kann lokaler Prozess fortgesetzt werden.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.78/79 Rekursion vs 0.81 autonome Klasse",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-194",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Aus komprimiertem Z wird K selbst nicht hinreichend verlässlich generiert.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.78/79 Rekursion vs 0.81 autonome Klasse",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-238",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Explizite ältere History liefert gegenüber aktuellen Reportern keine robuste Verbesserung.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "History-Kompaktheit 0.78–0.80",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-195",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Strikte Equivalence-/Sufficiency-Prüfung 1%-Grenze nicht vollständig bestanden.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "History-Kompaktheit 0.78–0.80",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-239",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Klassenaufgelöste Kandidateninformation hat hohe prognostische Relevanz.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.82/83 Mesoorganisation gegen 0.84 Fenster",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-196",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Festes hierarchisches 2×2-Fenster verfehlt Überlegenheit gegen gleich großes globales Fenster.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.82/83 Mesoorganisation gegen 0.84 Fenster",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-240",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Die native Crossing-Race enthält präreaktive Ordnungsinformation.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.85 Root-Reihenfolge vs Margen",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-197",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Ein spezieller Root-Margin-Mechanismus besteht prospektive Prüfung nicht.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.85 Root-Reihenfolge vs Margen",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-241",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Vollständiger spektraler Antwortsupport rekonstruiert bekannte Crossing-Antwort exakt.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.98 volle spektrale Antwort vs 0.99 keine exakte Kompression",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-198",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Die candidate-lokale Krylov-/Observabilitätsdimension bleibt 64/64; kein kleiner exakter Zustand.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.98 volle spektrale Antwort vs 0.99 keine exakte Kompression",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-242",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "0.42 scheitert an direkter physischer D-Konjugation bei festem X/Π.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.101 Q-Rückwirkung gegen 0.42 Operator-No-Go",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-199",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "0.101 findet sofortige Änderung des Folgeresponse durch native Q-Projektor-Änderung.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.101 Q-Rückwirkung gegen 0.42 Operator-No-Go",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-243",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Join-Innovation ist auf nativ evaluierbaren Pfaden exakt und kompositionsfähig.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.105/106 Join-Algebra vs native Admissibilität",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-200",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Viele algebraische Komplementrichtungen sind nativ nicht ausführbar; Zeitpfeil nicht belegt.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.105/106 Join-Algebra vs native Admissibilität",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-244",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "PGK-0.126 führt gerichtete relationale Prozessfolge/-ordnung in spezifiziertem nativen Zustandsgraphen.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.126 Prozessordnung vs TG-ROOT lokale Kausalordnung",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-201",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "TG-ROOT-01A–C findet keine autonome universell lokale partielle Ereignisordnung.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.126 Prozessordnung vs TG-ROOT lokale Kausalordnung",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-245",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "0.128 identifiziert lokale wiederkehrende kalibrierbare Intervalle.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.128 lokale Eichbarkeit vs 0.129 globales metrisches Netz",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-202",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "0.129 erzeugt kein hinreichendes Cross-domain Bridge-Network und keine globale Metrikbereitschaft.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.128 lokale Eichbarkeit vs 0.129 globales metrisches Netz",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-246",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Über Trägerwechsel erhaltene Rolle/Funktion kann in spezifischer Klasse nachgewiesen werden.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.136 Handoff vs 0.137 Regeneration",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-203",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "0.137 findet weder unabhängige positive Recovery-Additionality noch vollständige Regeneration; unter Nullfrequenzmodell sogar unterdrückt.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.136 Handoff vs 0.137 Regeneration",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-247",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "0.141 17-Feld-Rollenkontext nahezu Fingerprint-Sättigung, keine prognostische Additionality.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.141 Rollenfingerprint vs RΦ-03 Teil-I/O",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-204",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "RΦ-03: Teil-I/O an begrenztem 2D-Partnerport in 8/8 gleich, volle 64D-Operatorantwort 0/8 gleich.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.141 Rollenfingerprint vs RΦ-03 Teil-I/O",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-248",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Historische Originaldefinitions-Bytes waren nicht wiederhergestellt; Verification-A/B ungeöffnet.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "FRE Definition Lock vs Runtime Portability",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-205",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Runtime-Portability-Ruling erlaubt kontrollierte Laufumgebung, nicht neu definierte Population/Gates.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "FRE Definition Lock vs Runtime Portability",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-249",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Frühe BRW1G-Auswertung legte selektiven Prozess-/Rückwirkungs-Effekt nahe.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "BRW1G Erstrichtung vs Re-Audit",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-206",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Re-Audit verweigert diese Additionality nach Source-/Identity-Fehlern (BRW1G_D).",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "BRW1G Erstrichtung vs Re-Audit",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-250",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "16-Schritt-CFG historisch unter dt-Raster reproduziert; als native Auswahl weiterverwendet.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "FSTT ursprünglicher Raster-Selektor vs tatsächliche Erstpassage",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-207",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "FSTT-01F isoliert zuerst übersehene E-Insel vor Schritt 6 (und bedingt C-Insel Schritt 10).",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "FSTT ursprünglicher Raster-Selektor vs tatsächliche Erstpassage",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-251",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Archivierter Schritt-10-Zustand trägt eigenen, von dt=.06 übersehenen C-Doppeldurchtritt.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Schritt 10 im Archiv versus korrigierter Pfad",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-208",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Bereits bei Schritt6 divergiert die neue früheste Root-Folge.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Schritt 10 im Archiv versus korrigierter Pfad",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-252",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Quellnative notwendige Organisationsfunktion Φ konnte unter RΦ01 nicht legal definiert werden (NO_VALID_PHI).",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "RΦ-01 intrinsisches Funktionsgate vs RΦ-02 externe Aufgabe",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-209",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Extern vorab getypte alte Komponenten-IDs können nicht nach C-Merge wieder getrennt werden (R_cond=0 für diese Rolle).",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "RΦ-01 intrinsisches Funktionsgate vs RΦ-02 externe Aufgabe",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-253",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "8/8 gleiche Antwort am fest definierten 2D-Partner-Port.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "RΦ-03 gleiche begrenzte Funktion vs volle Antwort",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-210",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "0/8 Gleichheit aller 64D-Operatorantworten; teils abweichende Vorzeichen.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "RΦ-03 gleiche begrenzte Funktion vs volle Antwort",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-254",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Ein spezifischer minimaler native Process-History-Quotient scheitert an Kollisions-/Continuation-Tests.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "PGK-0.88 History-Defizit vs 0.100 State-Clone",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-211",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "0.100 findet bei vollständigem aktuellem deklariertem State und identischem Zukunftsprotokoll keine zusätzliche extrinsische History-Notwendigkeit.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "PGK-0.88 History-Defizit vs 0.100 State-Clone",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-255",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Master 12.09: GATE VI clock/time NOT OPENED.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Historische Gate-VI-Sperre vs spätere Chronometrie",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-212",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "0.127–0.129 untersuchen lokale Intervallkalibrierung; globale metrisierte Uhr bleibt negativ.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Historische Gate-VI-Sperre vs spätere Chronometrie",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-256",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Ein event-konsistentes 90330/trace/event10-Certificate meldet 3→1.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.43 FullC-Zertifizierung vs allgemeines Event-FIRST",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-213",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "FSTT korrigiert später selektierte ganz andere CFG-Folge ab Schritt6.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "0.43 FullC-Zertifizierung vs allgemeines Event-FIRST",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-257",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "A3 kennzeichnet 0.44–0.129 als nicht einzeloriginal-vollständig erschlossen.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "A3 Zwischenstrecke OFFEN gegen A3b 86/86",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-214",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "A3b legt für jede Grundnummer Originaltitel, ID, Status und Quellvertretung fest.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "A3 Zwischenstrecke OFFEN gegen A3b 86/86",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-258",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "A3b enthält ein Original-Final 0.115C mit CRC und 42 internen SHA-PASS.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "A3b vs A4 0.115C",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-215",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "A4 enthält dasselbe Archiv in anderem Dateinamen, identischer 96a1ea9a... Byte-SHA.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "A3b vs A4 0.115C",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-259",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "A1 enthält vier masterhistorische Quellbytes, A2 führt sie unverändert fort.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "A1/A2/A3 Master-Quellverdopplung",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-216",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "A3 und A3b enthalten einzelne byteidentische Kopien sowie denselben Crosswalk.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "A1/A2/A3 Master-Quellverdopplung",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-260",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "v1.39 ist letzter dokumentierter eingefrorener Hauptstand vom 14.10.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Research-Memory v1.39 gegen spätere ROOT-Ergebnisse",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-217",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "A4 enthält Oct26–Nov07 neue Companion-Ergebnisse und teils bessere Metadaten.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "Research-Memory v1.39 gegen spätere ROOT-Ergebnisse",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-261",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "A1 meldet 2326 Bibliothekseinträge mit 1630 PGK im Namen.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "A1 Dateizählung vs A3b Modulabdeckung",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-218",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "A3b hat 86/86 Grundnummern 0.44 bis 0.129 als Originaldatei-ID und Status erfasst.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "A1 Dateizählung vs A3b Modulabdeckung",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-262",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Quellstatus trägt Formulierung PASS NOT ESTABLISHED.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "A1 Gate G_TOPO / G_CLOSURE Labelambiguität",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-219",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "A3b trennt strukturelle Teilpässe von nicht etablierter topologischer/dynamischer Closure.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "A1 Gate G_TOPO / G_CLOSURE Labelambiguität",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-263",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "In 0.139 wurden bestimmte Ein-Schritt-/Regulationszusammenhänge als teilgetragen berichtet, keine volle Two-Step Grammar.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "A3b 0.139 companion vs A4 BRW1G Rücknahme",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-220",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Spätere BRW1G-Re-Audit zieht eigenen prospektiven Zusatzclaim wegen Identity/Source-Problem zurück.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "A3b 0.139 companion vs A4 BRW1G Rücknahme",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-264",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Kohlenstoffs Bindungsvielfalt motiviert strukturelle Vergleichsfragen.",
+      "aussagetyp": "A5_FRUEHERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "RΦ-04a Carbon-Analogie vs empirische PGK-Mechanik",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_FRUEHER_NACH_A5",
+      "id": "PGKC-221",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "RΦ04a enthält keine eigenständig replizierte native Regeneration aus Kohlenstoff.",
+      "aussagetyp": "A5_SPAETERE_BEHAUPTUNG",
+      "eigene_prueftiefe": "A5_VERGLEICHSTEXT_SEKUNDAER_ORIGINAL_PRIMAERBELEG_OPTIONAL",
+      "geltungsbereich": "RΦ-04a Carbon-Analogie vs empirische PGK-Mechanik",
+      "grenze": "Wortlaut nur aus A5-Gegenüberstellung; bitte nicht als unmittelbar aus Originalrunner bewiesene Formulierung ausgeben.",
+      "historischer_status": "HISTORISCH_SPAETER_NACH_A5",
+      "id": "PGKC-265",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-068"
+      ]
+    },
+    {
+      "aussage": "Die identische Bezeichnung „operator_same“ in PGK-0.115C darf nicht auf den mathematisch anderen strikten J_a=J_b-Operatorvergleich aus RΦ-03 übertragen werden.",
+      "aussagetyp": "KATEGORIENTRENNUNG",
+      "eigene_prueftiefe": "A6_3_QUELLENVERGLEICH",
+      "geltungsbereich": "0.115C candidate-indexed family scaffold vs RΦ03 quadratic full response",
+      "grenze": "Keine tatsächliche logische Kontradiktion; auch keine positive Implikation aus Typgleichheit.",
+      "historischer_status": "A6_3_NEUER_SCOPE_ABGLEICH",
+      "id": "PGKC-280",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-072",
+        "SRC-074"
+      ]
+    },
+    {
+      "aussage": "Die historische 0.70-Passage-Rückwirkung, 0.83-Negativselektion und 0.139–0.141-Negativadditionality können ohne Widerspruch nebeneinander bestehen.",
+      "aussagetyp": "KEIN_WIDERSPRUCH",
+      "eigene_prueftiefe": "QUELLEN_KONKORDANZ",
+      "geltungsbereich": "zeit- und forkgetypte historische PGK-Befunde",
+      "grenze": "Keine Gleichsetzung der Modelle 0.70/0.83/0.139 oder der Ergebnisvariablen.",
+      "historischer_status": "A6_4_QUELLENUEBERGREIFENDE_SYNTHese",
+      "id": "PGKC-301",
+      "module_id": "PGKM-028",
+      "source_ids": [
+        "SRC-004",
+        "SRC-020"
+      ]
+    },
+    {
+      "aussage": "Unterscheidung FSTT-01F first-root-zertifizierte Schritte 1–5 von historischem Schritt6-Rootalias bleibt bindend.",
+      "aussagetyp": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "eigene_prueftiefe": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "evidence_status": "ORIGINAL_NICHT_PUBLIC_ODER_UNGEKLAERT",
+      "geltungsbereich": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "grenze": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "historischer_status": "NICHT_ANGEGEBEN_IM_BESTAND",
+      "id": "A6N-C009",
+      "metadata_completion": "TECHNISCHE_STANDARDISIERUNG_OHNE_NEUBELEG",
+      "module_id": "PGKM-028",
+      "review_required": true,
+      "source_ids": []
+    },
+    {
+      "aussage": "S_U0(P)=C(|U0|,2)-sum_B C(|B∩U0|,2). Werden vorhandene Blöcke B_i durch C vereinigt, ist ΔS_U0=-sum_{i<j}n_i n_j mit n_i=|B_i∩U0|.",
+      "aussagetyp": "EXAKTER_SATZ",
+      "eigene_prueftiefe": "ELEMENTARER_BEWEIS_UND_EXHAUSTIVER_KLEINPARTITIONS_TEST",
+      "geltungsbereich": "Festes U0; native E als Singleton und C nur als Partitionsvergroeberung",
+      "grenze": "Kein Root-Auswahlnachweis und keine empirische Aussage.",
+      "historischer_status": "NEUER_FORMALKOROLLAR_STAND_2026_11_10",
+      "id": "PGKC-315",
+      "module_id": "PGKM-029",
+      "source_ids": [
+        "SRC-078"
+      ]
+    },
+    {
+      "aussage": "Eine E-Geburt eines neuen Singletons bewahrt S_U0 exakt, kann aber die Anzahl aller aktuell getrennten Atompaare erhöhen. Globale Paarzahl darf nicht als Wiederherstellung alter Rollen gelesen werden.",
+      "aussagetyp": "FORMALER_KONTRAST",
+      "eigene_prueftiefe": "ELEMENTARER_BEWEIS_UND_EXHAUSTIVER_KLEINPARTITIONS_TEST",
+      "geltungsbereich": "Festes U0; native E als Singleton und C nur als Partitionsvergroeberung",
+      "grenze": "Keine Aussage über gleichfunktionale Ersatzträger.",
+      "historischer_status": "NEUER_FORMALKOROLLAR_STAND_2026_11_10",
+      "id": "PGKC-316",
+      "module_id": "PGKM-029",
+      "source_ids": [
+        "SRC-078"
+      ]
+    },
+    {
+      "aussage": "Ein C-Schritt reduziert S_U0 genau dann strikt, wenn unter den zusammengelegten Blöcken mindestens zwei alte U0-Atome enthalten; andernfalls kann C ohne Verlust alter Adresspaare stattfinden.",
+      "aussagetyp": "EXAKTES_KRITERIUM",
+      "eigene_prueftiefe": "ELEMENTARER_BEWEIS_UND_EXHAUSTIVER_KLEINPARTITIONS_TEST",
+      "geltungsbereich": "Festes U0; native E als Singleton und C nur als Partitionsvergroeberung",
+      "grenze": "Nur C-Vergröberung, keine Spaltungs- oder Regenerationsoperation.",
+      "historischer_status": "NEUER_FORMALKOROLLAR_STAND_2026_11_10",
+      "id": "PGKC-317",
+      "module_id": "PGKM-029",
+      "source_ids": [
+        "SRC-078"
+      ]
+    }
+  ],
+  "schema": "pgk.public.claims.v2"
+}
