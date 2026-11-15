@@ -1,0 +1,17 @@
+{
+  "description": "PGK public-essence read-only MCP with open PGK research records with epistemic status preserved",
+  "engines": {
+    "node": ">=20"
+  },
+  "name": "tsm-pgk-research-mcp",
+  "private": true,
+  "scripts": {
+    "check:code": "node --check src/comparison_api.mjs && node --check src/core.mjs && node --check src/public_core.mjs && node --check src/loader.mjs && node --check src/worker.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "type": "module",
+  "version": "0.8.4-open-rc1",
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

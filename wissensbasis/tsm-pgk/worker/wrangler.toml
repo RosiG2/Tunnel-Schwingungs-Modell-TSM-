@@ -1,0 +1,15 @@
+# Cloudflare deployment template. DO NOT DEPLOY until explicit human approval.
+name = "tsm-pgk-public-essence-mcp"
+main = "src/worker.mjs"
+compatibility_date = "2026-09-01"
+
+[vars]
+GITHUB_REPOSITORY = "RosiG2/Tunnel-Schwingungs-Modell-TSM-"
+GITHUB_BRANCH = "main"
+ALLOWED_ORIGINS = "https://chatgpt.com,https://chat.openai.com"
+PGK_EDGE_CACHE = "on"
+PGK_FIXED_REVISION = "94ed62efade5a5514482904464edc8e0dd49cf15"
+
+# Initial deployment is pinned to the verified public GitHub commit.
+# When publishing new research, verify the new Git commit and update PGK_FIXED_REVISION.
+# Rate limits, privacy review and live CPU monitoring must be configured before opening traffic.
