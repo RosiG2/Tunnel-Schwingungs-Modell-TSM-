@@ -12,6 +12,15 @@ function methodAllowed(req,env){const origin=req.headers.get('Origin');if(!origi
 function cleanArgs(x){return x&&typeof x==='object'&&!Array.isArray(x)?x:{};}
 export async function handleRequest(request,env={},deps={}){
  const u=new URL(request.url),path=u.pathname;
+ // OpenAI domain ownership verification. The token is supplied by the submission portal,
+ // belongs to this MCP hostname, and must be returned as exact plain text.
+ if(path==='/.well-known/openai-apps-challenge'){
+   if(request.method!=='GET')return new Response('Method not allowed',{status:405,headers:{Allow:'GET'}});
+   const token=typeof env?.OPENAI_CHALLENGE==='string'?env.OPENAI_CHALLENGE:'';
+   return token
+     ? new Response(token,{status:200,headers:{'Content-Type':'text/plain; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}})
+     : new Response('Not configured',{status:404,headers:{'Cache-Control':'no-store'}});
+ }
  if(!methodAllowed(request,env))return new Response('Forbidden Origin',{status:403});
  if(path==='/health'&&request.method==='GET')return jsonResult({name:'tsm-pgk-mcp',version:VERSION,status:'server_active',scientific_approval:false});
  if(path!=='/mcp')return new Response('Not found',{status:404});

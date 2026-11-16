@@ -22,7 +22,10 @@ export const TOOLS=BASE_TOOLS.map(t=>{
   }
   return v;
 }).concat([{name:'pgk_get_topic_relations',description:'Navigate noncanonical topic-level research links as exploratory hypotheses, NOT directed Claim-to-Claim graph edges.',inputSchema:{type:'object',properties:{topic:{type:'string',description:'Topic name or fragment, including historical PGK identifiers'},direction:{type:'string',enum:['both','from','to']},revision:{type:'string',description:'Optional exact 40-hex GitHub commit SHA, resolved by the MCP loader'},offset:{type:'integer',minimum:0},limit:{type:'integer',minimum:1,maximum:100}}}},
-{name:'pgk_get_research_record',description:'Read a complete public research finding, evidence passport or exploratory topic relation by stable ID. Publication inclusion does not imply scientific validation or canonical authority. Private original fulltexts are not embedded.',inputSchema:{type:'object',properties:{record_id:{type:'string',description:'Exact public research record ID'},record_kind:{type:'string',enum:['finding','passport','relation']},revision:{type:'string',description:'Optional exact 40-hex GitHub commit SHA'}},required:['record_id']}}]).concat(COMPARISON_TOOLS);
+{name:'pgk_get_research_record',description:'Read a complete public research finding, evidence passport or exploratory topic relation by stable ID. Publication inclusion does not imply scientific validation or canonical authority. Private original fulltexts are not embedded.',inputSchema:{type:'object',properties:{record_id:{type:'string',description:'Exact public research record ID'},record_kind:{type:'string',enum:['finding','passport','relation']},revision:{type:'string',description:'Optional exact 40-hex GitHub commit SHA'}},required:['record_id']}}]).concat(COMPARISON_TOOLS).map(tool=>({
+  ...tool,
+  annotations:{...tool.annotations,readOnlyHint:true,openWorldHint:true,destructiveHint:false}
+}));
 const s=x=>String(x??'');
 const lower=x=>s(x).normalize('NFKC').replace(/[\u2010-\u2015\u2212\uFE58\uFE63\uFF0D]/g,'-').toLocaleLowerCase('de-DE');
 const MAX=100;
