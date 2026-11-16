@@ -9,6 +9,7 @@ GITHUB_BRANCH = "main"
 ALLOWED_ORIGINS = "https://chatgpt.com,https://chat.openai.com"
 PGK_EDGE_CACHE = "on"
 PGK_FIXED_REVISION = "94ed62efade5a5514482904464edc8e0dd49cf15"
+OPENAI_CHALLENGE = "PGifukg4jsjM4cqm4PooPM6w7eGxgRNqjvsmMCO3c3U"
 
 # Initial deployment is pinned to the verified public GitHub commit.
 # When publishing new research, verify the new Git commit and update PGK_FIXED_REVISION.
