@@ -14,7 +14,24 @@ export const TOOLS=BASE_TOOLS.map(t=>{
     v.description='A public-allowlisted research document or released formal paper, with explicit source type.';
     v.inputSchema.properties.path={type:'string',description:'Public README.md, ARBEITSSTAND.md, FORSCHUNGSKARTE.md, erkenntnisse/PGKM-NNN.md, forschung/..., erscheinungswelt/*.md, beweise/A6N-T1_SRC-078.md'};
   }
-  if(t.name==='pgk_compare_versions')v.description='Diff two compatible public GitHub publications. Requires a real earlier 40-hex commit; no fabricated v0.7.4 baseline.';
+  if(t.name==='pgk_compare_versions'){
+    v.description='Compare two public PGK research snapshots identified by GitHub commits. Lists changed files and added, removed or modified research records between an earlier baseline and the selected target revision. This is a read-only comparison of released research data, not a scientific validation.';
+    v.inputSchema.required=['baseline_revision'];
+    v.inputSchema.properties.baseline_revision={
+      type:'string',
+      pattern:'^[a-fA-F0-9]{40}$',
+      description:'Required full 40-character GitHub commit SHA of an earlier compatible public PGK research snapshot. There is no bundled fallback baseline.'
+    };
+    v.inputSchema.properties.revision={
+      type:'string',
+      pattern:'^[a-fA-F0-9]{40}$',
+      description:'Optional full 40-character GitHub commit SHA of the target research snapshot. When omitted, the currently published revision is used.'
+    };
+    v.inputSchema.properties.limit={
+      type:'integer',minimum:1,maximum:200,
+      description:'Maximum number of changed record IDs reported for each change category (1–200; default 100).'
+    };
+  }
   if(t.name==='pgk_get_relations')v.description='Directed curated claim edges; editorial review-only topic links are separate and cannot reverse causal or inferential direction.';
   if(t.name==='pgk_search'){
     v.description='Search the public open PGK research memory, including formal, negative and hypothetical findings. TSM judges relevance and estimates.';
